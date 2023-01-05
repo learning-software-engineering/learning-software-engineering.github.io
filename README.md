@@ -1,1 +1,1 @@
-# learning-software-engineering.github.io
+Welcome to Learning Software Engineering Repository. This is intended as a resource for students new to software engineering to contribute to the ever growing body of knowledge of software engineering by adding/editing their input to help other students learn better.
