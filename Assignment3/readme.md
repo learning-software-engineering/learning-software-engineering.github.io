@@ -2,7 +2,7 @@
 Welcome to Learning Software Engineering Repository. This is intended as a resource for students new to software engineering to contribute to the ever growing body of knowledge of software engineering by adding/editing their input to help other students learn better. 
 Readers are expected to know the foundation of software engineering and computer science (e.g., basics of algorithms, foundations of programming).
 
-Following directories are present in this directory. You may contribute to any of these of your choice. If you are contributing by forming multiple pages, consider structuring your files into a new sub-directory within the topic's directory.
+Following directories are present in this directory. You may contribute to any of these of your choice. If you are contributing by forming multiple pages, consider structuring your files into a new sub-directory within the topic's directory. Contribute to the readme files within each topic directory as appropriate.
 
 -----
 
