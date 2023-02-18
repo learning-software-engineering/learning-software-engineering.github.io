@@ -6,7 +6,7 @@ nav: true
 ---
 
 
-{% assign orderedlist = site.assg3 | sort:"order" %}
+{% assign orderedlist = site.assg3 %}
 {% for entry in orderedlist %}
   <p>
     <a href="{{site.baseurl}}{{entry.url}}">
