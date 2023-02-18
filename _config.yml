@@ -4,6 +4,6 @@ repository: learning-software-engineering/learning-software-engineering.github.i
 theme: jekyll-theme-cayman
 
 collections:
-  Assignment3:
+  assg3:
     output: true
-    permalink: /Assignment3/:path/
+    permalink: /assg3/:path/
