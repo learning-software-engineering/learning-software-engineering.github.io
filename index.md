@@ -13,7 +13,10 @@ layout: default
 
 ## General Info
 
-You can find the course information sheet for daytime and evening lectures [here](https://docs.google.com/document/d/1S6IqTBMKPs4tzu8ngEDc7MpK85QaPMDhJN5d3Zlj1S4/edit?usp=sharing).
+
+### Asignment 3
+{% include assg3.md%}
+
 
 ### Lectures
 
