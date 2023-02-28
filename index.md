@@ -10,7 +10,7 @@ layout: default
 
 | # | Topics |
 |---|---|
-| 1 | [Development Process](https://github.com/learning-software-engineering/learning-software-engineering.github.io/blob/main/Assignment3/Development_Process.md#resources-for-development-process) | 
+| 1 | [Development Process](Topics/Development_Process.md#resources-for-development-process) | 
 | 2| [Product Management](https://github.com/learning-software-engineering/learning-software-engineering.github.io/blob/main/Assignment3/Product_mgmt.md#resources-for-product-management) | 
 | 3 | [Professionalism](https://github.com/learning-software-engineering/learning-software-engineering.github.io/blob/main/Assignment3/Professionalism.md#professionalism)|
 | 4 | [Software Engineering](https://github.com/learning-software-engineering/learning-software-engineering.github.io/blob/main/Assignment3/Software_Engineering.md#resources-for-software-engineering)|
