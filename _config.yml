@@ -1,9 +1,4 @@
-title: CSC301, Spring 2023 
+title: CSC301, Winter 2023 
 description: Introduction To Software Engineering
 repository: learning-software-engineering/learning-software-engineering.github.io
 theme: jekyll-theme-cayman
-
-collections:
-  assg3:
-    output: true
-    permalink: /assg3/:path/
