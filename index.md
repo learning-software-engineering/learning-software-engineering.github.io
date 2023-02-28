@@ -3,27 +3,10 @@ layout: default
 ---
 
 
-<title> CSC301 Fall 2018 </title>
-
-<div markdown="1" class="course-announcements">
-## Announcements
-
-{% include announcements.md%}
-</div>
+<title> Learning Software Engineering </title>
 
 ## General Info
 
-### Lectures
-
-| Section | Room | Time  | Instructor | Instructor Email
-|---|---|---|---|---|
-| L0101  | LM157  | M12-2  | David Jorjani | csc301-2018-09@cs.toronto.edu
-
-
-## Asignment 3
-
-- Instructions for [assignment 3](https://github.com/learning-software-engineering/learning-software-engineering.github.io/tree/main/Assignment3#intro)
-- Contribute to any of the following topics. Also, you are welcomed to contribute to any other related topic by creating a new file for it and linking it in this table. 
 
 | # | Topics |
 |---|---|
