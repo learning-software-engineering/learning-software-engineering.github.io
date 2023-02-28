@@ -1,1 +1,0 @@
-## Software Development Best Practices
