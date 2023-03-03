@@ -58,6 +58,9 @@ Potential Topics--
         
         
 - User Experience
+    1. Overview
+    2. Areas of User Experience
+    3. Helpful Courses
 - Product Management
 - Other useful resources
 - Teamwork
