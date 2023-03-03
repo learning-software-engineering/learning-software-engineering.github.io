@@ -23,6 +23,7 @@ Potential Topics--
 
 - Development Process
     1. GitFlow
+        1. Git branch
     2. Trunk-based Development
     3. Coding Standards
     4. Pull-requests
