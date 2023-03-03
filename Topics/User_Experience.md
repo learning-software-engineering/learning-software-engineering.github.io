@@ -24,4 +24,4 @@ ___Color Theory___
 
 ### Helpful Courses
 
-There are many courses related to User Experience. This includes the U of T Course [The Design of Interactive Computational Media](https://artsci.calendar.utoronto.ca/course/csc318h1) which is highly reccomended if interested in this topic.
+There are many courses related to User Experience. This includes the U of T Course [The Design of Interactive Computational Media](https://artsci.calendar.utoronto.ca/course/csc318h1) which is highly reccomended if interested in this topic. [The Design of Interactive Computational Media](https://artsci.calendar.utoronto.ca/course/csc318h1) expands on the work done before coding projects. For example, one of the projects is testing how users would interact with a prototype of a UI and modifying it so that the UX is better for the user.
