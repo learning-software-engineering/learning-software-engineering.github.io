@@ -10,7 +10,7 @@ Potential Topics--
 
 - Tech stacks
     1. React Native
-        1. React Native Components (Android vs iOS)
+        1. React Native Components (ScrollView)
 - Software Engineering
     1. Methodologies & Frameworks
         1. Agile
