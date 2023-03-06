@@ -1,8 +1,12 @@
 ## Tech Stacks
 
-### React Info and Resources 
+### React Overview
+React is a Javascript library used to build user interfaces. As such, you're going to have to know HTML, CSS and Javascript in order to learn React.
+It's ease of use and popularity comes from how little you actually have to code. Easily applicable for any frontend interface, if you're going to use any library/framework for frontend development, React is the safest option.
 
-React is a Javascript library used to build user interfaces. As such, you're going to have to know HTML, CSS and Javascript in order to learn React. These frontend challenges for HTML, CSS and JavaScript will help you review while making projects as well. \
+### React Resources 
+
+These frontend challenges for HTML, CSS and JavaScript will help you review core skills while also making interesting projects as well. \
 https://www.frontendmentor.io/
 
 
