@@ -5,3 +5,9 @@ Task management software is essential for organizations and individuals to impro
 
 # Examples of Common Task Management Software:
 Jira is a software development tool that allows teams to plan, track, and manage their projects effectively. It is a popular tool used by agile teams to improve their collaboration, visibility, and productivity. With Jira, teams can create tasks, assign them to team members, and track their progress in real-time. Jira also provides features such as dashboards, agile boards, and customizable workflows that help teams stay organized and focused on their goals. In addition, Jira integrates with other software development tools such as GitHub, Bitbucket, and Confluence, making it a powerful tool for software development teams.
+
+Resources for Jira:
+
+Beginner tutorial for Jira - https://www.youtube.com/watch?v=nHuhojfjeUY 
+
+Must Know Jira features - https://www.youtube.com/watch?v=issdcnErAU8 
