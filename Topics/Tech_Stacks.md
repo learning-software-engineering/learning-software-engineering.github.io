@@ -12,3 +12,10 @@ It's worth mentioning that due to the confusion between Nuxt2 and Nuxt3 document
 
 If you want to add the Tailwind CSS library to your Nuxt3 app, please follow the instructions in this link: https://tailwindcss.com/docs/guides/nuxtjs#3. 
 Make sure to select Nuxt3 instead of Nuxt2.
+
+## Why Nuxt?
+
+Nuxt.js  provides server-side rendering, automatic routing, code organization, and pre-configured plugins. It also has a built-In static site generation.
+Nuxt 3 comes with several performance improvements, including faster server startup time and smaller bundle sizes.
+I think it is a nice tool, especially the auto routing and how flexible you can reuse the components, but it still lacks comprehensive documentation.
+
