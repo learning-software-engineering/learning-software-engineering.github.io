@@ -17,9 +17,12 @@
             3. Start expo
                 cd your_app_name
                 expo start
-        3. Run expo on your phone or computer
+        3. Running expo
             1. Phone
                 Open the expo go app and scan the QR Code after the "expo start" command
                 #Note: you can shake your phone or put three fingers on the screen to restart the app without closing the app and reopening it.
-            2. Computer
-                Open the localhost link inside the command after the "expo start" command
+            2. Emulator on PC
+                1. macOS
+                    You can try to use Xcode on your mac device and see live changes without using a mobile device
+                2. Windows
+                    You can run an ios emulator or android emulator using the React Native Tools installed earlier

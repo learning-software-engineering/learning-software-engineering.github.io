@@ -34,4 +34,4 @@
 
         git push origin master --force
 
-        #Note: Use with precaution because we are using the force push. So try to limit the usage of this to directly push codes to the master branch.
+        #Note: Use with precaution because we are using the force push. So try to limit the usage of this to directly push codes to the master branch. A great alternative would be using --force-with-lease because it does not overwrite any work on the master branch if more commits are added to the master branch. (In depth comparisons of force vs force-with-lease https://itnext.io/git-force-vs-force-with-lease-9d0e753e8c41)
