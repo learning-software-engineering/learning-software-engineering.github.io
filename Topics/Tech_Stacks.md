@@ -40,3 +40,8 @@ The query editor uses SOQL - [Salesforce Object Query Language](https://develope
 
 <img src="https://www.marksgroup.net/wp-content/uploads/2019/05/console1.png" width="500">
 
+### Image References:
+- https://blog.coupler.io/wp-content/uploads/2022/02/1-salesforce-api-setup.png
+- https://lh4.googleusercontent.com/qs95ISk2oMgxsg2jRGc34XGL7XlCigtrhLlKQHFiFnbHs-R87LPZn7zWPTDxAQkCogPxZtVeXe1quPx3gVl9MRsDZfcHVKZAv9sTUbIHsBJPzpAAUcnr6FFjP5crziQBhzQFTJEp
+- https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNRkGAZUW-jBmFZWukbBZbfayPEr2e-9uyGEY5GUOeeD22EXYR8PmxtiAHQnJgkwCaBmgpqFwUZKj4rGxPsEoN5hZCiN7J7rGr2AWqAWZVfJ5Okld5Cfnc3ZHewpmH61Lz9hqd4Pb12y1dPLVmeTxJm17PIM003-S9NQqAVcjQokKQmGVMjYOyMVbK/s993/Connected%20App%20Detail%20Page.jpg
+- https://www.marksgroup.net/wp-content/uploads/2019/05/console1.png
