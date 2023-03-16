@@ -17,17 +17,17 @@
 
 This article will specifically focus on the deployment of a new Django project. Primarily, this will serve as an initial introduction to some current popular hosting services (AWS, Vercel, and Railway), serving as more of a guide to understanding which platform is right for you and your team before. Once you feel confident on the platform that you wish to deploy on, we will then go into detail on how to successfully deploy your new Django project. After reading this article, you should hopefully have enough knowledge and resources to know which hosting service is best for you (and your team) and start deploying your Django project. 
 
-Note: For the sake of consistency, no prior knowledge of DevOps or deployment will be assumed. 
+*Note: For the sake of consistency, no prior knowledge of DevOps or deployment will be assumed.*
 
 ## A Guide to Choosing the Right Hosting Service
 
 ### Where to Start
 
-Deployment and DevOps can be a dreadful and daunting task for many. While starting from the beginning it is important to remember, that like any other skill, this will probably take many iterations of past failures before success. Given the vast array of popular hosting services, it is easy to get lost before you can even choose a hosting service. To ease this process, this article collates 3 free-to-use, prominent, and reliable hosting services based on functionality, ease-of-learning, and desirability to learn DevOps: Amazon Web Services (AWS), Vercel, and Railway.
+- Deployment and DevOps can be a dreadful and daunting task for many. While starting from the beginning it is important to remember, that like any other skill, this will probably take many iterations of past failures before success. Given the vast array of popular hosting services, it is easy to get lost before you can even choose a hosting service. To ease this process, this article collates 3 free-to-use, prominent, and reliable hosting services based on functionality, ease-of-learning, and desirability to learn DevOps: Amazon Web Services (AWS), Vercel, and Railway.
 
 ### Advantages and Disadvantages (AWS, Vercel, Railway)
 
-Each of the 3 hosting services focused on in this article have their own distinct advantages and disadvantages. To compare across these platforms, we will do so in a table format. Note that for the majority of these hosting platforms, you will need a GitHub Account, and a GitHub Repository with your Django Project on it.
+- Each of the 3 hosting services focused on in this article have their own distinct advantages and disadvantages. To compare across these platforms, we will do so in a table format. Note that for the majority of these hosting platforms, you will need a GitHub Account, and a GitHub Repository with your Django Project on it.
 
 It is highly suggested you read through the following table carefully to learn which service you and your team may prefer before continuing:
 
@@ -44,13 +44,13 @@ It is highly suggested you read through the following table carefully to learn w
 
 ### How to Decide on the Right Hosting Service
 
-Now that you have enough knowledge to know the pros and cons behind each hosting service, it is now time to proceed with one method. This section of the article will help you decide which hosting service is right for you.
+- Now that you have enough knowledge to know the pros and cons behind each hosting service, it is now time to proceed with one method. This section of the article will help you decide which hosting service is right for you.
 
-The following is a list of suggested steps and conversations you should have with both your team and your partner before deciding on which hosting platform to proceed with:
+- The following is a list of suggested steps and conversations you should have with both your team and your partner before deciding on which hosting platform to proceed with:
 
-1) Discuss with your partner if they would be willing to pay for hosting, especially for security reasons (how much are they willing to pay? Is that enough for a domain to host on AWS over HTTPS? Or can they pay enough to host on Railway provided you are not limited by their storage limit?)
-2) If you are using Django as a backend framework, discuss with the Frontend team on which web application protocol you will communicate over (HTTP or HTTPS?)
-3) Discuss the benefits and downfalls of each service with your DevOps/Backend team to come to a consensus on which platform you want to proceed with (are you using SQLite or another database service such as MongoDB? Can you expect the code to grow beyond what Vercel has? Can you expect your SQLite database to go beyond Railway’s storage limits? Are you willing to put in the time and effort to learn Docker and AWS the right way?)
+	1) Discuss with your partner if they would be willing to pay for hosting, especially for security reasons (how much are they willing to pay? Is that enough for a domain to host on AWS over HTTPS? Or can they pay enough to host on Railway provided you are not limited by their storage limit?)
+	2) If you are using Django as a backend framework, discuss with the Frontend team on which web application protocol you will communicate over (HTTP or HTTPS?)
+	3) Discuss the benefits and downfalls of each service with your DevOps/Backend team to come to a consensus on which platform you want to proceed with (are you using SQLite or another database service such as MongoDB? Can you expect the code to grow beyond what Vercel has? Can you expect your SQLite database to go beyond Railway’s storage limits? Are you willing to put in the time and effort to learn Docker and AWS the right way?)
 
 ## Deploying a Django Project on AWS
 
@@ -71,14 +71,14 @@ The following is a list of suggested steps and conversations you should have wit
 	
 	1) You have a GitHub repository with your Django project on it
 	2) You have a GitHub Token that authorises the sharing and deploying of that repository, [click here for more information on how to set this up](https://docs.github.com/en/enterprise-server@3.4/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
-	3) You have an AWS account, click here for more information on how to set this up
+	3) You have an AWS account, [click here for more information on how to set this up](https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account/)
 	4) Install `pip` and `virtualenv` before you begin, [click here for more information on how to set this up](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/)
 
 - Additionally, the following are tips that are recommended to encounter as little debugging as possible:
 
     1) Make your root directory for the project one level higher than the project files, as seen below:
     2) When making anything relating to your EC2 instance, ensure you note down the region of the AWS server you are working on (seen in the top right corner of the screen)
-    3) You can generate a `requirements.txt` file after activating your virtual environment by using the `pipreqs` package, click here to learn more about `pipreqs`
+    3) You can generate a `requirements.txt` file after activating your virtual environment by using the `pipreqs` package, [click here to learn more about `pipreqs`](https://pypi.org/project/pipreqs/)
     4) If you are encountering CORS/CSRF errors, [click here for potential solutions](https://stackoverflow.com/questions/38841109/csrf-validation-does-not-work-on-django-using-https)
 
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <centre>[![](https://markdown-videos.deta.dev/youtube/7O1H9kr1CsA)](https://youtu.be/7O1H9kr1CsA)</centre>
@@ -87,7 +87,7 @@ The following is a list of suggested steps and conversations you should have wit
 
 - To deploy on EB, the following video is highly recommended. Note that the following assumptions are made throughout this video and it ensure you meet them before starting the tutorial:
 	
-	1) You have an AWS account, click here for more information on how to set this up
+	1) You have an AWS account, [click here for more information on how to set this up](https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account/)
 	2) Install `pip` and `virtualenv` before you begin, [click here for more information on how to set this up](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/)
 
 - Additionally, the following are tips that are recommended to encounter as little debugging as possible:
@@ -123,7 +123,7 @@ The following is a list of suggested steps and conversations you should have wit
 	2) You have a GitHub Token that authorises the sharing and deploying of that repository, [click here for more information on how to set this up](https://docs.github.com/en/enterprise-server@3.4/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
 	4) Install `pip` and `virtualenv` before you begin, [click here for more information on how to set this up](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/)
 
-	Additionally, the following are tips that are recommended to encounter as little debugging as possible:
+- Additionally, the following are tips that are recommended to encounter as little debugging as possible:
 
 	1) If you are encountering CORS/CSRF errors, [click here for potential solutions](https://stackoverflow.com/questions/38841109/csrf-validation-does-not-work-on-django-using-https)
 
