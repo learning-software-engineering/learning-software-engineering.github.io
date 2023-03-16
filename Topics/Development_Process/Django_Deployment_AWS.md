@@ -8,11 +8,10 @@
 #### [How to Decide on the “Right” Hosting Service](#how-to-decide-on-the-right-hosting-service-1)
 ### [Deploying a Django Project on AWS](#deploying-a-django-project-on-aws-1)
 #### [EC2 vs. Elastic Beanstalk (EB)](#ec2-vs-elastic-beanstalk-eb-1)
-#### [Deploying on AWS: The Easy Way (EB)]()
-#### [Deploying on AWS: The Hard (But Better) Way (EC2)]()
-### [Alternatives to AWS]()
-#### [Railway]()
-#### [Vercel]()
+#### [Deploying on AWS: The Hard (but Better) Way (EC2)](#deploying-on-aws-the-hard-but-better-way-ec2-1)
+#### [Deploying on AWS: The Easy Way (EB)](#deploying-on-aws-the-easy-way-eb-1)
+### [Deploying A Django Project on Railway](#deploying-on-vercel-1)
+### [Deploying A Django Project on Vercel](#deploying-on-vercel-1)
 
 ## Introduction
 
@@ -66,7 +65,7 @@ The following is a list of suggested steps and conversations you should have wit
 
 - While both EC2 and EB have their own characteristics, it is important to note that the previously mentioned limitations to AWS applies to both of these.
 
-### Deploying on AWS: The Hard Way (EC2)
+### Deploying on AWS: The Hard (but Better) Way (EC2)
 
 - To deploy on EC2, the following video is highly recommended. Note that the following assumptions are made throughout this video and it ensure you meet them before starting the tutorial:
 	
@@ -82,7 +81,7 @@ The following is a list of suggested steps and conversations you should have wit
     3) You can generate a `requirements.txt` file after activating your virtual environment by using the `pipreqs` package, click here to learn more about `pipreqs`
     4) If you are encountering CORS/CSRF errors, [click here for potential solutions](https://stackoverflow.com/questions/38841109/csrf-validation-does-not-work-on-django-using-https)
 
-[![EC2 Tutorial](https://img.youtube.come/vi/7O1H9kr1CsA/0.jpg)](https://www.youtube.com/watch?v=7O1H9kr1CsA)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7O1H9kr1CsA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ### Deploying on AWS: The Easy Way (EB)
 
@@ -98,12 +97,9 @@ The following is a list of suggested steps and conversations you should have wit
 	3) You may need to set a third line on your `./ebextenstions/django.config` to the following line: `WSGIPath: <project_name>/wsgi.py`
 	4) If you are encountering CORS/CSRF errors, [click here for potential solutions](https://stackoverflow.com/questions/38841109/csrf-validation-does-not-work-on-django-using-https)
 
-[![EB Tutorial](https://img.youtube.come/vi/51YwXvJ9LOE/0.jpg)](https://www.youtube.com/watch?v=51YwXvJ9LOE)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/51YwXvJ9LOE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-
-## Alternatives to AWS
-
-### Railway
+## Deploying on Railway
 
 - To deploy on Railway, the following video is highly recommended. Note that the following assumptions are made throughout this video and it ensure you meet them before starting the tutorial:
 	
@@ -117,9 +113,9 @@ The following is a list of suggested steps and conversations you should have wit
     2) Ensure you carefully follow the static files and directory process carefully, this is very important and you should ensure your static files are loading (by checking for common HTML/CSS elements in default Django error/admin panel web pages). This is key and necessary for CORS/CSRF and are vital should you be communicating with a Frontend
     3) If you are encountering CORS/CSRF errors, [click here for potential solutions](https://stackoverflow.com/questions/38841109/csrf-validation-does-not-work-on-django-using-https)
 
-[![Railway Tutorial](https://img.youtube.come/vi/NUqtNglEcCU/0.jpg)](https://www.youtube.com/watch?v=NUqtNglEcCU)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NUqtNglEcCU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-### Vercel
+## Deploying on Vercel
 
 - To deploy on Railway, the following video is highly recommended. Note that the following assumptions are made throughout this video and it ensure you meet them before starting the tutorial:
 	
@@ -131,4 +127,4 @@ The following is a list of suggested steps and conversations you should have wit
 
 	1) If you are encountering CORS/CSRF errors, [click here for potential solutions](https://stackoverflow.com/questions/38841109/csrf-validation-does-not-work-on-django-using-https)
 
-[![Vercel Tutorial](https://img.youtube.come/vi/ZjVzHcXCeMU/0.jpg)](https://www.youtube.com/watch?v=ZjVzHcXCeMU)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZjVzHcXCeMU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
