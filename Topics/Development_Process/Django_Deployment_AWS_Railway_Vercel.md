@@ -81,7 +81,7 @@ The following is a list of suggested steps and conversations you should have wit
     3) You can generate a `requirements.txt` file after activating your virtual environment by using the `pipreqs` package, click here to learn more about `pipreqs`
     4) If you are encountering CORS/CSRF errors, [click here for potential solutions](https://stackoverflow.com/questions/38841109/csrf-validation-does-not-work-on-django-using-https)
 
-<centre>[![](https://markdown-videos.deta.dev/youtube/7O1H9kr1CsA)](https://youtu.be/7O1H9kr1CsA)</centre>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <centre>[![](https://markdown-videos.deta.dev/youtube/7O1H9kr1CsA)](https://youtu.be/7O1H9kr1CsA)</centre>
 
 ### Deploying on AWS: The Easy Way (EB)
 
@@ -97,7 +97,7 @@ The following is a list of suggested steps and conversations you should have wit
 	3) You may need to set a third line on your `./ebextenstions/django.config` to the following line: `WSGIPath: <project_name>/wsgi.py`
 	4) If you are encountering CORS/CSRF errors, [click here for potential solutions](https://stackoverflow.com/questions/38841109/csrf-validation-does-not-work-on-django-using-https)
 
-<centre>[![](https://markdown-videos.deta.dev/youtube/51YwXvJ9LOE)](https://youtu.be/51YwXvJ9LOE)</centre>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <centre>[![](https://markdown-videos.deta.dev/youtube/51YwXvJ9LOE)](https://youtu.be/51YwXvJ9LOE)</centre>
 
 ## Deploying a Django Project on Railway
 
@@ -113,7 +113,7 @@ The following is a list of suggested steps and conversations you should have wit
     2) Ensure you carefully follow the static files and directory process carefully, this is very important and you should ensure your static files are loading (by checking for common HTML/CSS elements in default Django error/admin panel web pages). This is key and necessary for CORS/CSRF and are vital should you be communicating with a Frontend
     3) If you are encountering CORS/CSRF errors, [click here for potential solutions](https://stackoverflow.com/questions/38841109/csrf-validation-does-not-work-on-django-using-https)
 
-<centre>[![](https://markdown-videos.deta.dev/youtube/NUqtNglEcCU)](https://youtu.be/NUqtNglEcCU)</centre>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <centre>[![](https://markdown-videos.deta.dev/youtube/NUqtNglEcCU)](https://youtu.be/NUqtNglEcCU)</centre>
 
 ## Deploying a Django Project on Vercel
 
@@ -127,4 +127,4 @@ The following is a list of suggested steps and conversations you should have wit
 
 	1) If you are encountering CORS/CSRF errors, [click here for potential solutions](https://stackoverflow.com/questions/38841109/csrf-validation-does-not-work-on-django-using-https)
 
-<centre>[![](https://markdown-videos.deta.dev/youtube/ZjVzHcXCeMU)](https://youtu.be/ZjVzHcXCeMU)</centre>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <centre>[![](https://markdown-videos.deta.dev/youtube/ZjVzHcXCeMU)](https://youtu.be/ZjVzHcXCeMU)</centre>
