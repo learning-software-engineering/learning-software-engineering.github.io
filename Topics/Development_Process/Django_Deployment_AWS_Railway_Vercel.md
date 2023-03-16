@@ -1,4 +1,4 @@
-# Django Project Deployment: An Introduction to AWS, Vercel, and Railway
+# Django Project Deployment: AWS, Vercel, and Railway
 
 ## Table of Contents:
 ### [Introduction](#introduction-1)
@@ -10,8 +10,8 @@
 #### [EC2 vs. Elastic Beanstalk (EB)](#ec2-vs-elastic-beanstalk-eb-1)
 #### [Deploying on AWS: The Hard (but Better) Way (EC2)](#deploying-on-aws-the-hard-but-better-way-ec2-1)
 #### [Deploying on AWS: The Easy Way (EB)](#deploying-on-aws-the-easy-way-eb-1)
-### [Deploying A Django Project on Railway](#deploying-on-vercel-1)
-### [Deploying A Django Project on Vercel](#deploying-on-vercel-1)
+### [Deploying A Django Project on Railway](#deploying-a-django-project-on-railway-1)
+### [Deploying A Django Project on Vercel](#deploying-a-django-project-on-vercel-1)
 
 ## Introduction
 
@@ -81,7 +81,7 @@ The following is a list of suggested steps and conversations you should have wit
     3) You can generate a `requirements.txt` file after activating your virtual environment by using the `pipreqs` package, click here to learn more about `pipreqs`
     4) If you are encountering CORS/CSRF errors, [click here for potential solutions](https://stackoverflow.com/questions/38841109/csrf-validation-does-not-work-on-django-using-https)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/7O1H9kr1CsA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<centre>[![](https://markdown-videos.deta.dev/youtube/7O1H9kr1CsA)](https://youtu.be/7O1H9kr1CsA)</centre>
 
 ### Deploying on AWS: The Easy Way (EB)
 
@@ -97,9 +97,9 @@ The following is a list of suggested steps and conversations you should have wit
 	3) You may need to set a third line on your `./ebextenstions/django.config` to the following line: `WSGIPath: <project_name>/wsgi.py`
 	4) If you are encountering CORS/CSRF errors, [click here for potential solutions](https://stackoverflow.com/questions/38841109/csrf-validation-does-not-work-on-django-using-https)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/51YwXvJ9LOE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<centre>[![](https://markdown-videos.deta.dev/youtube/51YwXvJ9LOE)](https://youtu.be/51YwXvJ9LOE)</centre>
 
-## Deploying on Railway
+## Deploying a Django Project on Railway
 
 - To deploy on Railway, the following video is highly recommended. Note that the following assumptions are made throughout this video and it ensure you meet them before starting the tutorial:
 	
@@ -113,9 +113,9 @@ The following is a list of suggested steps and conversations you should have wit
     2) Ensure you carefully follow the static files and directory process carefully, this is very important and you should ensure your static files are loading (by checking for common HTML/CSS elements in default Django error/admin panel web pages). This is key and necessary for CORS/CSRF and are vital should you be communicating with a Frontend
     3) If you are encountering CORS/CSRF errors, [click here for potential solutions](https://stackoverflow.com/questions/38841109/csrf-validation-does-not-work-on-django-using-https)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/NUqtNglEcCU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<centre>[![](https://markdown-videos.deta.dev/youtube/NUqtNglEcCU)](https://youtu.be/NUqtNglEcCU)</centre>
 
-## Deploying on Vercel
+## Deploying a Django Project on Vercel
 
 - To deploy on Railway, the following video is highly recommended. Note that the following assumptions are made throughout this video and it ensure you meet them before starting the tutorial:
 	
@@ -127,4 +127,4 @@ The following is a list of suggested steps and conversations you should have wit
 
 	1) If you are encountering CORS/CSRF errors, [click here for potential solutions](https://stackoverflow.com/questions/38841109/csrf-validation-does-not-work-on-django-using-https)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ZjVzHcXCeMU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<centre>[![](https://markdown-videos.deta.dev/youtube/ZjVzHcXCeMU)](https://youtu.be/ZjVzHcXCeMU)</centre>
