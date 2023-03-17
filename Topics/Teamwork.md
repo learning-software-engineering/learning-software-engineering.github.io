@@ -11,3 +11,5 @@ Resources for Jira:
 Beginner tutorial for Jira - https://www.youtube.com/watch?v=nHuhojfjeUY 
 
 Must Know Jira features - https://www.youtube.com/watch?v=issdcnErAU8 
+
+Written Article On Jira Workflows - https://support.atlassian.com/jira-work-management/docs/how-to-create-workflows/ 
