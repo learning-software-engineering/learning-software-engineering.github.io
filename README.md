@@ -39,9 +39,10 @@ Potential Topics--
         4. Deployment
             1. Heroku
             2. AWS
+                1. Django Project Deployment: AWS, Vercel and Railway
             3. Firebase
             4. Digital Ocean
-            5. 6. Software development best practices:
+            5. Software development best practices:
     1. Designer Patterns
     2. Clean Coding
         1. Choose a coding style and stick to it

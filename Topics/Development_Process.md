@@ -1,4 +1,7 @@
 ## Resources for Development Process
+
+### [Django Project Deployment: AWS, Vercel, and Railway](./Development_Process/Django_Deployment_AWS_Railway_Vercel.md)
+
 ## SOLID PRINCIPLES: 
 
 SOLID is a mnemonic acronym that represents a set of five very important software development principles which lead to code that is easier to read, maintain, and extend, leading to higher-quality software that is easier to evolve over time.
