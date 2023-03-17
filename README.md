@@ -9,6 +9,8 @@ Following files are present in this directory. You may contribute to any of thes
 Potential Topics--
 
 - Tech stacks
+    1. React Native
+        1. React Native Components (ScrollView)
 - Software Engineering
     1. Methodologies & Frameworks
         1. Agile
