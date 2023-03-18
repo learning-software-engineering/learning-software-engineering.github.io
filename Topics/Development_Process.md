@@ -3,7 +3,7 @@
 ### [Django Project Deployment: AWS, Vercel, and Railway](./Development_Process/Django_Deployment_AWS_Railway_Vercel.md)
 
 ## Build requirements
-### [Requirements.txt](./Development_Process/Build_Requirements/Requirement_txt.md)
+### [Requirements.txt](./Development_Process/Build_Requirements/Requirements_txt.md)
 
 ## SOLID PRINCIPLES: 
 
