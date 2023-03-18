@@ -9,7 +9,8 @@ Following files are present in this directory. You may contribute to any of thes
 Potential Topics--
 
 - Tech stacks
-    1. Nuxt3. 
+    1. [Nuxt3.] (Topics/Tech_Stacks/Nuxt3.md)
+        Nuxt.js  provides server-side rendering, automatic routing, code organization, and pre-configured plugins. It can be used to create applications quickly  and easily.
 - Software Engineering
     1. Methodologies & Frameworks
         1. Agile
