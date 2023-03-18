@@ -2,14 +2,11 @@
 
 ## **Introduction**
 
----
 
 `requirements.txt` is a crucial file in Python projects for managing dependencies. It lists all the packages required to run your project, including their specific versions. This file ensures consistency and simplifies the setup process for other developers working on the project.
 
 
 ## **How to use?**
-
----
 
 ### **Creating a requirements.txt file**
 
@@ -38,8 +35,6 @@ This command reads the packages and their versions from the **`requirements.txt`
 
 
 ## **Best Practices**
-
----
 
 1. **Use a virtual environment:** Always work within a virtual environment to isolate your project's dependencies from your system's global Python environment.
     
