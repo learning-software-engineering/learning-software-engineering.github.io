@@ -55,7 +55,9 @@ To learn more specifics, please see the resources below.
  
  To learn more about how to set up automated deployment with GitHub actions, please see the following articles:
  
- - Deploying with GitHub Actions: https://docs.github.com/en/actions/deployment/about-deployments/deploying-with-github-actions
+ - Deploying with GitHub Actions: 
+   - https://docs.github.com/en/actions/deployment/about-deployments/deploying-with-github-actions
+   - https://techblog.geekyants.com/github-actions-for-automating-builds-for-your-app
  
  - Deployment to Expo: 
    - https://github.com/marketplace/actions/expo-github-action
