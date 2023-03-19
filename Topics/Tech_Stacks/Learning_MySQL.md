@@ -1,5 +1,12 @@
 # Learning MySQL
 
+## Table of contents
+### [Introduction](#introduction-1)
+### [MySQL vs other DBMSs](#mysql-vs-other-dbmss-1)
+### [MySQL client installation and basic operations](#mysql-client-installation-and-basic-operations-1)
+### [MySQL integration](#mysql-integration-1)
+### [Additional Resources](#additional-resources-1)
+
 ## Introduction
 
 The following is an introduction to MySQL with some resources to get started. *This article assumes that the reader has some knowledge about Structured Query Languages (SQL). For more information about SQL in general, you can check out [this link](https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-vs-mysql/)*. A relational database management system (RDBMS) which is used to implement databases for any general application. MySQL is one of the most popular DBMSs because it is flexible, secure, and has high performance. For more details, [click here](https://www.hostinger.com/tutorials/what-is-mysql).
@@ -66,6 +73,8 @@ In order to connect to the database using Python, you need to use a database dri
 
 For more detailed steps, check out [this link](https://realpython.com/python-mysql/)
 
+## Additional Resources
 
-
-
+* To use MySQL with PHP, refer to [this tutorial](https://www.mysqltutorial.org/php-mysql/) by MySQLTUTORIAL
+* To see examples of using the MySQL client, refer to [this link](https://dev.mysql.com/doc/mysql-tutorial-excerpt/8.0/en/examples.html)
+* To troubleshoot the client, refer to [this link](https://dev.mysql.com/doc/refman/8.0/en/problems.html), where it gives instructions on how to find [problem](https://dev.mysql.com/doc/refman/8.0/en/what-is-crashing.html) and also lists [common errors](https://dev.mysql.com/doc/refman/8.0/en/common-errors.html)
