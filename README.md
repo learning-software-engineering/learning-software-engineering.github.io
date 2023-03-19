@@ -9,6 +9,9 @@ Following files are present in this directory. You may contribute to any of thes
 Potential Topics--
 
 - Tech stacks
+    1. Databases
+        1. MySQL
+        2. MongoDB
 - Software Tools
     1. Git
         1. Git Workflows
