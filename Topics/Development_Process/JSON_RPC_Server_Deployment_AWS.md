@@ -56,7 +56,7 @@ After implementing some functions, you may wonder how others in the public domai
 As long as the SSH terminal is open, the server will keep waiting for requests and will respond. However, once the SSH is terminated, the server will shut down along with it. We can use a scheduler on AWS to keep the instance running. In addition, we can also use the following simple method on SSH:
 
 1. Connect to your EC2 instance.
-2. Install "screen" by running the command: 
+2. Install "screen" by running the command (if ```apt-get``` doesn't work, try ```yum```): 
     ```
      sudo apt-get update
      sudo apt-get install screen
