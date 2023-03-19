@@ -16,12 +16,12 @@ When choosing a database management system, there may be a lot of options. here 
 ## MySQL client installation
 
 To use the client for database configuration, do the following steps:
-1) Download the client
-  i) **Linux**
-  Follow the instructions on this [this link](https://dev.mysql.com/doc/refman/8.0/en/linux-installation.html). For users using Debian or Ubuntu, use the [APT documentation here](https://dev.mysql.com/doc/mysql-apt-repo-quick-guide/en/#apt-repo-fresh-install) and follow the 3 steps.
-  ii) **Windows**
-  Follow the instructions on [this link](https://dev.mysql.com/doc/refman/5.7/en/windows-installation.html#windows-installation-simple) which provides 3 steps in order to complete this step using an installer. 
-  iii) **macOS**
+1) Download the client <br />
+  i) **Linux** <br />
+  Follow the instructions on this [this link](https://dev.mysql.com/doc/refman/8.0/en/linux-installation.html). For users using Debian or Ubuntu, use the [APT documentation here](https://dev.mysql.com/doc/mysql-apt-repo-quick-guide/en/#apt-repo-fresh-install) and follow the 3 steps. <br />
+  ii) **Windows** <br />
+  Follow the instructions on [this link](https://dev.mysql.com/doc/refman/5.7/en/windows-installation.html#windows-installation-simple) which provides 3 steps in order to complete this step using an installer. <br />
+  iii) **macOS** <br />
   Follow steps 1-8 from [this link](https://dev.mysql.com/doc/refman/8.0/en/macos-installation-pkg.html) which shows you how to nagivate the Installer Wizard.
 
 
