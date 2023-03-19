@@ -25,3 +25,21 @@ ___Color Theory___
 ### Helpful Courses
 
 There are many courses related to User Experience. This includes the U of T Course [The Design of Interactive Computational Media](https://artsci.calendar.utoronto.ca/course/csc318h1) which is highly recommended if interested in this topic. [The Design of Interactive Computational Media](https://artsci.calendar.utoronto.ca/course/csc318h1) expands on the work done before coding projects. For example, one of the projects is testing how users would interact with a prototype of a UI and modifying it so that the UX is better for the user.
+
+### How to develop user-firendly interfaces
+A well-designed user interface will largely improve user experience in many ways. However, this requires a lot of programmers efforts. Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains HTML, CSS and (optionally) JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.
+
+By learning how to utilize Bootstrap efficiently, you will save a great amount of time not only on debugging your code, but also on how to develop user friendly web pages.
+
+Basically, what Bootstrap does is that it contains many classes that defined by itself so that you can just use that class when needed, more importantly, it reduced your redundancy and provides responsive design.
+
+You can see the web pages developed by Bootstrap below:
+
+- [Bootstrap official examples including different components](https://getbootstrap.com/docs/4.0/examples/)
+- [Some real websites with Bootstrap](https://adminlte.io/blog/websites-made-with-bootstrap/)
+
+For Bootstrap tutorial, I recommend -[w3schools Bootstrap](https://www.w3schools.com/bootstrap5/), the tutorial starts from the very beginning and don't wory if you are new to front-end development.
+You can even modify the template it showed in examples to see whether you did the right job.
+
+Also, if you feel a bit confused about how the code works, check the video tutorials on Youtube, there are tons of them and most are really easy to understand.
+- [recommended video](https://www.youtube.com/watch?v=O_9u1P5YjVc&list=PL4cUxeGkcC9joIM91nLzd_qaH_AimmdAR): This one contains multiple short videos and talks about basic stuff, recommended for beginners.
