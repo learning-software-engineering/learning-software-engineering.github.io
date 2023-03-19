@@ -59,6 +59,7 @@ Potential Topics--
         
         
 - User Experience
+    1. iteration process 
 - Product Management
 - Other useful resources
 - Teamwork
