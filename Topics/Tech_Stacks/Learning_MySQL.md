@@ -15,7 +15,7 @@ When choosing a database management system, there may be a lot of options. here 
 
 ## MySQL client installation and basic operations
 
-To use the client for database configuration, do the following steps:
+The following is a summary from [this guide](https://dev.mysql.com/doc/mysql-getting-started/en/) which has many details, but here are the following steps:
 1) Download the client <br />
   i) **Linux** <br />
     Follow the instructions on this [this link](https://dev.mysql.com/doc/refman/8.0/en/linux-installation.html). For users using Debian or Ubuntu, use the [APT documentation here](https://dev.mysql.com/doc/mysql-apt-repo-quick-guide/en/#apt-repo-fresh-install) and follow the 3 steps. <br />
@@ -26,7 +26,7 @@ To use the client for database configuration, do the following steps:
 2) Connect to the MySQL server using the mysql client <br />
   i) **Linux Based Systems** <br />
     Enter the following in the command line terminal <br />
-    > $`>` mysql -u root -p
+    > $`>` mysql -u root -p <br />
   ii) **Windows** <br />
     Go to **Start, All Programs, MySQL, MySQL 5.7 Command Line Client (or MySQL 8.0 Command Line Client, respectively)**
 3) Run SQL statements to create schemas and run operations. Here are some examples
@@ -35,7 +35,23 @@ To use the client for database configuration, do the following steps:
   * Adding records into a table using [INSERT...VALUES](https://dev.mysql.com/doc/refman/8.0/en/insert.html) statement
   * Use a [DELETE](https://dev.mysql.com/doc/refman/8.0/en/delete.html) statement to delete a record from a table
 
-For the fully detailed version of these steps, click [this link](https://dev.mysql.com/doc/mysql-getting-started/en/)
+## MySQL integration
+
+There are many environments that can integrate a MySQL database. Here is how to do it in Node.js and Python
+
+### MySQL database connection to Node.js
+
+Assuming that npm and node is installed (click here for [npm instructions](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm), use the following commands in the terminal
+* `npm init -y`
+* `npm install mysql`
+* In your mysql client use the database command `CREATE DATABASE databaseName;` to create a database to connect to
+* In your .js file, use `import 'mysql';`
+* Use `let connection = mysql.createConnection({host: 'localhost', user: 'root', password: '', database: 'databaseName'});` in the .js file to connect to the database server. The host, user, and password parameters can be changed to your specific usage. 
+* Use the form `connection.connect(function(err) {...});` to connect to the database, where the ... represents your error checking method incase the connection fails. 
+* To close the connection, use the form `connection.end(function(err) {...});` where ... represents the error checking method of your choice. 
+
+For more detailed steps, check out [this link](https://www.mysqltutorial.org/mysql-nodejs/connect/)
+
 
 
 
