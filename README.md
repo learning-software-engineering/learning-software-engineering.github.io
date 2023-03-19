@@ -12,6 +12,10 @@ Potential Topics--
     1. [Nuxt3](https://github.com/IbrahimBess/learning-software-engineering.github.io/blob/patch-2/Topics/Tech_Stacks/Nuxt3.md)
           
         Nuxt.js provides server-side rendering, automatic routing, code organization, and pre-configured plugins. It can be used to create applications quickly  and easily.
+
+- Software Tools
+    1. Git
+        1. Git Workflows
 - Software Engineering
     1. Methodologies & Frameworks
         1. Agile
@@ -62,6 +66,9 @@ Potential Topics--
         
         
 - User Experience
+    1. Overview
+    2. Areas of User Experience
+    3. Helpful Courses
 - Product Management
 - Other useful resources
 - Teamwork
