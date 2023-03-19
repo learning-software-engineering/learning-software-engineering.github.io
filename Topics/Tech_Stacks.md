@@ -1,5 +1,6 @@
 ## Tech Stacks
 
+### [Learning MySQL for databases](./Tech_Stacks/Learning_MySQL.md)
 
 ## <img src="https://nuxt.com/assets/design-kit/logo/icon-green.svg" alt="My Icon" width="30" height="25"> Learn How to Create a Nuxt3 App
 If you are looking for tutorials or documentation on creating a Nuxt3 application, be aware that many resources actually teach Nuxt2. It is important to note that Nuxt3 installation and syntax differ significantly from Nuxt2. As I faced this challenge myself, I would like to share a helpful YouTube tutorial that provides step-by-step instructions for creating a Nuxt3 app.
@@ -18,4 +19,3 @@ Make sure to select Nuxt3 instead of Nuxt2.
 Nuxt.js  provides server-side rendering, automatic routing, code organization, and pre-configured plugins. It also has a built-In static site generation.
 Nuxt 3 comes with several performance improvements, including faster server startup time and smaller bundle sizes.
 I think it is a nice tool, especially the auto routing and how flexible you can reuse the components, but it still lacks comprehensive documentation.
-
