@@ -5,6 +5,9 @@
 ## Build requirements
 ### [Requirements.txt](./Development_Process/Build_Requirements/Requirements_txt.md)
 
+## React Testing Library
+### [React Testing Library](./Development_Process/React_Testing_Library.md)
+
 ## SOLID PRINCIPLES: 
 
 SOLID is a mnemonic acronym that represents a set of five very important software development principles which lead to code that is easier to read, maintain, and extend, leading to higher-quality software that is easier to evolve over time.
