@@ -21,7 +21,7 @@ After implementing some functions, you may wonder how others in the public domai
   
   The specifics of the JSON-RPC server code will depend on the requirements of your application and the tools and programming language you are using to create the server. 
   
-## Procedure
+## Procedures
 
 ### Step 1: Setting up the virtual machine on AWS
 
@@ -51,7 +51,7 @@ After implementing some functions, you may wonder how others in the public domai
 - Test the JSON-RPC server to ensure that it is working properly. You can use a tool like ```curl``` to send requests to the server and check the responses.
 
 
-### Step 5: How to keep the EC2 instance running after SSH is terminated using the “screen” command?
+### Step 4: How to keep the EC2 instance running after SSH is terminated using the “screen” command?
 
 As long as the SSH terminal is open, the server will keep waiting for requests and will respond. However, once the SSH is terminated, the server will shut down along with it. We can use a scheduler on AWS to keep the instance running. In addition, we can also use the following simple method on SSH:
 
@@ -75,7 +75,7 @@ As long as the SSH terminal is open, the server will keep waiting for requests a
 
 With this setup, your application will continue running even after your SSH session is terminated, as long as your EC2 instance is still running.
 
-### Step 6: How to end a screen session?
+### Step 5: How to end a screen session?
 
 If you want to shut down your server without stopping the EC2 instance, here's the procedure:
 
