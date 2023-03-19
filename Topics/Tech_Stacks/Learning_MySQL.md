@@ -13,15 +13,29 @@ When choosing a database management system, there may be a lot of options. here 
 * Vs. MongoDB
   * MongoDB is a NoSQL database, meaning that it does not follow SQL rules and schemas and instead uses JSON rules to store data. Therefore it is more flexible. It is also geared towards write performance and is better for [real time applications](https://www.simplilearn.com/tutorials/mongodb-tutorial/mongodb-vs-mysql#:~:text=MySQL%20is%20an%20excellent%20choice,and%20other%20types%20of%20applications.)
 
-## MySQL client installation
+## MySQL client installation and basic operations
 
 To use the client for database configuration, do the following steps:
 1) Download the client <br />
   i) **Linux** <br />
-  Follow the instructions on this [this link](https://dev.mysql.com/doc/refman/8.0/en/linux-installation.html). For users using Debian or Ubuntu, use the [APT documentation here](https://dev.mysql.com/doc/mysql-apt-repo-quick-guide/en/#apt-repo-fresh-install) and follow the 3 steps. <br />
+    Follow the instructions on this [this link](https://dev.mysql.com/doc/refman/8.0/en/linux-installation.html). For users using Debian or Ubuntu, use the [APT documentation here](https://dev.mysql.com/doc/mysql-apt-repo-quick-guide/en/#apt-repo-fresh-install) and follow the 3 steps. <br />
   ii) **Windows** <br />
-  Follow the instructions on [this link](https://dev.mysql.com/doc/refman/5.7/en/windows-installation.html#windows-installation-simple) which provides 3 steps in order to complete this step using an installer. <br />
+    Follow the instructions on [this link](https://dev.mysql.com/doc/refman/5.7/en/windows-installation.html#windows-installation-simple) which provides 3 steps in order to complete this step using an installer. <br />
   iii) **macOS** <br />
-  Follow steps 1-8 from [this link](https://dev.mysql.com/doc/refman/8.0/en/macos-installation-pkg.html) which shows you how to nagivate the Installer Wizard.
+    Follow steps 1-8 from [this link](https://dev.mysql.com/doc/refman/8.0/en/macos-installation-pkg.html) which shows you how to nagivate the Installer Wizard.
+2) Connect to the MySQL server using the mysql client <br />
+  i) **Linux Based Systems** <br />
+    Enter the following in the command line terminal <br />
+    > $`>` mysql -u root -p
+  ii) **Windows** <br />
+    Go to **Start, All Programs, MySQL, MySQL 5.7 Command Line Client (or MySQL 8.0 Command Line Client, respectively)**
+3) Run SQL statements to create schemas and run operations. Here are some examples
+  * Creating a new database.  Use a [CREATE DATABASE](https://dev.mysql.com/doc/refman/8.0/en/show-databases.html) statement
+  * Create a table with a [CREATE TABLE](https://dev.mysql.com/doc/refman/8.0/en/create-table.html) statement
+  * Adding records into a table using [INSERT...VALUES](https://dev.mysql.com/doc/refman/8.0/en/insert.html) statement
+  * Use a [DELETE](https://dev.mysql.com/doc/refman/8.0/en/delete.html) statement to delete a record from a table
+
+For the fully detailed version of these steps, click [this link](https://dev.mysql.com/doc/mysql-getting-started/en/)
+
 
 
