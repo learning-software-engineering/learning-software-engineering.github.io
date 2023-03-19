@@ -25,7 +25,7 @@ After implementing some functions, you may wonder how others in the public domai
 
 ### Step 1: Setting up the virtual machine on AWS
 
-- After acquiring an account on AWS, we will need to create and launch an EC2 instance, which is a web service that provides resizable compute capacity in the cloud. It is essentially a server, and you can upload your code for the JSON-RPC server code onto EC2 and run it using AWS console or SSH on your terminal. To initialize and launch the EC2 instance, please follow this guide as it provides step-by-step procedures and explanations of different options during the setup. https://www.analyticsvidhya.com/blog/2023/01/launching-your-first-linux-ec2-instance/
+- After acquiring an account on AWS, we will need to create and launch an EC2 instance, which is a web service that provides resizable compute capacity in the cloud (a virtual machine). It is essentially a server, and you can upload your code for the JSON-RPC server code onto EC2 and run it using AWS console or SSH on your terminal. To initialize and launch the EC2 instance, please follow this guide as it provides step-by-step procedures and explanations of different options during the setup. https://www.analyticsvidhya.com/blog/2023/01/launching-your-first-linux-ec2-instance/
 
 ### Step 2: Connecting to the virtual machine
 
