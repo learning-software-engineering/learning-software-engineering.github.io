@@ -1,6 +1,7 @@
 ## Resources for Development Process
 
 ### [Django Project Deployment: AWS, Vercel, and Railway](./Development_Process/Django_Deployment_AWS_Railway_Vercel.md)
+### [JSON RPC Server Deployment on Amazon Web Services](./Development_Process/JSON_RPC_Server_Deployment_AWS.md)
 
 ## Build requirements
 ### [Requirements.txt](./Development_Process/Build_Requirements/Requirements_txt.md)
