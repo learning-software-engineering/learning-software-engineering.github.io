@@ -58,5 +58,7 @@ information you would like to learn about, there are some useful articles and re
 
 ### Articles and Resources
 [Overview of Postman](https://learning.postman.com/docs/introduction/overview/)  
-[Postman Map](https://www.guru99.com/postman-tutorial.html)
+[Postman Map](https://www.guru99.com/postman-tutorial.html)  
+[Tutorial](https://www.guru99.com/postman-tutorial.html](https://www.tutorialspoint.com/postman/index.htm)
+
 
