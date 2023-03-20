@@ -16,17 +16,19 @@ Written Article On Jira Workflows - https://support.atlassian.com/jira-work-mana
 
 
 # Examples of Modern Task Management Methodologies
-- Agile
-Agile is a task management methodology that is widely used in modern software development. It emphasizes flexibility, collaboration, and continuous improvement. Agile methodology focuses on delivering software features in small increments, which are known as sprints or iterations. At the start of each sprint, the team identifies the tasks that need to be completed and assigns them to team members. The team then works together to complete the tasks within the sprint period. The detailed executions may differ in different teams and projects, but there are several key principles to follow:
-  1.Prioritizing tasks based on customer value: Agile task management focuses on delivering the highest value features first, rather than trying to complete all tasks   at once.
-  2.Collaboration and communication: Agile emphasizes close collaboration between team members, with frequent meetings and communication to ensure that everyone is on   the same page.
-  3.Iterative development: Agile tasks are completed in small iterations(sprints), allowing for continuous feedback and improvement.
-  4.Flexibility: Agile recognizes that requirements and priorities are subject to be changed, and allows for adjustments throughout the project.
-The number of teams practicing agile in organizations has grown significantly in the past years, and agile knowledge has become a factor of consideration in recruiting processes. 
-To learn more about Agile in text: https://www.tutorialspoint.com/agile/index.htm
-To learn more about Agile in video: https://www.youtube.com/watch?v=wmJfx7zAfQI&feature=youtu.be
-
-- Waterfall
-Waterfall is a traditional project management methodology that involves a linear, sequential approach to task management. In this approach, tasks are completed in a specific order, with each task depending on the completion of the previous task. While it is very useful for projects with well-defined requirements and a clear plan, it is much less flexible than Agile, and is also less popular in modern software development.
-To learn more about Waterfall in text:https://business.adobe.com/blog/basics/waterfall
-To learn more about Waterfall in video:https://www.youtube.com/watch?v=cYzuzwQEZCg
+<h2>Agile</h2>
+<p>Agile is a task management methodology that is widely used in modern software development. It emphasizes flexibility, collaboration, and continuous improvement. Agile methodology focuses on delivering software features in small increments, which are known as sprints or iterations. At the start of each sprint, the team identifies the tasks that need to be completed and assigns them to team members. The team then works together to complete the tasks within the sprint period. The detailed executions may differ in different teams and projects, but there are several key principles to follow:</p>
+  <p>1.Prioritizing tasks based on customer value: Agile task management focuses on delivering the highest value features first, rather than trying to complete all tasks   at once.</p>
+  <p>2.Collaboration and communication: Agile emphasizes close collaboration between team members, with frequent meetings and communication to ensure that everyone is on   the same page.</p>
+  <p>3.Iterative development: Agile tasks are completed in small iterations(sprints), allowing for continuous feedback and improvement.</p>
+  <p>4.Flexibility: Agile recognizes that requirements and priorities are subject to be changed, and allows for adjustments throughout the project.</p>
+<p>The number of teams practicing agile in organizations has grown significantly in the past years, and agile knowledge has become a factor of consideration in recruiting processes. </p>
+<p>To learn more about Agile in text: https://www.tutorialspoint.com/agile/index.htm</p>
+<p>To learn more about Agile in video: https://www.youtube.com/watch?v=wmJfx7zAfQI&feature=youtu.be
+</p>
+<h2>Waterfall</h2>
+<p>
+Waterfall is a traditional project management methodology that involves a linear, sequential approach to task management. In this approach, tasks are completed in a specific order, with each task depending on the completion of the previous task. While it is very useful for projects with well-defined requirements and a clear plan, it is much less flexible than Agile, and is also less popular in modern software development.</p>
+<p>To learn more about Waterfall in text:https://business.adobe.com/blog/basics/waterfall</p>
+<p>To learn more about Waterfall in video:https://www.youtube.com/watch?v=cYzuzwQEZCg</p>
+</p>
