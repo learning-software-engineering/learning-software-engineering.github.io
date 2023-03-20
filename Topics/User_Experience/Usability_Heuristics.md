@@ -56,4 +56,13 @@ It is better if a system can be easily used without documentation, but it may be
 
 **Example:** A web application has a "help" tab with detailed instructions and documentation. 
 
+## **Additional Resources**
+
+Heuristics Applied to Videogames: https://www.nngroup.com/articles/usability-heuristics-applied-video-games/
+
+Heuristics for Web Applications: http://designingwebinterfaces.com/6-tips-for-a-great-flex-ux-part-5
+
+Heuristics Applied to Everyday Life: https://www.zenhaiku.com/archives/usability_applied_to_life.html
+
+
 
