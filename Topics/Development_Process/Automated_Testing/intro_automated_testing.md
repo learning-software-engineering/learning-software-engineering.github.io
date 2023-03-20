@@ -12,10 +12,22 @@
 ## Disadvantages of automated testing 
 - Less flexible to handle complex and nuanced test scenarios
 - Can't and shouldn't be used to test cases that occur infrequently, are high risk, or are subject to change
-## Category of Automated Testing
+## [Types of Automated Testing](https://prolifics.com/types-of-automated-testing/)
+There are many automated testing methods like unit testing, functional testing, smoke testing, regression testing and integration testing. We will look more into unit testing and integration testing in this article.
+### Unit Testing:
+- Unit testing contains tests that focus on testing on individual components or functions in "isolation" at the most foundational level.
+- Used to show if a single function or component of the application will produce the desired outputs or perform the way as expected.
+- Benefits: safe, clear, efficient and reliable.
+- Mostly first type of automated testing done for an application. And usually before integration testing.
+- Consult [this link](https://www.aha.io/roadmapping/guide/agile/what-is-unit-testing?utm_source=google&utm_medium=cpc&utm_campaign=dsa+-+all+-+primary+locations+-+all&utm_content=all+webpages&utm_term=&matchtype=&device=c&devicemodel=&gclid=CjwKCAjwiOCgBhAgEiwAjv5whGZQTKVVcfyrv-fEJJdjgPE20LX48944-fsrE92ajwX8CRulnuC3zxoC9mwQAvD_BwE&gclid=CjwKCAjwiOCgBhAgEiwAjv5whGZQTKVVcfyrv-fEJJdjgPE20LX48944-fsrE92ajwX8CRulnuC3zxoC9mwQAvD_BwE) for more information
+### Integration Testing:
+- Usually takes place after Unit Testing.
+- Software modules are integrated logically and tested as a group within integration testing.
+- Because different modules could be developed by different people, its purpose is to expose defects in the interaction between these software modules when they are integrated.
+- Integration Testing focuses mainly on the interfaces & flow of data/information between the modules. Its priority is to be given for the integrating "links".
+- Consult [this link](https://www.guru99.com/integration-testing.html) for more information
+## More Article And Video Links
 ### [Unit Testing](https://smartbear.com/learn/automated-testing/what-is-unit-testing/)
-A unit test is a way of testing a unit - the smallest piece of code that can be logically isolated in a system.
-
 [![Watch the video](https://img.youtube.com/vi/iWtxEDE1IR4/hqdefault.jpg)](https://www.youtube.com/watch?v=iWtxEDE1IR4)
 ### [Functional Testing](https://smartbear.com/solutions/functional-testing)
 [![Watch the video](https://img.youtube.com/vi/IGnZHgjU42Y/hqdefault.jpg)](https://www.youtube.com/watch?v=IGnZHgjU42Y)
