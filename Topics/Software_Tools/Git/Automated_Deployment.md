@@ -1,8 +1,13 @@
 # Resources for GitHub Actions Automated Deployment
 
-<!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; is being used to create tabs -->
+## Table of Contents:
+ - ### [What is Automated Deployment](#what-is-automated-deployment-why-is-it-important)
+ - ### [How is Automated Deployment Used](#how-is-automated-deployment-used)
+ - ### [Software Examples](#examples-of-common-automated-deployment-cicd-software)
+ - ### [How to Setup Automated Deployment with GitHub Actions](#how-to-set-up-automated-deployment-with-github-actions)
+_____
 
- ### What is Automated Deployment? Why is it Important?
+ ## What is Automated Deployment? Why is it Important?
  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; According to the Google Cloud Automation Center, Automated Deployment is "what enables you to deploy your software to testing and production environments with the push of a button." Automated deployment is a set of scripts that perform the following actions: prepare the target environment (installing/configuring any software needed), deploying the build packages created by continuous integration (this will be discussed more in the next part), run deployment tasks such as migrating databases, perform tests on the deployment to ensure it is functioning and accessable.
 
@@ -14,7 +19,7 @@
  
  ______
  
- ### How is Automated Deployment Used
+ ## How is Automated Deployment Used
  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Automated Deplyment requires CI/CD to be used. CI stands for continuous integration, and CD stands for continuous delivery _or_ continuous deployment (note, there is a difference between these two). Continuous Integration ensures that the new code is ready to be deployed, and continuous delivery or deployment uses automated deployment to deploy to either staging/testing environments or a production environment, respectively.
  
@@ -37,7 +42,7 @@ To learn more about CI/CD, please see the following article from Atlassian, an e
 
 ______
 
- ### Examples of Common Automated Deployment Software
+ ## Examples of Common Automated Deployment (CI/CD) Software
  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Atlassian recommends using Bitbucket Pipelines (https://bitbucket.org/product/features/pipelines), which is their "CI/CD tool that's integrated into Bitbucket Cloud," their version of GitHub (https://bitbucket.org/product/). BitBucket provides extended CI/CD features that allow you to integrate with Jira, a task management software by Atlassian. 
 
@@ -57,7 +62,7 @@ Overall, the service you choose depends on the application you are building, you
 
 ____
 
- ### How to Set Up Automated Deployment with GitHub Actions
+ ## How to Set Up Automated Deployment with GitHub Actions
  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Here is an example of a workflow that automates deployment and breaks down the steps: https://techblog.geekyants.com/github-actions-for-automating-builds-for-your-app
  
