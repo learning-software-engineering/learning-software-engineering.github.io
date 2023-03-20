@@ -38,4 +38,18 @@ When deciding the necessary points to allocate to a story, there are generally 3
 
 These factors are not hard considerations, but some of the most common to consider in these situations.
 
-### Additional Details
+### Example User Story
+
+By combining all of the sections above, we can create the following example user story:
+
+---
+
+**Title:** Example User Story
+
+**Points:** 5
+
+**User Story:** As a \<type of user\>, I want \<some goal\>, so that \<some reason\>
+
+**Acceptance Criteria:** Given \<some condition\>, when \<some action is carried out\>, the \<a set of observable outcomes should occur\>
+
+---
