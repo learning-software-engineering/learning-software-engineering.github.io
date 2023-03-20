@@ -6,7 +6,7 @@
 
 ## Introduction
 
-Do you want to use a NoSQL database(DB)? Then you can use firebase Realtime DB. However, using the Firebase Firestore Database is better to use for long term data storage. But for starters, learning Firebase Realtime DB is essential.
+Do you want to use a NoSQL database (DB)? Then you can use firebase Realtime DB. However, using the Firebase Firestore Database is better to use for long term data storage. But for starters, learning Firebase Realtime DB is essential.
 The data in firebase realtime database is stored in JSON-like objects. 
 
 What is NoSQL Database? It is a database that does not have the stringency and rules of a SQL database. NoSQL database is more commonly used when you are handling a lot of data that might not have a perfect structure (unstructured or semi-structured).
@@ -14,6 +14,7 @@ What is NoSQL Database? It is a database that does not have the stringency and r
 To set up firebase, first, you will need to login to [Firebase](https://firebase.google.com/), click the console button on the top right corner, create a new project as instructed, under build, click on Realtime Database.
 
 ## Step By Step Tips
+
 I will demosntrate tips to get started on the firebase realtime database using the example below:
 
 To store values in the firebase realtimeDB, you must first have your project front end in place. Then, you will create a JS file, and start writing code in that file to create a connection to the database, similar to the structure of the code below: 

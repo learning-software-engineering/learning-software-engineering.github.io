@@ -5,7 +5,9 @@
 ## Build requirements
 ### [Requirements.txt](./Development_Process/Build_Requirements/Requirements_txt.md)
 
-### [Firebase Hosting](./Development_Process/evelopment_Process/firebase/firebase_hosting.md)
+## Firebase
+
+### [Firebase Hosting](./Development_Process/firebase/firebase_hosting.md)
 
 ### [Firebase Authentication](./Development_Process/firebase/firebase_authentication.md)
 

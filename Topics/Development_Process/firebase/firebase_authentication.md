@@ -12,7 +12,8 @@ First, you will need to login to [Firebase](https://firebase.google.com/), click
 
 
 ## External Resources
-Below is a tutorial in learning the firebase authentication. 
+Below is a tutorial in learning the firebase authentication on websites. 
 You can perform authentication of the users using Email and Password, Facebook, google, and much more. See the website tutorial for more details.
 
 [Firebase Authentication](https://firebase.google.com/docs/auth/web/start )
+
