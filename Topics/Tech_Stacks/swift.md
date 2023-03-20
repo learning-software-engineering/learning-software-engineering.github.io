@@ -1,4 +1,14 @@
 # Building Apple Native Software Using Swift and SwiftUI
+
+## Table of contents
+### [Introduction](#introduction-1)
+### [Why Use Swift?](#why-use-swift-1)
+### [What is SwiftUI?](#what-is-swiftui-1)
+### [Starting a Swift Project](#starting-a-swift-project-1)
+### [Testing Your App](#testing-your-app-1)
+### [Other Useful Resources](#other-useful-resources-1)
+
+## Introduction
 Swift is a modern, open-source programming language developed by Apple as a replacement to their earlier language, Objective-C.
 
 It can be used on Mac devices to develop software that target all Apple platforms: iOS, macOS, watchOS, and tvOS, while being deeply
