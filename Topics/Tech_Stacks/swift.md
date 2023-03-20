@@ -53,3 +53,11 @@ you can use to run your code and see how it performs. You can also download new 
 different scenarios, such as an iPhone 11 running iOS 13.
 
 If you have your own Apple device, you can also connect it to your Mac device and run your app on it for testing. Note that as of iOS 14, from your device, you will have to first go to `Settings` > `Privacy & Security` > `Developer Mode` first to allow your device to run apps downloaded from Xcode.
+
+## Other Useful Resources
+[Learn about the different data types in Swift](https://www.hackingwithswift.com/read/0/3/types-of-data). Each language has its own nuances in how
+variables are declared and stored, useful to become familiar with it before starting to code.
+
+[SwiftUI has many property wrappers that provide different functionality to the object instances they are attached to](https://www.hackingwithswift.com/quick-start/swiftui/all-swiftui-property-wrappers-explained-and-compared). These are an important tool for making your code efficient and storing your objects properly. In particular, you should be aware of what the `@State` and `@Binding` wrappers do.
+
+[Learn about Protocols for defining properties object models must have](https://www.hackingwithswift.com/read/0/22/protocols). These function similar to what are known as `Interfaces` in other languages. Protocols are important as you will sometimes run into errors that require the object you are using to "conform" to some protocol. For example, if you are trying to loop over a custom object, you must first have that object [conform to Identifiable](https://www.hackingwithswift.com/quick-start/swiftui/how-to-fix-initializer-init-rowcontent-requires-that-sometype-conform-to-identifiable) so that Swift can iterate through a list of that object and recognize which entries are unique.
