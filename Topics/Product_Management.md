@@ -3,6 +3,7 @@
 ## User Stories
 
 ### Introduction
+
 A user story can be described as an informal explanation of a new feature or task in a software project. The purpose of a user story is to gauge how the particular feature will provide value from the perspective of the user. User stories generally exist in a set amongst other user stories, and allow teams to organize and structure a large set of tasks in user-centric manner.
 
 ### Structure
@@ -19,7 +20,11 @@ There is no strict benefit to using one format over the other. There are many ot
 
 ### Acceptance Criteria
 
-Acceptance criteria refers to a list of requirements that must be acomplished for a user story to be completed and closed. The purpose of acceptance criteria is so user stories can be fully scoped, so that developers understand the expected output and so that all stakeholders to be satisfied.
+Acceptance criteria refers to a list of requirements that must be acomplished for a user story to be completed and closed. The purpose of acceptance criteria is to fully scope a user stories. This is important so that developers understand the expected output and so that all stakeholders to be satisfied.
+
+The general formatting of acceptance criteria is not as strict as the formatting of the story itself. Firstly, all acceptance criteria should be clear, concise and readable. Beyond that, acceptance criteria should always be testable. This means that there are specific "yes/no" scenarious that can verify if the criteria has been impelmented. Lastly, acceptance criteria should provide user prespective.
+
+Beyond the conditions that are explicitly outlined in the acceptance criteria, there is an additionally layer of rules that must be met before a story can be completed. These conditions are generally refered to as the "Definition of Done", and are created and aggreed upon by an entire team before being used. This acts as a general set of standards that act as quality control, so that they are met by each story before it can be considered shippable.
 
 ### Story Points
 
