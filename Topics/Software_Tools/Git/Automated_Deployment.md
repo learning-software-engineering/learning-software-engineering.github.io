@@ -33,7 +33,7 @@
  <br>
  <br>
 To learn more about CI/CD, please see the following article from Atlassian, an established software company from Australia: https://www.atlassian.com/continuous-delivery/principles/continuous-integration-vs-delivery-vs-deployment
- - To learn more about the difference between continous delivery and continuous deployment, see the following article: https://docs.github.com/en/actions/deployment/about-deployments/deploying-with-github-actions
+ - To learn more about the difference between continuous delivery and continuous deployment, see the following article: https://www.puppet.com/blog/continuous-delivery-vs-deployment
 
 ______
 
