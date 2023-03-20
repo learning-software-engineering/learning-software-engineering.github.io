@@ -39,14 +39,31 @@ ______
 
  ### Examples of Common Automated Deployment Software
  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Atlassian recommends using Bitbucket Pipelines (https://bitbucket.org/product/features/pipelines), which is their "CI/CD tool that's integrated into Bitbucket Cloud," their version of GitHub (https://bitbucket.org/product/). BitBucket provides extended CI/CD features that allow you to integrate with Jira, a task management software by Atlassian. However, you can implement CI/CD fairly easily with GitHub Actions.
-  <br>
-  <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Atlassian recommends using Bitbucket Pipelines (https://bitbucket.org/product/features/pipelines), which is their "CI/CD tool that's integrated into Bitbucket Cloud," their version of GitHub (https://bitbucket.org/product/). BitBucket provides extended CI/CD features that allow you to integrate with Jira, a task management software by Atlassian. 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CircleCI (https://circleci.com) is another great CI/CD software which offers integration with BitBucket, as well as GitHub and GitHub Enterprise. It is used by companies such as Google, Pelaton, and Asana. It offers quick debugging, easy testing, and is highly customizeable. It also supports a wide variety of OSs, such as macOS, Windows, Solaris, and more. Unfortunately, it requires a subscription to use extensively, and it runs locally, not on a cloud server.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; GitLab (https://about.gitlab.com) is a great choice as well, as it offers a web-based Git repository manager with features such as issue tracking, analytics, and a Wiki. It also "provides container scanning, static application security testing (SAST), dynamic application security testing (DAST), and dependency scanning to deliver secure applications along with license compliance, " as well as native CI/CD features such as automated builds, integration, and delivery. Unfortunately, it only supports Linux distributions for its OS selection, and it, too, requires a subscription.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; For an open-source alternative, consider using Jenkins (https://www.jenkins.io). It supports Windows, Linux, macOS, and Unix-like OSs, and it is completely free. It has a simple user interface, easy installation, and supports distributed builds. Furthermore, it provides easy environment configuration, and it has a huge pool of user plugins which makes Jenkins very extensible.
+<br>
+<br>
+To learn more about these CI/CD tools and others, please see the following articles: 
+- Best 14 CI/CD tools from Katalon (referenced in this section): https://katalon.com/resources-center/blog/ci-cd-tools
+- Top 14 CI/CD tools for DevOps from BrowserStack: https://www.browserstack.com/guide/top-ci-cd-tools
+
+<br>
+Overall, the service you choose depends on the application you are building, your teams culture, and the features you need. However, you can also implement CI/CD fairly easily with GitHub Actions. This will be expanded upon in the following section.
+
+____
+
  ### How to Set Up Automated Deployment with GitHub Actions
+ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Here is an example of a workflow that automates deployment and breaks down the steps: https://techblog.geekyants.com/github-actions-for-automating-builds-for-your-app
  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; In order to set up automated deployment, you need to know the following: when do you want deployments to occur (on pull request, on push, on workflow dispatch, etc), where do you want the deployment to be (staging or production, continuous delivery vs continuous deployment), and what are the requirements for your environment (what packages do you need to set install or software do you need to set up to deploy).
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Once you know these things, you can start setting up your GitHub Action using a yaml file. Start with the `on:` command and put all the situations where you want deployment to occur (and on what branches). Then, under `jobs:`, create a `deployment:` section and set the environment, what os it runs on, and the steps necessary to deploy.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Once you know these things, you can start setting up your GitHub Action using a yaml file. Start with the `on:` command and put all the situations where you want deployment to occur (and on what branches). Then, under `jobs:`, create a `deployment:` section and set the environment, what operating system it runs on, and the steps necessary to deploy.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For example, for Heroku, you need to specify the Heroku key (this is the login key) and the application you are deploying to. Meanwhile, for Expo, you may need to setup node, EAS (Expo Application Services), sign into EAS, install yarn dependencies, and then use EAS to deploy. An alternate method you could use is writing a shell script that performs these actions and simply having GitHub run this shell script with a GitHub Action.
  <br>
@@ -55,7 +72,7 @@ ______
  
  - Deploying with GitHub Actions: 
    - https://docs.github.com/en/actions/deployment/about-deployments/deploying-with-github-actions
-   - https://techblog.geekyants.com/github-actions-for-automating-builds-for-your-app
+   - https://techblog.geekyants.com/github-actions-for-automating-builds-for-your-app (This is the same as the one at the start of this section)
  
  - Deployment to Expo: 
    - https://github.com/marketplace/actions/expo-github-action
