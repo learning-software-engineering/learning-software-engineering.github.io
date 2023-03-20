@@ -26,12 +26,12 @@ and contribute to the test cases.
 To do this, click on the workspace tab and then click on the 
 'Create Workspace' button and name your workspace.
 then click on the newly created workspace to write your requests within it.
-###Creating a Collection
+### Creating a Collection
 To send request within this workspace. You need to create a new
 collection which will contain all the different requests to your API endpoint.
 Create a new Collection by clicking on the '+' that is location next to the 
 collection side tab.
-###Sending requests
+### Sending requests
 Once you have created the Collection, you can now create your request. 
 Do this by expanding the newly created collection and clicking on add request
 which is highlighted. Copy and paste the request URL of your API into the URL bar.
@@ -45,12 +45,12 @@ you must fill the request body.
 #### GET requests
 For GET requests, the request needs to have header variables included. Click on the 
 header tab within the request and add the keys and values. 
-###Downloading collection
+### Downloading collection
 To export your work, you can right click on the Collection that you have been working on and 
 click Export which will prompt you to the version you would like to export. Once selected you can
 download the exported file.
 
-###Conclusion
+### Conclusion
 This summary of Postman application showed the basics of creating a collection of requests to test
 an API endpoint. After reading this, you should be able to create a workspace and collection of 
 requests, sending POST and GET requests to your desired API endpoint. If there are additional 
