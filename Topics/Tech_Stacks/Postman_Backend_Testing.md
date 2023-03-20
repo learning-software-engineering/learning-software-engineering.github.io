@@ -19,7 +19,7 @@ After the download the following video will help you install the application:
 
 
 ## Testing with Postman
-###Creating a workspace
+### Creating a workspace
 Before starting to test your API, it is best to create a workspace for the 
 specific project that you are working on. This way team members can access
 and contribute to the test cases.
