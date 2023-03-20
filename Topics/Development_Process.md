@@ -5,6 +5,12 @@
 ## Build requirements
 ### [Requirements.txt](./Development_Process/Build_Requirements/Requirements_txt.md)
 
+### [Firebase Hosting](./Development_Process/evelopment_Process/firebase/firebase_hosting.md)
+
+### [Firebase Authentication](./Development_Process/firebase/firebase_authentication.md)
+
+### [Firebase RealtimeDB](./Development_Process/firebase/firebase_realtimeDB.md)
+
 ## SOLID PRINCIPLES: 
 
 SOLID is a mnemonic acronym that represents a set of five very important software development principles which lead to code that is easier to read, maintain, and extend, leading to higher-quality software that is easier to evolve over time.
