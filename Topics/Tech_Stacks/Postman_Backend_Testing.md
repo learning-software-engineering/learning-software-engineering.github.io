@@ -57,6 +57,6 @@ requests, sending POST and GET requests to your desired API endpoint. If there a
 information you would like to learn about, there are some useful articles and resources provided below.
 
 ### Articles and Resources
-[Overview of Postman](https://learning.postman.com/docs/introduction/overview/)
+[Overview of Postman](https://learning.postman.com/docs/introduction/overview/)  
 [Postman Map](https://www.guru99.com/postman-tutorial.html)
 
