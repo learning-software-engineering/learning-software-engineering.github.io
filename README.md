@@ -9,6 +9,7 @@ Following files are present in this directory. You may contribute to any of thes
 Potential Topics--
 
 - Tech stacks
+    1. CSS (Cascading Style Sheets) 
 - Software Tools
     1. Git
         1. Git Workflows
