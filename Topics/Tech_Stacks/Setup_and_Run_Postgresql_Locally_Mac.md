@@ -5,9 +5,9 @@ This document provides instructions on how to setup postgresql locally on your m
 1. Downloading Postgresql and PgAdmin
 2. Creation of a user in Postgresql
 3. Creation of a database with owner of "user" in Postgresql 
-4. Instructions on how to see tables / views in your database
-5. Instructions on how to create tables / views in your database
-6. Instructions on how to delete tables / views in your database
+4. Instructions on how to see tables in your database
+5. Instructions on how to create tables in your database
+6. Instructions on how to delete tables in your database
 
 ## Downloading Postgresql and PgAdmin
 To be able to setup Postgresql locally we first need to download it. First we check to see if we already have Postgresql installed by running: ```psql --version``` in the command line. This would return the version of Postgres if you have it installed already, if you already have Postgresql installed and don't want to use PgAdmin then please move onto the next section. If not continue reading.
@@ -37,4 +37,38 @@ Now that you have Postgresql successfully installed, here are steps to create a 
 
 Note that you area also able to set a password for the user and even superuser priviledges.
 
-<img src="https://github.com/michael-j-rubenstein/learning-software-engineering.github.io/blob/main/Topics/Tech_Stacks/Images/postgres_pgadmin_user_setup.png" width=500 styles="margin: 0 auto"/>
+<img src="https://github.com/michael-j-rubenstein/learning-software-engineering.github.io/blob/main/Topics/Tech_Stacks/Images/postgres_pgadmin_user_setup.png" width=500 />
+
+### Using Postgresql Shell
+1. Open up the Mac Terminal
+2. Run ```sudo -u postgres psql``` to open up the Postgresql Shell using the default postgres user
+3. Insert the password you used in the installer in the previous section
+4. If successful you should see that the prompt for the terminal looks something like this: ```postgres=#```
+5. Now to create a new user write ```CREATE USER your_users_name;```
+6. A prompt will show to insert password for the user, after setting the password you're done!
+
+Note that if you want to create a superuser you can use ```CREATE USER your_users_name SUPERUSER;``` instead in step 5.
+
+More information and additional methods can be found here: [How to create a Postgres User](https://phoenixnap.com/kb/postgres-create-user)
+
+## Creating a database in Postgresql
+Now that you have a custom user, you can now create a database!
+
+### Using PgAdmin4
+1. Launch the app and insert your passwords
+2. On the left side of the screen go to ```Servers > Your wanted server (Default is PostgreSQL 15) > Databases```
+3. Right click and select the ```Create > Database...``` option
+4. Insert the name of the database in ```Database``` field
+5. If you want to change the Owner to your created owner, you can aswell in the ```Owner``` field
+
+### Using Postgresql Shell
+1. Open up the Mac Terminal
+2. Run ```sudo -u postgres psql``` to open up the Postgresql Shell using the default postgres user and insert password
+3. Now to create a new database write ```CREATE DATABASE database_name;```
+
+Note that this makes the owner of database_name as the default postgres user. You can specify the owner by using ```CREATE DATABASE database_name OWNER your_users_name;```
+
+You can also find more information here: [Postgresql Database: CREATE](https://www.tutorialspoint.com/postgresql/postgresql_create_database.htm)
+
+## Viewing tables in Postgresql
+
