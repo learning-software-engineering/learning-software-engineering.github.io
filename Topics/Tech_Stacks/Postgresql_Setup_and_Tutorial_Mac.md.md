@@ -1,4 +1,4 @@
-# Postgresql local setup instructions for Mac Users
+# Postgresql local setup instructions and tutorial for Mac Users
 
 ## Description
 This document provides instructions on how to setup postgresql locally on your mac using two methods, the first being through pgAdmin4 and the second being through the psql shell. Below please find an overview of what is covered in this document:
