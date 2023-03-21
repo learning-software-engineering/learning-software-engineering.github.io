@@ -15,4 +15,4 @@ To be able to setup Postgresql locally we first need to download it. First we ch
 To Install Postgresql we will be using an interactive installer that can be found on [Postgres's website](https://www.postgresql.org/download/macosx/). Click the "Download the installer" link under the **Interactive installer by EDB** section. (**NOTE: The installer is by EDB, and will redirect you to another site**)
 
 After arriving to the site you can click the download icon for Mac OS X for your desired version of Postgresql. This will install the interactive installer on your computer, which includes postgres and pgAdmin4. Image below:
-![alt text](https://github.com/michael-j-rubenstein/learning-software-engineering.github.io/blob/main/Topics/Tech_Stacks/Images/postgres_step1_1.png | width=100)
+<img src="https://github.com/michael-j-rubenstein/learning-software-engineering.github.io/blob/main/Topics/Tech_Stacks/Images/postgres_step1_1.png" width=100 />
