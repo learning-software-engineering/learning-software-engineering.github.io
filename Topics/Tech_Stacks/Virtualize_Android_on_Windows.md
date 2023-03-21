@@ -3,80 +3,59 @@
 
 ## Table of contents
 ### [Introduction](#introduction-1)
-### [MySQL vs other DBMSs](#mysql-vs-other-dbmss-1)
-### [MySQL client installation and basic operations](#mysql-client-installation-and-basic-operations-1)
-### [MySQL integration](#mysql-integration-1)
+### [What is virtualization](#what-is-virtualization-1)
+### [Virtualizing an Windows machine to an Android device](#virtualizing-an-windows-machine-to-an-android-device-1)
+### [Install an APK file on the virtualized windows device](#install-an-apk-file-on-the-virtualized-windows-device-1)
 ### [Additional Resources](#additional-resources-1)
 
 ## Introduction
 
-Device consistency is often a good condition for programmer, especially the software developer to maintain their train of thoughts. Specifically, it is easier to focus on the logic and flow of development when there's no distraction caused by constant change of devices. In other words, if a software developer is constantly changing working environments, for example, coding on Macbook, but testing on an iPhone, it would be more error-prone since the sudden change of work space might derail the programmer's thoughts.
-Therefore, it would be more efficient if the software developer can design, code, and test on a same device, which is not often the case since there are development requirements across all sorts of operating systems. One functionality that modern laptop support to solve this problem is the technique of virtualization, that is virtualize the laptop and pretend it is running as an phone or other computer. In this note, I will show a specific virtualization branch: virtualize a Windows computer as an Android phone.
+Device consistency is often a good condition for programmer, especially the software developer, to maintain their train of thoughts. Specifically, it is easier to focus on the logic and flow of development when there's no distraction caused by constant changing of devices. In other words, if a software developer is constantly changing working environments, for example, coding on Macbook, but testing on an iPhone, it would be more error-prone since the sudden change of work space might derail the programmer's thoughts.
+Therefore, it would be more efficient if the software developer can design, code, and test on a same device, which is not often the case since there are development requirements across all sorts of operating systems. One functionality that modern laptop support to solve this problem is the technique of virtualization, that is virtualize the laptop and pretend it is running as an phone or other computer. In this note, I will show a specific virtualization branch: virtualizing a Windows computer as an Android phone.
 
-## MySQL vs other DBMSs
+## What is virtualization
 
-When choosing a database management system, there may be a lot of options. here are some comparisons between the most popular ones:
+Virtualization is the process of creating a virtual version of something, such as a virtual machine, operating system, storage device, or network resource, that operates independently of its physical counterpart. In computing, virtualization enables multiple operating systems to run on a single physical machine, allowing for greater efficiency, flexibility, and cost savings.
 
-* Vs. PostgreSQL
-  * Postgres is more geared towards applications that require complex queries and large amounts of data since it boasts many features that are not present in MySQL. Some of these features include [table inheritance](https://www.postgresql.org/docs/7.2/inherit.html) and [function overloading](https://www.postgresql.org/docs/current/xfunc-overload.html). For a more detailed comparison you can check out [this link](https://www.integrate.io/blog/postgresql-vs-mysql-which-one-is-better-for-your-use-case/).
-* Vs. MongoDB
-  * MongoDB is a NoSQL database, meaning that it does not follow SQL rules and schemas and instead uses JSON rules to store data. Therefore it is more flexible. It is also geared towards write performance and is better for [real time applications](https://www.simplilearn.com/tutorials/mongodb-tutorial/mongodb-vs-mysql#:~:text=MySQL%20is%20an%20excellent%20choice,and%20other%20types%20of%20applications.)
+Virtualization creates a layer of abstraction between the physical hardware and the operating system, applications, or other resources that run on it. This allows multiple virtual machines, each with its own operating system and applications, to run on a single physical server, which can save on hardware costs, power consumption, and data center space.
 
-## MySQL client installation and basic operations
+Virtualization can also be used to create virtual networks, storage devices, and other resources, which can be accessed by multiple users or applications. Virtualization technology has revolutionized the way that IT infrastructure is designed and managed, making it easier and more efficient to deploy and manage complex systems.
 
-The following is a summary from [this guide](https://dev.mysql.com/doc/mysql-getting-started/en/) which has many details, but here are the following steps:
-1. Download the client <br />
-  i) **Linux** <br />
-    Follow the instructions on this [this link](https://dev.mysql.com/doc/refman/8.0/en/linux-installation.html). For users using Debian or Ubuntu, use the [APT documentation here](https://dev.mysql.com/doc/mysql-apt-repo-quick-guide/en/#apt-repo-fresh-install) and follow the 3 steps. <br />
-  ii) **Windows** <br />
-    Follow the instructions on [this link](https://dev.mysql.com/doc/refman/5.7/en/windows-installation.html#windows-installation-simple) which provides 3 steps in order to complete this step using an installer. <br />
-  iii) **macOS** <br />
-    Follow steps 1-8 from [this link](https://dev.mysql.com/doc/refman/8.0/en/macos-installation-pkg.html) which shows you how to nagivate the Installer Wizard.
-2. Connect to the MySQL server using the mysql client <br />
-  i) **Linux Based Systems** <br />
-    Enter the following in the command line terminal <br />
-     `$> mysql -u root -p` <br />
-  ii) **Windows** <br />
-    Go to **Start, All Programs, MySQL, MySQL (ver#) Command Line Client**
-3. Run SQL statements to create schemas and run operations. Here are some examples
-  * Creating a new database.  Use a [CREATE DATABASE](https://dev.mysql.com/doc/refman/8.0/en/show-databases.html) statement
-  * Create a table with a [CREATE TABLE](https://dev.mysql.com/doc/refman/8.0/en/create-table.html) statement
-  * Adding records into a table using [INSERT...VALUES](https://dev.mysql.com/doc/refman/8.0/en/insert.html) statement
-  * Use a [DELETE](https://dev.mysql.com/doc/refman/8.0/en/delete.html) statement to delete a record from a table
+## Virtualizing an Windows machine to an Android device
 
-## MySQL integration
+To virtualize an Windows machine to an Android device, follow the following steps:
+1. Check the virtualization availability on your windows device <br />
+  i) Even though for most modern windows computers, the virtualization functionality is auto-enabled, but it is still a good practice to double check. To do so:<br />
+     a. Go to **task manager** <br />
+     b. Go to **performance** section <br />
+     c. Click on **CPU** <br />
+     d. Check whether virtualization is enabled. <br />
+     e.g.: <br />
+     ![image](https://user-images.githubusercontent.com/74875627/226499401-fde43338-106a-400b-9496-479f09403731.png)!  <br />
+     e. In case it is not enabled, you have to enable it from the BIOS/UEFI interface.
+  ii) Enable the **Virtual Machine Platform** feature. To do so:<br />
+     a. Go to the **Turn Windows features on or off** in control panel by search.  <br />
+     b. Inside it, check the Virtual Machine Platform checkbox. e.g.: <br />
+     ![image](https://user-images.githubusercontent.com/74875627/226499848-2a9d7f23-f254-4554-8fa7-e7d0bda891d6.png)  <br />
+     c. Restart the PC if necessary to make sure the change is executed.
+  iii) Install the windows subsystem for android from the Microsoft store from the following link:   <br />
+     a. [Windows subsystem for android download](https://apps.microsoft.com/store/detail/windows-subsystem-for-android%E2%84%A2-with-amazon-appstore/9P3395VX91NR?hl=en-us&gl=us) <br />
+     b. After installation, open the windows subsystem for android <br />
+     c. Go to the **Developer** section. <br />
+     d. Enable the **Developer mode**  <br />
+     e. Click **Manage developer setting** to connect with local IP. <br />
+  iv) You are done! After the windows subsystem is running normally, your Windows device is pretending itself to be an Android phone, so that you can do various functionalities that is available on Android. <br />
 
-There are many environments that can integrate a MySQL database. Here is how to do it in Node.js and Python
-
-### MySQL database connection to Node.js
-
-Assuming that npm and node is installed (click here for [npm instructions](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm), use the following commands in the terminal
-* `npm init -y`
-* `npm install mysql`
-* In your mysql client use the database command `CREATE DATABASE databaseName;` to create a database to connect to
-* In your .js file, use `import 'mysql';`
-* Use the form `let connection = mysql.createConnection({host: 'localhost', user: 'root', password: '', database: 'databaseName'});` in the .js file to connect to the database server. The host, user, and password parameters can be changed to your specific usage. 
-* Use the form `connection.connect(function(err) {...});` to connect to the database, where the ... represents your error checking method incase the connection fails. 
-* If you want to query the database, use the form `connection.query(queryName, function(err, results, fields) {...}` where queryName represents your SQL query in string format, and ... is your resolve function from the resulting query call.
-* To close the connection, use the form `connection.end(function(err) {...});` where ... represents the error checking method of your choice. 
-
-For more detailed steps, check out [this link](https://www.mysqltutorial.org/mysql-nodejs/connect/)
-
-### MySQL database connection to Python
-
-In order to connect to the database using Python, you need to use a database driver. Assuming that a recent version Python and pip is installed (click [here](https://pip.pypa.io/en/stable/installation/) for details installing pip), use the following commands:
-* In the shell use `pip install mysql-connector-python`
-* In your .py file, use `import mysql.connector` 
-* Use the form `connector = connect(host="localhost", user=..., password=...,)` to connect to the database server, where ... represents your own user and password methods. 
-* To create a database through python, use the cursor method which allows you to use SQL queries. Use the form `connector.cursor().execute('CREATE DATABASE databaseName')`, where databaseName can be changed for your own usage.
-* If you want to connect to an existing database, use the form `connector = connect(host="localhost", user=..., password=..., database='databaseName',)`
-* If you want to query the database, use the form `connector.cursor().execute('...')` 
-* To close the connection, use `connector.close()`
-
-For more detailed steps, check out [this link](https://realpython.com/python-mysql/)
+### Install an APK file on the virtualized windows device
+  i) Even though your windows device has already been virtualized as an Android device, and you can run an Android app, you still need additional support to install APK files, that is short for **Android Package Kit**<br />
+  ii) To install APK files, follow <br />
+      a. Download the newest version of WSA Packman from this link: [WSA Packman download](https://github.com/alesimula/wsa_pacman/releases/tag/v1.4.0).<br />
+      b. Install it following default settings.<br />
+      c. Make sure the windows subsystem is running on the background <br />
+      d. Open WSA PackMan and wait until it shows **connected** <br />
+      e. Then, you are good to download any APK files on your device! <br />
 
 ## Additional Resources
 
-* To use MySQL with PHP, refer to [this tutorial](https://www.mysqltutorial.org/php-mysql/) by MySQLTUTORIAL
-* To see examples of using the MySQL client, refer to [this link](https://dev.mysql.com/doc/mysql-tutorial-excerpt/8.0/en/examples.html)
-* To troubleshoot the client, refer to [this link](https://dev.mysql.com/doc/refman/8.0/en/problems.html), where it gives instructions on how to find [problem](https://dev.mysql.com/doc/refman/8.0/en/what-is-crashing.html) and also lists [common errors](https://dev.mysql.com/doc/refman/8.0/en/common-errors.html)
+* Source repository for WSA Packman [WSA Packman repository](https://github.com/alesimula/wsa_pacman) <br />
+* To watch a detailed tutorial, go to [Install APK file on windows tutorial](https://www.youtube.com/watch?v=D_AiqB-eVig&t=77s)
