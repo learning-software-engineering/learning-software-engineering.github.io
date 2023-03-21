@@ -27,4 +27,19 @@ Potential topics--
 
         - Another approach that uses the scalability and flexibility of cloud computing is the cloud-based architecture. Cloud-based systems provide fault tolerance and disaster recovery capabilities for maintaining high availability. In addition, you can increase processing power and throughput by adding more computing resources, using load balancers, distributed databases, and caching.
 
+        To achieve the optimum performance and dependability, these scalable software architectures need to be carefully planned out and implemented. Among the ideal techniques are:
 
+        - Loose coupling: Decoupling different subsystems so that they are not strongly connected. This reduces the interdependency between them, which enables each component to scale independently without affecting the others.
+        - Use of load balancers: Load balancers distribute traffic across multiple servers, which ensures that each server is utilized efficiently, reducing the risk of overloading any one server.
+        - Caching - Caching frequently accessed data reduces the load on the database, resulting in faster response times and improved performance.
+        - Use of distributed databases - Distributed databases replicate data across multiple servers, which provides fault-tolerance and ensures that data is readily available, even in the event of server failure.
+
+        In conclusion, building scalable software architectures is crucial for ensuring that applications can handle growth and increasing demands. Different approaches such as vertical scaling and horizontal scaling have their advantages and disadvantages. Therefore, choosing the right approach depends on the specific requirements of the application. To ensure readability and maintainability, desining and implementing a scalable software system requires good practices to be followed, such as decoupling components, use of load balancers, caching, use of distributed databases and many more.
+        
+        Resources:
+        - [The definitive guide to building a scalable software](https://medium.com/geekculture/the-definitive-guide-to-building-a-scalable-software-f93235f410) - This article provides detailed information about different approaches of building a scalable system.
+        - [Scalable Architecture: A Definition and How-To Guide](https://www.sentinelone.com/blog/scalable-architecture/) - This post includes other methods of implementing a scalable system.
+        - [Fundamentals about Scalability of Software Systems](https://towardsdatascience.com/fundamentals-aboutscalability-of-software-systems-752ddbf889c4)  
+        - [10 Things You Need to Know About Scalable Software Architecture
+](https://slash.co/articles/scalable-software-architecture/)
+            - These articles give more detailed information of the best practices that should be followed to build a scalable system.
