@@ -1,6 +1,7 @@
 ## Resources for Development Process
 
 ### [Django Project Deployment: AWS, Vercel, and Railway](./Development_Process/Django_Deployment_AWS_Railway_Vercel.md)
+### [Automated Frontend Deployment with Vercel](./Development_Process/Frontend_Automated_Deployment_Vercel.md)
 
 ## Build requirements
 ### [Requirements.txt](./Development_Process/Build_Requirements/Requirements_txt.md)
