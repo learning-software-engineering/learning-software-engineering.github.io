@@ -46,6 +46,7 @@ Potential Topics--
             3. Firebase
             4. Digital Ocean
             5. Software development best practices:
+            6. Vercel Frontend Deployment (Automated)
     1. Designer Patterns
     2. Clean Coding
         1. Choose a coding style and stick to it
@@ -66,5 +67,6 @@ Potential Topics--
     2. Areas of User Experience
     3. Helpful Courses
 - Product Management
+    1. Beginner's guide to product management and becoming a successful product manager
 - Other useful resources
 - Teamwork
