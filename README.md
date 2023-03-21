@@ -51,6 +51,7 @@ Potential Topics--
         1. Choose a coding style and stick to it
     3. SOLID Principles
     4. Code Smells
+    5. QA testing
 - Professionalism
     1. Customer engagement
         1. Meeting best practices
