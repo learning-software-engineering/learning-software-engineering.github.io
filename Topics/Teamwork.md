@@ -17,7 +17,7 @@ It is not always possible to avoid conflict. In work environment when people are
 
 
 
-## **Roles in a Software Team **
+## Roles in a Software Team
 
 1. Project Manager: The project manager is responsible for planning and overseeing the software development process. They set goals and deadlines, allocate resources, manage the budget, and communicate with stakeholders.
 2. Software Developer: The software developer writes, tests, and maintains the software code. They work with the project manager and other team members to ensure that the software meets the project requirements and is delivered on time.
