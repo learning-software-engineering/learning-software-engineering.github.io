@@ -16,4 +16,8 @@ To Install Postgresql we will be using an interactive installer that can be foun
 
 After arriving to the site you can click the download icon for Mac OS X for your desired version of Postgresql. This will install the interactive installer on your computer, which includes postgres and pgAdmin4. Image below:
 
-<img src="https://github.com/michael-j-rubenstein/learning-software-engineering.github.io/blob/main/Topics/Tech_Stacks/Images/postgres_step1_1.png" width=300 />
+<img src="https://github.com/michael-j-rubenstein/learning-software-engineering.github.io/blob/main/Topics/Tech_Stacks/Images/postgres_step1_1.png" width=500 />
+
+Now you should have a ```.dmg``` file in the download folder, open it and follow the steps in their installer. **NOTE:** Make sure you select PostgreSQL Server and select pgAdmin and/or Command Line Tools in the "select Components" page based on your preference. I suggest to select all of the options as they are all pretty useful.
+
+<img src="
