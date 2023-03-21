@@ -66,6 +66,8 @@ Now that you have a custom user, you can now create a database!
 4. Insert the name of the database in ```Database``` field
 5. If you want to change the Owner to your created owner, you can aswell in the ```Owner``` field
 
+<img src="https://github.com/michael-j-rubenstein/learning-software-engineering.github.io/blob/main/Topics/Tech_Stacks/Images/postgres_pgadmin_database_setup.png" width=500 />
+
 ### Using Postgresql Shell
 1. Open up the Mac Terminal
 2. Run ```sudo -u postgres psql``` to open up the Postgresql Shell using the default postgres user and insert password
@@ -107,6 +109,7 @@ This section is about how to create tables in your Postgres database. I will be 
 2 In the tab on the left side of the screen go to ```Servers > Your wanted server (Default is PostgreSQL 15) > Databases > database_name > public > Tables```
 3.Right click ```Tables``` and select ```Create > Table...``` and create your table
 
+<img src="https://github.com/michael-j-rubenstein/learning-software-engineering.github.io/blob/main/Topics/Tech_Stacks/Images/postgres_pgadmin_create_table.png" width=500 />
 
 ### Using Postgresql Shell
 1. Open up the Mac Terminal
@@ -125,6 +128,8 @@ This section is about how to delete a table in your Postgres database. I will be
 1. Launch the app and insert your passwords
 2 In the tab on the left side of the screen go to ```Servers > Your wanted server (Default is PostgreSQL 15) > Databases > database_name > public > Tables```
 3 Find and right click ```wanted_table``` and click ```Delete/Drop``` and you're done!
+
+<img src="https://github.com/michael-j-rubenstein/learning-software-engineering.github.io/blob/main/Topics/Tech_Stacks/Images/postgres_pgadmin_drop_table.png" width=500/>
 
 ### Using Postgresql Shell
 1. Open up the Mac Terminal
