@@ -17,7 +17,7 @@ There is two important things related to Iframe and I provide instructions about
 You can use get the scrollhight of the child website by add a javascript block in the parent html file which contains X.contentWindow.document.body.scrollHeight + 'px';
 After getting the scrollheight of the child website, we can delete the scroll bar of the child website and the whole child webpage will be shown inside the parent website without a scrollbar.
 
-### Sending a message from the parent webpage to its child webpage
+### Sending a message from the parent webpage to the child webpage
 You can use the `postMessage` API to do this. First, you need to get the iframe element in the parent html file and call `postMessage` with this element. 
 Then, you need to add an event listener in the child html file and set the correspond source to the url of the parent website.
 
