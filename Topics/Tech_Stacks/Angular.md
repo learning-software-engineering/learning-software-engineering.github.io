@@ -5,7 +5,7 @@
 ### [Resources](#resources-1)
 
 ## Introduction
-Angualr is a framework which allows people to create responsive single page web apps. It is built on TypeScript and can be used to build scalable web apps, has a collection of well-integrated libraries which cover many features and several tools to help build, test and maintain your code. With Angular you can create single-page-application where you have a single html file where changes are rendered in the browser. Familiarity with HTML/CSS as well as JavaScript/TypeScript will be needed while building your web app.
+Angular is a framework which allows people to create responsive single page web apps. It is built on TypeScript and can be used to build scalable web apps, has a collection of well-integrated libraries which cover many features and several tools to help build, test and maintain your code. With Angular you can create single-page-application where you have a single html file where changes are rendered in the browser. Familiarity with HTML/CSS as well as JavaScript/TypeScript will be needed while building your web app.
 
 ## Additional Resources
 Official Angular documentation can be found here. \
