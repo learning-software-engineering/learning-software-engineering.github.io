@@ -14,17 +14,17 @@ The majority of user stories are written to follow a general outline or pattern.
 ```
 As a <type of user>, I want <some goal>, so that <some reason>
 ```
-There are many other popular formats that are derivations of the one above. However, other non-standard formats can also be used, such as the W5 example below:
+There are many other popular formats that are derivations of the one above. However, other non-standard formats can also be used, such as this W5 example below:
 ```
 As <who> <when> <where>, I want <what> because <why>
 ```
-Each format has its own advantages and disadvantages. Teams will generally use the format that fits their goals best and delivers the most value.
+Each format has its own advantages and disadvantages. Teams will generally use the format that best fits their goals and delivers the most value.
 
 ### Acceptance Criteria
 
-Acceptance criteria refers to a set of requirements that must be accomplished for a user story to be completed and closed. The purpose of acceptance criteria is to fully scope user stories. This is important so that developers exactly what they need to output, and so that all stakeholders are satisfied.
+Acceptance criteria refers to a set of requirements that must be accomplished for a user story to be completed and closed. The purpose of acceptance criteria is to fully scope user stories. This is important so that developers know exactly what they need to output, and so that all stakeholders are satisfied.
 
-Like with the story itself, there are various ways to commonly organize acceptance criteria. The most common organizational strategy is the "Given/When/Then" method. This works similarly to the user story outlines, and can be utilized as follows:
+Like with user stories, there are various ways to commonly organize acceptance criteria. The most common organizational strategy is the "Given/When/Then" method. This works similarly to the examples in the section above:
 ```
 Given <some condition>, when <some action is carried out>, the <a set of observable outcomes should occur>
 ```
@@ -62,3 +62,12 @@ By combining all of the sections above, we can create the following user story t
 **Acceptance Criteria:** Given \<some condition\>, when \<some action is carried out\>, the \<a set of observable outcomes should occur\>
 
 ---
+
+### Resources and Articles
+
+- [User Stories; Examples and Template - Atlassian](https://www.atlassian.com/agile/project-management/user-stories#:~:text=software%20user's%20perspective.-,A%20user%20story%20is%20an%20informal%2C%20general%20explanation%20of%20a,value%20back%20to%20the%20customer.)
+- [User Stories and User Story Examples - Mike Cohn](https://www.mountaingoatsoftware.com/agile/user-stories)
+- [Acceptance Criteria for User Stories: Purposes, Formats, Examples, and Best Practices - AltexSoft](https://www.altexsoft.com/blog/business/acceptance-criteria-purposes-formats-and-best-practices/)
+- [What is Acceptance Criteria? - ProductPlan](https://www.productplan.com/glossary/acceptance-criteria/#:~:text=Acceptance%20Criteria%20Definition%201%3A%20%E2%80%9CConditions,meet.%E2%80%9D%20(via%20Google))
+- [What Are Agile Story Points? - Mike Cohn](https://www.mountaingoatsoftware.com/blog/what-are-story-points)
+- [Story Points and Estimation - Atlassian](https://www.atlassian.com/agile/project-management/estimation)
