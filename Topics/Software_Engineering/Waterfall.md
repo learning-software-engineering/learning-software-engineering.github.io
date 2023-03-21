@@ -1,12 +1,12 @@
 # Waterfall Methodology
 
 ## Table of Contents:
-#### [Introduction](#introduction)
-#### [Common Phases in the Waterfall Model](#common-phases-in-the-waterfall-model)
-#### [When to use the Waterfall Model?](#when-to-use-the-waterfall-model-)
-#### [Advantages of Waterfall Project Management](#advantages-of-waterfall-project-management)
-#### [Disadvantages of Waterfall Project Management](#disadvantages-of-waterfall-project-management)
-#### [Resources](#resources)
+#### [Introduction](#introduction-1)
+#### [Common Phases in the Waterfall Model](#common-phases-in-the-waterfall-model-1)
+#### [When to use the Waterfall Model](#when-to-use-the-waterfall-model-1)
+#### [Advantages of Waterfall Project Management](#advantages-of-waterfall-project-management-1)
+#### [Disadvantages of Waterfall Project Management](#disadvantages-of-waterfall-project-management-1)
+#### [Resources](#resources-1)
 
 ## Introduction 
 Waterfall methodology, also known as the Waterfall model, is a linear sequential development process. This traditional project management approach occurs where each phase flows like a waterfall. Each phase must be completed before the next begins.
@@ -23,7 +23,7 @@ Despite having critics and supporters since its inception, the Waterfall model i
 
 *In-depth description and what deliverables are expected at each phase: [link](https://www.softwaretestinghelp.com/what-is-sdlc-waterfall-model/)*
 
-## When to use the Waterfall Model?
+## When to use the Waterfall Model
 The Waterfall model is a traditional form of project management, allowing for thorough planning and detailed documentation.
 
 The Waterfall model is most suited for projects where the requirements are constant and won't change regularly, meaning the project has a well-defined end goal. The tools and technology are consistent and stay the same. The project isn't restrained by a budget or deadline, allowing the team to spend quality time on the initial phases, requirements and system design to finalize a well-defined project plan. 
