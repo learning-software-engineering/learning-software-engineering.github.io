@@ -41,6 +41,9 @@ Here are the external resources for professional development:
 ### Podcasts:
 https://www.podchaser.com/podcasts/software-engineering-daily-62587 ----- Software Engineering Daily - Daily interviews about technical software topics.
 
+### School Source:
+You can ask ASIP program ambassadors for help to provide related materials on how to become a professional software engineering. I cannot add the links here since the resources from ASIP are not open to public.
+
 
 # Best practices for maintaining a professional demeanor in various situations
 
