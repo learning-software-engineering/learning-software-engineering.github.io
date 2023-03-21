@@ -27,6 +27,7 @@ Now you should have a ```.dmg``` file in the download folder, open it and follow
 The port number of the server can be anything, but default is 5432.
 
 <a name="two" />
+
 ## Creating a user in Postgresql
 Now that you have Postgresql successfully installed, here are steps to create a new user:
 
@@ -54,6 +55,7 @@ Note that if you want to create a superuser you can use ```CREATE USER your_user
 More information and additional methods can be found here: [How to create a Postgres User](https://phoenixnap.com/kb/postgres-create-user)
 
 <a name="three" />
+
 ## Creating a database in Postgresql
 Now that you have a custom user, you can now create a database!
 
@@ -74,6 +76,7 @@ Note that this makes the owner of database_name as the default postgres user. Yo
 You can also find more information here: [Postgresql Database: CREATE](https://www.tutorialspoint.com/postgresql/postgresql_create_database.htm)
 
 <a name="four" />
+
 ## Viewing tables in Postgresql
 This section is about how to see tables and what they contain in your Postgres database. I will be using ```database_name``` as a placeholder for your database name, and ```wanted_table``` for the table you want to inspect.
 
