@@ -12,18 +12,38 @@ Most product professionals spend the majority of their time focused on the follo
 
 ### How should CSC301 students perform product management?
 The following actions are what CSC301 students can do on performing product management. As the course goes, you will find out that the course assignments and deliverables are already helping with the management process. Thus, it is important to follow the assignment instructions carefully in order to become a good product manager.
-* __**Conducting Research:**__ Read carefuly about the project proposal, meet with the partner for a talk, and go to the partner's official website to learn about the purpose of their organization, what they want to show the users, and in what form (e.g. website, mobile app, etc.)
+* __**Conducting Research:**__ Read carefuly about the project proposal, meet with the partner for a talk, and go to the partner's official website to learn about the purpose of their organization, what they want to show the users, and in what form (e.g. website, mobile app, etc.). 
+
+Key take aways from CSC301 Week 2 lecture for this part:
+** Review your high-level English description
+** Who are your users?
+** What is the objective?
+** Why would they use the product?
+Note that the focus is the problem and users, not the product.
+
 * __**Developing Strategy:**__ Divide the whole project team into two or three sub-teams, for example, a team working on frontend, a team working on backend, and a team solving overall technical problems both teams are facing. In each team, document about how they will implement the project based on the research you previously done to achieve the goals. A flow chart or an overview diagram can help with organizing high-level strategic plan and demo to your partner in future meetings.
+
+Key take aways from CSC301 Week 2 lecture for this part:
+** Do you know what problem your partner wants to solve?
+** Has your partner prescribed a solution?
+
+Remember: We only talk about the problem we want to solve. We don’t say what the product is.
+
 * __**Communicating Plans:**__ Holding regular meetings with your partner to report on the project progress, showing them the user stories you come up with to have their agreement, exchange thoughts and obtain feedbacks. In each meeting with partner, make sure to have at least one team mate responsible for each of frontend and backend to note down the feedbacks, so that they can later work with other teammates on corresponding parts.
+
+Key take aways from CSC301 Week 2 lecture for this part:
+** Use Personas to simplify communication and empathize with user groups
+** User Stories is a good method to think about requirements from the user's prospective, using everyday language.
+** Write down acceptance criteria for each user story, that are conditions that your product must satisfy to be accepted by the uer in the user story. Be specific with this.
+
 * __**Coordinating Development:**__ All subteams in your project team now can work together along the process to merge the parts, and testing on the functions that you would like your project to have. Document down any modifications in your strategy plan that you generated in previous steps for future reference.
+
+Key take aways from CSC301 Week 2 lecture for this part:
+** [Prototype](https://xd.adobe.com/ideas/process/ui-design/what-is-prototyping/): Show what it looks like, how it works, and see if your users get it and can work with it (potentially your TAs for this course, because they would be marking based on your deployed project.)
+** [Artifacts](https://draw.chat/index.html): Use tools such as [Figma](https://www.figma.com/), [Invision](https://www.invisionapp.com/) and [Moqups](https://moqups.com/) to generate mockups and wireframes for your product
+** Other resources: [CRC cards](http://www.agilemodeling.com/artifacts/crcModel.htm), [Class Diagrams](http://www.agilemodeling.com/artifacts/classDiagram.htm)
+
 * __**Acting on Feedback and Data Analysis:**__ Demo the product to your partner to get their feedbacks, ask for their advice, and improve on the product. 
-
-
-#### What are platforms?
-Platforms are systems that get more valuable as more people use them. In other words, they are systems strongly based in the concept of network effect. Network effect is the effect by which a given software is more valuable when more users use the software. Examples of platforms including Google, Facebook, LinkedIn and Apple.
-
-### What are products?
-A software product is any software that has users. Things like your favourite video game, an e-book, or a photographing app would examples of products. They are essential parts that build up the platforms, for example, Google Search would be a product that creates a platform for users to search information.
 
 ### Difference between managing product and platform
 In software engineering, managing products and platforms are two different approaches to creating and delivering software solutions.
