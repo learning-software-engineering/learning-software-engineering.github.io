@@ -68,4 +68,5 @@ Potential Topics--
     3. Helpful Courses
 - Product Management
 - Other useful resources
+    1. Google Maps JavaScript API
 - Teamwork
