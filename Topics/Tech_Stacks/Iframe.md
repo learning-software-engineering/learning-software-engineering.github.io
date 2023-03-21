@@ -2,7 +2,7 @@
 
 ## Introduction
 
-An Iframe is a html element that can let programmer to display a child website inside a parent website. It is supported by many browsers, like chrome, firefox and safari.
+An iframe is an HTML element used to embed a child website within a parent website. It is supported by most modern browsers, like Chrome, Firefox and Safari.
 
 ## Why use Iframe
 Sometimes we want to let user to interact with a webpage without open a new webpage tage and redict to it. For example, we want to embed a survey inside a webpage so that the user can conveniently fill out the survey after reading the previous content in this webpage.
