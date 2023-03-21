@@ -1,4 +1,4 @@
-# Using Vercel to host your Frontend the smart way
+# Using Vercel to host your Frontend (Automated)
 
 ## Table of Contents
 ### 1. Introduction
