@@ -2,6 +2,8 @@
 
 ### [Django Project Deployment: AWS, Vercel, and Railway](./Development_Process/Django_Deployment_AWS_Railway_Vercel.md)
 
+### [Quality Assurance testing](./Development_Process/QA_testing.md)
+
 ## Build requirements
 ### [Requirements.txt](./Development_Process/Build_Requirements/Requirements_txt.md)
 
