@@ -1,0 +1,25 @@
+# Learning Iframe
+
+## Introduction
+
+An Iframe is a html element that can let programmer to display a child website inside a parent website. It is supported by many browsers, like chrome, firefox and safari.
+
+## Why use Iframe
+Sometimes we want to let user to interact with a webpage without open a new webpage tage and redict to it. For example, we want to embed a survey inside a webpage so that the user can conveniently fill out the survey after reading the previous content in this webpage.
+
+## How to use Iframe
+You can add a html element inside your html file following this format <iframe src="some like" title="some title"></iframe>
+
+There is two important things related to Iframe and I provide instructions about them
+
+### Dynamically resizing an iframe based on content
+You can use get the scrollhight of the child website by add a javascript block in the parent html file which contains X.contentWindow.document.body.scrollHeight + 'px';
+After getting the scrollheight of the child website, we can delete the scroll bar of the child website and the whole child webpage will be shown inside the parent website without a scrollbar.
+
+### Sending a message from the parent webpage to its child webpage
+You can use the postMessgae API to do this. First, you need to get the iframe element in the parent html file and call postMessgae with this element. 
+Then, you need to add an event listener in the child html file and set the correspoing source to the url of the parent website.
+
+## Additional Resources
+Here is a link to learning more about iframe if you are interested.
+https://www.w3schools.com/tags/tag_iframe.ASP
