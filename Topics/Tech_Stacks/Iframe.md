@@ -5,7 +5,7 @@
 An iframe is an HTML element used to embed a child website within a parent website. It is supported by most modern browsers, like Chrome, Firefox and Safari.
 
 ## Why use Iframe
-Sometimes we want to let user to interact with a webpage without open a new webpage tage and redict to it. For example, we want to embed a survey inside a webpage so that the user can conveniently fill out the survey after reading the previous content in this webpage.
+Sometimes we want to let users interact with a webpage without opening a new webpage tage and redicting to it. For example, we want to embed a survey inside a webpage so that the user can conveniently fill out the survey after reading the previous contents in this webpage.
 
 ## How to use Iframes
 You can add an iframe element inside your HTML file by following this format:
@@ -14,7 +14,7 @@ You can add an iframe element inside your HTML file by following this format:
 There is two important things related to Iframe and I provide instructions about them
 
 ### Dynamically resizing an iframe based on content
-You can use get the scrollhight of the child website by add a javascript block in the parent html file which contains X.contentWindow.document.body.scrollHeight + 'px';
+You can get the scrollhight of the child website by adding a javascript block in the parent html file which contains `X.contentWindow.document.body.scrollHeight + 'px'`;
 After getting the scrollheight of the child website, we can delete the scroll bar of the child website and the whole child webpage will be shown inside the parent website without a scrollbar.
 
 ### Sending a message from the parent webpage to the child webpage
