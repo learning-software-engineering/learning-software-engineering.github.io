@@ -12,7 +12,9 @@ Django Rest Framework is a popular library for building RESTful APIs with Django
 
 ### Set-Up
 
- We first set up the virtual environment and activate it using ```python3 -m venv myenv ``` and ```source myenv/bin/activate``` respectively in the project directory.
+ We first Install virtualenv by running ```python3 -m pip install virtualenv```. This will ensure that we have the necessary package installed to create and manage virtual environments.
+
+ We now set up the virtual environment and activate it using ```python3 -m virtualenv –p `which python3.11` venv ``` and ```source venv/bin/activate``` respectively in the project directory. Note that ```-p `which python3.11` ``` is placed to avoid common issues with python file directory locations. Also, you can replace `python3.11` with the latest available version of python.
 
  We now install Django and Django Rest Framework using the command ```pip install django djangorestframework```.
 
@@ -60,7 +62,7 @@ class TodoItem(models.Model):
     completed = models.BooleanField(default=False)
 ```
 
-Next, we'll create a serializer to convert our model instances to JSON. We now create a new file called serializers.py in the app API folder and add the following code:
+Assuming we want to create an API for your TodoItem model that allows clients to create, read, update, and delete TodoItem instances. We may define a serializer class in serializers.py in the app API folder that converts TodoItem instances to JSON. We add the following code in serializers.py:
 
 ``` {python}
 from rest_framework import serializers
@@ -72,6 +74,8 @@ class TodoItemSerializer(serializers.ModelSerializer):
         fields = ('id', 'title', 'completed')
 ```
 
+The code above converts instances of the Todo model to JSON format so that they can be returned in HTTP responses. This is where the TodoItemSerializer class comes in. It is defined in the serializers.py file and inherits from the ModelSerializer class provided by Django Rest Framework and defines the fields that should be serialized and the model that the serializer should be based on. In our case, we want to serialize the id, title, and completed fields of the TodoItem model, so we include these fields in the Meta class of the serializer.
+
 Next, we'll create a view to handle incoming HTTP requests (GET, POST, PUT, PATCH and DELETE). We create a new file called views.py in the API app folder and add the following code:
 
 ``` {python}
@@ -80,14 +84,18 @@ from .models import TodoItem
 from .serializers import TodoItemSerializer
 
 class TodoItemList(ListCreateAPIView):
-    queryset = TodoItem.objects.all()
     serializer_class = TodoItemSerializer
+    
+    def get_queryset(self):
+        return TodoItem.objects.filter(completed=True)
 
 class TodoItemDetail(RetrieveUpdateDestroyAPIView):
-    queryset = TodoItem.objects.all()
     serializer_class = TodoItemSerializer
+    queryset = TodoItem.objects.all()
+
 
 ```
+The code above uses the TodoItemSerializer we previously created to convert the instances to the correct JSON format. To illustrate further on this and its use cases, we consider the TodoItemList view and note that it queries the database by filtering Todo items that are completed. We do this by overriding the get_queryset method of the ListCreateAPIView class and return only the TodoItem instances where completed is True, i.e., Todo item is completed, using the filter method: ```TodoItem.objects.filter(completed=True)```. This way, when the TodoItemList view is accessed with a GET request, only the completed TodoItem instances will be returned in the response.
 
 Finally, we can add a URL configuration for our API. We create a new file called urls.py in the API app folder and add the following code:
 
@@ -101,7 +109,7 @@ urlpatterns = [
 ]
 ```
 
-All in all, we have now built a simple API with the ability to list, create, update and delete todo list items. One can test the API by starting the Django development server using ``` python manage. py runserver ``` and visiting http://localhost:8000/todos/ in a web browser.
+All in all, we have now built a simple API with the ability to list, create, update and delete todo list items. One can test the API by starting the Django development server using ``` python3 manage.py runserver ``` and visiting http://localhost:8000/todos/ in a web browser.
 
 ### Extra Resources
 
