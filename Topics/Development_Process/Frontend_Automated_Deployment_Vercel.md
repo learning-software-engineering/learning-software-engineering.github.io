@@ -1,9 +1,9 @@
 # Using Vercel to host your Frontend (Automated)
 
 ## Table of Contents
-### [1. Introduction](#1-introduction)
-### [2. The Issues](#2-the-issues)
-### [3. Step by step solution to issues](#3-step-by-step-solution-to-issues)
+### [1. Introduction](#1-introduction-1)
+### [2. The Issues](#2-the-issues-1)
+### [3. Step by step solution to issues](#3-step-by-step-solution-to-issues-1)
 
 ## 1. Introduction
 
