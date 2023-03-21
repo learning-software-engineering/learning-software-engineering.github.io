@@ -10,7 +10,7 @@
 
 ## Introduction
 
-Device consistency is often a good condition for programmer, especially the software developer to maintain their train of thoughts. Specifically, it is easier to focus on the logic and flow of development when there's no distraction caused by constant change of devices. 
+Device consistency is often a good condition for programmer, especially the software developer to maintain their train of thoughts. Specifically, it is easier to focus on the logic and flow of development when there's no distraction caused by constant change of devices. In other words, if a software developer is constantly changing working environments, for example, coding on Macbook, but testing on an iPhone, it would be more error-prone since the sudden change of work space might derail the programmer's thoughts. Therefore, it would be more efficient if the software developer can design, code, and test on a same device, which is not often the case since there are development requirements across all sorts of operating systems. One functionality that modern laptop support to solve this problem is the technique of virtualization, that is virtualize the laptop and pretend it is running as an phone or other computer. In this note, I will show a specific virtualization branch: virtualize a Windows computer as an Android phone.
 
 ## MySQL vs other DBMSs
 
