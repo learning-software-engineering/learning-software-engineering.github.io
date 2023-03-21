@@ -7,7 +7,7 @@ An iframe is an HTML element used to embed a child website within a parent websi
 ## Why use Iframe
 Sometimes we want to let user to interact with a webpage without open a new webpage tage and redict to it. For example, we want to embed a survey inside a webpage so that the user can conveniently fill out the survey after reading the previous content in this webpage.
 
-## How to use Iframe
+## How to use Iframes
 You can add a html element inside your html file following this format <iframe src="some like" title="some title"></iframe>
 
 There is two important things related to Iframe and I provide instructions about them
