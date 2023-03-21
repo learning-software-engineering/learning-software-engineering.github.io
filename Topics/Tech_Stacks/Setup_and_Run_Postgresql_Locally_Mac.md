@@ -2,13 +2,14 @@
 
 ## Description
 This document provides instructions on how to setup postgresql locally on your mac using two methods, the first being through pgAdmin4 and the second being through the terminal. Below please find an overview of what is covered in this document:
-1. [Downloading Postgresql and PgAdmin]
-2. [Creation of a user in Postgresql]
-3. [Creation of a database with owner of "user" in Postgresql]
-4. [Instructions on how to see tables in your database]
-5. [Instructions on how to create tables in your database]
-6. [Instructions on how to delete tables in your database]
+1. [Downloading Postgresql and PgAdmin](#one)
+2. [Creation of a user in Postgresql](#two)
+3. [Creation of a database with owner of "user" in Postgresql](#three)
+4. [Instructions on how to see tables in your database](#four)
+5. [Instructions on how to create tables in your database](#five)
+6. [Instructions on how to delete tables in your database](#six)
 
+<a name="one" />
 ## Downloading Postgresql and PgAdmin
 To be able to setup Postgresql locally we first need to download it. First we check to see if we already have Postgresql installed by running: ```psql --version``` in the command line. This would return the version of Postgres if you have it installed already, if you already have Postgresql installed and don't want to use PgAdmin then please move onto the next section. If not continue reading.
 
@@ -24,7 +25,7 @@ Now you should have a ```.dmg``` file in the download folder, open it and follow
 
 The port number of the server can be anything, but default is 5432.
 
-
+<a name="two" />
 ## Creating a user in Postgresql
 Now that you have Postgresql successfully installed, here are steps to create a new user:
 
@@ -51,6 +52,7 @@ Note that if you want to create a superuser you can use ```CREATE USER your_user
 
 More information and additional methods can be found here: [How to create a Postgres User](https://phoenixnap.com/kb/postgres-create-user)
 
+<a name="three" />
 ## Creating a database in Postgresql
 Now that you have a custom user, you can now create a database!
 
@@ -70,6 +72,7 @@ Note that this makes the owner of database_name as the default postgres user. Yo
 
 You can also find more information here: [Postgresql Database: CREATE](https://www.tutorialspoint.com/postgresql/postgresql_create_database.htm)
 
+<a name="four" />
 ## Viewing tables in Postgresql
 This section is about how to see tables and what they contain in your Postgres database. I will be using ```database_name``` as a placeholder for your database name, and ```wanted_table``` for the table you want to inspect.
 
