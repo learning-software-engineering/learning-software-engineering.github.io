@@ -10,6 +10,8 @@ This document provides instructions on how to setup postgresql locally on your m
 6. Instructions on how to delete tables / views in your database
 
 ## Downloading Postgresql and PgAdmin
-To be able to setup Postgresql locally we first need to download it. First we check to see if we already have Postgresql installed by running: ```psql --version``` This would return the version of Postgres if you have it installed already, if you already have Postgresql installed then please move onto the next section. If not continue reading.
+To be able to setup Postgresql locally we first need to download it. First we check to see if we already have Postgresql installed by running: ```psql --version``` This would return the version of Postgres if you have it installed already, if you already have Postgresql installed and don't want to use PgAdmin then please move onto the next section. If not continue reading.
 
-To Install Postgresql 
+To Install Postgresql we will be using an interactive installer that can be found on [Postgres's website](https://www.postgresql.org/download/macosx/). Click the "Download the installer" link under the **Interactive installer by EDB** section. (**NOTE: The installer is by EDB, and will redirect you to another site**)
+
+After arriving to the site you can click the download icon for Mac OS X. This will install the 
