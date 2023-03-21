@@ -9,6 +9,9 @@ Following files are present in this directory. You may contribute to any of thes
 Potential Topics--
 
 - Tech stacks
+- Software Tools
+    1. Git
+        1. Git Workflows
 - Software Engineering
     1. Methodologies & Frameworks
         1. Agile
@@ -40,9 +43,11 @@ Potential Topics--
         4. Deployment
             1. Heroku
             2. AWS
+                1. Django Project Deployment: AWS, Vercel and Railway
             3. Firebase
             4. Digital Ocean
-            5. 6. Software development best practices:
+            5. Software development best practices:
+            6. Vercel Frontend Deployment (Automated)
     1. Designer Patterns
     2. Clean Coding
         1. Choose a coding style and stick to it
@@ -59,6 +64,10 @@ Potential Topics--
         
         
 - User Experience
+    1. Overview
+    2. Areas of User Experience
+    3. Helpful Courses
 - Product Management
+    1. Beginner's guide to product management and becoming a successful product manager
 - Other useful resources
 - Teamwork
