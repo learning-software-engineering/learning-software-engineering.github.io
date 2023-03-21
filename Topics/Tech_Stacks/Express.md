@@ -14,16 +14,20 @@
 
 ### [Defining RESTful routes](#defining-restful-routes-1)
 
+### [Additional Resources](#additional-resources-1)
+
 ## Introduction
 
 This guide will help you set up a simple RESTful server using Express, a popular web framework for Node.js. We will create a basic server that listens for HTTP requests and sends responses.
 
 ## Prerequisites
 
-[Node.js](https://nodejs.org/en/download)
+[Node.js](https://nodejs.org/en/download) \
 [npm](https://www.npmjs.com/package/npm)
 
 ## Setting up the project
+
+[Express Getting Started](https://expressjs.com/en/starter/installing.html)
 
 First, let's create a new directory for our project and navigate to it using the terminal.
 
@@ -127,7 +131,14 @@ We have defined the following routes for our items resource:
 
 `GET /items`: Retrieve all items \
 `POST /items`: Create a new item \
-`GET /items/`:id: Retrieve a specific item by ID \
-`PUT /items/`:id: Update an existing item by ID \
-`DELETE /items/`:id: Delete an item by ID \
+`GET /items/:id`: Retrieve a specific item by ID \
+`PUT /items/:id`: Update an existing item by ID \
+`DELETE /items/:id`: Delete an item by ID \
 The `app.use(express.json());` line tells Express to parse incoming JSON payloads, allowing us to access the request body data.
+
+## Additional Resources
+
+[Official Reference](https://expressjs.com/en/4x/api.html) \
+[GitHub Page](https://github.com/expressjs/express) \
+[MDN Express Example](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs) \
+[Tutorialspoint](https://www.tutorialspoint.com/nodejs/nodejs_express_framework.htm)
