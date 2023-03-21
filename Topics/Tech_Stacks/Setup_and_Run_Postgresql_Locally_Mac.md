@@ -37,4 +37,4 @@ Now that you have Postgresql successfully installed, here are steps to create a 
 
 Note that you area also able to set a password for the user and even superuser priviledges.
 
-<img src="https://github.com/michael-j-rubenstein/learning-software-engineering.github.io/blob/main/Topics/Tech_Stacks/Images/postgres_pgadmin_user_setup.png" width=500 style="margin: 0 auto"/>
+<img src="https://github.com/michael-j-rubenstein/learning-software-engineering.github.io/blob/main/Topics/Tech_Stacks/Images/postgres_pgadmin_user_setup.png" width=500 styles="margin: 0 auto"/>
