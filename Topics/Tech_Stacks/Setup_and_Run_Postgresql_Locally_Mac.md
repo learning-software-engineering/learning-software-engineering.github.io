@@ -1,7 +1,7 @@
 # Postgresql local setup instructions for Mac Users
 
 ## Description
-This document provides instructions on how to setup postgresql locally on your mac using two methods, the first being through pgAdmin4 and the second being through the terminal. Below please find an overview of what is covered in this document:
+This document provides instructions on how to setup postgresql locally on your mac using two methods, the first being through pgAdmin4 and the second being through the psql shell. Below please find an overview of what is covered in this document:
 1. [Downloading Postgresql and PgAdmin](#one)
 2. [Creation of a user in Postgresql](#two)
 3. [Creation of a database with owner of "user" in Postgresql](#three)
@@ -97,4 +97,39 @@ This section is about how to see tables and what they contain in your Postgres d
 
 You can also find more information here: [How to List Databases and Tables in PostgreSQL Using psql](https://chartio.com/resources/tutorials/how-to-list-databases-and-tables-in-postgresql-using-psql/) and [PostgreSQL Describe Table](https://www.postgresqltutorial.com/postgresql-administration/postgresql-describe-table/)
 
+<a name="five" />
 
+## Creating tables in Postgresql
+This section is about how to create tables in your Postgres database. I will be using ```database_name``` as a placeholder for your database name, and ```wanted_table``` for the table you want to want to create.
+
+### Using PgAdmin4
+1. Launch the app and insert your passwords
+2 In the tab on the left side of the screen go to ```Servers > Your wanted server (Default is PostgreSQL 15) > Databases > database_name > public > Tables```
+3.Right click ```Tables``` and select ```Create > Table...``` and create your table
+
+
+### Using Postgresql Shell
+1. Open up the Mac Terminal
+2. Run ```sudo -u postgres psql``` to open up the Postgresql Shell using the default postgres user and insert password
+3. Navigate to your database using ```\c database_name```
+4. Use Postgresql syntax ```CREATE TABLE wanted_table(... attributes ...);``` to create the table
+
+You can also find more information here: [Different methods to create a table in PostgreSQL](https://www.commandprompt.com/education/different-methods-to-create-a-table-in-postgresql/)
+
+<a name="six" />
+
+## Deleting tables in Postgresql
+This section is about how to delete a table in your Postgres database. I will be using ```database_name``` as a placeholder for your database name, and ```wanted_table``` for the table you want to want to delete.
+
+### Using PgAdmin4
+1. Launch the app and insert your passwords
+2 In the tab on the left side of the screen go to ```Servers > Your wanted server (Default is PostgreSQL 15) > Databases > database_name > public > Tables```
+3 Find and right click ```wanted_table``` and click ```Delete/Drop``` and you're done!
+
+### Using Postgresql Shell
+1. Open up the Mac Terminal
+2. Run ```sudo -u postgres psql``` to open up the Postgresql Shell using the default postgres user and insert password
+3. Navigate to your database using ```\c database_name```
+4. Use Postgresql syntax ``` DROP TABLE wanted_table;``` to delete the table
+
+You can also find more information here: [How to drop a table in PostgreSQL]([https://www.commandprompt.com/education/different-methods-to-create-a-table-in-postgresql/](https://www.commandprompt.com/education/how-to-drop-a-table-in-postgresql/#:~:text=While%20in%20the%20case%20of,selected%20table%20from%20the%20database.))
