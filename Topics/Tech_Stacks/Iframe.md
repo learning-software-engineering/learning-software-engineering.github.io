@@ -9,7 +9,7 @@ Sometimes we want to let users interact with a webpage without opening a new web
 
 ## How to use Iframes
 You can add an iframe element inside your HTML file by following this format:
-`<iframe src="some like" title="some title"></iframe>`
+`<iframe src="https://www.w3schools.com/" title="some title"></iframe>`
 
 There is two important things related to Iframe and I provide instructions about them
 
@@ -24,3 +24,5 @@ Then, you need to add an event listener in the child html file and set the corre
 ## Additional Resources
 Here is a link to learning more about iframe if you are interested.
 https://www.w3schools.com/tags/tag_iframe.ASP
+Here is a link to learning more about postMessage API
+https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage
