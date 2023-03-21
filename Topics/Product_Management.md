@@ -1,5 +1,3 @@
-## Resources for Product Management
-
 ## User Stories
 
 ### Introduction
