@@ -1,9 +1,9 @@
 # Using Vercel to host your Frontend (Automated)
 
 ## Table of Contents
-### 1. Introduction
-### 2. The Issues
-### 3. Step by step solution to issues
+### [1. Introduction](#1-introduction)
+### [2. The Issues](#2-the-issues)
+### [3. Step by step solution to issues](#3-step-by-step-solution-to-issues)
 
 ## 1. Introduction
 
@@ -125,6 +125,6 @@ Go to the `Actions` tab on your forked repo and click on the workflow you just c
 After the action runs, check to make sure its running corrcetly. If it is, then you are good to go! The action is triggered and will run every 30 minutes (or whatever time you've set it to).
 
 ### 3.5. Looking forward
-This was nice, but the deployment only deploys after x minutes depending on the cron job. What if we want to deploy immediately after the main repo is updated? We can do this too. We can use a webhook to trigger the GitHub Action. This way, when the main repo is updated, the webhook will trigger the GitHub Action and the forked repo will be updated and deployed immediately.
+This was nice, but the deployment only deploys after x minutes depending on the cron job. What if we want to deploy immediately after the main repo is updated? We can do this too. We can use a webhook to trigger the GitHub Action. This way, when the main repo is updated, the webhook will trigger the GitHub Action and the forked repo will be updated and deployed immediately. You can learn more about webhooks [here](https://docs.github.com/en/get-started/exploring-integrations/about-webhooks) and learn how to create them [here](https://docs.github.com/en/webhooks-and-events/webhooks/webhook-events-and-payloads).
 
 Another note, deploying off of your main branch (as shown in sample code above) may be a bad idea. If you are working on a project with other people, you may want to deploy off of a different branch. Developers do this in the industry all the time. They have a deployment branch that is different from the main or development branch. After they have enough features to deploy, they merge their code into the deployment branch. Then, they deploy off of the deployment branch. This way, they can deploy whenever they want without worrying about breaking the main branch.
