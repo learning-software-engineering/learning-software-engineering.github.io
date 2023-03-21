@@ -8,6 +8,8 @@ Professionalism in software engineering is a combination of technical expertise,
 ### Definition of professionalism
 Professionalism can be defined as the conduct, behavior, and attitude exhibited by individuals in a professional setting. In software engineering, professionalism includes a range of behaviors that demonstrate a commitment to delivering high-quality work, effective collaboration, and maintaining ethical standards.
 
+Also the definition of software engineering professionalism: Software engineering professionalism is a movement to make software engineering a profession, with aspects such as degree and certification programs, professional associations, professional ethics, and government licensing. (From Wekipedia: https://en.wikipedia.org/wiki/Software_engineering_professionalism)
+
 ### The role of ethics in software engineering
 Ethics play a significant role in software engineering as they guide engineers in making responsible decisions that impact users, clients, and colleagues. Ethical considerations include data privacy, security, accessibility, and fairness, ensuring that the software development process benefits all stakeholders without causing harm.
 
@@ -64,6 +66,9 @@ Professionalism is essential in all aspects of software engineering, and maintai
 4. Provide regular updates: Keep clients informed about project progress, milestones, and any changes or obstacles that may affect the project's outcome.
 5. Delivering high-quality work: Strive for excellence in your work, thoroughly test your code, and address any issues promptly to ensure client satisfaction.
 6. Handle difficult situations with grace: If conflicts or misunderstandings arise, remain calm, listen to the client's concerns, and work collaboratively to find a solution.
+
+### Additional practices:
+You can find additional practices on this website: https://engineerscanada.ca/professional-practice-in-software-engineering
 
 By implementing these best practices, you can maintain a professional demeanor in various situations, enhancing your reputation as a software engineer and fostering positive relationships with colleagues and clients.
 
