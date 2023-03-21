@@ -9,7 +9,8 @@ This document provides instructions on how to setup postgresql locally on your m
 5. [Instructions on how to create tables in your database](#five)
 6. [Instructions on how to delete tables in your database](#six)
 
-<a name="one" />
+<a name="one"/>
+
 ## Downloading Postgresql and PgAdmin
 To be able to setup Postgresql locally we first need to download it. First we check to see if we already have Postgresql installed by running: ```psql --version``` in the command line. This would return the version of Postgres if you have it installed already, if you already have Postgresql installed and don't want to use PgAdmin then please move onto the next section. If not continue reading.
 
