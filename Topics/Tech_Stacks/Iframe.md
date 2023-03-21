@@ -19,7 +19,7 @@ After getting the scrollheight of the child website, we can delete the scroll ba
 
 ### Sending a message from the parent webpage to its child webpage
 You can use the `postMessage` API to do this. First, you need to get the iframe element in the parent html file and call `postMessage` with this element. 
-Then, you need to add an event listener in the child html file and set the correspoing source to the url of the parent website.
+Then, you need to add an event listener in the child html file and set the correspond source to the url of the parent website.
 
 ## Additional Resources
 Here is a link to learning more about iframe if you are interested.
