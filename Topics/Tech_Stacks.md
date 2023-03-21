@@ -2,4 +2,4 @@
 
 ### [Learning MySQL for databases](./Tech_Stacks/Learning_MySQL.md)
 
-### [Learning how to setup and run Postgresql Server Locally on Mac (2 Methods)]
+### [Postgresql Setup and Light Tutorial for Mac Users (2 Methods)](./Tech_Stacks/Postgres_Setup_and_Tutorial_Mac.md)
