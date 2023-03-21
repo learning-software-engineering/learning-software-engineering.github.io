@@ -6,7 +6,7 @@
 
 A user story is an informal description of a new feature or task in a software project. The purpose of a user story is to gauge how the particular feature will provide value from the perspective of the user. These stories generally exist within a larger set, and ultimately allow teams to organize their workflow in a user-centric manner.
 
-User stories all follow a general structure, and are accompanied by their associated "Acceptance Criteria" and some additional details. Each section retains the customer focused philosophy of the user story, and consists of a few non-technical descriptive sentences. By combining these sections, user stories are able to effectively scope the entirety of their task.
+User stories all follow a general structure and are accompanied by their associated "Acceptance Criteria" and some additional details. Each section retains the customer-focused philosophy of the user story and consists of a few non-technical descriptive sentences. By combining these sections, user stories are able to effectively scope the entirety of their task.
 
 ### Story Structure
 
@@ -22,27 +22,32 @@ Each format has its own advantages and disadvantages. Teams will generally use t
 
 ### Acceptance Criteria
 
-Acceptance criteria refers to a list of requirements that must be accomplished for a user story to be completed and closed. The purpose of acceptance criteria is to fully scope a user stories. This is important so that developers exactly what they need to output, and so that all stakeholders are satisfied.
+Acceptance criteria refers to a set of requirements that must be accomplished for a user story to be completed and closed. The purpose of acceptance criteria is to fully scope user stories. This is important so that developers exactly what they need to output, and so that all stakeholders are satisfied.
 
-The general formatting of acceptance criteria is not as strict as the formatting of the story itself. Firstly, all acceptance criteria should be clear, concise and readable. Beyond that, acceptance criteria should always be testable. This means that there are specific "yes/no" scenarios that can verify if the criteria has been implemented. Lastly, acceptance criteria should provide user perspective.
+Like with the story itself, there are various ways to commonly organize acceptance criteria. The most common organizational strategy is the "Given/When/Then" method. This works similarly to the user story outlines, and can be utilized as follows:
+```
+Given <some condition>, when <some action is carried out>, the <a set of observable outcomes should occur>
+```
 
-Beyond the conditions that are explicitly outlined in the acceptance criteria, there is an additionally layer of rules that must be met before a story can be completed. These conditions are generally referred to as the "Definition of Done", and are created and agreed upon by an entire team before being used. This acts as a general set of standards that act as quality control, so that they are met by each story before it can be considered shippable.
+The "Verifications List" methodology is another commonly used approach for organizing acceptance criteria. This includes a list of concise and testable criteria for ensuring that everything outlined in the user story has been properly implemented. These criteria can take the form of "yes/no" or "pass/fail", and must all be successful for the story to be considered as complete.
+
+Beyond the conditions that are explicitly outlined in the acceptance criteria, there is an additional layer of rules that must be met before a story can be completed. These conditions are generally referred to as the "Definition of Done", and are created and agreed upon by an entire team before being used. This acts as a quality control for a teams entire codebase and ensures that developers maintain their proper implementation practices at all times.
 
 ### Story Points
 
 Story points are a numerical estimation of the amount of effort that is required to complete a user story. Teams will generally vote and discuss the given task so that they can align themselves and agree on a score. This system works so that the team can quantify the task at hand and appropriately assign it to one or multiple developers. 
 
-When deciding the necessary points to allocate to a story, there are generally 3 points that are taken into consideration. These points are outlined below:
+When deciding the necessary points to allocate to a story, the following 3 factors are most commonly taken into consideration:
 
 - Complexity: The overall difficulty of the task
 - Risk: The margin for possible error or hidden tasks arising in the future
 - Repetition: The team's past experience with this line of work
 
-These factors are not hard considerations, but some of the most common to consider in these situations.
+It is not absolutely necessary for teams to follow these exact considerations. These are only common examples that have proven to be effective across various organizations.
 
-### Example User Story
+### User Story Template
 
-By combining all of the sections above, we can create the following example user story:
+By combining all of the sections above, we can create the following user story template:
 
 ---
 
