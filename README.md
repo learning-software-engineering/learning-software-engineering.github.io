@@ -48,6 +48,7 @@ Potential Topics--
             3. Firebase
             4. Digital Ocean
             5. Software development best practices:
+            6. Vercel Frontend Deployment (Automated)
     1. Designer Patterns
     2. Clean Coding
         1. Choose a coding style and stick to it
