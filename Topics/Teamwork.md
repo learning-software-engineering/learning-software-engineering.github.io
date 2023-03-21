@@ -20,7 +20,7 @@ It is not always possible to avoid conflict. In work environment when people are
 ## Roles in a Software Team
 
 1. Project Manager: The project manager is responsible for planning and overseeing the software development process. They set goals and deadlines, allocate resources, manage the budget, and communicate with stakeholders.
-2. Software Developer: The software developer writes, tests, and maintains the software code. They work with the project manager and other team members to ensure that the software meets the project requirements and is delivered on time.
+2. Software Developer: The software developer writes and maintains the software code. They work with the project manager and other team members to ensure that the software meets the project requirements and is delivered on time. While developers may test their code during the development process, it is important to note that comprehensive testing is typically the responsibility of the quality assurance (QA) team.
 3. Quality Assurance (QA) Analyst: The QA analyst tests the software to identify bugs and ensure that it meets the quality standards set by the project manager. They work with the software developers to resolve any issues that arise.
 4. User Experience (UX) Designer: The UX designer creates the user interface and experience for the software. They work with the software developers to ensure that the user interface is intuitive, attractive, and easy to use.
 5. Database Administrator: The database administrator is responsible for managing the software's database, ensuring that it is secure, reliable, and optimized for performance.
