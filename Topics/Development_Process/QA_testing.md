@@ -39,7 +39,7 @@ There are many reasons why software testing is important. This blog [7 reasons w
 - Satisfaction of the Customer: This should be the primary objective of the owner and if the customer is not happy then they will use another product.
 - Enhance the development process: Quality assurance allows for the developer to find a wide array of scenarios and errors.
 - Easy while adding new features: When changing old code it can sometimes break it without the developer knowing. Testing is a great way to give the developer some confidence when adding a new feature.
-- Determining the performance of the software: If your application has a low or reduced perfomance, it will bring a bad reputation in the market. Software testing can help identify these issues before users do.
+- Determining the performance of the software: If your application has a low or reduced performance, it will bring a bad reputation in the market. Software testing can help identify these issues before users do.
 
 
 ## How to write test cases?
