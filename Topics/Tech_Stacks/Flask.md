@@ -16,8 +16,8 @@
 
 Prior to learning about Flask, you will need basic knowledge regarding the following:
 
-- [Python](https://www.python.org/): Python is a highly popular, high level general purpose programming language.
-- [Web Frameworks](https://deepsource.io/glossary/web-framework/): Software frameworks/libraries that help developers write software that runs on the web.
+- [Python](https://www.python.org/): Python is a highly popular, high level general purpose programming language. This is essential because Flask is built on Python and is a Python framework.
+- [Web Frameworks](https://deepsource.io/glossary/web-framework/): Web frameworks are software frameworks/libraries that help developers write software that runs on the web. Basic knowledge is essential to understanding what Flask provides the user and what to expect from Flask.
 
 ## Introduction
 
@@ -37,9 +37,9 @@ To install Flask, follow [this](https://flask.palletsprojects.com/en/2.2.x/insta
 
 ### Tutorials
 
-Full-featured Flask blog Youtube tutorial (Corey Schafer) with source code (DB, login Auth, Pagination): [link](https://www.youtube.com/playlist?list=PL-osiE80TeTs4UjLw5MM6OjgkjFeUxCYH)
+Full-featured Flask blog Youtube tutorial (Corey Schafer) with source code (DB, login Auth, Pagination), recommended as a guide to building a more complex application: [link](https://www.youtube.com/playlist?list=PL-osiE80TeTs4UjLw5MM6OjgkjFeUxCYH)
 
-Very in-depth Flask tutorial with extensive features (login, user interactions, Ajax, forms, Javascript integration): [link](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world)
+Very in-depth Flask tutorial with extensive features (login, user interactions, Ajax, forms, Javascript integration), recommended for an in-depth examination of Flask features: [link](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world)
 
 ### Deployment
 
