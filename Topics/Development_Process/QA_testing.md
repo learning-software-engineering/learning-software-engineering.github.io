@@ -23,9 +23,10 @@ This paper is likely the greatest paper about software QA, however it is quite l
 - The purpose of QA is to set up adequate processes, introducing the standards of quality to prevent the errors and flaws in the product. This is slightly different to testing where the purpose is to detect and solve software errors and flaws.
 - There are different levels of software testing: component/unit testing, integration testing, system testing, and acceptance testing.
 
+[What does a Software Quality assurance engineer do?](https://www.careerexplorer.com/careers/software-quality-assurance-engineer/)
 
 This article gives a tease of what a software QA engineer is like, the different types of SQA engineers and their duties and responsibilities. It is the right article to figure out if you want a career in this field or you are interested in QA.
-[What does a Software Quality assurance engineer do?](https://www.careerexplorer.com/careers/software-quality-assurance-engineer/)
+
 
 ## Why should we test?
 
