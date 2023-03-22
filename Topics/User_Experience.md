@@ -37,7 +37,7 @@ User experience is unique, as practicing user experience design can be challengi
 
 - [Laws of UX](https://lawsofux.com/): This is an interactive website with beautiful cards Informing users of the common laws of UX. Each card provides an example of how the principle can be applied in real-world design scenarios, making this a very valuable tool for learning and practicing user experience design.
 
-- [It’s Centered that](https://www.supremo.co.uk/designers-eye/): Creating designs with alignment is an important concept for user experience. This game tests your designer’s eye by asking the user if the dot is centered or not on a shape. 
+- [It’s Centered That](https://www.supremo.co.uk/designers-eye/): Creating designs with alignment is an important concept for user experience. This game tests your designer’s eye by asking the user if the dot is centered or not on a shape. 
 
 - [Boolean](https://boolean.method.ac/): Boolean is a fun and interactive game that challenges users to create an interface using essential user experience design elements. The game provides the user with different design challenges to help practice creating effective and visually appealing user interfaces. Each challenge tests the user's ability to apply specific design principles and create user-friendly interfaces.
 
