@@ -13,7 +13,7 @@ Additionally, it is a good idea to design tests that mimic the way a user would 
 
 ## Example with React Native
 
-The following test is one way to test a successful login action. After pressing the button, the test tries to find a "Logout" button on the screen that should have been rendered.
+The following test is one way to test a successful login action. After pressing the button, the test tries to find a "Logout" button on the screen that should have been rendered. There are many other ways to do this depending on your application screens, but the goal of the test is to detect some change in the screen that only could have occured if the login was successful.
 
 ```
 it("should redirect to home page when logged in successfully", async () => {
