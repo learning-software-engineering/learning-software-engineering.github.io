@@ -3,7 +3,9 @@
 ### Prerequisites
 Before learning about PostgreSQL and psycopg2, ensure that you have knowledge about the following:
 - [Python](https://www.python.org/): High level general purpose programming language.
-- Relational Algebra and Database Theory (e.g. What is a relation? What is a query?)
+- Relational Algebra
+- Database Theory
+- Basic understanding of SQL
 
 ### Introduction
 PostgreSQL is an open-source DBMS. As the name states, PostgreSQL is a relational DBMS based on relations and queries and is great for dealing with large amounts of data and complex queries. It's also good for referencing data quickly and allowing the user to have some flexibility in how they want to represent their data. Furthermore, PostgreSQL supports table inheritance and function overloading.
