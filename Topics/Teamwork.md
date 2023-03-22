@@ -18,7 +18,7 @@ It is not always possible to avoid conflict. In work environment when people are
 
 Handling a non-responsive and unmotivated team member in software engineering can be especially challenging due to the importance of collaboration and communication in the development process. There are several steps that can be taken to increase the chances of the conflict being resolved peacefully:
 
-1. First, the team leader or manager should first schedule a meeting with the team member to discuss their concerns and understand the root cause of their lack of motivation. It could be due to a variety of factors such as workload, personal issues or lack of interest in the project. 
+1. First, the team leader or manager should schedule a meeting with the team member to discuss their concerns and understand the root cause of their lack of motivation. It could be due to a variety of factors such as workload, personal issues or lack of interest in the project. 
 2. Once the root cause is identified, the leader should work with the team member to develop a plan to improve their performance, such as redefining their role, providing training or mentorship or reassigning tasks. 
 3. Additionally, the team leader can try to increase the team member's motivation by setting clear goals and providing feedback, recognition and incentives for their contributions. 
 
