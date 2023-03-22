@@ -15,4 +15,6 @@ Once you have a text editor and an internet browser, you're ready to learn and d
 
 ### Note
 
+#### CSS (Cascading Style Sheets)
+
 Conventionally, it's good practice to use HTML files to define only what content goes into a webpage, and not the aesthetic settings of that content. As you pick up HTML, you should also learn CSS (Cascading Style Sheets). CSS is used to control the aesthetic settings of content defined in an HTML file, and you can write CSS in separate CSS file (with extension ".css"). See an introduction to CSS here (add link to CSS section). By separating content and styling, we achieve cleaner and more maintainable code.
