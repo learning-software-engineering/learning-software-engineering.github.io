@@ -36,7 +36,7 @@ To select data from a certain column in a table, you can use a query like:
 ``` 
     SELECT col_name1, col_name2 FROM table_name;
 ```
-This gives you a smaller table that only contains column1 and column2 from your selected table in your relation. 
+This gives you a smaller table that only contains the columns "col_name1" and "col_name2" from your selected table in your relation. 
 
 You can also merge two different tables by changing the FROM clause to contain 2 tables:
 ```
@@ -48,7 +48,7 @@ In addition, you can perform filtering on tables:
 ```
 SELECT col1_table1, col2_table2 FROM table1_name, table2_name WHERE col1_table1 > 1;
 ```
-Here it only shows that data from the previous table where the value of col1_table1 is greater than 1. This is the syntax for when the table and column names between table 1 and table 2 are unique.
+Here it only shows that data from the previous table where the value of a row in the column "col1_table1" is greater than 1. This is the syntax for when the table and column names between table 1 and table 2 are unique.
 
 There are many other features of PostgreSQL.
 
