@@ -13,6 +13,6 @@ Try creating an HTML file consisting of the line "hello" and then open it with a
 Once you have a text editor and an internet browser, you're ready to learn and develop HTML. The following resource is an easy-to-read and interactive guide on all the fundamentals of HTML. You can learn and reference most of the HTML material you will need from it.
 - [HTML Tutorial](https://www.w3schools.com/html/)
 
-### Tips
+### Note
 
-Conventionally, it's good practice to use HTML files to define only what content goes into a webpage, and not the aesthetic settings of that content. As you pick up HTML, you should also learn CSS (Cascading Style Sheets). CSS is used to control the aesthetic settings of content defined in an HTML file. See an introduction to CSS here (add link to CSS section). By separating content and styling, we achieve cleaner and more maintainable code.
+Conventionally, it's good practice to use HTML files to define only what content goes into a webpage, and not the aesthetic settings of that content. As you pick up HTML, you should also learn CSS (Cascading Style Sheets). CSS is used to control the aesthetic settings of content defined in an HTML file, and you can write CSS in separate CSS file (with extension ".css"). See an introduction to CSS here (add link to CSS section). By separating content and styling, we achieve cleaner and more maintainable code.
