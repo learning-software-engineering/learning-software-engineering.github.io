@@ -5,11 +5,12 @@
 ### [What is Software QA?](#what-is-software-qa-1)
 ### [Why should we test?](#why-should-we-test-1)
 ### [How to write test cases?](#how-to-write-test-cases-1)
+### [Automated testing](#automated-testing-1)
 
 
 ## Introduction
 
-This article will specifically focus on the testing portion of the development process. It is an essential and often overlooked part of this process and it will explain what software quality assurance or Software QA is, why it is an important part of the development process and how to do it.
+This article will specifically focus on the testing portion of the development process. It is an essential and often overlooked part of this process and it will explain what software quality assurance or Software QA is, why it is an important part of the development process, how to do it and links to an overview of automated testing (a useful tool in QA). 
 At the end of this article, a CSC301 student would have the basic understandings of Software QA and would be able to look into a career in the Software QA field.
 
 
@@ -49,3 +50,6 @@ There are many reasons why software testing is important. This blog [7 reasons w
 Now that you know how to think about creating test cases it is important to also know how to write a test case. More specifically, how to describe the test case so it is easily understood. This is extremely useful for anyone who develops test. This is one of the skills that separates the good SQA engineers from the great ones.
 Here is a [short blog](https://blog.testlodge.com/how-to-write-test-cases-for-software-with-sample/) on how to write your test cases. 
 
+## Automated testing
+
+[This article](./Automated_Testing.md) provides a nice overview of automated testing, which is an important tool in QA testing.
