@@ -1,5 +1,7 @@
 ## Resources for Teamwork
 
+## Communication
+
 
 ## Conflict Resolution
 
