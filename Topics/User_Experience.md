@@ -21,8 +21,8 @@ ___Established Norms___
 ___Color Theory___
 - [Colors Influence Choice](https://usabilitygeek.com/colour-user-experience-psychology/#:~:text=Colour%20plays%20a%20crucial%20role,and%20identified%20with%20your%20industry.): Users are shown certain colors to enforce actions. For example, red is commonly linked to aggressive or bad emotions and as such can be used as a cancel to dissuade people from refunding items.
 
-## Nielsen's 10 Usability Heuristics
-### [Usability Heuristics](./User_Experience/Usability_Heuristics.md)
+___ Nielsen's 10 Usability Heuristics___
+- [Usability Heuristics](./User_Experience/Usability_Heuristics.md)
 
 ### Helpful Courses
 
