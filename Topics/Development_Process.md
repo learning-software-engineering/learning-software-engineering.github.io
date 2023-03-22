@@ -4,6 +4,8 @@
 ### [Automated Frontend Deployment with Vercel](./Development_Process/Frontend_Automated_Deployment_Vercel.md)
 ### [Automated Testing](./Development_Process/Automated_Testing.md)
 
+### [Getting Started With Docker](./Development_Process/Docker.md)
+
 ## Build requirements
 ### [Requirements.txt](./Development_Process/Build_Requirements/Requirements_txt.md)
 
