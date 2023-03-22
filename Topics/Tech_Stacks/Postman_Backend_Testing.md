@@ -1,8 +1,9 @@
 
-# Postman Backend Testing
+# Postman API Testing
 
 In this Postman application overview, we will go over how to 
-install the application and the details of how to tests your API endpoints.
+install the application and the details of how to tests your API endpoints
+specifically for GET and Post method.
 
 ## Download and installation
 the following link will take you to the postman website where you can
@@ -22,7 +23,8 @@ After the download the following video will help you install the application:
 ### Creating a workspace
 Before starting to test your API, it is best to create a workspace for the 
 specific project that you are working on. This way team members can access
-and contribute to the test cases.
+and contribute to the test cases. However, if you are short on time you can
+jump to the next step "Creating a Collection".
 To do this, click on the workspace tab and then click on the 
 'Create Workspace' button and name your workspace.
 then click on the newly created workspace to write your requests within it.
@@ -33,10 +35,10 @@ Create a new Collection by clicking on the '+' that is location next to the
 collection side tab.
 ### Sending requests
 Once you have created the Collection, you can now create your request. 
-Do this by expanding the newly created collection and clicking on add request
+Do this by expanding the newly created collection on the left panel and clicking on add request
 which is highlighted. Copy and paste the request URL of your API into the URL bar.
 
-To add any new requests to your collection, right click on your collection and 
+To add any new requests to your collection, right click on your collection on the left panel and 
 select a add request. Alternatively, you can right click on the previously created request
 and click Duplicate. This also helps preserve the request variables.
 #### POST requests
