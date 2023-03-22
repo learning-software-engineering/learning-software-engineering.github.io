@@ -10,6 +10,9 @@ CSS, or cascding style sheets, are used to add styles, like spacing and layout, 
 
 CSS rules consist of a selector and a declaration block, where the selector points to the HTML element or set of elements you want to style and the declaration denotes the style. 
 
+<img width="444" alt="Capture" src="https://user-images.githubusercontent.com/81656509/226232503-8d496905-038e-4f61-b17f-d4f702f75ecf.PNG">
+
+<img width="444" alt="Capture" src="https://user-images.githubusercontent.com/81656509/226232503-8d496905-038e-4f61-b17f-d4f702f75ecf.PNG">
 
 [Image source](https://www.w3schools.com/css/css_syntax.asp)
 
