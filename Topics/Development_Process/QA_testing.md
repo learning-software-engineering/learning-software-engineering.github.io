@@ -20,7 +20,7 @@ At the end of this article, a CSC301 student would have the basic understandings
 This paper is likely the greatest paper about software QA, however it is quite long. Here are some of the main definitions and key takeaways:
 - In order to make sure the released software is safe and functions as expected, the concept of software quality was introduced. It is often defined as “the degree of conformance to explicit or implicit requirements and expectations”.
 - The purpose of QA is to set up adequate processes, introducing the standards of quality to prevent the errors and flaws in the product. This is slightly different to testing where the purpose is to detect and solve software errors and flaws.
-- There are different levels of software testing, component/unit testing, integration testing, system testing then acceptance testing.
+- There are different levels of software testing: component/unit testing, integration testing, system testing, and acceptance testing.
 
 
 This article gives a tease of what a software QA engineer is like, the different types of SQA engineers and their duties and responsibilities. It is the right article to figure out if you want a career in this field or you are interested in QA.
