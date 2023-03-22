@@ -41,22 +41,24 @@ Clean Architecture works on the well-defined division of layers. It is important
 ![image](https://user-images.githubusercontent.com/75923742/227027780-b5fbf347-ff78-49fa-a122-8f9ac4ef53d4.png)  
 
 
-Some of the Layers are (Simplified): 
+Some of the layers are (Simplified): 
 - Business Rules: 
-  - Entity: a component of our computer system that represents a condensed set of critical business rules that are applied to crucial business data
+  - Entity: A component of our computer system that represents a condensed set of critical business rules that are applied to crucial business data.
   - Use Case: Gives specifics on the input the user must supply and the output the system must deliver to the user. Additionally, it includes the processing steps required to create the result.
 
-- Entities: Contains functions, variables and other structures which hold the main objectives of our application, they must be general and be the highest level of rules. 
-- Interface Adaptors: Responsible for communicating between the layers, takes data in and transformed it such that it can be sent to lower levels. 
-- Framworks and Drivers: Contains framworks and databases responsible for communicating with the interface adapters.
+- Entities: Contains functions, variables, and other structures that hold the main objectives of our application, they must be general and have the highest level of rules. 
+- Interface Adaptors: Responsible for communicating between the layers, takes data in and transforms it such that it can be sent to lower levels. 
+- Framworks and Drivers: This section contains frameworks and databases responsible for communicating with the interface adapters.
 
 
-This is only a simplification of what Clean Architecture, the topic is so vast that there have been texts that have been dedicated to this topic. Some resources that can be beneficial in understanding and clearifying any doubts about the topic have been linked below. 
+This is only a simplification of what "Clean Architecture" is; the topic is so vast that there have been texts that have been dedicated to this topic. Some resources that can be beneficial in understanding and clearing up any doubts about the topic have been linked below. 
+
 - Text that goes into greater depth about each layer: 
    - https://dev.to/rubemfsv/clean-architecture-the-concept-behind-the-code-52do#:~:text=The%20main%20rule%20for%20Clean,elements%20of%20an%20outermost%20layer.  
 
-- Article Summerizing Clean Architecture(Examples and Code)
+- Article Summarizing Clean Architecture (Examples and Code)
   -  https://pusher.com/tutorials/clean-architecture-introduction/
 
-- Very Detailed explanation of Clean Architecture by Robert C. Martin or Uncle Bob
+- A very detailed explanation of Clean Architecture by Robert C. Martin or Uncle Bob and his book
    - https://www.youtube.com/watch?v=2dKZ-dWaCiU 
+   - https://github.com/ropalma/ICMC-USP/blob/master/Book%20-%20Clean%20Architecture%20-%20Robert%20Cecil%20Martin.pdf 
