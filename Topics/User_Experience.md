@@ -24,6 +24,9 @@ ___Color Theory___
 ___Responsive Design___
 - [Responsive Design](https://devrix.com/tutorial/important-responsive-design/): Demonstrates important and benefits of responsive design, flexiblity they provide, easiblity for the consumers upon making the said software. 
 
+___ Nielsen's 10 Usability Heuristics___
+- [Usability Heuristics](./User_Experience/Usability_Heuristics.md)
+
 ### Additional UX
 
 There are some things that have become a crucial part in making a software: Universal Design Principles. 
