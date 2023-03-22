@@ -45,7 +45,7 @@ Now you might want a React Container to communicate with a containerized Flask A
 
 ## Other Resources
 
-Here's a [cheat sheet](https://docs.docker.com/get-started/docker_cheatsheet.pdf) of all useful Docker CLI commands and here's a [cheat sheet](https://devhints.io/docker-compose) for docker compose which should help you in your future endeavors All the best!
+Here's a [cheat sheet](https://docs.docker.com/get-started/docker_cheatsheet.pdf) of all useful Docker CLI commands and here's a [cheat sheet](https://devhints.io/docker-compose) for docker compose which should help you in your future endeavors. All the best!
 
 ----
 
