@@ -1,6 +1,8 @@
 ## Resources for Development Process
 
 ### [Django Project Deployment: AWS, Vercel, and Railway](./Development_Process/Django_Deployment_AWS_Railway_Vercel.md)
+### [Automated Frontend Deployment with Vercel](./Development_Process/Frontend_Automated_Deployment_Vercel.md)
+### [Automated Testing](./Development_Process/Automated_Testing.md)
 
 ### [Getting Started With Docker](./Development_Process/Docker.md)
 
@@ -26,3 +28,4 @@ The SOLID principles are:
  
  ## Resource that gives examples of the uses cases of SOLID principles
   LINK :  https://www.youtube.com/watch?v=_jDNAf3CzeY 
+
