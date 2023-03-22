@@ -66,5 +66,6 @@ Potential Topics--
     2. Areas of User Experience
     3. Helpful Courses
 - Product Management
+    1. Resources for Product Management
 - Other useful resources
 - Teamwork
