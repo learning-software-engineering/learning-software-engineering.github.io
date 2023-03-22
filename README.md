@@ -9,8 +9,16 @@ Following files are present in this directory. You may contribute to any of thes
 Potential Topics--
 
 - Tech stacks
-    1. Django
+    1. [Nuxt3](https://github.com/learning-software-engineering/learning-software-engineering.github.io/blob/main/Topics/Tech_Stacks/Nuxt3.md)
+          
+        Nuxt.js provides server-side rendering, automatic routing, code organization, and pre-configured plugins. It can be used to create applications quickly  and easily.
+
+    2. Django
         1. Django Rest Framework
+    3. Salesforce API
+    
+    4. CSS (Cascading Style Sheets) 
+    
 - Software Tools
     1. Git
         1. Git Workflows
