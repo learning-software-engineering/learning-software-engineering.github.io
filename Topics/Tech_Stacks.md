@@ -8,4 +8,4 @@
 
 ### [Angular Resources](./Tech_Stacks/Angular.md)
 
-### [Express Resourses](./Tech_Stacks/Express.md)
+### [Express Resources](./Tech_Stacks/Express.md)
