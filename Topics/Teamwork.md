@@ -2,7 +2,10 @@
 
 ## Communication
 
-Communication is one of the most essential skills an individual can have as part of a software engineering team. This is because
+Communication is one of the most essential parts of a successful software engineering team. This is because software engineering teams are often composed of multiple individuals with different experiences, skills, schedules and responsibilites and without effective communication the team will not be able to successfuly work together on completing their project. 
+
+
+
 
 ## Conflict Resolution
 
