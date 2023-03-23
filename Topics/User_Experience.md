@@ -27,10 +27,11 @@ ___Responsive Design___
 ___Nielsen's 10 Usability Heuristics___
 - [Usability Heuristics](./User_Experience/Usability_Heuristics.md)
 
-### Additional UX
+### Accessibility Features of User Experience
 
 There are some things that have become a crucial part in making a software: Universal Design Principles. 
-___Accessiblity Features___
+
+___The 7 Universal Design Principles___
 - [Universal Design Principles](https://www.buffalo.edu/access/help-and-support/topic3/universaldesignprinciples.html): Universal Design Principles are not only used for software, but can be incorporated generally as well. These 7 principles ensure accessibility, consistency, and user-friendly software. 
 This article provides the 7 Universal Design Principles that makes a software accessible to all users, which plays a important role in diversifying the User Experience. 
 
