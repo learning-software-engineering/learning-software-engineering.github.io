@@ -2,7 +2,7 @@
 
 ## What is Axios?
 
-Axios is a JavaScript framework that enables developers to send a variety of HTTP requests, performs automatic and contextual serialization of response data, protects
+Axios is a JavaScript library that enables developers to send a variety of HTTP requests, performs automatic and contextual serialization of response data, protects
 against [XSRF](https://en.wikipedia.org/wiki/Cross-site_request_forgery) attacks, and even allows for request cancellation amongst much more. It can be used in both
 the backend and frontend of a full stack application, making it a versatile addition to any JavaScript based application.
 
@@ -53,6 +53,14 @@ Axios.post("https://www.website.com", someData).then(
   }
 )
 ```
+When using Axios.post(), the `someData` parameter could represent any kind of data that needs to be sent in the request body, such as a JSON object.
+In addition, `res` is a JSON object that encapsulates the entire response and `err` is a similar JSON object for the error. Usually, `res` has the following attributes:
+
+* `res.status`, the HTTP response code such as 404, 200, 500, etc.
+* `res.statusText`, the text of the HTTP response code such as 'OK', 'PAGE NOT FOUND, 'INTERNAL SERVER ERROR', etc.
+* `res.data`, the actual information request contained in a JSON format. The format can vary depending on the backend/server response.
+* `res.headers`, the headers of the response that usually instruct the browser or receiver to perform a certain protocol/instruction.
+* `res.request`, is the is the request that generated this response. It is the last ClientRequest instance in node.js and an XMLHttpRequest instance in the browser.
 
 Along with `.get()` and `.post()`, Axios also supports `.put()`, `.patch()`, `.delete()`, and the entirety of the HTTP request frameworks.
 
