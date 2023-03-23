@@ -78,6 +78,7 @@ Potential Topics--
     1. Overview
     2. Areas of User Experience
     3. Helpful Courses
+    4. User Experience Orientated Games
 - Product Management
     1. Beginner's guide to product management and becoming a successful product manager
 - Other useful resources
