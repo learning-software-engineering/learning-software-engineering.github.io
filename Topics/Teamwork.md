@@ -9,7 +9,7 @@ Communication is essential for positive collaboration. In software development, 
 
 [7 tips for more effective communication in the workplace](https://asana.com/resources/effective-communication-workplace)
 
-Team members must update each other on their ideas, progress and any obstacles they might be facing in their work. If they don't there will be a drop in productivity and even a delay in their project. If a team member is facing issues it is important for them to discuss them with their co-workers so they are aware of the problem and they might be able to help resolve the issue. Communication is also integral for voicing your concerns to your team members. Team members should be able to communciate their concerns with each other and resolve them in a professional and constructive manner. This maintains an important sense of accountability between the team members. 
+Team members must update each other on their ideas, progress and any obstacles they might be facing in their work. Otherwise there might be a drop productivity and even a delay in their project. If a team member is facing issues it is important for them to discuss them with their co-workers so they are aware of the problem and they might also be able to help resolve the issue. Communication is also integral for voicing your concerns to your team members. Team members should be able to communciate their concerns with each other and resolve them in a professional and constructive manner. This maintains an important sense of accountability between the team members. 
 
 [How to Approach a Co-Worker](https://adm.viu.ca/workplace-conflict/direct-discussion-how-approach-co-worker)
 
