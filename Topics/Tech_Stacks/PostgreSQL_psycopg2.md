@@ -3,10 +3,10 @@
 ## Table of contents
 ### [Prerequisites](#prerequisites-1)
 ### [Introduction](#introduction-1)
-### [PostgreSQL installation](#PostgreSQL-installation-1)
+### [PostgreSQL installation](#postgresql-installation-1)
 ### [psycopg2 installation](#psycopg2-installation-1)
-### [Setup Database and Basic Table Operations in PostgreSQL](#Setup-Database-and-Basic-Table-Operations-in-PostgreSQL-1)
-### [Setup and PostgreSQL Operations in psycopg2](#Setup-and-PostgreSQL-Operations-in-psycopg2-1)
+### [Setup Database and Basic Table Operations in PostgreSQL](#setup-database-and-basic-table-operations-in-postgresql-1)
+### [Setup and PostgreSQL Operations in psycopg2](#setup-and-postgresql-operations-in-psycopg2-1)
 ### [Additional Resources](#additional-resources-1)
 
 ## Prerequisites
@@ -88,11 +88,12 @@ To create a table in the command line:
 3. Type "SET search_path TO schema_name;" where schema_name is the name of the desired schema you want to put your table in.
 4. Type "CREATE TABLE table_name (column1 int PRIMARY KEY, ...);", where table_name is the desired name of the table. Inside the round braces is a list of the columns that you want in the table. For each column, you must specify a name and datatype. For example, a table can be created like this:
 
-``` CREATE TABLE accounts (
+``` 
+CREATE TABLE accounts (
 	id serial PRIMARY KEY,
 	username VARCHAR ( 50 ) UNIQUE NOT NULL,
 	password VARCHAR ( 50 ) NOT NULL,
-	email VARCHAR ( 255 ) UNIQUE NOT NULL,
+	email VARCHAR ( 255 ) UNIQUE NOT NULL
 );
 ```
 The text after the datatypes (e.g. UNIQUE NOT NULL) are optional.
