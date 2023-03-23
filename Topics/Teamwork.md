@@ -5,11 +5,13 @@
 
 Communication is one of the most essential parts of a successful software engineering team. This is because software engineering teams are often composed of multiple individuals with a diverse set of skills, experiences, schedules and responsibilites. Clear communication helps team members divide work efficiently, ensuring that each member has a clear understanding of their responsibilities and deadlines. This helps to avoid overlap or confusion in the workflow, leading to smoother collaboration and faster delivery.
 
-Communication is essential for positive collaboration. In software development, different problems can arise, and effective communication is key to resolving them quickly. By discussing issues openly and honestly, team members can brainstorm solutions, use their collective expertise, and work together to resolve issues in a timely manner. Effective communication also leads to the development of high-quality software products.
+Communication is essential for positive collaboration. In software development different problems can arise and effective communication is key to resolving them quickly. By discussing issues openly and honestly, team members can brainstorm solutions and use their collective expertise to work together and resolve issues in a timely manner. Effective communication, therefore, leads to the development of high-quality software products.
 
 [7 tips for more effective communication in the workplace](https://asana.com/resources/effective-communication-workplace)
 
-Team members must update each other on their ideas, progress and any obstacles they might be facing in their work. Otherwise there might be a drop productivity and even a delay in their project. If a team member is facing issues it is important for them to discuss them with their co-workers so they are aware of the problem and they might also be able to help resolve the issue. Communication is also integral for voicing your concerns to your team members. Team members should be able to communciate their concerns with each other and resolve them in a professional and constructive manner. This maintains an important sense of accountability between the team members. 
+Team members must update each other on their ideas, progress and any obstacles they might be facing in their work. Otherwise, there might be a drop in productivity and even a delay in the project. If a team member is facing issues it is important for them to discuss these with their co-workers as they might be able to help resolve the issue. 
+
+Communication is integral for voicing your concerns to your team members. Team members should communciate their concerns with each other respectfully and resolve these concerns in a professional and constructive manner. This maintains an important sense of accountability between the team members. 
 
 [How to Approach a Co-Worker](https://adm.viu.ca/workplace-conflict/direct-discussion-how-approach-co-worker)
 
