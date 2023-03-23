@@ -9,13 +9,18 @@ Following files are present in this directory. You may contribute to any of thes
 Potential Topics--
 
 - Tech stacks
-    1. [Nuxt3](https://github.com/IbrahimBess/learning-software-engineering.github.io/blob/patch-2/Topics/Tech_Stacks/Nuxt3.md)
+    1. [Nuxt3](https://github.com/learning-software-engineering/learning-software-engineering.github.io/blob/main/Topics/Tech_Stacks/Nuxt3.md)
           
         Nuxt.js provides server-side rendering, automatic routing, code organization, and pre-configured plugins. It can be used to create applications quickly  and easily.
 
     2. Django
         1. Django Rest Framework
+    3. Salesforce API
+    
+    4. CSS (Cascading Style Sheets) 
 
+    5. TypeScript
+    
 - Software Tools
     1. Git
         1. Git Workflows
@@ -74,6 +79,7 @@ Potential Topics--
     1. Overview
     2. Areas of User Experience
     3. Helpful Courses
+    4. User Experience Orientated Games
 - Product Management
     1. Beginner's guide to product management and becoming a successful product manager
 - Other useful resources
