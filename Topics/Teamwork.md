@@ -17,6 +17,9 @@ Communication is integral for voicing your concerns to your team members. Team m
 
 [How to Approach a Co-Worker](https://adm.viu.ca/workplace-conflict/direct-discussion-how-approach-co-worker)
 
+Effective communication is crucial for any software engineering team to work well together and achieve their goals. The importance of this can be shown through the following article.
+
+[Statistics on why effective communication is important in the workplace.](https://www.linkedin.com/pulse/statistics-why-effective-communication-important-/?trk=pulse-article_more-articles_related-content-card)
 
 ## Conflict Resolution
 
