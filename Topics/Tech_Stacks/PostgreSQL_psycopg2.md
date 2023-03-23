@@ -5,7 +5,7 @@
 ### [Introduction](#introduction-1)
 ### [PostgreSQL installation](#PostgreSQL-installation-1)
 ### [psycopg2 installation](#psycopg2-installation-1)
-### [Setup and Basic Table Operations in PostgreSQL](#setup-and-basic-table-operations-in-postgresql-1)
+### [Setup Database and Basic Table Operations in PostgreSQL](#Setup-Database-and-Basic-Table-Operations-in-PostgreSQL-1)
 ### [Setup and PostgreSQL Operations in psycopg2](#Setup-and-PostgreSQL-Operations-in-psycopg2-1)
 ### [Additional Resources](#additional-resources-1)
 
