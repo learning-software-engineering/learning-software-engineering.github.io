@@ -83,4 +83,5 @@ Potential Topics--
 - Product Management
     1. Beginner's guide to product management and becoming a successful product manager
 - Other useful resources
+    1. Google Maps JavaScript API
 - Teamwork
