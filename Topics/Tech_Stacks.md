@@ -8,4 +8,4 @@
 ### [React Resources](./Tech_Stacks/React.md)
 ### [Angular Resources](./Tech_Stacks/Angular.md)
 ### [CSS](./Tech_Stacks/CSS.md)
-
+### [Learning TypeScript](./Tech_Stacks/TypeScript.md)
