@@ -23,7 +23,9 @@ Potential Topics--
     
 - Software Tools
     1. Git
-        1. Git Workflows
+        1. [Git branch](https://github.com/learning-software-engineering/learning-software-engineering.github.io/blob/main/Topics/Software_Tools/Git/Git_Branching.md)
+        2. Git Workflows
+        
 - Software Engineering
     1. Methodologies & Frameworks
         1. Agile
@@ -38,7 +40,7 @@ Potential Topics--
 
 - Development Process
     1. GitFlow
-        1. Git branch
+        1. [Git branch](https://github.com/learning-software-engineering/learning-software-engineering.github.io/blob/main/Topics/Software_Tools/Git/Git_Branching.md)
     2. Trunk-based Development
     3. Coding Standards
     4. Pull-requests
