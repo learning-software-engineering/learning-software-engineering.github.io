@@ -18,6 +18,8 @@ Potential Topics--
     3. Salesforce API
     
     4. CSS (Cascading Style Sheets) 
+
+    5. TypeScript
     
 - Software Tools
     1. Git
