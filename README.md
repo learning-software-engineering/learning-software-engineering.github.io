@@ -20,6 +20,8 @@ Potential Topics--
     4. CSS (Cascading Style Sheets) 
 
     5. TypeScript
+
+    6. JavaScript
     
 - Software Tools
     1. Git
