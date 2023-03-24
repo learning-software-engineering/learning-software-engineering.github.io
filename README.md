@@ -16,7 +16,13 @@ Potential Topics--
     2. Django
         1. Django Rest Framework
     3. Salesforce API
+    
+    4. CSS (Cascading Style Sheets) 
 
+    5. TypeScript
+
+    6. JavaScript
+    
 - Software Tools
     1. Git
         1. Git Workflows
@@ -60,6 +66,7 @@ Potential Topics--
         1. Choose a coding style and stick to it
     3. SOLID Principles
     4. Code Smells
+    5. QA testing
 - Professionalism
     1. Customer engagement
         1. Meeting best practices
@@ -74,6 +81,7 @@ Potential Topics--
     1. Overview
     2. Areas of User Experience
     3. Helpful Courses
+    4. User Experience Orientated Games
 - Product Management
     1. Beginner's guide to product management and becoming a successful product manager
 - Other useful resources

@@ -2,9 +2,11 @@
 
 ### [Django Project Deployment: AWS, Vercel, and Railway](./Development_Process/Django_Deployment_AWS_Railway_Vercel.md)
 ### [Automated Frontend Deployment with Vercel](./Development_Process/Frontend_Automated_Deployment_Vercel.md)
-### [Automated Testing](./Development_Process/Automated_Testing.md)
+### [Quality Assurance Testing](./Development_Process/QA_testing.md)
+- [Automated Testing](./Development_Process/Automated_Testing.md)
 
 ### [Getting Started With Docker](./Development_Process/Docker.md)
+
 
 ## Build requirements
 ### [Requirements.txt](./Development_Process/Build_Requirements/Requirements_txt.md)
@@ -31,4 +33,34 @@ The SOLID principles are:
  
  ## Resource that gives examples of the uses cases of SOLID principles
   LINK :  https://www.youtube.com/watch?v=_jDNAf3CzeY 
+  
+ ## Clean Architecture: 
+ 
+A system's design that divides it into logical parts and specifies how those parts may communicate with one another is referred to as clean architecture. The objective is to make the software system easier to design, deploy, operate, and maintain while still keeping as many options open  for as long as possible.
 
+Clean Architecture works on the well-defined division of layers. It is important to understand what the different layers are and which layers are allowed to interact with each other. The independence that clean architecute introduced to the a software system is vital since it reduces dependancies within the system. In clean architecture, the elements of the inner most layers should not have any information about the outermost layers. Anything declared in an outer layer must not be used anywhere within the inner layer of the code.
+
+![image](https://user-images.githubusercontent.com/75923742/227027780-b5fbf347-ff78-49fa-a122-8f9ac4ef53d4.png)  
+
+
+Some of the layers are (Simplified): 
+- Business Rules: 
+  - Entity: A component of our computer system that represents a condensed set of critical business rules that are applied to crucial business data.
+  - Use Case: Gives specifics on the input the user must supply and the output the system must deliver to the user. Additionally, it includes the processing steps required to create the result.
+
+- Entities: Contains functions, variables, and other structures that hold the main objectives of our application, they must be general and have the highest level of rules. 
+- Interface Adaptors: Responsible for communicating between the layers, takes data in and transforms it such that it can be sent to lower levels. 
+- Framworks and Drivers: This section contains frameworks and databases responsible for communicating with the interface adapters.
+
+
+This is only a simplification of what "Clean Architecture" is; the topic is so vast that there have been texts that have been dedicated to this topic. Some resources that can be beneficial in understanding and clearing up any doubts about the topic have been linked below. 
+
+- Text that goes into greater depth about each layer: 
+   - https://dev.to/rubemfsv/clean-architecture-the-concept-behind-the-code-52do#:~:text=The%20main%20rule%20for%20Clean,elements%20of%20an%20outermost%20layer.  
+
+- Article Summarizing Clean Architecture (Examples and Code)
+  -  https://pusher.com/tutorials/clean-architecture-introduction/
+
+- A very detailed explanation of Clean Architecture by Robert C. Martin or Uncle Bob and his book
+   - https://www.youtube.com/watch?v=2dKZ-dWaCiU 
+   - https://github.com/ropalma/ICMC-USP/blob/master/Book%20-%20Clean%20Architecture%20-%20Robert%20Cecil%20Martin.pdf 
