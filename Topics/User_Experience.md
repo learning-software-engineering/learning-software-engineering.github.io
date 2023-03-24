@@ -42,11 +42,11 @@ There are many courses related to User Experience. This includes the U of T Cour
 
 ### Tools Can Be Used In UX Design
 
-In addition to Bootstrap, Ant Design is another popular UI library and design system. It is specifically designed for React applications, providing a complete set of high-quality React components that make user interface development simpler, more consistent, and modular. Ant Design is ideal for building enterprise-level applications and dashboards with a focus on high performance, usability, and aesthetics.
+In addition to Bootstrap, Ant Design is another popular UI library and design system. It is specifically designed for React applications and other frontend frameworks like Vue, Angular and etc, providing a complete set of high-quality React components that make user interface development simpler, more consistent, and modular. Ant Design is ideal for building enterprise-level applications and dashboards with a focus on high performance, usability, and aesthetics.
 
 Ant Design provides a wide range of UI components, including buttons, icons, form elements, tables, and navigation menus. It also offers a consistent design language, making it easier for developers to create appealing user interfaces. The design ensures that your applications look great on different devices and screen sizes. More importantly, it is easy to use for beginners. Following steps are provided for you to start using Ant Design in your project.
 
-First, you need to install Ant Design in your React application. You can do this by running the following command:
+First, you need to install Ant Design in your React application. You can do this by running the following command (also you can use yarn command to install, here I provide method using npm):
 
 **npm install antd**
 
@@ -54,7 +54,20 @@ Next, you may want to import the components you want to use in your application.
 
 **import { Button } from 'antd';**
 
-Finally, you are done. All you need to do is use the imported components in your application. Besides, Ant Design allows you to customize the default theme by modifying the less variables. For instance, you can use tools like 'craco-less' or 'react-app-rewired' to customize your theme without ejecting from Create React App.
+Finally, you are almost done. All you need to do is use the imported components in your application. For example, below code is a example using Button from antd package:
+
+function App() {
+  return (
+    <div className="App">
+      <Button type="primary">Click me!</Button>
+    </div>
+  );
+}
+
+export default App;
+
+
+Besides, Ant Design allows you to customize the default theme by modifying the less variables. For instance, you can use tools like 'craco-less' or 'react-app-rewired' to customize your theme without ejecting from Create React App.
 
 If you want to learn more about Ant Design. There are some useful documents or tutorials that can help you get started with Ant Design.
 
