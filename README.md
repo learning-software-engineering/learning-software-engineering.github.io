@@ -18,7 +18,11 @@ Potential Topics--
     3. Salesforce API
     
     4. CSS (Cascading Style Sheets) 
-    5. JavaSCript
+
+    5. TypeScript
+
+    6. JavaScript
+    
 - Software Tools
     1. Git
         1. Git Workflows
@@ -56,11 +60,13 @@ Potential Topics--
             3. Firebase
             4. Digital Ocean
             5. Software development best practices:
+            6. Vercel Frontend Deployment (Automated)
     1. Designer Patterns
     2. Clean Coding
         1. Choose a coding style and stick to it
     3. SOLID Principles
     4. Code Smells
+    5. QA testing
 - Professionalism
     1. Customer engagement
         1. Meeting best practices
@@ -75,6 +81,8 @@ Potential Topics--
     1. Overview
     2. Areas of User Experience
     3. Helpful Courses
+    4. User Experience Orientated Games
 - Product Management
+    1. Beginner's guide to product management and becoming a successful product manager
 - Other useful resources
 - Teamwork
