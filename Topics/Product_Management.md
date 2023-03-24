@@ -10,5 +10,5 @@ Some key features of a successful product manager:
 * If you are making tradeoffs, be sure to explain and outline the opportunity cost.
 
  The following article outlines the product manager role and responsibilities, the main points that it entails and some tools and methologies to promote successful product management practices: [Product Management: Main Stages and Product Manager Role](https://www.altexsoft.com/blog/business/product-management-main-stages-and-product-manager-role/#:~:text=Product%20management%20is%20a%20process,development%2C%20marketing%2C%20and%20sales.)
-
+ 
  This article goes into a little bit further detail from a beginner's perspective on steps to take to become a successful product manager: [Product Manager: The role and best practices for beginners](https://www.atlassian.com/agile/product-management/product-manager)
