@@ -10,4 +10,4 @@
 ### [Learning PostgreSQL and psycopg2](./Tech_Stacks/PostgreSQL_psycopg2.md)
 ### [CSS](./Tech_Stacks/CSS.md)
 ### [Learning TypeScript](./Tech_Stacks/TypeScript.md)
-
+### [Learning JavaScript](./Tech_Stacks/JavaScript.md)
