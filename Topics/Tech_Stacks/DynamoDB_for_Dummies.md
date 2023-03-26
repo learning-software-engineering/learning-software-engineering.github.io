@@ -44,8 +44,12 @@ your application.
    making your initial data model. If your application is changing frequently
    DynamoDB might cause you more headaches than it's worth!
 1. Incompatibility with certain access patterns: if your application has certain
-   collections of complex access patterns, DynamoDB will either take up a lot of
-   extra storage space or be very slow.
+   collections of access patterns, DynamoDB will either take up a lot of extra
+   storage space or be very slow. An example of such an application would be
+   storing analytics data. Generally our access patterns will be a lot of
+   complex queries involving the attributes of our items. This kind of demand is
+   better suited for something relational that better supports lots of ad-hoc
+   queries.
 
 ## How do I use it effectively?
 
