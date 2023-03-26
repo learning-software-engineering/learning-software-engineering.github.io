@@ -3,9 +3,13 @@
 ## Table of contents
 
 ### [Introduction](#introduction)
+
 ### [Why would I want to use it?](#why-would-i-want-to-use-it-1)
+
 ### [Why would I not want to use it?](#why-would-i-not-want-to-use-it-1)
+
 ### [How do I use it effectively?](#how-do-i-use-it-effectively-1)
+
 ### [Additional resources](#additional-resources-1)
 
 ## Introduction
@@ -15,7 +19,9 @@ it, why you might not want to use it, and how to go about using it effectively.
 
 ## What is it?
 
-DynamoDB is a NoSQL database that is designed to be fast at any scale.
+DynamoDB is a [NoSQL database](https://en.wikipedia.org/wiki/NoSQL) that is
+designed to be fast at any scale. It is developed by Amazon and is available
+through Amazon Web Services.
 
 ## Why would I want to use it?
 
