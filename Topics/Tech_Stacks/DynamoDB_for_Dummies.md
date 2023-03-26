@@ -1,4 +1,4 @@
-# DynamoDB for dummies
+# Learning DynamoDB
 
 ## Table of contents
 
