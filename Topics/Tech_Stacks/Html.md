@@ -18,7 +18,7 @@
         </html>  
     
 ## Some useful elements:
-  Inside the bode tag is where all the elements displayed on the webpage are coded.  
+  Inside the body tag is where all the elements displayed on the webpage are coded.  
 
 ### Header tags:
    Firstly we have the header tag. h1, h2, ..., h5 are used as headers for the document. The greater the number succeding h in the tag the smaller the title gets.  
@@ -101,6 +101,18 @@ The ul tag is used to create lists. Inside the ul we use li tags for each list e
                 <li> List element 2</li>
             </ul>
 ## Usage of elements:
-Elements can be nested within each other. For example a p may contain text, followed by a table and a list if needed. A p tag could contain another p tag in it as well!  Elemnts will be rendered in the order in which they are coded. 
+Elements can be nested within each other. For example a p may contain text, followed by a table and a list if needed. A p tag could contain another p tag in it as well!  Elemnts will be rendered in the order in which they are coded. For example,  
+  
+  
+    <p>
+    <h4> Title of Paragraph</h4>
+      This is a paragraph.
+      <ul>
+         <li> List element 1</li>
+         <li> List element 2</li>
+      </ul>
+    </p>  
+ Here, li tags are nested within the ul tag which in itself is nested in in the p tag. A h4 tag is also nested in the p tag. We could nest images, videos and buttons in there as well.
+  
 ## Styling:
 In order to customise the look of elements html is combined with css to make the webpages look cleaner.
