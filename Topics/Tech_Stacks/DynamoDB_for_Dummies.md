@@ -1,5 +1,13 @@
 # DynamoDB for dummies
 
+## Table of contents
+
+### [Introduction](#introduction)
+### [Why would I want to use it?](#why-would-i-want-to-use-it-1)
+### [Why would I not want to use it?](#why-would-i-not-want-to-use-it-1)
+### [How do I use it effectively?](#how-do-i-use-it-effectively-1)
+### [Additional resources](#additional-resources-1)
+
 ## Introduction
 
 This is a very brief overview of DynamoDB, what it is, why you might want to use
@@ -63,7 +71,7 @@ cost us some space to store the replicated data. This is a trade-off; if we had
 very many situations where we needed to query on attributes, then we would
 probably want to re-evaluate whether DynamoDB is the best choice for us.
 
-## Examples and additional resources
+## Additional resources
 
 - [AWS Documentation](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html)
 
