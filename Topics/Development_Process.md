@@ -1,4 +1,6 @@
 ## Resources for Development Process
+## Git
+### [Learning Git](./Development_Process/Git/Git.md)
 
 ### [Django Project Deployment: AWS, Vercel, and Railway](./Development_Process/Django_Deployment_AWS_Railway_Vercel.md)
 ### [Automated Frontend Deployment with Vercel](./Development_Process/Frontend_Automated_Deployment_Vercel.md)

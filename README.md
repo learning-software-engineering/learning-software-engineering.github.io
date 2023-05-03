@@ -23,6 +23,9 @@ Potential Topics--
 
     6. JavaScript
     
+    7. React Native
+        1. Set up
+        
 - Software Tools
     1. Git
         1. Git Workflows
@@ -41,9 +44,14 @@ Potential Topics--
 
 - Development Process
     1. GitFlow
+        1. Stash
+        2. Retrieve Lost Commits
+        3. Revert Single File From Commit
+        4. Revert Multiple File From Commit
     2. Trunk-based Development
     3. Coding Standards
     4. Pull-requests
+        1. Update Pull-requests
     5. DevOps
         1. Automated Testing
             1. Unit testings
