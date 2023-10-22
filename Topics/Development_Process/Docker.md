@@ -87,7 +87,7 @@ You can use various CI (Continuous Integration) tools to automatically build, pu
 3. Commit and push your changes
 4. Profit!
 
-```
+```yml
 name: Build and Push Docker Image
 
 on:
