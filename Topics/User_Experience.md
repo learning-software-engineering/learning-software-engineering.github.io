@@ -16,7 +16,7 @@
 5. [User Experience-Oriented Games](https://learning-software-engineering.github.io/Topics/User_Experience.html#user-experience-oriented-games)
 
 
-## Overview
+# Overview
 User experience (UX) is a large and broad topic. It covers the overall experience of the user and how they interact with software systems and applications. The main focus of User Experience is to make a piece of software accessible, easy to follow (i.e., user-friendly) and adaptable to the user's needs. There is no set of standard rules that make up a "great" user experience, as it often depends on the product and the consumers who are using the products. 
 
 User experience is not to be confused with UI (User Interface) and UX _design_. While these topics have similarities with user experience, they are also different in their own ways:
@@ -29,13 +29,13 @@ There are many resources that differentiate between user experience, UI design, 
 - [Differences Between UX and UI Design](https://bootcamp.cvn.columbia.edu/blog/what-is-ux-design/#:~:text=User%20experience%20(UX)%20refers%20to,usability%2C%20function%2C%20and%20design.)
 
 
-## Fundamentals of User Experience
+# Fundamentals of User Experience
 As mentioned earlier, user experience is not easy to define as it is a large and broad topic. Here are a _few_ areas of UX that software engineers should pay attention to:
 
-### User Research
+## User Research
 When it comes to user experience, conducting user research is very important as it lets us discover new problems and address deeper issues. As a software engineer, it may be extensive for you to conduct user research, but there are tools that you can use to understand your users better, such as the following:
 
-___Point-of-View Statements___ 
+### Point-of-View Statements
 
 POV statements let you describe your user and their needs, and they can help you discover new problems/questions that you need to solve before creating your application.
 
@@ -47,7 +47,7 @@ The structure of a POV statement is:
 
 Now that we've realized a possible pain point for a senior citizen, we can look into implementing our grocery shopping app such that it's accessible to this target audience.
 
-___User Personas___ 
+### User Personas
 
 User personas should be built from user research data, not stereotypes. In CSC301, your partner may guide you in creating personas, but in the worst case, you'll find yourself creating personas from no data since you don't have time to conduct research. Nonetheless, there are many benefits to creating personas, including, but not limited to:
 - Provides you with a better understanding of your target user groups
@@ -66,18 +66,18 @@ If you use a template, it'll prompt you to fill in specific information about yo
 
 A quick Google image search for "User Persona" will help tie all this information together.
 
-### Visual Elements of User Interface Design
-___Design Principles___ 
+## Visual Elements of User Interface Design
+### Design Principles
 
 UI designers achieve a visual hierarchy (i.e., the order a user processes the application's information) in their interfaces by using contrast. To create contrast, consider playing around with the following elements:
 
-_Scale_
+**_Scale_**
 > <h1>Larger text attracts the eye,</h1> <h6>whereas smaller text is easier to ignore.</h6>
 
-_Weight_
+**_Weight_**
 > **Bold text attracts the eye** much more than regular text.
 
-_Direction_
+**_Direction_**
 
 You want to direct your users to a call to action. For example:
 > <h1>Welcome!</h1> 
@@ -89,33 +89,33 @@ Your eyes easily flow from the title to the smaller message. Then, you're inclin
 > Please click the button. 
 At first, you feel confused as to why there's a button at the top. Then you read the message, and now your eyes have to flick back to the top to find the button. It's a minor detail, but it still negatively affects the flow of the application.
 
-_Form/shape_
+**_Form/shape_**
 
 You can combine shapes with lines to make elements like buttons.
 
-_Texture_
+**_Texture_**
 
 You can use texture to draw a user's eye to elements like titles, icons, and buttons. Keep in mind that texture and patterns are different -- patterns are small repetitive elements (like polka dots, while texture is not necessarily repetitive. Read more about texture [here](https://uxdesign.cc/web-design-theory-texture-1e07c29b10e5), and see examples of websites that use texture [here](https://www.webfx.com/blog/web-design/textured-website-designs-inspiration/).
 
-_Space_
+**_Space_**
 
 Make use of whitespace so users have an easier time reading your application's text.
 
-_Value/shade_
+**_Value/shade_**
 
 Value can attract the eye. For example, you can use shading to create button shadows.
 
-_Colour_
+**_Colour_**
 ```diff
 - Red text seems urgent,
 + whereas green usually indicates success.
 ! Orange feels like a warning of some sort.
 ```
 
-___Color Theory___
+### Color Theory
 - [Colors Influence Choice](https://usabilitygeek.com/colour-user-experience-psychology/#:~:text=Colour%20plays%20a%20crucial%20role,and%20identified%20with%20your%20industry.): Users are shown certain colours to enforce actions. For example, red is commonly linked to aggressive or bad emotions and as such can be used as a cancel to dissuade people from refunding items.
 
-___Button Design___ 
+### Button Design
 
 Your buttons need to look clickable. Otherwise, your user may not understand that your button is interactive. Your buttons can have certain states:
 - Normal: communicates that the button is interactive
@@ -128,7 +128,7 @@ Learn more about button design [here](https://uxdesign.cc/button-design-user-int
 
 You may find this article on [Amazon's One-Click Button](https://medium.com/@cccalibour/how-ux-design-makes-a-difference-amazons-continue-button-901618a8b00e) interesting. It discusses how the design of buttons can drastically improve user experience... and increase your revenue! :)
 
-___Navigation Systems___ 
+### Navigation Systems
 
 Your users should feel comfortable with navigating through your application. Here are some elements to consider...
 - Wayfinding: this includes breadcrumbs, convenient links to take you back to the home page, and "you are here" indicators.
@@ -140,46 +140,46 @@ Your users should feel comfortable with navigating through your application. Her
 - Search bars
 - Shortcuts to related content
 
-___Typography___ 
+### Typography
 
 Make sure the text on your application is **legible**! Body text should be at least 16px; on bigger screens, body text should be at least 20-24px. Your line height should also be around 1.5 times the font size for an easier reading experience. You may also want to consider using 40-70 characters per line so that your user's eyes aren't flicking back and forth all the time.
 
 Make sure to use a universal, legible font style, and don't use extremely contrasting colours. For example, pure black text against a pure white background is too stark for the eyes and will eventually cause eye strain. Consider dimming it down.
 
-___Established Norms___
+### Established Norms
 - [Scrolls On Socials](https://forgeandsmith.com/blog/scrolling-vs-clicking-whats-the-preferred-user-experience/): Users are conditioned for scrolling, and now every new social media app conforms to scrolling.
 
-___Responsive Design___
+### Responsive Design
 - [Responsive Design](https://devrix.com/tutorial/important-responsive-design/): Responsive Design generally refers to a design where the software is adaptable to the consumer's device. The responsive design can be many things including screen sizes, collapsing of navbars, adjusting texts based on the screens, scrolling effects and more. The benefits of a responsive design make your software accessible across varying devices and overall improves the user experience. The article demonstrates the importance and benefits of responsive design, the flexibility they provide, and the easiblity for the consumers upon making the said software. 
 
-### User Experience Principles
-___Nielsen's 10 Usability Heuristics___
+## User Experience Principles
+### Nielsen's 10 Usability Heuristics
 
 Jakob Nielsen's [10 Heuristics for Interaction Design](./User_Experience/Usability_Heuristics.md) are principles/rules of thumb to follow if you want to create a clear, intuitive user experience for your application. The principles describe scenarios and elements that your application may want to account for.
 
-### Site mapping, Wireframing, and Prototyping
+## Site mapping, Wireframing, and Prototyping
 **Site mapping** is essentially creating a bare-bones diagram of the flow of your application. Your diagram should communicate how your pages connect. It should answer the question, "Which page(s) comes after this current page?"
 
-**Wireframing** comes before the **mock-up** process, though as a software engineer, you probably won't be making any wireframes. A **mock-up** of your application is essentially a static design of your application's pages. A benefit of creating a mock-up is that you can communicate your design ideas to your teammates and get feedback from your customer/partner, if you have one. Mock-ups are also known as **low-fidelity prototypes**
+**Wireframing** comes before the **mock-up** process, though as a software engineer, you probably won't be making any wireframes. A **mock-up** of your application is essentially a static design of your application's pages. A benefit of creating a mock-up is that you can communicate your design ideas to your teammates and get feedback from your customer/partner if you have one. Mock-ups are also known as **low-fidelity prototypes**
 
 **Wireframes** are the "skeleton" of your mock-up; they communicate the general layout of your application and don't include details like specific text or colour. This is why you create wireframes before your mock-up.
 
-Finally, to create a **prototype**, or a **high-fidelity prototype**, you essentially make your mock-up interactive by connecting all the pages. Figma (discussed in the [Design Tools](https://learning-software-engineering.github.io/Topics/User_Experience.html#design-tools) section) is a free tool that you can use to create your mock-up and prototype. With prototyping tools like Figma, you can easily stimulate button clicks, screen swipes, etc. without any code.
+Finally, to create a **prototype**, or a **high-fidelity prototype**, you essentially make your mock-up interactive by connecting all the pages. Figma (discussed in the [Design Tools](https://learning-software-engineering.github.io/Topics/User_Experience.html#figma) section) is a free tool that you can use to create your mock-up and prototype. With prototyping tools like Figma, you can easily stimulate button clicks, screen swipes, etc. without any code.
 
-### Accessibility
-___The 7 Universal Design Principles___
+## Accessibility
+### The 7 Universal Design Principles
 
 [Universal Design Principles](https://www.buffalo.edu/access/help-and-support/topic3/universaldesignprinciples.html) are not only used for software but can be incorporated generally as well. These 7 principles ensure accessibility, consistency, and user-friendly software. 
 This article provides the 7 Universal Design Principles that make software accessible to all users, which plays an important role in diversifying the User Experience. 
 
 
-## Helpful Courses
+# Helpful Courses
 - [The Design of Interactive Computational Media (CSC318) offered by U of T](https://artsci.calendar.utoronto.ca/course/csc318h1). CSC318 expands on the work done before coding projects. For example, the course will have you test how users would interact with your prototype of a UI and then modify it so that the UX is better for the user.
 - [CalArt's UI/UX Design Specialization on Coursera](https://www.coursera.org/specializations/ui-ux-design). This is a package of 4 courses that teaches beginners the elements of UI design, fundamentals of UX design, and web design. This specialization will help you gain experience in wireframing, prototyping, and _designing_ (not coding) your own website/app. Plus, as a U of T student, you can get this specialization certificate for free once you finish the 4 courses!
 
-## Tools Used in User Experience Design
-### Design Tools
-___Figma___
+# Tools Used in User Experience Design
+## Design Tools
+### Figma
 
 Figma is a free (for the most part) collaborative tool that lets you design and build mock-ups and prototypes of your software/applications. You may not need to build prototypes as a software developer/engineer, but you'll probably find yourself viewing Figma design files to build your frontend. So, now's a great time to start learning how to use [Figma](https://www,figma.com)!
 
@@ -187,18 +187,18 @@ Figma is a free (for the most part) collaborative tool that lets you design and 
 
 **Figma, MUI, and React:** See the [UI Component Libraries](https://learning-software-engineering.github.io/Topics/User_Experience.html#ui-component-libraries) section for details on MUI. Note that MUI is a component library for React _only_. You can download the** MUI extension on Figma** and immediately use MUI components in your Figma design. Then, when you're ready to code, you can install MUI in your React project and easily create your frontend by entering "developer mode" on your Figma design and copying the code that Figma generated for you.
 
-___Adobe XD___
+### Adobe XD
 
 [Adobe XD](https://www.adobe.com/products/xd/learn/get-started/what-is-adobe-xd-used-for.html) is another popular prototyping tool. Unfortunately, the current author of this wiki doesn't know much about it, other than it requires a monthly subscription :(.
 
-### UI Component Libraries
+## UI Component Libraries
 When building an application with a frontend framework (e.g., React, Vue, Angular, etc.), developers can import an UI design component library/libraries to help them easily build aesthetic, user-friendly interfaces. 
 
-___Material UI (MUI)___
+### Material UI (MUI)
 
 [MUI](https://mui.com/) is a popular library of UI design components made for React. These components are essentially pre-made "features" that you can immediately use, such as buttons, navbars, pop-ups, etc.
 
-___Ant Design___
+### Ant Design
 
 Ant Design is another popular UI library and design system. It is specifically designed for React applications and other frontend frameworks like Vue, Angular and etc, providing a complete set of high-quality React components that make user interface development simpler, more consistent, and modular. Ant Design is ideal for building enterprise-level applications and dashboards with a focus on high performance, usability, and aesthetics.
 
@@ -237,7 +237,7 @@ If you want to learn more about Ant Design. There are some useful documents or t
 By following these tutorials, I hope you can gain a solid understanding of how to use Ant Design in your React projects and create attractive, user-friendly interfaces.
 
 
-## User Experience-Orientated Games
+# User Experience-Orientated Games
 User experience is unique, as practicing user experience design can be challenging. Since user experience has to do a lot with visuals, you can learn user design by playing games. User experience orientated games can be an engaging and fun way to get familiar with common UX practices. Here are unique games that can help develop better UX design skills.
 
 - [Can't Unsee](https://cantunsee.space/): The game of choice! Can't Unsee is a game that presents the user with two designs and challenges the user to pick the most correct user experience design. Feedback on each selection allows the user to learn from their mistakes. Sharpen your knowledge of common user experience design practices while testing your attention to detail.
