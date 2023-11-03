@@ -4,23 +4,23 @@
 ## Table of Contents
 1. [Overview](https://learning-software-engineering.github.io/Topics/User_Experience.html#overview)
 2. [Fundamentals of User Experience](https://learning-software-engineering.github.io/Topics/User_Experience.html#fundamentals-of-user-experience)
-    - User Research
-    - Visual Elements of User Interface Design
-    - User Experience Principles
-    - Site mapping, Wireframing, and Prototyping
-3. [Accessibility Features of User Experience](https://learning-software-engineering.github.io/Topics/User_Experience.html#accessibility-features-of-user-experience)
-4. [Helpful Courses](https://learning-software-engineering.github.io/Topics/User_Experience.html#helpful-courses)
-5. [Tools Used in User Experience Design](https://learning-software-engineering.github.io/Topics/User_Experience.html#tools-used-in-user-experience-design)
-    - Design Tools
-    - UI Component Libraries
-6. [User Experience-Oriented Games](https://learning-software-engineering.github.io/Topics/User_Experience.html#user-experience-oriented-games)
+    - [User Research](https://learning-software-engineering.github.io/Topics/User_Experience.html#user-research)
+    - [Visual Elements of User Interface Design](https://learning-software-engineering.github.io/Topics/User_Experience.html#visual-elements-of-user-interface-design)
+    - [User Experience Principles](https://learning-software-engineering.github.io/Topics/User_Experience.html#user-experience-principles)
+    - [Site mapping, Wireframing, and Prototyping](https://learning-software-engineering.github.io/Topics/User_Experience.html#site-mapping-wireframing-and-prototyping)
+    - [Accessibility](https://learning-software-engineering.github.io/Topics/User_Experience.html#accessibility)
+3. [Helpful Courses](https://learning-software-engineering.github.io/Topics/User_Experience.html#helpful-courses)
+4. [Tools Used in User Experience Design](https://learning-software-engineering.github.io/Topics/User_Experience.html#tools-used-in-user-experience-design)
+    - [Design Tools](https://learning-software-engineering.github.io/Topics/User_Experience.html#design-tools)
+    - [UI Component Libraries](https://learning-software-engineering.github.io/Topics/User_Experience.html#ui-component-libraries)
+5. [User Experience-Oriented Games](https://learning-software-engineering.github.io/Topics/User_Experience.html#user-experience-oriented-games)
 
 
 ## Overview
-User experience (UX) is a large and broad topic. It covers the overall experience of the user and how they interact with software systems and applications. The main focus of User Experience is to make a piece of software accessible, easy to follow (i.e., user friendly) and adaptable to the user's needs. There is no set of standard rules that make up a "great" user experience, as it often differs on the product and the consumers that are using the products. 
+User experience (UX) is a large and broad topic. It covers the overall experience of the user and how they interact with software systems and applications. The main focus of User Experience is to make a piece of software accessible, easy to follow (i.e., user-friendly) and adaptable to the user's needs. There is no set of standard rules that make up a "great" user experience, as it often depends on the product and the consumers who are using the products. 
 
 User experience is not to be confused with UI (User Interface) and UX _design_. While these topics have similarities with user experience, they are also different in their own ways:
-- **UI design** is the process of creating a interface with a focus on how the interface will _look_ like -- think of aesthetics!
+- **UI design** is the process of creating an interface with a focus on how the interface will _look_ like -- think of aesthetics!
 - **UX design** is the process of creating an interface with a focus on a smooth, meaningful user _experience_ -- think of usability and usefulness! 
 - **User experience** is a user's journey when interacting with your software/application.
 
@@ -95,7 +95,7 @@ You can combine shapes with lines to make elements like buttons.
 
 _Texture_
 
-You can use texture to draw a user's eye to elements like titles, icons, and buttons. Keep in mind that texture and patterns are different -- patterns are small repetitive elements (like polka dots, while texture is not necessarily repetitive. Read more about texture [here](https://uxdesign.cc/web-design-theory-texture-1e07c29b10e5), and see examples of website that use texture [here](https://www.webfx.com/blog/web-design/textured-website-designs-inspiration/).
+You can use texture to draw a user's eye to elements like titles, icons, and buttons. Keep in mind that texture and patterns are different -- patterns are small repetitive elements (like polka dots, while texture is not necessarily repetitive. Read more about texture [here](https://uxdesign.cc/web-design-theory-texture-1e07c29b10e5), and see examples of websites that use texture [here](https://www.webfx.com/blog/web-design/textured-website-designs-inspiration/).
 
 _Space_
 
@@ -113,7 +113,7 @@ _Colour_
 ```
 
 ___Color Theory___
-- [Colors Influence Choice](https://usabilitygeek.com/colour-user-experience-psychology/#:~:text=Colour%20plays%20a%20crucial%20role,and%20identified%20with%20your%20industry.): Users are shown certain colors to enforce actions. For example, red is commonly linked to aggressive or bad emotions and as such can be used as a cancel to dissuade people from refunding items.
+- [Colors Influence Choice](https://usabilitygeek.com/colour-user-experience-psychology/#:~:text=Colour%20plays%20a%20crucial%20role,and%20identified%20with%20your%20industry.): Users are shown certain colours to enforce actions. For example, red is commonly linked to aggressive or bad emotions and as such can be used as a cancel to dissuade people from refunding items.
 
 ___Button Design___ 
 
@@ -154,17 +154,24 @@ ___Responsive Design___
 
 ### User Experience Principles
 ___Nielsen's 10 Usability Heuristics___
-- [Usability Heuristics](./User_Experience/Usability_Heuristics.md)
+
+Jakob Nielsen's [10 Heuristics for Interaction Design](./User_Experience/Usability_Heuristics.md) are principles/rules of thumb to follow if you want to create a clear, intuitive user experience for your application. The principles describe scenarios and elements that your application may want to account for.
 
 ### Site mapping, Wireframing, and Prototyping
+**Site mapping** is essentially creating a bare-bones diagram of the flow of your application. Your diagram should communicate how your pages connect. It should answer the question, "Which page(s) comes after this current page?"
 
+**Wireframing** comes before the **mock-up** process, though as a software engineer, you probably won't be making any wireframes. A **mock-up** of your application is essentially a static design of your application's pages. A benefit of creating a mock-up is that you can communicate your design ideas to your teammates and get feedback from your customer/partner, if you have one. Mock-ups are also known as **low-fidelity prototypes**
 
-## Accessibility Features of User Experience
-There are some things that have become a crucial part in making a software: Universal Design Principles. 
+**Wireframes** are the "skeleton" of your mock-up; they communicate the general layout of your application and don't include details like specific text or colour. This is why you create wireframes before your mock-up.
 
+Finally, to create a **prototype**, or a **high-fidelity prototype**, you essentially make your mock-up interactive by connecting all the pages. Figma (discussed in the [Design Tools](https://learning-software-engineering.github.io/Topics/User_Experience.html#design-tools) section) is a free tool that you can use to create your mock-up and prototype. With prototyping tools like Figma, you can easily stimulate button clicks, screen swipes, etc. without any code.
+
+### Accessibility
 ___The 7 Universal Design Principles___
-- [Universal Design Principles](https://www.buffalo.edu/access/help-and-support/topic3/universaldesignprinciples.html): Universal Design Principles are not only used for software, but can be incorporated generally as well. These 7 principles ensure accessibility, consistency, and user-friendly software. 
-This article provides the 7 Universal Design Principles that makes a software accessible to all users, which plays a important role in diversifying the User Experience. 
+
+[Universal Design Principles](https://www.buffalo.edu/access/help-and-support/topic3/universaldesignprinciples.html) are not only used for software but can be incorporated generally as well. These 7 principles ensure accessibility, consistency, and user-friendly software. 
+This article provides the 7 Universal Design Principles that make software accessible to all users, which plays an important role in diversifying the User Experience. 
+
 
 ## Helpful Courses
 - [The Design of Interactive Computational Media (CSC318) offered by U of T](https://artsci.calendar.utoronto.ca/course/csc318h1). CSC318 expands on the work done before coding projects. For example, the course will have you test how users would interact with your prototype of a UI and then modify it so that the UX is better for the user.
@@ -178,6 +185,8 @@ Figma is a free (for the most part) collaborative tool that lets you design and 
 
 **Helpful tip:** With just a click of a button, you can switch to "developer mode" in Figma, which helps you translate design into code! Essentially, you can click on components like a button and get its corresponding code and styling. Read about how to use this feature [here](https://www.figma.com/dev-mode/).
 
+**Figma, MUI, and React:** See the [UI Component Libraries](https://learning-software-engineering.github.io/Topics/User_Experience.html#ui-component-libraries) section for details on MUI. Note that MUI is a component library for React _only_. You can download the** MUI extension on Figma** and immediately use MUI components in your Figma design. Then, when you're ready to code, you can install MUI in your React project and easily create your frontend by entering "developer mode" on your Figma design and copying the code that Figma generated for you.
+
 ___Adobe XD___
 
 [Adobe XD](https://www.adobe.com/products/xd/learn/get-started/what-is-adobe-xd-used-for.html) is another popular prototyping tool. Unfortunately, the current author of this wiki doesn't know much about it, other than it requires a monthly subscription :(.
@@ -187,7 +196,7 @@ When building an application with a frontend framework (e.g., React, Vue, Angula
 
 ___Material UI (MUI)___
 
-[MUI](https://mui.com/) is a popular library of UI design components made for React. 
+[MUI](https://mui.com/) is a popular library of UI design components made for React. These components are essentially pre-made "features" that you can immediately use, such as buttons, navbars, pop-ups, etc.
 
 ___Ant Design___
 
