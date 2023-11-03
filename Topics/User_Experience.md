@@ -3,11 +3,17 @@
 
 ## Table of Contents
 1. [Overview](https://learning-software-engineering.github.io/Topics/User_Experience.html#overview)
-2. [Areas of User Experience](https://learning-software-engineering.github.io/Topics/User_Experience.html#areas-of-user-experience)
+2. [Fundamentals of User Experience](https://learning-software-engineering.github.io/Topics/User_Experience.html#fundamentals-of-user-experience)
+    - User Research
+    - Visual Elements of User Interface Design
+    - User Experience Principles
+    - Site mapping, Wireframing, and Prototyping
 3. [Accessibility Features of User Experience](https://learning-software-engineering.github.io/Topics/User_Experience.html#accessibility-features-of-user-experience)
 4. [Helpful Courses](https://learning-software-engineering.github.io/Topics/User_Experience.html#helpful-courses)
-5. Tools Used in User Experience Design
-6. User Experience-Oriented Games
+5. [Tools Used in User Experience Design](https://learning-software-engineering.github.io/Topics/User_Experience.html#tools-used-in-user-experience-design)
+    - Design Tools
+    - UI Component Libraries
+6. [User Experience-Oriented Games](https://learning-software-engineering.github.io/Topics/User_Experience.html#user-experience-oriented-games)
 
 
 ## Overview
@@ -23,30 +29,125 @@ There are many resources that differentiate between user experience, UI design, 
 - [Differences Between UX and UI Design](https://bootcamp.cvn.columbia.edu/blog/what-is-ux-design/#:~:text=User%20experience%20(UX)%20refers%20to,usability%2C%20function%2C%20and%20design.)
 
 
-## Areas of User Experience
+## Fundamentals of User Experience
 As mentioned earlier, user experience is not easy to define as it is a large and broad topic. Here are a _few_ areas of UX that software engineers should pay attention to:
 
 ### User Research
-When it comes to user experience, conducting user research is very important as it lets us discover new problems and address deeper issues.
+When it comes to user experience, conducting user research is very important as it lets us discover new problems and address deeper issues. As a software engineer, it may be extensive for you to conduct user research, but there are tools that you can use to understand your users better, such as the following:
+
+___Point-of-View Statements___ 
+
+POV statements let you describe your user and their needs, and they can help you discover new problems/questions that you need to solve before creating your application.
+
+The structure of a POV statement is: 
+> [WHO] needs to [VERB] because [WHY].
+
+"Who" will refer to your users. For example, let's say we're making a grocery shopping app. A possible POV statement could be:
+> A senior citizen who lives alone needs help with buying groceries because they have difficulty getting out of the house and reading small text.
+
+Now that we've realized a possible pain point for a senior citizen, we can look into implementing our grocery shopping app such that it's accessible to this target audience.
 
 ___User Personas___ 
+
+User personas should be built from user research data, not stereotypes. In CSC301, your partner may guide you in creating personas, but in the worst case, you'll find yourself creating personas from no data since you don't have time to conduct research. Nonetheless, there are many benefits to creating personas, including, but not limited to:
+- Provides you with a better understanding of your target user groups
+- Helps prioritize design choices
+
+User personas can be written down in a document, or created with design software such as [Xtensio](https://xtensio.com/) and [Figma](https://www.figma.com/). You can find user persona templates created by other people on Xtensio, Figma, and other design software.
+
+If you use a template, it'll prompt you to fill in specific information about your target user. If you're writing your personas from scratch or want to consider extra information, here are some elements that a good user persona may include:
+- Name, picture, target user group
+- Biography
+- Quote that sums up the persona
+- Demographic characteristics
+- Personality, habits, behaviour
+- Goals, tasks, needs, motivations
+- Challenges, pain points
+
+A quick Google image search for "User Persona" will help tie all this information together.
 
 ### Visual Elements of User Interface Design
 ___Design Principles___ 
 
-___Button Design___ 
-- [Amazon Button](https://medium.com/@cccalibour/how-ux-design-makes-a-difference-amazons-continue-button-901618a8b00e): The design of butt
-ons that improves user experience by simplifying process.
+UI designers achieve a visual hierarchy (i.e., the order a user processes the application's information) in their interfaces by using contrast. To create contrast, consider playing around with the following elements:
 
-___Navigation Systems___ 
+_Scale_
+> <h1>Larger text attracts the eye,</h1> <h6>whereas smaller text is easier to ignore.</h6>
 
-___Typography___ 
+_Weight_
+> **Bold text attracts the eye** much more than regular text.
 
-___Established Norms___
-- [Scrolls On Socials](https://forgeandsmith.com/blog/scrolling-vs-clicking-whats-the-preferred-user-experience/): Users are conditioned for scrolling, and now every new social media app conforms to scrolling.
+_Direction_
+
+You want to direct your users to a call to action. For example:
+> <h1>Welcome!</h1> 
+> <p>Please click the button.</p>
+> <kbd> <br> Button <br> </kbd>
+Your eyes easily flow from the title to the smaller message. Then, you're inclined to click the button. Now, look at this:
+> <kbd> <br> Button <br> </kbd>
+> <h1>Welcome!</h1> 
+> Please click the button. 
+At first, you feel confused as to why there's a button at the top. Then you read the message, and now your eyes have to flick back to the top to find the button. It's a minor detail, but it still negatively affects the flow of the application.
+
+_Form/shape_
+
+You can combine shapes with lines to make elements like buttons.
+
+_Texture_
+
+You can use texture to draw a user's eye to elements like titles, icons, and buttons. Keep in mind that texture and patterns are different -- patterns are small repetitive elements (like polka dots, while texture is not necessarily repetitive. Read more about texture [here](https://uxdesign.cc/web-design-theory-texture-1e07c29b10e5), and see examples of website that use texture [here](https://www.webfx.com/blog/web-design/textured-website-designs-inspiration/).
+
+_Space_
+
+Make use of whitespace so users have an easier time reading your application's text.
+
+_Value/shade_
+
+Value can attract the eye. For example, you can use shading to create button shadows.
+
+_Colour_
+```diff
+- Red text seems urgent,
++ whereas green usually indicates success.
+! Orange feels like a warning of some sort.
+```
 
 ___Color Theory___
 - [Colors Influence Choice](https://usabilitygeek.com/colour-user-experience-psychology/#:~:text=Colour%20plays%20a%20crucial%20role,and%20identified%20with%20your%20industry.): Users are shown certain colors to enforce actions. For example, red is commonly linked to aggressive or bad emotions and as such can be used as a cancel to dissuade people from refunding items.
+
+___Button Design___ 
+
+Your buttons need to look clickable. Otherwise, your user may not understand that your button is interactive. Your buttons can have certain states:
+- Normal: communicates that the button is interactive
+- Focused: the button is highlighted in some way
+- Hovered: lets the user know that their cursor is on top of the button
+- Active: the button has been clicked on
+- Progress/loading: lets the user know that something is happening because they clicked the button
+- Disabled: lets the user know that this button can't be clicked
+Learn more about button design [here](https://uxdesign.cc/button-design-user-interface-components-series-85243b6736c7).
+
+You may find this article on [Amazon's One-Click Button](https://medium.com/@cccalibour/how-ux-design-makes-a-difference-amazons-continue-button-901618a8b00e) interesting. It discusses how the design of buttons can drastically improve user experience... and increase your revenue! :)
+
+___Navigation Systems___ 
+
+Your users should feel comfortable with navigating through your application. Here are some elements to consider...
+- Wayfinding: this includes breadcrumbs, convenient links to take you back to the home page, and "you are here" indicators.
+- Call-to-action button
+- Primary navigation (e.g., the main navbar)
+- Secondary navigation (e.g., a smaller navbar that pops up underneath the main one)
+- Utility navigation: important parts of the application that aren't part of the main content (e.g., help sections, social media links)
+- Vertical navigation
+- Search bars
+- Shortcuts to related content
+
+___Typography___ 
+
+Make sure the text on your application is **legible**! Body text should be at least 16px; on bigger screens, body text should be at least 20-24px. Your line height should also be around 1.5 times the font size for an easier reading experience. You may also want to consider using 40-70 characters per line so that your user's eyes aren't flicking back and forth all the time.
+
+Make sure to use a universal, legible font style, and don't use extremely contrasting colours. For example, pure black text against a pure white background is too stark for the eyes and will eventually cause eye strain. Consider dimming it down.
+
+___Established Norms___
+- [Scrolls On Socials](https://forgeandsmith.com/blog/scrolling-vs-clicking-whats-the-preferred-user-experience/): Users are conditioned for scrolling, and now every new social media app conforms to scrolling.
 
 ___Responsive Design___
 - [Responsive Design](https://devrix.com/tutorial/important-responsive-design/): Responsive Design generally refers to a design where the software is adaptable to the consumer's device. The responsive design can be many things including screen sizes, collapsing of navbars, adjusting texts based on the screens, scrolling effects and more. The benefits of a responsive design make your software accessible across varying devices and overall improves the user experience. The article demonstrates the importance and benefits of responsive design, the flexibility they provide, and the easiblity for the consumers upon making the said software. 
@@ -55,7 +156,7 @@ ___Responsive Design___
 ___Nielsen's 10 Usability Heuristics___
 - [Usability Heuristics](./User_Experience/Usability_Heuristics.md)
 
-### Sitemapping, Wireframing, and Prototyping
+### Site mapping, Wireframing, and Prototyping
 
 
 ## Accessibility Features of User Experience
