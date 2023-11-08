@@ -67,6 +67,8 @@ def other_API():
 
 You can see more details about FastAPi and routers [here](https://fastapi.tiangolo.com/tutorial/bigger-applications/)
 
+As always, you can check the official FastAPI tutorial [here](https://fastapi.tiangolo.com/tutorial/) for anything about writing APIs such as including getting data from payload, or paremeters, or any other thing.
+
 
 ## Testing
 
@@ -100,3 +102,5 @@ def setup_and_teardown():
   yield
   ... # do something
 ```
+
+You can check out the testing tutorial [here](https://fastapi.tiangolo.com/tutorial/testing/) from FastAPI website as well.
