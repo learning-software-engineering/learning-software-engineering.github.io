@@ -59,9 +59,9 @@ from fastapi import APIRouter
 router = APIRouter()
 
 # your other APIs
-@app.get("/otherAPI")
+@router.get("/otherAPI")
 def other_API():
-  return {"test message": "hello world"}
+  return {"different message": "hello world again"}
 
 ```
 
