@@ -36,7 +36,7 @@ def test():
 However, it is highly likely that not all your APIs are going to be in the same file. For example, take the above as your main.py. You are likely not going to put all your APIs there, so you may create a file called
 more_apis.py.
 
-To connect more_apis.py with your main.py, you will need to use routers like thus:
+To connect more_apis.py with your main.py, you will need to use routers like this:
 
 main.py
 ``` {python}
