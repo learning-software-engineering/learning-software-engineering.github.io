@@ -67,14 +67,14 @@ def other_API():
 
 You can see more details about FastAPi and routers [here](https://fastapi.tiangolo.com/tutorial/bigger-applications/)
 
-As always, you can check the official FastAPI tutorial [here](https://fastapi.tiangolo.com/tutorial/) for anything about writing APIs such as including getting data from payload, or paremeters, or any other thing.
+As always, you can check the official FastAPI tutorial [here](https://fastapi.tiangolo.com/tutorial/) for anything about writing APIs.
 
 
 ## Testing
 
 Testing with FastAPI can be automated with GitHub actions and uses FastAPI's TestClient and [pytest](https://docs.pytest.org/en/7.4.x/) to test. 
 
-Your test file should look something like this, using the main.py above (wherever it is located in your file system):
+Your test file should look something like this, using the main.py above (wherever it is located in your file system) or any other API file:
 
 test_main.py
 
@@ -103,4 +103,4 @@ def setup_and_teardown():
   ... # do something
 ```
 
-You can check out the testing tutorial [here](https://fastapi.tiangolo.com/tutorial/testing/) from FastAPI website as well.
+You can check out the testing tutorial [here](https://fastapi.tiangolo.com/tutorial/testing/) from FastAPI website.
