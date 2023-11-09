@@ -9,3 +9,4 @@ Potential topics--
         2. Kanban
         3. XP
     2. [Waterfall](./Software_Engineering/Waterfall.md)
+    3. [Lean](./Sofware_Engineering/)
