@@ -27,6 +27,9 @@ ___Responsive Design___
 ___Nielsen's 10 Usability Heuristics___
 - [Usability Heuristics](./User_Experience/Usability_Heuristics.md)
 
+___User-Friendly Search Algorithms___
+- [Fuzzy Search](./User_Experience/Fuzzy.md)
+
 ### Accessibility Features of User Experience
 
 There are some things that have become a crucial part in making a software: Universal Design Principles. 
