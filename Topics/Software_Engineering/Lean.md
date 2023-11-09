@@ -13,3 +13,28 @@ Lean is an ideology that originated from the manufacturing principles of a car c
    - Pull refers to the customers demand. The development team only responds to customer's demands and work is only initiated on these demands. This reduces production of an uneeded product or feature, saving time and money.
 5. Seek perfection
    - The continual desire to improve the product for the customer. Practically speaking this looks like constantly reassessing the work done, asking for feedback and making improvments on those feedbacks.
+  
+### 7 Lean Principles
+1. Eliminate Waste
+   - Unnecessary code or functionality
+      - Happens when production starts before it is required
+   - Too much Work in Progress (WIP)
+      - Starting many tasks that cannot be finished in short periods of time creates an overwhelming environment that degrades efficiency
+   - Delays in development process
+      - Anything that delays development process should be eliminated. An example of this can be one development team having to wait on another team before starting their work. In these cases make abstraction so that there is less dependency on distinct teams.
+   - Unclear or changing reuiqrements
+      - These can be cleared  up if the first step in the lean development flow is done well. Identify exactly what your customer is looking for and agree on sticking to it.
+   - Poor Communication
+      - Decisions must be made as a team and if one part of the team lacks communication then it creates delay and we lose the consitent work flow.
+2. Build quality in
+   - Build quality when building the software. Well-structured, well-commented, high quality code means less bug-fixes, less wasteful testing and more efficiency. Practical ways to increase quality of work can be incremental development which allows constant flow of feedback and production, pair programming, test-driven development, etc.
+3. Create knowledge
+   - Knowledge gained from the development process is to be documented so individuals don't need to relearn functionalities that they already have learned but forgot. In part this is what we are doing in this repository.
+4. Defer commitment
+   - Now this one can be counterintuitive because it seems like we are delaying the development process. But the logic is that by deferring commitment, teams can make better choices on what the requirements should be and understanding the project as a whole. The idea is to not to just jump into coding as soon as possible to avoid unecessary functionality.
+5. Deliver fast
+   - Create the product as soon as possible while maintaining product quality. Faster delivery means faster feedback which means faster improvements.
+6. Respect People
+   - This goes for any team that wants to be effective in what they do. Respect can be shown with proper communication, constructive criticism, empowering one another, etc. Opportunities to show respect grow more frequent with regular meetings, pair programming, code reviews, etc.
+7. Optimize the whole
+   -  
