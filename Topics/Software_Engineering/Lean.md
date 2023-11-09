@@ -1,4 +1,4 @@
-##Lean Software Mehodology
+##Lean Software Methodology
 ### What is Lean?
 Lean is an ideology that originated from the manufacturing principles of a car company in Japan, namely Toyota which integrated its way into the software development process. The key idea in Lean is to remove waste in the production process to optimize efficiency and produce a high value product to the customer. 
 
@@ -37,4 +37,4 @@ Lean is an ideology that originated from the manufacturing principles of a car c
 6. Respect People
    - This goes for any team that wants to be effective in what they do. Respect can be shown with proper communication, constructive criticism, empowering one another, etc. Opportunities to show respect grow more frequent with regular meetings, pair programming, code reviews, etc.
 7. Optimize the whole
-   -  
+   -  Look at the bigger picture. Don't get tunneled vision on one lean principle because that will lead to imbalance and ruin the whole idea behind lean. Ex. solely focusing on delivering fast will cause teams to have less quality which means more testing and debugging in the future.
