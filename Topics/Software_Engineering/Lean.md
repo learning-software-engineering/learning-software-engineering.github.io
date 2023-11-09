@@ -1,4 +1,4 @@
-###Lean Software Methodology
+Lean Software Methodology
 ### What is Lean?
 Lean is an ideology that originated from the manufacturing principles of a car company in Japan, namely Toyota which integrated its way into the software development process. The key idea in Lean is to remove waste in the production process to optimize efficiency and produce a high value product to the customer. 
 
