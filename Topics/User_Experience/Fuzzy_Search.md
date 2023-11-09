@@ -16,7 +16,7 @@ For applications that require the user to perform a lot of searching (e.g. socia
 - [6: Low Physical Effort](https://universaldesign.ie/what-is-universal-design/the-7-principles/#p6)
   - For users that may be hazy on what they are searching for, an exact-match algorithm will likely require multiple, repetitive searches from them to find their target result. This can not only lead to fatigue while using the application, but also exacerbate accessibility issues for users who cannot input text as comfortably.
  
-Given that the majority of applications have some use case for a search bar, **being able to implement a user-friendly search experience can be helpful in any software development project**. The core idea behind fuzzy search - approximate string matching - is also highly useful in designing many other tools a developer may be interested in, like autocorrect or data processors.
+Given that the majority of applications have some use case for a search bar, **being able to implement a user-friendly search experience is essential in many software development projects**. Careful consideration should be given to any search tool you implement regardless of whether you choose fuzzy search or a more sophisticated algorithm. Moreover, the core idea behind fuzzy search - approximate string matching - is highly useful in designing many non-search tools a developer may be interested in, like autocorrect or data processors.
  
 ## Implementation: Levenshtein distance
 In this section, we discuss the [Levenshtein distance](https://en.wikipedia.org/wiki/Levenshtein_distance) and how to use it in implementing fuzzy search.
@@ -32,16 +32,20 @@ That being said, you can also find out-of-the-box solutions online that are like
 
 The following code snippet sorts a list of names by their Levenshtein proximity to `Brian`:
 ```
-const query = 'Brian';
-const names = ['Bryan', 'Brian', 'Bob', 'Bryant', 'HarrisonFord'];
-names.sort((a, b) => levenshtein(query, a) - levenshtein(query, b));
+const query = 'Brian';  // Define the query string
+const names = ['Bryan', 'Brian', 'Bob', 'Bryant', 'HarrisonFord'];  // Define the list of strings to search from
+names.sort((a, b) => levenshtein(query, a) - levenshtein(query, b));  // Sort the list based on Levenshtein distance
 
 // Result: ['Brian', 'Bryan', 'Bryant', 'Bob', 'HarrisonFord'] with distances [0, 1, 2, 4, 9] respectively
 ```
 
-The above strategy can be used, as an example, to take in an input query string from a search bar component and filter the list of results to display before they are rendered back to the user. Additionally, instead of just sorting by distance, you can devise a threshold so only results below a certain distance are included, to prevent extremely distant results like `HarrisonFord` from appearing at all.
+The above strategy can be used, as an example, to take in an input query string from a search bar component and sort the list of results to display before they are rendered back to the user. Additionally, instead of just sorting by distance, you can devise a threshold so that only results below a certain distance are included, to prevent extremely distant results like `HarrisonFord` from appearing at all, and those that do appear are sorted as before.
 
 Libraries for Levenshtein distance in other languages can also be found, such as [python-Levenshtein](https://pypi.org/project/python-Levenshtein/) for Python.
+
+And with that, you have implemented fuzzy search! If you're curious about other possible distance metrics, see below:
+- [Damerau-Levenshtein](https://www.geeksforgeeks.org/damerau-levenshtein-distance/): Same as Levenshtein, but allows for the transposition of characters as an operation.
+- [Soundex](https://www.geeksforgeeks.org/implement-phonetic-search-in-python-with-soundex-algorithm/): Uses the phonetic sounds of strings to determine their similarity.
 
 ## Limitations
 - While fuzzy search is generally more convenient for larger queries, precision may be more important for items whose string content is less easy to mistake. For instance, if a search bar requires the user to input some country's 2-letter code ([see all codes here](https://countrycode.org/)), a user searching for `FR` (France) may find it inconvenient to have to scroll through results for `FJ` (Fiji) and `FI` (Finland) as well, despite those codes being reasonably close typographically. As always, striking the right balance between tolerance and precision is important for a friendly user experience.
