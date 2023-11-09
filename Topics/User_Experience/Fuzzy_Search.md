@@ -16,10 +16,32 @@ For applications that require the user to perform a lot of searching (e.g. socia
 - [6: Low Physical Effort](https://universaldesign.ie/what-is-universal-design/the-7-principles/#p6)
   - For users that may be hazy on what they are searching for, an exact-match algorithm will likely require multiple, repetitive searches from them to find their target result. This can not only lead to fatigue while using the application, but also exacerbate accessibility issues for users who cannot input text as comfortably.
  
-Given that the majority of applications have some use case for a search bar, being able to implement a user-friendly search experience can be quite essential in any software development project.
+Given that the majority of applications have some use case for a search bar, **being able to implement a user-friendly search experience can be helpful in any software development project**. The core idea behind fuzzy search - approximate string matching - is also highly useful in designing many other tools a developer may be interested in, like autocorrect or data processors.
  
 ## Implementation: Levenshtein distance
-In this section, we 
+In this section, we discuss the [Levenshtein distance](https://en.wikipedia.org/wiki/Levenshtein_distance) and how to use it in implementing fuzzy search.
+
+Levenshtein is a popular distance metric to compare the similarity between a query string and a target string. Intuitively, it counts the fewest number of times a character in the query must be deleted, inserted, or replaced to reach the target. For instance, if the query is `Brian`, its Levenshtein distance to `Bryan` is 1 as it only needs to replace `i` with `y` to reach the target. Notice that this can also be done in two operations by deleting `i` and inserting `y`, but this is suboptimal. Targets with a lower Levenshtein score are considered closer to the query.
+
+The algorithm for computing Levenshtein distance is not overly complicated and can be a fun exercise in designing recursive functions. [This GeeksforGeeks article](https://www.geeksforgeeks.org/introduction-to-levenshtein-distance/) describes several possible implementations in different programming languages should you decide to code it yourself.
+
+That being said, you can also find out-of-the-box solutions online that are likely better optimized. For applications built in JavaScript, the [js-levenshtein](https://www.npmjs.com/package/js-levenshtein) library is quite efficient and easy to use:
+- Install it by running `npm install --save js-levenshtein`.
+- In your code, import the module using `const levenshtein = require('js-levenshtein');`
+- Compute Levenshtein distance using `levenshtein('queryString', 'targetString')`
+
+The following code snippet sorts a list of names by their Levenshtein proximity to `Brian`:
+```
+const query = 'Brian';
+const names = ['Bryan', 'Brian', 'Bob', 'Bryant', 'HarrisonFord'];
+names.sort((a, b) => levenshtein(query, a) - levenshtein(query, b));
+
+// Result: ['Brian', 'Bryan', 'Bryant', 'Bob', 'HarrisonFord'] with distances [0, 1, 2, 4, 9] respectively
+```
+
+The above strategy can be used, as an example, to take in an input query string from a search bar component and filter the list of results to display before they are rendered back to the user. Additionally, instead of just sorting by distance, you can devise a threshold so only results below a certain distance are included, to prevent extremely distant results like `HarrisonFord` from appearing at all.
+
+Libraries for Levenshtein distance in other languages can also be found, such as [python-Levenshtein](https://pypi.org/project/python-Levenshtein/) for Python.
 
 ## Limitations
 - While fuzzy search is generally more convenient for larger queries, precision may be more important for items whose string content is less easy to mistake. For instance, if a search bar requires the user to input some country's 2-letter code ([see all codes here](https://countrycode.org/)), a user searching for `FR` (France) may find it inconvenient to have to scroll through results for `FJ` (Fiji) and `FI` (Finland) as well, despite those codes being reasonably close typographically. As always, striking the right balance between tolerance and precision is important for a friendly user experience.
