@@ -32,4 +32,5 @@ A/B testing is a research method used to compare two versions of a web page or m
 - Quick and efficient way to test UI changes.
 
 ## **Additional Resources:** 
-https://vwo.com/ab-testing/
+More Information: https://vwo.com/ab-testing/
+Examples: https://vwo.com/blog/ab-testing-examples/
