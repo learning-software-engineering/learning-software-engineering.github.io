@@ -7,8 +7,8 @@ A/B testing is a research method used to compare two versions of a web page or m
 **Identify Changes:** Identify any potential problem areas within the UI and create a hypothesis of how to fix it
 **Create Variation:** Create two versions of the applications UI to run the experiment on, create the new design based on the hypothesis, whether it be changing the font, colors, or re-designing the whole page. 
 - The original page is known as the control.
-- The altered page is known as the variation. 
-**Running The Experiment:** Randomly filter the traffic of the application where one group (Group A) sees the original, or controlled version, and the other group (Group B) sees the modified version. 
+- The altered page is known as the variation.
+**Running The Experiment:** Randomly filter the traffic of the application where one group (Group A) sees the original, or controlled version, and the other group (Group B) sees the modified version.
 **Collect Data:** Record and measure different metrics such as user session duration or other performance metrics related to the application.
 **Analyze Results:** Based on the results, determine which version improves performance and deploy the winning variation. The experiment can be repeated to make further improvements.
 
