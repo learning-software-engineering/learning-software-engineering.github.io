@@ -4,17 +4,17 @@
 A/B testing is a research method used to compare two versions of a web page or mobile app to determine which variation of the UI results in better performance. It allows individuals and companies to optimize user experience and make improvements to their application. 
 
 ## **Steps/How To:**
-**Identify Changes:** Identify any potential problem areas within the UI and create a hypothesis of how to fix it
+**Identify Changes:** Identify any potential problem areas within the UI and create a hypothesis of how to fix it __
 
-**Create Variation:** Create two versions of the applications UI to run the experiment on, create the new design based on the hypothesis, whether it be changing the font, colors, or re-designing the whole page. 
+**Create Variation:** Create two versions of the applications UI to run the experiment on, create the new design based on the hypothesis, whether it be changing the font, colors, or re-designing the whole page. __
 - The original page is known as the control.
 - The altered page is known as the variation.
 
-**Running The Experiment:** Randomly filter the traffic of the application where one group (Group A) sees the original, or controlled version, and the other group (Group B) sees the modified version.
+**Running The Experiment:** Randomly filter the traffic of the application where one group (Group A) sees the original, or controlled version, and the other group (Group B) sees the modified version. __
 
-**Collect Data:** Record and measure different metrics such as user session duration or other performance metrics related to the application.
+**Collect Data:** Record and measure different metrics such as user session duration or other performance metrics related to the application.__
 
-**Analyze Results:** Based on the results, determine which version improves performance and deploy the winning variation. The experiment can be repeated to make further improvements.
+**Analyze Results:** Based on the results, determine which version improves performance and deploy the winning variation. The experiment can be repeated to make further improvements.__
 
 ## **Types of A/B Testing:**
 **Split URL Testing:** 
