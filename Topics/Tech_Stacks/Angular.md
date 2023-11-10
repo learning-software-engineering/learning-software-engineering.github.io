@@ -8,7 +8,10 @@
 Angular is a framework which allows people to create responsive single page web apps. It is built on TypeScript and can be used to build scalable web apps, has a collection of well-integrated libraries which cover many features and several tools to help build, test and maintain your code. With Angular you can create single-page-application where you have a single html file where changes are rendered in the browser. Familiarity with HTML/CSS as well as JavaScript/TypeScript will be needed while building your web app.
 
 ## NgRx State Management
-Angular applications often deal with complex state management as they grow in size and complexity. NgRx is a well-organized state management library for Angular applications that leverages reactive programming concepts. It is inspired by Redux, a popular state management library for React applications, but is more structured (in file structure and component interaction). You can get started with NgRx by using this npm command: 
+Angular applications often deal with complex state management as they grow in size and complexity. NgRx is a well-organized state management library for Angular applications that leverages reactive programming concepts. It is inspired by Redux, a popular state management library for React applications, but is more structured (in file structure and component interaction). 
+
+# Install NgRx
+You can get started with NgRx by using this npm command: 
 ```bash 
 npm install @ngrx/store @ngrx/effects @ngrx/store-devtools. 
 ```
