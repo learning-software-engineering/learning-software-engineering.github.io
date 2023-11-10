@@ -19,8 +19,10 @@ A/B testing is a research method used to compare two versions of a web page or m
 ## **Types of A/B Testing:**
 **Split URL Testing:** 
 - Split URL testing is a variation of A/B testing where two different web page urls are used, rather than running the experiment on the same url. Used for testing completely new page designs. <br />
+
 **Multivariate Testing:**
 - Multivariate testing tests various changes to different page elements simultaneously to analyze which combinations perform the best. Can be used to save time rather than performing multiple A/B experiments. <br />
+
 **Multi-Page Testing:**
 - Multi-Page testing tests changes to an element on the web page over multiple pages within the website. Allows for a consistent set of pages when testing variation with control. <br />
 
