@@ -10,7 +10,7 @@
 
 ## Introduction
 
-**NOTE:** We assume your computer is already virtualization ready with technologies like Hyper-V Threading enabled. If you have a computer which may not obviously satisfy this (remote server, old systems, custom installations), we recommend 1) Enabling virtualization from BIOS/UEFI and then 2) Turning on Hyper-V Windows feature. A simple search with the mentioned keywords would suffice the exact steps.
+**NOTE:** We assume your computer is already virtualization ready with technologies like Hyper-V Threading enabled. If you have a computer which may not obviously satisfy this (remote server, old systems, custom installations), we recommend 1) Enabling virtualization from BIOS/UEFI and then 2) Turning on Hyper-V Windows feature and Windows Subsystem for Linux feature. A simple search with the mentioned keywords would sufficiently provide the exact steps.
 
 This article will help Windows users setup and use WSL 2 and save their time solving issues. Before we begin, it is highly recommended to use the modern [Windows Terminal](https://apps.microsoft.com/detail/windows-terminal/9N0DX20HK701?hl=en-us&gl=US) app on Windows for Command Line operations, which allows much more customization and ability to have different types of terminals open at the same time in different tabs (For example, Powershell, Windows Command Prompt and Azure Shell simultaneously).
 
@@ -20,7 +20,7 @@ WSL is a relatively lightweight virtualization tool dedicated for Linux, to run 
 
 ## Installation
 
-It is possible to lookup WSL on Microsoft Store or indirectly install WSL by installing a flavor of Linux directly, but such installations have different default settings (precise information is available on official documentation). It is recommended to follow the following steps instead:
+It is possible to lookup WSL on Microsoft Store or indirectly install WSL by installing a flavor of Linux directly, but such installations have different default settings and version (precise information is available on official documentation). It is recommended to follow the following steps instead:
 
 The following command will print the available distributions.
 
@@ -85,7 +85,7 @@ To see possible commands with WSL, run:
 
 ## WSL 1 Support
 
-Microsoft changed the way they parse Windows Path files between WSL 1 and WSL 2, and it created a deadlock where trying to run Docker on WSL 2 will lead to Path errors, and Docker cannot be run on WSL 1 due different virtualization capabilities. There is no visible solution to the author's best knowledge and extensive research to bypass setup scripts involved. It is recommended to use Docker only on Linux instead, especially for the sake of best compatibility.  Thus, we are going to discuss how to run WSL 1 for any similar reasons that may require it.
+Microsoft changed the way they parse Windows Path files between WSL 1 and WSL 2, and it created a deadlock where trying to run Windows Docker Desktop based on WSL 2 will lead to Path errors, and Windows Docker Desktop cannot be run on WSL 1 due different virtualization capabilities. There is no visible solution to the author's best knowledge and extensive research to bypass setup scripts involved. It is recommended to use Docker only on Linux instead, especially for the sake of best compatibility (Docker would still work in a distribution running on WSL). Thus, we are going to discuss how to run WSL 1 for any similar reasons that may require it.
 
 Following the installation steps in this document, it is assumed by WSL that the user wants to use the latest version, version 2. To change this default setting, run:
 
