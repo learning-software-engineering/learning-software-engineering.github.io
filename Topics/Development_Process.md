@@ -8,7 +8,7 @@
 - [Automated Testing](./Development_Process/Automated_Testing.md)
 
 ### [Getting Started With Docker](./Development_Process/Docker.md)
-
+### [Getting Started With WSL 2](./Development_Process/WSL.md)
 
 ## Build requirements
 ### [Requirements.txt](./Development_Process/Build_Requirements/Requirements_txt.md)
