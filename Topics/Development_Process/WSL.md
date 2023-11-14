@@ -6,11 +6,12 @@
 ### [Useful Commands](#useful-commands-1)
 ### [WSL 1 Support](#wsl-1-support-1)
 ### [Terminology](#terminology-1)
+### [Other Notes](#other-notes-1)
 ----
 
 ## Introduction
 
-**NOTE:** We assume your computer is already virtualization ready with technologies like Hyper-V Threading enabled. If you have a computer which may not obviously satisfy this (remote server, old systems, custom installations), we recommend 1) Enabling virtualization from BIOS/UEFI and then 2) Turning on Hyper-V Windows feature and Windows Subsystem for Linux feature. A simple search with the mentioned keywords would sufficiently provide the exact steps.
+**NOTE:** We assume your computer is already virtualization ready with technologies like Hyper-V Threading enabled. If you have a computer which may not obviously satisfy this (remote server, old systems, custom installations), we recommend 1) [Enabling virtualization from BIOS/UEFI](https://support.microsoft.com/en-us/windows/enable-virtualization-on-windows-11-pcs-c5578302-6e43-4b4b-a449-8ced115f58e1) and then 2) Turning on [Hyper-V Windows feature](https://learn.microsoft.com/en-us/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v) and [Windows Subsystem for Linux feature](https://learn.microsoft.com/en-us/windows/wsl/install-manual).
 
 This article will help Windows users setup and use WSL 2 and save their time solving issues. Before we begin, it is highly recommended to use the modern [Windows Terminal](https://apps.microsoft.com/detail/windows-terminal/9N0DX20HK701?hl=en-us&gl=US) app on Windows for Command Line operations, which allows much more customization and ability to have different types of terminals open at the same time in different tabs (For example, Powershell, Windows Command Prompt and Azure Shell simultaneously).
 
@@ -108,6 +109,13 @@ This information should be mostly sufficient, and further information is availab
 ----
 
 ## Terminology
+
 - [**Virtualization**](https://www.ibm.com/topics/virtualization): the action of creating an abstraction layer over computer hardware that allows the hardware elements of a single computer like processors, memory, storage and more to be divided into multiple virtual computers, commonly called virtual machines (VMs). This action allows you to run Linux on top of Windows without shutting it down!
 
 - **Distribution**: The operating system being virtualized on your Windows machine, usually some flavor of Linux.
+
+----
+
+## Other Notes
+
+It is useful to note that WSL integration on Windows allows a lot of mixing of commands between the distribution and Windows since the Windows %PATH% is imported to WSL CLI space by default. If running WSL yields any errors, initially make sure all prerequisites are met as dicussed, and make sure your Windows and WSL are up to date. If the problem persists, search the error code for resolution, and try to sort out the type of issue while trying to determine whether it's due to the distribution or WSL. The author has had WSL hang on him at times, for which a simple and patient `wsl --shutdown` followed by `wsl` works well.
