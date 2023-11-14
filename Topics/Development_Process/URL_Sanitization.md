@@ -5,7 +5,6 @@
 ### [What is sanitization and why does it matter?](#what-is-sanitization-and-why-does-it-matter-1)
 ### [How should we sanitize URLs?](#how-should-sanitize-urls-1)
 ### [Examples of how to use](#examples-of-how-to-use-1)
-### [Testing your sanitization implementation](#testing-your-sanitization-implementation-1)
 
 
 ## Introduction
@@ -65,7 +64,7 @@ sanitizeUrl(decodeURIComponent("JaVaScRiP%0at:alert(document.domain)")); // 'abo
 sanitizeUrl(
   "&#0000106&#0000097&#0000118&#0000097&#0000115&#0000099&#0000114&#0000105&#0000112&#0000116&#0000058&#0000097&#0000108&#0000101&#0000114&#0000116&#0000040&#0000039&#0000088&#0000083&#0000083&#0000039&#0000041"
 ); // 'about:blank'
-```javascript
+```
 
 The more recommended method is to make your own function, here is an example of one that I made:
 
@@ -100,7 +99,5 @@ export const sanitizeInput = (input, isUrl = false) => {
   }
   return filteredInput
 }
-```javascript
+```
 Of course, every situation is different, and you might need to add or remove different characters from your whitelist, or you may have to add more encoding and decoding.
-
-## Testing your sanitization implementation
