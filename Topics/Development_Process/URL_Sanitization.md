@@ -5,11 +5,13 @@
 ### [What is sanitization and why does it matter?](#what-is-sanitization-and-why-does-it-matter-1)
 ### [How should we sanitize URLs?](#how-should-sanitize-urls-1)
 ### [Examples of how to use](#examples-of-how-to-use-1)
+### [How to test the implementation of your sanitization function](#how-to-test-the-implementation-of-your-sanitization-function-1)
+### [Errors you might encounter](#Errors-you-might-encounter-1)
 
 
 ## Introduction
 
-In today's digital landscape, web applications are essential tools for businesses and individuals. However, they are also susceptible to various cyber threats, including attacks through manipulated URLs. To safeguard against potential vulnerabilities, it's imperative to understand and implement proper URL sanitation practices. As a student learnging software engineering, sanitization of URLs is a key concept when building a new web application.
+In today's digital landscape, web applications are essential tools for businesses and individuals. However, they are also susceptible to various cyber threats, including attacks through manipulated URLs. To safeguard against potential vulnerabilities, it's imperative to understand and implement proper URL sanitation practices. As a student learning software engineering, sanitization of URLs is a key concept when building a new web application.
 
 
 ## What is sanitization and why does it matter?
@@ -31,7 +33,7 @@ Input Validation: Validate incoming URLs against a strict set of rules and expec
 
 Encoding and Escaping: Encode special characters in URLs using proper encoding mechanisms such as [encodeURIComponent()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent) in JavaScript or server-side functions like urlencode() in PHP. Additionally, escape output when displaying URLs on web pages to prevent interpretation as executable code. Just remember that you may have to decode the URL parameters after if you need parameter values in your code. This can be done using [decodeURIComponent()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/decodeURIComponent).
 
-Whitelisting: Define a whitelist of allowed characters, protocols, and URL patterns. Reject any URL that does not match the predefined criteria, effectively filtering out potentially harmful input. Here is an example of what characters could be on the whitelist: (A-Za-z0-9-._~:/?#[]@!$&'()*+,;=%). Notice that this does not include angle brackets (<>) or curly braces ({}) as those are not needed in a url and can be used maliciously.
+Whitelisting: Define a whitelist of allowed characters, protocols, and URL patterns. Reject any URL that does not match the predefined criteria, effectively filtering out potentially harmful input. Here is an example of what characters could be on the whitelist: (A-Za-z0-9-._~:/?#[]@!$&'()*+,;=%). Notice that this does not include angle brackets (<>) or curly braces ({}) as those are not needed in a URL and can be used maliciously.
 
 Regular Expressions: Use regular expressions to match and filter URLs based on expected patterns. Regular expressions can help validate and sanitize URLs effectively.
 
@@ -44,7 +46,7 @@ Example of using sanitize-url library:
 
 First, you have to install the library using this: npm install -S @braintree/sanitize-url
 
-
+Below are a couple of examples of implementations for sanitization methods. Remember if you are using this to sanitize URL parameters, the parameters should be sanitized before used for anything else.
 
 ```javascript
 var sanitizeUrl = require("@braintree/sanitize-url").sanitizeUrl;
@@ -100,4 +102,35 @@ export const sanitizeInput = (input, isUrl = false) => {
   return filteredInput
 }
 ```
-Of course, every situation is different, and you might need to add or remove different characters from your whitelist, or you may have to add more encoding and decoding.
+Of course, every situation is different, and you might need to add or remove different characters from your whitelist, or you may have to add more encoding and decoding. This document specifically talks about URL sanitization, but this method is also effective for any type of data coming into your application. This even includes text fields that users enter data into.
+
+
+## How to test the implementation of your sanitization function
+
+
+To test your new function, you will want to pass different URLs into the function (this example is for JavaScript React). Here are a couple of examples for sanitizeInput():
+```javascript
+describe('sanitizeInput function', () => {
+  it('should return the input string as is when it is not a string', () => {
+    const input = 123; // Input is a number
+    const result = sanitizeInput(input);
+    expect(result).toEqual(input);
+  });
+
+  it('should sanitize URL parameters and remove unwanted characters', () => {
+    const inputUrl = 'https://example.com/?param1=<script>alert("XSS")</script>&param2=abc';
+    const sanitizedUrl = sanitizeInput(inputUrl, true);
+    expect(sanitizedUrl).toEqual('https://example.com/?param1=&param2=abc');
+  });
+});
+```
+
+## Errors you might encounter
+
+When the sanitization change is merged, check if the function is working correctly. This can be done by adding an alert in a URL for your website (example: 'https://example.com/?param1=<script>alert("XSS")</script>&param2=abc'). If an alert pops up on the window, then this means the sanitization is not working correctly and you are probably missing something important in your sanitization function (you might have to alter your whitelist to include less characters).
+
+If you notice that some of the URL parameters are becoming altered by this sanitization, then there could be 2 reasons for this:
+
+-Your whitelist in the sanitization function is too strict and is not letting normal characters pass through.
+
+-You are using improper characters in your URL parameters. Here is a [good reference](https://www.freecodecamp.org/news/url-encoded-characters-reference/) which describes which characters should and should not be put in URL parameters.
