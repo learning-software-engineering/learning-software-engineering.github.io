@@ -3,10 +3,10 @@
 ## Table of Contents:
 ### [Introduction](#introduction-1)
 ### [What is sanitization and why does it matter?](#what-is-sanitization-and-why-does-it-matter-1)
-### [How should we sanitize URLs?](#how-should-sanitize-urls-1)
+### [How should we sanitize URLs?](#how-should-we-sanitize-urls-1)
 ### [Examples of how to use](#examples-of-how-to-use-1)
 ### [How to test the implementation of your sanitization function](#how-to-test-the-implementation-of-your-sanitization-function-1)
-### [Errors you might encounter](#Errors-you-might-encounter-1)
+### [Errors you might encounter](#errors-you-might-encounter-1)
 
 
 ## Introduction
