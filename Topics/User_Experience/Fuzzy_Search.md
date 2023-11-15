@@ -39,7 +39,7 @@ names.sort((a, b) => levenshtein(query, a) - levenshtein(query, b));  // Sort th
 // Result: ['Brian', 'Bryan', 'Bryant', 'Bob', 'HarrisonFord'] with distances [0, 1, 2, 4, 9] respectively
 ```
 
-The above strategy can be used, as an example, to take in an input query string from a search bar component and sort the list of results to display before they are rendered back to the user. Additionally, instead of just sorting by distance, you can devise a threshold so that only results below a certain distance are included, to prevent extremely distant results like `HarrisonFord` from appearing at all, and those that do appear are sorted as before.
+The above strategy can be used, as an example, to take in an input query string from a search bar component and sort the list of results to display before they are rendered back to the user. Additionally, instead of just sorting by distance, you can devise a threshold so that only results below a certain distance are included, to prevent extremely distant results like `HarrisonFord` from appearing at all.
 
 Libraries for Levenshtein distance in other languages can also be found, such as [python-Levenshtein](https://pypi.org/project/python-Levenshtein/) for Python.
 
