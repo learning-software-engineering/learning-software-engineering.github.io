@@ -14,7 +14,7 @@ As mentioned above, feature flags are a fantastic tool to use when engaging in t
 
 - You create your feature flag and set it to false. Then when coding your changes, you make sure that when the feature flag is false, all behaviour on your website remains the exact same. However, when you set your feature flag to true, your new feature becomes enabled.
 
-- Once your new search engine capability is fully ready, tested, and customer-approved, you enable your feature flag on deployment, and everyone gains access to it.
+- Once your new search engine capability is fully ready, tested, and customer-approved, you enable your feature flag on deployment, and everyone gains access to it. Once you are confident in your new feature, feel free to remove any code related to the old feature and then remove the feature flag (leaving the new feature as the only case in the code).
 
 Notice how in the above scenario, if the new feature breaks the deployment, all you have to do is turn your feature flag off again!
 
