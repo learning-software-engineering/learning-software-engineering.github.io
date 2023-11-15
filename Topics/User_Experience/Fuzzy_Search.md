@@ -27,11 +27,13 @@ The algorithm for computing Levenshtein distance is not overly complicated and c
 
 That being said, you can also find out-of-the-box solutions online that are likely better optimized. For applications built in JavaScript, the [js-levenshtein](https://www.npmjs.com/package/js-levenshtein) library is quite efficient and easy to use:
 - Install it by running `npm install --save js-levenshtein`.
-- In your code, import the module using `const levenshtein = require('js-levenshtein');`
+- In your code, import the module using `import { levenshtein } from 'js-levenshtein';` or `const levenshtein = require('js-levenshtein');`
 - Compute Levenshtein distance using `levenshtein('queryString', 'targetString')`
 
 The following code snippet sorts a list of names by their Levenshtein proximity to `Brian`:
 ```
+import { levenshtein } from 'js-levenshtein';
+
 const query = 'Brian';  // Define the query string
 const names = ['Bryan', 'Brian', 'Bob', 'Bryant', 'HarrisonFord'];  // Define the list of strings to search from
 names.sort((a, b) => levenshtein(query, a) - levenshtein(query, b));  // Sort the list based on Levenshtein distance
