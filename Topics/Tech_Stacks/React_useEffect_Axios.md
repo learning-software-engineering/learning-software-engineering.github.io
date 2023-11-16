@@ -57,3 +57,53 @@ Since nothing is provided inside the dependency array, the effect function would
 ##### Case 3: No Dependency Array as Argument 
 Since there is no dependency array at all,  it means that the useEffect function would run everytime ```<MyReactComponent/>``` rerenders. This flavor of useEffect Hook is not commonly used compared to the other two due to its limitation. For instance, when the side effect includes some data fetching instead of the console.log, the drawback would become obvious. Since every time the components is re-rendered, there would be a request sent to the server, which could easily cause some performance issue. 
 
+## UseEffect Application with Axios
+
+```jsx
+import axios from "axios";
+import { useEffect, useState } from "react";
+
+function ActivityDisplay() {
+    const [data, setData] = useState(null);
+    const [isLoading, setIsLoading] = useState(true);
+    const [errorMsg, setErrorMsg] = useState(null)
+    useEffect(() => {
+        async function fetchRandomActivity() {
+            setErrorMsg(null);
+            setIsLoading(true);
+
+            await axios.get("http://www.boredapi.com/api/activity")
+            .then((resp)=> {
+                setData(resp.data); 
+            })
+            .catch((e) => {
+                console.log(e); 
+                setErrorMsg(e);
+            })
+            .finally(() => {
+                setIsLoading(false);
+            })
+        }
+      fetchRandomActivity();
+      }, []);
+
+    return (
+        <div>
+            {isLoading? <h1>Loading...</h1>: (data && <p>{data.activity}</p>)}
+            {errorMsg && <h1>{errorMsg.message}</h1>}
+        </div>
+    )
+}
+
+export default ActivityDisplay;
+```
+The code above is a simplified example to help you understand the proper way of making Http request to the server through useEffect Hook. Notice that we first declared three states: 1\) ```data``` obviously store the data in the http response after calling axios.get. 2\) ```isLoading``` signifies the data fetching is not yet complete. 3\) ```errorMsg``` stores the potential error during the fetching process.
+
+ The latter two are typically used for better UX, since data fetching sometimes would lead to some delays if you are trying to query a real-world database. Conditionlly rendering a loader would notify user that the webpage is still in the process of fetching the intended contents as opposed to a webpage freeze. 
+ 
+ In the catch block appropriate error handling could also speed up the debugging process. 
+
+ In the useEffect Hook, we can observe that the dependency array does not contain any state since the client side only need to make the GET request once. That means we only want ```<ActivityDisplay/>``` to fetch and load the content on mount. 
+
+ 
+ 
