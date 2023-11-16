@@ -1,11 +1,19 @@
+# Learning UseEffect Hook with Axios
+
+## Table of Contents
+### [Introduction](Introduction-1)
+### [What is useEffect Hook?](What-is-UseEffect-Hook?-1)
+### [Understand useEffect Hook Syntax](Understand-useEffect-Hook-Syntax-1)
+### [What is Dependency Array?](What-is-Dependency-Array?-1)
+### [useEffect Hook Application with Axios](useEffect-Hook-Application-with-Axios-1)
 
 ## Introduction
 This tutorial will provide a begginer friendly instruction to master React useEffect Hook and its application in software development. There will also be some real world examples demonstrating its power of api call execution. Specifically, we will be using the Axios, one of the most popular javascript Promise-based library for sending http request.
 
-## What is “useEffect”?
+## What is useEffect Hook?
 In React.js, the functional components generally serve the purpose of rendering and displaying contents on the webpage. However, how are things such as asychronous API data fetching or conditionally updating the elements at any time (typically called “side effects” in most online resources) handled? The solution is “useEffect Hook”, an essential hook that frontend developers use to communicate with database or DOM. 
 
-## Understand UseEffect Hook Syntax
+## Understand useEffect Hook Syntax
 
 On top of the file in an React application:
 ```jsx
@@ -57,7 +65,7 @@ Since nothing is provided inside the dependency array, the effect function would
 ##### Case 3: No Dependency Array as Argument 
 Since there is no dependency array at all,  it means that the useEffect function would run everytime ```<MyReactComponent/>``` rerenders. This flavor of useEffect Hook is not commonly used compared to the other two due to its limitation. For instance, when the side effect includes some data fetching instead of the console.log, the drawback would become obvious. Since every time the components is re-rendered, there would be a request sent to the server, which could easily cause some performance issue. 
 
-## UseEffect Application with Axios
+## useEffect Hook Application with Axios
 
 ```jsx
 import axios from "axios";
@@ -105,5 +113,5 @@ The code above is a simplified example to help you understand the proper way of 
 
  In the useEffect Hook, we can observe that the dependency array does not contain any state since the client side only need to make the GET request once. That means we only want ```<ActivityDisplay/>``` to fetch and load the content on mount. 
 
- 
+
  
