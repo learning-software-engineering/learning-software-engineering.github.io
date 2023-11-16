@@ -2,5 +2,4 @@
 
 ## Introduction
 JSON-RPC is a remote procedure call protocol encoded in JSON. Like REST, it is used for API calls, but there are also differences. JSON-RPC focuses on remote procedure calls whereas the more popular REST is more focused on resource manipulation. JSON RPC 
-has better security because the procedure is masked, so the only thing that is exposed is the endpoints and the parameters 
-used to call them.
+has better security but also puts the user more in the dark because the procedure is masked, so the only thing that is exposed is the endpoints and the parameters used to call them. REST is generally easier to implement through being able to control information like HTTP headers and representation. Client implementations do not have to rely on endpoint names but message formats instead. JSON RPC is generally more complicated and more useful for large application that go past simple CRUD applicatons, where REST would be the simpler choice.
