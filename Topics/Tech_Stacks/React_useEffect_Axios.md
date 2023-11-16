@@ -6,6 +6,7 @@
 ### [Understand useEffect Hook Syntax](Understand-useEffect-Hook-Syntax-1)
 ### [What is Dependency Array?](What-is-Dependency-Array?-1)
 ### [useEffect Hook Application with Axios](useEffect-Hook-Application-with-Axios-1)
+### [Additional Resources](Additional-Resources-1)
 
 ## Introduction
 This tutorial will provide a begginer friendly instruction to master React useEffect Hook and its application in software development. There will also be some real world examples demonstrating its power of api call execution. Specifically, we will be using the Axios, one of the most popular javascript Promise-based library for sending http request.
@@ -113,5 +114,16 @@ The code above is a simplified example to help you understand the proper way of 
 
  In the useEffect Hook, we can observe that the dependency array does not contain any state since the client side only need to make the GET request once. That means we only want ```<ActivityDisplay/>``` to fetch and load the content on mount. 
 
+#### Conclusion
+ After this tutorial, hope you have a basic understanding of useEffect Hook as well as its application in data fetching using Axios. Here are some additional links if you would like to explore more about useEffect Hook.
 
+## Additional Resources
+The offical documentation for useEffect Hook:
+https://react.dev/reference/react/useEffect
+
+A blog post that goes into depth about the cleanup function:
+https://blog.logrocket.com/understanding-react-useeffect-cleanup-function/
+
+FreeCodeCamp Tutorial about Axios in React:
+https://www.freecodecamp.org/news/how-to-use-axios-with-react/
  
