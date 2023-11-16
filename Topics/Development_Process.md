@@ -1,7 +1,7 @@
 ## Resources for Development Process
 ## Git
 ### [Learning Git](./Development_Process/Git/Git.md)
-
+### [Trunk-Based Development](./Development_Process/Trunk_Development.md)
 ### [Django Project Deployment: AWS, Vercel, and Railway](./Development_Process/Django_Deployment_AWS_Railway_Vercel.md)
 ### [Automated Frontend Deployment with Vercel](./Development_Process/Frontend_Automated_Deployment_Vercel.md)
 ### [Quality Assurance Testing](./Development_Process/QA_testing.md)
@@ -15,6 +15,9 @@
 
 ## React Testing Library
 ### [React Testing Library](./Development_Process/React_Testing_Library.md)
+
+## URL Sanitization
+### [URL Sanitization](./Development_Process/URL_Sanitization.md)
 
 ## SOLID PRINCIPLES: 
 
