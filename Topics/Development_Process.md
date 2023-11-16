@@ -8,13 +8,16 @@
 - [Automated Testing](./Development_Process/Automated_Testing.md)
 
 ### [Getting Started With Docker](./Development_Process/Docker.md)
-
+### [Getting Started With WSL 2](./Development_Process/WSL.md)
 
 ## Build requirements
 ### [Requirements.txt](./Development_Process/Build_Requirements/Requirements_txt.md)
 
 ## React Testing Library
 ### [React Testing Library](./Development_Process/React_Testing_Library.md)
+
+## URL Sanitization
+### [URL Sanitization](./Development_Process/URL_Sanitization.md)
 
 ## SOLID PRINCIPLES: 
 
