@@ -1,3 +1,11 @@
+# Prioritization Techniques
+
+## Table of contents
+### [Introduction](#introduction-1)
+### [MoSCoW Method](#the-moscow-method-1)
+### [Kano Method](#the-kano-method-1)
+### [Conclusion](#conclusion-1)
+
 ### Introduction
 
 Effective prioritization lies at the core of successful product management, demanding a keen understanding of which tasks deserve priority. The art of prioritization can be the difference between crafting a polished minimum viable product and merely assembling an arbitrary assortment of features. In the realm of software development, two notable techniques stand out for their efficacy: the MoSCoW method and the Kano model. These methodologies offer invaluable frameworks for product managers, guiding teams through the intricate process of determining priorities and ensuring that essential foundations are laid before delving into additional features.
