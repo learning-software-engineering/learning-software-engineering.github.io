@@ -1,5 +1,22 @@
 # React Components
 
+# Table of Contents
+1. [What Are Components In React?](#what-are-components-in-react)
+2. [When To Use React Components?](#when-to-use-react-components)
+3. [Why Use React Components?](#why-use-react-components)
+4. [Class Components VS Functional Components](#class-components-vs-functional-components)
+   - [Class Components](#class-components)
+      - [Stateful Components](#stateful-components)
+      - [Class Component Code Example](#class-component-code-example)
+   - [Functional Components](#functional-components)
+      - [Stateless Components](#stateless-components)
+      - [Functional Component Code Example](#functional-component-code-example)
+5. [Managing State With Functional Components: `useState` Hooks](#managing-state-with-functional-components-usestate-hooks)
+   - [Example of `useState` Hook](#example-of-usestate-hook)
+6. [Final Remark](#final-remark)
+7. [Sources](#sources)
+
+
 ## What Are Components In React?
 React Components refer to independent and reusable chunks of code that encapsulate a specific functionality or UI that can be imported and used in a larger application. Essentially, React Components serve a similar purpose as JavaScript functions but for front-end UI contexts as they work in isolation, can be given an input, and return an HTML graphical component for the user to conveniently use as a cog in their larger web application. In total, this allows you to split the UI of your application into modular, reusable pieces, and focus on each piece in isolation to create a powerful application.
 
