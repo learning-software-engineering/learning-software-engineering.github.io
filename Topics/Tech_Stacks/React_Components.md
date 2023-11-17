@@ -34,6 +34,16 @@ Although they are not necessarily required for basic functionality, it is a best
 - **Reusability:** With React components, you can create reusable UI elements that can be imported onto any page and used to reproduce the same interface. Thus, we reduce the redundancy in our projects and improve efficiency by not needing to rewrite the same code, we can simply pass in the parameters or props that we would like for the component and reuse in whatever context we want.
 - **Hierarchical Organization:** Using React components, we can nest certain components as subparts of others (stylised buttons in a drop down), enhancing our projects organisation as a developer can clearly see how a complex UI interface is broken down into subcomponents, and how those subcomponents are formed in their finest parts, which can help build something a new from it.
 
+## Where To Include Components?
+Typically in a clean environment, components will be stored in their own folder, and even placed into subfolders for complete organisation in the front end directory of the project. Then, they can be imported from these subsections
+easily as they have proper organisation. Below is an example of this component folder structure:
+
+- frontend
+  - components
+    - worksiteComponents
+    - workerComponents
+    - otherComponents
+
 ## Class Components VS Functional Components
 React components come in two flavours, class components and functional components, which essentially differ by their ability to manage internal state.
 
