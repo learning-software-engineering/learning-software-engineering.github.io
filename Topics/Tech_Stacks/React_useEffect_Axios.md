@@ -167,6 +167,10 @@ The code above is a simplified example to help you understand the proper way of 
 
  In the useEffect Hook, we can observe that the dependency array does not contain any state since the client side only need to make the GET request once. That means we only want ```<ActivityDisplay/>``` to fetch and load the content on mount. 
 
+#### Common Mistakes 
+We should NOT pass data into the dependency array. Because every time a fetch request is made the data state variable would be updated and since it's in the dependency array, the effect would fire and recursively trigger the state update, resulting in thousands of requests made in one minute.
+
+
 #### Conclusion
  After this tutorial, hope you have a basic understanding of useEffect Hook as well as its application in data fetching using Axios. Here are some additional links if you would like to explore more about useEffect Hook.
 
