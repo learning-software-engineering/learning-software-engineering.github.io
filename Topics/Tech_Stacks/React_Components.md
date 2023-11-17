@@ -46,10 +46,17 @@ React components come in two flavours, class components and functional component
 
 ## Managing State With Functional Components: `useState` Hooks
 Although Functional Components do not inherently allow for local state to be managed, React Hooks makes this possible. Here is an example of a useState hook:
-- Ex: const [count, setCount] = useState(0);
+- Ex: ```jsx const [count, setCount] = useState(0); ```
 - count: variable name and source of value
 - setCount: the setter function which sets count to that new value in the brackets (ex: setCount(5), now count = 5)
 - useState(0): define initial value of count to be 0
 
 # Final Remark
 With the introduction of `useState` hooks, functional components can now manage their internal state, side effects, and other advanced features, making them more powerful and versatile for smaller components. However, for projects involving advanced state management and more complex components, it's recommended to use class components.
+
+## Sources
+- [Understanding Stateful and Stateless Components in ReactJS](https://medium.com/@darshana_18428/understanding-stateful-and-stateless-components-in-reactjs-8f7cee2bf43e)
+- [React Components - W3Schools](https://www.w3schools.com/react/react_components.asp#:~:text=Components%20are%20independent%20and%20reusable,will%20concentrate%20on%20Function%20components.)
+- [React Components and Props - React Documentation](https://legacy.reactjs.org/docs/components-and-props.html)
+- [Building Reusable Components Using React](https://buttercms.com/blog/building-reusable-components-using-react/)
+
