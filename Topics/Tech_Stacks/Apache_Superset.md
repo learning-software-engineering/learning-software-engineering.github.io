@@ -33,6 +33,11 @@ This message shows up due to an update in version 2.1.0 to force secure configur
 
 **Alternatively, you can also install Apache Superset from scratch. You can find more details about this installation method [HERE](https://superset.apache.org/docs/installation/installing-superset-from-scratch).**
 
+### Potential Issues with Installing from Scratch:
+
+1. The command `pip install apache-superset` doesn't work. This is because Apache Superset currently supports python version 3.8 and 3.9. Any python versions that's lower or higher will result in a failure.
+
+
 ## Extra Resources:
 
 * [Installing Apache Superset on Kubernetes](https://superset.apache.org/docs/installation/running-on-kubernetes)
