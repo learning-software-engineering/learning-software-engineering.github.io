@@ -12,6 +12,8 @@
   * [Creating a custom plugin:](#creating-a-custom-plugin-)
   * [Extra Resources:](#extra-resources-)
 
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
 ## Prerequisites:
 * [React](https://react.dev/) for Frontend-related knowledge.
 * [Node.js](https://nodejs.org/en/about) for Backend-related knowledge.
