@@ -107,7 +107,7 @@ The peer-to-peer (P2P) model in WebRTC, while advantageous for small-scale inter
 ## Additional Resources
 
 * [WebRTC Website](https://webrtc.org)
-* [WebRTC Samplea](https://webrtc.github.io/samples/)
+* [WebRTC Samples](https://webrtc.github.io/samples/)
 * [Free TURN Server](https://www.metered.ca/tools/openrelay/)
 * [Public STUN Servers](https://gist.github.com/mondain/b0ec1cf5f60ae726202e)
 * [P2P vs MCU vs SFU](https://getstream.io/blog/what-is-a-selective-forwarding-unit-in-webrtc/)
