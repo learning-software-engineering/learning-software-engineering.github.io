@@ -1,16 +1,9 @@
-- [Apache Superset](#apache-superset)
-  * [Table of contents](#table-of-contents)
-    + [[Prerequisites](#prerequisites-1)](#-prerequisites---prerequisites-1-)
-    + [[Introduction](#introduction-1)](#-introduction---introduction-1-)
-    + [[Set-up](#set-up-1)](#-set-up---set-up-1-)
-    + [[Creating a custom plugin](#plugin-1)](#-creating-a-custom-plugin---plugin-1-)
-  * [Prerequisites:](#prerequisites-)
-  * [Introduction:](#introduction-)
-  * [Set-up:](#set-up-)
-    + [Potential Issues with Docker Desktop:](#potential-issues-with-docker-desktop-)
-    + [Potential Issues with Installing from Scratch:](#potential-issues-with-installing-from-scratch-)
-  * [Creating a custom plugin:](#creating-a-custom-plugin-)
-  * [Extra Resources:](#extra-resources-)
+# Apache Superset
+
+## Table of contents
+### [Prerequisites](#prerequisites-1)
+### [Introduction](#introduction-1)
+### [Creating a custom plugin](#plugin-1)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
