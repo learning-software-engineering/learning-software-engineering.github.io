@@ -119,11 +119,14 @@ The code above is a simplified example to help you understand the proper way of 
 
 ## Additional Resources
 The offical documentation for useEffect Hook:
+
 https://react.dev/reference/react/useEffect
 
 A blog post that goes into depth about the cleanup function:
+
 https://blog.logrocket.com/understanding-react-useeffect-cleanup-function/
 
 FreeCodeCamp Tutorial about Axios in React:
+
 https://www.freecodecamp.org/news/how-to-use-axios-with-react/
  
