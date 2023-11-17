@@ -1,18 +1,22 @@
 # Apache Superset
 
+
 ## Prerequisites:
 * [React](https://react.dev/) for Frontend-related knowledge.
 * [Node.js](https://nodejs.org/en/about) for Backend-related knowledge.
 * [PostgreSQL](https://www.postgresql.org/) for SQL and Databases knowledge as well as writing queries.
 * [Python](https://www.python.org/) for writing scripts as well as changing parts of the configuration files.
 
+
 ## Introduction:
 
 Apache Superset is a modern, enterprise-ready business intelligence web application. It is fast, lightweight, intuitive, and loaded with options that make it easy for users of all skill sets to explore and visualize their data, from simple pie charts to highly detailed deck.gl geospatial charts.
 
+
 ## Set-up:
 
 **The easiest way to set up Apache Superset is by using Docker Desktop. To install Docker Desktop, follow the instruction [HERE](https://www.docker.com/products/docker-desktop/). You can find more details about installing Superset by Docker Desktop [HERE](https://superset.apache.org/docs/installation/installing-superset-using-docker-compose).**
+
 
 ### Potential Issues with Docker Desktop:
 
@@ -36,6 +40,7 @@ This message shows up due to an update in version 2.1.0 to force secure configur
 ### Potential Issues with Installing from Scratch:
 
 1. The command `pip install apache-superset` doesn't work. This is because Apache Superset currently supports python version 3.8 and 3.9. Any python versions that's lower or higher will result in a failure.
+
 
 ## Creating a Custom Plugin:
 
