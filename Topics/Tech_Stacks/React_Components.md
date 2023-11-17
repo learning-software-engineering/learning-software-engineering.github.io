@@ -32,6 +32,36 @@ React components come in two flavours, class components and functional component
   - `componentWillUnmount`
 - Can update their own state and trigger a re-render.
 
+**Class Component Code Example:**
+- In this example we have a simpler number counter which a button to increment the count
+- We display the count at the bottom with the button to increment counter
+```jsx
+import React, { Component } from 'react';
+
+class Counter extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      count: 0, // Initializing the state with a count of 0
+    };
+  }
+
+  incrementCount = () => {
+    this.setState({ count: this.state.count + 1 }); // Updating the count in the state
+  };
+
+  render() {
+    return (
+      <div>
+        <p>Count: {this.state.count}</p> {/* Displaying the current count */}
+        <button onClick={this.incrementCount}>Increment</button> {/* Button to increment the count */}
+      </div>
+    );
+  }
+}
+
+```
+
 ### Functional Components
 - **Stateless Components:** Do not have the ability to hold and manage local state.
 - Simpler and more lightweight compared to class components.
@@ -44,12 +74,49 @@ React components come in two flavours, class components and functional component
 - In this example we simply return an html response with the name that was provided in props
 - Note that we “export default <functionalCompName>” at the end to import it from another file 
 
+```jsx
+import React from 'react';
+
+const FunctionalComponent = (props) => {
+  return (
+    <div>
+      <h1>Hello, {props.name}!</h1>
+      <p>This is a functional component.</p>
+    </div>
+  );
+};
+
+export default FunctionalComponent;
+```
+
 ## Managing State With Functional Components: `useState` Hooks
 Although Functional Components do not inherently allow for local state to be managed, React Hooks makes this possible. Here is an example of a useState hook:
 - Ex: ```jsx const [count, setCount] = useState(0); ```
 - count: variable name and source of value
 - setCount: the setter function which sets count to that new value in the brackets (ex: setCount(5), now count = 5)
 - useState(0): define initial value of count to be 0
+
+**Example of `useState` Hook:**
+- This is a similar example to what we had in the class component example but this time implemented with a functional component and a useState hook 
+
+```jsx
+import React, { useState } from 'react';
+
+const Counter = () => {
+  const [count, setCount] = useState(0);
+
+  const increment = () => {
+    setCount(count + 1);
+  };
+
+  return (
+    <div>
+      <p>Count: {count}</p>
+      <button onClick={increment}>Increment</button>
+    </div>
+  );
+};
+```
 
 # Final Remark
 With the introduction of `useState` hooks, functional components can now manage their internal state, side effects, and other advanced features, making them more powerful and versatile for smaller components. However, for projects involving advanced state management and more complex components, it's recommended to use class components.
