@@ -138,6 +138,59 @@ const Counter = () => {
 # Final Remark
 With the introduction of `useState` hooks, functional components can now manage their internal state, side effects, and other advanced features, making them more powerful and versatile for smaller components. However, for projects involving advanced state management and more complex components, it's recommended to use class components.
 
+# Common Mistakes
+When working with React components, developers often encounter these mistakes: 
+1. **Not Using Keys Properly in Lists:**
+   - When rendering a list of components dynamically, it's crucial to provide a unique `key` prop to each item. Failing to do so can lead to unexpected behavior and performance issues.
+
+   ```jsx
+   // Incorrect usage without a key
+   {items.map(item => <MyComponent>{item}</MyComponent>)}
+
+   // Correct usage with a key
+   {items.map(item => <MyComponent key={item.id}>{item}</MyComponent>)}
+   ```
+2. **Incorrect Handling of State Updates**
+
+When working with state in React, it's crucial to update state correctly to avoid unexpected behavior. Here's an example of incorrect and correct state updates:
+
+```jsx
+// Incorrect state update
+this.setState({ count: this.state.count + 1 });
+
+// Correct state update using the functional form
+this.setState(prevState => ({ count: prevState.count + 1 }));
+```
+
+3. **Not Destructuring Props or State**
+```jsx
+// Incorrect usage without destructuring
+const MyComponent = (props) => {
+  return <div>{props.name}</div>;
+};
+
+// Correct usage with destructuring
+const MyComponent = ({ name }) => {
+  return <div>{name}</div>;
+};
+```
+
+4. **Not Destructuring Props or State**
+```jsx
+Overusing Class Components:
+// Avoid unnecessary class components when state is not needed
+class UnnecessaryClassComponent extends React.Component {
+  render() {
+    return <div>Hello, World!</div>;
+  }
+}
+
+// Use a functional component instead
+const FunctionalComponent = () => {
+  return <div>Hello, World!</div>;
+};
+```
+
 ## Sources
 - [Understanding Stateful and Stateless Components in ReactJS](https://medium.com/@darshana_18428/understanding-stateful-and-stateless-components-in-reactjs-8f7cee2bf43e)
 - [React Components - W3Schools](https://www.w3schools.com/react/react_components.asp#:~:text=Components%20are%20independent%20and%20reusable,will%20concentrate%20on%20Function%20components.)
