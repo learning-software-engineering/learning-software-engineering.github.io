@@ -48,9 +48,17 @@ This message shows up due to an update in version 2.1.0 to force secure configur
 
 There are example plugins [example](https://github.com/preset-io/superset-plugin-chart-liquid) which you can reference. Furthermore, this [youtube tutorial](https://www.youtube.com/watch?v=LDHFY9xTzls) can help you as well.
 
+**To set up for the plug-in, you would need to have the following in your system:**
+1) apache-superset 3.0.0
+2) python 3.9.7 or above
+3) node version 16
+4) npm version 7 or 8
+
 ### Potential Issues Creating a Custom Plugin:
 
 Note that one may get errors from `npm run build`, but those errors do not affect the actual building of the plugin. `npm` is a large package manager, and thus it yields irrelevant errors when trying to build the plugin. In case of version conflict errors with other tools under `npm`, it is recommended to use the `--force` flag, again due to the nature of `npm`.
+
+**IMPORTANT** : You can put the mapbox-plugin folder anywhere in your machine EXCEPT in the superset/superset-frontend/plugins folder. The custom plugin will fail to run and cause errors if it is in that folder. This is because those are default plugins by Apache Superset and Apache Superset runs some processes on all folders in the plugin folder, which may cause errors for your plugin as your custom plugin does not have the same configurations as the default plugins provided. 
 
 To add the package to Superset, go to the `superset-frontend` subdirectory in your Superset source folder (assuming both the `your-plugin` plugin and `superset` repos are in the same root directory) and run
 ```
