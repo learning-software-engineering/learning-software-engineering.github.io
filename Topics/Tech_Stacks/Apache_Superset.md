@@ -3,9 +3,9 @@
 ## Table of contents
 ### [Prerequisites](#prerequisites-1)
 ### [Introduction](#introduction-1)
+### [Set-up](#setup-1)
 ### [Creating a custom plugin](#plugin-1)
 
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 ## Prerequisites:
 * [React](https://react.dev/) for Frontend-related knowledge.
@@ -46,6 +46,7 @@ This message shows up due to an update in version 2.1.0 to force secure configur
 
 ## Creating a custom plugin:
 test
+** hi **
 
 
 ## Extra Resources:
