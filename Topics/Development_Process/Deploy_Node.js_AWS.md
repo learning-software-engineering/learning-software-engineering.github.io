@@ -11,6 +11,9 @@ Docker: Docker is a platform that allows you to package an application and its d
 
 Node.js: Node.js is a JavaScript runtime environment which is built on Chrome's V8 JavaScript engine. It enables developers to run JavaScript code on the server-side, making it ideal for building scalable network applications.
 
-AWS ECS (Elastic Container Service): ECS is a fully-managed container orchestration service provided by AWS. It allows you to run, stop, and manage Docker containers on a cluster of EC2 instances easily.
+Amazon ECS (Elastic Container Service): ECS is a fully-managed container orchestration service provided by AWS. It allows you to run, stop, and manage Docker containers on a cluster of EC2 instances easily.
 
-AWS ECR (Elastic Container Registry): ECR is a managed Docker container registry provided by AWS. It allows you to store, manage, and deploy Docker container images, making it easy to integrate with ECS for container deployments.
+Amazon ECR (Elastic Container Registry): ECR is a managed Docker container registry provided by AWS. It allows you to store, manage, and deploy Docker container images, making it easy to integrate with ECS for container deployments.
+
+Amazon EC2 (Elastic Compute Cloud): EC2 is AWS's resizable cloud computing service offering virtual machines (instances) for running applications. It provides flexibility to configure and scale computing resources based on demand.
+
