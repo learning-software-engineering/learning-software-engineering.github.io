@@ -2,12 +2,12 @@
 
 ## Table of Contents
 ### [Prerequisites](#prerequisites-1)
-### [Introduction](#Introduction-1)
-### [What is useEffect Hook?](#What-is-UseEffect-Hook?-1)
-### [Understand useEffect Hook Syntax](#Understand-useEffect-Hook-Syntax-1)
-### [What is Dependency Array?](#What-is-Dependency-Array?-1)
-### [useEffect Hook Application with Axios](#useEffect-Hook-Application-with-Axios-1)
-### [Additional Resources](#Additional-Resources-1)
+### [Introduction](#introduction-1)
+### [What is useEffect Hook?](#what-is-useeffect-hook-1)
+### [Understand useEffect Hook Syntax](#understand-useeffect-hook-syntax-1)
+### [What is Dependency Array?](#what-is-dependency-array-1)
+### [useEffect Hook Application with Axios](#useeffect-hook-application-with-axios-1)
+### [Additional Resources](#additional-resources-1)
 
 ##  Prerequisites
 1. [React Components Basics](./React.md)
@@ -170,8 +170,10 @@ The code above is a simplified example to help you understand the proper way of 
 #### Common Mistakes 
 We should NOT pass data into the dependency array. Because every time a fetch request is made the data state variable would be updated and since it's in the dependency array, the effect would fire and recursively trigger the state update, resulting in thousands of requests made in one minute.
 
+<img width="1728" alt="mistakeDemo" src="https://github.com/hanshhh/learning-software-engineering.github.io/assets/94764483/bbf6fb60-4001-4f4f-bed6-b5a9f81284ce">
 
-#### Conclusion
+
+## Conclusion
  After this tutorial, hope you have a basic understanding of useEffect Hook as well as its application in data fetching using Axios. Here are some additional links if you would like to explore more about useEffect Hook.
 
 ## Additional Resources
