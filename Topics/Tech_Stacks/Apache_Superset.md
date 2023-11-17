@@ -37,13 +37,45 @@ This message shows up due to an update in version 2.1.0 to force secure configur
 
 1. The command `pip install apache-superset` doesn't work. This is because Apache Superset currently supports python version 3.8 and 3.9. Any python versions that's lower or higher will result in a failure.
 
-## Creating a custom plugin:
+## Creating a Custom Plugin:
 
-** To get started on creating a custom plugin, you can follow the instruction [HERE](https://superset.apache.org/docs/contributing/creating-viz-plugins/)**
+**To get started on creating a custom plugin, you can follow the instruction [HERE](https://superset.apache.org/docs/contributing/creating-viz-plugins/)**
 
+There are example plugins [example](https://github.com/preset-io/superset-plugin-chart-liquid) which you can reference. Furthermore, this [youtube tutorial](https://www.youtube.com/watch?v=LDHFY9xTzls) can help you as well.
 
+### Potential Issues Creating a Custom Plugin:
 
+Note that one may get errors from `npm run build`, but those errors do not affect the actual building of the plugin. `npm` is a large package manager, and thus it yields irrelevant errors when trying to build the plugin. In case of version conflict errors with other tools under `npm`, it is recommended to use the `--force` flag, again due to the nature of `npm`.
 
+To add the package to Superset, go to the `superset-frontend` subdirectory in your Superset source folder (assuming both the `mapbox-plugin` plugin and `superset` repos are in the same root directory) and run
+```
+npm i -S ../../mapbox-plugin
+```
+
+If your Superset plugin exists in the `superset-frontend` directory and you wish to resolve TypeScript errors about `@superset-ui/core` not being resolved correctly, add the following to your `tsconfig.json` file:
+
+```
+"references": [
+  {
+    "path": "../../packages/superset-ui-chart-controls"
+  },
+  {
+    "path": "../../packages/superset-ui-core"
+  }
+]
+```
+
+You may also wish to add the following to the `include` array in `tsconfig.json` to make Superset types available to your plugin:
+
+```
+"../../types/**/*"
+```
+
+Finally, if you wish to ensure your plugin `tsconfig.json` is aligned with the root Superset project, you may add the following to your `tsconfig.json` file:
+
+```
+"extends": "../../tsconfig.json",
+```
 
 ## Extra Resources:
 
