@@ -56,12 +56,51 @@ UseEffect Hook must be used inside a react component and it takes in two argumen
 2.	An optional dependency array that determines when the function would be triggered. 
 
 ## What is Dependency Array?
-There are three major cases:
+To get the basic intuition of dependency array, we need to understand three most common use cases of it depending on different situations.
+The following code helped me clarify all three cases the first time I learned useEffect.
+```jsx
+import { useEffect, useState } from ‘react’;
+
+function MyReactComponent() {
+    const [stateVariable, setStateVariable] = useState(0);
+
+    // Case 1 --------------------------------------
+    useEffect(() => {
+        console.log("Case1: has dependency in dependency array")
+    }, [stateVariable]); 
+    // Case 2 --------------------------------------
+    useEffect(() => {
+        console.log("Case2: has nothing in depenency array")
+    }, []);
+    // Case 3 --------------------------------------
+    useEffect(() => {
+        console.log("Case3: has no depenency array")
+    });
+
+    return (<div>
+                <h1>{stateVariable}</h1>
+                <button onClick={() => setStateVariable(stateVariable+1)}>Increase</button>
+            </div>);
+}
+export default MyReactComponent;
+```
+
+```
+Output After Initial Mount:
+Case1: has dependency in dependency array
+Case2: has nothing in depenency array
+Case3: has no depenency array
+```
+```
+Output After User Clicks Increase Button:
+Case1: has dependency in dependency array
+Case3: has no depenency array
+```
 ##### Case 1: Non-Empty Dependency Array
- By default, useEffect would fire when the component mounts. And after that, the useEffect would run whenever there is a state change in any of the variables in the dependency array. This is particularly useful in software engineering when you want to implement a search functionality, such that after user enter the input or apply some filter, a get request would be made to the server and update the data in real time. 
+ By default, useEffect would fire when the component mounts. And after that, the useEffect would run whenever there is a state change in any of the variables in the dependency array. Thus, every time the user clicks the "Increase" button, the message with "Case1:..." would be printed in the console. This is particularly useful in software engineering when you want to implement a search functionality, such that after user enter the input or apply some filter, a get request would be made to the server and update the data in real time. 
 
 ##### Case 2: Empty Dependency Array
-Since nothing is provided inside the dependency array, the effect function would only be called once upon initial mount. Compare with case 1, this property renders its exceptional value when you want to load data only "once" when the user opens or refreshes the web page. For instance, we can use it when we are asked to create an attendence report of the workers. We obviously want it to only make one GET request instead of an infinite loop of requests that fires every second.
+Since nothing is provided inside the dependency array, the ```console.log("Case2:..")``` would only be called once upon initial mount. Compare with case 1, this property renders its exceptional value when you want to load data only "once" when the user opens or refreshes the web page. For instance, we can use it when we are asked to create an attendence report of the workers. We obviously want it to only make one GET request instead of an infinite loop of requests that fires every second.
 
 ##### Case 3: No Dependency Array as Argument 
 Since there is no dependency array at all,  it means that the useEffect function would run everytime ```<MyReactComponent/>``` rerenders. This flavor of useEffect Hook is not commonly used compared to the other two due to its limitation. For instance, when the side effect includes some data fetching instead of the console.log, the drawback would become obvious. Since every time the components is re-rendered, there would be a request sent to the server, which could easily cause some performance issue. 
