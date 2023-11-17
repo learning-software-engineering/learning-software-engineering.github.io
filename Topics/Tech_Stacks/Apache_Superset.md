@@ -4,7 +4,7 @@
 ### [Prerequisites](#prerequisites-1)
 ### [Introduction](#introduction-1)
 ### [Set-up](#set-up-1)
-### [Extra Resources](#extra resources-1)
+### [Extra Resources](#extraresources-1)
 
 ## Prerequisites:
 * [React](https://react.dev/) for Frontend-related knowledge.
