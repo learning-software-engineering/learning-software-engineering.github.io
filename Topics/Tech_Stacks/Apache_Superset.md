@@ -1,5 +1,9 @@
 # Apache Superset
 
+## Table of contents
+### [Prerequisites](#prerequisites-1)
+### [Introduction](#introduction-1)
+
 ## Prerequisites:
 * [React](https://react.dev/) for Frontend-related knowledge.
 * [Node.js](https://nodejs.org/en/about) for Backend-related knowledge.
