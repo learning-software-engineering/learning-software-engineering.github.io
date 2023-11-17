@@ -4,7 +4,7 @@
 ### [Prerequisites](#prerequisites-1)
 ### [Introduction](#introduction-1)
 ### [Set-up](#set-up-1)
-### [Extra Resources](#extraresources-1)
+### [Creating a custom plugin](#plugin-1)
 
 ## Prerequisites:
 * [React](https://react.dev/) for Frontend-related knowledge.
@@ -42,6 +42,9 @@ This message shows up due to an update in version 2.1.0 to force secure configur
 ### Potential Issues with Installing from Scratch:
 
 1. The command `pip install apache-superset` doesn't work. This is because Apache Superset currently supports python version 3.8 and 3.9. Any python versions that's lower or higher will result in a failure.
+
+## Creating a custom plugin:
+test
 
 
 ## Extra Resources:
