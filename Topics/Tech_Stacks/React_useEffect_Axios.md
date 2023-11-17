@@ -118,6 +118,10 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 
 function ActivityDisplay() {
+    // State Variables:
+    // data: stores the fetched data from the http response.
+    // isLoading: determines whether the fetch has been completed
+    // errorMsg: there might be some errors during the fetching.
     const [data, setData] = useState(null);
     const [isLoading, setIsLoading] = useState(true);
     const [errorMsg, setErrorMsg] = useState(null)
@@ -125,16 +129,19 @@ function ActivityDisplay() {
         async function fetchRandomActivity() {
             setErrorMsg(null);
             setIsLoading(true);
-
+            // Axios get request
             await axios.get("http://www.boredapi.com/api/activity")
             .then((resp)=> {
+                // if success, update the data state to be resp.data
                 setData(resp.data); 
             })
             .catch((e) => {
+                // you can add error handling here
                 console.log(e); 
                 setErrorMsg(e);
             })
             .finally(() => {
+                // reset the loading state 
                 setIsLoading(false);
             })
         }
@@ -143,6 +150,7 @@ function ActivityDisplay() {
 
     return (
         <div>
+            {/* Conditionally rendering based on isLoading and errorMsg state */}
             {isLoading? <h1>Loading...</h1>: (data && <p>{data.activity}</p>)}
             {errorMsg && <h1>{errorMsg.message}</h1>}
         </div>
