@@ -1,12 +1,5 @@
 # Apache Superset
 
-## Table of contents
-### [Prerequisites](#prerequisites-1)
-### [Introduction](#introduction-1)
-### [Set-up](#setup-1)
-### [Creating a custom plugin](#plugin-1)
-
-
 ## Prerequisites:
 * [React](https://react.dev/) for Frontend-related knowledge.
 * [Node.js](https://nodejs.org/en/about) for Backend-related knowledge.
@@ -45,8 +38,11 @@ This message shows up due to an update in version 2.1.0 to force secure configur
 1. The command `pip install apache-superset` doesn't work. This is because Apache Superset currently supports python version 3.8 and 3.9. Any python versions that's lower or higher will result in a failure.
 
 ## Creating a custom plugin:
-test
-** hi **
+
+** To get started on creating a custom plugin, you can follow the instruction [HERE](https://superset.apache.org/docs/contributing/creating-viz-plugins/)**
+
+
+
 
 
 ## Extra Resources:
