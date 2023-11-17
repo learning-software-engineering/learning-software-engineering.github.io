@@ -4,8 +4,6 @@
 ### [Prerequisites](#prerequisites-1)
 ### [Introduction](#introduction-1)
 ### [Set-up](#set-up-1)
-### [Potential Issues with Docker Desktop](#potentialissue-1)
-### [Potential Issues with Installing from Scratch](#potentialissue-2)
 ### [Extra Resources](#extra-resource-1)
 
 ## Prerequisites:
