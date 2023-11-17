@@ -12,7 +12,7 @@ Apache Superset is a modern, enterprise-ready business intelligence web applicat
 
 ## Set-up:
 
-**The easiest way to set up Apache Super set is by using Docker Desktop. You can find more details about the installation process [HERE](https://superset.apache.org/docs/installation/installing-superset-using-docker-compose).**
+**The easiest way to set up Apache Superset is by using Docker Desktop. To install Docker Desktop, follow the instruction [HERE](https://www.docker.com/products/docker-desktop/). You can find more details about installing Superset by Docker Desktop [HERE](https://superset.apache.org/docs/installation/installing-superset-using-docker-compose).**
 
 ### Potential Issues with Docker Desktop:
 
