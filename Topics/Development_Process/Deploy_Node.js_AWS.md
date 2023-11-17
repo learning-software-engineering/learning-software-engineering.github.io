@@ -1,13 +1,11 @@
 # Node.js Deployment through Docker and AWS
 
-## Table of Contents
-### [Tech Stack Overview](#tech-stack-overview-1)
-
+## Overview
 In the realm of modern software development, containerization has become a standard practice for deploying applications. Docker simplifies this process by packaging applications and their dependencies into containers, ensuring consistency across various environments. Node.js, a popular JavaScript runtime, is often used to build scalable and efficient server-side applications.
 
 AWS (Amazon Web Services) provides a suite of cloud services that enable developers to deploy and manage applications easily. ECS (Elastic Container Service) and ECR (Elastic Container Registry) are two fundamental services offered by AWS to manage containers and container images, respectively.
 
-## Tech Stack Overview
+## Tech Stack
 
 Docker: Docker is a platform that allows you to package an application and its dependencies into a standardized unit called a container. It provides isolation, portability, and scalability for applications. It allows for easy deployment as it essentially creates a separate virtual machine to run the application on.
 
