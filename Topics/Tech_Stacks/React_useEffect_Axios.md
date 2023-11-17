@@ -13,7 +13,7 @@
 1. [React Components Basics, useStateHook](./React.md)
 2. [Axios library](./Axios.md)
 3. [Javascript Basics](./JavaScript.md)
-4. [Component Life Cycle](https://www.freecodecamp.org/news/react-component-lifecycle-methods/)
+4. [Component Life Cycle Online Resources](https://www.freecodecamp.org/news/react-component-lifecycle-methods/)
 
 ## Introduction
 This tutorial will provide a begginer friendly instruction to master React useEffect Hook and its application in software development. There will also be some real world examples demonstrating its power of api call execution. Specifically, we will be using the Axios, one of the most popular javascript Promise-based library for sending http request.
@@ -91,7 +91,7 @@ Case1: has dependency in dependency array
 Case3: has no depenency array
 ```
 ##### Case 1: Non-Empty Dependency Array
- By default, useEffect would fire when the component mounts. And after that, the useEffect would run whenever there is a state change in any of the variables in the dependency array. Thus, every time the user clicks the "Increase" button, the message with "Case1:..." would be printed in the console. This is particularly useful in software engineering when you want to implement a search functionality, such that after user enter the input or apply some filter, a get request would be made to the server and update the data in real time. 
+ By default, useEffect would fire when the component mounts. And after that, the useEffect would run whenever there is a state change in any of the variables in the dependency array. Thus, every time the user clicks the "Increase" button, the message with "Case1:..." would be printed in the console. This is particularly useful in software engineering when you want to implement a search functionality, such that after user enters the input or applies some filter, a get request would be made to the server and update the data in real time. 
 
 ##### Case 2: Empty Dependency Array
 Since nothing is provided inside the dependency array, the ```console.log("Case2:..")``` would only be called once upon initial mount. Compare with case 1, this property renders its exceptional value when you want to load data only "once" when the user opens or refreshes the web page. For instance, we can use it when we are asked to create an attendence report of the workers. We obviously want it to only make one GET request instead of an infinite loop of requests that fires every second.
