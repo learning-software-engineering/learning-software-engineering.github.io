@@ -1,5 +1,15 @@
 # WebRTC
 
+## Table of Contents
+* [Introduction](#introduction)
+* [Signaling Server](#signaling-server)
+* [ICE candidates](#ice-candidates)
+* [STUN and TURN servers](#stun-and-turn-servers)
+* [Signalling and Establishing Connection](#signalling-and-establishing-connection)
+* [Streaming](#streaming)
+* [Other Architectures](#other-architectures)
+* [Additional Resources](#additional-resources)
+
 ## Introduction
 
 You may be wondering how web applications like Google Meet enables video chat functionality, third-party APIs? Turns out that modern browsers has a native set of APIs that enables peer-to-peer communications, called [WebRTC](https://webrtc.org). You may be curious about what WebRTC is and its application in integrating video chat into web applications. Allow me to guide you through its basics and uses.
@@ -78,3 +88,26 @@ peerConnection.addEventListener('track', async (event) => {
 ```
 
 Example from https://webrtc.org/getting-started/remote-streams
+
+## Other Architectures
+
+The peer-to-peer (P2P) model in WebRTC, while advantageous for small-scale interactions, faces significant scalability challenges as the number of participants in a group call increases. This exponential growth in connections can quickly become impractical and resource-intensive. For instance, in a 100-person video conference, the necessity to establish 4950 unique connections (calculated as n(n-1)/2 for n participants) demonstrates the limitation of the P2P model for large groups. This is where alternative architectures like SFU (Selective Forwarding Unit) and MCU (Multipoint Control Unit) come into play, offering more scalable solutions for WebRTC applications.
+
+* **Selective Forwarding Unit (SFU)**
+  * Architecture: In an SFU setup, each participant sends their media (audio/video) streams to the SFU server, which then selectively forwards these streams to other participants.
+  * Scalability: This model significantly reduces the number of connections each participant needs to manage. For example, in a 100-person call, each participant only connects to the SFU, not to every other participant.
+  * Advantages: It offers a balance between resource usage and quality, as the SFU can make intelligent decisions about which streams to forward based on network conditions and user preferences.
+  * Limitations: The SFU does not process the media streams, so each participant may still need to decode multiple streams, which can be resource-intensive on the client side.
+* **Multipoint Control Unit (MCU)**
+  * Architecture: The MCU model takes a more centralized approach, where all streams are sent to the MCU server. The server processes these streams, mixing them into a single composite stream that is then sent back to each participant.
+  * Scalability: This approach is highly scalable in terms of the number of connections since each participant only needs a single connection to the MCU.
+  * Advantages: It greatly reduces the processing load on client devices, as they only need to handle one stream regardless of the number of participants in the call.
+  * Limitations: The downside is the high processing load on the server, which can lead to increased costs and potential for higher latency, as the media streams need to be mixed in real time.
+  
+## Additional Resources
+
+* [WebRTC Website](https://webrtc.org)
+* [WebRTC Samplea](https://webrtc.github.io/samples/)
+* [Free TURN Server](https://www.metered.ca/tools/openrelay/)
+* [Public STUN Servers](https://gist.github.com/mondain/b0ec1cf5f60ae726202e)
+* [P2P vs MCU vs SFU](https://getstream.io/blog/what-is-a-selective-forwarding-unit-in-webrtc/)
