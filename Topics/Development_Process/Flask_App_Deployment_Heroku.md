@@ -1,10 +1,10 @@
 # Deploying a Flask Application on Heroku
 
 ## Table of Contents
-### [Introduction](#introduction-1)
-### [Before Getting Started](#before-getting-started-2)
-### [Steps](#steps-3)
-### [Common Issues](#common-issues-3)
+### [Introduction](#introduction)
+### [Before Getting Started](#before-getting-started)
+### [Steps](#steps)
+### [Common Issues](#common-issues)
 
 ----
 
