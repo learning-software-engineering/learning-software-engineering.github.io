@@ -62,7 +62,7 @@ The query editor uses SOQL - [Salesforce Object Query Language](https://develope
 
 <img width="888" alt="Screen Shot 2023-11-18 at 9 06 36 AM" src="https://github.com/MinGi-K/learning-software-engineering.github.io/assets/64427415/45c51f59-7490-49a6-bcfa-d9433348ef4d">
 
-After creating the Connected App, navigate to your app Manage Connected Apps. You will see an option to get Consumer Key and Secret, which you can inject into your project. Now users can log into your application with their Salesforce credentials, and you can also use API calls to Salesforce by sending the access token you receive from Salesforce after successful user login in the header of the API request.
+After creating the Connected App, navigate to your app in Manage Connected Apps like shown before. You will see an option to get Consumer Key and Secret, which you can inject into your project. Now users can log into your application with their Salesforce credentials, and you can also use API calls to Salesforce by sending the access token you receive from Salesforce after successful user login in the header of the API request.
 
 ### Image References:
 - https://blog.coupler.io/wp-content/uploads/2022/02/1-salesforce-api-setup.png
