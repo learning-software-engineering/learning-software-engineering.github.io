@@ -14,3 +14,4 @@
 ### [Learning JavaScript](./Tech_Stacks/JavaScript.md)
 ### [Learning React Native](./Tech_Stacks/ReactNative.md)
 ### [React Components Guide](./Tech_Stacks/React_Components.md)
+### [Deploying Django to AWS](./Tech_Stacks/Deploying_Django_to_AWS.md)
