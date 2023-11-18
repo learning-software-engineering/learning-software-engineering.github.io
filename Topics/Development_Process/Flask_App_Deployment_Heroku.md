@@ -26,50 +26,66 @@ Before you begin, ensure you have the following:
 
 ## Steps
 
-** 1) Logging into Heroku Through the CLI: **
+**1) Logging into Heroku Through the CLI:**
+
 Open your terminal and navigate to your GitHub repository's root directory. Then, type the following and follow the instructions to log into Heroku:
     heroku login
 
-** 2) Creating a requirements.txt file: **
+**2) Creating a requirements.txt file:**
+
 If you don't have one already, add a file into your project's directory named "requirements.txt" that includes all the requirements for your application. The simplest way to create one is by typing the following command:
     python -m pip freeze > requirements.txt
 
-** 3) Installing Gunicorn: **
+**3) Installing Gunicorn:**
+
 If you don't already have Gunicorn installed, install it by typing the following command into the CLI:
     pip install gunicorn
 
-** 4) Creating a Procfile: **
+**4) Creating a Procfile:**
+
 Create a file named "Procfile" in your project's directory. This file is required for Heroku to deploy your application. In your "Procfile", add the following line:
+
     web: gunicorn app:app
 
-** 5) Creating a New Heroku Application: **   
+**5) Creating a New Heroku Application:**   
+
 While in your GitHub repository's root directory, type the following to create a new app on Heroku using the CLI:
+
     heroku create name-of-your-app
+    
 Remember to replace "name-of-your-app" with a name for your Heroku app. This name must be unique across all of Heroku.
 
-** 6) Pushing Changes: **   
+**6) Pushing Changes:**   
+
 Ensure that all the changes are committed and pushed to your repository.
 
-** 7) Deploying the Application: **  
+**7) Deploying the Application:**  
+
 You can now deploy your Flask application to Heroku by typing the following command into the CLI:
+
     git push heroku master
 
-** 8) Opening the Application: **  
+**8) Opening the Application:**  
+
 You can now open the deployed application in your default browser by typing the following command into the CLI:
+
     heroku open
 
 ----
 
 ## Common Issues
 
-** Application Filename is Not "app.py": **
+**Application Filename is Not "app.py":**
 Ensure that your Flask application's filename is either "app.py" and that the Flask application's instance within that file is within a variable called "app". Otherwise, you can change your Procfile to reflect the file and variable names you used by changing the line in it to the following:
+
     web: gunicorn your_filename:instance_variable_name
+
 Remember to replace "your_filename" and "instance_variable_name" with the names you used.
 
-** Issues with Deployment **
+**Issues with Deployment**
 Firstly, ensure that your "requirements.txt" file is created and is up to date. Also, ensure that your Procfile is free of any typos.
 If you still encounter any issues with deployment, checking the Heroku logs created can be very helpful. To view real-time logs, type the following into the CLI:
+
     heroku logs --tail
 
 ----
