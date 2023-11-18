@@ -3,7 +3,7 @@
 ### [Introduction](#introduction)
 ### [The MoSCoW Method](#the-moscow-method)
 ### [The Kano Method](#the-kano-method)
-### [Which is Right For Me?](#which-is-right-for-me?)
+### [Which is Right For Me?](#which-is-right-for-me)
 ### [Conclusion](#conclusion)
 
 ## Introduction
@@ -18,7 +18,7 @@ Firstly, the MoSCoW method, an acronym derived from Must-haves, Should-haves, Co
 
 The Kano model, developed by Professor Noriaki Kano, is a nuanced technique for product development prioritization. It categorizes features into three main types: Basic Needs, Performance Needs, and Delighters. Basic Needs are fundamental requirements that, when met, prevent dissatisfaction but don't necessarily contribute to satisfaction when exceeded. This is the perfect example of what the MVP represents, the client would expect this completed, but won’t be overly happy as its the minimum expectation. Performance Needs directly correlate satisfaction with their level of fulfillment—higher performance leads to greater satisfaction. Delighters are unexpected features that, when included, can significantly elevate user satisfaction. These include going above and beyond client expectations. Such as, implementing features that were not mentioned, but could greatly improve the product. Implementing the Kano model involves surveying users to categorize features and determine their impact on satisfaction. If this is not possible you could alternatively survey the client and try to gauge what he deems important. This method not only aids in prioritizing features based on their potential to enhance user experience but also guides teams in understanding the emotional and functional aspects that shape user preferences. By integrating the Kano model into your processes, product managers empower teams to make informed decisions that resonate with user expectations and contribute to long-term customer satisfaction. For a visual and more info check out this [link](https://www.qualtrics.com/experience-management/research/kano-analysis).
 
-## Which Is Right For ME?
+## Which Is Right For Me
 Choosing between the MoSCoW method and the Kano model depends on project characteristics and priorities. The MoSCoW method is straightforward, ideal for teams requiring clear, essential features prioritization, especially for MVP development with tight deadlines or specific client needs. In contrast, the Kano model excels in projects prioritizing user satisfaction and experience. This strategy is extremely beneficial for teams seeking to determine essential minimum-threshold features for prioritization, identify performance features that should be invested early on, and recognize customer-delight features that offer the most delight for effort. The decision between these methods hinges on project goals, constraints, and the emphasis on either clear-cut prioritization or user-centric, emotionally resonant feature development.
 
 ## Conclusion
