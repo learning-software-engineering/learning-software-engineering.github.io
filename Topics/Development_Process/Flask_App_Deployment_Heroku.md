@@ -10,7 +10,7 @@
 
 ## Introduction
 
-This simple guide will walk you through the steps of deploying a Flask web application on Heroku. Heroku is a popular cloud-based platform that allows for the simple automated deployment and management of web applications. 
+This simple guide will walk you through the steps of deploying a Flask web application on Heroku. Heroku is a popular cloud-based platform that allows for the simple deployment and management of web applications. 
 
 ----
 
