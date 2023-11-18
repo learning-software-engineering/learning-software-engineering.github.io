@@ -37,8 +37,7 @@ The query editor uses SOQL - [Salesforce Object Query Language](https://develope
 
 <img src="https://www.marksgroup.net/wp-content/uploads/2019/05/console1.png" width="500">
 
-## Setting up a Connected App in Salesforce to enable social login
-
+# Setting up a Connected App in Salesforce to enable social login
 - A Connected App is just refers to an application that uses OAuth for authentication and authorization. Refer to this [link](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_oauth_and_connected_apps.htm) for more details about the Oauth flow:
 
 # Why would you want to use Salesforce as an authentication provider?
