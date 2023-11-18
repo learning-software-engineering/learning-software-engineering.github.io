@@ -76,13 +76,15 @@ You can now open the deployed application in your default browser by typing the 
 ## Common Issues
 
 **Application Filename is Not "app.py":**
+
 Ensure that your Flask application's filename is either "app.py" and that the Flask application's instance within that file is within a variable called "app". Otherwise, you can change your Procfile to reflect the file and variable names you used by changing the line in it to the following:
 
     web: gunicorn your_filename:instance_variable_name
 
 Remember to replace "your_filename" and "instance_variable_name" with the names you used.
 
-**Issues with Deployment**
+**Other Issues with Deployment:**
+
 Firstly, ensure that your "requirements.txt" file is created and is up to date. Also, ensure that your Procfile is free of any typos.
 If you still encounter any issues with deployment, checking the Heroku logs created can be very helpful. To view real-time logs, type the following into the CLI:
 
@@ -94,7 +96,3 @@ For Detailed Steps for the Creation and Deployment of a New Flask Application:
 - https://realpython.com/flask-by-example-part-1-project-setup/
 
 
-
-<!-- You could also explain that there is another option to deploy through Heroku's website -->
-<!-- You never mention if the deployment is automatic for new commits -->
-<!-- For clarity you can use code blocks -->
