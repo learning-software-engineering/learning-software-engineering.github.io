@@ -19,7 +19,7 @@ This simple guide will walk you through the steps of deploying a Flask web appli
 Before you begin, ensure you have the following:
 
 - An account with Heroku. Here is where you can sign up: https://www.heroku.com
-- A GitHub repository that contains your Flask application.
+- A Git repository that contains your Flask application.
 - Heroku CLI installed. Here is where you can download it: https://devcenter.heroku.com/articles/heroku-cli
 
 ----
@@ -28,7 +28,7 @@ Before you begin, ensure you have the following:
 
 **1) Logging into Heroku Through the Terminal:**
 
-Open your terminal and navigate to your GitHub repository's root directory. Then, type the following into the terminal and follow the instructions to log into Heroku:
+Open your terminal and navigate to your Git repository's root directory. Then, type the following into the terminal and follow the instructions to log into Heroku:
 
     heroku login
 
@@ -52,7 +52,7 @@ Create a file named "Procfile" in your project's root directory. This file is re
 
 **5) Creating a New Heroku Application:**   
 
-While in your GitHub repository's root directory, type the following to create a new app on Heroku using the terminal:
+While in your Git repository's root directory, type the following to create a new app on Heroku using the terminal:
 
     heroku create name-of-your-app
     
