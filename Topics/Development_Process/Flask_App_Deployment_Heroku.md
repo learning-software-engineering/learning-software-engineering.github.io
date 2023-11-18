@@ -2,9 +2,9 @@
 
 ## Table of Contents
 ### [Introduction](#introduction-1)
-### [Before Getting Started](#before_getting-started-2)
+### [Before Getting Started](#before-getting-started-2)
 ### [Steps](#steps-3)
-### [Common Issues](#common_issues-3)
+### [Common Issues](#common-issues-3)
 
 ----
 
