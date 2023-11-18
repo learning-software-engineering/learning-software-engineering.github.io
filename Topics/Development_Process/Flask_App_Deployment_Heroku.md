@@ -101,6 +101,12 @@ If you still encounter any issues with deployment, checking the Heroku logs crea
 
     heroku logs --tail
 
+Some logs Heroku provides include:
+
+- Error logs which contain error messages caused from the execution of your application's code
+- Application logs which contain information about the execution of your application's code including print statements
+- Router logs which contain information about incoming traffic and issues with request handling.
+
 ----
 
 For More Detailed Steps for the Creation and Deployment of a New Flask Application: 
