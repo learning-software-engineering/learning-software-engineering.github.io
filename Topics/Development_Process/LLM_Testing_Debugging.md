@@ -76,7 +76,12 @@ However, it is important to note that you should also create test cases manually
 Even though LLM can be great for reducing the chance of missing some edge cases, it is always important for you to take steps to generate test cases. 
 
 ### Generating Test Data
-Instead of generating test cases directly as some programming language, you can also ask LLM to create test data in specific formats (e.g. JSON, CSV). Even though the data it can generate is limited because LLM has limits on the number of tokens that it can output, you can make those data your starting point. 
+Instead of generating test cases directly as some programming language, you can also ask LLM to create test data in specific formats (e.g. JSON, CSV).
+
+Here are an interesting blog that tries to create JSON payloads for API request: [Using LLMs for test data generation](https://blog.dkwr.de/development/llm-for-test-data-generation/?utm_source=hnblogs.substack.com)
+
+Even though the data it can generate is limited because LLM has limits on the number of tokens that it can output, you can make those data your starting point. 
+You might also want to do validation on your generated data since it can generate incorrect data.
 
 ### Generating Personas
 Persona-based testing is an important technique you can use for quality assurance. 
