@@ -116,6 +116,13 @@ Here are the advantages and disadvantages you should know if you are using LLM f
 - Incorrect answer: LLM is not perfect. It can generate incorrect answers. You should always validate output from LLM manually to avoid having problems with LLM's output.
 - Limits on output tokens: LLM usually has limits on output tokens that it can generate. You can split up into multiple prompts to avoid this issue. 
 
+## Going further: Few-shot
+One advanced technique you can use for testing & debugging with LLM is few-shot learning. 
+In short, few-shot learning is a technique that can improve LLM's response by providing example inputs & outputs. 
+For example, in the context of testing, you can provide example(s) of test cases that you created in your prompt to let 
+LLM understands what you are looking for. 
+You can see [here](https://blog.andrewcantino.com/blog/2021/04/21/prompt-engineering-tips-and-tricks/) for more detailed example for few-shot learning. 
+
 ## Conclusion 
 When LLM, like ChatGPT, is used correctly, it can provide strong support for your software engineering experiences. 
 However, LLM must be used carefully to avoid potential risks, as shown [above](#advantages-and-disadvantages). 
@@ -133,3 +140,5 @@ When used correctly, LLM can become a strong friend that supports your journey f
 - [Can LLM help SWE write test cases?](https://medium.com/@taiyuanz/can-llm-help-swe-write-test-cases-4d1cd3b51b3e)
 - [Using LLMs for test data generation](https://blog.dkwr.de/development/llm-for-test-data-generation/?utm_source=hnblogs.substack.com)
 - [Creating Buyer Personas with Chat GPT + Template Prompts](https://medium.com/@ferdian_ariff/creating-buyer-personas-with-chat-gpt-template-prompts-ad78f98e7e3e)
+- [Prompt Engineering Tips and Tricks with GPT-3](https://blog.andrewcantino.com/blog/2021/04/21/prompt-engineering-tips-and-tricks/)
+- [Prompt Engineering Guide](https://www.promptingguide.ai/)
