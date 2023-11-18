@@ -1,5 +1,15 @@
 # Large Language Model (LLM) for testing and debugging
 
+## Attention!
+It is important to have background knowledge of standard testing methodologies before reading this content. 
+LLM can be a strong tool for testing, but it will NOT replace standard testing methodologies. 
+
+See the following links for learning more standard testing techniques: 
+- [Automated Testing](Automated_Testing.md)
+- [QA Testing](QA_testing.md)
+
+In addition, if you are planning to use LLM for your coursework, it is important for you to check the course guidelines on the usage of generative AI. 
+
 ## Motivation
 Have you had any experience of being stuck on the code for an enormous amount of time,  only to find that the issue was a simple logic error or typo? 
 It is not uncommon for programmers to overlook these seemingly trivial mistakes, especially when you are spending too much time on the same part of the code, making you biased on your code.
