@@ -123,6 +123,14 @@ For example, in the context of testing, you can provide example(s) of test cases
 LLM understands what you are looking for. 
 You can see [here](https://blog.andrewcantino.com/blog/2021/04/21/prompt-engineering-tips-and-tricks/) for more detailed example for few-shot learning. 
 
+## Recommended LLMs 
+There are a number of LLMs that are accessible. I will list some LLMs that I recommend as a reference. 
+- **ChatGPT (GPT3.5)**: LLM created by OpenAI. It's probably one of the most commonly used LLMs right now. It should be suitable for most use cases. 
+- **GPT4**: Improved version of GPT3.5. It supports image as an input, so it may be suitable when you want to debug styling issues with your UI. As of 2023 November 17, you can pay USD $20/month to get an upgrade on your ChatGPT account to get access to GPT4. (You can also pay per token if you use OpenAI API)
+- **Llama 2**: LLM released by Meta AI. It can be used for research and commercial use, and you can even download the model if you get access. It offers 7B, 13B, and 70B model sizes, so you might be able to run on your local machine if you have good hardware. If you are interested in fine-tuning LLM to make a model specifically good for generating tests or debugging, this model can be a great option. 
+
+Other options include BARD, Falcon, and PALM. 
+
 ## Conclusion 
 When LLM, like ChatGPT, is used correctly, it can provide strong support for your software engineering experiences. 
 However, LLM must be used carefully to avoid potential risks, as shown [above](#advantages-and-disadvantages). 
