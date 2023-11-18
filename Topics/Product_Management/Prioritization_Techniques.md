@@ -3,7 +3,7 @@
 ### [Introduction](#introduction)
 ### [The MoSCoW Method](#the-moscow-method)
 ### [The Kano Method](#the-kano-method)
-### [Which is Right For Me?](#which-is-right-for-me)
+### [Which is Right For Me](#which-is-right-for-me)
 ### [Conclusion](#conclusion)
 
 ## Introduction
