@@ -44,6 +44,8 @@ If you don't already have Gunicorn installed, install it by typing the following
 
     pip3 install gunicorn
 
+Gunicorn serves as a connection between your Flask app and Heroku's dyno and allows for improved reliability in terms of the deployment of Python applications.
+
 **4) Creating a Procfile:**
 
 Create a file named "Procfile" in your project's root directory. This file is required for Heroku to deploy your application. In your "Procfile", add the following line:
@@ -73,6 +75,12 @@ You can now deploy your Flask application to Heroku by typing the following comm
 You can now open the deployed application in your default browser by typing the following command into the terminal:
 
     heroku open
+
+**Additional Comments:**  
+
+If you prefer a more visual approach to deploying your Flask application on Heroku, you could use Heroku's web interface instead of the CLI. While this method is more user-friendly, it has a few drawbacks including limited control over advanced configuration settings and dependency on a web browser.
+
+This method leads to manual deployment through which the command "git push heroku master" triggers the deployment. This gives you full control over what and when to deploy. Alternatively, you could also connect a GitHub repository to your Heroku app through their website to set up automatic deployment. When any changes are pushed to your repository, Heroku will detect them and deploy the app again right away.   
 
 ----
 
