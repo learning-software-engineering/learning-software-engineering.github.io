@@ -4,6 +4,7 @@
 ### [Trunk-Based Development](./Development_Process/Trunk_Development.md)
 ### [Django Project Deployment: AWS, Vercel, and Railway](./Development_Process/Django_Deployment_AWS_Railway_Vercel.md)
 ### [Automated Frontend Deployment with Vercel](./Development_Process/Frontend_Automated_Deployment_Vercel.md)
+### [Flask Application Deployment on Heroku](./Development_Process/Flask_App_Deployment_Heroku.md)
 ### [Quality Assurance Testing](./Development_Process/QA_testing.md)
 - [Automated Testing](./Development_Process/Automated_Testing.md)
 
