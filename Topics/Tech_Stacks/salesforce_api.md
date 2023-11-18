@@ -39,6 +39,8 @@ The query editor uses SOQL - [Salesforce Object Query Language](https://develope
 
 ## Setting up a Connected App in Salesforce to enable social login
 
+- A Connected App is just refers to an application that uses OAuth for authentication and authorization. Refer to this [link](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_oauth_and_connected_apps.htm) for more details about the Oauth flow:
+
 # Why would you want to use Salesforce as an authentication provider?
 - If the partner organization is already partnered with Salesforce and they request a web application, it makes sense to try integrating with Salesforce directly and save the cost of hosting another expensive database.
 - Users might have an easier time logging in if they already have a Salesforce account, thus making it easier for users to start using your application.
