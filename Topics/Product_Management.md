@@ -40,7 +40,7 @@ These product managers discovered, quite unexpectedly, that remote work — orig
 
 ------
 
-One of the defining qualities of a good product manager is the ability to develop and envision and client-centered product. We present a case study that underscores the significance of this skill in the realm of product management.
+One of the defining qualities of a good product manager is the ability to develop and envision a client-centered product. We present a case study that underscores the significance of this skill in the realm of product management.
 
 #### Case Study 1 - Client-Centred Approach:
 
