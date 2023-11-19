@@ -96,6 +96,20 @@ export class UserEffects {
   constructor(private actions$: Actions, private userService: UserService) {}
 }
 ```
+# NgRx Memoization for Expensive Calls to State
+We can use the same form of memoization we learned in our algorithm classes and apply it to state! Memoization involves caching the results of expensive function calls and returning the cached result when the same inputs occur again. This can be applied to selectors in NgRx to prevent unnecessary recomputation. An example of memoization following the "User" state is shown below:
+``` Javascript
+// Before memoization
+export const selectUserById = (state: AppState, userId: number) => state.users.find(user => user.id === userId);
+
+// After memoization
+import { createSelector } from '@ngrx/store';
+
+export const selectUserById = createSelector(
+  selectAllUsers,
+  (users, props) => users.find(user => user.id === props.userId)
+);
+```
 
 # NgRx Benefits
 1. Predictable State Management: NgRx provides a clear and predictable way to manage the state of your application.
