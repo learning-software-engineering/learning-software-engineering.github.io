@@ -17,11 +17,85 @@ npm install @ngrx/store @ngrx/effects @ngrx/store-devtools.
 ```
 
 # Key Parts of State
+I will list the key parts of state for NgRx state management. With each part of state I will give an example with a simple "User" object being added to state. 
 1. Store: The central piece of NgRx is the store, which holds the entire state of the application. It is a single immutable data structure.
+``` javascript
+// app.state.ts
+export interface AppState {
+  user: User;
+}
+
+// user.model.ts
+export interface User {
+  id: number;
+  username: string;
+}
+```
 2. Actions: Actions are plain JavaScript objects that describe unique events in the application. They are used to trigger changes to the state.
+``` javascript
+// user.actions.ts
+import { createAction, props } from '@ngrx/store';
+
+export const setUser = createAction('[User] Set User', props<{ user: User }>());
+export const clearUser = createAction('[User] Clear User');
+```
 3. Reducers: Reducers are pure functions that take the current state and an action, and return a new state. They define how the state changes in response to actions.
+``` javascript
+// user.reducer.ts
+import { createReducer, on } from '@ngrx/store';
+import * as UserActions from './user.actions';
+
+export const initialState: User = { id: 0, username: '' };
+
+export const userReducer = createReducer(
+  initialState,
+  on(UserActions.setUser, (state, { user }) => user),
+  on(UserActions.clearUser, () => initialState)
+);
+```
 4. Selectors: Selectors are functions that retrieve slices of the state. They help in obtaining specific pieces of information from the application state.
+``` javascript
+// user.selectors.ts
+import { createSelector, createFeatureSelector } from '@ngrx/store';
+import { AppState } from './app.state';
+
+export const selectUserState = createFeatureSelector<AppState, User>('user');
+
+export const selectUserId = createSelector(
+  selectUserState,
+  (state) => state.id
+);
+
+export const selectUsername = createSelector(
+  selectUserState,
+  (state) => state.username
+);
+```
 5. Effects: Effects are used to manage side effects in your application, such as asynchronous operations. They listen for actions and perform additional logic. Often times this is where your API calls are made. This is the best technique for separating backend interaction logic from pure frontend rendering logic. 
+``` javascript
+// user.effects.ts
+import { Injectable } from '@angular/core';
+import { Actions, ofType, createEffect } from '@ngrx/effects';
+import { mergeMap, map } from 'rxjs/operators';
+import * as UserActions from './user.actions';
+import { UserService } from './user.service';
+
+@Injectable()
+export class UserEffects {
+  loadUser$ = createEffect(() =>
+    this.actions$.pipe(
+      ofType(UserActions.loadUser),
+      mergeMap(() =>
+        this.userService.getUser().pipe(
+          map((user) => UserActions.setUser({ user }))
+        )
+      )
+    )
+  );
+
+  constructor(private actions$: Actions, private userService: UserService) {}
+}
+```
 
 # NgRx Benefits
 1. Predictable State Management: NgRx provides a clear and predictable way to manage the state of your application.
