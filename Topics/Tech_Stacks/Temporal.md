@@ -10,9 +10,10 @@
 Temporal is an open-source, stateful, distributed application orchestration platform that allows you to build scalable and resilient applications. 
 It simplifies the development of complex, long-running workflows and helps you manage the state and execution of various processes within your application. 
 Temporal is designed to handle the challenges of building mission-critical, distributed systems by providing a powerful way to model, manage, and execute your business logic.
+Temporal allows for parallel execution of tasks and activities, enabling efficient utilization of resources, built-in fault tolerance, ensuring that your business logic continues to execute reliably even in the face of failures or unexpected issues, and abstracts the complexities of managing distributed systems, allowing you to express your business logic as a series of workflows.
 
 - Stateful Workflows: 
-Temporal enables the development of stateful workflows that can run for an extended period, coordinating various tasks and activities.
+Temporal enables the development of stateful workflows that can run for an extended period, coordinating various tasks and activities. In the context of Temporal, "stateful" refers to the ability of the platform to maintain and manage the state of a distributed application over time. Stateful applications, retain and manage the state of the system, allowing them to remember past events and continue from a specific point in the event sequence.
 
 - Resilience: 
 It helps you build highly resilient applications by managing retries, timeouts, and error handling, ensuring that your workflows can withstand failures in a distributed environment.
@@ -25,6 +26,8 @@ It ensures the durability of your application state by persisting it in a reliab
 
 - Scalability: 
 Temporal is built to scale horizontally and handle high loads, making it suitable for applications of all sizes, from small projects to large, enterprise-grade systems.
+
+Additionally, Temporal has an active open-source community, which can be beneficial for ongoing development, support, and the availability of additional tools and integrations, making it a unique choice for workflow engines on the market.  
 
 ## How does Temporal work
 Temporal operates by decoupling the application's business logic from the execution environment. It does this through the following components and principles:
@@ -61,7 +64,7 @@ npm install --save @temporalio/sdk
 npm install --save typescript
 ```
 #### Create a TypeScript Workflow
-Create a new TypeScript file, e.g., hello-world.ts, and write your Temporal workflow code in it.
+Create a new TypeScript file, e.g., hello-world.ts, and write your Temporal workflow code in it. Make sure to set up the project first!
 
 ```typescript
 import { Connection, Worker } from '@temporalio/sdk';
