@@ -93,5 +93,6 @@ Potential Topics--
     4. User Experience Orientated Games
 - Product Management
     1. Beginner's guide to product management and becoming a successful product manager
+    2. Resources for Product Management
 - Other useful resources
 - Teamwork
