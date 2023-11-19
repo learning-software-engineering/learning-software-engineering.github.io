@@ -33,7 +33,7 @@ allowing for the removal of if-statements in other code that may cause confusion
 any null checks, as the new class does it for them. Thus, refactoring improved both the readability and extendability of the former code.
 
 ## Categories
-While there may be many different types of code smells, all of them fall into one of five categories which can more easily be identified when writing code. The categories are as follows:
+While there may be many different types of code smells, all of them fall into one of five categories that can more easily be identified when writing code. The categories are as follows:
 - Bloaters
 - Object-Oriented Abusers
 - Change Preventers
@@ -41,3 +41,5 @@ While there may be many different types of code smells, all of them fall into on
 - Couplers
 
 ## More Info
+For further insight into all the different types of code smells including explanations, examples, and solutions, the following resource is highly recommended:
+https://refactoring.guru/refactoring/smells
