@@ -2,6 +2,7 @@
 
 ## Table of contents
 ### [Introduction](#introduction-1)
+### [NgRx State Management](#ngrx-state-management-1)
 ### [Resources](#resources-1)
 
 ## Introduction
@@ -10,13 +11,13 @@ Angular is a framework which allows people to create responsive single page web 
 ## NgRx State Management
 Angular applications often deal with complex state management as they grow in size and complexity. NgRx is a well-organized state management library for Angular applications that leverages reactive programming concepts. It is inspired by Redux, a popular state management library for React applications, but is more structured (in file structure and component interaction). 
 
-# Install NgRx
+### Install NgRx
 You can get started with NgRx by using this npm command: 
 ```bash 
 npm install @ngrx/store @ngrx/effects @ngrx/store-devtools. 
 ```
 
-# Key Parts of State
+### Key Parts of State
 I will list the key parts of state for NgRx state management. With each part of state I will give an example with a simple "User" object being added to state. 
 1. Store: The central piece of NgRx is the store, which holds the entire state of the application. It is a single immutable data structure.
 ``` javascript
@@ -96,7 +97,7 @@ export class UserEffects {
   constructor(private actions$: Actions, private userService: UserService) {}
 }
 ```
-# NgRx Memoization for Expensive Calls to State
+### NgRx Memoization for Expensive Calls to State
 We can use the same form of memoization we learned in our algorithm classes and apply it to state! Memoization involves caching the results of expensive function calls and returning the cached result when the same inputs occur again. This can be applied to selectors in NgRx to prevent unnecessary recomputation. An example of memoization following the "User" state is shown below:
 ``` Javascript
 // Before memoization
@@ -111,13 +112,13 @@ export const selectUserById = createSelector(
 );
 ```
 
-# NgRx Benefits
+### NgRx Benefits
 1. Predictable State Management: NgRx provides a clear and predictable way to manage the state of your application.
 2. Debugging: With the DevTools extension, you can track state changes and actions, making it easier to debug your application.
 3. Scalability: NgRx scales well as your application grows, providing a structured approach to state management.
 4. Reactive Programming: NgRx leverages reactive programming principles, making it easier to handle asynchronous operations.
 
-# NgRx Difficulties
+### NgRx Difficulties
 1. Size: NgRx requires an expansive file structure (ideally one file for each part of state for each component). For smaller projects this will not be ideal.
 2. Boilerplate Code: This becomes less of a problem as more components have been implemented in state, but much of NgRx state is boilerplate code which must be implemented in each file respectively.
 
