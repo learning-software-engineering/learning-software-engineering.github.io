@@ -52,7 +52,7 @@ project-name/
 - Click on the "Create Environment" button.
 - Select "Web server environment" and click "Select".
 - You can make the application name whatever you want. Same with the environment name. Make sure they are meaningful to you.
-- Select "Python" for the platform and "Docker running on 64bit Amazon Linux 2" for the platform branch.
+- Select "Python" for the platform and "Python 64bit Amazon Linux 2" for the platform branch.
 - For Application Code we will select the sample application now
 - Lastly make sure to set the preset to Single Instance (this is the only free tier eligible instance)
 - On the next page we will have to create and use a new service role
@@ -82,4 +82,32 @@ project-name/
 - This will take a few minutes to deploy our application. Once it is done we can click on the link in the top right corner to view our application.
 
 Your application should now successfully have been deployed to AWS Elastic Beanstalk. You can now make changes to your Django application and redeploy it to AWS Elastic Beanstalk by following the steps above.
+
+#### 4. Adding HTTPS to our Elastic Beanstalk environment (optional)
+- Now that we have our Django application deployed to AWS Elastic Beanstalk we can add HTTPS to our application.
+- First we will need to create a SSL certificate for our application. We can do this by going to the AWS Certificate Manager and clicking on "Provision certificates".
+- We will then need to add our domain name to the certificate. This will be the domain name of our Elastic Beanstalk environment.
+- Once we have added our domain name we can click "Next" and then "Confirm and request".
+- We will then need to confirm that we own the domain name by adding a CNAME record to our DNS configuration. This will be different depending on where you purchased your domain name.
+- Once we have added the CNAME record we can click "Continue" and then "Request certificate".
+- We can now wait for the certificate to be correctly issued. This may take some time.
+- Once we obtain the certificate we can head back to the elatic beanstalk instance and click on configuration.
+- We will then need to add a load balancer to our environment. We can do this by clicking on the "Modify" button next to "Load Balancer".
+- We will then add an application Load Balancer
+- Finally we can create a listener on port 443 and add our SSL certificate to the listener.
+
+By following these steps we should now have HTTPS enabled on our Elastic Beanstalk environment.
+
+
+### Common Errors
+1. If you get an error that says "Your WSGIPath refers to a file that does not exist." then you need to make sure that your WSGIPath in your .ebextensions folder matches the name of your project.
+   - For example, if your project name is "test-app" then your WSGIPath should be "test-app.wsgi:application"
+2. If AWS did not automatically install the dependencies from the requirements.txt you may need to SSH into the instance and install them yourself using pip
+   - You can follow this link for more information on how to SSH into your instance [SSH into EB Instance](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb3-ssh.html)
+
+### Refrences
+- [Deploying a Django app to Elastic Beanstalk](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create-deploy-python-django.html)
+- [Creating a EC2 Instance Profile](https://docs.matillion.com/metl/docs/2765606/#to-attach-an-iam-role-to-an-instance-using-the-aws-cli)
+- [SSH into EB Instance](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb3-ssh.html)
+
 
