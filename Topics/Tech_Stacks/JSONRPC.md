@@ -21,3 +21,5 @@ JSONRPC is very useful for a variety of reasons. It is simple and very straight 
 Here is some basic documentation on JSON-RPC https://www.jsonrpc.org/specification
 
 Read more about the differences between remote procedure calls and rest here https://nordicapis.com/whats-the-difference-between-rpc-and-rest/
+
+Here is an example of how to set up JSON-RPC using TypeScript and guide on how to install it using npm. https://www.npmjs.com/package/json-rpc-2.0
