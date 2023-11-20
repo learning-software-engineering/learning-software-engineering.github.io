@@ -8,7 +8,7 @@
 
 ## Introduction
 
-Nodemailer is a Node.js module that allows you to send emails from your server easily. You can use this Nodemailer however you like. For example communicating with others and notifying yourself if there is any problem. As the name suggests, Nodemailer is use in Node.js, so when you want to use Nodemailer to send mail, mnake sure to use Node.js and have Node.js ready with you.
+Nodemailer is a Node.js module that allows you to send emails from your server easily. You can use Nodemailer. For example, you can communicate with others or notify yourself via email. As the name suggests, Nodemailer is used in Node.js, so when you want to use Nodemailer to send mail, make sure to use Node.js and have Node.js ready with you.
 
 Before I start explaning how Nodemailer can be used, we have to install and import so we can use it. You can install nodemailer by the below command:
 
@@ -21,11 +21,11 @@ After you installed Nodemailer, make sure you import nodemailer so you can use i
 const nodemailer = require('nodemailer');
 ```
 
-[This link](https://www.freecodecamp.org/news/use-nodemailer-to-send-emails-from-your-node-js-server/) provides more practical and detailed mathod of installing necessary package and examples.
+[This link](https://www.freecodecamp.org/news/use-nodemailer-to-send-emails-from-your-node-js-server/) provides a more practical and detailed method of installing the necessary packages, as well as nodemailer examples.
 
 ## Create a Transporter object
 
-Now you are ready to use nodemailer! Using nodemailer involves three steps. Here, we explain first step which is creating a transporter object. This step is basically creating an object and setting information about basic information about a mail you are sneding including service you are using to send a mail, information about senders, and so on. The example codes are shown below:
+Now you are ready to use nodemailer! Using nodemailer involves three steps. Here, we explain first step which is creating a transporter object. This step is basically creating an object and setting information about basic information about a mail you are sending, such as the service you are using to send a mail, information about senders, and so on. The example codes are shown below:
 
 ``` JavaScript
 let transporter = nodemailer.createTransport({
@@ -36,9 +36,9 @@ let transporter = nodemailer.createTransport({
       }
     });
 ```
-Here, it uses gmail to send email. Information about the mail address that you want the email to sent from goes to auth as the code suggested.
+Here, it uses gmail to send email. Information about the mail address that you want the email to be sent from goes to auth as the code suggested.
 
-[This website](https://www.freecodecamp.org/news/use-nodemailer-to-send-emails-from-your-node-js-server/) gives further explanation about credential. It might be helpful when you are actually implementing and enconter any errors.
+[This website](https://www.freecodecamp.org/news/use-nodemailer-to-send-emails-from-your-node-js-server/) gives further explanation about credentials. It might be helpful when you are actually implementing and encounter any errors.
 
 
 ## Create a MailOptions Object: 
@@ -54,7 +54,7 @@ let mailOptions = {
     };
 ```
  
-As the example code above shows, you can define the contents and subject can be defined here. There are some options for the text such as using HTML to format the text by adding html in mailOption like below:
+As the example code above shows, you can define the contents and subject in this object. There are some options for the text such as using HTML to format the text by adding html in mailOption like below:
 
 ``` JavaScript
 let mailOptions = {
@@ -62,13 +62,13 @@ let mailOptions = {
       to: WHERE_EMAIL_IS_SENT_TO,
       subject: 'Nodemailer Testing',
       text: 'contents of your mail goes here'
-      html: '<h1>Welcome</h1><p>Nice work!</p>'
+      html: '<a href="https://google.com" title="Lets go to Google!">'
     };
 ```
 
 ## Use the Transporter.sendMail method
 
-The last step is to use the Transporter.sendMail method. This is simpler than earlier steps. However, there are somethings we should aware of which is error handling. It is common that the nodemailer causes error since there might be typo in mail address and so on. Therefore, make sure to check for the error. If there are errors, make sure to hadle that separately. This code below gives you an idea how the error should be handled and how the method is used.
+The last step is to use the Transporter.sendMail method. This is simpler than earlier steps. However, there are some things we should aware of which is error handling. It is common that the nodemailer causes errors since there might be a typo in the mail address and so on. Therefore, make sure to check for the error. If there are errors, make sure to hadle them separately. This code below gives you an idea how the error should be handled and how the method is used.
 
 ``` JavaScript
 transporter.sendMail(mailOptions, function(err, data) {
@@ -81,7 +81,7 @@ transporter.sendMail(mailOptions, function(err, data) {
 ```
 This is very common way to handle errors. If specific operations are needed when there is an error, you can edit the code as needed.
 
-In conclusion, nodemailer is very simple way to send email to an user using node.js. 
+In conclusion, nodemailer is a very simple way to send emails to a user. 
 
 ## Useful Links
 https://mailtrap.io/blog/sending-emails-with-nodemailer/
@@ -90,4 +90,4 @@ https://mailtrap.io/blog/sending-emails-with-nodemailer/
 https://www.knowledgehut.com/blog/web-development/nodemailer-module-nodejs
 
 
-These websites have full tutorial from setting up to implmenting which can be useful!
+These websites have full tutorials from setting up to implementing which can be useful!
