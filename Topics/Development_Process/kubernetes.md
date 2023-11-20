@@ -19,6 +19,30 @@ Kubernetes, also known as K8s, is an open-source platform that automates the man
 3. **Volumes:** Provides a way to store data and stateful applications.
 4. **Namespaces:** Enable multiple virtual clusters on the same physical cluster.
 
+## Set-up (For macOs)
+1. **Install Homebrew** (if not already installed):
+  [Homebrew](https://brew.sh/)
+
+2. **Install Minikube via Homebrew**:
+   - In Terminal, run `brew install minikube`.
+
+3. **Start Minikube**:
+   - Run `minikube start` in Terminal. This command starts a local Kubernetes cluster.
+
+4. **Check the Minikube Status**:
+   - Run `minikube status` to ensure everything is up and running.
+
+5. **Install `kubectl`**:
+   - If you don't have `kubectl` installed, run `brew install kubectl`.
+
+6. **Run a Kubernetes Pod**:
+   - Use `kubectl` to run a pod, for example, `kubectl run my-pod --image=nginx`. Replace `my-pod` with your desired pod name and `nginx` with the Docker image you want to use.
+
+7. **Check the Pod Status**:
+   - Run `kubectl get pods` to see if your pod is running. 
+
+That's it! 
+
 ## Conclusion
 
 Kubernetes is a powerful tool for managing containerized applications, providing efficiency and flexibility in application deployment and management.
