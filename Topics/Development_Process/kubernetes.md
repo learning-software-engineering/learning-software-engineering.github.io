@@ -42,6 +42,7 @@ Kubernetes, also known as K8s, is an open-source platform that automates the man
    - Run `kubectl get pods` to see if your pod is running. 
 
 That's it! 
+For more in depth tutorial follow this [documentation](https://kubernetes.io/docs/setup/)
 
 ## Conclusion
 
