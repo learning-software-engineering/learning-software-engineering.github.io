@@ -7,5 +7,7 @@ JSONRPC calls are represented by sending request objects to a server. These requ
 
 The response object contains a result, which contains the correct value when the method results in a success, an error in cases where the method throws an error, and a jsonrpc string and id that are identical to the one in the request object.
 
+JSONRPC is very useful for a variety of reasons. It is simple and very straight forward due to its stsandard of remote procedure calls, making it easy to implement and understand. In addition, it serializes data in JSON format and is able to be implemented in a variety of languages, making it flexible.
+
 Here is some basic documentation on JSON-RPC https://www.jsonrpc.org/specification
 
