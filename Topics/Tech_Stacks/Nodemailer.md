@@ -36,7 +36,7 @@ let transporter = nodemailer.createTransport({
       }
     });
 ```
-Here, it uses gmail to send email. Information about the mail address that you want the email to be sent from goes to auth as the code suggested.
+Here, it uses gmail to send email. Information about the mail address that you want the email to be sent from goes to auth as the code suggested. Note that you usually want to define your mail address and password in different file such as .env so that it is not visible by others.
 
 [This website](https://www.freecodecamp.org/news/use-nodemailer-to-send-emails-from-your-node-js-server/) gives further explanation about credentials. It might be helpful when you are actually implementing and encounter any errors.
 
@@ -79,7 +79,7 @@ transporter.sendMail(mailOptions, function(err, data) {
       }
     });
 ```
-This is very common way to handle errors. If specific operations are needed when there is an error, you can edit the code as needed.
+This is very common way to handle errors. If specific operations are needed when there is an error, you can edit the code as needed. This data attribute for errors can be used to notify what the error or problem is.
 
 In conclusion, nodemailer is a very simple way to send emails to a user. 
 
