@@ -1,7 +1,11 @@
 ### JSON-RPC
 
 ## Introduction
-JSON-RPC is a an approach to building APIs for communication between different software systems. The most common approach is REST, but JSON-RPC offers its own advantages. Like REST, JSON-RPC uses JSON for its data format and uses HTTP as a transport protocol. JSON-RPC focuses on remote procedure calls whereas the more popular REST is more focused on resource manipulation. REST is generally easier to implement through being able to control information like HTTP headers and representation. Client implementations do not have to rely on endpoint names but message formats instead. JSON RPC is generally more complicated and more useful for large application that go past simple CRUD applicatons, where REST would be the simpler choice. 
+JSON-RPC is a an approach to building APIs for communication between different software systems. The most common way of developing APIs is utilizing REST, but JSON-RPC offers its own advantages. Like REST, JSON-RPC uses JSON for its data format and uses HTTP as a transport protocol. JSON-RPC focuses on remote procedure calls whereas the more popular REST is more focused on resource manipulation. 
+
+This makes it so JSON-RPC is a better option in scenarios where actions take place on a remote system. For example, a good time to JSON-RPC is transfering money between bank account on a remote system. 
+
+REST is generally more useful in situations where actions such such as adding data to databases or updating information are needed due to its ability to easily perform CRUD operations.
 
 JSONRPC calls are represented by sending request objects to a server. These request objects contain the method to be called, parameters values that are passed into the method, an id that established by the client, and jsonrpc string that specifies the version of the JSON-RPC protocol.
 
@@ -11,3 +15,4 @@ JSONRPC is very useful for a variety of reasons. It is simple and very straight 
 
 Here is some basic documentation on JSON-RPC https://www.jsonrpc.org/specification
 
+Read more about the differences between remote procedure calls and rest here https://aws.amazon.com/compare/the-difference-between-rpc-and-rest/
