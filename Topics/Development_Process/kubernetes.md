@@ -19,6 +19,32 @@ Kubernetes, also known as K8s, is an open-source platform that automates the man
 3. **Volumes:** Provides a way to store data and stateful applications.
 4. **Namespaces:** Enable multiple virtual clusters on the same physical cluster.
 
+## Why Use Kubernetes?
+Beside the key features Kubernetes also favo
+- **Portability:** Works across various cloud and on-premises environments.
+- **Scalability:** Easily scales applications up or down based on demand.
+- **Community Support:** Strong community and ecosystem with numerous resources for learning and troubleshooting.
+
+## Kubernetes Use Cases
+
+### Real life Example - Reddit's Infrastructure Modernization
+- **Challenge**: Overcoming limitations of traditional provisioning and configuration.
+- **Solution**: Adopted Kubernetes as the core of their internal infrastructure.
+- **Outcome**: Addressed drawbacks and failures of the old system, enhancing site reliability&#8203;``【oaicite:1】``&#8203;.
+- 
+### Large Scale App Deployment
+- **Automation and Scaling:** Ideal for large applications, offering features like horizontal pod scaling and load balancing.
+- **Handling Traffic Surges:** Efficient during high-traffic periods and hardware issues.
+
+### Managing Microservices
+- **Efficient Communication:** Facilitates communication between smaller, independent services in a microservice architecture.
+- **Complex Scenario Management:** Aids in managing complex communications and resource distribution.
+
+### CI/CD Software Development
+- **Automation in Pipelines:** Enhances CI/CD processes with automation, improving resource management.
+- **Integration with DevOps Tools:** Often used alongside Jenkins, Docker, and other DevOps tools.
+
+
 ## Set-up (For macOs)
 1. **Install Homebrew** (if not already installed):
   [Homebrew](https://brew.sh/)
