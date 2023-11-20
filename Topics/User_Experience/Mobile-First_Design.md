@@ -28,6 +28,7 @@ The reasoning behind this strategy is to promote _progressive enhancement_ — t
     * Most web app developers are accustomed to the desktop-first approach, thus shifting to this new strategy that requires a different way of thinking and planning requires some effort
 * Restricted design creativity and flexibility
     * Mobile designs are more limited than desktop versions, which may put more restrictions on the content and features you can include
+    * These constraints stem from the limited screen size and reliance on touch interactions, as designing the mobile version requires meticulous consideration to arrange the content in a touch-friendly and legible manner; this involves ensuring the buttons are sized appropriately for touch, accommodating all text within the narrow screen, and also minimizing the need for excessive scrolling
 
 ## General Steps
 
