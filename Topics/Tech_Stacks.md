@@ -12,3 +12,4 @@
 ### [Learning TypeScript](./Tech_Stacks/TypeScript.md)
 ### [Learning JavaScript](./Tech_Stacks/JavaScript.md)
 ### [Learning React Native](./Tech_Stacks/ReactNative.md)
+### [Learning JSON-RPC](./Tech_Stacks/JSONRPC.md)
