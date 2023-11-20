@@ -19,6 +19,11 @@ In general, when setting goals for your team as a project manager, there are man
 
 There are many useful options for this, such as [Notion](https://notion.notion.site/Product-roadmap-c5e8829bb9644dd08c576452ee200404) and [Trello](https://trello.com/b/1x4Uql2u/project-management). Both of these tools allow a project manager and their team to create a page, that they can all access to check important tasks and notes about those tasks.
 
+Here is an example progress board given by Trello:
+![Image](https://i.imgur.com/mIJW3x5.png)
+You may notice that there are several states for each task, from 'To Do' to 'Done' or even 'Blocked.' This allows the team to understand the progress of all their tasks, and even if a task was stopped. You will also notice that there are team members assigned to some tasks which gives clear communication to the whole team about who is working on what. As you can see, there is a lot of information that a project manager can gain through this kind of tool, and it will all help them with being able to guide their team as described above.
+
+
 ### Getting Clarification
 You always want to ensure that all team members are on the same page when working together. If you are ever unsure about something that was said during a meeting or have any confusions in general, ask your team members with specific and explicit questions. It is helpful to reiterate your understanding back to the team to confirm your understanding is correct. Some example phrases you may use (taken from [Week 8 Lecture Slide 12](https://q.utoronto.ca/courses/293515/files/25224801/download?download_frd=1)) includes:
 - "Can you please clarify..."
