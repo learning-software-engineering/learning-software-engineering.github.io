@@ -1,7 +1,7 @@
 ## Tech Stacks
 
 ### React Overview
-React is an open-source JavaScript library for building component-based user interfaces. This component-based architecture allows engineers to quickly prototype and develop complex applications easily by modularizing common functionalities into discrete, reusable UI **s, and React boasts a large user base full of freely available components libraries. Beyond this, React utilizes a virtual DOM, JSX, React Native, and much more -- so much more that it can be [overwhelming](https://auth0.com/blog/how-to-manage-javascript-fatigue/). 
+React is an open-source JavaScript library for building component-based user interfaces. This component-based architecture allows engineers to quickly prototype and develop complex applications easily by modularizing common functionalities into discrete, reusable UI **s, and React boasts a large user base full of freely available components libraries. Beyond this, React there's much more to learn about React, such as its virtual DOM, JSX, and full mobile framework in React Native, and much more -- so much more that it can be [overwhelming](https://auth0.com/blog/how-to-manage-javascript-fatigue/). 
 
 To help ease the learning curve, below you'll find a variety of resources to reference while learning and components and libraries to use with React. 
 
@@ -9,6 +9,9 @@ To help ease the learning curve, below you'll find a variety of resources to ref
 
 [Full-Stack Open](https://fullstackopen.com/)
 A full, free course provided by the University of Helsinki that teaches the MERN (MongoDB, Express, React, NodeJS) stack. It also covers TypeScript, GraphQL, React Native, and some CI/CD. An excellent resource for React beginners.
+
+[React Documentation](https://react.dev/)
+The official React documentation is a great way to get started with the library, but also indispensible to have bookmarked for reference.
 
 [Coursera Learn React Basics](https://www.coursera.org/learn/react-basics)
 A free course provided by Coursera that covers the basics of React, including State, navigation, and taking user input via forms.
@@ -21,16 +24,16 @@ Basic React tutorial provided by the official React website. This tutorial will 
 
 [React JS Crash Course](https://www.youtube.com/watch?v=w7ejDZ8SWv8)
 [One Hour React Tutorial](https://www.youtube.com/watch?v=b9eMGE7QtTk)
-One hour in-depth tutorials about React. These Youtube crash course provides a great overview of React and various important components that you will be using often. Very useful if you are learning React under a strict time limit for whatever reason.
+One hour quickstart tutorials about React. These YouTube crash course provides a great overview of React and various important components that you will be using often. Very useful if you are learning React under a strict time limit for whatever reason.
 
 [Front-End Mentor](https://www.frontendmentor.io/)
 These frontend challenges for HTML, CSS and JavaScript will help you review core skills while also making interesting projects.
 
 [Mozilla React Tutorial](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_getting_started)
-React tutorial by MDN Web Docs. Useful readings for if you have time, but not necessary by any means.
+React tutorial by MDN Web Docs. Useful readings for if you have time.
 
 [Microsoft JavaScript Tutorial](https://learn.microsoft.com/en-us/windows/dev-environment/javascript/)
-Javascript frameworks tutorial provided by Microsoft. Useful readings, but not necessary to learn React. 
+JavaScript frameworks tutorial provided by Microsoft. Useful readings, but not necessary to learn React. 
 
 ### Useful React Tools and Libraries
 
