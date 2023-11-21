@@ -25,6 +25,8 @@ Potential Topics--
     
     7. React Native
         1. Set up
+    8. Big Data:
+        1. Apaache Kafka
         
 - Software Tools
     1. Git
