@@ -5,10 +5,10 @@
 ### [What is Bootstrap](#what-is-bootstrap-1)
 ### [Where to begin](#where-to-begin-1)
 ### [Bootstrap Basics](#bootstrap-basics-1)
-### [References](#references-1)
+### [References](#references-and-links-1)
 
 ## Preface
-Here you will learn the basics of how to incorporate Bootstrap into your website-building workflow. This should not serve as an in-depth guide, but rather one that should help you get your foot in the door to begin understanding and using Bootstrap components. Before you start, it is recommended that you have working knowledge of both HTML and CSS. This could be as little as a simple styled website. Although not required, it will be helpful in understanding why Bootstrap is such a widely-used and useful framework when working with CSS. At the end of this guide, you should be able to apply some simple Bootstrap components or formatting into your website.
+Here you will learn the basics of how to incorporate Bootstrap into your website-building workflow. This should not serve as an in-depth guide, but rather one that should help you get your foot in the door to begin understanding and using Bootstrap components. Before you start, it is recommended that you have working knowledge of both HTML and CSS. This could be as little as a simple styled website. You can get started at [this CSS guide](./CSS.md), but it is suggested to have more practice with CSS. Although not required, it will be helpful in understanding why Bootstrap is such a widely-used and useful framework when working with CSS. At the end of this guide, you should be able to apply some simple Bootstrap components or formatting into your website.
 
 ## What is Bootstrap?
 Bootstrap is a CSS Framework that simplifies and standardizes much of the styling process. It does this by including much of the common styling choices as an optional pre-built class that can be attached to HTML elements, most commonly divs or spans. In a typical workflow, you would need to create the CSS for these class yourself in a .css file and import those styles. Over a large project, you might begin to realize that the styles can get messy and/or redundnant. Using Bootstrap's built-in styles would instead allow you to rely on their basic foundational stylistic building blocks, requiring less custom CSS from you.
@@ -29,19 +29,19 @@ For the sake of this tutorial, insert all the above and it should look something
   <head>
     <meta charset="utf-8">
 
-    <-- Reponsive design -->
+    <!--Reponsive design-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Bootstrap demo</title>
 
-    <-- Bootstrap CSS -->
+    <!--Bootstrap CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
   </head>
   <body>
     <h1>Hello, world!</h1>
 
-    <-- Bootstrap JavaScript -->
+    <!--Bootstrap JavaScript-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
 </html>
@@ -155,9 +155,6 @@ Creating a three-column layout:
 Mastering the basics of the Bootstrap Grid System empowers you to design responsive and visually appealing web layouts efficiently. Explore different configurations to understand its flexibility and enhance your web development skills. For detailed information, refer to the [Bootstrap Grid documentation](https://getbootstrap.com/docs/5.3/layout/grid/).
 
 ## Closing statements
-As seen above, Bootstrap styling can speed up the creation of clean and simple designs in your HTML elements. The usage of Bootstrap extends into React, which has slightly different implementation details which can be found [on their official website here](https://react-bootstrap.netlify.app/docs/getting-started/introduction). Hopefully you have a better understanding of what Bootstrap is, how a component can be used in a website, and how to use Bootstrap layouts to format your elements. 
+As seen above, Bootstrap styling can speed up the creation of clean and simple designs in your HTML elements. The usage of Bootstrap extends into React, which has slightly different implementation details which can be found [on their official website here](https://react-bootstrap.netlify.app/docs/getting-started/introduction). There are other Frameworks out there, such as Tailwind CSS, which also aim to simplify the styling process, so you can check that out [here](https://tailwindcss.com/docs/installation) Hopefully you have a better understanding of what Bootstrap is, how a component can be used in a website, and how to use Bootstrap layouts to format your elements. 
 
-## References
-[Bootstrap Tutorial and Documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
-
-
+## References and Links
