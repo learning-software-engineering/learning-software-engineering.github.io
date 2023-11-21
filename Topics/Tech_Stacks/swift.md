@@ -6,8 +6,8 @@
 ### [What is SwiftUI?](#what-is-swiftui-1)
 ### [Starting a Swift Project](#starting-a-swift-project-1)
 ### [Testing Your App - Unit Tests](#testing-your-app---unit-tests-1)
-### [Testing Your App - Debugging](#testing-your-app---debugging-1)
 ### [Testing Your App - Simulators](#testing-your-app---simulators-background)
+### [Testing Your App - Debugging](#testing-your-app---debugging-1)
 ### [Other Useful Resources](#other-useful-resources-1)
 
 ## Introduction
@@ -66,13 +66,6 @@ You can add a new unit test case by going to `New File` and selecting the `Unit 
 
 Unit tests in Xcode work as they do in any other language. One major difference to take note of is that assertions and other functions you may require for unit testing are a part of the `XCTest` framework. For an outline of this framework and its functions, please refer to Apple's [documentation](https://developer.apple.com/documentation/xctest).
 
-## Testing Your App - Debugging
-Xcode hosts its own suite of debugging tools. Breakpoints generally serve as the basis for such debugging. 
-
-You can [set a breakpoint](https://developer.apple.com/documentation/xcode/setting-breakpoints-to-pause-your-running-app) anywhere in your code by clicking the line number at which you want to place the breakpoint. The line number will then be surrounded by the blue breakpoint icon to indicate a breakpoint. You can manage your breakpoints at any time by clicking the `Breakpoint Navigator` in the navigator area.
-
-When you next run your app, the app execution will pause at the site of the breakpoint. You will be able to see your variables in the Variable view in the bottom panel. You can then continue or step through the rest of your code and watch your variables change accordingly by clicking the appropriate buttons in the Debugger console in the bottom panel. For more detailed help with breakpoints and the Debugger console, see [here](https://developer.apple.com/documentation/xcode/stepping-through-code-and-inspecting-variables-to-isolate-bugs).
-
 ## Testing Your App - Simulators: Background
 Xcode has [built-in simulators for many Apple devices](https://developer.apple.com/documentation/xcode/running-your-app-in-simulator-or-on-a-device)
 you can use to run your code and see how it performs. 
@@ -99,6 +92,13 @@ The `Features` tab hosts a plethora of features to help test the functionality o
 * Increase/Decrease Preferred Text Size will show you how your app’s UI may change depending on the user’s text size.
 * Toggle Increased Contrast will show you how your app’s UI may change depending on whether the user is using their device in increased or regular contrast.
 * Location lets you simulate a device location, should your app have any location-dependent services such as CLLocation or MapKit. You can set a current location with latitude and longitude coordinates or simulate device movement with speeds ranging between running on foot to driving on the expressway.
+
+## Testing Your App - Debugging
+Xcode hosts its own suite of debugging tools. Breakpoints generally serve as the basis for such debugging. 
+
+You can [set a breakpoint](https://developer.apple.com/documentation/xcode/setting-breakpoints-to-pause-your-running-app) anywhere in your code by clicking the line number at which you want to place the breakpoint. The line number will then be surrounded by the blue breakpoint icon to indicate a breakpoint. You can manage your breakpoints at any time by clicking the `Breakpoint Navigator` in the navigator area.
+
+When you next run your app, the app execution will pause at the site of the breakpoint. You will be able to see your variables in the Variable view in the bottom panel. You can then continue or step through the rest of your code and watch your variables change accordingly by clicking the appropriate buttons in the Debugger console in the bottom panel. For more detailed help with breakpoints and the Debugger console, see [here](https://developer.apple.com/documentation/xcode/stepping-through-code-and-inspecting-variables-to-isolate-bugs).
 
 ## Other Useful Resources
 [Learn about the different data types in Swift](https://www.hackingwithswift.com/read/0/3/types-of-data). Each language has its own nuances in how
