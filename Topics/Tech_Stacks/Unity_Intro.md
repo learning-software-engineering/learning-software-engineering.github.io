@@ -20,7 +20,7 @@ Click "Add" to add a new license. You can choose to get a free personal license 
 - Choose the version of Unity Editor you would like to install. 
   - If you are continuing from an existing Unity project, Unity will prompt you to download the correct version of the Unity Editor associated with that project when you try to open the project.
 - When you select the version of Unity Editor to install, you be brought to this page to add modules:
-  <img width="500" alt="image" src="https://github.com/ruiting-chen/learning-software-engineering.github.io/assets/51133017/234aaa66-3cc0-4b54-91c3-b9cc2626a8c9">
+  <img width="650" alt="image" src="https://github.com/ruiting-chen/learning-software-engineering.github.io/assets/51133017/234aaa66-3cc0-4b54-91c3-b9cc2626a8c9">
   
   - In the "Dev Tools" section, you can choose to download the Visual Studio Community if you want to use Visual Studio as your default script editor for C# scripts. If you already have Visual Studio downloaded, or you want to use a different editor to edit the scripts, refer to [Script Editor](#script-editor) section for how to set the default script editor for your Unity Editor. 
   - In the "Platforms" section, choose the appropriate Build support depending on whether you want the end product to be built and deployed as a desktop, mobile, or web application. For example, check the box for "WebGL" if you want to build a web game
@@ -31,7 +31,7 @@ Once you have Unity downloaded, you can create a new project by:
 - Go into Unity Hub > Projects> Select "New Project" in the top right corner.
   - If you are continuing from an existing project, go to Projects> Select "Add" > Find the folder that contains the Unity Project. Then your project will be opened in Unity (Skip to [Intro to Unity Interface](#brief-intro-to-the-unity-interface) for Unity Interface).
 - In the create new project window:
-<img width="500" alt="image-2" src="https://github.com/ruiting-chen/learning-software-engineering.github.io/assets/51133017/e0feffb9-d515-4bd0-80cb-18d8c258395d">
+<img width="650" alt="image-2" src="https://github.com/ruiting-chen/learning-software-engineering.github.io/assets/51133017/e0feffb9-d515-4bd0-80cb-18d8c258395d">
 
   - Select templates to create a 2D, 3D, AR, VR, etc. project according to your need. 
   - On the top, you can select the Unity Editor version you want to use
@@ -61,7 +61,7 @@ If you have not set the default editor or want to change the default editor, you
   - Go to Edit in the Toolbar > Preferences (macOS: Unity > Settings) to open the Preferences window.
   - Open the External Tools menu.
   - Click on the External Script Editor dropdown and select your preferred default editor or select "Browse" to find your editor. 
-  <img width="500" alt="image-3" src="https://github.com/ruiting-chen/learning-software-engineering.github.io/assets/51133017/0243392d-eef1-4ba9-8f24-37ec43b5aa14">
+  <img width="650" alt="image-3" src="https://github.com/ruiting-chen/learning-software-engineering.github.io/assets/51133017/0243392d-eef1-4ba9-8f24-37ec43b5aa14">
 
 
 ## Additional Resources
