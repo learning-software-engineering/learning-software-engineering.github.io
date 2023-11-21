@@ -10,6 +10,7 @@
 ### [Angular Resources](./Tech_Stacks/Angular.md)
 ### [Learning PostgreSQL and psycopg2](./Tech_Stacks/PostgreSQL_psycopg2.md)
 ### [CSS](./Tech_Stacks/CSS.md)
+### [Learning Bootstrap](./Tech_Stacks/Bootstrap.md)
 ### [Learning TypeScript](./Tech_Stacks/TypeScript.md)
 ### [Learning JavaScript](./Tech_Stacks/JavaScript.md)
 ### [Learning React Native](./Tech_Stacks/ReactNative.md)
