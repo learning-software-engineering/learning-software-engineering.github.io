@@ -8,6 +8,7 @@
 ### [React Resources](./Tech_Stacks/React.md)
 ### [React useEffect Hook with Axios](./Tech_Stacks/React_useEffect_Axios.md)
 ### [Angular Resources](./Tech_Stacks/Angular.md)
+### [Learning NextJS](./Tech_Stacks/NextJS.md)
 ### [Learning PostgreSQL and psycopg2](./Tech_Stacks/PostgreSQL_psycopg2.md)
 ### [CSS](./Tech_Stacks/CSS.md)
 ### [Learning Bootstrap](./Tech_Stacks/Bootstrap.md)
