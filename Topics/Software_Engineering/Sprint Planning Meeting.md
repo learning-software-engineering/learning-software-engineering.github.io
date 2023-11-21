@@ -6,7 +6,7 @@ In the Scrum framework, sprints function as short, consistent cycles during whic
 
 ## What does a Sprint Planning Meeting Encompass? 
 
-| Terminology | Definition |
+| Scrum Artifacts | Definition |
 | -------- | ------- |
 | Product Backlog  | an ordered list of tasks essential for improving the product and satisfying the stakeholders  |
 | Sprint Backlog | a list of tasks selected from the Product Backlog to be completed during a specific sprint     |
@@ -14,7 +14,7 @@ In the Scrum framework, sprints function as short, consistent cycles during whic
 * The meeting is held with the entire Agile team (including the ScrumMaster and Product Owner) and aims to conclude with a set of agreed upon **Product Backlog** items to be completed for the current sprint commitment. 
 * The ScrumMaster is responsible for leading the Planning Meeting and the Product Owner is responsible for detailing the Product Backlog items and ensuring alignment with the product’s goals. 
 * The planning addresses the value the sprint can bring to the stakeholders and the team collaborates to define a **Sprint Goal** before the end of the Sprint Planning meeting. 
-* Upon discussion with the Product Owner, the developers select items from the Product Backlog to include in the Sprint Backlog and determine this based on their prior and future Sprint performance. 
+* Upon discussion with the Product Owner, the developers select items from the Product Backlog to include in the **Sprint Backlog** and determine this based on their prior and future Sprint performance. 
 * For each Sprint Backlog item that is selected, the developers on the team decide how to break down and complete tasks for the sprint based on the team’s definition of “Done”.
 
 
