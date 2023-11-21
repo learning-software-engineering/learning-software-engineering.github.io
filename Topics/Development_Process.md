@@ -1,20 +1,24 @@
 ## Resources for Development Process
 ## Git
 ### [Learning Git](./Development_Process/Git/Git.md)
-
+### [Trunk-Based Development](./Development_Process/Trunk_Development.md)
 ### [Django Project Deployment: AWS, Vercel, and Railway](./Development_Process/Django_Deployment_AWS_Railway_Vercel.md)
 ### [Automated Frontend Deployment with Vercel](./Development_Process/Frontend_Automated_Deployment_Vercel.md)
+### [Flask Application Deployment on Heroku](./Development_Process/Flask_App_Deployment_Heroku.md)
 ### [Quality Assurance Testing](./Development_Process/QA_testing.md)
 - [Automated Testing](./Development_Process/Automated_Testing.md)
-
+- [Large Language Model (LLM) for Testing and Debugging](./Development_Process/LLM_Testing_Debugging.md)
 ### [Getting Started With Docker](./Development_Process/Docker.md)
-
+### [Getting Started With WSL 2](./Development_Process/WSL.md)
 
 ## Build requirements
 ### [Requirements.txt](./Development_Process/Build_Requirements/Requirements_txt.md)
 
 ## React Testing Library
 ### [React Testing Library](./Development_Process/React_Testing_Library.md)
+
+## URL Sanitization
+### [URL Sanitization](./Development_Process/URL_Sanitization.md)
 
 ## SOLID PRINCIPLES: 
 
