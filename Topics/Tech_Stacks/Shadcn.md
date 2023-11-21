@@ -24,4 +24,8 @@ This document will go over how to install and integrate shadcn/ui into your proj
 
 ## Installation
 
+Visit this [page](https://ui.shadcn.com/docs/installation) and follow the instructions for the specific framework you are using in your project.
+
+For example, if you are using Vite for your project, you will be following [this tutorial](https://ui.shadcn.com/docs/installation/vite).
+
 ## Creating and Customizing Components
