@@ -57,12 +57,46 @@ This information can be changed later, so for starters you can leave `Team` to b
 
 Make sure to use `SwiftUI` and `Swift` as your interface and language respectively, then click `Next` to choose where to store your project, and now you're ready to start.
 
-## Testing Your App
-Xcode has [built-in simulators for many Apple devices](https://developer.apple.com/documentation/xcode/running-your-app-in-simulator-or-on-a-device)
-you can use to run your code and see how it performs. You can also download new simulators for specific a device and operating system version to test
-different scenarios, such as an iPhone 11 running iOS 13.
+## Testing Your App - Unit Tests
+In Xcode, unit tests are written using the [XCTest](https://developer.apple.com/documentation/xctest) framework. 
 
-If you have your own Apple device, you can also connect it to your Mac device and run your app on it for testing. Note that as of iOS 14, from your device, you will have to first go to `Settings` > `Privacy & Security` > `Developer Mode` first to allow your device to run apps downloaded from Xcode.
+You can add a new unit test case by going to `New File` and selecting the `Unit Test Case Class` template. Xcode will then automatically set up a test case class, and you can write your unit test there.
+
+Unit tests in Xcode work as they do in any other language. One major difference to take note of is that assertions and other functions you may require for unit testing are a part of the `XCTest` framework. For an outline of this framework and its functions, please refer to Apple's [documentation](https://developer.apple.com/documentation/xctest).
+
+## Testing Your App - Debugging
+Xcode hosts its own suite of debugging tools. Breakpoints generally serve as the basis for such debugging. 
+
+You can [set a breakpoint](https://developer.apple.com/documentation/xcode/setting-breakpoints-to-pause-your-running-app) anywhere in your code by clicking the line number at which you want to place the breakpoint. The line number will then be surrounded by the blue breakpoint icon to indicate a breakpoint. You can manage your breakpoints at any time by clicking the `Breakpoint Navigator` in the navigator area.
+
+When you next run your app, the app execution will pause at the site of the breakpoint. You will be able to see your variables in the Variable view in the bottom panel. You can then continue or step through the rest of your code and watch your variables change accordingly by clicking the appropriate buttons in the Debugger console in the bottom panel. For more detailed help with breakpoints and the Debugger console, see [here](https://developer.apple.com/documentation/xcode/stepping-through-code-and-inspecting-variables-to-isolate-bugs).
+
+## Testing Your App - Simulators: Background
+Xcode has [built-in simulators for many Apple devices](https://developer.apple.com/documentation/xcode/running-your-app-in-simulator-or-on-a-device)
+you can use to run your code and see how it performs. 
+Simulators in Xcode are a powerful tool for emulating, in real-time, a user’s app experience. You can download new simulators for a specific device and operating system version to test different scenarios, such as an iPhone 11 running iOS 13.
+
+## Testing Your App - Simulators: Setup
+To configure a Simulator, go to `Windows` > `Devices and Simulators` and press the plus (`+`) button. You can then specify your configuration. Here, you can pick a simulation device (iPhone 14, iPad Pro, Apple Watch, etc.) in `Simulation`. Depending on the device of your choice, you may need to [download its Simulator runtime](https://developer.apple.com/documentation/xcode/installing-additional-simulator-runtimes).
+
+If you have your own Apple device, you can connect the device to your Mac to use it as your testing environment by connecting it with the appropriate cable and following the on-screen instructions. Note that as of iOS 14, from your device, you may initially have to go to `Settings` > `Privacy & Security` > `Developer Mode` to allow your device to run your app.
+
+## Testing Your App - Simulators: Build and Run
+An app can be built and run at any point in time by pressing the play button on the upper-left side of the window. You can do the same, and access additional build options, from `Product`. Note that the simulator will not run if the app cannot be built, and Xcode will highlight the errors that need to be resolved in the leftmost panel. You can also go to `View` > `Navigators` > `Show Issue Navigator` to see these errors.
+
+## Testing Your App - Simulators: Interactions
+Once inside the Simulator window, you will notice several new tabs along the top of the Mac to help you in your tests.
+
+The iOS device can generally be interacted with on your Mac as you would on the actual device. For example, swiping and tapping act the same way as they would on the real device. Some other device interactions, like changing the orientation of the device, can be done by going to `Device` and selecting the desired option. Note that some interactions are simulated in a slightly different way than they occur on the real device. They can all be found [here](https://developer.apple.com/documentation/xcode/interacting-with-your-app-in-the-ios-or-ipados-simulator).
+
+The `I/O` tab hosts several options for changing how your Mac handles inputs and outputs, for example, if you'd like to change the output audio device.
+
+The `Features` tab hosts a plethora of features to help test the functionality of your app in a real-time setting. Note that some of these features may not function correctly if your simulated device does not accept the appropriate permissions. For example, to test locational features, you may need to enable these settings in the simulated test environment. Some notable features are as follows, and availability may depend on simulation device and iOS version:
+* FaceID and Authorize Apple Pay can be used to determine how your app handles these cases, if these interactions are ever requested by your app. 
+* Toggle Appearance changes the device's view mode setting between light mode and dark mode so that you can see how your app’s UI may change depending on these user settings. 
+* Increase/Decrease Preferred Text Size will show you how your app’s UI may change depending on the user’s text size.
+* Toggle Increased Contrast will show you how your app’s UI may change depending on whether the user is using their device in increased or regular contrast.
+* Location lets you simulate a device location, should your app have any location-dependent services such as CLLocation or MapKit. You can set a current location with latitude and longitude coordinates or simulate device movement with speeds ranging between running on foot to driving on the expressway.
 
 ## Other Useful Resources
 [Learn about the different data types in Swift](https://www.hackingwithswift.com/read/0/3/types-of-data). Each language has its own nuances in how
