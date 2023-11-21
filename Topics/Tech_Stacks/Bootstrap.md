@@ -158,3 +158,9 @@ Mastering the basics of the Bootstrap Grid System empowers you to design respons
 As seen above, Bootstrap styling can speed up the creation of clean and simple designs in your HTML elements. The usage of Bootstrap extends into React, which has slightly different implementation details which can be found [on their official website here](https://react-bootstrap.netlify.app/docs/getting-started/introduction). There are other Frameworks out there, such as Tailwind CSS, which also aim to simplify the styling process, so you can check that out [here](https://tailwindcss.com/docs/installation) Hopefully you have a better understanding of what Bootstrap is, how a component can be used in a website, and how to use Bootstrap layouts to format your elements. 
 
 ## References and Links
+[Our Wiki CSS Guide](./CSS.md)
+[Bootstrap Documentation and Start](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+[Bootstrap Spacing (Margins, Padding, and more)](https://getbootstrap.com/docs/5.3/utilities/spacing/)
+[Bootstrap Cards Resource](https://getbootstrap.com/docs/5.3/components/card/)
+[Bootstrap Grid Resource](https://getbootstrap.com/docs/5.3/layout/grid/)
+[React Bootstrap](https://react-bootstrap.netlify.app/docs/getting-started/introduction)
