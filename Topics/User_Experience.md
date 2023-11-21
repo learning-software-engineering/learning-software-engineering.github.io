@@ -4,16 +4,17 @@
 ## Table of Contents
 1. [Overview](https://learning-software-engineering.github.io/Topics/User_Experience.html#overview)
 2. [Fundamentals of User Experience](https://learning-software-engineering.github.io/Topics/User_Experience.html#fundamentals-of-user-experience)
+    - [User-Friendly Search Algorithms](https://learning-software-engineering.github.io/Topics/User_Experience.html#user-friendly-search-algorithms)
     - [User Research](https://learning-software-engineering.github.io/Topics/User_Experience.html#user-research)
     - [Visual Elements of User Interface Design](https://learning-software-engineering.github.io/Topics/User_Experience.html#visual-elements-of-user-interface-design)
     - [User Experience Principles](https://learning-software-engineering.github.io/Topics/User_Experience.html#user-experience-principles)
     - [Site mapping, Wireframing, and Prototyping](https://learning-software-engineering.github.io/Topics/User_Experience.html#site-mapping-wireframing-and-prototyping)
     - [Accessibility](https://learning-software-engineering.github.io/Topics/User_Experience.html#accessibility)
-3. [Helpful Courses](https://learning-software-engineering.github.io/Topics/User_Experience.html#helpful-courses)
-4. [Tools Used in User Experience Design](https://learning-software-engineering.github.io/Topics/User_Experience.html#tools-used-in-user-experience-design)
+4. [Helpful Courses](https://learning-software-engineering.github.io/Topics/User_Experience.html#helpful-courses)
+5. [Tools Used in User Experience Design](https://learning-software-engineering.github.io/Topics/User_Experience.html#tools-used-in-user-experience-design)
     - [Design Tools](https://learning-software-engineering.github.io/Topics/User_Experience.html#design-tools)
     - [UI Component Libraries](https://learning-software-engineering.github.io/Topics/User_Experience.html#ui-component-libraries)
-5. [User Experience-Oriented Games](https://learning-software-engineering.github.io/Topics/User_Experience.html#user-experience-oriented-games)
+6. [User Experience-Oriented Games](https://learning-software-engineering.github.io/Topics/User_Experience.html#user-experience-oriented-games)
 
 
 # Overview
