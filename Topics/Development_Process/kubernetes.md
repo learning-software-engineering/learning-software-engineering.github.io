@@ -51,7 +51,9 @@ The Kubernetes command-line tool, [kubectl](https://kubernetes.io/docs/reference
 You can use kubectl to deploy applications, inspect and manage cluster resources, and view logs. For more information including a complete list of kubectl operations, see the kubectl reference documentation.
 
 [Install kubectl on Linux](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/)
+
 [Install kubectl on macOS](https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/)
+
 [Install kubectl on Windows](https://kubernetes.io/docs/tasks/tools/install-kubectl-windows/)
 
 
