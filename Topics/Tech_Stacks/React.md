@@ -1,7 +1,7 @@
 ## Tech Stacks
 
 ### React Overview
-React is an open-source JavaScript library for building component-based user interfaces. This component-based architecture allows engineers to quickly prototype and develop complex applications easily by modularizing common functionalities into discrete, reusable UI **s, and React boasts a large user base full of freely available components libraries. Beyond this, React there's much more to learn about React, such as its virtual DOM, JSX, and full mobile framework in React Native, and much more -- so much more that it can be [overwhelming](https://auth0.com/blog/how-to-manage-javascript-fatigue/). 
+React is an open-source JavaScript library for building component-based user interfaces. This component-based architecture allows engineers to quickly prototype and develop complex applications easily by modularizing common functionalities into discrete, reusable UI components, and React boasts a large user base full of freely available components libraries. Beyond this, React there's much more to learn about React, such as its virtual DOM, JSX, and full mobile framework in React Native, and much more -- so much more that it can be [overwhelming](https://auth0.com/blog/how-to-manage-javascript-fatigue/). 
 
 To help ease the learning curve, below you'll find a variety of resources to reference while learning and components and libraries to use with React. 
 
