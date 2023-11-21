@@ -32,6 +32,9 @@ There are many resources that differentiate between user experience, UI design, 
 # Fundamentals of User Experience
 As mentioned earlier, user experience is not easy to define as it is a large and broad topic. Here are a _few_ areas of UX that software engineers should pay attention to:
 
+## User-Friendly Search Algorithms
+- [Fuzzy Search](./User_Experience/Fuzzy.md)
+
 ## User Research
 When it comes to user experience, conducting user research is very important as it lets us discover new problems and address deeper issues. As a software engineer, it may be extensive for you to conduct user research, but there are tools that you can use to understand your users better, such as the following:
 
