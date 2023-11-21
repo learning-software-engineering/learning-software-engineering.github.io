@@ -66,5 +66,10 @@ The scrum framework incorporates regular meetings, and events that teams perform
     - This builds in feedback and continual improvement of processes in the scrum framework
 
 ### Why is scrum important?
+The scrum framework is used so often since it provides an efficient and adaptable way to organize and manage teams and products. This being a team centric framework where teams are self managed and organized, it provides members to be more creative and innovative, having the flexibility to organize work based on their personalities and work styles. Scrum provides concrete roles, events, artifacts, principles and values to follow. These aspects of scrum can be incorporated into 301 project teams to stay focused and get the project done in the short amount of time we're given. 
 
-### Resources / further reading
+### Resources and further reading
+- [Atlassin - scrum](https://www.atlassian.com/agile/scrum)
+- [Amazon - scrum](https://aws.amazon.com/what-is/scrum/)
+- [Techtarget - scrum](https://www.techtarget.com/searchsoftwarequality/definition/Scrum)
+- [Scrum artifacts](https://www.atlassian.com/agile/scrum/artifacts#:~:text=All%20articles,%2C%20sprint%20backlog%2C%20and%20increments.)
