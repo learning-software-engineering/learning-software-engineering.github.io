@@ -31,7 +31,7 @@ Kubernetes, also known as K8s, is an open-source platform that automates the man
 - **Challenge**: Overcoming limitations of traditional provisioning and configuration.
 - **Solution**: Adopted Kubernetes as the core of their internal infrastructure.
 - **Outcome**: Addressed drawbacks and failures of the old system, enhancing site reliability&#8203;``【oaicite:1】``&#8203;.
-- 
+
 ### Large Scale App Deployment
 - **Automation and Scaling:** Ideal for large applications, offering features like horizontal pod scaling and load balancing.
 - **Handling Traffic Surges:** Efficient during high-traffic periods and hardware issues.
