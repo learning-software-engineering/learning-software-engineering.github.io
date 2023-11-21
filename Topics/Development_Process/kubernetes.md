@@ -6,7 +6,7 @@ Kubernetes, also known as K8s, is an open-source platform that automates the man
 
 ## Key Features
 
-- **Auto Scailing:** Kubernetes automatically scales its resources dyamically to meet application's demand.
+- **Auto Scaling:** Kubernetes automatically scales its resources dynamically to meet application's demand.
 - **Container Orchestration:** Kubernetes efficiently manages containers across multiple hosts.
 - **Self-healing:** It automatically restarts containers that fail, replaces them, and kills containers that don't respond to user-defined health checks.
 - **Load Balancing:** Kubernetes can distribute network traffic to ensure stability.
@@ -20,7 +20,7 @@ Kubernetes, also known as K8s, is an open-source platform that automates the man
 4. **Namespaces:** Enable multiple virtual clusters on the same physical cluster.
 
 ## Why Use Kubernetes?
-Beside the key features Kubernetes also favo
+
 - **Portability:** Works across various cloud and on-premises environments.
 - **Scalability:** Easily scales applications up or down based on demand.
 - **Community Support:** Strong community and ecosystem with numerous resources for learning and troubleshooting.
@@ -45,30 +45,17 @@ Beside the key features Kubernetes also favo
 - **Integration with DevOps Tools:** Often used alongside Jenkins, Docker, and other DevOps tools.
 
 
-## Set-up (For macOs)
-1. **Install Homebrew** (if not already installed):
-  [Homebrew](https://brew.sh/)
+## Set-up Kubernetes
+The Kubernetes command-line tool, [kubectl](https://kubernetes.io/docs/reference/kubectl/kubectl/), allows you to run commands against Kubernetes clusters.
 
-2. **Install Minikube via Homebrew**:
-   - In Terminal, run `brew install minikube`.
+You can use kubectl to deploy applications, inspect and manage cluster resources, and view logs. For more information including a complete list of kubectl operations, see the kubectl reference documentation.
 
-3. **Start Minikube**:
-   - Run `minikube start` in Terminal. This command starts a local Kubernetes cluster.
+[Install kubectl on Linux](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/)
+[Install kubectl on macOS](https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/)
+[Install kubectl on Windows](https://kubernetes.io/docs/tasks/tools/install-kubectl-windows/)
 
-4. **Check the Minikube Status**:
-   - Run `minikube status` to ensure everything is up and running.
 
-5. **Install `kubectl`**:
-   - If you don't have `kubectl` installed, run `brew install kubectl`.
-
-6. **Run a Kubernetes Pod**:
-   - Use `kubectl` to run a pod, for example, `kubectl run my-pod --image=nginx`. Replace `my-pod` with your desired pod name and `nginx` with the Docker image you want to use.
-
-7. **Check the Pod Status**:
-   - Run `kubectl get pods` to see if your pod is running. 
-
-That's it! 
-For more in depth tutorial follow this [documentation](https://kubernetes.io/docs/setup/)
+Visit [here](https://kubernetes.io/docs/setup/) for more general guide
 
 ## Conclusion
 
