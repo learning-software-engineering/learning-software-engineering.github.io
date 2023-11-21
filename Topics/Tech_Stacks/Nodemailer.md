@@ -8,7 +8,7 @@
 
 ## Introduction
 
-Nodemailer is a Node.js module that allows you to send emails from your server easily. You can use Nodemailer. For example, you can communicate with others or notify yourself via email. As the name suggests, Nodemailer is used in Node.js, so when you want to use Nodemailer to send mail, make sure to use Node.js and have Node.js ready with you.
+Nodemailer is a Node.js module that allows you to send emails from your server easily. There are many ways to use nodemailer effectively. For example, you can communicate with others or notify yourself via email. As the name suggests, Nodemailer is used in Node.js, so when you want to use Nodemailer to send mail, make sure to use Node.js and have Node.js ready with you.
 
 Before I start explaning how Nodemailer can be used, we have to install and import so we can use it. You can install nodemailer by the below command:
 
@@ -68,7 +68,7 @@ let mailOptions = {
 
 ## Use the Transporter.sendMail method
 
-The last step is to use the Transporter.sendMail method. This is simpler than earlier steps. However, there are some things we should aware of which is error handling. It is common that the nodemailer causes errors since there might be a typo in the mail address and so on. Therefore, make sure to check for the error. If there are errors, make sure to hadle them separately. This code below gives you an idea how the error should be handled and how the method is used.
+The last step is to use the Transporter.sendMail method. This is simpler than earlier steps. However, there are some things we should aware of which is error handling. It is common that the nodemailer causes errors since there might be a typo in the mail address and so on. Therefore, make sure to check for the error. If there are errors, make sure to handle them separately. This code below gives you an idea how the error should be handled and how the method is used.
 
 ``` JavaScript
 transporter.sendMail(mailOptions, function(err, data) {
