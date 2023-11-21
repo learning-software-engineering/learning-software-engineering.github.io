@@ -24,8 +24,17 @@ This document will go over how to install and integrate shadcn/ui into your proj
 
 ## Installation
 
-Visit this [page](https://ui.shadcn.com/docs/installation) and follow the instructions for the specific framework you are using in your project.
+You can use shadcn/ui components in any framework that supports React. Typescript is recommended for your projects but Javascript components are also available by making changes to your configurations.
 
-For example, if you are using Vite for your project, you will be following [this tutorial](https://ui.shadcn.com/docs/installation/vite).
+Follow the link below depending on the framework you are using for your project:
+
+- [Next.js](https://ui.shadcn.com/docs/installation/next)
+- [Vite](https://ui.shadcn.com/docs/installation/vite)
+- [Remix](https://ui.shadcn.com/docs/installation/remix)
+- [Gatsby](https://ui.shadcn.com/docs/installation/gatsby)
+- [Astro](https://ui.shadcn.com/docs/installation/astro)
+- [Laravel](https://ui.shadcn.com/docs/installation/laravel)
+
+If you want to manually install shadcn/ui, follow this [tutorial](https://ui.shadcn.com/docs/installation/manual).
 
 ## Creating and Customizing Components
