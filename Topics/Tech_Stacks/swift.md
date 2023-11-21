@@ -5,8 +5,8 @@
 ### [Why Use Swift?](#why-use-swift-1)
 ### [What is SwiftUI?](#what-is-swiftui-1)
 ### [Starting a Swift Project](#starting-a-swift-project-1)
-### [Testing Your App - Unit Tests](#testing-your-app---unit-tests)
-### [Testing Your App - Debugging](#testing-your-app---debugging)
+### [Testing Your App - Unit Tests](#testing-your-app---unit-tests-1)
+### [Testing Your App - Debugging](#testing-your-app---debugging-1)
 ### [Testing Your App - Simulators](#testing-your-app---simulators-background)
 ### [Other Useful Resources](#other-useful-resources-1)
 
