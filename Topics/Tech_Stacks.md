@@ -16,3 +16,4 @@
 ### [Learning React Native](./Tech_Stacks/ReactNative.md)
 ### [Learning Nodemailer](./Tech_Stacks/Nodemailer.md)
 ### [React Components Guide](./Tech_Stacks/React_Components.md)
+### [Temporal For Workflow Orchestration](./Tech_Stacks/Temporal.md)
