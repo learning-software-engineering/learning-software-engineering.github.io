@@ -14,3 +14,4 @@
 ### [Learning JavaScript](./Tech_Stacks/JavaScript.md)
 ### [Learning React Native](./Tech_Stacks/ReactNative.md)
 ### [React Components Guide](./Tech_Stacks/React_Components.md)
+### [Learning Peewee ORM and Pydantic Models](./Tech_Stacks/Peewee_and_Pydantic_models.md)
