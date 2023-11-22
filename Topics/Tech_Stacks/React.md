@@ -23,7 +23,6 @@ A free course provided by Scrimba that teaches React fundamentals through the cr
 Basic React tutorial provided by the official React website. This tutorial will guide you through a very basic tutorial that you can do straight from your browser. 
 
 [React JS Crash Course](https://www.youtube.com/watch?v=w7ejDZ8SWv8)
-
 [One Hour React Tutorial](https://www.youtube.com/watch?v=b9eMGE7QtTk)
 One hour quickstart tutorials about React. These YouTube crash course provides a great overview of React and various important components that you will be using often. Very useful if you are learning React under a strict time limit for whatever reason.
 
