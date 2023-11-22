@@ -41,7 +41,7 @@ JOIN follows ON follows_id = users.id
 WHERE follower_id = current_user.id;
 ```
 
-You can quickly see how this approach became quite slow at over 300K QPS.
+You can quickly see how JOINing all Tweets with all Users and all follow relationships became quite slow at over 300K QPS.
 
 ## Approach 2: Caching
 As a result, Twitter implemented a fan-out caching system. They stored a [Redis list](https://redis.io/docs/data-types/lists/) for each user containing the Tweets to display on each user's home timeline (Redis is an in-memory data store. For more info on Twitter's use of Redis, [see here](http://highscalability.com/blog/2014/9/8/how-twitter-uses-redis-to-scale-105tb-ram-39mm-qps-10000-ins.html)). Let's illustrate this with an example. Say that Darth Palpatine is followed by Anakin Skywalker, Obi-Wan, and Padme Amidala. When Darth Palpatine posts a Tweet, Twitter's fan-out service pushes the new Tweet to the Redis cache for each user that follows Darth Palpatine (Anakin, Obi-Wan, and Padme). This way, when Anakin (for example) loads his timeline page, his Tweets are cached in Redis and can be retrieved in constant runtime (in this simplified example).
