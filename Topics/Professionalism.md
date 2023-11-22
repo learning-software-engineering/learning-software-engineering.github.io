@@ -67,6 +67,12 @@ Professionalism is essential in all aspects of software engineering, and maintai
 5. Delivering high-quality work: Strive for excellence in your work, thoroughly test your code, and address any issues promptly to ensure client satisfaction.
 6. Handle difficult situations with grace: If conflicts or misunderstandings arise, remain calm, listen to the client's concerns, and work collaboratively to find a solution.
 
+### Handling criticism and feedback
+
+Before we begin, you should recognize that we deliberately chose to use the word “criticism” in the title of this section. We intend to get you to understand that the strategies we list below are not just applicable when receiving nice and polite “feedback” but also harsher “criticism.” The goal is to leave the critic (giver of feedback) with a better impression of you. This section is quite long because, arguably, the marker of someone with outstanding professionalism is that they are masters of managing criticism.
+
+First, we should ensure our attitudes about criticism and feedback are proper. Understand that when a co-worker, client, boss, manager, senior developer, or whoever gives you criticism or feedback, they may not fully understand what they want you to do. In other words, treat criticism and feedback as an open conversation, similar to how we learned in lectures on how to build solutions for clients. When someone approaches you with criticism or feedback, they have a problem in mind for which their fix is not necessarily going to solve their problem. As a professional, it is up to you to determine the *exact* problem they have and to communicate with them to arrive at a solution that you can also be happy with (this last part is super important!!! It is what will help you give off the impression that you genuinely cared about their opinion and are not just reluctantly resolving the situation). Once you’ve solved the problem and implemented the changes, go back and check to see if there are other areas of your code or your work where you can apply the same feedback.
+
 ### Additional practices:
 You can find additional practices on this website: https://engineerscanada.ca/professional-practice-in-software-engineering
 
