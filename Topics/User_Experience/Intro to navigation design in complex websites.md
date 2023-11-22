@@ -27,7 +27,7 @@ Consider using the following steps to start thinking of good navigation design  
     * Footers 
         * Usually at the bottom of a page. It can contain links to all relevant pages on the website as well as contact information
           
-5. Consider how the user may navigate through the content on a single page.
+5. Consider how the user may navigate through the content on a single page
    * Sub-navbars can be utilized
         * Located below a normal Navbar and  consists of links that are relevant to the specific page that the user is on 
     *  If there is searchable / filterable content on this page, consider using icons that are easily identifiable by the user as  search (magnifying glass) or filter
