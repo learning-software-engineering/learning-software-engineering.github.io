@@ -17,3 +17,4 @@
 ### [Learning Nodemailer](./Tech_Stacks/Nodemailer.md)
 ### [React Components Guide](./Tech_Stacks/React_Components.md)
 ### [Learning Peewee ORM and Pydantic Models](./Tech_Stacks/Peewee_and_Pydantic_models.md)
+### [Temporal For Workflow Orchestration](./Tech_Stacks/Temporal.md)
