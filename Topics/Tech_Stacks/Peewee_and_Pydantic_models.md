@@ -119,7 +119,7 @@ class Comment(Model):
     post = ForeignKeyField(Post, backref='comments')
 ```
 
-These are just a few examples of the field types provided by Peewee. But now, you might be wondering we defined Foregin Keys, but how do we define Primary Keys of a database? Its similar to how we define Foreign Key Fields, but there are a few more features and thus this garners its own section below.
+These are just a few examples of the field types provided by Peewee, you can learn more about fields [here](https://docs.peewee-orm.com/en/latest/peewee/models.html#fields)! But now, you might be wondering we defined Foregin Keys, but how do we define Primary Keys of a database? Its similar to how we define Foreign Key Fields, but there are a few more features and thus this garners its own section below.
 
 ## Defining Keys in Peewee Models
 In any relational database, keys play a crucical role in defining the relationships between tables and ensuring the integrity of the database itself. There are Foreign Keys, which already has be briefly outlined above. But peewee also supports Primary Keys and Composite Keys.
@@ -175,6 +175,25 @@ class User(Model):
 This enforces uniqueness for both `username` and `email`.
 
 As previously stated, keys and constraints help enforce relationships between relational database tables. There are a lot of different upsides to designing good databases as it could ensure data integrity, and improve query performance in schemas. Thus, it is worthwhile to spend time designing the relational database tables within your application! What I have covered here is just the tip of the iceberg! You can learn more about keys [here](https://docs.peewee-orm.com/en/latest/peewee/models.html#primary-keys-composite-keys-and-other-tricks).
+
+## Defining Default Values for a Field
+Sometimes it makes more sense to have a default value. For example, the Event model above defines an Event happening.
+
+```python
+class Event(Model):
+    event_date = DateField()
+    event_time = TimeField()
+```
+
+But what if the event has no event_time as it does not start at a predetermined time but is over the course of a day or a few days. Take for example defining Halloween as an event. The TimeField should default as None, as it happens throughout the day:
+
+```python
+class Event(Model):
+    event_date = DateField()
+    event_time = TimeField(default=None)
+```
+
+As shown above, we use the `default` keyword and set it as None.
 
 ## Using Pydantic for Data Validation
 Next, create a Pydantic model for data validation. In a file like schemas.py:
