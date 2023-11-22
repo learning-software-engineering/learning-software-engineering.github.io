@@ -31,6 +31,7 @@ The following is a summary from the offical [Flutter Docs](https://docs.flutter.
    a) Install VS Code for your respective platform. [Installation Link](https://code.visualstudio.com/download).
    b) Open a browser and go to the [Flutter extension page](https://marketplace.visualstudio.com/items?itemName=Dart-Code.flutter) on the Visual Studio Marketplace.
    c) Click Install. Installing the Flutter extension also installs the Dart extension.
+
 3. **Create the app**
    a) Invoke **View > Command Palette**. This can be done with `ctrl shift p` on Windows or `cmd shift p` on Mac.
    b) Type "flutter", and select the **Flutter: New Project**
@@ -39,6 +40,7 @@ The following is a summary from the offical [Flutter Docs](https://docs.flutter.
    e) Enter a project name, such as `my_app`, and press **Enter**.
    f) Wait for project creation to complete and the `main.dart` file to appear.
    The above commands create a Flutter project directory called my_app that contains a simple demo app that uses [Material Components](https://m3.material.io/components).
+   
 4. **Running the App**
    a) Locate the VS Code status bar (the blue bar at the bottom of the window).
    b) Select a device from the Device Selector area.
