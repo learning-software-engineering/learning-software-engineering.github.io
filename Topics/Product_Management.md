@@ -23,7 +23,7 @@ Referencing this [article](https://curiouscore.com/resource/4-lessons-for-produc
 * To keep everyone in the loop about the project’s progress, Irene’s team held weekly 30-min calls so team members could align on the tasks they needed to complete, as well as identify any potential blockers.
 * Irene’s team was able to react swiftly and effectively to the changes brought on by COVID-19 by first reviewing an existing product roadmap they had, which allowed everyone on the team to have a common document for reference as they made their decisions and reviewed timelines.
 
-Irene sees the pandemic as transformative, allowing unprecedented work flexibilit. She finds that the newly added option of working remotely adds value to her work and increases the potential of teams. She believes that by incorporating some of these strategies, many product managers will be able mirror her success.
+Irene sees the pandemic as transformative, allowing unprecedented work flexibility. She finds that the newly added option of working remotely adds value to her work and increases the potential of teams. She believes that by incorporating some of these strategies, many product managers will be able mirror her success.
 
 
 #### Case Study 2 - Working Remotely:
@@ -32,7 +32,7 @@ We now report the experience of several product managers working at TopTal remot
 
 Sam and Dave, succeeded at overcoming this new challenge by:
 * Established clear expectations and acknowledging diverse work cultures to build trust.
-* Leveraged digital tools and adapting communication methodologies to maintain productivity and team unity.
+* Leveraged digital tools (e.g. Trello, Basecamp, Jira) and adapting communication methodologies to maintain productivity and team unity.
 
 These product managers discovered, quite unexpectedly, that remote work — originally a necessity due to the crisis — offered unexpected advantages such as increased deep work and adaptability. This led to conversations about the sustained incorporation of remote work practices within product management. Such insights from the case study offer reassurance that thriving in a remote environment is entirely feasible for product managers.
 
