@@ -1,5 +1,116 @@
 ## What is Conda and why do you need it? 
 
+Have you ever experienced the frustration when you have multiple Python package conflicts and needs to resolve multiple package dependency issues before you can actually work on a new project? If that's the case, **Conda** is here to save your day!  
+
+Conda is an open-source package management and environment management system that can be used to simplify a lot of the operations regarding environment management. 
+
+This tutorial will focus on using Conda to setup multiple Python environments that can be used for different projects. So that you'll never have to worry about setting up an environment and running into issues again! 
+
 ## Difference between Anaconda and Miniconda?
 
+As of the time writing, Conda's official website is this: [https://docs.conda.io/en/latest/#](https://docs.conda.io/en/latest/#)
+
+It provides a simple installation method and some general documentation for the usage of Conda. 
+
+However, a quick Google search might tell you that, there's actually two different versions of Conda, one being **Anaconda** and another being **Miniconda**. 
+
+The major difference between **Miniconda** and **Anaconda** is that: 
+
+- Anaconda supports Graphical User Interface (GUI), so you can actually click on things to make it work. 
+- Miniconda does not support GUI and is used mainly on the "shell" (e.g. zsh, bash, sh, powershell, etc.) of your system. If you do not know what a "shell" is, this tutorial might be a little bit advanced. 
+
+With all that being said, this tutorial focuses on using Miniconda to setup Conda and multiple Python environments, so you might need to look for another tutorial if you plan to use Anaconda.  
+
 ## How do you use Conda? 
+
+To actually use Conda, we need to follow the following general steps
+
+### Installation (Miniconda)
+
+With a little bit of navigation, we see that there are download links here: [https://docs.conda.io/projects/miniconda/en/latest/](https://docs.conda.io/projects/miniconda/en/latest/)
+
+So the first step here will just be to download the installer for your system, and then executing it. 
+
+I am currently using MacOS, so the rest of the tutorial will be ran on MacOS. For systems that doesn't have a GUI, you can also use the other installation methods like an installation script provided on the website. 
+
+![conda download page](conda_download.png)
+
+In the picture shown above, download the one that fits your system, in my case, it is the one that says `Miniconda3 macOS Apple M1 64-bit pkg`
+
+Then just download and click through the install process until you have completed. 
+
+### Setup
+
+Regarding the setup process for Miniconda, multiple different situations can arise. 
+
+Now, you want to start up the shell of your system and verify if Conda is successfully installed. In my case, MacOS has the default shell being `zsh`, so you can just open up `zsh` by pressing "Command + Space" and typing `terminal`, the first one should be your `shell`. 
+
+Then, after `zsh` appears as a window, type in `conda`, then press enter. 
+
+![verifying conda installation](conda_verify.png)
+
+If you press enter and a bunch of information showed up, then it is likely that conda has successfully installed, and you can proceed directly to the next part [Creating Environments (Python)](#creating-environments-python)
+
+However, if you called conda and nothing seems to have showed up, then it is likely that the installation did not successfully go through. To resolve this issue, depending on your system, there might be different solutions. 
+
+One of the common fixes for this is to call `conda init [shell_type]`. For example, if you are on MacOS, you can follow this guide stated [here](https://docs.conda.io/projects/conda/en/latest/user-guide/install/macos.html)
+
+![conda init pic](conda_init.png)
+
+If you are in Windows and your `powershell` does not register conda automatically, you can follow [this guide](https://gist.github.com/martinsotir/2bd2e16332dff71e0fa5be3ed3468a6c)
+
+With all that being said, we can finally start to unleash the power of Conda. 
+
+### Creating Environments (Python)
+
+Environments in Conda are like separated files in different directories. For example, if you have a Conda environment specifically for Machine Learning projects, when you switch to another software engineering project, you probably want to not use the Machine Learning packages so that they don't interfere with what you're trying to do. 
+
+To do this, open up your shell and type in `conda create -n <name> python=<version>`, where `<name>` is the name of the environment you are creating, and `<version>` is the Python version you want. If you are creating an environment that is not Python, you can also drop the parameter, so that you create an environment with just `conda create -n <name>`. 
+
+In my case, I will create a Python environment with Python 3.11, called "TEST", as shown in the picture below. 
+
+![create environment](conda_create_env.png)
+
+What I called here is `conda create -n TEST python=3.11`, and pressed enter. Then, it will ask if you will confirm or not, just type "Y" to confirm and enter. 
+
+Then, you should be able to switch to your new environment that you just created! 
+
+### Switching Environments (Python)
+
+After you have followed the steps above to create multiple environments, you can switch between them easily. 
+
+What you have to do is just call `conda activate <name>`. Where `<name>` is the name of the environment you have created before. 
+
+![conda activate](conda_activate.png)
+
+After you activated, notice that the left most part, it says "(TEST)", which reflects the environment name that I have activated right now. 
+
+If I do anything related to "Python", I will be using the Python under the environment named "TEST". For example, I will invoke `pip list`, which just shows all of the Python packages I have installed on my environment right now. 
+
+![conda pip list](conda_pip_list.png)
+
+As you can tell from the picture above, "TEST" is indeed a fresh installation of Python with no packages installed at all. 
+
+The following is another environment I have, called "ReiBot", and is switched into using `conda activate ReiBot`. 
+
+![conda pip list ReiBot](conda_pip_list_rei.png)
+
+After then, I called `pip list` again, which shows me different list of packages when compared to the environment named "TEST". 
+
+If you want to be more in-depth (working with IDEs), you should be able to find the directory of your Conda environments easily, they should all be stored under the main Conda directory, as shown in the picture below (taken in PyCharm). 
+
+![conda directories](interpreter.png)
+
+### Removing Environments (Python)
+
+After you're done with a specific environment and the project, you can release the environment by calling `conda remove --name <NAME> --all`. 
+
+In my case, I just called `conda remove --name TEST --all`, and proceeded with "Y" and enter. 
+
+This allows me to remove the environment "TEST". 
+
+![conda remove env](conda_env_remove.png)
+
+After everything is done, you should not be able to find the environment named "TEST" anymore. Which means that we have successfully deleted the environment. 
+
+![conda list env](conda_env_list.png)
