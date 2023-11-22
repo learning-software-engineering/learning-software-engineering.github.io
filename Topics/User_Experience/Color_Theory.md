@@ -38,6 +38,8 @@ Complementary colors are drawn from two colors on the opposite side of the color
 #### Triadic
 Triadic colors are three colors that are equidistant on the color wheel, such that there are no clear superiority of one color. To use a triadic harmony successfully, the colors should be carefully balanced such that one color dominates and the other two are used for accent. In design, triadic schemes are used to curate a lively and cheerful space, suitable for playful or colorful user interfaces.
 
-
-
+## Tips for Color Decision
+* Be mindful of the colors you choose -- they can have a deep influence on the users.
+* Ensure that your design and its color palette effectively communicate the intended message and atmosphere.
+* Learn your target audience. The color preferences and meanings may depend on factors such as age, gender, and culture.
 
