@@ -36,10 +36,12 @@ The reasoning behind this strategy is to promote _progressive enhancement_ — t
     * Plan out all the content and elements you need for your web pages
     * This can be written out on a spreadsheet (Microsoft Excel, Google spreadsheets, etc.), or any text editor
     * The choice of which platform to use is up to you, but a spreadsheet is recommended for easy organization — here’s an example: https://maadmob.com.au/resources/content_inventory
+    * Here are some more details about how to execute this step: https://www.uxpin.com/studio/blog/content-inventory/
 2. Visual hierarchy
     * Create a priority list of all the visuals you will include on the page, taking into consideration the size of images, colours, and typography, as these properties can guide the user’s eye to understand the relative significance of the elements
     * As with step 1, this can be done on a spreadsheet or any text editor — the purpose is just to help you plan out the content you’ll need and their importance, which will make designing the actual page easier and ensure most, if not all, of the content is not overlooked
-    * If you find that you need to visualize the content more, you could make a small prototype of some of the features using Figma, Canva, Google Drawings/Slides, etc. 
+    * If you find that you need to visualize the content more, you could make a small prototype of some of the features using Figma, Canva, Google Drawings/Slides, etc.
+    * Here are some more details about how to execute this step: https://www.mockplus.com/blog/post/ui-visual-hierarchy
 3. Design from smallest to largest screens
     * Create designs for the mobile version first, then tablet, then finally desktop
     * These designs can be made on Figma, Canva, Google Drawings/Slides, or whatever design tool that will help you plan out the exact format of your page
