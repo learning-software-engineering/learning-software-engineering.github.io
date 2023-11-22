@@ -44,7 +44,7 @@ Consider using the following steps to start thinking of good navigation design  
 ## Key Things  to Consider for Navigation Design of Complex Websites 
 * Accessibility 
     * Additional tips on designing accessible menus/ navigation.
-    * Click Here [[https://www.w3.org/WAI/tutorials/menus/](https://www.w3.org/WAI/tutorials/menus/)]
+        * [Click Here](https://www.w3.org/WAI/tutorials/menus/)
 * Important links should be kept in navigation menus / nav bars
 * Different screen sizes may require varying navigation designs 
     * For example, desktops  with navbars vs mobile devices with sidebar menus 
