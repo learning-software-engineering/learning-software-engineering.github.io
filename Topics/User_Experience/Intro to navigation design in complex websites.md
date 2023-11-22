@@ -1,9 +1,9 @@
 ## What is Navigation Design ?
-Navigation Design, also referred to as Menu Design, helps users to easily move through the pages of your website or web app. It utilizes design techniques to allow ease of navigation and provide the user a better user experience. 
+Navigation Design, also referred to as Menu Design, helps users to easily move through the pages of your website or web app. It utilizes design techniques to allow ease of navigation and provide the user with a better user experience. 
 
 
 ## Good vs Bad Navigation Design 
-Good navigation design allows the ease of finding information and is intuitive and easy to use. On the other hand, bad navigation design can overwhelm the user and make finding important content difficult.  As a result,  it is important to keep the user in mind when designing the navigation of a website or web app. This is  especially  important for complex websites with a multitude of pages. In fact, reasoning about how the user can navigate through the many pages of a website and efficiently within a large page can help lay the foundation to good navigation design. 
+Good navigation design allows the user to easily find relevant information and easy to use. On the other hand, bad navigation design can overwhelm the user and make finding important content difficult.  As a result,  it is important to keep the user in mind when designing the navigation of a website or web app. This is especially important for complex websites with a multitude of pages. In fact, reasoning about how the user can navigate through the many pages of a website and efficiently within a large page can help lay the foundation to good navigation design. 
 
 Consider using the following steps to start thinking of good navigation design  : 
 
