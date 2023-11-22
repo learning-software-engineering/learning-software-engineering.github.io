@@ -66,4 +66,3 @@ Teams use the scrum framework since it provides an efficient and adaptable way t
 - [Atlassin - scrum](https://www.atlassian.com/agile/scrum)
 - [Amazon - scrum](https://aws.amazon.com/what-is/scrum/)
 - [Techtarget - scrum](https://www.techtarget.com/searchsoftwarequality/definition/Scrum)
-- [Scrum artifacts](https://www.atlassian.com/agile/scrum/artifacts#:~:text=All%20articles,%2C%20sprint%20backlog%2C%20and%20increments.)
