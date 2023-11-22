@@ -12,26 +12,7 @@ In conjunction with this scale, Raffi Krikorian notes in his [QCon Talk](https:/
 ## Approach 1: Naive SQL Query
 Below is a simplified SQL schema of Twitter's data model.
 
-**tweets**
-| id   |      author_id      | content  |
-|----------|:-------------:|------:|
-| 38927 | 1  | "Did you ever hear the tragedy of Darth Plagueis The Wise? I thought not." |
-| 38928 |    2   |   "I hate sand." |
-| 38929 | 3 |    "You were my brother Anakin!" |
-
-**users**
-| id   |      username      |  bio |
-|----------|:-------------:|------:|
-| 1 |  darth-palpatine | Unlimited Power! |
-| 2 |    anakin-skywalker   |   The Jedi are Evil |
-| 3 | obi-wan |  Hello there   |
-
-**follows**
-| follower_id   |      follows_id      |
-|----------|:-------------:|
-| 2 |  1 |
-| 2 |    3   |
-| 1 | 2 |
+![An example SQL schema for Twitter](./assets/schema.png)
 
 Twitter's initial naive approach was to join the Tweet, User, and Follows tables in SQL upon a GET request from a client like so:
 ```
@@ -48,7 +29,7 @@ As a result, Twitter implemented a fan-out caching system. They stored a [Redis 
 
 The below system diagram presents a simplified version of this architecture. Note that several things are omitted for simplicity; for example the load balancer that receives the POST request from the client. Also note that the Redis Cluster is presented as one node in the diagram. In reality, a Redis Cluster (as the word "cluster" suggests) consists of lots of distributed Redis databases. In addition, Twitter (as of 2012) stores three copies of each Tweet across different Redis nodes to ensure system resilience and availability (as in a huge system like Twitter, nodes can frequently crash and become unavailable).
 
-![Twitter's Caching Approach](twitter.png)
+![Twitter's Caching Approach](./assets/twitter.png)
 *A system diagram of Twitter's caching approach for home timelines.*
 
 ## A Third Twist: the Hybrid Approach
