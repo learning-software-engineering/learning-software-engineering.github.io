@@ -20,6 +20,9 @@
 ## URL Sanitization
 ### [URL Sanitization](./Development_Process/URL_Sanitization.md)
 
+## Design Decisions
+### [GraphQL vs. REST: Which API type to use?](./Development_Process/GraphQL_VS_REST.md)
+
 ## SOLID PRINCIPLES: 
 
 SOLID is a mnemonic acronym that represents a set of five very important software development principles which lead to code that is easier to read, maintain, and extend, leading to higher-quality software that is easier to evolve over time.
