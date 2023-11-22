@@ -23,7 +23,21 @@ While colors can take on general meanings as shown above, designers have to keep
 
 Other factors to consider are personal experience, mood, status and so on. The important point to recognize is that there are multiple forces acting on another that contribute to how an individual would perceive of a color, and is something that designers should keep in mind when making appropriate decisions about color branding. 
 
-Learn your target audience. The color preferences and meanings depend on many factors, including age, gender, and culture.
+## Color Harmony
+**Color harmony** describes the arrangement of the colors in a way that is the most attractive and harmonius for a user's perception. When colors are organized, feelings of pleasantness and calmness arise, while chaos and disgust result from disharmony. Designers formaulted some basic color schemes that work effectively, which will be highlighted in this section. 
+
+![color-wheel_0](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/107783734/62cafc9d-4655-46e3-b19e-f3fa30548daf)
+This is the color wheel, which will be helpful in our analysis of color schemes. 
+
+#### Monochromatic
+Monochromatic is based on a sigular color, with various shades and tints of it. It is hard to fail with a monochromatic scheme since you are only manipulating the saturation and brightness of a same color. 
+#### Analagous
+Analogous colors are three colors next to each other on the color wheel, which are composed of a dominant color, a supporting color, and a third color that is a mix of the two first colors. Analogous color schemes are often found in nature and create a calming display with no tension in the palette. This color scheme is used in design where contrast is not required, such as the background of images or banners. 
+#### Complementary
+Complementary colors are drawn from two colors on the opposite side of the color wheel. The result is a high-contrast color combination that's bright and that pops, opposing to analagous schemes. An example would be red and green. In design, complementary colors are used for emphasis as it focuses the attention towards a particular object.
+#### Triadic
+Triadic colors are three colors that are equidistant on the color wheel, such that there are no clear superiority of one color. To use a triadic harmony successfully, the colors should be carefully balanced such that one color dominates and the other two are used for accent. In design, triadic schemes are used to curate a lively and cheerful space, suitable for playful or colorful user interfaces.
+
 
 
 
