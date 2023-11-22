@@ -1,8 +1,10 @@
 # **Nielsen's 10 Usability Heuristics**
 
-## **Introduction**
+## **Introduction and Background**
 
-Nielsen's 10 usability heuristics are general principles for user interface design, which is an essential part of creating a successful user experience. These heuristics are helpful in providing guidelines that can be used in software engineering for creating various forms of software applications. Adhering to these guidelines will allow software engineers to create applications that are accessible, understandable, and usable. 
+Conceptualized and developed by Danish human-computer interaction research Jakob Nielsen in the early 1990s (1), Nielsen's ten heuristics are general principles for designing user interfaces that have become one of the most commonly-used frameworks used in improving usability and the user experience within all manner of software products (2). 
+
+These heuristics are helpful in providing guidelines that can be used in software engineering for creating various forms of software applications. Adhering to these guidelines will allow software engineers to create applications that are accessible, understandable, and usable. 
 
 ## **The Heuristics**
 
@@ -66,3 +68,6 @@ Heuristics Applied to Everyday Life: https://www.zenhaiku.com/archives/usability
 
 
 
+## **Citations**
+
+1. Nielsen, J.; Molich, R. (1989). "Teaching user interface design based on usability engineering". ACM SIGCHI Bulletin. doi:10.1145/67880.67885. ISSN 0736-6906. S2CID 41663689. Retrieved 2023-11-22.
