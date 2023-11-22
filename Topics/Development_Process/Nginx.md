@@ -69,4 +69,8 @@ Now, let's navigate to our server in the browser, and see what's there. Go to `h
 
 ![Nginx Landing Page](https://assets.digitalocean.com/articles/nginx_1604/default_page.png)
 
-## Set Up Nginx
+# Next Steps
+Now that we have Nginx installed and running on our server, the possibilities are endless. Here's a few ideas:
+1. To configure Nginx as a reverse proxy for an application server like Django or Express, try this [tutorial](https://www.digitalocean.com/community/tutorials/how-to-configure-nginx-as-a-reverse-proxy-on-ubuntu-22-04) from Digital Ocean explaining how to reverse proxy a simple Gunicorn server.
+2. To serve static content like prebuilt websites or images using Nginx, try this excellent [tutorial](https://docs.nginx.com/nginx/admin-guide/web-server/serving-static-content/) from the official Nginx website on how to serve static content.
+3. To secure Nginx with Let's Encrypt SSL and allow your websites to be accessed over HTTPS, try this [tutorial](https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-20-04) from Digital Ocean on how to set up secure SSL encryption with Nginx.
