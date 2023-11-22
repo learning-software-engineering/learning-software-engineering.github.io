@@ -1,7 +1,7 @@
 # Sprint Planning Meeting
 
 ## Introduction
-In the Scrum framework, sprints function as short, consistent cycles during which a set amount of work is completed. Since they are the heartbeat of the framework, ensuring sprints are well planned, or ensuring a successful Sprint Planning Meeting, is a crucial part of the framework.
+In the Scrum framework, sprints function as short, consistent cycles during which a set amount of work is completed. Since they are the heartbeat of the framework, ensuring sprints are well planned, or ensuring a successful Sprint Planning Meeting, is a crucial part of the framework especially in large teams where effective coordination and communication are key.
 
 
 ## What does a Sprint Planning Meeting Encompass? 
@@ -16,7 +16,7 @@ In the Scrum framework, sprints function as short, consistent cycles during whic
 * The planning addresses the value the sprint can bring to the stakeholders and the team collaborates to define a **Sprint Goal** before the end of the Sprint Planning meeting. 
 * Upon discussion with the Product Owner, the developers select items from the Product Backlog to include in the **Sprint Backlog** and determine this based on their prior and future Sprint performance. 
 * For each Sprint Backlog item that is selected, the developers on the team decide how to break down and complete tasks for the sprint based on the team’s definition of “Done”.
-
+* Disagreements are resolved through open communication and consensus-seeking and facilitated by the ScrumMaster to ensure discussions stay within the sprint's topic.
 
 ## Integrating Sprint Planning Meetings in CSC301 
 *Consider an example of how a Scrum Planning Meeting can be integrated into our course’s workflow.*
@@ -27,12 +27,12 @@ After a Product Manager and Scrum Master are chosen in Deliverable 1, consider e
 ### During the Planning Meeting: 
 Start by reminding the team of the upcoming Deliverable and review the definition of “Done”, which in this case would be meeting both the rubric and your partner's requirements. As a team, take this opportunity to brainstorm more tasks that need to be completed based on what your partner has asked and add them into the Product Backlog list.
 
-Discuss how much time would be needed for each Product Backlog item listed on Jira and based on this estimate, determine items for the Sprint Backlog. Following, select items from the Product Backlog and add them into the Sprint Backlog, allow team members to assign themselves to sprint tasks (including yourself) and discuss any further action items as a team. 
+Discuss how much time would be needed for each Product Backlog item listed on Jira and based on this estimate, determine items for the Sprint Backlog. Following, select items from the Product Backlog and add them into the Sprint Backlog, allow team members to assign themselves to sprint tasks (including yourself) and discuss any further action items as a team. During this time, if any conflicts arise (for example, disagrements on which tasks to complete for the upcoming sprint or the estimated time for a particular task), the Product Manager should act as a facilitator and the ScrumMaster should encourage an inclusive environment where team members actively listen to each other's opinions.
 
 Once the Sprint Backlog items are finalized, as the ScrumMaster, call for a group consensus on the plan and conclude the meeting.
 
 ## Key Takeaway
-The Sprint Planning Meeting lays the foundation for the sprint, helps the team understand their tasks and sets the stage for effective Scrum meetings in the weeks ahead. This meeting ensures everyone is aligned and ready for the work to come, making future collaborations smoother and more productive.
+The Sprint Planning Meeting lays the foundation for the sprint, helps the team understand their tasks and sets the stage for effective Scrum meetings in the weeks ahead. This meeting ensures everyone is aligned on deadlines and tasks, making future collaborations smoother and more productive.
 
 ## Resources
 - [What is Sprint Planning](https://www.scrum.org/resources/what-is-sprint-planning)
