@@ -14,8 +14,6 @@
 
 [Shadcn/ui](https://ui.shadcn.com/) gives you the ability to use re-usable components that are built using [Radix UI](https://www.radix-ui.com/) and [Tailwind CSS](https://tailwindcss.com/). You are able to choose from their collection of pre-built components, add the code into your project, and then customize them using cva variants.
 
-Shadcn/ui helps you separate the design of your components from the implementation. This way, using shadcn/ui can also help speed up the time spent on designing your components.
-
 ### What to Expect 📄
 
 This document will go over how to install and integrate shadcn/ui into your project. Then, it will go through an example of building a `Button` component into your project and talk through the details in each step.
@@ -44,17 +42,7 @@ Follow these steps to install, use, and customize a `Button` component in your o
 1. **Installation:** Add the `Button` component to your project
 
    ```bash
-   # npm
    npx shadcn-ui@latest add button
-
-   # yarn
-   npx shadcn-ui@latest add button
-
-   # pnpm
-   pnpm dlx shadcn-ui@latest add button
-
-   # bun
-   bunx --bun shadcn-ui@latest add button
    ```
 
    This will add a `button.tsx` file into `components/ui`.
