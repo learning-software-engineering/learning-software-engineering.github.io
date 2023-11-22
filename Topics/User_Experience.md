@@ -201,12 +201,15 @@ See the [UI Component Libraries](https://learning-software-engineering.github.io
 As mentioned above, “[developer mode](https://www.figma.com/dev-mode/)” is an essential base to translating your Figma designs into usable code. Additionally, there are many design shortcuts within Figma that you can take advantage of to set yourself up for easy code conversion:
 
 **Text styles** 
+
 Figma allows for users to define their own list of text styles (see [the official Figma article](https://help.figma.com/hc/en-us/articles/360039957034-Create-and-apply-text-styles)). Take advantage of this feature and ensure that your list of Figma text styles corresponds to your code base’s text css definitions. By doing this, you can ensure that your font texts are always properly styled without having to manually adjust them. Consider defining and using the following Figma text styles: `H1`, `H2`, `H3`, `H4`, `Button Text`, `Subheading`, `Body`.
 
 **Color styles** 
+
 Similarly, Figma allows for users to define their own list of color styles (see [the official Figma article](https://help.figma.com/hc/en-us/articles/360039820134-Manage-and-share-styles)). Figma color styles is a very powerful tool and allows you to group various colors to organize into different modes and themes. In your actually frontend code, it’s likely that you will want a css file that defines your main color scheme, and possibly variations (ie. dark mode, secondary colors, etc.). Ensure that your Figma list of color styles corresponds to your code’s css definitions. Consider defining and using the following Figma color styles: `primary`, `secondary`, `primary text`, `secondary text`, `background`.
 
 **Export assets** 
+
 Within Figma, you are able to directly export assets (ie. images) in the exact dimensions that you define them as in your Figma canvas (see [the official Figma article](https://help.figma.com/hc/en-us/articles/360040028114-Export-from-Figma)). This can be especially useful to ensure your assets appear with the proper aspect ratio in your actual app. In particular, Figma allows you to export files in `jpg`, `png`, `svg`, and `pdf` format.
 
 ### Adobe XD
