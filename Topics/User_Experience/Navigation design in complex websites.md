@@ -24,8 +24,8 @@ Consider using the following steps to start thinking of good navigation design  
         * Usually located at the side of the page and contains links to relevant pages on the website 
     * Tabbed menus
         * Organizes information into different tabs, where each tab contains different relevant information
-    * Footers containing links to all relevant pages within your website 
-        * Usually at the bottom of a page. It can contain links to all pages on the website as well as contact information
+    * Footers 
+        * Usually at the bottom of a page. It can contain links to all relevant pages on the website as well as contact information
           
 5. Consider how the user may navigate through the content on a single page.
    * Sub-navbars can be utilized
