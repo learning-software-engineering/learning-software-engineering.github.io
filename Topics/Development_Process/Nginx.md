@@ -50,7 +50,9 @@ sudo ufw status
 ```
 
 The output should indicate that HTTP traffic is now allowed, like this:
-TODO ADD OUTPUT
+
+<img width="470" alt="Screenshot 2023-11-22 at 1 05 44 AM" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/36282235/a455f501-3f79-49da-84f3-c19747422de9">
+
 
 When we installed Nginx with `apt`, the operating system should have started the Nginx service at the end of the installation process. We can confirm Nginx is running by entering:
 
@@ -58,11 +60,13 @@ When we installed Nginx with `apt`, the operating system should have started the
 systemctl status nginx
 ```
 
-TODO ADD OUTPUT
+<img width="756" alt="Screenshot 2023-11-22 at 1 08 52 AM" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/36282235/c5d42a9e-8c98-4310-a90c-9c265c26cf01">
+
 
 If we ever need to restart or stop the Nginx service, we can do so with `systemctl restart nginx` and `systemctl stop nginx`.
 
 Now, let's navigate to our server in the browser, and see what's there. Go to `http://yourdomain.com`, where `yourdomain.com` is the domain name you have pointed at your server. If all goes well, you should see the default Nginx landing page, letting you know that the web server is running!
+
 ![Nginx Landing Page](https://assets.digitalocean.com/articles/nginx_1604/default_page.png)
 
 ## Set Up Nginx
