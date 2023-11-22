@@ -61,7 +61,7 @@ Another responsive UI library that allows you to focus on development by handlin
 ### Miscellaneous
 
 [GitHub Pages](https://pages.github.com/)
-Host your React websites straight from your Github repo. Website hosting is fairly expensive, so this is here as a free alternative for website deployment for simple applications. Head over to the [Development Process](https://learning-software-engineering.github.io/Topics/Development_Process/) page for a tutorial on GitHub pages and more. 
+Host your React websites straight from your Github repo. Website hosting is fairly expensive, so this is here as a free alternative for website deployment for simple applications. Head over to the [Development Process](https://learning-software-engineering.github.io/Topics/Development_Process.html#resources-for-development-process) page for a tutorial on GitHub pages and more. 
 
 [Codepen](https://codepen.io/)
 Online development environment to try React out in (among other frontend tools). Great for testing the waters with React and other libraries or languages.
