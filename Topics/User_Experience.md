@@ -187,15 +187,27 @@ This article provides the 7 Universal Design Principles that make software acces
 
 Figma is a free (for the most part) collaborative tool that lets you design and build mock-ups and prototypes of your software/applications. You may not need to build prototypes as a software developer/engineer, but you'll probably find yourself viewing Figma design files to build your frontend. So, now's a great time to start learning how to use [Figma](https://www,figma.com)!
 
-**Helpful tip:** With just a click of a button, you can switch to "developer mode" in Figma, which helps you translate design into code! Essentially, you can click on components like a button and get its corresponding code and styling. Read about how to use this feature [here](https://www.figma.com/dev-mode/).
+#### Developer Mode
 
-**Figma, MUI, and React:** See the [UI Component Libraries](https://learning-software-engineering.github.io/Topics/User_Experience.html#ui-component-libraries) section for details on MUI. Note that MUI is a component library for React _only_. You can download the** MUI extension on Figma** and immediately use MUI components in your Figma design. Then, when you're ready to code, you can install MUI in your React project and easily create your frontend by entering "developer mode" on your Figma design and copying the code that Figma generated for you.
+With just a click of a button, you can switch to "developer mode" in Figma, which helps you translate design into code! Essentially, you can click on components like a button and get its corresponding code and styling. Read about how to use this feature [here](https://www.figma.com/dev-mode/).
 
-**Optimizing Figma Design efforts to easily convert into code:** As mentioned above, “[developer mode](https://www.figma.com/dev-mode/)” is an essential base to translating your Figma designs into usable code. Additionally, there are many design shortcuts within Figma that you can take advantage of to set yourself up for easy code conversion:
+#### Figma, MUI, and React 
 
-- _Text styles_- Figma allows for users to define their own list of text styles (see [the official Figma article](https://help.figma.com/hc/en-us/articles/360039957034-Create-and-apply-text-styles)). Take advantage of this feature and ensure that your list of Figma text styles corresponds to your code base’s text css definitions. By doing this, you can ensure that your font texts are always properly styled without having to manually adjust them. Consider defining and using the following Figma text styles: `H1`, `H2`, `H3`, `H4`, `Button Text`, `Subheading`, `Body`.
-- _Color styles_- Similarly, Figma allows for users to define their own list of color styles (see [the official Figma article](https://help.figma.com/hc/en-us/articles/360039820134-Manage-and-share-styles)). Figma color styles is a very powerful tool and allows you to group various colors to organize into different modes and themes. In your actually frontend code, it’s likely that you will want a css file that defines your main color scheme, and possibly variations (ie. dark mode, secondary colors, etc.). Ensure that your Figma list of color styles corresponds to your code’s css definitions. Consider defining and using the following Figma color styles: `primary`, `secondary`, `primary text`, `secondary text`, `background`.
-- _Export assets_- Within Figma, you are able to directly export assets (ie. images) in the exact dimensions that you define them as in your Figma canvas (see [the official Figma article](https://help.figma.com/hc/en-us/articles/360040028114-Export-from-Figma)). This can be especially useful to ensure your assets appear with the proper aspect ratio in your actual app. In particular, Figma allows you to export files in `jpg`, `png`, `svg`, and `pdf` format.
+See the [UI Component Libraries](https://learning-software-engineering.github.io/Topics/User_Experience.html#ui-component-libraries) section for details on MUI. Note that MUI is a component library for React _only_. You can download the** MUI extension on Figma** and immediately use MUI components in your Figma design. Then, when you're ready to code, you can install MUI in your React project and easily create your frontend by entering "developer mode" on your Figma design and copying the code that Figma generated for you.
+
+
+#### Optimizing Figma Design tools to easily convert into code
+
+As mentioned above, “[developer mode](https://www.figma.com/dev-mode/)” is an essential base to translating your Figma designs into usable code. Additionally, there are many design shortcuts within Figma that you can take advantage of to set yourself up for easy code conversion:
+
+**Text styles** 
+Figma allows for users to define their own list of text styles (see [the official Figma article](https://help.figma.com/hc/en-us/articles/360039957034-Create-and-apply-text-styles)). Take advantage of this feature and ensure that your list of Figma text styles corresponds to your code base’s text css definitions. By doing this, you can ensure that your font texts are always properly styled without having to manually adjust them. Consider defining and using the following Figma text styles: `H1`, `H2`, `H3`, `H4`, `Button Text`, `Subheading`, `Body`.
+
+**Color styles** 
+Similarly, Figma allows for users to define their own list of color styles (see [the official Figma article](https://help.figma.com/hc/en-us/articles/360039820134-Manage-and-share-styles)). Figma color styles is a very powerful tool and allows you to group various colors to organize into different modes and themes. In your actually frontend code, it’s likely that you will want a css file that defines your main color scheme, and possibly variations (ie. dark mode, secondary colors, etc.). Ensure that your Figma list of color styles corresponds to your code’s css definitions. Consider defining and using the following Figma color styles: `primary`, `secondary`, `primary text`, `secondary text`, `background`.
+
+**Export assets** 
+Within Figma, you are able to directly export assets (ie. images) in the exact dimensions that you define them as in your Figma canvas (see [the official Figma article](https://help.figma.com/hc/en-us/articles/360040028114-Export-from-Figma)). This can be especially useful to ensure your assets appear with the proper aspect ratio in your actual app. In particular, Figma allows you to export files in `jpg`, `png`, `svg`, and `pdf` format.
 
 ### Adobe XD
 
