@@ -85,6 +85,10 @@ First, we should ensure our attitudes about criticism and feedback are proper. U
 
 ---
 
+Other things you can do:
+1. Ask for feedback often by asking your co-workers, clients, managers, etc., to actively think about ways you can improve. We do not mean “often” as in constantly asking for feedback on every little task that you complete, but “often” as in making a consistent effort to let others know that you are always open to receiving feedback.
+2. When asking for feedback, always make a strong attempt to communicate to the other person how much you value and appreciate their feedback. Use words such as “appreciate”, “value”, “grateful”, “thankful”, etc..
+
 
 ### Additional practices:
 You can find additional practices on this website: https://engineerscanada.ca/professional-practice-in-software-engineering
