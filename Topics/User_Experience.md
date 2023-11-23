@@ -213,7 +213,7 @@ On a related note, Figma allows for the options of Effect styling and Grid styli
 
 Within Figma, you can define individual components, as explained in detail in [this official Figma article](https://help.figma.com/hc/en-us/articles/360038662654-Guide-to-components-in-Figma). In essence, Figma components work similarly to React components; components are reusable and modifying the characteristics of a component will modify every instance of the same component. Using these in your design can be especially helpful to create a good understanding for which components can/should be reusable in your actual codebase.
 
-Tip: if you are developing on iOS/iPadOS, there is a very helpful Apple plugin for making relevant mockups that can be found [here](https://www.figma.com/community/file/1248375255495415511).
+Tip: if you are designing for iOS/iPadOS, there is a very helpful Figma library with components styled with Apple's UI standards [here](https://www.figma.com/community/file/1248375255495415511).
 
 **Plugin Extensions**
 
