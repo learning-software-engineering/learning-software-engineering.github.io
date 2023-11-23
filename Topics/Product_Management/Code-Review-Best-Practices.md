@@ -25,6 +25,10 @@ Maintaining consistency in the review standards is key. This ensures fairness an
 ## Best Practices for Reviewers
 Being an effective reviewer is about more than just evaluating code; it's about contributing to the development process in a constructive and supportive manner. Here are some best practices:
 
+## Prioritization of Issues
+Not all issues found during a review have the same level of severity or urgency. It's important for reviewers to prioritize their feedback, focusing first on critical issues such as bugs, security vulnerabilities, and major architectural concerns, followed by other areas of improvement. This prioritization helps authors in addressing the most impactful issues first.
+i wrote this but took it out
+
 - **In-depth Understanding**: Dive deep into the changes. Don't just skim the code; understand the logic and its impact on the project. This might involve running the code, checking out how it integrates with the rest of the system, and considering potential future implications.
 
 - **Prioritize Feedback**: Not all issues are equally critical. Prioritize your feedback to focus on what matters most. Major bugs, security vulnerabilities, and architectural concerns should take precedence over stylistic preferences.
