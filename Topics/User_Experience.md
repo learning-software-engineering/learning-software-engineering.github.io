@@ -213,9 +213,11 @@ On a related note, Figma allows for the options of Effect styling and Grid styli
 
 Within Figma, you can define individual components, as explained in detail in [this official Figma article](https://help.figma.com/hc/en-us/articles/360038662654-Guide-to-components-in-Figma). In essence, Figma components work similarly to React components; components are reusable and modifying the characteristics of a component will modify every instance of the same component. Using these in your design can be especially helpful to create a good understanding for which components can/should be reusable in your actual codebase.
 
+Tip: if you are developing on iOS/iPadOS, there is a very helpful Apple plugin for making relevant mockups that can be found [here](https://www.figma.com/community/file/1248375255495415511).
+
 **Plugin Extensions**
 
-Extern plugin extensions are available in Figma to make your life easier and should definitely be taken advantage of. Plugin extensions are created by other community members and will usually have predefined components and icons that are relevant to certain libraries and frameworks that you are using in your own codebase.
+External plugin extensions are available in Figma to make your life easier and should definitely be taken advantage of. Plugin extensions are created by other community members and will usually have predefined components and icons that are relevant to certain libraries and frameworks that you are using in your own codebase.
 
 For example, those that are using the [ShadCN](https://ui.shadcn.com/) component library with their React project can benefit from [an available ShadCN Figma plugin](https://www.figma.com/community/plugin/1280731237276040017/design-with-shadcn-ui-plugin). This plugin has already predefined all ShadCN components and icons for users to integrate into their Figma canvas. Using these plugins will not only help save time but also ensure that your Figma design and your code looks exactly the same.
 
