@@ -86,7 +86,7 @@ The change will be reflected immediately on the simulated device, and Xcode will
 
 <img width="528" alt="Screenshot 2023-11-23 at 12 36 48 AM" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/97854264/2514b9b0-1516-4783-a78e-9de37226d6f3">
 
-To edit manually, we must add the line “foregroundColor (Color.purple)” to the view’s body.
+To edit manually, we must add the line “foregroundColor (Color.purple)” to the view’s body ourselves.
 
 **Previewing Light and Dark Modes, Orientations, and Device Types**
 
