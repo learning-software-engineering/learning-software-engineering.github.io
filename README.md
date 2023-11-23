@@ -92,6 +92,6 @@ Potential Topics--
     3. Helpful Courses
     4. User Experience Orientated Games
 - Product Management
-    1. Beginner's guide to product management and becoming a successful product manager
+    1. Beginner's guide to product management and becoming a successful product manager with case studies.
 - Other useful resources
 - Teamwork
