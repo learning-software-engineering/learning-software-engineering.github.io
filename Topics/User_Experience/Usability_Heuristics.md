@@ -2,9 +2,19 @@
 
 ## **Introduction and Background**
 
-Conceptualized and developed by Danish human-computer interaction research Jakob Nielsen in the early 1990s (1), Nielsen's ten heuristics are general principles for designing user interfaces that have become one of the most commonly-used frameworks used in improving usability and the user experience within all manner of software products (2). 
+Conceptualized and developed by Danish human-computer interaction research Jakob Nielsen in the early 1990s (1), Nielsen's ten heuristics are general principles for designing user interfaces that have become one of the most commonly-used frameworks used in improving usability and the user experience within all manner of software products. 
 
-These heuristics are helpful in providing guidelines that can be used in software engineering for creating various forms of software applications. Adhering to these guidelines will allow software engineers to create applications that are accessible, understandable, and usable. 
+Heuristic frameworks like Nielsen's are generally employed for evaluating the usability of a user interface and, broadly, for informing its design. While heuristics by their nature are not guaranteed to present an optimal solution in all circumstances, the offered shortcuts are helpful in providing guidelines that can be used in building the interfaces themselves, as well as for determining flaws that may impede an end user (2).
+
+According to the Nielsen Norman group, Nielsen's UX consulting group, usability is defined as a "quality attribute that assesses how easy user interfaces are to use". Usability, as defined by Nielsen, is evaluated on five components (3):
+
+Learnability: How easy is it for users to accomplish basic tasks the first time they encounter the design?
+Efficiency: Once users have learned the design, how quickly can they perform tasks?
+Memorability: When users return to the design after a period of not using it, how easily can they reestablish proficiency?
+Errors: How many errors do users make, how severe are these errors, and how easily can they recover from the errors?
+Satisfaction: How pleasant is it to use the design?
+
+Thus, Nielsen's usability heuristics have the stated purpose of helping to maintain usability through supporting these five components. Adhering to these heuristic guidelines allow software engineers to create applications that are accessible, usable, and useful for a broad range of purposes. 
 
 ## **The Heuristics**
 
@@ -70,4 +80,10 @@ Heuristics Applied to Everyday Life: https://www.zenhaiku.com/archives/usability
 
 ## **Citations**
 
-1. Nielsen, J.; Molich, R. (1989). "Teaching user interface design based on usability engineering". ACM SIGCHI Bulletin. doi:10.1145/67880.67885. ISSN 0736-6906. S2CID 41663689. Retrieved 2023-11-22.
+1. Nielsen, J.; Molich, R. (1989). Teaching user interface design based on usability engineering. ACM SIGCHI Bulletin. doi:10.1145/67880.67885. ISSN 0736-6906. S2CID 41663689.
+
+2. Molich, Rolf; Nielsen, Jakob (1990). "Improving a human-computer dialogue". Communications of the ACM. 33 (3): 338–348. doi:10.1145/77481.77486. ISSN 0001-0782. S2CID 11462820. Retrieved 4 February 2022.
+
+3. Nielsen, J. (2012, January 3). Usability 101: Introduction to usability. Nielsen Norman Group. https://www.nngroup.com/articles/usability-101-introduction-to-usability/ 
+
+4. Nielsen, J. (1994, April 24). 10 usability heuristics for user interface design. Nielsen Norman Group. https://www.nngroup.com/articles/ten-usability-heuristics/ 
