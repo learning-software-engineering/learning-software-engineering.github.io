@@ -8,7 +8,7 @@ Cypress is mainly used for testing web applications, especially those built in j
   
 [https://circleci.com/blog/what-is-end-to-end-testing/](https://circleci.com/blog/what-is-end-to-end-testing/)
 
-The above link has a good explanation on what end to end testing is and why it should be used. 
+The above link has a good explanation on what end to end testing is and why it should be used. While other types of tests like unit tests or functional tests make sure a single component/module works as expected, an end to end test starts from the perspective of the end user and tries to mimic what an end user would do when accessing your application. 
 
 Cypress very closely mimics a real user, think of it as a robot accessing your website from a browser like a human would, but you can program the robot to interact with your website however you like and programmatically check the output on the screen.
 
