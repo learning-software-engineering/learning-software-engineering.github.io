@@ -9,7 +9,7 @@
 ### [Dynamic Routes](#dynamic-routes-1)
 ### [API Routes](#api-routes-1)
 ### [Styling in Next.js](#styling-in-nextjs-1)
-### [Optimizations](#optimizations)
+### [Optimizations](#optimizations-1)
 ### [References](#references-and-links-1)
 
 ## Introduction
