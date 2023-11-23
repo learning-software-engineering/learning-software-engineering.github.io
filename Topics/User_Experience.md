@@ -219,7 +219,7 @@ Tip: if you are developing on iOS/iPadOS, there is a very helpful Apple plugin f
 
 External plugin extensions are available in Figma to make your life easier and should definitely be taken advantage of. Plugin extensions are created by other community members and will usually have predefined components and icons that are relevant to certain libraries and frameworks that you are using in your own codebase.
 
-For example, those that are using the [ShadCN](https://ui.shadcn.com/) component library with their React project can benefit from [an available ShadCN Figma plugin](https://www.figma.com/community/plugin/1280731237276040017/design-with-shadcn-ui-plugin). This plugin has already predefined all ShadCN components and icons for users to integrate into their Figma canvas. Using these plugins will not only help save time but also ensure that your Figma design and your code looks exactly the same.
+For example, those that are using the [ShadCN](https://ui.shadcn.com/) component library with their React project can benefit from an existing [ShadCN Figma plugin](https://www.figma.com/community/plugin/1280731237276040017/design-with-shadcn-ui-plugin). This plugin has already predefined all ShadCN components and icons for users to integrate into their Figma canvas. Using these plugins will not only help save time but also ensure that your Figma design and your code looks exactly the same.
 
 You can find a database of available plugins at [this Figma resource](https://www.figma.com/community/plugins).
 
