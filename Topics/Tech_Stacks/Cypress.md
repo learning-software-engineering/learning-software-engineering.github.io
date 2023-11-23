@@ -12,9 +12,19 @@ The above link has a good explanation on what end to end testing is and why it s
 
 Cypress very closely mimics a real user, think of it as a robot accessing your website from a browser like a human would, but you can program the robot to interact with your website however you like and programmatically check the output on the screen.
 
+# Why Cypress?
+
+There exist many different testing frameworks online, such as [Selenium](https://www.selenium.dev/), [Jest](https://jestjs.io/), [Mocha](https://mochajs.org/), and more. 
+
+Cypress is most useful for UI, integration and end-to-end testing, so it can be used in tandem with unit testing frameworks like Jest. 
+
+Cypress is built on top of mocha, and uses its framework for tests as well. The main difference is that cypress focuses more on improving client-side and UI tests. 
+
+Selenium is often compared to Cypress, due to it being one of the most popular UI testing frameworks before Cypress was created. One of the biggest differences is that Cypress automatically retries commands while waiting for DOM elements to load properly, helping to prevent [flaky tests](https://www.jetbrains.com/teamcity/ci-cd-guide/concepts/flaky-tests/) and eliminating the need to write wait or sleep helpers that were needed in Selenium. Cypress is also faster and easier to get setup and start creating tests than Selenium. However, Selenium is more flexible, allowing for testing in multiple browsers at a time, and also for writing tests in languages other than javascript. 
+
 # Installation and setup:  
   
-Cypress can be automatically installed with npm: `npm install cypress`
+Cypress can be automatically installed with [npm](https://www.npmjs.com/): `npm install cypress`
 
 See [https://docs.cypress.io/guides/getting-started/installing-cypress](https://docs.cypress.io/guides/getting-started/installing-cypress) for more details.
 
@@ -63,3 +73,4 @@ if (viewport.name == ‘small’) {
 	cy.get("@somedivmobileonly").should('not.exist')
 } 
 ```
+
