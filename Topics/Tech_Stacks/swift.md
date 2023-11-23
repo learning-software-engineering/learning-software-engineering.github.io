@@ -84,7 +84,7 @@ We can edit a view in two ways: manually or through the view inspector. Modifica
 
 The change will be reflected immediately on the simulated device, and Xcode will update your code to match the change. 
 
-<img width="528" alt="Screenshot 2023-11-23 at 12 36 48 AM" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/97854264/2514b9b0-1516-4783-a78e-9de37226d6f3">
+<img width="1394" alt="Screenshot 2023-11-23 at 1 09 35 AM" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/97854264/8fd856b6-b23e-4860-866a-3dcb95c679a1">
 
 To edit manually, we must add the line “foregroundColor (Color.purple)” to the view’s body ourselves.
 
