@@ -3,7 +3,7 @@
 ## Table of Contents
 ### [Introduction](#introduction-1)
 ### [Installation](#installation-1)
-### [Getting Started](#getting-started-1)
+### [Creating Dockerfiles](#creating-dockerfiles-1)
 ### [Next Steps](#next-steps-1)
 ### [Docker Terminology](#docker-terminology-1)
 
@@ -11,7 +11,15 @@
 
 ## Introduction
 
-This article will help readers understand what Docker is, why it is used and provide resources on how to start using it. Docker is used by developers for many reasons, however, the most common reasons are for building, deploying and sharing an application quickly. Docker packages your application into something that's called a [container](#docker-terminology-1). This [container](#docker-terminology-1) is OS-agnostic meaning that developers on Mac, Windows and Linux can share their code without any worry of conflicts. Here's [Amazon's Intro to Docker](https://aws.amazon.com/docker/#:~:text=Docker%20is%20a%20software%20platform,tools%2C%20code%2C%20and%20runtime.) if you want to learn more.
+This article will help readers understand what Docker is, why it is used, and provide resources on how to start using it. Docker is used by developers for many reasons, most commonly for building, deploying, and sharing applications quickly. Docker packages your application into a [container](#docker-terminology-1), which is OS-agnostic, allowing developers on Mac, Windows, and Linux to share their code without conflicts. For more information, check out [Amazon's Intro to Docker](https://aws.amazon.com/docker/).
+
+### Docker Terminology
+
+* **Container**: A package of code bundled by Docker that runs as an isolated process from your machine. The package of code can be pretty much anything, a single Python file, an API, a full-stack web application, etc. A container is also referred to as a containerized application.
+* **Image**: A template with a set of instructions for creating a container. Think of it as a blueprint from which multiple containers can be instantiated. Images are built from Dockerfiles and are essential for running your applications in Docker.
+* **Dockerfile**: A text document that contains all the commands a user could call on the command line to assemble an image. It's a recipe for creating Docker images.
+
+For more detailed explanations, you can refer to Docker's own resources [here](https://docs.docker.com/get-started/).
 
 ## Installation
 
@@ -55,6 +63,12 @@ I have the following runtime dependencies that might require APT packages: psyco
 ```
 
 This method will generate something that's much more optimized than any beginner can write. For example, it will clear the APT cache for dependency installation, and use separate builder and runtime images to reduce image size, which involves understanding the intricate Docker image layering mechanism. You can learn a lot from reading and understanding the generated Dockerfile.
+
+### Clarifying Dockerfiles and Docker Images
+
+When you start using Docker, you'll come across two key terms: Dockerfile and Docker image. A Dockerfile is a text document that contains all the commands a user could call on the command line to assemble an image. Essentially, it's a set of instructions for Docker to build the image.
+
+A Docker image, on the other hand, is an executable package that includes everything needed to run an application - the code, a runtime, libraries, environment variables, and config files. You can think of an image as a blueprint for a container. Docker builds an image based on the instructions provided in a Dockerfile. Once the image is built, Docker can create a container from this image.
 
 ## Next Steps
 
@@ -204,10 +218,3 @@ If you have multiple services and want to deploy them on the same server with di
 ## Other Resources
 
 Here's a [cheat sheet](https://docs.docker.com/get-started/docker_cheatsheet.pdf) of all useful Docker CLI commands and here's a [cheat sheet](https://devhints.io/docker-compose) for docker-compose which should help you in your future endeavours. All the best!
-
-## Docker Terminology
-- **Container**: A package of code bundled by Docker that runs as an isolated process from your machine. The package of code can be pretty much anything, a single Python file, an API, a full-stack web application etc. A container is also referred to as a **containerized application**.
-
-- **Image**: template with a set of instructions for creating a container. *(most of the times these are pre-built so don't worry too much about making one)*
-
-Explained in Docker's own words [here](https://docs.docker.com/get-started/)
