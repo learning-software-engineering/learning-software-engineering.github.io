@@ -53,12 +53,22 @@ __How can we implement this?__
 Allow users to have an "emergency exit" for when they select certain system functions by mistake and want to return to their original state. Support options for undo and redo so users have more freedom over how they interact with the system. Users will change their minds or make mistakes, and will need a way to go back to the previous state.
 
 __Why is this important?__
-A sense of control and predictability is important for users, allowing them to build trust with the product and use it effectively (3). When a system does not tolerate mistakes, user errors cause major disruptions to the user's workflow and results in them losing control.
+A sense of control and predictability is important for usability and for the end users, allowing them to build trust with the product and use it effectively (3). When a system does not tolerate mistakes, user errors cause major disruptions to the user's workflow and result in them losing control. Letting users undo potential mistakes easily will improve usability.
+
+For the end user, the ability to reverse errors encourages users to explore, which "facilitates learning and discovery of features". It also increases overall use and sales (in the case of exploring a product space). When the user experience doesn't allow for mistakes to be easily undone, users feel a loss of control and may become frustrated (7).
 
 __How can we implement this?__
 
+- From the Nielsen webpage (7), there are four primary standard features.
 
-**Example:** An application where a user submits a form, if they change their mind or made a mistake, they can undo the submission. 
+A Back link which returns users to a previous page or screen
+A Cancel link which allows the user to quit a task or multi-step process
+A Close link which allows users to close a new view
+An Undo option (and a corresponding redo option) to allow users to backtrack on a change to a UI element
+
+These features should attempt to provide the 'exit' while maintaining a reflection of user expectations. For instance, a form with multiple pages may have a 'back' link. This link should perform the action that would best fit the user's needs; in this case, this would be going back a single page in the form instead of exiting the form in its entirety. The website may also cache previously entered information so that accidentally clicking a redirect does not erase previously entered information.
+
+**Example:** An application where a user is required to submit a form as part of their registration. If they change their mind or made a mistake, the app should support the ability to undo the submission and/or modify previous submissions.
 
 ### **4: Consistency and standards**
 Users should not have to guess or assume if different words, situations, or actions mean the same thing. Follow design and platform conventions.
@@ -118,3 +128,5 @@ Heuristics Applied to Everyday Life: https://www.zenhaiku.com/archives/usability
 5. Harley, A. (2018, June 3). Visibility of system status. Nielsen Norman Group. https://www.nngroup.com/articles/visibility-system-status/ 
 
 6. Kayley, A. (2018, July 1). Match between the system and the real world (usability heuristic #2). Nielsen Norman Group. https://www.nngroup.com/articles/match-system-real-world/ 
+
+7. Rosala, M. (2020, November 29). User control and freedom (usability heuristic #3). Nielsen Norman Group. https://www.nngroup.com/articles/user-control-and-freedom/ 
