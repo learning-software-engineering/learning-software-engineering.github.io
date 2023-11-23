@@ -44,40 +44,30 @@ Following the establishment of the Agile Manifesto, various Agile methodologies 
 ## Agile Manifesto Principles
 
 1. **"Our highest priority is to satisfy the customer through early and continuous delivery of valuable software."**
-    - Agile teams aim to deliver working software in small, incremental releases, ensuring that valuable features are available to customers early and continuously.
 
 2. **"Welcome changing requirements, even late in development. Agile processes harness change for the customer's competitive advantage."**
-    - Agile teams embrace changing customer requirements, recognizing that responding to change is essential for delivering a product that truly meets the customer's needs.
 
 3. **"Deliver working software frequently, from a couple of weeks to a couple of months, with a preference for the shorter timescale."**
-    - Agile promotes regular, iterative releases of working software to provide rapid and tangible value to customers, enabling continuous improvement.
 
 4. **"Business people and developers must work together daily throughout the project."**
-    - Agile encourages continuous collaboration between business stakeholders and development teams, ensuring a shared understanding of goals and requirements.
 
 5. **"Build projects around motivated individuals. Give them the environment and support they need, and trust them to get the job done."**
-    - Agile teams recognize the importance of motivated individuals and create an environment that supports their success.
 
 6. **"The most efficient and effective method of conveying information to and within a development team is face-to-face conversation."**
-    - Agile values direct, face-to-face communication as it enhances understanding, fosters collaboration, and reduces the likelihood of misunderstandings.
 
 7. **"Working software is the primary measure of progress."**
-    - The ultimate measure of progress in Agile is the delivery of working software, emphasizing tangible results over intermediate milestones.
 
 8. **"Agile processes promote sustainable development. The sponsors, developers, and users should be able to maintain a constant pace indefinitely."**
-    - Agile promotes a sustainable pace of work to prevent burnout and maintain the long-term productivity and effectiveness of the team.
 
 9. **"Continuous attention to technical excellence and good design enhances agility."**
-    - Agile teams prioritize technical excellence and good design practices to ensure the long-term maintainability and adaptability of the software.
 
 10. **"Simplicity--the art of maximizing the amount of work not done--is essential."**
-    - Agile encourages simplicity in both the software and the development process, emphasizing the elimination of unnecessary work to maximize efficiency.
 
 11. **"The best architectures, requirements, and designs emerge from self-organizing teams."**
-    - Agile teams are self-organizing, fostering an environment where effective architectures, requirements, and designs can emerge through collaboration and innovation.
 
 12. **"At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behavior accordingly."**
-    - Agile teams regularly reflect on their processes and performance, seeking ways to improve and making adjustments to their behavior and practices accordingly.
+
+The 12 Agile principles collectively emphasize a customer-centric, adaptable, and collaborative approach to software development. Prioritizing customer satisfaction, Agile promotes the early and continuous delivery of working software, welcoming changing requirements throughout the development process. It emphasizes frequent, iterative releases, fostering collaboration between business stakeholders and development teams. Agile teams are built around motivated individuals, engaging in face-to-face communication whenever possible. The primary measure of progress is the delivery of working software, and a sustainable pace of work is maintained to ensure long-term productivity. Technical excellence, good design, simplicity, and self-organizing teams are key tenets, fostering innovation and adaptability. Regular reflections on processes drive continuous improvement, making Agile a dynamic and customer-focused methodology.
 
 ## Advantages of Agile
 
