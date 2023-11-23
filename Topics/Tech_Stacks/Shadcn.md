@@ -28,7 +28,7 @@ This document will go over how to install and integrate shadcn/ui into your proj
 
 You can use shadcn/ui components in any framework that supports React. Typescript is recommended for your projects but Javascript components are also available by making changes to your configurations.
 
-Follow the link below depending on the framework you are using for your project:
+Follow any of the links below depending on the framework you are using for your project:
 
 - [Next.js](https://ui.shadcn.com/docs/installation/next)
 - [Vite](https://ui.shadcn.com/docs/installation/vite)
@@ -43,7 +43,7 @@ If you want to manually install shadcn/ui, follow this [tutorial](https://ui.sha
 
 <!-- This [document](https://ui.shadcn.com/docs/components/button) shows the steps you need to take in order to install and use a `Button` component in your project.  -->
 
-Follow these steps to install, use, and customize a `Button` component in your own project:
+In this example, we will walk through the steps to install, use, and customize a `Button` component in your own project:
 
 1. **Installation:** Add the `Button` component to your project
 
