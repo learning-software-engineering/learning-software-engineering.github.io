@@ -5,6 +5,7 @@
 ### [Why Use Swift?](#why-use-swift-1)
 ### [What is SwiftUI?](#what-is-swiftui-1)
 ### [Starting a Swift Project](#starting-a-swift-project-1)
+### [Swift View](#swift-view-1)
 ### [Testing Your App](#testing-your-app-1)
 ### [Other Useful Resources](#other-useful-resources-1)
 
@@ -89,6 +90,7 @@ The change will be reflected immediately on the simulated device, and Xcode will
 To edit manually, we must add the line “foregroundColor (Color.purple)” to the view’s body ourselves.
 
 **Combining Views**
+
 A single view with multiple elements can lead to a cluttered view body. We should separate each of these elements into their separate view for cleaner code. We can then combine views by calling a view within the body of another view. For instance, in this scenario, the Circle Image and Map View are initially separate and merged with the content view for display.
 
 <img width="783" alt="Screenshot 2023-11-23 at 1 06 40 AM" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/97854264/498685ee-7c70-45de-b450-978c961510f1">
