@@ -87,6 +87,7 @@ The change will be reflected immediately on the simulated device, and Xcode will
 
 <img width="1394" alt="Screenshot 2023-11-23 at 1 09 35 AM" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/97854264/8fd856b6-b23e-4860-866a-3dcb95c679a1">
 
+
 To edit manually, we must add the line “foregroundColor (Color.purple)” to the view’s body ourselves.
 
 **Combining Views**
