@@ -56,8 +56,9 @@ Styling in Next.js can be done using various approaches. You can use CSS modules
 
 ## References and Links
 - [Official Next.js Documentation](https://nextjs.org/docs/getting-started)
-- [React Documentation](https://reactjs.org/docs/getting-started.html)
+- [React Documentation](https://react.dev/)
 - [Next.js Dynamic Routes](https://nextjs.org/docs/routing/dynamic-routes)
 - [Next.js API Routes](https://nextjs.org/docs/api-routes/introduction)
 - [Next.js Styling](https://nextjs.org/docs/basic-features/built-in-css-support)
+- [Next.js Optimizing](https://nextjs.org/docs/pages/building-your-application/optimizing)
 - [Tailwind CSS Documentation](https://tailwindcss.com/docs)
