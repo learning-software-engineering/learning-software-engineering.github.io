@@ -18,13 +18,30 @@ Thus, Nielsen's usability heuristics have the stated purpose of helping to maint
 
 ## **The Heuristics**
 
+For more information, consider Nielsen's webpage: https://www.nngroup.com/articles/ten-usability-heuristics/ (4)
+
 ### **1: Visbility of system status**
 The system should always keep users informed about what is going on within the system, through appropriate feedback that is provided within a reasonable time. Communication between the user and the system allows the user to be aware of what is happening, and make decisions based on this knowledge. 
 
-**Example:** An application provides a loading screen or a progress bar while the user waits for an action to complete.
+__Why is this important?__
+
+Information is power. Every time we make a decision in real life, whether it is to switch lanes on the highway or purchase an appliance, we must do so based on the information we have of the current state (in our first example this might be our car's position on the highway, the position of other vehicles, or when the exit we want to take is coming up). It is no different when a user must interact with a software system. "Only by knowing what the current system status is can you change it — that is, you can (...) figure out what you need to do next in order to reach your goal (5)". To make sure the user is able to achieve their goals and doesn't become frustrated, they must understand how the system responds to their action and be able to figure out the next steps to take based on the current status. When they feel in control— that is, their actions clearly affect the system in predictable and consistent ways— they are able to build trust with the software product.
+
+__How can we implement this?__
+
+- Explicitly convey the system status. An application provides a loading screen or a progress bar while the user waits for an action to complete.
+
+
 
 ### **2: Match between system and the real world**
 The system should use words, phrases, and concepts that are familiar to the user. Avoid using technical or system-oriented terms, and use real-world conventions that provide information in a natural and logical order that will make sense to the users of the system. If your application relates to things in the real world, ensure that the system accurately matches them.
+
+__Why is this important?__
+
+
+__How can we implement this?__
+
+
 
 **Example:** An e-reading application that allows users to "highlight" words and phrases using a bright colour.
 
@@ -87,3 +104,5 @@ Heuristics Applied to Everyday Life: https://www.zenhaiku.com/archives/usability
 3. Nielsen, J. (2012, January 3). Usability 101: Introduction to usability. Nielsen Norman Group. https://www.nngroup.com/articles/usability-101-introduction-to-usability/ 
 
 4. Nielsen, J. (1994, April 24). 10 usability heuristics for user interface design. Nielsen Norman Group. https://www.nngroup.com/articles/ten-usability-heuristics/ 
+
+5. Harley, A. (2018, June 3). Visibility of system status. Nielsen Norman Group. https://www.nngroup.com/articles/visibility-system-status/ 
