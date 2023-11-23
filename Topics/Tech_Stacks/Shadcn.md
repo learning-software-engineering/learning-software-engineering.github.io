@@ -6,17 +6,23 @@
 
 #### [Installation](#installation-1)
 
-#### [Creating and Customizing Components](#creating-and-customizing-components-1)
+#### [Example: Creating and Customizing a Button Component](#example-creating-and-customizing-a-button-component-1)
+
+#### [Resources](#resources-1)
 
 ## Introduction
 
-### What is shadcn/ui? 🤔
+### What is shadcn/ui?
 
-[Shadcn/ui](https://ui.shadcn.com/) gives you the ability to use re-usable components that are built using [Radix UI](https://www.radix-ui.com/) and [Tailwind CSS](https://tailwindcss.com/). You are able to choose from their collection of pre-built components, add the code into your project, and then customize them using cva variants.
+[Shadcn/ui](https://ui.shadcn.com/) is a component library that gives you the ability to use re-usable components that are built using [Radix UI](https://www.radix-ui.com/) and [Tailwind CSS](https://tailwindcss.com/). You are able to choose from their collection of pre-built components, add the code into your project, and then customize them using cva variants.
 
-### What to Expect 📄
+### Why use shadcn/ui?
 
-This document will go over how to install and integrate shadcn/ui into your project. Then, it will go through an example of building a `Button` component into your project and talk through the details in each step.
+Shadcn/ui helps you separate the design of your components from the implementation. This way, using shadcn/ui is a very modular and easy process. Additionally, there is no requirement to install any package; you only need to install the specific components you'd like to use.
+
+### What to Expect
+
+This document will go over how to install and integrate shadcn/ui into your project. Then, it will go through an example of building a `Button` component into your project and talk through the details in customizing it.
 
 ## Installation
 
@@ -33,7 +39,7 @@ Follow the link below depending on the framework you are using for your project:
 
 If you want to manually install shadcn/ui, follow this [tutorial](https://ui.shadcn.com/docs/installation/manual).
 
-## Creating and Customizing Components
+## Example: Creating and Customizing a Button Component
 
 <!-- This [document](https://ui.shadcn.com/docs/components/button) shows the steps you need to take in order to install and use a `Button` component in your project.  -->
 
@@ -42,7 +48,17 @@ Follow these steps to install, use, and customize a `Button` component in your o
 1. **Installation:** Add the `Button` component to your project
 
    ```bash
+   # npm
    npx shadcn-ui@latest add button
+
+   # yarn
+   npx shadcn-ui@latest add button
+
+   # pnpm
+   pnpm dlx shadcn-ui@latest add button
+
+   # bun
+   bunx --bun shadcn-ui@latest add button
    ```
 
    This will add a `button.tsx` file into `components/ui`.
@@ -115,30 +131,50 @@ Follow these steps to install, use, and customize a `Button` component in your o
    import { Button } from "@/components/ui/button"
    ```
 
-3. **Customization:** Add the imported component in your project and customize it however you like. See [examples](https://ui.shadcn.com/docs/components/button#examples) of how to use the different variants defined in [button.tsx](#buttontsx) to style your component in different ways.
+3. **Customization:** Add the imported component in your project. Edit the generated [button.tsx](#buttontsx) file and use `buttonVariants` to customize your button component.
 
    #### Customizing Using Variants
 
-   The variants given to you in the file is named according to the colours that are defined in your main css file during installation.
+   The variants in your generated [button.tsx](#buttontsx) file can be used to have different styles for a Button component. See [examples](https://ui.shadcn.com/docs/components/button#examples) of how to use the different variants to style your component.
 
-   You can make changes to the default variants with Tailwind to fit your project's theme.
-
-   You can also rename the variants and add your own variants to create more customization in your component.
-
-   To apply a certain variant to your component, all you need to do is define the variant property to your used component:
+   Additionally, you can make changes to the default variants with Tailwind to fit your project's theme. You can also rename the variants or add your own variants to create more customization in your component. See below for an example of adding a new variant:
 
    ```Typescript
-   <Button variant="outline">Click here</Button>
+   // Customize your button.tsx file
+   variant: {
+           default: "bg-primary text-primary-foreground hover:bg-primary/90",
+           destructive:
+           "bg-destructive text-destructive-foreground hover:bg-destructive/90",
+           outline:
+           "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
+           secondary:
+           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
+           ghost: "hover:bg-accent hover:text-accent-foreground",
+           link: "text-primary underline-offset-4 hover:underline",
+           // Your new variant!
+           dark: "bg-foreground text-background font-bold hover:bg-background hover:text-foreground hover:border"
+       },
+   ```
+
+   ```Typescript
+   // Use your new variant in your Button component
+   export function ButtonDark() {
+        return <Button variant="dark">Dark</Button>
+   }
    ```
 
    #### Customizing the Size
 
-   Sizing of the component can be customized to easily create responsive designs. Similar to variants, you can customize different sizes in the component file and use them in your project:
+   Sizing of the component can be customized to easily create responsive designs. Similar to variants, you can customize different sizes (by editing generated sizes or adding new sizes) in [button.tsx](#buttontsx) and use them in your project:
 
    ```Typescript
-   <Button variant="outline" size="lg">Click here</Button>
+   export function ButtonLarge() {
+        return <Button size="lg">Large Button</Button>
+   }
    ```
 
-   Similar to variants, you can rename the default sizes or add your own.
+## Resources
 
-See the shadcn/ui [documentation](https://ui.shadcn.com/docs/components/accordion) to see all the components that are available to re-use in your project.
+See the shadcn/ui [documentation](https://ui.shadcn.com/docs/components/accordion) to see all the components that are available to use in your project.
+
+Shadcn/ui uses CVA to introduce variants. See the [CVA documentation](https://cva.style/docs) to learn more about class variance authority.
