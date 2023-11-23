@@ -78,7 +78,7 @@ We can edit a view in two ways: manually or through the view inspector. Modifica
    
 <img width="252" alt="Screenshot 2023-11-23 at 12 35 54 AM" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/97854264/9f115e5b-7773-44e3-9e4b-48366bf54d2f">
 
-3. Select the color attribute and choose the color purple.\
+3. Select the color attribute and choose the color purple.
    
 <img width="351" alt="Screenshot 2023-11-23 at 12 36 25 AM" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/97854264/b6a04517-1aba-4dea-9b41-099aa592295b">
 
@@ -95,6 +95,7 @@ We can see how our user interface will look in light and dark modes. Select the 
 <img width="528" alt="Screenshot 2023-11-23 at 12 39 27 AM" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/97854264/d0c765f1-5fce-4c88-993b-729a8d9b612d">
 
 <img width="527" alt="Screenshot 2023-11-23 at 12 39 44 AM" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/97854264/eb34957e-5e9c-4ff6-9554-d8c8de007eb0">
+
 We can also view how the user interface will look in different orientations by selecting the “Orientation Variant.”
 
 <img width="530" alt="Screenshot 2023-11-23 at 12 40 07 AM" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/97854264/2ca289f4-b042-4abc-8720-56566890dc9e">
