@@ -42,9 +42,11 @@ Cypress has an extremely detailed guide for getting started, explains how to cre
 
 I highly recommend reading through the above two links, and the entirety of the core concepts section in the documentation. It gives a thorough introduction on how cypress works and how to use it to test your application.
 
-# Best Practices
+The first link provides a detailed guide on how cypress commands work and how to read the testing UI. 
 
-Cypress provides their own list of best practices here: [https://docs.cypress.io/guides/references/best-practices](https://docs.cypress.io/guides/references/best-practices)
+The second link provides a guide to most of the commonly used functions in cypress, like how to query for elements, check if they have or not have a specific property, actions such as clicking on buttons or filling out forms, and more. 
+
+# Best Practices
 
 One common use case for cypress (and UI testing in general) is to test responsiveness, does the UI look like it should in different viewports?
 
@@ -66,7 +68,7 @@ viewports.forEach(viewport => {
 }
 ```
 In tests, you can include snippets of code like  
-```
+```javascript
 if (viewport.name == ‘small’) {  
 	cy.get("@somedivmobileonly").should('exist')
 } else if (viewport.name == 'large') {
@@ -74,3 +76,26 @@ if (viewport.name == ‘small’) {
 } 
 ```
 
+Another common test for responsiveness is checking the alignment of items, for example testing that one element should be above another in a small viewport and beside another in a larger viewport. 
+
+In this case, you should use a closure (described in the [variables and aliases](https://docs.cypress.io/guides/core-concepts/variables-and-aliases) section) to store the first element's position: 
+
+```javascript
+cy.get('elem1').then($elem => {
+	cy.get('elem2').then($elem2 => {
+		let p1 = $elem.position()
+		let p2 = $elem2.position()
+		if (viewport.name == 'small') {
+			expect(p1.top).to.be.greaterThan(p2.top)
+			expect(p1.left).to.be.equal(p2.left)
+		} else {
+			expect(p1.top).to.be.equal(p1.top)
+			expect(p1.left).to.be.greaterThan(p1.left)
+		}
+	})
+})
+```
+
+Note the use of `expect` instead of `should`, since we are not chaining off of a cypress command we use an assertion instead. See [here](https://docs.cypress.io/guides/references/assertions) for other assertions. 
+
+For more, Cypress provides their own list of best practices here: [https://docs.cypress.io/guides/references/best-practices](https://docs.cypress.io/guides/references/best-practices). I highly recommend reading their guide, if I had known about this before, I would have saved a lot of effort learning the hard way what not to do. 
