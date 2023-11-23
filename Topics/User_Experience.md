@@ -187,45 +187,9 @@ This article provides the 7 Universal Design Principles that make software acces
 
 Figma is a free (for the most part) collaborative tool that lets you design and build mock-ups and prototypes of your software/applications. You may not need to build prototypes as a software developer/engineer, but you'll probably find yourself viewing Figma design files to build your frontend. So, now's a great time to start learning how to use [Figma](https://www,figma.com)!
 
-#### Developer Mode
+**Helpful tip:** With just a click of a button, you can switch to "developer mode" in Figma, which helps you translate design into code! Essentially, you can click on components like a button and get its corresponding code and styling. Read about how to use this feature [here](https://www.figma.com/dev-mode/).
 
-With just a click of a button, you can switch to "developer mode" in Figma, which helps you translate design into code! Essentially, you can click on components like a button and get its corresponding code and styling. Read about how to use this feature [here](https://www.figma.com/dev-mode/).
-
-#### Figma, MUI, and React
-
-See the [UI Component Libraries](https://learning-software-engineering.github.io/Topics/User_Experience.html#ui-component-libraries) section for details on MUI. Note that MUI is a component library for React _only_. You can download the** MUI extension on Figma** and immediately use MUI components in your Figma design. Then, when you're ready to code, you can install MUI in your React project and easily create your frontend by entering "developer mode" on your Figma design and copying the code that Figma generated for you.
-
-#### Optimizing Figma Design tools to easily convert into code
-
-As mentioned above, “[developer mode](https://www.figma.com/dev-mode/)” is an essential base to translating your Figma designs into usable code. Additionally, there are many design tools within Figma that you can take advantage of to set yourself up for easy code conversion:
-
-**Text Styles and Color Styles**
-
-Figma allows for users to define their own list of text styles (see [the official Figma article](https://help.figma.com/hc/en-us/articles/360039957034-Create-and-apply-text-styles)). Take advantage of this feature and ensure that your list of Figma text styles corresponds to your code base’s text css definitions. By doing this, you can ensure that your font texts are always properly styled without having to manually adjust them. Consider defining and using the following Figma text styles: `H1`, `H2`, `H3`, `H4`, `Button Text`, `Subheading`, `Body`.
-
-Similarly, Figma allows for users to define their own list of color styles (see [the official Figma article](https://help.figma.com/hc/en-us/articles/360039820134-Manage-and-share-styles)). Figma color styles is a very powerful tool and allows you to group various colors to organize into different modes and themes. In your actual frontend code, it’s likely that you will want a css file that defines your main color scheme and possible variations (ie. dark mode, secondary colors, etc.). Ensure that your Figma list of color styles corresponds to your code’s css definitions. Consider defining and using the following Figma color styles: `primary`, `secondary`, `primary text`, `secondary text`, `background`.
-
-**Additional Styles**
-
-On a related note, Figma allows for the options of Effect styling and Grid styling (see [the official Figma article](https://help.figma.com/hc/en-us/articles/360038746534-Create-color-text-effect-and-layout-grid-styles)). Both types of additional styling are valid attributes in css coding. Effect styling lets you define `drop shadow`, `inner shadow`, `layer blur`, and `background blur`. Grid styling lets you organize your frames in `row`, `column`, and `grid` formations. Consider using any of these additional styles and replicating them in your code with the same attribute keywords.
-
-**Components**
-
-Within Figma, you can define individual components, as explained in detail in [this official Figma article](https://help.figma.com/hc/en-us/articles/360038662654-Guide-to-components-in-Figma). In essence, Figma components work similarly to React components; components are reusable and modifying the characteristics of a component will modify every instance of the same component. Using these in your design can be especially helpful to create a good understanding for which components can/should be reusable in your actual codebase.
-
-Tip: if you are developing on iOS/iPadOS, there is a very helpful Apple plugin for making relevant mockups that can be found [here](https://www.figma.com/community/file/1248375255495415511).
-
-**Plugin Extensions**
-
-External plugin extensions are available in Figma to make your life easier and should definitely be taken advantage of. Plugin extensions are created by other community members and will usually have predefined components and icons that are relevant to certain libraries and frameworks that you are using in your own codebase.
-
-For example, those that are using the [ShadCN](https://ui.shadcn.com/) component library with their React project can benefit from an existing [ShadCN Figma plugin](https://www.figma.com/community/plugin/1280731237276040017/design-with-shadcn-ui-plugin). This plugin has already predefined all ShadCN components and icons for users to integrate into their Figma canvas. Using these plugins will not only help save time but also ensure that your Figma design and your code looks exactly the same.
-
-You can find a database of available plugins at [this Figma resource](https://www.figma.com/community/plugins).
-
-**Exporting assets**
-
-Within Figma, you are able to directly export assets (ie. images) in the exact dimensions that you define them as in your Figma canvas (see [the official Figma article](https://help.figma.com/hc/en-us/articles/360040028114-Export-from-Figma)). This can be especially useful to ensure your assets appear with the proper aspect ratio in your actual app. In particular, Figma allows you to export files in `jpg`, `png`, `svg`, and `pdf` format.
+**Figma, MUI, and React:** See the [UI Component Libraries](https://learning-software-engineering.github.io/Topics/User_Experience.html#ui-component-libraries) section for details on MUI. Note that MUI is a component library for React _only_. You can download the** MUI extension on Figma** and immediately use MUI components in your Figma design. Then, when you're ready to code, you can install MUI in your React project and easily create your frontend by entering "developer mode" on your Figma design and copying the code that Figma generated for you.
 
 ### Adobe XD
 
