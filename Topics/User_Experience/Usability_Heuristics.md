@@ -29,24 +29,34 @@ Information is power. Every time we make a decision in real life, whether it is 
 
 __How can we implement this?__
 
-- Explicitly convey the system status. An application provides a loading screen or a progress bar while the user waits for an action to complete.
+- Explicitly convey the system status. An application may provide a loading screen or a progress bar while the user waits for an action to complete.
+- Responsive design choices that indicate whether an action was successful or not; for example, an online marketplace should inform the user when an order goes through or fails to go through.
+- If the user makes a mistake, the system should inform them and invite them to fix that mistake. 
 
+Opaque systems frustrate users and lower usability. Aim for transparency.
 
 
 ### **2: Match between system and the real world**
 The system should use words, phrases, and concepts that are familiar to the user. Avoid using technical or system-oriented terms, and use real-world conventions that provide information in a natural and logical order that will make sense to the users of the system. If your application relates to things in the real world, ensure that the system accurately matches them.
 
 __Why is this important?__
-
+Engineers often communicate in technical terms that are familiar to them, but the end user for most non-specialist products is not likely to be well-versed with the same concepts and words. The user experience designer should avoid assuming that their interpretation of terminology, UI elements, etc. match with the interpretation of future users; to improve usability and user satisfaction, users should be able to intuitively understand the interface and its elements (6). Elaborate terminology and contrived interfaces are liable to confuse the users, while familiar terminology and commonly recognizable UI elements support this intuition.
 
 __How can we implement this?__
+- Use clear, simple terminology. When dealing with complex text like the terms of service for an application, a summary in plain language will improve accessibility.
+- For interface elements, we may use visual design to reflect a familiar object used to perform that task in real life. For a date-setting functionality, a small symbol of a calendar is suitable. Certain design elements are commonly understood (a symbol of a gear may often represent settings for an application).
 
 
-
-**Example:** An e-reading application that allows users to "highlight" words and phrases using a bright colour.
+**Example:** An e-reading application that allows users to "highlight" words and phrases using a bright colour might use a symbol of a marker to toggle the setting.
 
 ### **3: User control and freedom**
 Allow users to have an "emergency exit" for when they select certain system functions by mistake and want to return to their original state. Support options for undo and redo so users have more freedom over how they interact with the system. Users will change their minds or make mistakes, and will need a way to go back to the previous state.
+
+__Why is this important?__
+A sense of control and predictability is important for users, allowing them to build trust with the product and use it effectively (3). When a system does not tolerate mistakes, user errors cause major disruptions to the user's workflow and results in them losing control.
+
+__How can we implement this?__
+
 
 **Example:** An application where a user submits a form, if they change their mind or made a mistake, they can undo the submission. 
 
@@ -106,3 +116,5 @@ Heuristics Applied to Everyday Life: https://www.zenhaiku.com/archives/usability
 4. Nielsen, J. (1994, April 24). 10 usability heuristics for user interface design. Nielsen Norman Group. https://www.nngroup.com/articles/ten-usability-heuristics/ 
 
 5. Harley, A. (2018, June 3). Visibility of system status. Nielsen Norman Group. https://www.nngroup.com/articles/visibility-system-status/ 
+
+6. Kayley, A. (2018, July 1). Match between the system and the real world (usability heuristic #2). Nielsen Norman Group. https://www.nngroup.com/articles/match-system-real-world/ 
