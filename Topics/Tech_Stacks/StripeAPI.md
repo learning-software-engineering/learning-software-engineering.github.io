@@ -22,6 +22,7 @@ Stripe is a powerful payment processing platform that allows developers to seaml
 - [Sign up](https://stripe.com/docs/development/get-started) for a Stripe account.
 
 ## 3. Obtain API Keys
+Obtaining API keys is like getting the keys to the payment processing kingdom. They're your credentials to interact with Stripe's services. Emphasizing their significance and the need to keep them secure is crucial. It's like having the crown jewels—you wouldn't want them falling into the wrong hands!
 - In your [Stripe Dashboard](https://dashboard.stripe.com/), go to "Developers" > "API keys" to find your keys.
 
 ## 4. Install Stripe Library
@@ -38,6 +39,18 @@ Stripe is a powerful payment processing platform that allows developers to seaml
 - Follow the guide on [Accept a payment](https://stripe.com/docs/development/quickstart) for React.
 
 ## 6. Handle Webhook Events (Node.js)
+### What's a Webhook?
+
+A webhook is like a messenger that lets one application send real-time information to another. In the context of Stripe, it's how Stripe tells your application about events related to payments, subscriptions, and more.
+
+### Why Handle Webhook Events?
+
+Imagine you're running an online store. You don't want to sit there refreshing your order page to see if a payment went through. That's where webhooks come in. They notify your server immediately when something important happens in your Stripe account.
+
+### Example Scenario:
+
+Let's say a customer successfully completes a payment on your website. Without webhooks, your app might not know about this until it checks Stripe for updates. With webhooks, Stripe can instantly notify your server about the successful payment.
+
 - Create a server-side route using Express and the Stripe package to handle webhook events.  This ensures that your application responds to events triggered by Stripe.
 
 ## 7. Implement Subscription Logic (If Needed)
