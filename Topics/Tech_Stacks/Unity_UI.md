@@ -99,8 +99,8 @@ Now, you should have some basic understandings of Unity UI. But what makes Unity
 ## Additional resources
 [Get started with Unity UI (GUI system)](https://www.youtube.com/watch?v=xmR07iBW7zk&list=PL1aAeF6bPTB5N-_01xjNIOg9_refqTxVv&index=1): A series of tutorials that introduce Unity UI in great details!  
 [The Unity Tutorial For Complete Beginners](https://www.youtube.com/watch?v=XtQMytORBmM): A hands-on tutorial for making a Flappy Bird game!  
-[How To Get A Better Grid Layout in Unity](https://www.youtube.com/watch?v=CGsEJToeXmA&list=RDCMUCR35rzd4LLomtQout93gi0w&index=2)  
-[Optimization Tips For Unity UI](https://unity.com/how-to/unity-ui-optimization-tips)  
+[How To Get A Better Grid Layout in Unity](https://www.youtube.com/watch?v=CGsEJToeXmA&list=RDCMUCR35rzd4LLomtQout93gi0w&index=2): Organize your UI structurally  
+[Optimization Tips For Unity UI](https://unity.com/how-to/unity-ui-optimization-tips): How to make the most out of the Unity UI 
 
 ## References
 1. Unity Documentation: https://docs.unity3d.com/560/Documentation/Manual/UISystem.html  
