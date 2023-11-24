@@ -60,4 +60,10 @@ In the dynamic landscape of web development, the tandem use of Flask and Flask-S
 
 ## Additional Resources
 Here is the overview for the Flask documentation:
+[https://flask-sqlalchemy.palletsprojects.com/en/3.1.x/](https://flask.palletsprojects.com/en/3.0.x/)
+
+Here is an overview for the Flask-SQLAlchemy documentation:
 https://flask-sqlalchemy.palletsprojects.com/en/3.1.x/
+
+And here is a useful video for learning about Flask-SQLAlchemy:
+https://www.youtube.com/watch?v=uZnp21fu8TQ&t=1s&ab_channel=TechWithTim
