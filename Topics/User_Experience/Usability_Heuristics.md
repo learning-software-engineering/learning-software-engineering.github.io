@@ -71,37 +71,120 @@ These features should attempt to provide the 'exit' while maintaining a reflecti
 **Example:** An application where a user is required to submit a form as part of their registration. If they change their mind or made a mistake, the app should support the ability to undo the submission and/or modify previous submissions.
 
 ### **4: Consistency and standards**
-Users should not have to guess or assume if different words, situations, or actions mean the same thing. Follow design and platform conventions.
+Users should not have to wonder whether different words, situations, or actions mean the same thing. Follow platform and industry conventions. (4)
+
+__Why is this important?__
+
+As we've discussed earlier, a sense of control and predictability is important for usability and for the end users' satisfaction. 
+
+An inconsistent scheme results in a confusing user experience, makes it difficult to learn, and decreases usability. For example, a faulty website may use strange, esoteric symbols as part of the navigation menu. This may be functional, but will confuse users. Using commonly recognized symbols will avoid this particular issue, improving consistency with external standards. Another faulty website may use commonly recognized UI elements but position them inconsistently between pages or change their functionality depending on context. This will also confuse users.
+
+Consistent design choices in the context of your product improves internal consistency and thus improves predictability, learnability, and control for users familiarizing themselves with your product. Adopting popular conventions for user interfaces improves external consistency and thus improves predictability and learnability for new users (8). 
+
+__How can we implement this?__
+
+Internal Consistency: Once we have designed UX elements, we should be consistent in how they are presented to the user (the layout) and how they function (functional consistency). A 'back button' should be in the same place across all pages, and should ideally perform the same functionality (of going back an iteration whenever it is introduced). 
+
+External Consistency: We may research commonly-used UX standards and apply them to our own product in order to improve external consistency. For instance, the generic concept for a component that allows users to scroll through a set of images has a schema (image, buttons, light box) that is implemented to varying degrees of fidelity by different engineers. This schema is likely to be familiar to the end user, so basing our design off it will improve predictability.
+
 
 **Example:** An application consistently uses an "X" symbol to represent an exit, instead of using a undo button or a back button in some areas.  
 
 ### **5: Error prevention**
-Design the system to avoid problems from occurring in the first place by eliminating error-prone conditions or offering a solution if an error does occur. If the user makes a mistake, give them the opportunity to confirm if they would like to continue before committing to the action. 
+Design the system to avoid problems from occurring in the first place by eliminating error-prone conditions or offering a solution if an error does occur. If the user makes a mistake, give them the opportunity to confirm if they would like to continue before committing to the action.
 
-**Example:** When a user clicks exit on an application, a prompt asking "Are you sure you want to exit?" will pop up.
+__Why is this important?__
+"Users are often distracted from the task at hand, so prevent unconscious errors by offering suggestions, utilizing constraints, and being flexible." (9)
+
+According to the article "Preventing User Errors: Avoiding Unconscious Slips" (9), there are two types of user error.
+
+Slips occur when users intend to perform one action but accidentally perform another action. Examples may include making a spelling mistake when writing an essay or putting bleach into the washing machine while washing dyed clothing. These errors often occur as a result of inattention.
+
+
+Mistakes occur when "users have goals that are inappropriate for the current problem or task; even if they take the right steps to complete their goals, the steps will result in an error." For instance, a person attempting to debug a software program may follow all testing and problem-solving steps within the context of the code but be unable to find the error, if the problem is actually caused by an incorrectly installed external dependency.
+
+"Mistakes are conscious errors, and often (though not exclusively) arise when a user has incomplete or incorrect information about the task, and develops a mental model that doesn’t match how the interface actually works." (9)
+
+__How can we implement this?__
+Reducing Slips:
+
+As stated in the article, slip-type mistakes often happen when the user knows how to achieve their goal but make mistakes when trying to achieve it. While the user is in control, a successful software application may reduce slips by providing guidance and correction when slips occur and allowing the user to rectify problems.
+
+- User Constraints: Constraining the user in some circumstances can reduce the likelihood of error. For example, when the user is asked for their date of birth the system should reject the answer if that date is in the future; we may further implement input-validation features to ensure that nonsensical information (like incorrect postal codes) is not entered and that formatting is correct.
+
+- Offer Suggestions: We may provide suggestions to the user based on context. A website may offer completed results in the search bar based on what the user has entered instead of requiring an exact match.
+
+- Choose Good Defaults: Based on established user stories, we can offer defaults that fit an expected user requirement. The user will not need to specify all information if they use this default, eliminating the potential for error. For example, a website for booking restaurant reservations may suggest available timeslots.
+
+- Use Forgiving Formatting: "Some tasks really do require users to type very detailed or precise information, but forcing people to provide this information in a very specific format can be at odds with good usability practices: If you are asking users to input numerical information into a form, be flexible, and format that information in a way that is easily scannable (by humans, not machines) in order to prevent mistakes." (9) We may format user input automatically, or sanitize user input, or provide clear restrictions.
+
+Reducing Mistakes:
+
+When users interact with an application, they have a goal they want to achieve. Based on the user's understanding of how the system operates, the user forms a plan. Then they take action based on this plan, and see whether their goal has been achieved. Mistakes occur when there is a mismatch between user understanding of the software and how the software actually works, leading the user to create a plan that results in an unexpected outcome (10). Generally, to reduce mistakes it is necessary to both convey the designer's model of the application to the user and to design the application in such a way that it is intuitive and easy to learn.
+
+
+**Example:** 
 
 ### **6: Recognition rather than recall**
-Minimize the user having to memorize and intake a lot of information by making objects, actions, and options clearly visible. The user should not have to remember how to get from one point of the application to another. Instructions for how to use the system should be easily accessible and visible as well if appropriate. 
+Minimize the user having to memorize and intake a lot of information by making objects, actions, and options clearly visible. The user should not have to remember how to get from one point of the application to another. Instructions for how to use the system should be easily accessible and visible as well, if appropriate. 
+
+__Why is this important?__
+
+
+
+__How can we implement this?__
+
 
 **Example:** Having a navigation bar on a web application will allow users to go between different tabs without remembering how to get to them. 
 
 ### **7: Flexibility and efficiency of use**
 Provide accelerators or shortcuts for experienced users so they can complete common interactions in a more efficient manner. This allows both experienced and inexperienced users to utilize the system to their own personal abilities and preferences. This will allow expert users to take advantage of the feature, and newer users can ignore it. 
 
-**Example:** Having a keyboard shortcut for a common interaction on your website. 
+__Why is this important?__
+
+
+
+__How can we implement this?__
+
+**Example:** Having a keyboard shortcut for a common interaction on your website.
+
+
 
 ### **8: Aesthetic and minimalist design**
 Avoid providing unnecessary or irrelevant information to users. Keep dialogue concise and relevant to ensure that users are able to focus on the important aspects of the system and they are not overloaded with information that they don't need. 
+
+__Why is this important?__
+
+
+
+__How can we implement this?__
 
 **Example:** Having a simple introduction page for the website, that can be expanded upon when the "More Details" button is clicked.
 
 ### **9: Help users recognize, diagnose, and recover from errors**
 Provide accurate and straightforward error messages to users so they are able to understand and potentially fix the error. Ensure that error messages are written in simple terms, they clearly indicate the issue, and suggest potential fixes. 
 
+__Why is this important?__
+
+
+__How can we implement this?__
+
 **Example:** When the user incorrectly enters their email to log into a website, it gives an error message saying "There is no account with this email associated. Please carefully re-enter your information or sign up."
 
 ### **10: Help and documentation**
-It is better if a system can be easily used without documentation, but it may be necessary. In the case that your system is complicated and needs instructions, provide clear and concise instructions without any jargon that can be easily understood by new users. Ensure that the help documentation is easily found, searchable, and lists concrete steps. 
+It is better if a system can be easily used without documentation, but it may be necessary. In the case that your system is complicated and needs instructions, provide clear and concise instructions without any jargon that can be easily understood by new users. Ensure that the help documentation is easily found, searchable, and lists concrete steps.
+
+__Why is this important?__
+
+
+__How can we implement this?__
+
+
+
+__Why is this important?__
+
+
+__How can we implement this?__
 
 **Example:** A web application has a "help" tab with detailed instructions and documentation. 
 
@@ -130,3 +213,9 @@ Heuristics Applied to Everyday Life: https://www.zenhaiku.com/archives/usability
 6. Kayley, A. (2018, July 1). Match between the system and the real world (usability heuristic #2). Nielsen Norman Group. https://www.nngroup.com/articles/match-system-real-world/ 
 
 7. Rosala, M. (2020, November 29). User control and freedom (usability heuristic #3). Nielsen Norman Group. https://www.nngroup.com/articles/user-control-and-freedom/ 
+
+8. Krause, R. (2021, January 10). Maintain consistency and adhere to standards (usability heuristic #4). Nielsen Norman Group. https://www.nngroup.com/articles/consistency-and-standards/ 
+
+9. Laubheimer, P. (2015, August 23). Preventing user errors: Avoiding unconscious slips. Nielsen Norman Group. https://www.nngroup.com/articles/slips/ 
+
+10. Laubheimer, P. (2015, September 7). Preventing user errors: Avoiding conscious mistakes. Nielsen Norman Group. https://www.nngroup.com/articles/user-mistakes/ 
