@@ -88,6 +88,13 @@ This package provides a lot of customizations:
 
 and many more you can find on the official website: https://react-pdf.org/styling
 
+### Limitations
+
+- we cannot easily bold a part of text, it requires intalling a bold font library.
+- default font families are limited, and additional font families requires downloading them or obtain a font library url
+
+### Example project
+
 you can also check an example website I wrote using this library, this website uses react-pdf to power a resume generator
 
 - github repo: https://github.com/Ratbuyer/resume-builder
