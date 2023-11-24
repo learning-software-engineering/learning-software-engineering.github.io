@@ -1,14 +1,13 @@
 # Intro to Flask with Flask-SQLAlchemy
 
 
-## Introduction
-### What is Flask and why is it useful?
+## 1. Introduction
+###  What is Flask and why is it useful?
 Flask is a lightweight and flexible web framework for Python. Developed by Armin Ronacher, it is designed to be simple and easy to use, providing the essentials for building web applications without imposing rigid structures. Flask is often referred to as a "micro" framework because it focuses on keeping the core simple and extensible, allowing developers to choose the tools and libraries they need. 
 
 The inclusion of the Jinja2 templating engine, built-in development server and Flask's native support for RESTful request handling are desirable features. Its versatility in deployment and suitability for prototyping and small to medium-sized projects make Flask an ideal framework for projects where customization and control over the stack are key considerations.
 
-Here is an overview of Flask: 
-https://flask.palletsprojects.com/en/3.0.x/#
+Here is an overview of Flask: [Flask Overview](https://flask.palletsprojects.com/en/3.0.x/#)
 
 ### What is Flask-SQLAlchemy and why is it useful?
 
@@ -18,52 +17,48 @@ Some of the advantageous features include seamless integration with Flask, sessi
 
 
 
-## Getting set up
+## 2. Getting set up
 ### Setting up Flask:
-First install Flask following the instructions here
-https://flask.palletsprojects.com/en/3.0.x/installation/
+First install Flask following the instructions here: [Flask installation](https://flask.palletsprojects.com/en/3.0.x/installation/)
 
 This will make sure that all dependencies are obtained, the virtual environment is created and Flask is installed.
 
 Next, the Flask application can be set up. 
-This shows you how the project layout works:
-https://flask.palletsprojects.com/en/3.0.x/tutorial/layout/
+This shows you how the project layout works: [Project Layout](https://flask.palletsprojects.com/en/3.0.x/tutorial/layout/)
 
-And this is how to set the application up:
-https://flask.palletsprojects.com/en/3.0.x/tutorial/factory/
+And this is how to set the application up:[Application Setup](https://flask.palletsprojects.com/en/3.0.x/tutorial/factory/)
 
-Alternatively, there is also this useful quickstart guide for getting started quickly:
-https://flask.palletsprojects.com/en/3.0.x/quickstart/
+Alternatively, there is also this useful quickstart guide for getting started quickly:[Quickstart Guide](https://flask.palletsprojects.com/en/3.0.x/quickstart/)
 
 ### Setting up Flask-SQLAlchemy:
 Note that Flask-SQLAlchemy is a wrapper around SQLAlchemy, so it will be useful to check out the documentation and tutorial for using SQLAlchemy linked here:
-https://docs.sqlalchemy.org/en/20/tutorial/index.html
+[SQLAlchemy Documentation](https://docs.sqlalchemy.org/en/20/tutorial/index.html)
 
-Then follow these steps to get Flask-SQLAlchemy installed, then initialize and configure extensions. It also shows how to define models and create tables :
-https://flask-sqlalchemy.palletsprojects.com/en/3.1.x/quickstart/#installation
+Then follow [these steps](https://flask-sqlalchemy.palletsprojects.com/en/3.1.x/quickstart/#installation) to get Flask-SQLAlchemy installed, then initialize and configure extensions. It also shows how to define models and create tables.
 
 
-## Basic useful features
+
+## 3. Basic useful features
 ### Flask
 Here is the documentation with the basics needed to start developing using Flask. It assumes knowledge of Python, which I think should be safe to assume.
-https://flask.palletsprojects.com/en/3.0.x/tutorial/
+[Flask Basics](https://flask.palletsprojects.com/en/3.0.x/tutorial/)
 
 
 ### Flask-SQLAlchemy:
 Here are the basic useful features for using queries with Flask-SQLAlchemy. It shows the basics of things like inserting, deleting and updating in the database, selecting, and finally querying for views.
-https://flask-sqlalchemy.palletsprojects.com/en/3.1.x/queries/
+[Flask-SQLAlchemy Basics](https://flask-sqlalchemy.palletsprojects.com/en/3.1.x/queries/)
 
 
-## Conclusion
+## 4. Conclusion
 In the dynamic landscape of web development, the tandem use of Flask and Flask-SQLAlchemy emerges as a compelling solution, seamlessly blending simplicity with robust database capabilities. Setting up a Flask application becomes a swift endeavor, marked by the ease of installation and quick configuration. Flask's minimalistic design empowers developers with the freedom to choose and integrate components, facilitating rapid prototyping and efficient development. With the added integration of Flask-SQLAlchemy, the database layer becomes an integral part of the Flask ecosystem, offering a unified and expressive interface for model definition, database querying, and session management. Ultimately, the Flask and Flask-SQLAlchemy duo empowers developers to create scalable, maintainable, and feature-rich web applications.
 
 
-## Additional Resources
-Here is the overview for the Flask documentation:
-[https://flask-sqlalchemy.palletsprojects.com/en/3.1.x/](https://flask.palletsprojects.com/en/3.0.x/)
+## 5. Additional Resources
+[Here](https://flask.palletsprojects.com/en/3.0.x/) is the overview for the Flask documentation.
 
-Here is an overview for the Flask-SQLAlchemy documentation:
-https://flask-sqlalchemy.palletsprojects.com/en/3.1.x/
 
-And here is a useful video for learning about Flask-SQLAlchemy:
-https://www.youtube.com/watch?v=uZnp21fu8TQ&t=1s&ab_channel=TechWithTim
+[Here](https://flask-sqlalchemy.palletsprojects.com/en/3.1.x/) is an overview for the Flask-SQLAlchemy documentation.
+
+
+And [here](https://www.youtube.com/watch?v=uZnp21fu8TQ&t=1s&ab_channel=TechWithTim) is a useful video for learning about Flask-SQLAlchemy:
+
