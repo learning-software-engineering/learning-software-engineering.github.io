@@ -2,7 +2,15 @@
 
 ## Summary
 
-    this is the summary.
+This guide provides an overview of commonly-used React Native components for mobile app development.
+
+Key aspects of each component are covered:
+
+- descriptions of the component
+- key properties of the component
+- links to official documentation for additional information
+
+It aims to serve as a concise study aid and quick reference for developers to understand and effectively use React Native's tools and features.
 
 ## Table of contents
 
