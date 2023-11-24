@@ -1,6 +1,9 @@
 # Retries in web services
 
-Especially relevant for webserver applications, but useful for others, retries are really tricky to get right. 
+Especially relevant for webserver applications, but useful for others, retries are really tricky to get right.
+Retries are the practice of _retrying_ a network request, usually over HTTP or HTTPS, when it fails. It relies
+on the assumption that most failures are intermittent, meaning only happen rarely.
+
 Retries and throttling are both terms used to talk about the _flow_ of traffic into a service. Often the 
 operators/developers of that service want to make guarantees about the rate of that flow, or otherwise direct 
 traffic.
@@ -74,13 +77,29 @@ and sometimes introduce modal behavior in services [1], usually a bad thing.
 As always in software engineering, it depends. A good rule of thumb is the external/internal, where external 
 dependencies are wrapped in retries, but internal dependencies aren't. It's much easier to control the behavior of 
 internal dependencies, either by directly contributing to their product, or speaking to the owners of that product 
-itself. Retries are a rough bandaid, and more precise solutions are better. Fixing the root-cause of intermittent 
-failures avoids the problems with retries in the first place, and produces a more stable product.
+itself. Retries are a rough band-aid, and more precise solutions are often better. For example, it might be more work,
+but fixing the root-cause of intermittent failures avoids the problems with retries in the first place, and also 
+produces a more stable product.
 
 Retries are also more acceptable when they aren't in the _critical path_ of a service. For an `AddTwoNumbers` 
 service, having retries on dependencies within the main `AddTwoNumbers` API call might not be a good idea. However,
 for backup jobs, batch processing, or other non-performance-critical work, retries are often a simple, 
 engineering-efficient way to ensure reliability.
 
+## How should I retry?
+
+For most popular programming languages, retries are built into common dependencies. For example, 
+1. Rust has `tower`, a generic HTTP service abstraction that offers automatic retries: https://github.com/tower-rs/tower [2],
+2. JavaScript and Typescript have `retry`: https://www.npmjs.com/package/retry [3], and
+3. Go has `retry-go`: https://github.com/avast/retry-go [4]
+
+Each library works slightly differently, but can be used in simple or complex ways. For example, it could be as simple
+as immediately retrying the network request upon failure, or more complicated, including concepts like jitter (making sure
+many concurrent clients don't all retry at the same time), exponential backoff (clients retrying less and less over time),
+or other concepts [1].
+
 ## References
 1. https://brooker.co.za/blog/2021/05/24/metastable.html
+2. https://github.com/tower-rs/tower
+3. https://www.npmjs.com/package/retry
+4. https://github.com/avast/retry-go
