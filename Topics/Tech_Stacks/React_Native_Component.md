@@ -19,6 +19,9 @@
       A container for arranging and styling other components within the application, similar to div in web development.
    2. Props:
       - style (object/array): Sets the style of the View. - onLayuout (function): Callback when the layout of the View changes. - onStartShouldSetResponder (function): Determines if the View should become the responder when it is tapped or clicked. - onMoveShouldSetResponder (function): Determines if the View should continue to be the responder as it is being moved. - onResponderGrant (function): Callback when the View becomes the responder. - onResponderMove (function): Callback when the responder is being moved. - onResponderRelease (function): Callback when the responder is released. - onResponderTerminate (function): Callback when the responder is terminated. - onResponderTerminationRequest (function): Determines if the View should be terminated as the responder.
+   3. link:
+      > View: https://reactnative.dev/docs/view  
+      > Style props in View: https://reactnative.dev/docs/view-style-props
 
 2. **Text**
 
@@ -34,6 +37,9 @@
       - allowFontScaling (boolean): Determines whether font scaling should be applied to the Text content.
       - accessible (boolean): Indicates whether the Text is accessible for users.
       - accessibilityLabel (string): A label to describe the content of the Text for accessibility.
+   3. link
+      > Text: https://reactnative.dev/docs/text  
+      > Style props in Text: https://reactnative.dev/docs/text-style-props
 
 3. **Image**
 
@@ -47,6 +53,9 @@
       - onLoadStart (function): Callback when the image loading process starts.
       - onLoadEnd (function): Callback when the image loading process ends, regardless of success or failure.
       - onError (function): Callback when the image loading process fails.
+   3. link
+      > Image: https://reactnative.dev/docs/image  
+      > Styles prop in Image: https://reactnative.dev/docs/image-style-props
 
 4. **Button**
    1. Explanation:
@@ -54,6 +63,8 @@
    2. Props:
       - title (string): Sets the text label that appears on the button.
       - onPress(function): Calls the function when the button is pressed or tapped.
+   3. link
+      > https://reactnative.dev/docs/button
 
 ### List & Scrolling (#list-scrolling)
 
@@ -69,7 +80,9 @@
        - pagingEnabled (boolean): Determines whether to enable paging, making the ScrollView scroll one page at a time.
        - keyboardDismissMode (string): Defines how the keyboard is dismissed when scrolling. ('none', 'on-drag', 'interactive')
        - snapToAlignment (string): Defines the alignment for snapped-to items when paging, ('start', 'center', 'end')
-       - snapToInterval (number): Sets the interval between snap points when paging.
+       - snapToInterval (number): Sets the interval between snap points when paging
+    3. Link:
+       > https://reactnative.dev/docs/scrollview
 
 2.  **FlatList**
 
@@ -89,6 +102,8 @@
        - refreshing (boolean): Indicates whether the FlatList is currently refreshing. Use this with the onRefresh prop to implement pull-to-refresh functionality.
        - onRefresh (function): Callback when the refresh action is triggered.
        - ListHeaderComponent, ListFooterComponent, ListEmptyComponent (react element): A custom component to render at the top, bottom of the list, or when the data is empty.
+    3. link:
+       > https://reactnative.dev/docs/flatlist
 
 3.  **SectionList**
     1. Explanation:
@@ -104,6 +119,8 @@
        - refreshing (boolean): Indicates whether the FlatList is currently refreshing. Use this with the onRefresh prop to implement pull-to-refresh functionality.
        - onRefresh (function): Callback when the refresh action is triggered.
        - ListHeaderComponent, ListFooterComponent, ItemSeparatorComponentListEmptyComponent (react element): A custom component to render at the top, bottom of the list, between each item, or when the data is empty.
+    3. link
+       > https://reactnative.dev/docs/sectionlist
 
 ### Interactive Components (#interactive-components)
 
@@ -128,6 +145,8 @@
       - multiline (boolean): Indicates whether the input should support multiple lines of text.
       - secureTextEntry (boolean): Determines whether the text entered is obscured for sensitive information like passwords.
       - onSubmitEditing (function):Callback when the "submit" button on the keyboard is pressed.
+   3. link
+      > https://reactnative.dev/docs/textinput
 
 2. **Switch**
 
@@ -139,6 +158,8 @@
       - trackColor (object): Sets the color of the track
       - thumbColor (string): Sets the color of the thumb
       - disabled (boolean): Determines whether the switch is disabled.
+   3. link
+      > https://reactnative.dev/docs/switch
 
 3. **Slider**
 
@@ -156,6 +177,8 @@
       - minimumTrackTintColor, maximumTrackTintColor (string): Sets the color used for the track to the left/right of the button.
       - thumbTintColor(string): Sets the color of the thumb.
       - disabled: Determines whether to disable the slider.
+   3. link
+      > https://reactnative.dev/docs/slider
 
 4. **TouchableWithoutFeedback**
 
@@ -211,6 +234,8 @@
        - translucent (boolean): Determines whether the status bar should be translucent, making the app draw under the status bar, specific to Android.
        - networkActivityIndicatorVisible (boolean): Indicates whether the network activity indicator should be visible, specific to iOS.
        - showHideTransition (string): Defines the transition style for hidden property changes, specific to iOS. ('fade', 'slide')
+    3. link
+       > https://reactnative.dev/docs/statusbar
 
 2.  **Modal**
 
@@ -226,6 +251,8 @@
        - hardwareAccelerated (boolean): Determines whether to enable hardware acceleration for the modal, specific to Android.
        - presentationStyle (string): Determines the presentation style of the modal, specific to iOS. ( 'fullScreen', 'pageSheet', 'formSheet', 'overFullScreen'.)
        - statusBarTranslucent (boolean): Whether to allow the status bar to be translucent, specific to Android.
+    3. link
+       > https://reactnative.dev/docs/modal
 
 3.  **ActivityIndicator**
 
@@ -237,6 +264,8 @@
        - hidesWhenStopped (boolean): Determines whether the indicator should hide when not animating, specific to iOS
        - color (string): Sets the color of the spinner.
        - style (object/array): Sets the style of the activity indicator
+    3. link
+       > https://reactnative.dev/docs/activityindicator
 
 4.  **Linking**
 
@@ -250,15 +279,22 @@
        - onError (function): Callback when the URL handling operation is failed.
        - scheme (string): Sets the scheme of the URL, such as 'http', 'https'.
        - queryParams (object): Defines the query parameters to append to the URL when opening it.
+    3. link
+       > https://reactnative.dev/docs/linking
 
 5.  **SafeAreaView**
+
     1. Explanation:
        Automatically adjusts the height and position to account for the notch on iOS devices and status bar on Android.
     2. Props:
        - forcelnset (object): Configures the screen boundaries adjustment. ('top', 'bottom', 'left', 'right' to 'always', 'never', 'conditional').
        - edges (array)
        - style (object/array): Sets the style of the safeAreaView.
+    3. link
+       > https://reactnative.dev/docs/safeareaview
+
 6.  **KeyboardAvoidingView**
+
     1. Explanation:
        Used to avoid the app being obscured by the on-screen keyboard in text input
     2. Props:
@@ -266,6 +302,9 @@
        - keyboardVerticalOffset (number): Sets an additional offset when the keyboard is displayed, allowing for fine-tuning of the layout.
        - contentContainerStyle (style): Sets styles to the inner content container of the KeyboardAvoidingView
        - enabled (boolean): Controls whether the KeyboardAvoidingView is enabled or disabled
+    3. link
+       > https://reactnative.dev/docs/keyboardavoidingview
+
 7.  **Picker**
     1. Explanation:
        Used to allow users to select from a list of options in a dropdown menu
@@ -277,3 +316,5 @@
        - style (style): Sets the style of the Picker.
        - itemStyle (style): Sets the style of individual items within the Picker.
        - enabled (boolean): Determines whether the Picker is enabled or disabled.
+    3. link
+       > https://docs.expo.dev/versions/latest/sdk/picker/
