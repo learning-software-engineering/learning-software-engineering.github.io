@@ -33,9 +33,10 @@ The Canvas will not be created when you create a new project in Unity, however y
 1. right click anywhere in the hierarchy and select **UI > Canvas**
 2. directly create your first UI element and the Canvas will be automatically created along the way
 
-> Tip: If you find the Canvas is not facing towards you, click on the direction arrows on the orientation tool bar to modify the Canvas facing angle.
+![Screenshot 2023-11-23 at 10 41 24 PM](https://github.com/arielchen07/learning-software-engineering.github.io/assets/105243552/89523047-c4bc-4cf5-af52-ef8d4fec8b67)
 
-(image)
+> Tip: If you find the Canvas is not facing towards you, click on the direction arrows on the orientation tool bar to modify the Canvas facing angle.
+<img width="105" alt="Screenshot 2023-11-23 at 7 06 55 PM" src="https://github.com/arielchen07/learning-software-engineering.github.io/assets/105243552/db1220d1-d0ff-4516-a407-50ad58ad9cbc">
 
 ## Add UI element
 
@@ -43,19 +44,19 @@ UI elements will be created as the children of the Canvas Game Object.
 
 To create a new UI element, click on the menu **GameObject** or right click anywhere in the hierarchy, hover to **UI** and choose the type of element you want. 
 
-(Image)
+![Screenshot 2023-11-22 at 10 54 32 PM](https://github.com/arielchen07/learning-software-engineering.github.io/assets/105243552/1e6a09e6-0c84-4a2e-b267-da4646fa77bb)
 
 Here, we take Text Game Object as an example. By choosing **Text > TextMeshPro**, you should have a new Text(TMP) Game Object created in the left-side panel of Hierarchy.  
 
 You can create many other types of Game Objects in the simialr fashion.
-
-(Image)
 
 ## Hierarchy: Order of UI element
 
 You probably feel confused when first see Hierarchy in the last section. What is Hierarchy?
 
 In Unity UI, all UI elements will be draw to the Canvas in the same order as they appeared under Canvas Game Object in Hierarvhy window. In other words, if two Game Objects have some overlap, then the latter obejct will be on the top as it will be drawn later.
+
+![Screenshot 2023-11-23 at 12 06 47 AM](https://github.com/arielchen07/learning-software-engineering.github.io/assets/105243552/966981f3-0d0b-48cb-8ac2-56ed2e28ed22)
 
 You can change the order of Game Object by simply drawing them in the Hierarchy window.
 
@@ -68,13 +69,15 @@ Here are some basics tools that you might need during the design.
 ### The Rect Tool
 On the top left of the toolbar, you will find some rect tools that can help you manupulate your UI element.
 
-(image)
+![GUI_Rect_Tool_Button](https://github.com/arielchen07/learning-software-engineering.github.io/assets/105243552/c0f7e468-d19f-43ee-9ba4-5f31230f9fb4)
 
 With that said, you can move, resize and rotate UI elements once you select the UI element. You can move the UI element by clicking somewhere inside the element and dragging it tp the place you want. You can resize it by clicking on the edges or corners and dragging. The element can be rotated by hovering the cursor slightly away from the corners until the mouse cursor looks like a rotation symbol. You can then click and drag in either direction to rotate.
 
 ## Inspector
 
 If you double clicked the UI element in the Hierarchy window, you should have the Inspector window shown on your right. All the properties and components of the UI element should be editable in the Inspector window.
+
+<img width="343" alt="Screenshot 2023-11-23 at 6 42 01 PM" src="https://github.com/arielchen07/learning-software-engineering.github.io/assets/105243552/f64fe1d8-c602-4d20-ba19-f6a5085ffe8d">
 
 Most of the components are intuitive to understand and easy to modify, so here we will introduce one of the most important components for all Game Objects:
 
@@ -87,7 +90,9 @@ Rect Transform helps modify the position, rotation, and scale of the Game Object
 
 **Anchor**: Anchors are shown as four small triangular in the Scene View. The anchoring allows the child to stretch together with the width or height of the parent. Each corner of the rectangle has a fixed offset to its corresponding anchor. This way the different corners of the rectangle can be anchored to different points in the parent rectangle. You can also think of Anchor as setting relative position to the parent object.
 
-(image)
+![UI_Anchored1](https://github.com/arielchen07/learning-software-engineering.github.io/assets/105243552/f29a495b-a757-4417-bc4e-b06cb6872cf1)
+
+![UI_Anchored2](https://github.com/arielchen07/learning-software-engineering.github.io/assets/105243552/b0562aeb-a95a-4347-80f6-41d45ef03b27)
 
 ## How fancy the Unity UI can be
 
