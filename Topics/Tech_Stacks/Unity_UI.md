@@ -8,6 +8,7 @@
 #### [Customize your UI element!](#customize-your-ui-element)
 #### [How fancy the Unity UI can be](#how-fancy-the-unity-ui-can-be)
 #### [Additional resources](#additional-resources)
+#### [References](#references)
 
 ## Introduction
 
@@ -37,9 +38,9 @@ UI elements will be created as the children of the Canvas Game Object.
 
 To create a new UI element, click on the menu **GameObject** or right click anywhere in the hierarchy, hover to **UI** and choose the type of element you want. 
 
-![Screenshot 2023-11-22 at 10 54 32 PM](https://github.com/arielchen07/learning-software-engineering.github.io/assets/105243552/1e6a09e6-0c84-4a2e-b267-da4646fa77bb)
+![Screenshot 2023-11-23 at 10 47 23 PM](https://github.com/arielchen07/learning-software-engineering.github.io/assets/105243552/9df58333-1d4c-4462-beda-23d9bed33d89)
 
-Here, we take Text Game Object as an example. By choosing **Text > TextMeshPro**, you should have a new Text(TMP) Game Object created in the left-side panel of Hierarchy.  
+Here, we take Text Game Object as an example. By choosing **Text > TextMeshPro**, you should have a new Text Game Object created in the left-side panel of Hierarchy.  
 
 You can create many other types of Game Objects in the simialr fashion.
 
@@ -95,9 +96,12 @@ Now, you should have some basic understandings of Unity UI. But what makes Unity
 
 2. Integration with Game Development: As we mentioned above, you can attach C# scripts to UI elements! This enable the UI to respond to user input and integrate with the overall game logic.
 
-
 ## Additional resources
 [Get started with Unity UI (GUI system)](https://www.youtube.com/watch?v=xmR07iBW7zk&list=PL1aAeF6bPTB5N-_01xjNIOg9_refqTxVv&index=1): A series of tutorials that introduce Unity UI in great details!  
 [The Unity Tutorial For Complete Beginners](https://www.youtube.com/watch?v=XtQMytORBmM): A hands-on tutorial for making a Flappy Bird game!  
 [How To Get A Better Grid Layout in Unity](https://www.youtube.com/watch?v=CGsEJToeXmA&list=RDCMUCR35rzd4LLomtQout93gi0w&index=2)  
 [Optimization Tips For Unity UI](https://unity.com/how-to/unity-ui-optimization-tips)  
+
+## References
+1. Unity Documentation: https://docs.unity3d.com/560/Documentation/Manual/UISystem.html  
+2. Unity UI Manual: https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/index.html  
