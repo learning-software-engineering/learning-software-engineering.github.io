@@ -3,8 +3,8 @@
 ## Table of contents
 ### [Prerequisites](#prerequisites-1)
 ### [Introduction](#introduction-1)
-### [PostgreSQL installation](#postgresql-installation-1)
-### [psycopg2 installation](#psycopg2-installation-1)
+### [PostgreSQL Installation](#postgresql-installation-1)
+### [psycopg2 Installation](#psycopg2-installation-1)
 ### [Setup Database and Basic Table Operations in PostgreSQL](#setup-database-and-basic-table-operations-in-postgresql-1)
 ### [Setup and PostgreSQL Operations in psycopg2](#setup-and-postgresql-operations-in-psycopg2-1)
 ### [Additional Resources](#additional-resources-1)
@@ -19,7 +19,7 @@ Before learning about PostgreSQL and psycopg2, ensure that you have knowledge ab
 ## Introduction
 PostgreSQL is an open-source DBMS. As the name states, PostgreSQL is a relational Database Management System (DBMS) based on relations and queries and is great for dealing with large amounts of data and complex queries. It's also good for referencing data quickly and allowing the user to have some flexibility in how they want to represent their data. Furthermore, PostgreSQL supports table inheritance and function overloading.
 
-pyscopg2 is an adapter for Python that allows you to easily integrate PostgreSQL into your program. It's commonly used with other Python libraries like Flask, which allows you to use a PostgreSQL database in your application easily.
+pyscopg2 is an adapter for Python that allows you to easily perform PostgreSQL operations in your Python programs. It's commonly used with other Python libraries like Flask, which collectively allow you to modify a PostgreSQL database in your application with minimal hassle.
 
 ## PostgreSQL installation
 The following link is to download PostgreSQL onto your computer: https://www.postgresql.org/download/ . This link also shows the different versions of PostgreSQL to match your computer. Follow the instructions after downloading. For your convenience, here are the links to download the installer for PostgreSQL on different OS:
@@ -35,9 +35,8 @@ For Windows users, the user should download PostgreSQL through the link provided
 1. Add the PostgreSQL bin directory path to the PATH environment variable.
 2. Run the command "psql -U username"
 
-## psycopg2 installation
-To install psycopg2, you can use pip to install its functionality by using the command:
-"pip install psycopg2". After installing this in your desired directory, you can import psycopg2 into your python files and perform PostgreSQL queries very intuitively.
+## psycopg2 Installation
+To work with psycopg2, you can use pip to install it by running `pip install psycopg2` in your console. Make sure you execute this command in the directory you will be using psycopg2. Once finished, you can import psycopg2 (`import psycopg2` at the top of the relevant Python file), and perform the desired operations.
 
 ## Setup Database and Basic Table Operations in PostgreSQL
 A quick and basic runover of PostgreSQL.
@@ -127,21 +126,19 @@ There are many other features of PostgreSQL.
 Specifics of the syntax of PostgreSQL can be found in this [link](https://www.postgresql.org/docs/current/sql-syntax.html).
 
 ## Setup and PostgreSQL Operations in psycopg2
-As a quick run over, to start using PostgreSQL in a Python program, you must first set up the psycopg2 module in a Python file. 
+To start using PostgreSQL in a Python program with psycopg2, ensure you have finished the relevant installations, then follow the instructions below:
 
-This can be done by:
+1. Create a database in PostgreSQL. This can be done through the command line or pgAdmin. The following steps occur in your python script.
+2. Import psycopg2 (see [psycopg2 Installation](#psycopg2-installation-1) above for details).
+3. Connect to the new database with connect, eg. `conn = psycopg2.connect("dbname=test user=postgres")`. In this example, *test* is the name of the database that you created, and *postgres* is the default username when you install PostgreSQL. *conn* refers to the Connection (class) you have created, and can be continually referenced until you close the connection, eg. `conn.close()`. It is reccommended to close the connection when you are finished with it.
+4. To use your new Connection, you must initialize a Cursor (class) with it. This will allow you to perform PostgreSQL operations on the database. Do this with `cur = conn.cursor()`, where *conn* is our previous Connection, and *cur* is our new Cursor.
+5. Using the cursor, you can execute any PostgreSQL command, which will be executed on your database via the settings specified in connect() (see step 3). The PostgreSQL query `SELECT * FROM test;`, for instance, would be executed with `cur.execute("SELECT * FROM test;")`. You can make use of Python's native operations to aid you in your database operations, if you wish. Remember to **never give users direct access to the input of the execute function**. If users can insert text that directly makes its way into the input string, you may be allowing [sql injection](https://www.w3schools.com/sql/sql_injection.asp#:~:text=SQL%20injection%20is%20a%20code,statements%2C%20via%20web%20page%20input.), which could damage or destroy the contents of your database, and leak sensitive information.
+6. When you have made your desired changes, use `conn.commit()` to save the changes to your database, and then close your connection with `conn.close()`. If you do not commit the changes, your work will not transfer to your database, but note that if you are only querying data and not making changes, the commit is not required.
 
-1. Create a database in PostgreSQL. This can be done through the command line or pgAdmin.
-Next, all steps are in your python script.
-2. "import psycopg2" at the start of your python script.
-3. Connect to the new database by running, for example: "conn = psycopg2.connect("dbname=test user=postgres")". In this example, "test" is the name of the database that you created and "postgres" is the default username when you install PostgreSQL.
-4. Initialize a cursor with the connection to be able to perform PostgreSQL operations on the database. You can do this by "cur = conn.cursor()"
-5. You can execute any PostgreSQL command through this cursor. For example: "cur.execute("SELECT * FROM test;")". This includes commands like creating tables using PostgreSQL syntax.
-6. You can use "conn.commit()" to save the changes to your database.
- 
-Specifics of syntax, such as passing in python variables as values in a query, and module use of psycopg2 can be found in this [link](https://www.psycopg.org/docs/usage.html#passing-parameters-to-sql-queries). The syntax that involves making queries in psycopg2 is the same as PostgreSQL.
+psycopg2 can also be used for data processing, with built-in functions such as `fetchone()` and `fetchmany(x)` that return one row and x rows from a query response, respectively. From the example in step 5, after we run `cur.execute("SELECT * FROM test;")`, we can do `row = cur.fetchone()` to save the first row we selected from test to *row*.
 
-There are good examples in the link provided. Here is a link with even more examples to aid you in using psycopg2: https://wiki.postgresql.org/wiki/Psycopg2_Tutorial
+For a comprehensive collection of psycopg2 information, including all provided functions and syntax, visit the [offical documentation](https://www.psycopg.org/docs/index.html#).
 
 ## Additional Resources
-- This link provides some information on how to link psycopg2 and flask: https://www.geeksforgeeks.org/making-a-flask-app-using-a-postgresql-database/
+- For further psycopg2 examples, visit this [link](https://wiki.postgresql.org/wiki/Psycopg2_Tutorial).
+- For information on using psycopg2 for a flask application, visit this [article](https://www.geeksforgeeks.org/making-a-flask-app-using-a-postgresql-database/).
