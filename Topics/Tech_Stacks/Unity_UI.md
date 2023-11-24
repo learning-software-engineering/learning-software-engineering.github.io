@@ -2,8 +2,8 @@
 
 ### Table of contents
 #### [Introduction](#introduction)
-#### [Canvas](#canvas)
-#### [UI element](#ui-element)
+#### [Start with Canvas](#start-with-canvas)
+#### [Add UI element](#add-ui-element)
 #### [Hierarchy: Order of UI element](#hierarchy-order-of-ui-element)
 #### [Customize your UI element!](#customize-your-ui-element)
 #### [How fancy the Unity UI can be](#how-fancy-the-unity-ui-can-be)
