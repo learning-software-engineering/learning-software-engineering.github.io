@@ -8,8 +8,8 @@
 
 - [Basic UI Components](#basic-ui-components): View, Text, Image, Button
 - [List & Scrolling](#list-scrolling): Scrollview, FlatList, SectionList
-- [Interactive Components](#interactive-components): TextInput, Switch, Slider, TouchableWithoutFeedback, TouchableOpacity, TouchableHighlight
-- [Utilities & Overlay](#utilities--overlay): StatusBar, Modal, ActivityIndicator, Linking, SafeAreaView, KeyboardAvoidingView, Picker
+- [Interactive Components](#interactive-components): TextInput, Switch, TouchableWithoutFeedback, TouchableOpacity, TouchableHighlight
+- [Utilities & Overlay](#utilities--overlay): StatusBar, Modal, ActivityIndicator, Linking, SafeAreaView, KeyboardAvoidingView
 
 ### Basic UI components {#basic-ui-components}
 
@@ -161,26 +161,7 @@
    3. link
       > https://reactnative.dev/docs/switch
 
-3. **Slider**
-
-   1. Explanation:
-      Allows users to select a value from a range by dragging a thumb across a track, typically used for adjusting settings like volume or brightness.
-   2. Props:
-      - value (number): Sets the current value of the slider.
-      - minimumValue, maximumValue (number): Determines the minimum value the slider can take.
-      - step (number): Sets the smallest change between values.
-      - style (object/array): Sets the style of the slider.
-      - trackStyle (object/array): Sets the style of the track.
-      - thumbStyle (object/array): Sets the style of the thumb.
-      - onValueChange (function): Callback when the user drags the slider.
-      - onSlidingComplete (function): Callback when the user releases the slider.
-      - minimumTrackTintColor, maximumTrackTintColor (string): Sets the color used for the track to the left/right of the button.
-      - thumbTintColor(string): Sets the color of the thumb.
-      - disabled: Determines whether to disable the slider.
-   3. link
-      > https://reactnative.dev/docs/slider
-
-4. **TouchableWithoutFeedback**
+3. **TouchableWithoutFeedback**
 
    1. Explanation:
       A wrapper for providing touchable behavior without any visual feedback when pressed.
@@ -196,7 +177,7 @@
    3. link
       > https://reactnative.dev/docs/touchablewithoutfeedback
 
-5. **TouchableOpacity**
+4. **TouchableOpacity**
 
    1. Explanation:
       A wrapper for providing touchable behavior with opacity feedback when pressed.
@@ -207,7 +188,7 @@
    3. link
       > https://reactnative.dev/docs/touchableopacity
 
-6. **TouchableHighlight**
+5. **TouchableHighlight**
    1. Explanation:
       A wrapper for providing touchable behavior with underlay feedback when pressed.
    2. Props:
@@ -304,17 +285,3 @@
        - enabled (boolean): Controls whether the KeyboardAvoidingView is enabled or disabled
     3. link
        > https://reactnative.dev/docs/keyboardavoidingview
-
-7.  **Picker**
-    1. Explanation:
-       Used to allow users to select from a list of options in a dropdown menu
-    2. Props:
-       - selectedValue (any): Represents the currently selected value.
-       - onValueChange (function): Callback when the user selects a new value.
-       - mode (string): Sets the mode of the Picker. ('dialog', 'dropdown' for Android)
-       - prompt (string): Sets the prompt message displayed at the top, specific to iOS.
-       - style (style): Sets the style of the Picker.
-       - itemStyle (style): Sets the style of individual items within the Picker.
-       - enabled (boolean): Determines whether the Picker is enabled or disabled.
-    3. link
-       > https://docs.expo.dev/versions/latest/sdk/picker/
