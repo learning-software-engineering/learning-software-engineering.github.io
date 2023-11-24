@@ -130,10 +130,17 @@ Minimize the user having to memorize and intake a lot of information by making o
 
 __Why is this important?__
 
+"Recognition refers to our ability to “recognize” an event or piece of information as being familiar, while recall designates the retrieval of related details from memory (11)." According to this heuristic, we should design our software product to help users recognize elements and desired choices without needing them to recall too many specifics.
 
+A modern user employs a variety of different software applications in their everyday life, and our application often will not occupy any special role for them that justifies the effort of memorizing exactly how to operate it. A dense and difficult to decipher user experience will discourage all users and drive them to seek alternatives, while a clear user interface is easier to learn and navigate. Users should not be expected to go out of their way to memorize how your system works (11).
 
 __How can we implement this?__
 
+- Research common user stories and use cases, and design the interface to enable users to go through these processes with minimal confusion. Users should be able to recognize information in-context instead of needing to remember it.
+
+- Streamline user experience. Avoid nesting functionality if possible (i.e. users should not need to memorize certain paths to certain functionality)
+
+- When instructions and help needs to be provided, try to provide this in context as opposed to requiring them to look it up. Reduce the amount of information the user must memorize.
 
 **Example:** Having a navigation bar on a web application will allow users to go between different tabs without remembering how to get to them. 
 
@@ -180,12 +187,6 @@ __Why is this important?__
 __How can we implement this?__
 
 
-
-__Why is this important?__
-
-
-__How can we implement this?__
-
 **Example:** A web application has a "help" tab with detailed instructions and documentation. 
 
 ## **Additional Resources**
@@ -219,3 +220,5 @@ Heuristics Applied to Everyday Life: https://www.zenhaiku.com/archives/usability
 9. Laubheimer, P. (2015, August 23). Preventing user errors: Avoiding unconscious slips. Nielsen Norman Group. https://www.nngroup.com/articles/slips/ 
 
 10. Laubheimer, P. (2015, September 7). Preventing user errors: Avoiding conscious mistakes. Nielsen Norman Group. https://www.nngroup.com/articles/user-mistakes/ 
+
+11. Budiu, R. (2014, July 6). Memory recognition and recall in user interfaces. Nielsen Norman Group. https://www.nngroup.com/articles/recognition-and-recall/ 
