@@ -1,0 +1,105 @@
+# A Beginner's Guide for Unity UI Design
+
+## Table of contents
+
+### [Introduction](#introduction)
+
+### [Canvas](#canvas)
+
+### [UI element](#ui-element)
+
+### [Hierarchy: Order of UI element](#hierarchy-order-of-ui-element)
+
+### [Customize your UI element!](#customize-your-ui-element)
+
+### [How fancy the Unity UI can be](#how-fancy-the-unity-ui-can-be)
+
+### [Additional resources](#additional-resources)
+
+## Introduction
+
+Unity is one of the most powerful tool for game development while the User Interface (UI) 
+provides the most direct way to interact and guide users. Unity has its own Uinity UI system that allows game developers to create dynamic and interactive User Interface design while can also integrate into the game fast and quick.
+
+Here is a guidance for beginners to start designing their UI in Unity. For more details, please go and check the official [Unity Documentations](https://docs.unity3d.com/2023.3/Documentation/Manual/UIToolkits.html) for the version that you use.
+
+## Start with Canvas
+
+The Canvas is the place where you create and design your UI. It is independent from the actually game scene design and all other Game Objects, and you will find it always on top your other 3D objects or 2D sprite. However, what is cool about Unity UI is taht you can connect the UI with the actually game through game logic scripts.
+
+The Canvas is a Game Object with a Canvas component on it. All the UI element that you created later will be the children of a Canvas.
+
+The Canvas will not be created when you create a new project in Unity, however you can create it by either of the following:
+1. right click anywhere in the hierarchy and select **UI > Canvas**
+2. directly create your first UI element and the Canvas will be automatically created along the way
+
+> Tip: If you find the Canvas is not facing towards you, click on the direction arrows on the orientation tool bar to modify the Canvas facing angle.
+
+(image)
+
+## Add UI element
+
+UI elements will be created as the children of the Canvas Game Object.
+
+To create a new UI element, click on the menu **GameObject** or right click anywhere in the hierarchy, hover to **UI** and choose the type of element you want. 
+
+(Image)
+
+Here, we take Text Game Object as an example. By choosing **Text > TextMeshPro**, you should have a new Text(TMP) Game Object created in the left-side panel of Hierarchy.  
+
+You can create many other types of Game Objects in the simialr fashion.
+
+(Image)
+
+## Hierarchy: Order of UI element
+
+You probably feel confused when first see Hierarchy in the last section. What is Hierarchy?
+
+In Unity UI, all UI elements will be draw to the Canvas in the same order as they appeared under Canvas Game Object in Hierarvhy window. In other words, if two Game Objects have some overlap, then the latter obejct will be on the top as it will be drawn later.
+
+You can change the order of Game Object by simply drawing them in the Hierarchy window.
+
+## Customize your UI element!
+
+At this point, you should know how to create different kinds of UI element on the Canvas. Now it is the time to design them with your unique style!
+
+Here are some basics tools that you might need during the design.
+
+### The Rect Tool
+On the top left of the toolbar, you will find some rect tools that can help you manupulate your UI element.
+
+(image)
+
+With that said, you can move, resize and rotate UI elements once you select the UI element. You can move the UI element by clicking somewhere inside the element and dragging it tp the place you want. You can resize it by clicking on the edges or corners and dragging. The element can be rotated by hovering the cursor slightly away from the corners until the mouse cursor looks like a rotation symbol. You can then click and drag in either direction to rotate.
+
+## Inspector
+
+If you double clicked the UI element in the Hierarchy window, you should have the Inspector window shown on your right. All the properties and components of the UI element should be editable in the Inspector window.
+
+Most of the components are intuitive to understand and easy to modify, so here we will introduce one of the most important components for all Game Objects:
+
+### Rect Transform
+Rect Transform helps modify the position, rotation, and scale of the Game Object, while it also has a width and height attribute that can decide the dimensions of the UI element.
+
+**Pivot** and **Anchor** are two useful concept to understand here. 
+
+**Pivot**: Pivot is a small circle on the UI element. All the modifications like rotation, size, and scale, will based on the position of the pivot. You can try different positions of pivot to see how it affects the outcome of a rotation, resizing, or scaling. 
+
+**Anchor**: Anchors are shown as four small triangular in the Scene View. The anchoring allows the child to stretch together with the width or height of the parent. Each corner of the rectangle has a fixed offset to its corresponding anchor. This way the different corners of the rectangle can be anchored to different points in the parent rectangle. You can also think of Anchor as setting relative position to the parent object.
+
+(image)
+
+## How fancy the Unity UI can be
+
+Now, you should have some basic understandings of Unity UI. But what makes Unity UI so different is that it supports many fancy functionalities that other UIs don't have.
+
+1. UI Animation: WIth Unity UI Animation System, UI elements properties, such as position, scale, or color, can be modified over time. Check out the video [Master UI ANIMATIONS!](https://www.youtube.com/watch?v=YqMpVCPX2ls&list=PL1aAeF6bPTB5N-_01xjNIOg9_refqTxVv&index=16) for more vivid demonstrations.
+
+2. Integration with Game Development: As we mentioned above, you can attach C# scripts to UI elements! This enable the UI to respond to user input and integrate with the overall game logic.
+
+
+## Additional resources
+[Get started with Unity UI (GUI system)](https://www.youtube.com/watch?v=xmR07iBW7zk&list=PL1aAeF6bPTB5N-_01xjNIOg9_refqTxVv&index=1): A series of tutorials that introduce Unity UI in great details!
+[The Unity Tutorial For Complete Beginners](https://www.youtube.com/watch?v=XtQMytORBmM): A hands-on tutorial for making a Flappy Bird game!
+[How To Get A Better Grid Layout in Unity](https://www.youtube.com/watch?v=CGsEJToeXmA&list=RDCMUCR35rzd4LLomtQout93gi0w&index=2)
+[Optimization Tips For Unity UI](https://unity.com/how-to/unity-ui-optimization-tips)
