@@ -1,20 +1,13 @@
 # A Beginner's Guide for Unity UI Design
 
-## Table of contents
-
-### [Introduction](#introduction)
-
-### [Canvas](#canvas)
-
-### [UI element](#ui-element)
-
-### [Hierarchy: Order of UI element](#hierarchy-order-of-ui-element)
-
-### [Customize your UI element!](#customize-your-ui-element)
-
-### [How fancy the Unity UI can be](#how-fancy-the-unity-ui-can-be)
-
-### [Additional resources](#additional-resources)
+### Table of contents
+#### [Introduction](#introduction)
+#### [Canvas](#canvas)
+#### [UI element](#ui-element)
+#### [Hierarchy: Order of UI element](#hierarchy-order-of-ui-element)
+#### [Customize your UI element!](#customize-your-ui-element)
+#### [How fancy the Unity UI can be](#how-fancy-the-unity-ui-can-be)
+#### [Additional resources](#additional-resources)
 
 ## Introduction
 
@@ -104,7 +97,7 @@ Now, you should have some basic understandings of Unity UI. But what makes Unity
 
 
 ## Additional resources
-[Get started with Unity UI (GUI system)](https://www.youtube.com/watch?v=xmR07iBW7zk&list=PL1aAeF6bPTB5N-_01xjNIOg9_refqTxVv&index=1): A series of tutorials that introduce Unity UI in great details!
-[The Unity Tutorial For Complete Beginners](https://www.youtube.com/watch?v=XtQMytORBmM): A hands-on tutorial for making a Flappy Bird game!
-[How To Get A Better Grid Layout in Unity](https://www.youtube.com/watch?v=CGsEJToeXmA&list=RDCMUCR35rzd4LLomtQout93gi0w&index=2)
-[Optimization Tips For Unity UI](https://unity.com/how-to/unity-ui-optimization-tips)
+[Get started with Unity UI (GUI system)](https://www.youtube.com/watch?v=xmR07iBW7zk&list=PL1aAeF6bPTB5N-_01xjNIOg9_refqTxVv&index=1): A series of tutorials that introduce Unity UI in great details!  
+[The Unity Tutorial For Complete Beginners](https://www.youtube.com/watch?v=XtQMytORBmM): A hands-on tutorial for making a Flappy Bird game!  
+[How To Get A Better Grid Layout in Unity](https://www.youtube.com/watch?v=CGsEJToeXmA&list=RDCMUCR35rzd4LLomtQout93gi0w&index=2)  
+[Optimization Tips For Unity UI](https://unity.com/how-to/unity-ui-optimization-tips)  
