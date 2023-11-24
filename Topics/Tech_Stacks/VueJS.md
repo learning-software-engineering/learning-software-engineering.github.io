@@ -92,3 +92,12 @@ Here is a simple example of a click counter, where `count` will increment every 
 - Angular is a full-fledged MVC framework, which is more opinionated than Vue.js.
 - Vue.js offers a more lightweight and flexible solution with less overhead.
 - Angular's learning curve is steeper compared to Vue.js.
+
+
+## Useful Links
+- [Vue.JS official website](https://vuejs.org)
+- Famous projects made with Vue:
+  - [GitLab](https://gitlab.com/gitlab-org/gitlab)
+  - [Alibaba](https://www.alibaba.com)
+  - [Facebook](gttps://www.facebook.com)
+  - [Netflix](https://www.netflix.com)
