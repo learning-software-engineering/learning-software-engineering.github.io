@@ -35,6 +35,15 @@ Flexbox, or the flexible box layout module, is an alternative to using positioni
  
 CSS grid is also a positioning alternative that provides a grid layout module, in order to display HTML elements within a row and column format. It consists of a parent element and child elements. [This game](https://cssgridgarden.com/) can teach CSS grid basics in a visual, interactive and intuitive way. 
 
+## CSS Animation: 
+
+Native CSS has built in animation functionality which can be used to implement web page animations without the use of JavaScript. There are three key advantages to using CSS animation rather than traditional script-driven animation techniques:
+1. They easy to use for simple animation; does not require knowledge of JavaScript
+2. CSS animations run well even under moderate system load (simple animations can still perform poorly in JavaScript under a similar load)
+3. CSS animations are controlled by the browser, allowing the browser to optimize performance and efficiency (ex. the browser may reduce the update frequency of animations running tabs that are not currently visible)
+
+At its essence, we can define CSS animations to be 'the change from one CSS style to another over the dimension of time'. 
+
 ## CSS Frameworks 
 
 Native CSS can be difficult to use, so CSS frameworks have been created so developers can use pre-made styles in order to create good looking website components, navigation bars, buttons, etc. in an easier and faster way without needing to know the semantics of CSS. Two popular CSS frameworks include [Tailwind CSS](https://tailwindcss.com/) and [Bootstrap CSS](https://getbootstrap.com/docs/3.4/css/). 
