@@ -1,5 +1,12 @@
 ## E2E Testing with Cypress
 
+- [Cypress Introduction](#cypress-introduction)
+- [Why do end to end testing?](#why-do-end-to-end-testing-)
+- [Why Cypress?](#why-cypress-)
+- [Installation and setup:](#installation-and-setup-)
+- [The basics](#the-basics)
+- [Best Practices](#best-practices)
+
 # Cypress Introduction
 
 Cypress is mainly used for testing web applications, especially those built in javascript. It provides an interface to programatically test your application, and visually what went wrong (or right) in tests. This page will primarily focus on E2E (end-to-end) testing with cypress rather than component testing.
