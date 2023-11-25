@@ -62,7 +62,11 @@ Make sure to use `SwiftUI` and `Swift` as your interface and language respective
 ## Testing Your App - Unit Tests
 In Xcode, unit tests are written using the `XCTest` framework. 
 
-You can add a new unit test case by going to `New File` and selecting the `Unit Test Case Class` template. Xcode will then automatically set up a test case class, and you can write your unit test there.
+You can add a new unit test case by going to `New File` and selecting the `Unit Test Case Class` template:
+
+<img width="726" alt="Unit Test Case" src="https://github.com/NonLan/learning-software-engineering.github.io/assets/95160562/360192fb-40ee-48c0-92d8-9585ad78eb7a">
+
+Xcode will then automatically set up a test case class, and you can write your unit test there.
 
 Unit tests in Xcode work as they do in any other language. One major difference to take note of is that assertions and other functions you may require for unit testing may look a little different since they're a part of the `XCTest` framework. For an outline of this framework and its functions, please refer to Apple's [documentation](https://developer.apple.com/documentation/xctest).
 
