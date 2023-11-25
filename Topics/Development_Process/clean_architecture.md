@@ -53,6 +53,13 @@ As with everything, there can be potential downsides to Clean Architecture. It i
 - It can be a bit confusing at times. The heavy reliance on abstraction is not easy to reason about in your head.
 - Can be overkill for a smaller project that does not need to scale this well.
 
+### Clean Architecture vs. Other Architectures
+- Microservices Architecture - The application is sectioned up into smaller pieces, each with its own corresponding business logic and database storage. In terms of a large, growing project, following Clean Architecture would be a bigger time investment up front but would allow for much more portability and ease of use down the road. Microservices is probably more suited to a smaller project.
+- Monolithic Architecture - A more traditional, single-codebase setup for the entire application. Technically, Clean Architecture is a form of Monolithic Architecture with more constraints to facilitate future changes. Again, this is a good choice for a large project but it requires a bit of time to learn how to set up properly. If you choose to not adhere to Clean Architecture (smaller project), a Monolithic system is simpler than a Microservices system. Be warned that it may get messy and hard to port over to different systems/frameworks!
+
+![image](https://github.com/Dario1031/learning-software-engineering.github.io/assets/113073212/d555716f-4da7-4e2f-bdc3-9737eafe4246)
+
+
 That's all for my quick crash course on Clean Architecture. This is not a comprehensive guide, but rather a quick breakdown of the main principles. Feel free to leave suggestions for any new additions!
 
 
