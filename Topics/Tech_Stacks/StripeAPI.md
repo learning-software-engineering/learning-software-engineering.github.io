@@ -50,6 +50,9 @@ Imagine you're running an online store. You don't want to sit there refreshing y
 ### Example Scenario:
 
 Let's say a customer successfully completes a payment on your website. Without webhooks, your app might not know about this until it checks Stripe for updates. With webhooks, Stripe can instantly notify your server about the successful payment.
+![Diagram](https://private-user-images.githubusercontent.com/113073212/285559397-a6fa16b3-a78a-4398-8cac-8ff5602ef970.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDA4Nzk4MDgsIm5iZiI6MTcwMDg3OTUwOCwicGF0aCI6Ii8xMTMwNzMyMTIvMjg1NTU5Mzk3LWE2ZmExNmIzLWE3OGEtNDM5OC04Y2FjLThmZjU2MDJlZjk3MC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBSVdOSllBWDRDU1ZFSDUzQSUyRjIwMjMxMTI1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIzMTEyNVQwMjMxNDhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0yNGYyZDlkYTc2NzhkYTA4YjdlMmViMWY0Y2Q2YTcyZjlkYThiNmNhMDQxM2M3Njg4NmZlZTVjNDc0NWM3M2JjJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.XdgtAING2heGln2tRlxYsEG9dYw7rNGv47cYEXPIY0U)
+
+
 
 - Create a server-side route using Express and the Stripe package to handle webhook events.  This ensures that your application responds to events triggered by Stripe.
 
