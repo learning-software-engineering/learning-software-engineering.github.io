@@ -1,5 +1,8 @@
 ## Scrum Framework
 
+### Table of Contents
+
+
 ### What is scrum?
 Scrum is an agile project management framework that helps teams organize and manage their work. While most often used in software development teams, this framework applies to different sectors in HR, accounting, finance, etc. The term for this framework was coined from the 1986 Harvard Business Review article in which the authors compared high-performing teams to the scrum formation used in rugby. Scrum specifies artifacts, ceremonies/events, and roles associated with each sprint to get work done. 
 
