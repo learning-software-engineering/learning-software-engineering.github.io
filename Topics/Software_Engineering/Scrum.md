@@ -1,15 +1,14 @@
 ## Scrum Framework
 
 ### Table of Contents
-#### [What is scrum?](#what-is-scrum)
-#### [Scrum values](#scrum-values)
-#### [Members of a scrum team](#members-of-a-scrum-team)
-#### [What are sprints?](#what-are-sprints)
-#### [Scrum-artifacts](#scrum-artifacts)
-#### [Scrum events/ceremonies](#scrum-events/ceremonies)
-#### [Why is scrum important?](#why-is-scrum-important)
-#### [Resources](#resources)
-Why is scrum important?
+- [What is scrum?](#what-is-scrum)
+- [Scrum values](#scrum-values)
+- [Members of a scrum team](#members-of-a-scrum-team)
+- [What are sprints?](#what-are-sprints)
+- [Scrum-artifacts](#scrum-artifacts)
+- [Scrum ceremonies](#scrum-ceremonies)
+- [Why is scrum important?](#why-is-scrum-important)
+- [Resources](#resources)
 
 ### What is scrum?
 Scrum is an agile project management framework that helps teams organize and manage their work. While most often used in software development teams, this framework applies to different sectors in HR, accounting, finance, etc. The term for this framework was coined from the 1986 Harvard Business Review article in which the authors compared high-performing teams to the scrum formation used in rugby. Scrum specifies artifacts, ceremonies/events, and roles associated with each sprint to get work done. 
@@ -54,7 +53,7 @@ Scrum artifacts refer to the information a scrum team uses that details informat
     - The increment is the end product of a sprint. 
     - The increment can mean a finished product, features usable to customers by the end of the sprint, or a completed section of a larger project.
 
-### Scrum events/ceremonies
+### Scrum ceremonies
 The scrum framework incorporates regular meetings and events that teams perform regularly. In scrum, there are five regularly held events:
 - Backlog organization:
     - This is the responsibility of the product owner, who makes sure to continually update and maintain the product backlog, according to feedback from users and the development team.
