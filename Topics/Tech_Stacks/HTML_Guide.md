@@ -61,7 +61,7 @@ For a full list of all the various tags used in html, click [here](https://www.w
 
 ## Writing HTML Files
 
-One of the best ways to write and test your html files is using vs code. There, you can install the extension [Live Preview](https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server). This will allow you to write and see your website in real time.
+One of the best ways to write and test your html files is using vs code. Vs code is a code editor to use on your computer. You can learn more about vs code on their website linked [here](https://code.visualstudio.com/). Having vs code installed, you can then install the extenstion [Live Preview](https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server). This extenstion will allow you to see your websites in real time as you write them. The previous link also provides clear instructions on how to properly utilize the extension.
 
 If you don’t have vscode, you can write your html in any text editor you have installed on your machine. You can then save the file as an html file and then open it to view in your browser.
 
