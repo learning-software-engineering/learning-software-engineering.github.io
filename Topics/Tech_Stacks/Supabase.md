@@ -22,4 +22,56 @@ Before reading this guide, ensure you have [Node.js](https://nodejs.org/en/) and
 
 Also, this guide is written with the assumption that the reader has a basic understanding of Vue and PostgreSQL.
 
-## Step 1: Set Up a Vue.js Project
+## Step 1: Setting Up a Basic Vue.js Project
+
+1. **Create a Vue Project**: You can use the command line interface to create a new Vue.js project.
+
+   ```bash
+   npm init vue@latest vue-app
+   ```
+
+2. **Navigate to the Directory**: Move into your newly initialized directory.
+   ```bash
+   cd vue-app
+   ```
+
+## Step 2: Installing Supabase JS Client
+
+1. **Install the Supabase Client**: Use npm again to install the Supabase JavaScript client.
+
+   ```bash
+   npm install @supabase/supabase-js
+   ```
+
+2. **Retrieve your Supabase API Keys**: Access your Supabase project dashboard and retrieve your Supabase URL and API keys (the dashboard is explained later).
+
+## Step 3: Setting Up Supabase in Vue.js
+
+1. **Create the Supabase Client**: create a `/src/lib` directory in your Vue app, and add a file called `supabaseClient.js`.
+
+2. **Initialize Supabase Client**: In your `supabaseClient.js` file, add the following code using the keys you retrieved from the previous step.
+
+   ```javascript
+   import { createClient } from "@supabase/supabase-js";
+
+   const supabaseUrl = "YOUR_SUPABASE_URL";
+   const supabaseKey = "YOUR_SUPABASE_PUBLIC_KEY";
+
+   export const supabase = createClient(supabaseUrl, supabaseKey);
+   ```
+
+3. **Import Supabase into Vue Components**: Import the created `supabase` client in your Vue components wherever you intend to use it.
+
+   ```javascript
+   // src/components/TemplateComponent.vue
+
+   <script>
+   import { supabase } from './lib/supabaseClient'
+
+   export default {
+     mounted() {
+       // Supabase methods go here
+     }
+   }
+   </script>
+   ```
