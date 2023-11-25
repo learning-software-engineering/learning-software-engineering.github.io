@@ -6,9 +6,9 @@ Agile Software Development is an iterative and incremental approach to software 
 
 ## History
 
-**Pre-Agile Era**: Before the emergence of Agile, software development predominantly followed the [Waterfall](./Software_Engineering/Waterfall.md) model, a linear and sequential approach. In this model, each phase of development, such as requirements gathering, design, implementation, testing, and maintenance, occurs in a strict order, with little room for iteration or revisiting previous stages.
+**Pre-Agile Era**: Before the emergence of Agile, software development predominantly followed the [Waterfall](./Software_Engineering/Waterfall.md) model, a linear and sequential approach. In this model, each phase of development, such as requirements gathering, design, implementation, testing, and maintenance, occurs in a strict order, with little room for iteration or revisiting previous stages. The Waterfall model's rigid structure presented significant challenges. Gathering and defining all requirements upfront often led to delays, and once the development phase started, making changes became extremely difficult. The lack of flexibility in the Waterfall model was especially problematic for projects with evolving or unclear requirements. Additionally, the model's linear nature made it less suited for accommodating feedback and adapting to emerging insights during development. The challenges posed by the Waterfall model sparked a need for a more adaptive and responsive approach to software development.
 
-**The Agile Manifesto (2001)**: The defining moment in the history of Agile came in 2001 when a group of seventeen software developers, including luminaries like Kent Beck, Martin Fowler, and Alistair Cockburn, convened at Snowbird, Utah, to discuss lightweight development methods. The result of this meeting was the creation of the [Agile Manifesto](https://agilemanifesto.org/), a foundational document that articulated the guiding principles and values of Agile Software Development.
+**The Agile Manifesto (2001)**: In 2001, this collective dissatisfaction with existing methodologies led to a pivotal meeting at Snowbird, Utah, where seventeen software developers, including influential figures like Kent Beck, Martin Fowler, and Alistair Cockburn, gathered. The outcome of this meeting was the creation of the Agile Manifesto, a transformative document that outlined four core values and twelve principles. These values and principles aimed to address the shortcomings of traditional models, emphasizing individuals, interactions, flexibility, and customer collaboration. The Agile Manifesto laid the foundation for a paradigm shift in software development philosophy, guiding teams towards a more efficient, adaptive, and customer-centric approach.
 
 The Agile Manifesto emphasized four key values:
 
@@ -71,20 +71,20 @@ The 12 Agile principles collectively emphasize a customer-centric, adaptable, an
 
 ## Advantages of Agile
 
-- **Flexibility:** Agile allows for changes and adaptations to evolving project requirements.
-- **Customer Involvement:** Continuous collaboration ensures customer feedback is incorporated, leading to higher satisfaction.
-- **Early and Incremental Delivery:** Agile emphasizes delivering working software in small, incremental releases.
-- **Continuous Improvement:** Promotes regular reflection, allowing teams to continuously improve processes.
-- **Reduced Risks:** Iterative development and continuous testing help identify and address issues early, reducing project risks.
-- **Transparent Communication:** Values open and transparent communication, fostering better understanding and collaboration.
+- **Flexibility**: Agile allows for changes and adaptations to evolving project requirements.
+- **Customer Involvement**: Continuous collaboration ensures customer feedback is incorporated, leading to higher satisfaction.
+- **Early and Incremental Delivery**: Agile emphasizes delivering working software in small, incremental releases.
+- **Continuous Improvement**: Promotes regular reflection, allowing teams to continuously improve processes.
+- **Reduced Risks**: Iterative development and continuous testing help identify and address issues early, reducing project risks.
+- **Transparent Communication**: Values open and transparent communication, fostering better understanding and collaboration.
 
 ## Disadvantages of Agile
 
-- **Not Suitable for Small Projects:** May introduce overhead for small projects, making it less efficient.
-- **Higher Implementation Cost:** Implementation costs, including training, can be higher compared to traditional methodologies.
-- **Dependency on Skilled Team:** Demands a team well-versed in Agile concepts, requiring high commitment and discipline.
-- **Lack of Structure:** Agile's flexible nature may lead to a lack of structure, posing challenges for project management.
-- **Client Involvement Challenges:** Continuous client involvement can be demanding, hindering the Agile process if lacking engagement.
+- **Not Suitable for Small Projects**: May introduce overhead for small projects, making it less efficient.
+- **Higher Implementation Cost**: Implementation costs, including training, can be higher compared to traditional methodologies.
+- **Dependency on Skilled Team**: Demands a team well-versed in Agile concepts, requiring high commitment and discipline.
+- **Lack of Structure**: Agile's flexible nature may lead to a lack of structure, posing challenges for project management.
+- **Client Involvement Challenges**: Continuous client involvement can be demanding, hindering the Agile process if lacking engagement.
 
 ## Waterfall vs Agile
 
