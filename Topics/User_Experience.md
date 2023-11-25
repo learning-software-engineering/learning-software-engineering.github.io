@@ -157,7 +157,7 @@ Make sure to use a universal, legible font style, and don't use extremely contra
 - [Responsive Design](https://devrix.com/tutorial/important-responsive-design/): Responsive Design generally refers to a design where the software is adaptable to the consumer's device. The responsive design can be many things including screen sizes, collapsing of navbars, adjusting texts based on the screens, scrolling effects and more. The benefits of a responsive design make your software accessible across varying devices and overall improves the user experience. The article demonstrates the importance and benefits of responsive design, the flexibility they provide, and the easiblity for the consumers upon making the said software. 
 
 ### Optimizing UI with A/B Testing
-- [A/B Testing](./User_Experience/AB_Testing.md)
+- [A/B Testing](./User_Experience/AB_Testing.md): A/B testing is a randomized experiment used to compare two versions of a webpage to determine which is more effective.
 
 ## User Experience Principles
 ### Nielsen's 10 Usability Heuristics
