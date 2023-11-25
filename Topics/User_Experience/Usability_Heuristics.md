@@ -33,7 +33,10 @@ __How can we implement this?__
 - Responsive design choices that indicate whether an action was successful or not; for example, an online marketplace should inform the user when an order goes through or fails to go through.
 - If the user makes a mistake, the system should inform them and invite them to fix that mistake. 
 
+**Example:** A webpage provides a loading bar when user tasks are running. If the tasks succeed, a large green checkmark appears beside the loading bar. If it fails, an error icon appears.
+
 Opaque systems frustrate users and lower usability. Aim for transparency.
+
 
 
 ### **2: Match between system and the real world**
