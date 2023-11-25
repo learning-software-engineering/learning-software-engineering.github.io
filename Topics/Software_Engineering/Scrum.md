@@ -17,9 +17,6 @@ Scrum is an agile project management framework that helps teams organize and man
     - Everyone should recognize a team member's contributions and accomplishments. 
     - Respect for one another is essential to ensure mutual collaboration and cooperation.
 
-### What are sprints?
-A sprint is a short duration where the scrum team works to complete a specified amount of work. Sprints usually correspond to some set of features a team wants to add. The goal of a sprint varies from team to team, some goals being a finished product accessible to customers and others being to complete a subsection of a larger product. The usual timeline for a sprint is two weeks, but the timeline varies between teams. 
-
 ### Members of a scrum team
 A scrum team consists of three specific roles:
 - Product owner:
@@ -30,8 +27,11 @@ A scrum team consists of three specific roles:
     - Their goal is to optimize the flow for the scrum team to ensure maximal productivity and minimal blockers.
 - Development team:
     - The development team is the ones who work on creating the product/working on items in the sprint, according to the specifications from the product owner. 
-    The team includes developers, UX specialists, Ops engineers, testers, and designers. 
-    With these differing skill sets, the team can cross-train each other to prevent bottlenecks.
+    - The team includes developers, UX specialists, Ops engineers, testers, and designers. 
+    - With these differing skill sets, the team can cross-train each other to prevent bottlenecks.
+
+### What are sprints?
+A sprint is a short duration where the scrum team works to complete a specified amount of work. Sprints usually correspond to some set of features a team wants to add. The goal of a sprint varies from team to team, some goals being a finished product accessible to customers and others being to complete a subsection of a larger product. The usual timeline for a sprint is two weeks, but the timeline varies between teams. 
 
 ### Scrum artifacts
 Scrum artifacts refer to the information a scrum team uses that details information about the product in development, the tasks involved in a sprint cycle, and the end goal. 
