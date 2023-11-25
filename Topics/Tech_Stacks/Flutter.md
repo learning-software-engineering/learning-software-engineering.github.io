@@ -21,7 +21,9 @@ Source: [Amazon AWS](https://aws.amazon.com/what-is/flutter/)
 The following is a summary from the offical [Flutter Docs](https://docs.flutter.dev/get-started/).
 
 1. **Install Flutter**
-   a) [Windows](https://docs.flutter.dev/get-started/install/windows)
+   <ol type = 'a'>
+
+   <li> [Windows](https://docs.flutter.dev/get-started/install/windows) </li>
    b) [macOS](https://docs.flutter.dev/get-started/install/macos)
    c) [Linux](https://docs.flutter.dev/get-started/install/linux)
    d) [ChromeOS](https://docs.flutter.dev/get-started/install/chromeos)
@@ -40,7 +42,6 @@ The following is a summary from the offical [Flutter Docs](https://docs.flutter.
    e) Enter a project name, such as `my_app`, and press **Enter**.
    f) Wait for project creation to complete and the `main.dart` file to appear.
    The above commands create a Flutter project directory called my_app that contains a simple demo app that uses [Material Components](https://m3.material.io/components).
-   
 4. **Running the App**
    a) Locate the VS Code status bar (the blue bar at the bottom of the window).
    b) Select a device from the Device Selector area.
