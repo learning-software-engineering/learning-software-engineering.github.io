@@ -22,7 +22,8 @@ We will focus on the Document-Oriented Databases here as the documents are very 
 
 ## Document Database - JSON interaction
 
-In this guide, we'll use MongoDB as an example, but the process is similar for other document databases.
+In this guide, we'll use MongoDB as an example, but the process is similar for other document databases. MongoDB stores data records as documents, which are gathered together in collections. A database stores one or more collections of documents. You can see here about the details about how to create databases and collections.
+
 
 ### Importing JSON Data
 After installing the MongoDB Community Edition and MongoDB Compass, you can use the mongoimport command-line tool, which is part of the MongoDB server installation.
@@ -130,7 +131,7 @@ For example, to return only the name and age fields of documents
 ```
 db.collection.find({}, { "name": 1, "age": 1, "_id": 0 })
 ```
-Here, 1 indicates inclusion of the field.
+Here, 1 indicates inclusion of the field, and _id is explicitly excluded with 0. Note unless the _id field is explicitly excluded in the projection document _id: 0, the _id field is returned.
 
 `<options>`: Specifies additional options for the query. These options modify query behavior and how results are returned. 
 This parameter is not passed directly into the `find()` method like the `<query>` and `<projection>` parameters. Instead, `<options>` are specified through method chaining, where you append methods to `find()` that correspond to the various options you want to apply, such as sorting, limiting, and skipping documents.
@@ -183,6 +184,9 @@ Text Index: To enable text search
 ```
 db.collection.createIndex({ "fieldname": "text" })
 ```
+
+There are a few considerations for indexing JSON data, while indexes can significantly speed up read queries, it does also consume memory. The larger the index, the more memory it requires. Further, more selective indexes (where index entries correspond to fewer documents) are more efficient. Thus, only by carefully selecting and creating indexes based on the specific needs and query patterns of your application, the query response times and overall application efficiency can be significantly improved.
+
 
 ## Advantages of JSON Structure Database
 ### Better schema flexibility
