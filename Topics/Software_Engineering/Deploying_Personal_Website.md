@@ -42,7 +42,7 @@ Create a [GitHub](https://github.com/) account
 
 **Step 1: Develop your website**
 
-Build your dynamic website using a backend framework (ex. Flask, Node.js) and a frontend framework (ex. React) and thoroughly test your website locally using a development server. 
+Build your dynamic website using a backend framework (e.g. Flask, Node.js) and a frontend framework (e.g. React) and thoroughly test your website locally using a development server. 
 
 **Step 2: Create a GitHub repository**
 
@@ -87,7 +87,7 @@ For hosting the backend, we will use [Railway](https://railway.app/). Note that 
   <img width="980" alt="Screenshot 2023-11-22 at 11 35 23 AM" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/52506101/8e8edbaf-4912-4b32-aa32-1914d89a67d4">
 - This automatically sets up a MySQL database for you.
   <img width="921" alt="Screenshot 2023-11-22 at 11 35 04 AM" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/52506101/798378db-3eb5-43a5-b67b-0cd0f3de601a">
-- Railway will provide you with all the necessary credentials to use your server (ex. Host, port, root username and password, etc). You can then configure your backend project settings to use the necessary environment variables that the Flask app will use to connect to the database (as it is generally not good practice to hardcode them in your backend).
+- Railway will provide you with all the necessary credentials to use your server (e.g. Host, port, root username and password, etc). You can then configure your backend project settings to use the necessary environment variables that the Flask app will use to connect to the database (as it is generally not good practice to hardcode them in your backend).
   <img width="837" alt="Screenshot 2023-11-22 at 11 36 06 AM" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/52506101/f65ea32c-110c-4875-9ae4-b18c41f586ae">
 
 **Troubleshooting on Vercel and Railway**
