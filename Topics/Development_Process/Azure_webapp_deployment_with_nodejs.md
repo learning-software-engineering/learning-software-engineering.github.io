@@ -8,6 +8,7 @@
 ### [CI/CD with Github Actions](#ci/cd-with-github-actions)
 ### [Budgets](#budgets)
 ### [Azure Terminology](#azure-terminology)
+### [References](#references)
 
 ## Introduction
 
@@ -139,9 +140,7 @@ Note that before continuing with implementing CI/CD with Github Actions, you sho
 
 The workflow can be set up in 1 of 2 ways:  using the Deployment Center to generate the workflow file for your Azure App service and tech stack in a Github repository, or manually.
 
-If you deployed your web app using the Azure portal, congratulations, the workflow file was set up automatically for you! You're all done!
-
-If you deployed your web app using the Azure CLI, follow along, there's a couple more steps!
+If you deployed your web app using the Azure portal, congratulations, the workflow file was set up automatically for you! You're all done! If you deployed your web app using the Azure CLI, follow along, there's a couple more steps!
 
 I found the official documentation (found at the link below) to be a clear and quick tutorial for how to set up Github Actions for your Azure App Service web app, which guides you through whichever workflow setup method you've chosen, with instructions for the various supported programming languages you may be using.
 
@@ -176,8 +175,6 @@ When creating a new budget, you're able to choose some important fields, includi
 
 After filling these in, you're able to set up alerts for this budget. Alerts can be triggered either by the actual usage of your budget, or the forecasted usage, and they can be triggered at certain portions of your budget being used (ex. 30%, 50%, 80%). When these alerts are triggered, you (and other recipients) that you indicated as the alert recipients, will receive email notifications.
 
-For example, it may be reasonable to set a budget that alerts you when your usage of your budget has reached 75%, to give you enough time to react if this has happened unexpectedly, and even if it is within expectations, to at least be aware of your current usage, thus making it more difficult to end up in scenarios where you're blindsided by a large bill.
-
 See more about cost management in Azure's official [documentation](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/).
 
 ## Azure Terminology
@@ -187,3 +184,10 @@ See more about cost management in Azure's official [documentation](https://learn
 - **Resource Group**: A logical grouping of resources, typically by application, so pretty much a box of resources (ex. databases, storage, app service) that are grouped together for a solution or application.
 
 See other keywords in Azure's official [documentation](https://learn.microsoft.com/en-us/azure/developer/intro/azure-developer-key-concepts).
+
+## References and Helpful Resources
+
+- [Hosting Apps on Azure](https://learn.microsoft.com/en-us/azure/developer/intro/hosting-apps-on-azure)
+- [Deploy Node.js Web App with Azure App Service](https://learn.microsoft.com/en-us/azure/app-service/quickstart-nodejs?tabs=linux&pivots=development-environment-vscode)
+- [Deploy App Service with Github Actions](https://learn.microsoft.com/en-us/azure/app-service/deploy-github-actions?tabs=applevel)
+- [Azure Cost Management](https://www.youtube.com/watch?v=7w88KBVesPI&t=320s)
