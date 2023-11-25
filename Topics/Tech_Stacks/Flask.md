@@ -22,6 +22,21 @@ Some of the advantageous features include seamless integration with Flask, sessi
 First install Flask following the instructions here: [Flask installation](https://flask.palletsprojects.com/en/3.0.x/installation/)
 
 This will make sure that all dependencies are obtained, the virtual environment is created and Flask is installed.
+Here is a summary of the steps:
+Create an environment:
+```bash
+> mkdir myproject
+> cd myproject
+> py -3 -m venv .venv
+```
+Activate the environment:
+```bash
+> .venv\Scripts\activate
+```
+Install flask:
+```python
+$ pip install Flask
+```
 
 Next, the Flask application can be set up. 
 This shows you how the project layout works: [Project Layout](https://flask.palletsprojects.com/en/3.0.x/tutorial/layout/)
@@ -36,7 +51,49 @@ Note that Flask-SQLAlchemy is a wrapper around SQLAlchemy, so it will be useful 
 
 Then follow [these steps](https://flask-sqlalchemy.palletsprojects.com/en/3.1.x/quickstart/#installation) to get Flask-SQLAlchemy installed, then initialize and configure extensions. It also shows how to define models and create tables.
 
+Here is a summary of the steps:
+Install Flask-SQL with:
+```bash
+$ pip install -U Flask-SQLAlchemy
+```
+Initialize the extensions:
+```python
+from flask import Flask
+from flask_sqlalchemy import SQLAlchemy
+from sqlalchemy.orm import DeclarativeBase
 
+class Base(DeclarativeBase):
+  pass
+
+db = SQLAlchemy(model_class=Base)
+```
+
+Configure the extensions:
+```python
+# create the app
+app = Flask(__name__)
+# configure the SQLite database, relative to the app instance folder
+app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///project.db"
+# initialize the app with the extension
+db.init_app(app)
+```
+
+Define models:
+```python
+from sqlalchemy import Integer, String
+from sqlalchemy.orm import Mapped, mapped_column
+
+class User(db.Model):
+    id: Mapped[int] = mapped_column(Integer, primary_key=True)
+    username: Mapped[str] = mapped_column(String, unique=True, nullable=False)
+    email: Mapped[str] = mapped_column(String)
+```
+
+Create tables:
+```python
+with app.app_context():
+    db.create_all()
+```
 
 ## 3. Basic useful features
 ### Flask
