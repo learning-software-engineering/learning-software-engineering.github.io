@@ -138,22 +138,34 @@ __How can we implement this?__
 
 - Research common user stories and use cases, and design the interface to enable users to go through these processes with minimal confusion. Users should be able to recognize information in-context instead of needing to remember it.
 
-- Streamline user experience. Avoid nesting functionality if possible (i.e. users should not need to memorize certain paths to certain functionality)
+- Streamline user experience. Avoid nesting functionality if possible (i.e. users should not need to memorize certain paths to certain functionality) and maintain transparency. 
 
 - When instructions and help needs to be provided, try to provide this in context as opposed to requiring them to look it up. Reduce the amount of information the user must memorize.
 
 **Example:** Having a navigation bar on a web application will allow users to go between different tabs without remembering how to get to them. 
 
 ### **7: Flexibility and efficiency of use**
+
+"Shortcuts — hidden from novice users — may speed up the interaction for the expert user so that the design can cater to both inexperienced and experienced users. Allow users to tailor frequent actions (12)."
+
 Provide accelerators or shortcuts for experienced users so they can complete common interactions in a more efficient manner. This allows both experienced and inexperienced users to utilize the system to their own personal abilities and preferences. This will allow expert users to take advantage of the feature, and newer users can ignore it. 
 
 __Why is this important?__
 
+New users need to learn the fundamentals of how an application works, so they require significant guidance. This might be step-by-step instructions or information provided in an app's 'help' section. On the other hand, more experienced users are familiar with the 'model' of how the system works (concept discussed in Heuristic 5) and have a plan in mind to achieve their goal across their use cases.
+
+An application should cater to users of all levels. If we focus too much on learnability (e.g. predictable step-by-step design for all use cases) then for more experienced users, the design may be perceived as wasting time instead of providing clarity. Conversely, a system optimized for experienced users, like a command-line interface, might prove too opaque for new users to effectively learn (12).
+
+To satisfy these requirements, we may design our website to be learnable while providing additional options to experienced users. Different UX options and powerful shortcuts provide flexibility and reduce frustration for experienced users.
 
 
 __How can we implement this?__
 
-**Example:** Having a keyboard shortcut for a common interaction on your website.
+- There are often multiple ways of accomplishing the same task. Features like accelerators offer secondary, faster methods of accomplishing a certain task compared to the obvious solution that new users are likely to first attempt. For instance, a web browser may have a button for creating a new tab as well as a keyboard shortcut that performs the same task, albeit quicker. 
+
+- However, excessive duplication also results in inefficiency (12). It is important to study how the user approaches tasks and strike the right balance between flexibility and overduplication. For instance, an email program with four shortcuts to create a new email is overduplicated. 
+
+**Example:** The popular version control software GitHub supports a powerful command-line interface for advanced users or users more familiar with CLIs, as well as a GUI, GitHub Desktop, which newer users may find more intuitive.
 
 
 
@@ -222,3 +234,5 @@ Heuristics Applied to Everyday Life: https://www.zenhaiku.com/archives/usability
 10. Laubheimer, P. (2015, September 7). Preventing user errors: Avoiding conscious mistakes. Nielsen Norman Group. https://www.nngroup.com/articles/user-mistakes/ 
 
 11. Budiu, R. (2014, July 6). Memory recognition and recall in user interfaces. Nielsen Norman Group. https://www.nngroup.com/articles/recognition-and-recall/ 
+
+12. Laubheimer, P. (2022, November 22). Flexibility and efficiency of use (usability heuristic #7). Nielsen Norman Group. https://www.nngroup.com/articles/flexibility-efficiency-heuristic/ 
