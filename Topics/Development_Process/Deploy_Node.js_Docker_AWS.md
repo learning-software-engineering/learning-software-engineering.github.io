@@ -68,7 +68,6 @@ $ docker push <aws-account-id>.dkr.ecr.<region>.amazonaws.com/<repository-name>:
 You can also instead press the “View push commands” button and follow those instructions.
 
 
-
 ### Create an ECS Task Definition:
 Go to the Amazon ECS service in the AWS Management Console.
 2) Click on "Task Definitions" in the left-hand navigation pane.
@@ -112,7 +111,10 @@ Go to the EC2 Management Console and find the same EC2 instance
 Note: Set up a test endpoint to confirm that the Node.js application is running
 
 ## External Links
-Here are some extra links that will help you incorporate other AWS services with Node.js:
+A more detailed version of my article with more in depth steps is available here if you need more help, posted by Raphael Mansuy:
+* https://dev.to/raphaelmansuy/deploy-a-docker-app-to-aws-using-ecs-3i1g
+
+Here are some extra links that will help you incorporate other AWS services with Node.js like an RDS database or a S3 bucket:
 
 Amazon S3:
 * https://medium.com/codebase/using-aws-s3-buckets-in-a-nodejs-app-74da2fc547a6
