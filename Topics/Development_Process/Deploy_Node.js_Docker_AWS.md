@@ -1,5 +1,12 @@
 # Node.js Deployment through Docker and AWS
 
+## Table of Contents
+### [Overview](#overview-1)
+### [Tech Stack](#tech-stack-1)
+### [Deployment Process](#deployment-process-1)
+### [External Links](#external-links-1)
+
+
 ## Overview
 In the realm of modern software development, containerization has become a standard practice for deploying applications. Docker simplifies this process by packaging applications and their dependencies into containers, ensuring consistency across various environments. Node.js, a popular JavaScript runtime, is often used to build scalable and efficient server-side applications.
 
@@ -18,7 +25,6 @@ Amazon ECS (Elastic Container Service): ECS is a fully-managed container orchest
 Amazon ECR (Elastic Container Registry): ECR is a managed Docker container registry provided by AWS. It allows you to store, manage, and deploy Docker container images, making it easy to integrate with ECS for container deployments.
 
 Amazon EC2 (Elastic Compute Cloud): EC2 is AWS's resizable cloud computing service offering virtual machines (instances) for running applications. It provides flexibility to configure and scale computing resources based on demand.
-
 
 ## Deployment Process
 This guide assumes you have already created your Node.js application and are using the Bash Unix shell.
@@ -104,3 +110,15 @@ Go to the EC2 Management Console and find the same EC2 instance
 3) You should see either a Cannot GET message or your expected endpoint result
 
 Note: Set up a test endpoint to confirm that the Node.js application is running
+
+## External Links
+Here are some extra links that will help you incorporate other AWS services with Node.js:
+
+Amazon S3:
+* https://medium.com/codebase/using-aws-s3-buckets-in-a-nodejs-app-74da2fc547a6
+* https://www.jsowl.com/how-to-download-a-file-from-aws-s3-in-javascript-node-js/
+
+Amazon RDS:
+* https://medium.com/@Anas.shahwan/how-to-connect-aws-rds-mysql-nodejs-application-in-5-minutes-40d6fbf09b66
+* https://stackabuse.com/using-aws-rds-with-node-js-and-express-js/
+
