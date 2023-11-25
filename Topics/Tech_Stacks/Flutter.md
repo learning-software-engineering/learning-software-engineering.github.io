@@ -36,7 +36,9 @@ The following is a summary from the offical [Flutter Docs](https://docs.flutter.
 
 3. **Create the app**
    1. Invoke **View > Command Palette**. This can be done with `ctrl shift p` on Windows or `cmd shift p` on Mac.
+   <img width="636" alt="Screenshot 2023-11-25 at 6 53 37 PM" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/65613404/9bdf3ef1-ad9b-4848-b6bb-723f85462c36">
    2. Type "flutter", and select the **Flutter: New Project**
+   <img width="644" alt="image" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/65613404/47cf0a8d-25a5-4076-ad6d-54cc8197384d">
    3. Select **application**
    4. Create or select the parent directory for the new project folder.
    5. Enter a project name, such as `my_app`, and press **Enter**.
