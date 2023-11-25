@@ -6,13 +6,25 @@
 ### [Deployment Process](#deployment-process-1)
 ### [External Links](#external-links-1)
 
-
 ## Overview
 In the realm of modern software development, containerization has become a standard practice for deploying applications. Docker simplifies this process by packaging applications and their dependencies into containers, ensuring consistency across various environments. Node.js, a popular JavaScript runtime, is often used to build scalable and efficient server-side applications.
 
 AWS (Amazon Web Services) provides a suite of cloud services that enable developers to deploy and manage applications easily. ECS (Elastic Container Service) and ECR (Elastic Container Registry) are two fundamental services offered by AWS to manage containers and container images, respectively.
 
 Running your Node.js application on an EC2 instance will allow this to be accessed on a public domain hosted by AWS. Containerizing your Node.js application through Docker allows for easy deployment via running the application in an isolated environment. Combining these together allows your application to run inside a container while inside a virtual machine which is hosted on the cloud.
+
+Here is a rough visualization of what the process of deploying the application will be like: 
+<p align="center">
+  <img src="https://i.postimg.cc/1XJ1dtJS/node-docker-ecr.png" style="width: 50%; height: auto;">
+</p>
+
+
+This diagram shows containerizing a Node.js application by building an image of it and pushing it to an Amazon ECR Repository
+
+<p align="center">
+  <img src="https://i.postimg.cc/JnbQMYD7/ecr-ecs-ec2.png" style="width: 50%; height: auto;">
+</p>
+This followup diagram shows how an ECR Repository connects to Amazon ECS and is then deployed to an EC2 instance 
 
 ## Tech Stack
 
