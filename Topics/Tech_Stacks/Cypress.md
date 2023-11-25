@@ -2,7 +2,7 @@
 
 # Cypress Introduction
 
-Cypress is mainly used for testing web applications, especially those built in javascript. It provides an interface to programatically test your application, and visually what went wrong (or right) in tests. 
+Cypress is mainly used for testing web applications, especially those built in javascript. It provides an interface to programatically test your application, and visually what went wrong (or right) in tests. This page will primarily focus on E2E (end-to-end) testing with cypress rather than component testing.
   
 # Why do end to end testing?  
   
