@@ -94,8 +94,7 @@ Have this code in a Github repository to later integrate with Github actions.
 
 Now, you have two options:
 
-1. Deploy your Web App with the Azure portal
-    Note: If you proceed with this option, the Azure portal will immediately integrate CI/CD with Github Actions upon deploying your web app.
+1. Deploy your Web App with the Azure portal (if you proceed with this option, the Azure portal will immediately integrate CI/CD with Github Actions)
 
     On the Azure Portal, navigate to **App Services**: 
 
@@ -118,8 +117,7 @@ Now, you have two options:
     Congratulations, you've deployed a web app using Azure, and integrated it with Github Actions too!
 
 
-2. Deploy your Web App with the Azure CLI
-    Note: If you proceed with this option, you'll need to follow along with the [CI/CD with Github Actions](#cicd-with-github-actions) instructions to integrate Github Actions.
+2. Deploy your Web App with the Azure CLI (if you proceed with this option, you'll need to follow along with the [CI/CD with Github Actions](#cicd-with-github-actions) instructions to integrate Github Actions)
 
     In your terminal:
 
