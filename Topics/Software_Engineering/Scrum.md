@@ -1,7 +1,15 @@
 ## Scrum Framework
 
 ### Table of Contents
-
+#### [What is scrum?](#what-is-scrum)
+#### [Scrum values](#scrum-values)
+#### [Members of a scrum team](#members-of-a-scrum-team)
+#### [What are sprints?](#what-are-sprints)
+#### [Scrum-artifacts](#scrum-artifacts)
+#### [Scrum events/ceremonies](#scrum-events/ceremonies)
+#### [Why is scrum important?](#why-is-scrum-important)
+#### [Resources](#resources)
+Why is scrum important?
 
 ### What is scrum?
 Scrum is an agile project management framework that helps teams organize and manage their work. While most often used in software development teams, this framework applies to different sectors in HR, accounting, finance, etc. The term for this framework was coined from the 1986 Harvard Business Review article in which the authors compared high-performing teams to the scrum formation used in rugby. Scrum specifies artifacts, ceremonies/events, and roles associated with each sprint to get work done. 
@@ -63,7 +71,7 @@ The scrum framework incorporates regular meetings and events that teams perform 
     - This builds in feedback and continual improvement of processes in the scrum framework.
 
 ### Why is scrum important?
-Teams use the scrum framework since it provides an efficient and adaptable way to organize and manage teams and products. It is team-centric and self-managed and encourages creativity with the flexibility to assign work based on work styles. The framework has concrete roles, events, artifacts, and values. These aspects of scrum are incorporated into professional workplaces and can be used in the 301 to finish the project in the short amount of time given. 
+Teams use the scrum framework since it provides an efficient and adaptable way to organize and manage teams and products. It is team-centric and self-managed and encourages creativity with the flexibility to assign work based on work styles. The framework has concrete roles, events, artifacts, and values. These aspects of scrum are incorporated into professional workplaces and can be used in CSC301 to finish the project in the short amount of time given. 
 
 ### Resources
 - [Atlassin - scrum](https://www.atlassian.com/agile/scrum)
