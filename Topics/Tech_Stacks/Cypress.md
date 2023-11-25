@@ -1,4 +1,4 @@
-## E2E Testing with Cypress
+# E2E Testing with Cypress
 
 - [Cypress Introduction](#cypress-introduction)
 - [Why do end to end testing?](#why-do-end-to-end-testing-)
@@ -7,11 +7,11 @@
 - [The basics](#the-basics)
 - [Best Practices](#best-practices)
 
-# Cypress Introduction
+## Cypress Introduction
 
 Cypress is mainly used for testing web applications, especially those built in javascript. It provides an interface to programatically test your application, and visually what went wrong (or right) in tests. This page will primarily focus on E2E (end-to-end) testing with cypress rather than component testing.
   
-# Why do end to end testing?  
+## Why do end to end testing?  
   
 [https://circleci.com/blog/what-is-end-to-end-testing/](https://circleci.com/blog/what-is-end-to-end-testing/)
 
@@ -19,7 +19,7 @@ The above link has a good explanation on what end to end testing is and why it s
 
 Cypress very closely mimics a real user, think of it as a robot accessing your website from a browser like a human would, but you can program the robot to interact with your website however you like and programmatically check the output on the screen.
 
-# Why Cypress?
+## Why Cypress?
 
 There exist many different testing frameworks online, such as [Selenium](https://www.selenium.dev/), [Jest](https://jestjs.io/), [Mocha](https://mochajs.org/), and more. 
 
@@ -29,7 +29,7 @@ Cypress is built on top of mocha, and uses its framework for tests as well. The 
 
 Selenium is often compared to Cypress, due to it being one of the most popular UI testing frameworks before Cypress was created. One of the biggest differences is that Cypress automatically retries commands while waiting for DOM elements to load properly, helping to prevent [flaky tests](https://www.jetbrains.com/teamcity/ci-cd-guide/concepts/flaky-tests/) and eliminating the need to write wait or sleep helpers that were needed in Selenium. Cypress is also faster and easier to get setup and start creating tests than Selenium. However, Selenium is more flexible, allowing for testing in multiple browsers at a time, and also for writing tests in languages other than javascript. 
 
-# Installation and setup:  
+## Installation and setup:  
   
 Cypress can be automatically installed with [npm](https://www.npmjs.com/): `npm install cypress`
 
@@ -39,7 +39,7 @@ To run cypress, we can use the command `npx cypress open` and follow the instruc
   
 See [https://docs.cypress.io/guides/getting-started/opening-the-app](https://docs.cypress.io/guides/getting-started/opening-the-app) for more details.
 
-# The basics
+## The basics
 
 Cypress has an extremely detailed guide for getting started, explains how to create and run tests, and there is also a lot of information linked as well.
 
@@ -53,7 +53,7 @@ The first link provides a detailed guide on how cypress commands work and how to
 
 The second link provides a guide to most of the commonly used functions in cypress, like how to query for elements, check if they have or not have a specific property, actions such as clicking on buttons or filling out forms, and more. 
 
-# Best Practices
+## Best Practices
 
 One common use case for cypress (and UI testing in general) is to test responsiveness, does the UI look like it should in different viewports?
 
