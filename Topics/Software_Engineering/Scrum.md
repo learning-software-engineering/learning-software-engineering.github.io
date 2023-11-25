@@ -5,7 +5,7 @@
 - [Scrum values](#scrum-values)
 - [Members of a scrum team](#members-of-a-scrum-team)
 - [What are sprints?](#what-are-sprints)
-- [Scrum-artifacts](#scrum-artifacts)
+- [Scrum artifacts](#scrum-artifacts)
 - [Scrum ceremonies](#scrum-ceremonies)
 - [Why is scrum important?](#why-is-scrum-important)
 - [Resources](#resources)
