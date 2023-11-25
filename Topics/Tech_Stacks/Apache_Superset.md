@@ -44,7 +44,9 @@ This message shows up due to an update in version 2.1.0 to force secure configur
 
 ## Creating a Custom Plugin:
 
-**To get started on creating a custom plugin, you can follow the instruction [HERE](https://superset.apache.org/docs/contributing/creating-viz-plugins/)**
+**To get started on creating a custom plugin, you can follow the instruction [HERE](https://superset.apache.org/docs/contributing/creating-viz-plugins/)** 
+
+Note that while MacOS or Linux systems are more suitable, Windows is also a viable option if you have docker installed.
 
 There are example plugins [example](https://github.com/preset-io/superset-plugin-chart-liquid) which you can reference. Furthermore, this [youtube tutorial](https://www.youtube.com/watch?v=LDHFY9xTzls) can help you as well.
 
