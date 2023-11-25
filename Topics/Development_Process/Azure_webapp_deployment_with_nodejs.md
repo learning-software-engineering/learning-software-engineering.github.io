@@ -129,6 +129,31 @@ Now, you have two options:
 
 ## CI/CD with Github Actions
 
+You can use Github Actions with Azure to automate workflows during your software development. Given the different hosting and deployment options mentioned above, there is a different way to use Github Actions to work with whichever hosting option you've chosen.
+
+Below, we'll continue with our previous example of a Node.js Web App using Azure App Service, but you can find examples for different hosting options [here](https://learn.microsoft.com/en-us/azure/developer/github/deploy-to-azure).
+
+Note that before continuing with implementing CI/CD with Github Actions, you should have a working [Azure App Service](#azure-app-service) app.
+
+### Using Github Actions to Deploy to Azure App Service
+
+The workflow can be set up in 1 of 2 ways:  using the Deployment Center to generate the workflow file for your Azure App service and tech stack in a Github repository, or manually.
+
+If you deployed your web app using the Azure portal, congratulations, the workflow file was set up automatically for you! You're all done!
+
+If you deployed your web app using the Azure CLI, follow along, there's a couple more steps!
+
+I found the official documentation (found at the link below) to be a clear and quick tutorial for how to set up Github Actions for your Azure App Service web app, which guides you through whichever workflow setup method you've chosen, with instructions for the various supported programming languages you may be using.
+
+[Using Github Actions with Azure App Service](https://learn.microsoft.com/en-us/azure/app-service/deploy-github-actions?tabs=applevel)
+
+Some issues that I've seen occur in this process include:
+
+- The workflow script not being able to find a file, in which case you may want to modify your file structure or the workflow file itself to properly reference the location.
+- Npm script errors if you haven't set up a test script. You can fix this by removing the calls to these scripts (ie. remove `npm run test` and `npm run build` from the workflow file if you don't have these)
+
+Once you've completed the steps in the documentation and see that the Github Actions workflow ran successfully, congratulations, you've deployed a web app on Azure integrated with Github Actions for CI/CD!
+
 ## Cost Management with Azure
 
 
