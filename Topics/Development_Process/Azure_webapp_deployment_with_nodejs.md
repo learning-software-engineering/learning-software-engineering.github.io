@@ -156,6 +156,29 @@ Once you've completed the steps in the documentation and see that the Github Act
 
 ## Cost Management with Azure
 
+There are multiple scary stories of people learning to use cloud service providers, like Google Cloud Platform or AWS, and as they set up different services, when the bill comes around, they're faced with a staggeringly large bill. 
+
+It can be scary to learn something new when such consequences are possible, but to avoid that, Azure provides a handful of tools to use to ensure that you are in control of what you spend.
+
+### Cost Analysis
+
+In the Azure portal at **Billing** > **Cost Management** > **Cost Analysis**, you're able to view a breakdown of your costs and spending over time, and either with respect to your entire account, or if you want to be more specific, you can also scope to specific resource groups. With this, you're able to analyze your spending to be more aware of where most of your costs are going.
+
+A more detailled look at cost analysis can be found [here](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/quick-acm-cost-analysis).
+
+### Budgets & Alerts
+
+While it is useful to be able to analyze your spending, you won't be doing this around the clock, so you still need a way to be informed of your spending if it starts getting out of hand. In come budgets and alerts. 
+
+A budget allows you to track your spending across your services, set a limit, and be notified as the cost across your services approaches this limit. In the **Cost Management + Billing** > **Cost Management** > **Budgets** page, you are able to create a new budget. 
+
+When creating a new budget, you're able to choose some important fields, including the **reset period** (the time period for the budget), the **creation date** (when the budget begins), the **expiration date** (when the budget expires), and the **amount** (the limit amount you're willing to spend).
+
+After filling these in, you're able to set up alerts for this budget. Alerts can be triggered either by the actual usage of your budget, or the forecasted usage, and they can be triggered at certain portions of your budget being used (ex. 30%, 50%, 80%). When these alerts are triggered, you (and other recipients) that you indicated as the alert recipients, will receive email notifications.
+
+For example, it may be reasonable to set a budget that alerts you when your usage of your budget has reached 75%, to give you enough time to react if this has happened unexpectedly, and even if it is within expectations, to at least be aware of your current usage, thus making it more difficult to end up in scenarios where you're blindsided by a large bill.
+
+See more about cost management in Azure's official [documentation](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/).
 
 ## Azure Terminology
 
