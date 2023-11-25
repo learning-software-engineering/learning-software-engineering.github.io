@@ -174,9 +174,26 @@ Avoid providing unnecessary or irrelevant information to users. Keep dialogue co
 
 __Why is this important?__
 
+1. Visuals influence how the user gauges the quality of the webpage and the service itself. A clean, professional webpage is likely to garner more trust than an amateurish design, so from a business perspective aesthetics are important (13).
 
+2. A perception of quality and clarity conveyed by the interface directly affects the user experience, causing them to perceive the application in a better light (13).
+
+3. Aesthetics "establish and reinforce your brand’s identity. (13)" A clear, consistent aesthetic builds an association in the user's mind between your product and its appearance.
+
+4. Information presented in a cluttered manner is difficult to absorb and comprehend. Irrelevant information, when presented, distracts from relevant information and may confuse the user.
+
+The user experience necessarily involves conveying information. Because user attention is finite, we should strive only to convey what they need to know and want to know. We should also seek to convey this information in a pleasant manner for the end user, while maximizing the 'signal' and minimalizing noise.
 
 __How can we implement this?__
+General concepts as discussed on the Nielsen webpage (13):
+
+- Keep the content and visual design of UI focused on the essentials.
+- Don't let unnecessary elements distract users from the information they really need.
+- Prioritize the content and features to support primary goals.
+
+Careful use of visual design principles may enable us to attain these goals as laid out. Consider the resource at https://www.nngroup.com/articles/principles-visual-design/ for more information. 
+
+Users find beautiful, simple designs to work better and faster even when they might not actually perform better in reality. Perception is important and can enhance usability and usefulness.
 
 **Example:** Having a simple introduction page for the website, that can be expanded upon when the "More Details" button is clicked.
 
@@ -184,22 +201,33 @@ __How can we implement this?__
 Provide accurate and straightforward error messages to users so they are able to understand and potentially fix the error. Ensure that error messages are written in simple terms, they clearly indicate the issue, and suggest potential fixes. 
 
 __Why is this important?__
+This particular heuristic's importance is self-evident. We discussed earlier how users make 'slips' and 'mistakes'— errors in software operation— and how to build a system that tolerates these errors and makes them less likely. However, errors will still occur (as no useful system can be truly foolproof) and cause problems that must be resolved. 
 
+A software application can prevent some errors from being made, but can't fix most errors for the user (at least not yet). It is up to the user to recognize and rectify the error made. For the end user, if it's evident what the actual problem is then they can find a solution. Furthermore, if we as developers can guess at what the error is likely to be, we can provide actionable tips to fix the problem. Otherwise, if it's not clear what the problem is, the user has too little information to determine their next steps.
 
 __How can we implement this?__
 
-**Example:** When the user incorrectly enters their email to log into a website, it gives an error message saying "There is no account with this email associated. Please carefully re-enter your information or sign up."
+- Design clear error messages when problems occur, containing a quick explanation of the problem. When applicable, provide a fast solution.
+
+- Provide resources and documentation for errors and fixes. In complex software applications this information is not necessarily suitable to be presented directly, in which case we can link the user to a resource page based on the error detected.
+
+- Provide diagnosis and debugging assistance through self-guided solutions or even a software 'wizard' for common problems.
+
+**Example:** My application provides detailed error messages when something unexpected occurs: for example, a missing field in a form results in an error message notifying the user of their mistake and brings them back to the page so they may fix it. A more complicated error results in the user being linked to documentation discussing solutions, and they may make use of a simple chatbot using decision trees in order to debug.
 
 ### **10: Help and documentation**
 It is better if a system can be easily used without documentation, but it may be necessary. In the case that your system is complicated and needs instructions, provide clear and concise instructions without any jargon that can be easily understood by new users. Ensure that the help documentation is easily found, searchable, and lists concrete steps.
 
 __Why is this important?__
+We can attempt to build intuitive and learnable interfaces and in fact we should. There are limitations to how much can be implicitly conveyed to users, and complex use cases may require specific instructions that cannot easily be conveyed in the minimalistic, clean forms we want to maintain on most pages. In this case, documentation is necessary to provide specialized and detailed information to the user so that they may achieve their goals and gain a clearer understanding of how the application functions. 
+
+We may imagine a complex piece of software as a house-sized machine that performs various complicated tasks, and whose internal workings are mostly unknown to the end user. We may design this machine to be intuitive to use through a clever interface, but there will likely be niche or difficult use cases. Clear documentation is analogous to a detailed user's manual; the product should be designed such that the user doesn't need to rely on the manual, but it should provide information on common use-cases and how to deal with potential bugs.
 
 
 __How can we implement this?__
+A 'documentation' or 'help' page on a website is a good starting point. Adding the ability to search for keywords and error codes will benefit larger documentation pages. 
 
-
-**Example:** A web application has a "help" tab with detailed instructions and documentation. 
+- We may recommend some resources on the documentation page based on common user stories and use cases. For instance, a service offering cloud hosting should inform new users on how to set up their projects to run on the service and link to documentation.
 
 ## **Additional Resources**
 
@@ -236,3 +264,7 @@ Heuristics Applied to Everyday Life: https://www.zenhaiku.com/archives/usability
 11. Budiu, R. (2014, July 6). Memory recognition and recall in user interfaces. Nielsen Norman Group. https://www.nngroup.com/articles/recognition-and-recall/ 
 
 12. Laubheimer, P. (2022, November 22). Flexibility and efficiency of use (usability heuristic #7). Nielsen Norman Group. https://www.nngroup.com/articles/flexibility-efficiency-heuristic/ 
+
+13. Fessenden, T. (2021, January 24). Aesthetic and minimalist design (usability heuristic #8). Nielsen Norman Group. https://www.nngroup.com/articles/aesthetic-minimalist-design/ 
+
+14. 
