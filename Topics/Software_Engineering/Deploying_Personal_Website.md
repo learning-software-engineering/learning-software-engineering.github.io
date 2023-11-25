@@ -6,6 +6,8 @@ A personal website can be a great way to build a more personalized portfolio to 
 
 If you want to display the same content to every visitor of your site, and you’re looking for a cost-effective solution with lower hosting costs, you might want to opt for a static personal website. However, if you would like to add interactive features like allowing visitors to leave comments on your blog posts that require backend processing, or if you want to experiment with external APIs and databases, a dynamic personal website would be a better choice. 
 
+For your reference, here is an example of a [static](https://maruan.alshedivat.com/) personal website. Here is an example of a [dynamic](https://bruno-simon.com/) personal website
+
 ## Deploying Static Websites
 
 **Prerequisite:** 
