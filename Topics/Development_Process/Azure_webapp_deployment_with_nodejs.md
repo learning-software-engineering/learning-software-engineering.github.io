@@ -35,11 +35,97 @@ While we won't be going into too much detail here, you will need to have Node.js
 
 ## Deployment
 
+Azure has a variety of ways to host your application, including Azure App Service, Azure Functions, Azure Container Instances, Azure Kubernetes Service, and more, which you can choose to suit your specific usecase. 
+
+See more about the different kinds of hosting options and reasons to choose one over the other [here](https://learn.microsoft.com/en-us/azure/developer/intro/hosting-apps-on-azure).
+
+The following will detail how one would deploy a Node.js Web App using Azure App service, and integrate it with Github Actions for CI/CD.
+
+### Azure App Service
+
 Azure application service allows you to build and host web applications, mobile backends and RESTful APL in the selected programming language without managing the infrastructure. It provides automatic scaling and high availability, supports Windows and Linux, and supports automatic deployment from GitHub, Azure Devops or any Git repository. You can refer to our quick start, tutorials and examples to learn how to use Azure application services.
 
-## Deploy Web app on Azure
+#### Create Web app on Azure
+
+From Microsoft's official documentation, here is a quick tutorial to get an example Node.js project deployed:
 
 [deploy web app with node js on Azure](https://learn.microsoft.com/en-us/azure/app-service/quickstart-nodejs?tabs=linux&pivots=development-environment-vscode)
+
+Alternatively, and possibly easier, you can make a very basic web app with Node.js and Express by doing the following:
+
+Note: Learn more about Node.js and Express apps [here](../Tech_Stacks/Express.md).
+
+1. Create a project directory for the Node.js web app
+2. In the root of your project directory, run `npm init` in the terminal (you should have npm and Node.js installed).
+3. In the terminal, run `npm install express`.
+4. Write the following in the directory in a new file, `server.js` (or whatever name you entered as the entry point during `npm init`).
+    ```javascript
+        const express = require("express");
+
+        const app = express();
+
+        const PORT = 3000
+
+        app.get("/", (req, res) => {
+            res.send(`
+            <h1>CSC301 A2 Demo successfully deployed!</h1>
+            <h2>You did it!</h2>
+            `)
+        });
+
+        // Set up server to listen on port 3000
+        app.listen(PORT, () => {
+            console.log(`Listening on port ${PORT}`);
+        });
+    ```
+
+Note that the file structure inside your project directory should currently look something like this:
+
+```
+├── node_modules
+├── package.json
+├── package-lock.json 
+├── server.js 
+└── .gitignore
+```
+
+Have this code in a Github repository to later integrate with Github actions.
+
+Now, you have two options:
+
+1. Deploy your Web App with the Azure portal
+    Note: If you proceed with this option, the Azure portal will immediately integrate CI/CD with Github Actions upon deploying your web app.
+
+    On the Azure Portal, navigate to **App Services**: 
+
+    - Click on the **Create** dropdown and select **Web App**. 
+    - For this simple example, you'll only need to fill out the first tab, **Basics**.
+    - Choose a subscription (Azure for Students if you've used the Github Student Developer Pack), a resource group (or create one), and create a name for your Web App.
+    - Choose `Code` for `Publish`, and the appropriate version of Node for your runtime stack.
+    - The default region and Linux plan defaults should suffice, but make sure to **change the Pricing Plan to Free F1 (Shared infrastructure)**.
+    - Select **Review + Create** and then **Create**.
+    
+    
+    After you get a notification that the deployment succeeded, navigate to your web app on the Azure portal. 
+    
+    - On the sidebar, select **Deployment Center**.
+    - As the code source, select Github under **Continuous Deployment** in the dropdown (you should have your code in a Github repository).
+    - Select the appropriate organization, repository, and branch to deploy.
+    - Click **Save** and wait.
+    - After a couple minutes, confirm that you can access the deployed URL, and that there's a workflow file in your Github repository.
+
+    Congratulations, you've deployed a web app using Azure, and integrated it with Github Actions too!
+
+
+2. Deploy your Web App with the Azure CLI
+    Note: If you proceed with this option, you'll need to follow along with the [CI/CD with Github Actions](#cicd-with-github-actions) instructions to integrate Github Actions.
+
+    In your terminal:
+
+    - If you haven't already, follow the instructions in [Installation](#installation) to install the Azure CLI
+    - Ensure that you've followed the setup instructions in the [official documentation](https://learn.microsoft.com/en-us/cli/azure/get-started-with-azure-cli)
+    - Enter the following command **while in your project directory's root folder**: `az webapp up --sku F1 --name <your_webapp_name>` (learn about the parameters [here](https://learn.microsoft.com/en-us/cli/azure/webapp?view=azure-cli-latest))
+    - Once the command successfully executes, visit the URL in the response object you got. If you see your web app (note that it may take a minute or two), congratulations, you've successfully deployed your web app on Azure!
 
 ## CI/CD with Github Actions
 
