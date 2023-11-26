@@ -35,7 +35,8 @@ fish suggests commands as you type, based on command history. As you type comman
 suggestions are offered after the cursor in gray. To accept the suggestion, press
 `→` or `Control`+`F`.
 
-FIXME: image here
+<img width="280" alt="autosuggestions" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/40929644/fd505f17-4265-41ac-b41f-59bbdd0eb670">
+
 
 ## Autocompletions
 
