@@ -4,15 +4,23 @@
 
 ### [Introduction](#introduction-1)
 
+### [What is OData](#what-is-odata-1)
+
 ### [Getting Started with OData](#getting-started-with-odata-1)
 
 ### [OData Basics](#odata-basics-1)
+
+### [How to Use OData for RESTful APIs](#how-to-use-odata-for-restful-apis-1)
 
 ### [Additional Resources](#additional-resources-1)
 
 ## Introduction
 
 In this guide, you will explore OData, a powerful protocol for building and consuming RESTful APIs. This tutorial aims to provide a foundational understanding of what OData is, its key concepts, and how to use it to create robust and interoperable APIs. Before you dive in, ensure you have a basic understanding of web development and RESTful principles.
+
+## What is OData
+
+OData, or Open Data Protocol, is a standardized protocol for building and consuming RESTful APIs. Developed by Microsoft, it is now an OASIS standard. OData provides conventions for creating and consuming web services, making it easier for developers to create interoperable APIs. It is based on standard HTTP protocols and supports CRUD operations (Create, Read, Update, Delete) on resources.
 
 ## Getting Started with OData
 
@@ -46,15 +54,73 @@ OData resources are identified by URLs. Each entity and its properties have a un
 
 #### Query Options:
 
-OData supports various query options that clients can use to filter, sort, and shape the data they receive.
+OData supports various query options that clients can use to filter, sort, and shape the data they receive. Example below include `$filter`, `$orderby`, and `$select`.
+
+```http
+GET /Products?$filter=Price ge 10&$orderby=Name&$select=Name,Price
+```
 
 #### CRUD Operations
 
-OData supports standard CRUD (Create, Read, Update, Delete) operations. Clients can use HTTP methods like GET, POST, PUT, and DELETE to interact with data.
+OData supports standard CRUD (Create, Read, Update, Delete) operations. Clients can use HTTP methods like GET, POST, PUT, and DELETE to interact with data. Example below is a POST request.
+
+```bash
+curl -X POST -H "Content-Type: application/json" -d '{"Name": "New Product", "Price": 39.99}' http://your-api-url/odata/Product
+```
 
 #### Navigation Properties
 
 Entities can have relationships with other entities through navigation properties. Clients can traverse these relationships to access related data.
+
+## How to Use OData for RESTful APIs (Example)
+
+### Setting Up OData
+
+#### Install OData Package:
+
+Use your preferred package manager to install the OData package. For example, using npm:
+
+```bash
+npm install express odata
+```
+
+#### Create an Express App:
+
+Set up an Express.js application. Below is a basic example:
+
+````javascript
+const express = require('express');
+const { ODataServer } = require('odata-v4-server');
+
+const app = express();
+
+// Your OData configurations and routes go here
+
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+console.log(`Server is running on port ${port}`);
+});
+```
+````
+
+### Defining OData Endpoints
+
+#### Create an Entity Model:
+
+Define the data model for your API entities. For example:
+
+```javascript
+const { createFilter } = require("odata-v4-mongodb");
+const { ObjectID } = require("mongodb");
+
+class Product {
+  constructor() {
+    this.ID = ObjectID;
+    this.Name = String;
+    this.Price = Number;
+  }
+}
+```
 
 ## Additional Resources
 
