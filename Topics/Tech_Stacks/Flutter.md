@@ -4,6 +4,8 @@
 
 #### [What is Flutter](#what-is-flutter)
 
+#### [Why Flutter? Pros and Cons](#why-flutter-pros-and-cons)
+
 #### [Creating your first flutter app](#creating-your-first-flutter-app)
 
 ## What is Flutter?
@@ -15,6 +17,28 @@ Flutter now supports application development on six platforms: iOS, Android, the
 Flutter uses the open-source programming language Dart, which was also developed by Google. Dart is optimized for building UIs, and many of Dart’s strengths are used in Flutter.
 
 Source: [Amazon AWS](https://aws.amazon.com/what-is/flutter/)
+
+## Why Flutter? Pros and Cons
+
+####Pros:
+
+1. **Single codebase for all platforms**
+   There is no need to create separate code bases when working on iOS and Android devices. Flutter allows developers to build a single codebase and use it for several platforms such as the web, desktop and mobile. This results in quicker app launch and is cost effective.
+2. **Reduced Development Time**
+   The requirements for Flutter application development are much lower. So the positive outcome is that there are no additional maintenance charges. Flutter makes it possible to create larger apps that use unique features.
+3. **Hot Reload Feature**
+   The ability to hot reload is one of the main benefits of using Flutter. This is for effective cross-platform development so it can complement the nature of Flutter. This feature’s function speeds up application development.
+
+###Cons:
+
+1. **Dart’s low popularity**
+   It’s a fact that Dart is a reliable programming language since it is fast. It is also true that developers are starting to make it an option. Yet, Dart is still not able to compete with other top programming languages such as java, Kotlin, etc.
+2. **Large and Weighty Apps**
+   A loophole that can’t be dismissed is the size of the large size of the applications under development. Software developers working with this toolkit may find it difficult to work with large files. This can cause them to choose a lighter alternative.
+3. **Limited number of third-party libraries**
+   Flutter being relatively cannot be compared to native programming languages. Developers still need to spend more time building as many libraries as possible.
+
+   Source [Waverley Software](https://waverleysoftware.com/blog/why-use-flutter-pros-and-cons/#:~:text=Flutter%20allows%20developers%20to%20build,application%20development%20are%20much%20lower.)
 
 ## Creating your first flutter app
 
@@ -36,9 +60,9 @@ The following is a summary from the offical [Flutter Docs](https://docs.flutter.
 
 3. **Create the app**
    1. Invoke **View > Command Palette**. This can be done with `ctrl shift p` on Windows or `cmd shift p` on Mac.
-   <img width="636" alt="Screenshot 2023-11-25 at 6 53 37 PM" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/65613404/9bdf3ef1-ad9b-4848-b6bb-723f85462c36">
+      <img width="636" alt="Screenshot 2023-11-25 at 6 53 37 PM" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/65613404/9bdf3ef1-ad9b-4848-b6bb-723f85462c36">
    2. Type "flutter", and select the **Flutter: New Project**
-   <img width="644" alt="image" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/65613404/47cf0a8d-25a5-4076-ad6d-54cc8197384d">
+      <img width="644" alt="image" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/65613404/47cf0a8d-25a5-4076-ad6d-54cc8197384d">
    3. Select **application**
    4. Create or select the parent directory for the new project folder.
    5. Enter a project name, such as `my_app`, and press **Enter**.
