@@ -101,14 +101,14 @@ Now, you should have some basic understandings of Unity UI. But what makes Unity
 
 1. UI Animation: WIth Unity UI Animation System, UI elements properties, such as position, scale, or color, can be modified over time. Check out the video [Master UI ANIMATIONS!](https://www.youtube.com/watch?v=YqMpVCPX2ls&list=PL1aAeF6bPTB5N-_01xjNIOg9_refqTxVv&index=16) for more vivid demonstrations.
 
-2. Integration with Game Development: As we mentioned above, you can attach C# scripts to UI elements! This enable the UI to respond to user input and integrate with the overall game logic.
+2. Integration with Game Development: As we mentioned above, you can attach C# scripts to UI elements! This enable the UI to respond to user input and integrate with the overall game logic.  
 The most common example would be to attach a script for button UI element. [Button Click Events Unity C#](https://www.youtube.com/watch?v=woPW2_vuSXw)
 
 3. 3D objects on the Canvas: Another cool thing that Unity UI can achieve to to place 3D object onto the Canvas. Here is a quick tutorial for how to make this happend! [Placing 3D objects on a Unity canvas](https://www.youtube.com/watch?v=8yzpjkoE0YA)
 
 ## Additional resources
-[Unity Documentation](https://docs.unity3d.com/560/Documentation/Manual/UISystem.html ): You definitely checkout official documentation of Unity UI for usage!
-[Unity UI Manual](https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/index.html): This is the specific section of Unity UI that contains more details.
+[Unity Documentation](https://docs.unity3d.com/560/Documentation/Manual/UISystem.html ): You definitely checkout official documentation of Unity UI for usage!  
+[Unity UI Manual](https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/index.html): This is the specific section of Unity UI that contains more details.  
 [Get started with Unity UI (GUI system)](https://www.youtube.com/watch?v=xmR07iBW7zk&list=PL1aAeF6bPTB5N-_01xjNIOg9_refqTxVv&index=1): A series of tutorials that introduce Unity UI in great details!  
 [The Unity Tutorial For Complete Beginners](https://www.youtube.com/watch?v=XtQMytORBmM): A hands-on tutorial for making a Flappy Bird game!  
 [How To Get A Better Grid Layout in Unity](https://www.youtube.com/watch?v=CGsEJToeXmA&list=RDCMUCR35rzd4LLomtQout93gi0w&index=2): Organize your UI structurally  
