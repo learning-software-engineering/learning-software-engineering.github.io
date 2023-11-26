@@ -4,7 +4,7 @@
 #### [Introduction](#introduction)
 #### [Download and installation](#download-and-installation)
 #### [Create new Unity project](#create-new-unity-project)
-#### [Breif intro to Unity interface](#brief-intro-to-the-unity-interface)
+#### [Brief intro to Unity interface](#brief-intro-to-the-unity-interface)
 #### [Additional resources](#additional-resources)
 #### [References](#reference)
 
@@ -13,7 +13,7 @@ Unity is a game engine that can be used to develop 2D, 3D, AR/VR games. It can a
 
 ## Download and Installation
 #### Download Unity Hub
-**Unity** Hub is a management tool that can be used to organize Unity projects, install different versions of Unity Editor, manage to licenses and access the Unity Asset Store efficiently. It can be used with the Unity Editor version 5.6 or higher.
+**Unity** Hub is a management tool that can be used to organize Unity projects, install different versions of Unity Editor, manage licenses and access the Unity Asset Store efficiently. It can be used with the Unity Editor version 5.6 or higher.
 
 To get started, download Unity Hub from the [official Unity website](https://unity.com/download). 
 Choose the correct installer of Unity Hub for your operating system (Mac, Windows, or Linux).
@@ -66,10 +66,10 @@ The project window acts as a file browser, organizing asset files in folders. An
 5. **Toolbar**: 
 The toolbar is at the **top** of the Unity Editor. You can press the play/pause button in the middle to run/stop the game in the Game view. The toolbar also contains tabs to access your Unity Account, Unity Cloud Services, and Unity Collaborate. 
 
-Note that you can customize your Unity Interface, meaning that you can drag and move the windows to different places and also add/remove windows to change the interface appearance according to your preference. Some Unity tutorials that you might find may also have a different appearence of the interface.
+Note that you can customize your Unity Interface. You can drag and move the windows to different places and add/remove windows to change the interface appearance according to your preference. Some Unity tutorials that you might find may also have a different appearance of the interface.
 
 #### Script Editor
-If you double click on a script in your Project window, your script will be opened in your default script editor. You will be able to edit the scripts in the editor and see changes reflected in the Unity Editor.
+If you double-click on a script in your Project window, your script will be opened in your default script editor. You will be able to edit the scripts in the editor and see changes reflected in the Unity Editor.
 
 If you have not set the default editor or want to change the default editor, you can:
   - Go to **Edit** in the Toolbar > **Preferences (macOS: Unity > Settings)** to open the Preferences window.
