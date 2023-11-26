@@ -87,9 +87,8 @@ Rect Transform helps modify the position, rotation, and scale of the Game Object
 
 **Anchor**: Anchors are shown as four small triangular in the Scene View. The anchoring allows the child to stretch together with the width or height of the parent. Each corner of the rectangle has a fixed offset to its corresponding anchor. This way the different corners of the rectangle can be anchored to different points in the parent rectangle. You can also think of Anchor as setting relative position to the parent object.
 
-![UI_Anchored1](https://github.com/arielchen07/learning-software-engineering.github.io/assets/105243552/51879eff-1338-4dba-bc89-02029d1afcb8)
-
-![UI_Anchored2](https://github.com/arielchen07/learning-software-engineering.github.io/assets/105243552/aaba8364-6cee-42a9-bb11-320716ce1869)
+![output-onlinegiftools (1)](https://github.com/arielchen07/learning-software-engineering.github.io/assets/105243552/0c2f772f-d399-402e-b6ba-ec6d2d066977)
+![output-onlinegiftools (3)](https://github.com/arielchen07/learning-software-engineering.github.io/assets/105243552/899fc56d-734a-4ddb-abcf-12c3baea81cd)
 
 > Here are two cases of how pivot and anchor functioning.
 
