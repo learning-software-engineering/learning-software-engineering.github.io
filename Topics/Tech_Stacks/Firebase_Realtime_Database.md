@@ -31,6 +31,7 @@ This set up will be for Flask and Python, equivalent setups can be done for othe
 
 #### Create a Firebase Project
 First go to the [Firebase Console](https://console.firebase.google.com/u/0/)
+
 Click on "Add Project" and set it up as per your needs
 
 #### Add Firebase to your Python/Flask application
