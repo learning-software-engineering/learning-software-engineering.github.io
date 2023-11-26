@@ -65,8 +65,73 @@ Here is a brief overview on common use cases of using and manipulating data.
 ### Create Data
 #### Use the ```.push()``` method
 
+```python
+# Creating a new user
+
+users_ref = db.reference('users')
+new_user_ref = users_ref.push({
+    'name': 'First Last',
+    'email': 'user@example.com'
+})
+```
+
+### Read Data
+#### Use the ```.get()``` method
+
+```python
+# Reading data from users
+
+all_users = db.reference('users').get()
+for user_id, user_info in all_users.items():
+    print(user_id, user_info['name'])
+```
+
+### Update Data
+#### Use the ```.update()``` method
+
+```python
+# Updating a user's name
+
+user_update_ref = db.reference('users/{user_id}'.format(user_id='user1'))
+user_update_ref.update({
+    'name': 'NewFirst NewLast'
+})
+```
+
+### Delete Data
+#### Use the ```.delete()``` method
+
+```python
+# Deleting a user
+
+delete_ref = db.reference('users/{user_id}'.format(user_id='user2'))
+delete_ref.delete()
+```
+
+### Basic Queries
+#### Queries can be specified by the child key, value, or key name
+
+```python
+# Querying users by name
+
+query = db.reference('users').order_by_child('name').equal_to('Test User').get()
+
+for user_id, user_info in query.items():
+    print(user_id, user_info)
+``` 
+
 ## 6. Advantages and Disadvantages
 
+### Advantages
+- Google Analytics gives comprehensive insights about the usage of your application
+- Performance Monitoring helps you gain insight into the performance of your application on various platforms
+- Scalability is great as it scales automatically, even for large applications
+- Cross-Platform SDKs makes it easier for a developer to integrate services into various applications
+
+### Disadvantages
+- High data usage and having a lot of clients can incur heavy costs
+- It does not support complex querying like other SQL databases
+- Configuring security rules can requires attention to detail and must be tested throughly
 
 
 ## 7. Additional Resources
