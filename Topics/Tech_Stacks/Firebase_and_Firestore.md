@@ -60,7 +60,9 @@ FROM: https://firebase.google.com/docs/firestore/quickstart
 
 
 Lets use another example and break it down
+
 After you’ve initialized your app, first get a reference to firestore with the getFirestore() function
+
 Then pass that reference into the doc() function along with the path to the document, in this example we are looking at the 2021-09-14 document in the  dailySpecial collection
 
 ```
@@ -81,5 +83,7 @@ function write(){
 write()
 ```
 Note that writing to a path will create the document if it doesn't exist and replace it with the new data if it does.
+
 To resolve this, you may choose to do updateDoc() (with the same parameters above), but this requires the document existing, thus you may choose to add an additional parameter to the setDoc command to merge any updates, you pass in {merge:true} along with the parameters you’ve specified.
+
 Since the setDoc() call is asynchronous, you must handle it as such.
