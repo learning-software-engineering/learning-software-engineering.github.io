@@ -177,11 +177,40 @@ Jakob Nielsen's [10 Heuristics for Interaction Design](./User_Experience/Usabili
 Finally, to create a **prototype**, or a **high-fidelity prototype**, you essentially make your mock-up interactive by connecting all the pages. Figma (discussed in the [Design Tools](https://learning-software-engineering.github.io/Topics/User_Experience.html#figma) section) is a free tool that you can use to create your mock-up and prototype. With prototyping tools like Figma, you can easily stimulate button clicks, screen swipes, etc. without any code.
 
 ## Accessibility
+
+The core of accessibility lies in acknowledging and catering to the diverse needs of users, which include visual, auditory, motor, and cognitive impairments. By implementing accessibility standards, developers can create products that are not only more usable for people with disabilities but also enhance the overall user experience for a broader audience. This involves designing software and interfaces that are flexible enough to meet different user needs and preferences, and are compatible with various assistive technologies.
+
 ### The 7 Universal Design Principles
 
 [Universal Design Principles](https://www.buffalo.edu/access/help-and-support/topic3/universaldesignprinciples.html) are not only used for software but can be incorporated generally as well. These 7 principles ensure accessibility, consistency, and user-friendly software. 
 This article provides the 7 Universal Design Principles that make software accessible to all users, which plays an important role in diversifying the User Experience. 
 
+### Web Content Accessibility Guildlines (WCAG)
+
+The [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/standards-guidelines/wcag/) are a set of recommendations for making web content more accessible, primarily for people with disabilities, but also for all user interfaces and devices. Developed through the World Wide Web Consortium (W3C), specifically by the Web Accessibility Initiative (WAI), WCAG serves as the international standard for web accessibility.
+
+WCAG 2 is structured around four fundamental principles, often referred to by the acronym **POUR**, ensuring that web content is:
+
+1. **Perceivable**:  Information and user interface components must be presented in ways that users can perceive.
+    - Provide text alternative for non-text content.
+    - Provide captions and other alternatives for multimedia.
+    - Create content that can be presented in different ways, including by assistive technologies, without losing meaning.
+    - Make it easier for users to see and hear content.
+
+2. **Operable**: User interface components and navigation must be operable.
+    - Make all functionality available from a keyboard.
+    - Give users enough time to read and use content.
+    - Do not use content that causes seizures or physical reactions.
+    - Help users navigate and find content.
+    - Make it easier to use inputs other than keyboard.
+
+3. **Understandable**: Information and the operation of user interfaces must be understandable.
+    - Make text readable and understandable.
+    - Make content appear and operate in predictable ways.
+    - Help users avoid and correct mistakes.
+
+4. **Robust**: Content must be robust enough to be reliably interpreted by a wide variety of user agents, including assistive technologies.
+    - Maximize compatibility with current and future user tools.
 
 # Helpful Courses
 - [The Design of Interactive Computational Media (CSC318) offered by U of T](https://artsci.calendar.utoronto.ca/course/csc318h1). CSC318 expands on the work done before coding projects. For example, the course will have you test how users would interact with your prototype of a UI and then modify it so that the UX is better for the user.
