@@ -1,10 +1,10 @@
 # Importance of Security: An Introduction to RSA and the Secure Boot Process
 
-## Why do we need secure boot?
+
 As technology evolves, we are found in an era dominated by digital connectivity as well as data-driven operations, where the security and integrity of computing systems have been more important than ever. Imagine if a device that is responsible for the functioning of a hospital or financial institution is compromised during startup; or if someone with malicious intent was able to gain control over the core components of your device before the OS is even launched.
 Malicious actors could manipulate firmware and bootloader code or even inject harmful software at the very foundation of your device. 
 
-This documentation aims to explain how RSA is employed in the Secure Boot process to verify the integrity and authenticity of firmware and operating system components.
+This documentation aims to explain the Secure Boot process, as well as RSA, its usages, and the importance of good security in Software Development
 
 ### How do you prevent security issues and gurantee that the OS you are loading on your device is untampered with?
 Secure Boot addresses this concern by verifying the digital signatures of the OS kernel and critical system files, ensuring that you are running a legitimate and risk-free operating system
@@ -14,7 +14,7 @@ Secure Boot involves a chain of trust, ensuring that each component loaded durin
 
 
 ## What is RSA?
-RSA is an asymmetric encryption algorithm, meaning it uses a pair of keys where one key is used for encryption and one key is used for decryption. The security of RSA relies on the difficulty of factoring the product of two large prime numbers, making it computationally impossible to derive the private key from the public key.
+RSA (Rivest–Shamir–Adleman) is an asymmetric encryption algorithm, meaning it uses a pair of keys where one key is used for encryption and one key is used for decryption. The security of RSA relies on the difficulty of factoring the product of two large prime numbers, making it computationally impossible to derive the private key from the public key.
 
 
 ![Diagram explaining Asymmetric Encryption](../assets/key.png)
@@ -52,7 +52,24 @@ RSA is an asymmetric encryption algorithm, meaning it uses a pair of keys where 
 ##### This is just a simple explanation of the math behind RSA, and in reality much larger numbers are used to guarantee that the private key cannot be derived from the public key
 
 
-### More Examples of where RSA is used
+## RSA Usage
+
+### Secure Communications
+
+##### Key Exchange: 
+RSA is often used in a setting where two parties may need to communicate a secure key. Imagine a scenario where Allen and David want to communicate over an insecure channel. RSA can be used to exchange a symmetric encryption key. Allen can use his public key to encrypt the symmetric key so that only Allen's private key can decrypt it. Once both Allen and David have the shared symmetric key they can use a faster symmetric key encryption algorithm for actual communication.
+
+##### Digital Signature: 
+RSA can also be used to create digital signatures to ensure authenticity of certain messages. When Allen wants to send a message to David, he can sign the message with his private key. Allen's public key can be known by anyone, and David has access to this. David can use this public key to verify the signature belongs to Allen, ensuring the message was not tampered with in transit.
+![example of using RSA to create digital signature](../assets/RSA-signature.png)
+
+### Data Encryption
+
+##### File or Message Encryption:
+RSA can be used to encrypt sensitive data, like files or messages, to ensure its confidentiality during transmission or storage. The sender uses the recipient's public key to encrypt the data, and only the recipient who posseses the corresponding private key can decrypt and access the original content.
+
+##### Secure Sockets Layer (SSL) / Transport Layer Security (TLS):
+RSA is an essential step in the establishment of secure connections over the Internet. In protocols like SSL and TLS, RSA is often used for key exchange during the initial handshake phase. The client and server use RSA to exchange a pre-master secret. This pre-master secret is then used to derive session keys for encrypting the actual data exchanged during the session.
 
 
 ## The importance of security in software development
