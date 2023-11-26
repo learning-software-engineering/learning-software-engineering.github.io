@@ -60,14 +60,17 @@ The following is a summary from the offical [Flutter Docs](https://docs.flutter.
 
 3. **Create the app**
    1. Invoke **View > Command Palette**. This can be done with `ctrl shift p` on Windows or `cmd shift p` on Mac.
-      <img width="636" alt="Screenshot 2023-11-25 at 6 53 37 PM" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/65613404/9bdf3ef1-ad9b-4848-b6bb-723f85462c36">
+      <img width="636" alt="VS Code Command Palette" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/65613404/9bdf3ef1-ad9b-4848-b6bb-723f85462c36">
    2. Type "flutter", and select the **Flutter: New Project**
-      <img width="644" alt="image" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/65613404/47cf0a8d-25a5-4076-ad6d-54cc8197384d">
+      <img width="644" alt="Flutter new project" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/65613404/47cf0a8d-25a5-4076-ad6d-54cc8197384d">
    3. Select **application**
    4. Create or select the parent directory for the new project folder.
    5. Enter a project name, such as `my_app`, and press **Enter**.
    6. Wait for project creation to complete and the `main.dart` file to appear.
       The above commands create a Flutter project directory called my_app that contains a simple demo app that uses [Material Components](https://m3.material.io/components).
+   7. Your file structures should look as follows.
+   <img width="197" alt="Final File Structure" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/65613404/11b6c999-a556-452c-867f-9299a6cef3b1">
+
 4. **Running the App**
    1. Locate the VS Code status bar (the blue bar at the bottom of the window).
    2. Select a device from the Device Selector area.
