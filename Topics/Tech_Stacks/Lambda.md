@@ -2,10 +2,11 @@
 
 ## Table of contents
 
-### [Introduction](#introduction)
-
-### [Why Use Lambda?](#)
-
+### [Introduction](#Introduction-1)
+### [Why Use Lambda?](#why-use-lambda-1)
+### [Limitations of AWS Lambda](#Limitations_of_AWS_Lambda-1)
+### [Example Use Cases](#example-use-cases-1)
+### [Additional Resources](#Additional-Resources)
 ## Introduction
 
 <img src="https://miro.medium.com/v2/resize:fit:506/1*VKfs2PGyMm5FZfJD72kYCw.png" width="100" height="100" style="float: right; margin-right: 10px;">
@@ -47,8 +48,22 @@ Thanks to Lambda's simplicity, getting started is fairly simple. Explore the off
 
 ## Example Use Cases
 
-<img src="https://d1.awsstatic.com/product-marketing/Lambda/Diagrams/product-page-diagram_Lambda-RealTimeFileProcessing.a59577de4b6471674a540b878b0b684e0249a18c.png">
 
+###1. Web Applications
+
+A user clicks on the web app to get local weather information. Then the App makes a REST API call to an endpoint triggering the Lambda. The Lambda runs the necessary code to retrive the local weather information from the db and returns data back to the user. 
+
+<img src="https://d1.awsstatic.com/product-marketing/Lambda/Diagrams/product-page-diagram_Lambda-WebApplications%202.c7f8cf38e12cb1daae9965ca048e10d676094dc1.png
+">
+
+
+###2. File Processing 
+Solving cross-device development challenges typically involves high costs and manual tasks, slowing down development teams. Yet, AWS Lambda offers a solution: automate a multi-platform media and content delivery pipeline. For example, a photograph is taken, and is uploaded to a database like an S3 bucket. Then that triggers a Lambda which runs the image resizing code into sizes that fit mobile, tablet, and laptop. 
+
+
+Netflix showcases an excellent use case, leveraging AWS Lambda to process over 70 billion hours of content across 60 million users, transforming media files into over 50 formats.
+
+<img src="https://d1.awsstatic.com/product-marketing/Lambda/Diagrams/product-page-diagram_Lambda-RealTimeFileProcessing.a59577de4b6471674a540b878b0b684e0249a18c.png">
 
 
 ## Additional Resources
