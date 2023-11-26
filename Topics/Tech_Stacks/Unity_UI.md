@@ -17,6 +17,9 @@ provides the most direct way to interact and guide users. Unity has its own Uini
 
 Here is a guidance for beginners to start designing their UI in Unity. For more details, please go and check the official [Unity Documentations](https://docs.unity3d.com/2023.3/Documentation/Manual/UIToolkits.html) for the version that you use.
 
+> Here we assume you already have know the basics of Unity and we will not introduce how to make the game in Unity scenes here.
+> Please checkout Unity Introduction section if you are not familiar with the basics!
+
 ## Start with Canvas
 
 The Canvas is the place where you create and design your UI. It is independent from the actually game scene design and all other Game Objects, and you will find it always on top your other 3D objects or 2D sprite. However, what is cool about Unity UI is that you can connect the UI with the actually game through game logic scripts.
