@@ -19,7 +19,10 @@ Here is a guidance for beginners to start designing their UI in Unity. For more 
 
 ## Start with Canvas
 
-The Canvas is the place where you create and design your UI. It is independent from the actually game scene design and all other Game Objects, and you will find it always on top your other 3D objects or 2D sprite. However, what is cool about Unity UI is taht you can connect the UI with the actually game through game logic scripts.
+The Canvas is the place where you create and design your UI. It is independent from the actually game scene design and all other Game Objects, and you will find it always on top your other 3D objects or 2D sprite. However, what is cool about Unity UI is that you can connect the UI with the actually game through game logic scripts.
+
+![Screenshot 2023-11-25 at 10 10 51 PM](https://github.com/arielchen07/learning-software-engineering.github.io/assets/105243552/af7b47a8-175d-4008-bc91-ddda181198ee)
+> Here is an example of how the Canvas looks like relative to other Game Objects in scene view. The plane with *New Text* on it is the Canvas and the tiny cube in the button left corner is a Game Object. Notice that the relative size of the Canvas and Game Objects shown here is not the actually appearance in the game. You should switch to the Game view to see its layout in the actual game.
 
 The Canvas is a Game Object with a Canvas component on it. All the UI element that you created later will be the children of a Canvas.
 
