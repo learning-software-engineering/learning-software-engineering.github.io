@@ -39,7 +39,9 @@ When CMake processes a project, the entry point is a source file called `CMakeLi
   find_package(LIBIGL REQUIRED QUIET)
   ```
 * **Variables** are case-sensitive with only alphanumeric characters and underscores. 
+
   A number of useful variables are automatically defined by CMake (e.g `CMAKE_CURRENT_SOURCE_DIR`, `PROJECT_NAME`). 
+
   Use *set* command to set variable names, and *${variable_name}* to reference a varible in command arguments. 
   ```
   set(Foo a b c)    # Value of Foo is "a;b;c"
@@ -102,13 +104,17 @@ add_executable(MyExecutable ${SOURCE_FILES})
 
 ```
  * **cmake_minimum_required**
+
     CMake version check: the minimum version of CMake that should be used to process the project.
+
     You can specify a range of versions (as a general rule, set the highest version you've tested with):
     ```
     cmake_minimum_required(VERSION 3.15...3.25)
     ```
  * **project**
+
     Create project with the name of the project that is given to the cmake command.
+
     Projects can have versions, descriptions and languages specified.
     ```
     project(MyProject
@@ -122,61 +128,62 @@ add_executable(MyExecutable ${SOURCE_FILES})
     ```
  * **add_executable** - add executable target named `MyExecutable` with source files listed in `SOURCE_FILES` variable
 
-**Variables and Options** can be set in the `CMakeLists.txt` to control various aspects of the building process.
-```
-set(CMAKE_CXX_STANDARD 14)              # enables the c++14 standards
-option(BUILD_TESTS "Build tests" ON)    # build options - whether to build tests
-```
+#### Other components
+* **Variables and Options** can be set in the `CMakeLists.txt` to control various aspects of the building process.
+    ```
+    set(CMAKE_CXX_STANDARD 14)              # enables the c++14 standards
+    option(BUILD_TESTS "Build tests" ON)    # build options - whether to build tests
+    ```
 
-**Include your directories and headerfiles**
-```
-# Adds directories to the compiler's include path.
-include_directories("${CMAKE_CURRENT_SOURCE_DIR}/include/")
-```
+* **Include your directories and headerfiles**
+    ```
+    # Adds directories to the compiler's include path.
+    include_directories("${CMAKE_CURRENT_SOURCE_DIR}/include/")
+    ```
 
-**Include your source files**
-Suppose this is your project structure:
-```
-project_root/
-|-- CMakeLists.txt
-|-- src/
-|   |-- file1.cpp
-|   |-- file2.cpp
-|   |-- ...
-|-- other_files/
-|   |-- ...
-|-- main.cpp
+* **Include your source files**
+    Suppose this is your project structure:
+    ```
+    project_root/
+    |-- CMakeLists.txt
+    |-- src/
+    |   |-- file1.cpp
+    |   |-- file2.cpp
+    |   |-- ...
+    |-- other_files/
+    |   |-- ...
+    |-- main.cpp
 
-``` 
-You can add the source files in the `src` directory by:
-```
-file(GLOB SRC_FILES "*.cpp")
+    ``` 
+    You can add the source files in the `src` directory by:
+    ```
+    file(GLOB SRC_FILES "*.cpp")
 
-# Create a library or executable target using the source files
-add_library(my_library ${SRC_FILES})
-target_link_libraries(MyExecutable my_library)
-```
+    # Create a library or executable target using the source files
+    add_library(my_library ${SRC_FILES})
+    target_link_libraries(MyExecutable my_library)
+    ```
 
 
-**External Libraries** can be located using `find_package`
-```
-# Appends the "cmake" directory to the module path
-# CMake modules are used to find and configure external libraries.
-set(CMAKE_MODULE_PATH 
-    ${CMAKE_MODULE_PATH} 
-    ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
+* **External Libraries** can be located using `find_package`
+    ```
+    # Appends the "cmake" directory to the module path
+    # CMake modules are used to find and configure external libraries.
+    set(CMAKE_MODULE_PATH 
+        ${CMAKE_MODULE_PATH} 
+        ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 
-find_package(PACKAGE_NAME)     # Locate the package with PACKAGE_NAME
+    find_package(PACKAGE_NAME)     # Locate the package with PACKAGE_NAME
 
-if(PACKAGE_NAME_FOUND)
-    target_link_libraries (
-        MyExecutable <libaries>         # Links against it.
-    )
-endif()
+    if(PACKAGE_NAME_FOUND)
+        target_link_libraries (
+            MyExecutable <libaries>         # Links against it.
+        )
+    endif()
 
-# The if-condition can be omitted if you specify the "REQUIRED":
-find_package(PACKAGE_NAME REQUIRED) 
-```
+    # The if-condition can be omitted if you specify the "REQUIRED":
+    find_package(PACKAGE_NAME REQUIRED) 
+    ```
 
 ## Other Notes
 
