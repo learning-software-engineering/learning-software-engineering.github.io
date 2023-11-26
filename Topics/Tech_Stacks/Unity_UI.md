@@ -73,7 +73,7 @@ On the top left of the toolbar, you will find some rect tools that can help you 
 
 With that said, you can move, resize and rotate UI elements once you select the UI element. You can move the UI element by clicking somewhere inside the element and dragging it tp the place you want. You can resize it by clicking on the edges or corners and dragging. The element can be rotated by hovering the cursor slightly away from the corners until the mouse cursor looks like a rotation symbol. You can then click and drag in either direction to rotate.
 
-## Inspector
+### Inspector
 
 If you double clicked the UI element in the Hierarchy window, you should have the Inspector window shown on your right. All the properties and components of the UI element should be editable in the Inspector window.
 
@@ -102,6 +102,9 @@ Now, you should have some basic understandings of Unity UI. But what makes Unity
 1. UI Animation: WIth Unity UI Animation System, UI elements properties, such as position, scale, or color, can be modified over time. Check out the video [Master UI ANIMATIONS!](https://www.youtube.com/watch?v=YqMpVCPX2ls&list=PL1aAeF6bPTB5N-_01xjNIOg9_refqTxVv&index=16) for more vivid demonstrations.
 
 2. Integration with Game Development: As we mentioned above, you can attach C# scripts to UI elements! This enable the UI to respond to user input and integrate with the overall game logic.
+The most common example would be to attach a script for button UI element. [Button Click Events Unity C#](https://www.youtube.com/watch?v=woPW2_vuSXw)
+
+3. 3D objects on the Canvas: Another cool thing that Unity UI can achieve to to place 3D object onto the Canvas. Here is a quick tutorial for how to make this happend! [Placing 3D objects on a Unity canvas](https://www.youtube.com/watch?v=8yzpjkoE0YA)
 
 ## Additional resources
 [Unity Documentation](https://docs.unity3d.com/560/Documentation/Manual/UISystem.html ): You definitely checkout official documentation of Unity UI for usage!
