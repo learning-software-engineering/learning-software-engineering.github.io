@@ -180,9 +180,9 @@ find_package(PACKAGE_NAME REQUIRED)
 
 ## Other Notes
 
-()
+ * Within any of the supported generators (Visual Studio, etc.), there are rules that will automatically invoke CMake to update the generated files, including MakeFiles or project files, whenever you edit a `CMakeLists.txt` file and rebuild.
 
-Here is a [cheatsheet](#https://cppcheatsheet.com/notes/cmake_basic.html) of other useful commands for building a `CMakelists.txt`.
+* There are much more CMake variables and commands that are useful in building a `CMakelists.txt`. Here is a [cheatsheet](#https://cppcheatsheet.com/notes/cmake_basic.html) that consists of most of the popular variables/commands.
 
 ## References
 
