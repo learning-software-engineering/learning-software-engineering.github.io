@@ -24,6 +24,7 @@ An activated license is needed to use Unity. When you sign in to the Unity Hub f
 At the top of Unity Hub, click **Manage licenses**. If you do not see this, you can manage licenses by clicking on the **Preferences (or Settings) icon** on the top of the left tab bar beside your account icon > then select the **license** tab in the window that pops up. 
 Click **Add** to add a new license. 
 You can choose to get a free personal license or get an educational (student) license by applying for the Unity student plan on [this website](https://unity.com/products/unity-student).
+<img width="650" alt="image" src="https://github.com/ruiting-chen/learning-software-engineering.github.io/assets/51133017/ffddd0e9-cc10-451b-9dca-b92edee2c1bd">
 
 #### Install Unity Editor through Unity Hub:
 - Open Unity Hub > Navigate to **Installs** on the left taskbar > Select **Install Editor**
@@ -35,6 +36,7 @@ You can choose to get a free personal license or get an educational (student) li
   - In the **Dev Tools** section, you can choose to download the Visual Studio Community if you want to use Visual Studio as your default script editor for C# scripts. If you already have Visual Studio downloaded, or you want to use a different editor to edit the scripts, refer to [Script Editor](#script-editor) section for how to set the default script editor for your Unity Editor. 
   - In the **Platforms** section, choose the appropriate Build support depending on whether you want the end product to be built and deployed as a desktop, mobile, or web application. For example, check the box for "WebGL" if you want to build a web game
   - You can add more modules and download more build supports according to your needs later on. To do so, go to **Installs** in Unity Hub > Click on the **Settings icon** for the version of Unity Editor that you want to modify > Select **Add modules**
+    <img width="600" alt="image-1" src="https://github.com/ruiting-chen/learning-software-engineering.github.io/assets/51133017/5810cb89-335a-4386-9272-18263fcb7405">
 
 ## Create New Unity Project
 Once you have Unity downloaded, you can create a new project by:
@@ -86,11 +88,11 @@ If you have not set the default editor or want to change the default editor, you
 - [Unity Manual](https://docs.unity3d.com/Manual/index.html): The official Unity website that provides information to different features and aspects that you can learn about in Unity. Note that the manual is slightly different for different versions of Unity.
 
 ## Reference
-https://support.unity.com/hc/en-us/articles/360061586571-What-is-the-Unity-Hub-#:~:text=The%20Unity%20Hub%20is%20a,and%20installing%20add%2Don%20components.(What is the Unity Hub?)
+https://support.unity.com/hc/en-us/articles/360061586571-What-is-the-Unity-Hub-#:~:text=The%20Unity%20Hub%20is%20a,and%20installing%20add%2Don%20components. (What is the Unity Hub?)
 
 https://subscription.packtpub.com/book/game-development/9781801078078/2/ch02lvl1sec04/getting-started-with-the-unity-editor (Getting started with the Unity Editor)
 
-https://docs.unity3d.com/Manual/VisualStudioIntegration.html#:~:text=Unity%20automatically%20uses%20Visual%20Studio,into%20an%20existing%20Unity%20installation.(Unity Manual)
+https://docs.unity3d.com/Manual/VisualStudioIntegration.html#:~:text=Unity%20automatically%20uses%20Visual%20Studio,into%20an%20existing%20Unity%20installation. (Unity Manual)
 
 https://getalow.com/unity-engine/introduction-to-unity-editor-and-unity-interface/16 (Introduction to Unity Editor and Unity Interface)
  
