@@ -2,22 +2,21 @@
 
 
 ## 1. What is Firebase?
-
+Firebase is a leading backend-as-a-service platform which was developed by Google. It is known to be very easy to learn and use as it has extensive documentation and is popular for many mobile and web applications. Some of the key features include the Realtime Database, authenication features, Cloud Firestore, Google Analytics, and Cross-Platform SDKs.
 
 
 ## 2. The Realtime Database
-### test:
 
+### Overview 
 
-Python code test:
-```python
-hello world
+Firebase Realtime Database is a cloud-hosted NoSQL database. It allows you to store and sync data between your users in real-time. Therefore, when you build cross-platform apps all clients/users share one Realtime Database instance and automatically receive updates with the newest data. The setup is very minimal, security rules are highly customizable and intuitive 
 
-Code test:
-```python
-def function
-  return test
-```
+### Key Features 
+
+The Realtime Database has supports many use cases and has hundreds of features, here are the five most used ones. 
+
+#### Real-Time Synchronization
+
 
 ## 3. Setup 
 ### Test 
