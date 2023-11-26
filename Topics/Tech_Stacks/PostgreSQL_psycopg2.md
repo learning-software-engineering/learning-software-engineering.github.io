@@ -137,8 +137,10 @@ To start using PostgreSQL in a Python program with psycopg2, ensure you have fin
 
 psycopg2 can also be used for data processing, with built-in functions such as `fetchone()` and `fetchmany(x)` that return one row and x rows from a query response, respectively. From the example in step 5, after we run `cur.execute("SELECT * FROM test;")`, we can do `row = cur.fetchone()` to save the first row we selected from test to *row*.
 
+These functions can be useful in many situations. For example, if you run a pet store, and possess a PostgreSQL database of adoptable pets, you may have a site that has room to show 4 pets, and an option to show more. Using psycopg2, if you wanted to choose 4 pets in your database, after executing your query with a cursor *cur*, you could call `data = cur.fetchmany(x)`, and then pass your data to your website in whatever way you desire, to be extracted and displayed (Flask has potentially useful psycopg2 integration for this task- see Additional Resourses at the bottom of this page).
+
 For a comprehensive collection of psycopg2 information, including all provided functions and syntax, visit the [offical documentation](https://www.psycopg.org/docs/index.html#).
 
 ## Additional Resources
-- For further psycopg2 examples, visit this [link](https://wiki.postgresql.org/wiki/Psycopg2_Tutorial).
-- For information on using psycopg2 for a flask application, visit this [article](https://www.geeksforgeeks.org/making-a-flask-app-using-a-postgresql-database/).
+- For further PostgreSQL with psycopg2 examples, and notably examples of full, functional programs, visit this [link](https://wiki.postgresql.org/wiki/Psycopg2_Tutorial).
+- For information on using psycopg2 for a flask application, incorporating psycopg2 into your API, visit this [article](https://www.geeksforgeeks.org/making-a-flask-app-using-a-postgresql-database/).
