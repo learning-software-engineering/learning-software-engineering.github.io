@@ -10,6 +10,7 @@
 - [Large Language Model (LLM) for Testing and Debugging](./Development_Process/LLM_Testing_Debugging.md)
 ### [Getting Started With Docker](./Development_Process/Docker.md)
 ### [Getting Started With WSL 2](./Development_Process/WSL.md)
+### [Deploying onto the App Store](./App_Store_Deployment.md)
 
 ## Build requirements
 ### [Requirements.txt](./Development_Process/Build_Requirements/Requirements_txt.md)
