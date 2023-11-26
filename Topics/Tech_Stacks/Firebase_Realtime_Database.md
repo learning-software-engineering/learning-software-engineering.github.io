@@ -56,12 +56,14 @@ firebase_admin.initialize_app(cred, {
 ## 4. Strucuring Data
 Firebase stores data in JSON format. As a developer, it is important to follow good practices as JSON can get messy very quickly. 
 
-The Firebase team themselves have made an easy guide on this: [Structure Guide](https://firebase.google.com/docs/database/admin/structure-data)
+The Firebase team themselves have made an easy guide for this: [Structure Guide](https://firebase.google.com/docs/database/admin/structure-data)
 
 ## 5. Saving and Recieving Data
 
 Here is a brief overview on common use cases of using and manipulating data.
 
+### Create Data
+#### Use the ```.push()``` method
 
 ## 6. Advantages and Disadvantages
 
