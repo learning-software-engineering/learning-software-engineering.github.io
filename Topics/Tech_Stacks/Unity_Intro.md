@@ -1,10 +1,11 @@
-# Unity
+# Introduction to Unity Basics
 
 ## Table of contents
 #### [Introduction](#introduction)
 #### [Download and installation](#download-and-installation)
 #### [Create new Unity project](#create-new-unity-project)
 #### [Brief intro to Unity interface](#brief-intro-to-the-unity-interface)
+#### [Making your First Unity game](#get-started-with-making-your-first-unity-game)
 #### [Additional resources](#additional-resources)
 #### [References](#reference)
 
@@ -77,14 +78,15 @@ If you have not set the default editor or want to change the default editor, you
   - Click on the External Script Editor dropdown and select your preferred default editor or select **Browse** to find your editor. 
   <img width="650" alt="image-3" src="https://github.com/ruiting-chen/learning-software-engineering.github.io/assets/51133017/0243392d-eef1-4ba9-8f24-37ec43b5aa14">
 
+## Get started with making your first Unity game
+After you setup and get familiar with the Unity interface, you can start creating your own game in Unity. Here are some resources that could be useful to help you get started: 
+- [Get started with 2D Game](https://www.youtube.com/watch?v=ewiw2tcfen8&list=PL0eyrZgxdwhxL5n_wJsnpI4Y9AFIFhhF8): A Youtube video series that provides a step-by-step tutorial from the installation to making a simple 2D game.
+- [Get started with 3D Game](https://www.youtube.com/watch?v=n0GQL5JgJcY&list=PLrnPJCHvNZuB5ATsJZLKX3AW4V9XaIV9b): A Youtube series that provides detailed guide for making 3D game in Unity.
+- [Learn about making Prefabs in games](https://www.youtube.com/watch?v=OyuyV1Ec7J8&list=PLS57jztVd1_8aoX8ZT6LIyIPQ9JpZriJH&index=1): A beginners Youtube series that introduces Material, Texture, and Prefabs. You can follow this series to make a simple house Prefab in Unity.
 
 ## Additional Resources
-
 - [Getting started with the Unity Editor](https://subscription.packtpub.com/book/game-development/9781801078078/2/ch02lvl1sec04/getting-started-with-the-unity-editor): A detailed information page for Unity installation and the Unity interface. 
 - [Introduction to Unity fundamentals for absolute beginners](https://www.youtube.com/watch?v=ozL-h75vazQ): A tutorial video for how to place and manipulate objects in the Unity interface.
-- [Create a 2D Game in Unity](https://www.youtube.com/watch?v=ewiw2tcfen8&list=PL0eyrZgxdwhxL5n_wJsnpI4Y9AFIFhhF8): A Youtube video series that provides a step-by-step tutorial from the installation to making a simple 2D game.
-- [Build Your First 3D Game in Unity](https://www.youtube.com/watch?v=n0GQL5JgJcY&list=PLrnPJCHvNZuB5ATsJZLKX3AW4V9XaIV9b): A Youtube series that provides detailed guide for making 3D game in Unity.
-- [Basics of Unity 2018](https://www.youtube.com/watch?v=OyuyV1Ec7J8&list=PLS57jztVd1_8aoX8ZT6LIyIPQ9JpZriJH&index=1): A beginners Youtube series that introduces Material, Texture, and Prefabs. You can follow this series to make a simple house Prefab in Unity.
 - [Unity Manual](https://docs.unity3d.com/Manual/index.html): The official Unity website that provides information to different features and aspects that you can learn about in Unity. Note that the manual is slightly different for different versions of Unity.
 
 ## Reference
