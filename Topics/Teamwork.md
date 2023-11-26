@@ -107,3 +107,15 @@ A responsibility of being a leader that is simple in theory, but very important,
 **Create a comfortable environment**
 
 While leaders can and should try to directly impart what they want onto the people they work with, an aspect that is equally important is the environment / culture. Regardless of the specific details of the work, people want to work in an environment that’s comfortable. A comfortable environment often means, among other things, one where people have high morale, and everyone feels that they are able to speak up with ease. If these things are lacking, it can easily reflect in the individual’s results or how well the team is working together. Therefore, effective leaders try to create an environment that allows everyone to thrive. Some ways to build this team culture include: leading by example and exemplifying the traits you want to see, setting ground rules regarding how people should be treated, and holding team outings and events where people can get to know each other and have a good time.
+
+**Encourage Personal Development and Recognize Success**
+
+Leaders should remember and value the personal development of everyone they work with as it is important to the individuals, and the team also benefits when its constituents improve. Also, people tend to remember who helped and encouraged them to get to where they are, so encouraging personal growth fosters a sense of loyalty and appreciation. In a similar vein, leaders should recognize the successes of the team and individuals, as people enjoy and deserve to feel credited for the effort that they have put in. This also helps the team morale, as well as infuses the idea that their work matters and is appreciated, which often leads to a more motivated and committed team.  
+
+**Sources with Additional Tips:**
+https://www.shortcut.com/blog/6-key-skills-for-leading-a-software-team
+https://medium.com/the-andela-way/how-to-successfully-lead-a-software-development-team-6b9a6ffcf760
+https://www.forbes.com/sites/allbusiness/2023/04/10/how-to-successfully-manage-a-team-of-software-engineers/?sh=789f48b513c3
+https://www.shakebugs.com/blog/becoming-great-software-engineering-leader/
+https://www.businessnewsdaily.com/4991-effective-leadership-skills.html
+https://radixweb.com/blog/building-software-development-team
