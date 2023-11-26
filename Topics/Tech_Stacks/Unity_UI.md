@@ -87,9 +87,11 @@ Rect Transform helps modify the position, rotation, and scale of the Game Object
 
 **Anchor**: Anchors are shown as four small triangular in the Scene View. The anchoring allows the child to stretch together with the width or height of the parent. Each corner of the rectangle has a fixed offset to its corresponding anchor. This way the different corners of the rectangle can be anchored to different points in the parent rectangle. You can also think of Anchor as setting relative position to the parent object.
 
-![UI_Anchored1](https://github.com/arielchen07/learning-software-engineering.github.io/assets/105243552/f29a495b-a757-4417-bc4e-b06cb6872cf1)
+![UI_Anchored1](https://github.com/arielchen07/learning-software-engineering.github.io/assets/105243552/51879eff-1338-4dba-bc89-02029d1afcb8)
 
-![UI_Anchored2](https://github.com/arielchen07/learning-software-engineering.github.io/assets/105243552/b0562aeb-a95a-4347-80f6-41d45ef03b27)
+![UI_Anchored2](https://github.com/arielchen07/learning-software-engineering.github.io/assets/105243552/aaba8364-6cee-42a9-bb11-320716ce1869)
+
+> Here are two cases of how pivot and anchor functioning.
 
 ## How fancy the Unity UI can be
 
