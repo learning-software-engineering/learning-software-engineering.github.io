@@ -89,6 +89,58 @@ To resolve this, you may choose to do updateDoc() (with the same parameters abov
 Since the setDoc() call is asynchronous, you must handle it as such.
 
 
+## Getting/Fetching a document 
+Lets Break down the following example:
+```
+
+const document_we_want= <document path here>
+async function readOneDocument(){
+const docSnapshot = await getDoc(document_we_want)
+    if (docSnapshot.exists()){
+        const docData = docSnapshot.data()
+        // do something with this data
+    }
+}
+```
+We use the getDoc() call and pass in a document reference, which is the path to the document we want.
+
+This resolves to a snapshot which is essentially just the document itself at that point in time.
+
+Next, we check to see if it exists and if it does, we extract the data.
+
+Here you may choose to do something different, like parsing it and displaying it somewhere.
+
+
+##Making Queries
+
+```
+
+const artistQuery = query(
+    collection(firestore, 'music artists'),
+    where('musician', '==', 'Ado'),
+    limit(20)
+);
+
+const artistQuerySnapshot = await getDocs(artistQuery);
+const allAdoSongs = artistQuerySnapshot.forEach((song) => {
+//do something with the data
+}
+)
+
+```
+
+In databases, oftentimes you want to find multiple objects that fit some criteria, in firestore this is referred to as querying for multiple documents.
+
+In the query() call, you first pass in a collection instead of a document, then from there you may choose to add additional filters. 
+
+From there when you getDocs instead of getDoc on the result of the query, what is returned is a snapshot of a query instead of a snapshot of a document. 
+
+The query snapshot itself, is an array of documents.
+
+You may choose to use docs() on the returned data to directly return the array, however you may also choose to do a .forEach() on it, in order to iteratively parse it. 
+
+
+
 ## Extra Resources:
 * Getting started with firebase on the web: https://www.youtube.com/watch?v=ILTo8IvFXJw
 * Getting started with Firebase Authentication on the web https://www.youtube.com/watch?si=VSKhNhRBs6ZqYv7g&v=rbuSx1yEgV8&feature=youtu.be
