@@ -63,7 +63,7 @@ Lets use another example and break it down
 
 After you’ve initialized your app, first get a reference to firestore with the getFirestore() function.
 
-#Then pass that reference into the doc() function along with the path to the document, in this example we are looking at the 2021-09-14 document in the  dailySpecial collection.
+Then pass that reference into the doc() function along with the path to the document, in this example we are looking at the 2021-09-14 document in the  dailySpecial collection.
 
 ```
 const firestore = getFirestore()
