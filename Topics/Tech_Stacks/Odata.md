@@ -10,7 +10,7 @@
 
 ### [OData Basics](#odata-basics-1)
 
-### [How to Use OData for RESTful APIs](#how-to-use-odata-for-restful-apis-1)
+### [How to Use OData for RESTful APIs](#odata-basics-1)
 
 ### [Additional Resources](#additional-resources-1)
 
@@ -24,53 +24,44 @@ OData, or Open Data Protocol, is a standardized protocol for building and consum
 
 ## Getting Started with OData
 
-#### Define Your Data Model:
+1. **Define Your Data Model:**
+   OData operates based on data models. Before creating an OData service, define the entities and relationships that your API will expose.
 
-OData operates based on data models. Before creating an OData service, define the entities and relationships that your API will expose.
+2. **Set Up Your OData Service:**
+   Use various tools and frameworks to establish an OData service. A popular choice is the ASP.NET OData framework for .NET applications. Alternatively, explore other platforms supporting OData.
 
-#### Set Up Your OData Service:
+3. **Expose Your Data:**
+   Configure your OData service to expose the entities defined in your data model. This involves specifying endpoints, properties, and relationships that clients can interact with.
 
-Use various tools and frameworks to establish an OData service. A popular choice is the ASP.NET OData framework for .NET applications. Alternatively, explore other platforms supporting OData.
-
-#### Expose Your Data:
-
-Configure your OData service to expose the entities defined in your data model. This involves specifying endpoints, properties, and relationships that clients can interact with.
-
-#### Enable Querying:
-
-OData allows clients to query data using a standardized syntax. Ensure that your service supports OData query options, such as `$filter`, `$select`, `$top`, and `$orderby`.
+4. **Enable Querying:**
+   OData allows clients to query data using a standardized syntax. Ensure that your service supports OData query options, such as `$filter`, `$select`, `$top`, and `$orderby`.
 
 ## OData Basics
 
 At the core of OData is its ability to expose data entities as resources accessible through HTTP. Below are some key concepts and features:
 
-#### Entities:
+- **Entities:**
+  Entities are the fundamental building blocks of an OData service. They represent the data objects exposed by your API.
 
-Entities are the fundamental building blocks of an OData service. They represent the data objects exposed by your API.
+- **Resources and URLs:**
+  OData resources are identified by URLs. Each entity and its properties have a unique URL, making it easy for clients to navigate and interact with the API.
 
-#### Resources and URLs:
+- **Query Options:**
+  OData supports various query options that clients can use to filter, sort, and shape the data they receive. Example below include `$filter`, `$orderby`, and `$select`.
 
-OData resources are identified by URLs. Each entity and its properties have a unique URL, making it easy for clients to navigate and interact with the API.
+  ```http
+  GET /Products?$filter=Price ge 10&$orderby=Name&$select=Name,Price
+  ```
 
-#### Query Options:
+- **CRUD Operations**
+  OData supports standard CRUD (Create, Read, Update, Delete) operations. Clients can use HTTP methods like GET, POST, PUT, and DELETE to interact with data. Example below is a POST request.
 
-OData supports various query options that clients can use to filter, sort, and shape the data they receive. Example below include `$filter`, `$orderby`, and `$select`.
+  ```bash
+  curl -X POST -H "Content-Type: application/json" -d '{"Name": "New Product", "Price": 39.99}' http://your-api-url/odata/Product
+  ```
 
-```http
-GET /Products?$filter=Price ge 10&$orderby=Name&$select=Name,Price
-```
-
-#### CRUD Operations
-
-OData supports standard CRUD (Create, Read, Update, Delete) operations. Clients can use HTTP methods like GET, POST, PUT, and DELETE to interact with data. Example below is a POST request.
-
-```bash
-curl -X POST -H "Content-Type: application/json" -d '{"Name": "New Product", "Price": 39.99}' http://your-api-url/odata/Product
-```
-
-#### Navigation Properties
-
-Entities can have relationships with other entities through navigation properties. Clients can traverse these relationships to access related data.
+- **Navigation Properties**
+  Entities can have relationships with other entities through navigation properties. Clients can traverse these relationships to access related data.
 
 ## How to Use OData for RESTful APIs (Example)
 
