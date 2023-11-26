@@ -53,4 +53,148 @@ There are a few types of smart pointers: unique_ptr, shared_ptr, and weak_ptr. I
 If you can manage your memory well. C++ will be a piece of cake.
 
 ### Example
-Now let's consider the following object-oriented design problem.
+Now let's consider the following object-oriented design problem:
+
+Design and implement a simple bank management system that allows the creation and management of different types of accounts in a bank.
+
+```
+// Account.h
+#ifndef ACCOUNT_H
+#define ACCOUNT_H
+
+#include <iostream>
+#include <memory>
+
+class Account {
+public:
+    virtual void deposit(double amount) = 0;
+    virtual void withdraw(double amount) = 0;
+    virtual void display() const = 0;
+    virtual ~Account() = default; // Virtual destructor to ensure proper cleanup
+    
+    // Factory method to create different account types
+    static std::unique_ptr<Account> createAccount(int accountType);
+};
+
+#endif // ACCOUNT_H
+```
+```
+// Account.cpp
+#include "Account.h"
+
+class SavingsAccount : public Account {
+private:
+    double balance;
+
+public:
+    SavingsAccount() : balance(0) {}
+
+    void deposit(double amount) override {
+        if (amount > 0) {
+            balance += amount;
+            std::cout << "Deposited: $" << amount << std::endl;
+        }
+    }
+
+    void withdraw(double amount) override {
+        if (amount > 0 && balance >= amount) {
+            balance -= amount;
+            std::cout << "Withdrawn: $" << amount << std::endl;
+        } else {
+            std::cout << "Insufficient balance or invalid amount!" << std::endl;
+        }
+    }
+
+    void display() const override {
+        std::cout << "Savings Account Balance: $" << balance << std::endl;
+    }
+};
+
+class CheckingAccount : public Account {
+private:
+    double balance;
+
+public:
+    CheckingAccount() : balance(0) {}
+
+    void deposit(double amount) override {
+        if (amount > 0) {
+            balance += amount;
+            std::cout << "Deposited: $" << amount << std::endl;
+        }
+    }
+
+    void withdraw(double amount) override {
+        if (amount > 0 && balance >= amount) {
+            balance -= amount;
+            std::cout << "Withdrawn: $" << amount << std::endl;
+        } else {
+            std::cout << "Insufficient balance or invalid amount!" << std::endl;
+        }
+    }
+
+    void display() const override {
+        std::cout << "Checking Account Balance: $" << balance << std::endl;
+    }
+};
+
+std::unique_ptr<Account> Account::createAccount(int accountType) {
+    switch (accountType) {
+        case 1:
+            return std::make_unique<SavingsAccount>();
+        case 2:
+            return std::make_unique<CheckingAccount>();
+        default:
+            return nullptr;
+    }
+}
+```
+
+```
+// Bank.h
+#ifndef BANK_H
+#define BANK_H
+
+#include "Account.h"
+#include <vector>
+
+class Bank {
+private:
+    std::vector<std::unique_ptr<Account>> accounts;
+
+public:
+    void addAccount(std::unique_ptr<Account> account);
+    void displayAllAccounts() const;
+    void makeDeposits();
+    void makeWithdrawals();
+};
+
+#endif // BANK_H
+```
+
+```
+// Bank.cpp
+#include "Bank.h"
+
+void Bank::addAccount(std::unique_ptr<Account> account) {
+    accounts.push_back(std::move(account));
+}
+
+void Bank::displayAllAccounts() const {
+    for (const auto &account : accounts) {
+        account->display();
+    }
+}
+
+void Bank::makeDeposits() {
+    for (auto &account : accounts) {
+        account->deposit(100); // Deposit $100 to each account (for example)
+    }
+}
+
+void Bank::makeWithdrawals() {
+    for (auto &account : accounts) {
+        account->withdraw(50); // Withdraw $50 from each account (for example)
+    }
+}
+```
