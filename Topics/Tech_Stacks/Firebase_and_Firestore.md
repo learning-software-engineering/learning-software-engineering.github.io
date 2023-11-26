@@ -68,3 +68,18 @@ const firestore = getFirestore()
 
 const specialOfTheDay= doc(firestore, 'dailySpecial')
 ```
+
+When we write to a document, we pass in the reference as well as data, this is represented as key-value pairs
+```
+function write(){
+    const data={
+        val_1:a,
+        val_2:b
+    }
+}
+
+write()
+```
+Note that writing to a path will create the document if it doesn't exist and replace it with the new data if it does.
+To resolve this, you may choose to do updateDoc() (with the same parameters above), but this requires the document existing, thus you may choose to add an additional parameter to the setDoc command to merge any updates, you pass in {merge:true} along with the parameters you’ve specified.
+Since the setDoc() call is asynchronous, you must handle it as such.
