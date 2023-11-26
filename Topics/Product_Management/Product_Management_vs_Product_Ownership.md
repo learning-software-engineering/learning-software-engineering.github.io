@@ -41,8 +41,8 @@ The product owner is accountable for effective Product Backlog management, which
 * Listening to customers and turning their problems and complaints into user stories that create actionable items. They prioritize these stories and then arrange them in the product backlog.
 * Building and setting production process priorities to make sure the development team knows specifically what thing to focus on in order of importance
 * The product owner is present at all team meetings with other internal stakeholders such as the scrum master to make sure that the whole development process is following the product roadmap created by the product manager
-* They are the communication link between the customer and the development teams. The product owner is the embodiment of the customer's voice
-* Giving constructibe feedback on the ratified roadmap. This is a communication link between the product owner and the product manager.
+* They are the communication link between the customer and the development teams. The product owner is the embodiment of the customer's voice.
+* Giving constructive feedback on the ratified roadmap. This is a communication link between the product owner and the product manager.
 
 The product owner may do this work or delegate the responsibility to others on the Scrum Team. Regardless of who does the work, the Product Owner remains accountable for it being accomplished and for the **value delivered**.
 
