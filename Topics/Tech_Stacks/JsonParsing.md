@@ -270,7 +270,15 @@ Minimizing JSON Payload Size: Implementing data compression techniques, such as 
 
 
 
+## Reference & External Resources
 
+* [performance comparison](https://www.adaltas.com/en/2021/03/22/performance-comparison-of-file-formats/#:~:text=For%20row%20based%20format%20bzip,snappy%2095%25%20and%2091%25)
+* [json reduce data size](https://www.baeldung.com/json-reduce-data-size#:~:text=Compressing%20with%20gzip&text=That's%20why%20gzip%20is%20our,and%20compress%20it%20with%20gzip)
+* [JavaScript Json parse](https://www.w3schools.com/js/js_json_parse.asp​​)
+* [openAI](https://www.openai.com/research/chatgpt)
+* [Java Json parse](https://www.geeksforgeeks.org/parse-json-java/)
+* [Python Json parse](https://www.freecodecamp.org/news/python-parse-json-how-to-read-a-json-file/)
+* [GZip Json](https://jcristharif.com/msgspec/)
 
 
 
