@@ -18,6 +18,8 @@ Flutter uses the open-source programming language Dart, which was also developed
 
 Source: [Amazon AWS](https://aws.amazon.com/what-is/flutter/)
 
+Many companies use Flutter to build their applications. Some of these companies include: Alibaba Group, Tencent, BMW and many more. For a full list of companies that use Flutter, click [here](https://flutter.dev/showcase).
+
 ## Why Flutter? Pros and Cons
 
 ####Pros:
@@ -27,16 +29,16 @@ Source: [Amazon AWS](https://aws.amazon.com/what-is/flutter/)
 2. **Reduced Development Time**
    The requirements for Flutter application development are much lower. So the positive outcome is that there are no additional maintenance charges. Flutter makes it possible to create larger apps that use unique features.
 3. **Hot Reload Feature**
-   The ability to hot reload is one of the main benefits of using Flutter. This is for effective cross-platform development so it can complement the nature of Flutter. This feature’s function speeds up application development.
+   The ability to hot reload is one of the main benefits of using Flutter. This is for effective cross-platform development so it can complement the nature of Flutter. This feature’s function speeds up application development. Hot reloading allows developers to see the changes they make to the code in real time without losing the state of the app. It is useful when editing the UI of an app.
 
 ###Cons:
 
 1. **Dart’s low popularity**
-   It’s a fact that Dart is a reliable programming language since it is fast. It is also true that developers are starting to make it an option. Yet, Dart is still not able to compete with other top programming languages such as java, Kotlin, etc.
+   It’s a fact that Dart is a reliable programming language since it is fast. It is also true that developers are starting to make it an option. Yet, Dart is still not able to compete with other top programming languages such as Java, Kotlin, etc. However Dart is very similar to C# and Java, which makes it easy for programmers to learn.
 2. **Large and Weighty Apps**
    A loophole that can’t be dismissed is the size of the large size of the applications under development. Software developers working with this toolkit may find it difficult to work with large files. This can cause them to choose a lighter alternative.
 3. **Limited number of third-party libraries**
-   Flutter being relatively cannot be compared to native programming languages. Developers still need to spend more time building as many libraries as possible.
+   Flutter being relatively new cannot be compared to native programming languages. Developers still need to spend more time building as many libraries as possible.
 
    Source [Waverley Software](https://waverleysoftware.com/blog/why-use-flutter-pros-and-cons/#:~:text=Flutter%20allows%20developers%20to%20build,application%20development%20are%20much%20lower.)
 
@@ -59,6 +61,7 @@ The following is a summary from the offical [Flutter Docs](https://docs.flutter.
    3. Click Install. Installing the Flutter extension also installs the Dart extension.
 
 3. **Create the app**
+
    1. Invoke **View > Command Palette**. This can be done with `ctrl shift p` on Windows or `cmd shift p` on Mac.
       <img width="636" alt="VS Code Command Palette" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/65613404/9bdf3ef1-ad9b-4848-b6bb-723f85462c36">
    2. Type "flutter", and select the **Flutter: New Project**
@@ -69,7 +72,7 @@ The following is a summary from the offical [Flutter Docs](https://docs.flutter.
    6. Wait for project creation to complete and the `main.dart` file to appear.
       The above commands create a Flutter project directory called my_app that contains a simple demo app that uses [Material Components](https://m3.material.io/components).
    7. Your file structures should look as follows.
-   <img width="197" alt="Final File Structure" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/65613404/11b6c999-a556-452c-867f-9299a6cef3b1">
+      <img width="197" alt="Final File Structure" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/65613404/11b6c999-a556-452c-867f-9299a6cef3b1">
 
 4. **Running the App**
    1. Locate the VS Code status bar (the blue bar at the bottom of the window).
