@@ -40,3 +40,31 @@ import firebase from "firebase/compat/app";
 import "firebase/firestore";
 ```
 
+## Writing to a Database
+Firebase stores data in documents that are stored in collections.
+Here's an example of adding data to the “users” collection in a hypothetical database
+```
+db.collection("users").add({
+    first: "Ada",
+    last: "Lovelace",
+    born: 1815
+})
+.then((docRef) => {
+    console.log("Document written with ID: ", docRef.id);
+})
+.catch((error) => {
+    console.error("Error adding document: ", error);
+});
+```
+FROM: https://firebase.google.com/docs/firestore/quickstart
+
+
+Lets use another example and break it down
+After you’ve initialized your app, first get a reference to firestore with the getFirestore() function
+Then pass that reference into the doc() function along with the path to the document, in this example we are looking at the 2021-09-14 document in the  dailySpecial collection
+
+```
+const firestore = getFirestore()
+
+const specialOfTheDay= doc(firestore, 'dailySpecial')
+```
