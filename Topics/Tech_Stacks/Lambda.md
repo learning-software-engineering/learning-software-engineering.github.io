@@ -8,7 +8,7 @@
 
 ## Introduction
 
-<img src="./assets/image.png" width="100" height="100" style="float: right; margin-right: 10px;">
+<img src="https://miro.medium.com/v2/resize:fit:506/1*VKfs2PGyMm5FZfJD72kYCw.png" width="100" height="100" style="float: right; margin-right: 10px;">
 
 AWS Lambda is a [serverless compute](https://en.wikipedia.org/wiki/Serverless_computing) service by Amazon Web Services (AWS), enabling you to execute code without the need to manage underlying servers. This event-driven platform responds to various triggers, such as file uploads, HTTP requests, or database modifications, allowing for seamless execution of functions in response to these events.
 
@@ -24,7 +24,7 @@ Thanks to Lambda's simplicity, getting started is fairly simple. Explore the off
 - **Serverless Computing:** Eliminates server management, allowing focus solely on code development and execution.
 - **Event-Driven Model:** Responds to various triggers like HTTP requests, database changes, or file uploads.
 - **Scalability:** Scales automatically in response to the incoming workload or event-driven triggers.
-- **Cost-Efficiency:** Pay only for the compute time consumed, with no charges during idle periods.
+- **Cost-Efficiency:** Pay only for the compute time consumed, with no charges during idle periods (you won't waste money as your 301 project sits idle on a running EC2 server).
 - **Multiple Language Support:** Allows coding in various languages like Python, Node.js, Java, C#, Go, and Ruby.
 - **Integrations:** Seamlessly integrates with other AWS services for comprehensive cloud solutions.
 - **Faster Time to Market:** Speeds up development cycles by focusing on code rather than infrastructure.
@@ -47,6 +47,8 @@ Thanks to Lambda's simplicity, getting started is fairly simple. Explore the off
 
 ## Example Use Cases
 
+<img src="https://d1.awsstatic.com/product-marketing/Lambda/Diagrams/product-page-diagram_Lambda-RealTimeFileProcessing.a59577de4b6471674a540b878b0b684e0249a18c.png">
+
 
 
 ## Additional Resources
@@ -56,4 +58,3 @@ Thanks to Lambda's simplicity, getting started is fairly simple. Explore the off
 - [AWS Lambda Pricing](https://aws.amazon.com/lambda/pricing/)
 
 - [Serverless 101: AWS Lambda (A 9 min video intro to AWS)](https://aws.amazon.com/lambda/getting-started/)
-- (https://www.serverless.com/examples/aws-python-simple-http-endpoint/)
