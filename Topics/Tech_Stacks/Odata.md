@@ -10,7 +10,7 @@
 
 ### [OData Basics](#odata-basics-1)
 
-### [How to Use OData for RESTful APIs](#odata-basics-1)
+### [How to Use OData for RESTful APIs](#how-to-use-odata-for-restful-apis-1)
 
 ### [Additional Resources](#additional-resources-1)
 
@@ -67,55 +67,124 @@ At the core of OData is its ability to expose data entities as resources accessi
 
 ### Setting Up OData
 
-#### Install OData Package:
+1.  **Install OData Package:**
+    Use your preferred package manager to install the OData package. For example, using npm:
 
-Use your preferred package manager to install the OData package. For example, using npm:
+    ```bash
+    npm install express odata
+    ```
 
-```bash
-npm install express odata
-```
+2.  **Create an Express App:**
+    Set up an Express.js application. Below is a basic example:
 
-#### Create an Express App:
+    ```javascript
+    const express = require("express");
+    const { ODataServer } = require("odata-v4-server");
 
-Set up an Express.js application. Below is a basic example:
+    const app = express();
 
-````javascript
-const express = require('express');
-const { ODataServer } = require('odata-v4-server');
+    // Your OData configurations and routes go here
 
-const app = express();
-
-// Your OData configurations and routes go here
-
-const port = process.env.PORT || 3000;
-app.listen(port, () => {
-console.log(`Server is running on port ${port}`);
-});
-```
-````
+    const port = process.env.PORT || 3000;
+    app.listen(port, () => {
+      console.log(`Server is running on port ${port}`);
+    });
+    ```
 
 ### Defining OData Endpoints
 
-#### Create an Entity Model:
+1. **Create an Entity Model:**
+   Define the data model for your API entities. For example:
 
-Define the data model for your API entities. For example:
+   ```javascript
+   const { createFilter } = require("odata-v4-mongodb");
+   const { ObjectID } = require("mongodb");
 
-```javascript
-const { createFilter } = require("odata-v4-mongodb");
-const { ObjectID } = require("mongodb");
+   class Product {
+     constructor() {
+       this.ID = ObjectID;
+       this.Name = String;
+       this.Price = Number;
+     }
+   }
+   ```
 
-class Product {
-  constructor() {
-    this.ID = ObjectID;
-    this.Name = String;
-    this.Price = Number;
-  }
-}
-```
+2. **Define the Controller:**
+   Create a controller to handle OData requests. For example:
+
+   ```javascript
+   const { ODataController } = require("odata-v4-server");
+   const { ObjectID } = require("mongodb");
+
+   module.exports = class ProductController extends ODataController {
+     async getOne(key) {
+       return {
+         ID: new ObjectID(key),
+         Name: "Sample Product",
+         Price: 29.99,
+       };
+     }
+
+     async get(query) {
+       const filter = createFilter(query);
+       // Implement logic to retrieve products based on the filter
+       return [
+         { ID: new ObjectID(), Name: "Product 1", Price: 19.99 },
+         { ID: new ObjectID(), Name: "Product 2", Price: 29.99 },
+       ];
+     }
+   };
+   ```
+
+3. **Configure OData Routes:**
+   Set up OData routes in your Express app:
+
+   ```javascript
+   const { ODataServer, ODataController } = require("odata-v4-server");
+
+   const ProductController = require("./controllers/ProductController");
+
+   const server = ODataServer()
+     .model(createODataModel(ProductController))
+     .resource("Product", ProductController);
+
+   server.adapter = require("odata-v4-mongodb").createMongoDbServer({
+     database: "your_database_name",
+     username: "your_username",
+     password: "your_password",
+     server: "your_mongodb_server",
+   });
+
+   server.cors("*");
+   server.error((err, req, res, next) => {
+     res.status(err.statusCode).json(err.message);
+   });
+
+   app.use("/odata", (req, res) => {
+     server.handle(req, res);
+   });
+   ```
+
+4. **Accessing OData Endpoints:**
+   Your OData endpoints are now accessible. For example, to get a product by ID:
+
+   ```bash
+   GET /odata/Product('product_id')
+   ```
+
+   To retrieve all products:
+
+   ```bash
+   GET /odata/Product
+   ```
+
+   Customize and extend these routes based on your API requirements.
 
 ## Additional Resources
 
-- [OData documentation](https://www.odata.org/documentation/)
-- [OData GitHub repository](https://github.com/Soontao/odata-v4-server)
-- [OData for Beginners](https://www.odata.org/getting-started/basic-tutorial/)
-- [OData and MongoDB](https://github.com/Soontao/odata-v4-mongodb)
+- Explore the official [OData documentation](https://www.odata.org/documentation/) for in-depth information.
+- Check out the [OData GitHub repository](https://github.com/Soontao/odata-v4-server) for the latest updates and community contributions.
+- [OData for Beginners](https://www.odata.org/getting-started/basic-tutorial/) - A beginner-friendly tutorial on OData concepts and usage.
+- [OData and MongoDB](https://github.com/Soontao/odata-v4-mongodb) - Integration with MongoDB for OData.
+
+Happy coding!
