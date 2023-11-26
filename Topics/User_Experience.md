@@ -212,6 +212,24 @@ WCAG 2 is structured around four fundamental principles, often referred to by th
 4. **Robust**: Content must be robust enough to be reliably interpreted by a wide variety of user agents, including assistive technologies.
     - Maximize compatibility with current and future user tools.
 
+WCAG 2.0 is further divided into three levels of conformance:
+- **Level A**: the most basic web accessibility features.
+- **Level AA**: addresses the major and most common barriers for disabled users.
+- **Level AAA**: the highest and most advanced level of accessibility.
+
+#### Tools:
+
+[WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/): The Contrast Checker provides a straightforward interface where users can input the hexadecimal codes of the text and background colors they are using on their website. Upon entering these values, the tool automatically calculates the contrast ratio between the text and background. This ratio is crucial for readability, especially under the WCAG, which sets minimum contrast standards for visual presentation of text.
+
+[Stark](https://www.getstark.co/): Stark is a plugin for design tools like Adobe XD, Sketch, and Figma, focusing on accessibility. It features color contrast checkers and color blindness simulations to ensure designs meet accessibility standards, particularly WCAG. Integrated directly into design platforms, Stark is essential for creating inclusive digital products.
+
+#### More readings:
+
+- [Designing accessible products](https://uxdesign.cc/designing-accessible-products-e8aa79b55ebc) by Adhithya Ramakumar
+- [Accessible Interface Design](https://babich.biz/blog/accessible-interface-design/) by Nick Babich
+- [Designing For Accessibility And Inclusion](https://www.smashingmagazine.com/2018/04/designing-accessibility-inclusion/) by Steven Lambert
+- [What is Accessibility?](https://www.interaction-design.org/literature/topics/accessibility) by Interaction Design Foundation
+
 # Helpful Courses
 - [The Design of Interactive Computational Media (CSC318) offered by U of T](https://artsci.calendar.utoronto.ca/course/csc318h1). CSC318 expands on the work done before coding projects. For example, the course will have you test how users would interact with your prototype of a UI and then modify it so that the UX is better for the user.
 - [CalArt's UI/UX Design Specialization on Coursera](https://www.coursera.org/specializations/ui-ux-design). This is a package of 4 courses that teaches beginners the elements of UI design, fundamentals of UX design, and web design. This specialization will help you gain experience in wireframing, prototyping, and _designing_ (not coding) your own website/app. Plus, as a U of T student, you can get this specialization certificate for free once you finish the 4 courses!
