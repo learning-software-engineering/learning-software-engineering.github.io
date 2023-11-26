@@ -87,3 +87,12 @@ Note that writing to a path will create the document if it doesn't exist and rep
 To resolve this, you may choose to do updateDoc() (with the same parameters above), but this requires the document existing, thus you may choose to add an additional parameter to the setDoc command to merge any updates, you pass in {merge:true} along with the parameters you’ve specified.
 
 Since the setDoc() call is asynchronous, you must handle it as such.
+
+
+## Extra Resources:
+* Getting started with firebase on the web: https://www.youtube.com/watch?v=ILTo8IvFXJw
+* Getting started with Firebase Authentication on the web https://www.youtube.com/watch?si=VSKhNhRBs6ZqYv7g&v=rbuSx1yEgV8&feature=youtu.be
+* Getting started with Cloud Firestore for the web: https://www.youtube.com/watch?v=BjtxPj6jRM8&t=1s
+* firestore documentation: https://firebase.google.com/docs/firestore
+
+
