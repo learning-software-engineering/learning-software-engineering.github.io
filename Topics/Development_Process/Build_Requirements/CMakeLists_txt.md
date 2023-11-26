@@ -16,7 +16,7 @@ Unlike Make, which is a build system that drives the compiler and other build to
 
 The key feature of CMake is that it supports the cross-platform discovery of system libraries, and automatic discovery and configuration of the toolchain, which is much easier to use than Make.
 
-To install CMake, check their [document](#https://cmake.org/download/) on how to download and install on Unix/Linux or Windows platform.
+To install CMake, check their [document](https://cmake.org/download/) on how to download and install on Unix/Linux or Windows platform.
 
 
 ## What is CMakeLists.txt?
@@ -28,7 +28,7 @@ When CMake processes a project, the entry point is a source file called `CMakeLi
 ## Creating CMakeLists.txt
 
 ### CMake Language
-`CMakeLists.txt` is written in [CMake Language](#https://cmake.org/cmake/help/latest/manual/cmake-language.7.html#manual:cmake-language(7)), which consists of comments, [commands](#https://cmake.org/cmake/help/latest/manual/cmake-commands.7.html#manual:cmake-commands(7)), and [variables](#https://cmake.org/cmake/help/latest/manual/cmake-variables.7.html#manual:cmake-variables(7)). 
+`CMakeLists.txt` is written in [CMake Language](https://cmake.org/cmake/help/latest/manual/cmake-language.7.html#manual:cmake-language(7)), which consists of comments, [commands](https://cmake.org/cmake/help/latest/manual/cmake-commands.7.html#manual:cmake-commands(7)), and [variables](https://cmake.org/cmake/help/latest/manual/cmake-variables.7.html#manual:cmake-variables(7)). 
 
 * **Comments** start with `#`
   ```
@@ -50,7 +50,7 @@ When CMake processes a project, the entry point is a source file called `CMakeLi
 
 It also provides the basic **Flow Control** - Conditional statements, Looping constructs, and Procedure definitions. Here are the examples:
 
-* **Conditional statements (e.g [if](#https://cmake.org/cmake/help/latest/command/if.html#command:if))**
+* **Conditional statements (e.g [if](https://cmake.org/cmake/help/latest/command/if.html#command:if))**
     ```
     if(<condition>)
     <commands>
@@ -60,7 +60,7 @@ It also provides the basic **Flow Control** - Conditional statements, Looping co
     <commands>
     endif()
     ```
-* **Looping Constructs (e.g [foreach](#https://cmake.org/cmake/help/latest/command/foreach.html#command:foreach), [while](#https://cmake.org/cmake/help/latest/command/while.html#command:while))**
+* **Looping Constructs (e.g [foreach](https://cmake.org/cmake/help/latest/command/foreach.html#command:foreach), [while](https://cmake.org/cmake/help/latest/command/while.html#command:while))**
     ```
     foreach(<variable>                  # <variable> to be referenced
             <list of variables>)        # <list of variables> to replace ${variable}
@@ -71,7 +71,7 @@ It also provides the basic **Flow Control** - Conditional statements, Looping co
     <commands>
     endwhile()
     ```
-* **Procedure definitions (e.g [function](#https://cmake.org/cmake/help/latest/command/function.html#command:function), [macro](#https://cmake.org/cmake/help/latest/command/macro.html#command:macro))**
+* **Procedure definitions (e.g [function](https://cmake.org/cmake/help/latest/command/function.html#command:function), [macro](https://cmake.org/cmake/help/latest/command/macro.html#command:macro))**
     ```
     function(<function_name> <parameters>)
     <commands>
@@ -182,11 +182,11 @@ find_package(PACKAGE_NAME REQUIRED)
 
  * Within any of the supported generators (Visual Studio, etc.), there are rules that will automatically invoke CMake to update the generated files, including MakeFiles or project files, whenever you edit a `CMakeLists.txt` file and rebuild.
 
-* There are much more CMake variables and commands that are useful in building a `CMakelists.txt`. Here is a [cheatsheet](#https://cppcheatsheet.com/notes/cmake_basic.html) that consists of most of the popular variables/commands.
+* There are much more CMake variables and commands that are useful in building a `CMakelists.txt`. Here is a [cheatsheet](https://cppcheatsheet.com/notes/cmake_basic.html) that consists of most of the popular variables/commands.
 
 ## References
 
-* [CLion - CMake Build System](#https://www.jetbrains.com/help/clion/cmakelists-txt-file.html)
-* [CMake vs Make](#https://stackoverflow.com/questions/25789644/what-is-the-difference-between-using-a-makefile-and-cmake-to-compile-the-code)
-* [CMake - Writing CMakeLists File](#https://cmake.org/cmake/help/book/mastering-cmake/chapter/Writing%20CMakeLists%20Files.html)
-* [HSF - CMakeLists](#https://hsf-training.github.io/hsf-training-cmake-webpage/03-cmakelists/index.html)
+* [CLion - CMake Build System](https://www.jetbrains.com/help/clion/cmakelists-txt-file.html)
+* [CMake vs Make](https://stackoverflow.com/questions/25789644/what-is-the-difference-between-using-a-makefile-and-cmake-to-compile-the-code)
+* [CMake - Writing CMakeLists File](https://cmake.org/cmake/help/book/mastering-cmake/chapter/Writing%20CMakeLists%20Files.html)
+* [HSF - CMakeLists](https://hsf-training.github.io/hsf-training-cmake-webpage/03-cmakelists/index.html)
