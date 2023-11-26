@@ -213,9 +213,9 @@ WCAG 2 is structured around four fundamental principles, often referred to by th
     - Maximize compatibility with current and future user tools.
 
 WCAG 2.0 is further divided into three levels of conformance:
-- **Level A**: the most basic web accessibility features.
-- **Level AA**: addresses the major and most common barriers for disabled users.
-- **Level AAA**: the highest and most advanced level of accessibility.
+- **Level A**: The most basic web accessibility features.
+- **Level AA**: The most common barriers for disabled users
+- **Level AAA**: The highest and most advanced level of accessibility.
 
 #### Tools:
 
@@ -226,8 +226,11 @@ WCAG 2.0 is further divided into three levels of conformance:
 #### More readings:
 
 - [Designing accessible products](https://uxdesign.cc/designing-accessible-products-e8aa79b55ebc) by Adhithya Ramakumar
+
 - [Accessible Interface Design](https://babich.biz/blog/accessible-interface-design/) by Nick Babich
+
 - [Designing For Accessibility And Inclusion](https://www.smashingmagazine.com/2018/04/designing-accessibility-inclusion/) by Steven Lambert
+
 - [What is Accessibility?](https://www.interaction-design.org/literature/topics/accessibility) by Interaction Design Foundation
 
 # Helpful Courses
