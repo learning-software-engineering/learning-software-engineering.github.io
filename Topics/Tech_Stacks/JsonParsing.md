@@ -43,7 +43,7 @@ JSON allows for the construction of more complex data structures beyond primitiv
  * Objects: An object in JSON is an unordered collection of key-value pairs. Key-value pairs are separated by commas and enclosed in curly braces {}. Keys must be strings, and values can be strings, numbers, booleans, null, objects, or arrays. 
  Example:
 
-
+```{python}
 {
   "name": "John Doe",
   "age": 30,
@@ -53,10 +53,14 @@ JSON allows for the construction of more complex data structures beyond primitiv
     "zipcode": "12345"
   }
 }
+```
+In this example, "name", "age", "isStudent", and "address" are keys, and their corresponding values are strings, numbers, boolean, and another object, respectively.
+
 
  * Array: An array in JSON is an ordered list of values. Values are separated by commas and enclosed in square brackets []. Values can be strings, numbers, booleans, null, objects, or other arrays. 
  Example:
 
+```{python}
  [
   "apple",
   "banana",
@@ -66,6 +70,33 @@ JSON allows for the construction of more complex data structures beyond primitiv
     "quantity": 5
   }
 ]
+```
+In this example, the array contains strings ("apple", "banana", "orange") and an object with keys "color" and "quantity".
+
+JSON structures often combine objects and arrays to represent more complex data hierarchies. For instance, an array of objects can represent a collection of similar entities, where each object has multiple key-value pairs.
+
+```{python}
+[
+  {
+    "name": "Alice",
+    "age": 25,
+    "isStudent": true
+  },
+  {
+    "name": "Bob",
+    "age": 30,
+    "isStudent": false
+  },
+  {
+    "name": "Charlie",
+    "age": 22,
+    "isStudent": true
+  }
+]
+```
+
+In this example, the array contains three objects, each representing a person with attributes such as name, age, and student status.
+
 
 ## JSON Parsing in Different Programming Languages
 
@@ -102,7 +133,7 @@ Suppose we have a JSON file called fcc.json. If we want to read that file, we fi
 ```{python}
 with open('fcc.json', 'r') as fcc_file:
 ```
-We can then parse the file using the json.load() method and assign it to a variable called fcc_data.
+We can then parse the file using the `json.load()` method and assign it to a variable called fcc_data.
 
 ```{python}
 fcc_data = json.load(fcc_file)
@@ -112,6 +143,17 @@ The final step would be to print the results.
 ```{python}
 print(fcc_data)
 ```
+
+This is what the entire code would look like:
+```{python}
+import json
+
+with open('fcc.json', 'r') as fcc_file:
+    fcc_data = json.load(fcc_file)
+    print(fcc_data)
+```
+
+
 
 ### JavaScript Parse JSON
 
@@ -214,6 +256,8 @@ Name: Kotte
 
 College: BVRIT
 ```
+
+In the above program, the `JSONParser().parse()` is used, which is present in the `org.json.simple.parser.*` to parse the File.json file.
 
 ## Parsing Optimization
 
