@@ -24,7 +24,7 @@
 5. [Conclusion](#conclusion)
 
 ## Introduction
-Peewee is a lightweight Python ORM (Object-Relational Mapping). Essentially, this creates a bridge beteween object-oriented programs. Pydantic on the other hand is a data validation and parsing tool. My group combine these technologies and allowed us to improve database interactions, data validation, and general data management in our backend.
+Peewee is a lightweight Python ORM (Object-Relational Mapping). Essentially, this creates a bridge beteween object-oriented programs. Pydantic on the other hand is a data validation and parsing tool. My group combined these technologies, allowing us to improve database interactions, data validation, and general data management in our backend.
 
 ## What is Peewee?
 Peewee, as previously said, is an ORM that provides a simple and expressive API for working with backend databases. It supports a number of database backends, including SQLite, MySQL, and PostgreSQL; in our case, my group utilized it with a Postgresql database. Peewee simplified our database activities by allowing us to construct models by modeling database tables, making it easier to do CRUD operations without having to write our query statements in SQL; instead, we can write them in Python.
