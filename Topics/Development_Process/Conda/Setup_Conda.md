@@ -19,9 +19,11 @@ The major difference between **Miniconda** and **Anaconda** is that:
 - Anaconda supports Graphical User Interface (GUI), so you can actually click on things to make it work. 
 - Miniconda does not support GUI and is used mainly on the "shell" (e.g. zsh, bash, sh, powershell, etc.) of your system. If you do not know what a "shell" is, this tutorial might be a little bit advanced. 
 
-With all that being said, this tutorial focuses on using Miniconda to setup Conda and multiple Python environments, so you might need to look for another tutorial if you plan to use Anaconda.  
+With all that being said, this tutorial focuses on using Miniconda to setup Conda and multiple Python environments, so you might need to look for another tutorial if you plan to use Anaconda.
 
-## How do you use Conda? 
+Feel free to use the following hyperlinks to bring you to the relevant section!
+
+## How do you use Conda?
 
 To actually use Conda, we need to follow the following general steps
 
@@ -31,7 +33,7 @@ With a little bit of navigation, we see that there are download links here: [htt
 
 So the first step here will just be to download the installer for your system, and then executing it. 
 
-I am currently using MacOS, so the rest of the tutorial will be ran on MacOS. For systems that doesn't have a GUI, you can also use the other installation methods like an installation script provided on the website. 
+For systems that doesn't have a GUI, you can also use the other installation methods like an installation script provided on the website. 
 
 ![conda download page](conda_download.png)
 
@@ -39,7 +41,9 @@ In the picture shown above, download the one that fits your system, in my case, 
 
 Then just download and click through the install process until you have completed. 
 
-### Setup
+The setup guide for **MacOS** is [here](#setup-macos), for **Windows** is [here](#setup-windows)
+
+### Setup [MacOS]
 
 Regarding the setup process for Miniconda, multiple different situations can arise. 
 
@@ -57,9 +61,45 @@ One of the common fixes for this is to call `conda init [shell_type]`. For examp
 
 ![conda init pic](conda_init.png)
 
-If you are in Windows and your `powershell` does not register conda automatically, you can follow [this guide](https://gist.github.com/martinsotir/2bd2e16332dff71e0fa5be3ed3468a6c)
+With all that being said, we can finally start to unleash the power of Conda. [Hyperlink here](#creating-environments-python)
 
-With all that being said, we can finally start to unleash the power of Conda. 
+### Setup [Windows]
+
+> Guide Reference: https://gist.github.com/martinsotir/2bd2e16332dff71e0fa5be3ed3468a6c
+
+Usually in Windows, after you download and installed Miniconda for Windows, it doesn't automatically register in the regular powershell, you will have to carry out a few steps. 
+
+Therefore, you want to first open up `powershell` and do a quick check. 
+
+To do this, you can press the "windows" key, and then search for `powershell`, then press enter to open it, as shown in the picture below.  
+
+![opening powershell](open_powershell.png)
+
+Then, type in `conda`, and press enter, if the following shows up, then you have your installation complete, and you can proceed to the next part [Creating Environments (Python)](#creating-environments-python)
+
+![conda verify windows](conda_verify_windows.png)
+
+If that did not show up, then we will have to proceed into fixing this. 
+
+First, you want to open up an administrator powershell, and type in `set-executionpolicy unrestricted`, then click enter. 
+
+To start up an administrator powershell, simply tap your Windows key, and then type in `Powershell`, then right click and select `Run as administrator`, as shown below. 
+
+![administrator powershell](powershell_administrator.png)
+
+After pressing enter with `set-executionpolicy unrestricted`, you will need to press `A` and then enter, as shown below. 
+
+![execution_policy](execution_policy.png)
+
+Then, you need to press the windows key, and search for `miniconda`, and click on the first one that appears, as shown below. 
+
+![anaconda prompt](anaconda_prompt.png)
+
+In this prompt, type in `conda init powershell`, and press enter. It should show something similar to the following (I already have conda installed, so it should show something a bit different to what I had)
+
+![conda init powershell](conda_init_powershell.png)
+
+After all of these, you should be able to just start up a new `powershell` session, and it should have miniconda installed! With this, you can start to unleash the power of Conda and proceed to the next section!  
 
 ### Creating Environments (Python)
 
