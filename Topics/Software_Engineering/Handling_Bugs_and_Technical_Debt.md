@@ -22,7 +22,7 @@ A software bug is an error, flaw, failure, or fault in a computer program or sys
 
 5. **Verification**: Once fixed, bugs should undergo verification testing to confirm that the reported issue has been resolved.
 
-6. **Documentation**: Document the bug, its resolution, and any insights gained during the process. This information is valuable for future reference.
+6. **Documentation**: Document the bug, its resolution, and any insights gained during the process. This information is valuable for future reference. Some tools available for bug documentation are [Jira](https://www.atlassian.com/software/jira), [GitHub Issues](https://github.com/features/issues), [Bugzilla](https://www.bugzilla.org/), [Trello](https://trello.com/), and [MantisBT](https://www.mantisbt.org/).
 
 ### Best Practices
 
