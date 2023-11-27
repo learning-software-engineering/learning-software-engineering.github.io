@@ -2,7 +2,7 @@
 
 ## Table of contents
 ### [Introduction](#introduction-1)
-### [How to use Flexbox?](#how-to-use-flexBox?-1)
+### [How to use Flexbox?](#how-to-use-flexBox-1)
 ### [Tips and Tricks](#tips-and-tricks-1)
 
 
