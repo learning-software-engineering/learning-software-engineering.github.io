@@ -72,9 +72,13 @@ Transfer your application files to the droplet using SCP or any other method. To
 ```
 
 Replace the following:
+
   your_application_directory: The local path to your application code.
+  
   user: The username used to log in to your droplet.
+  
   droplet_ip: The IP address of your droplet. You can get this on the webpage of the droplet.
+  
   /remote/path: The path on your droplet where you want to copy the files.
 
 3. Enter your password. You'll be prompted to enter the password using the login details from the email that you recieved from DigitalOcean on Step 2.
