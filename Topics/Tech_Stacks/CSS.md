@@ -39,6 +39,8 @@ CSS grid is also a positioning alternative that provides a grid layout module, i
 
 Native CSS can be difficult to use, so CSS frameworks have been created so developers can use pre-made styles in order to create good looking website components, navigation bars, buttons, etc. in an easier and faster way without needing to know the semantics of CSS. Two popular CSS frameworks include [Tailwind CSS](https://tailwindcss.com/) and [Bootstrap CSS](https://getbootstrap.com/docs/3.4/css/). 
 
-[React-Bootstrap](https://react-bootstrap.github.io/) is a Bootstrap CSS framework specifically for use on React apps.
+For an introduction to the Tailwind framework, refer to [Getting Stylish and Responsive with Tailwind CSS](./Tailwind.md).
+
+[React-Bootstrap](https://react-bootstrap.github.io/) is a Bootstrap CSS framework specifically for use on React apps. There is also the guide on our wiki [here](./Bootstrap.md) that can get you started on Bootstrap's basics.
 
 Generally, Bootstrap is easier to use and will produce a good looking website in a shorter amount of time, while Tailwind CSS is more customizable and can create more unique looking elements, but requires more of a time investment and is a bit harder to learn and work with compared to Bootstrap. 
