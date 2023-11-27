@@ -22,7 +22,7 @@ Many companies use Flutter to build their applications. Some of these companies 
 
 ## Why Flutter? Pros and Cons
 
-#### Pros:
+### Pros:
 
 1. **Single codebase for all platforms**
    There is no need to create separate code bases when working on iOS and Android devices. Flutter allows developers to build a single codebase and use it for several platforms such as the web, desktop and mobile. This results in quicker app launch and is cost effective.
@@ -71,7 +71,7 @@ The following is a summary from the offical [Flutter Docs](https://docs.flutter.
    5. Enter a project name, such as `my_app`, and press **Enter**.
    6. Wait for project creation to complete and the `main.dart` file to appear.
       The above commands create a Flutter project directory called my_app that contains a simple demo app that uses [Material Components](https://m3.material.io/components).
-   7. Your file structures should look as follows.<br>
+   7. Your file structures should look as follows. <br>
       <img width="197" alt="Final File Structure" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/65613404/11b6c999-a556-452c-867f-9299a6cef3b1">
 
 4. **Running the App**
