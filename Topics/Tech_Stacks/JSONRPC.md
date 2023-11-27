@@ -17,13 +17,13 @@ REST is generally more useful in situations where actions such as adding data to
 
 JSON-RPC calls require two things, which are called request objects and response objects. Request objects are what are sent to the server during a JSON-RPC method call, and the response objects are what the server responds with at the end of the method call.
 
-JSON-RPC calls are represented by sending request objects to a server. These request objects contain the method to be called, parameters values that are passed into the method, an id that established by the client, and JSON-RPC string that specifies the version of the JSON-RPC protocol. Below is a representation of JSON-RPC in action.
+JSON-RPC calls are represented by sending request objects to a server. These request objects contain the method to be called, parameters values that are passed into the method, an id that established by the client, and JSON-RPC string that specifies the version of the JSON-RPC protocol. 
+
+The response object contains a result, which contains the correct value when the method results in a success, an error in cases where the method throws an error, and a JSON-RPC string and id that are identical to the one in the request object. Below is a representation of JSON-RPC in action.
 
 ![JSON-RPC Visualization](https://assets-global.website-files.com/5ff66329429d880392f6cba2/61b76e7fdf48bbef0026f39a_JSON%20works.png)
 
-The response object contains a result, which contains the correct value when the method results in a success, an error in cases where the method throws an error, and a JSON-RPC string and id that are identical to the one in the request object.
-
-JSON-RPC is very useful for a variety of reasons. It is simple and very straight forward due to its standard of remote procedure calls, making it easy to implement and understand. In addition, it serializes data in JSON format and is able to be implemented in a variety of languages, making it flexible.
+JSON-RPC is very useful for a variety of reasons. It is simple and very straight forward due to its standard of remote procedure calls, making it easy to implement and understand. This also makes it so products built with JSON-RPC end up being more scalable. In addition, it serializes data in JSON format and is able to be implemented in a variety of languages, making it flexible.
 
 [Here is some basic documentation on JSON-RPC](https://www.jsonrpc.org/specification)
 
