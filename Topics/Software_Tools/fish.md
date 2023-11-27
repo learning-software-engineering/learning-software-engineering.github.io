@@ -1,5 +1,23 @@
 # A fin-troduction to `fish`
 
+## Table of contents
+
+- [Introduction](#introduction)
+    * [enter `fish`!](#enter-fish)
+    * [A dish served best straight out of the oven](#a-dish-served-best-straight-out-of-the-oven)
+    * [Installation](#installation)
+- [Syntax highlighting](#syntax-highlighting)
+- [Autosuggestions](#autosuggestions)
+- [Autocompletions](#autocompletions)
+- [Tab completion](#tab-completion)
+- [A `Control`+`R` for the future](#a-controlr-for-the-future)
+    * [And for some privacy...](#and-for-some-privacy)
+- [Flying through directories](#flying-through-directories)
+- [A note on POSIX compliance](#a-note-on-posix-compliance)
+- [Default shell](#default-shell)
+- [Plugins](#plugins)
+- [References](#references)
+
 ## Introduction
 
 ### enter `fish`!
