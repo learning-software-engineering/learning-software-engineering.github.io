@@ -4,10 +4,8 @@
 
 ### enter `fish`!
 
-...the **f**riendly **i**nteractive **sh**ell. A shell is a program that starts
-other programs (you might have installed `bash` or `zsh`).
-
-fish offers a command-line interface that is focused on usability and interactive use[^1].
+...the **f**riendly **i**nteractive **sh**ell. A shell is a program that starts other programs 
+(you might have installed `bash` or `zsh`). fish offers a command-line interface that is focused on usability and interactive use[^1].
 
 This introduction will be less about the syntax differences between the fish language
 and bash or zsh and more about the out-of-the-box features that are offered from this shell.
@@ -73,6 +71,16 @@ You can also use `Control`+`R` as usual and this opens a pager to search your hi
 
 <img width="308" alt="ctrlr" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/40929644/1b4feb10-44c0-4a78-b33e-aca7dd54de79">
 
+### And for some privacy...
+
+Prefixing the command-line with a space prevents the line from being stored in
+history. This can be useful if your command contains a secret token that you don't want
+to be stored on disk.
+
+## Flying through directories
+
+If you've ever used `pushd` or `popd`, you won't have to ever again! Using `Alt`+`→`
+or `Alt`+`←`, you can traverse through directories you've previously changed to.
 
 ## A note on POSIX compliance
 
@@ -99,7 +107,7 @@ $ chsh -s /usr/local/bin/fish
 
 ## Plugins
 
-First -- yes, this post starts with saying fish works out of the box, and it does!
+First — yes, this post starts with saying fish works out of the box, and it does!
 You could stop right before this section and be happy with your new found shell.
 
 But there's just one plugin to fish to leave you with: [Tide](https://github.com/IlanCosman/tide).
@@ -108,8 +116,8 @@ prompt instantly responsive.
 
 ## Resources
 
-- [Fish docs](https://fishshell.com/docs/current/index.html)
-- [Fish language](https://fishshell.com/docs/current/language.html)
+- [fish docs](https://fishshell.com/docs/current/index.html)
+- [fish language](https://fishshell.com/docs/current/language.html)
 - [Tide prompt](https://github.com/IlanCosman/tide)
 - [An example fish shell workflow from devaslife](https://www.youtube.com/watch?v=KKxhf50FIPI)
 
