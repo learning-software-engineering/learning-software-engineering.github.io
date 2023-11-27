@@ -14,7 +14,7 @@ A software bug is an error, flaw, failure, or fault in a computer program or sys
 
 1. **Identification**: Bugs can be identified through user feedback, testing, monitoring, or automated tools. Developers and team leads should foster a culture of reporting and documenting bugs.
 
-2. **Prioritization**: Prioritize bugs based on severity, impact, and urgency. Developers should use a systematic approach, such as the MoSCoW method (Must-haves, Should-haves, Could-haves, and Won't-haves), to appraoch this.
+2. **Prioritization**: Prioritize bugs based on severity, impact, and urgency. Developers should use a systematic approach, such as the [MoSCoW method](https://en.wikipedia.org/wiki/MoSCoW_method) (Must-haves, Should-haves, Could-haves, and Won't-haves), to appraoch this.
 
 3. **Assignment**: Assign bugs to the appropriate team member with the necessary expertise. Clearly communicate responsibilities and timelines to all members.
 
