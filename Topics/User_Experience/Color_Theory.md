@@ -41,19 +41,31 @@ Triadic colors are three colors that are equidistant on the color wheel, such th
 
 ## Short Analysis of Successful Products
 
-## CTA (Call-To-Action) Buttons
+### CTA (Call-To-Action) Buttons
 The goal of call-to-action buttons is to stand out and capture the user's attention. Using the ideas of color harmony and color theory, we know that using complementary colors or bright colors on a white background can help draw the user's attention to the button. In particular, we want to bring out two different kinds of contrasts: 
 * contrast between the button and the background
 * contrast between the button and the text
 
 We also want to pick colors that denote the appropriate feelings that the associated actions represent.
 
-### Examples
+#### Example
 Since creating a repository is something that is incentivized by GitHub, they want to draw users' attention to the button as much as possible. GitHub uses the color bright green to show contrast against the otherwise white background, directing users' focus toward the button. The color green also evokes feelings of correctness and positivity, which encourages the users to click on the button.
 <img width="695" alt="Screenshot 2023-11-27 at 10 23 56 AM" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/107783734/413c350c-3b79-42f1-8360-f3e04848f07b">
 
 On the other hand, deleting a repository is not something that is necessarily encouraged, and can have negative consequences. GitHub portrays this idea by using the color red to evoke feelings of caution and negativity, and to alert the users that this action is dangerous. In addition, the deletion buttons do not stand out from the background as much as the green button (shown above) did, as they had less contrast to the background. This is to prevent drawing the users' attention to these potentially dangerous and consequential actions.
 <img width="633" alt="Screenshot 2023-11-27 at 10 47 32 AM" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/107783734/6eab108e-b1c1-4d76-8e8a-3c9c61245566">
+
+### Screens for Mobile Games
+Mobile games usually have the intention of telling a cohesive story, hence often benefit from having harmonious color schemes. In this example, we will briefly explore the game Candy Crush and its considerations on color theory in design. 
+
+From the beginning, Candy Crush creates a sweet and kind feeling (like candy!), through its generous use of the color pink. It uses various shades of pink to create a harmonious scheme, as well as the color green that is somewhat opposite to pink on the color wheel to create a contrast in the maps. To draw the user's attention to the instructions, the game darkens the background and uses a bright color to create contrast and effectively signify a call to action. In the game, the colors of the candies are picked such that they use a tetradic color scheme, that is, selecting two sets of complementary colors from the color wheel. This allows users to distinguish between the various objects, which can help facilitate their thinking. 
+
+![IMG_7086 (2)](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/107783734/ccd9436f-a20c-46c3-9c2b-e725690ebb57)
+![IMG_7084 (1)](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/107783734/6337d7f8-d51e-40e2-b0ba-9527b612e2b2)
+![IMG_7087 2 (1)](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/107783734/9ebcb966-f219-4bb0-9996-ed1dbec1bed8)
+
+
+
 
 
 ## Tips for Color Decision
