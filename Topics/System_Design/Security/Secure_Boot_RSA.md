@@ -14,6 +14,9 @@ Secure Boot addresses this concern by verifying the digital signatures of the OS
 Secure Boot is essentially a security feature implemented in modern computer systems and embedded devices to guarantee that only trusted software is executed during the boot process.
 Secure Boot involves a chain of trust, ensuring that each component loaded during the boot process is signed and verified before execution. RSA plays a critical role in this digital signing process.
 
+For a more in depth explanation of how the entire secure boot process works, feel free to consult external resources such as the provided link 
+[here](https://www.particle.io/iot-guides-and-resources/iot-secure-boot/#:~:text=In%20the%20context%20of%20Internet,at%20the%20time%20of%20manufacture)
+
 
 ## What is RSA?
 RSA (Rivest–Shamir–Adleman) is an asymmetric encryption algorithm, meaning it uses a pair of keys where one key is used for encryption and one key is used for decryption. The security of RSA relies on the difficulty of factoring the product of two large prime numbers, making it computationally impossible to derive the private key from the public key.
