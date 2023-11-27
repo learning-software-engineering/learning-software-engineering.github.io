@@ -51,7 +51,7 @@ RSA (Rivest–Shamir–Adleman) is an asymmetric encryption algorithm, meaning i
 3. The result is M = 88 which is the original message we sent!
 
 
-##### This is just a simple explanation of the math behind RSA, and in reality much larger numbers are used to guarantee that the private key cannot be derived from the public key
+##### This is just a simple explanation of the math behind RSA, and in reality much larger numbers like 2048, and 4096-bit numbers are often used to guarantee that the private key cannot be derived from the public key
 
 
 ## RSA Usage
