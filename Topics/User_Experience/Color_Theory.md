@@ -27,7 +27,7 @@ Other factors to consider are personal experience, mood, status, and so on. The 
 ## Color Harmony
 **Color harmony** describes the arrangement of the colors in a way that is the most attractive and harmonious for a user's perception. When colors are organized, feelings of pleasantness and calmness arise, while chaos and disgust result from disharmony. Designers have formulated some basic color schemes that work effectively, which will be highlighted in this section. 
 
-![color-wheel_0](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/107783734/62cafc9d-4655-46e3-b19e-f3fa30548daf)
+![color-wheel_0 (2)](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/107783734/f5bf4efa-ad72-4c16-9dbe-83361e6add7d)
 This is the color wheel, which will be helpful in our analysis of color schemes. 
 
 #### Monochromatic
@@ -42,14 +42,14 @@ Triadic colors are three colors that are equidistant on the color wheel, such th
 ## Short Analysis of Successful Products
 
 ### CTA (Call-To-Action) Buttons
-The goal of call-to-action buttons is to stand out and capture the user's attention. Using the ideas of color harmony and color theory, we know that using complementary colors or bright colors on a white background can help draw the user's attention to the button. In particular, we want to bring out two different kinds of contrasts: 
+The goal of call-to-action buttons is to stand out and capture the user's attention. Using the ideas of color harmony and color theory, we know that using complementary colors or bright colors on a white background can help draw the user's attention. In particular, we want to bring out two different kinds of contrasts: 
 * contrast between the button and the background
 * contrast between the button and the text
 
 We also want to pick colors that denote the appropriate feelings that the associated actions represent.
 
 #### Example
-Since creating a repository is something that is incentivized by GitHub, they want to draw users' attention to the button as much as possible. GitHub uses the color bright green to show contrast against the otherwise white background, directing users' focus toward the button. The color green also evokes feelings of correctness and positivity, which encourages the users to click on the button.
+Since creating a repository is something that is incentivized by GitHub, their objective is to draw users' attention to the button as much as possible. GitHub uses the color bright green to show contrast against the otherwise white background, directing users' focus toward the button. The color green also evokes feelings of correctness and positivity, which encourages the users to click on the button.
 <img width="695" alt="Screenshot 2023-11-27 at 10 23 56 AM" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/107783734/413c350c-3b79-42f1-8360-f3e04848f07b">
 
 On the other hand, deleting a repository is not something that is necessarily encouraged, and can have negative consequences. GitHub portrays this idea by using the color red to evoke feelings of caution and negativity, and to alert the users that this action is dangerous. In addition, the deletion buttons do not stand out from the background as much as the green button (shown above) did, as they had less contrast to the background. This is to prevent drawing the users' attention to these potentially dangerous and consequential actions.
@@ -64,12 +64,10 @@ From the beginning, Candy Crush creates a sweet and kind feeling (like candy!), 
 ![IMG_7084 (1)](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/107783734/6337d7f8-d51e-40e2-b0ba-9527b612e2b2)
 ![IMG_7087 2 (1)](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/107783734/9ebcb966-f219-4bb0-9996-ed1dbec1bed8)
 
-
-
-
-
 ## Tips for Color Decision
-* Be mindful of the colors you choose -- they can have a deep influence on the users.
+* Be mindful of the colors you choose -- they can have a psychological impact on the users.
 * Ensure that your design and its color palette effectively communicate the intended message and atmosphere.
 * Learn your target audience. The color preferences and meanings may depend on factors such as age, gender, and culture.
+* Remember that color theory is part science and part art; just because a color is associated with a particular feeling does not mean it can not be perceived in other ways in combination with other colors, or other design elements.
+* Call-to-action buttons perform well under complementary color schemes that bring out their contrast. 
 
