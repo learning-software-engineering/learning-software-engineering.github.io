@@ -18,4 +18,3 @@
 ### [React Components Guide](./Tech_Stacks/React_Components.md)
 ### [Temporal For Workflow Orchestration](./Tech_Stacks/Temporal.md)
 ### [Learning Cypress](./Tech_Stacks/Cypress.md)
-### [Learning Firebase Installation and Utilzing Firestore](./Tech_Stacks/Firebase_and_Firestore.md)
