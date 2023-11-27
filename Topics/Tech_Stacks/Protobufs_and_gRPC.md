@@ -35,7 +35,7 @@ For example, lets say our file name is `example.proto`, by compiling our proto w
 
 After we get our generated methods, we can simply make our Proto objects within python directly.
 
-### Client end
+### Client End
 ```Python
 def example() -> None:
     ip = 'localhost:50051'
@@ -44,3 +44,5 @@ def example() -> None:
     request_object = example_pb2.RequestObject(text='CSC301')
     response = stub.Example(request_object)
 ```
+
+### Server End
