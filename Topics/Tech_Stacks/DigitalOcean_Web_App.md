@@ -8,7 +8,7 @@ This tutorial will guide you through each step in the process of deploying a web
 ## Prerequisites
 Before you begin, ensure you have the following:
 
-1. **DigitalOcean Account**: [https://cloud.digitalocean.com/registrations/new](Sign up) for a DigitalOcean account if you don't have one already.
+1. **DigitalOcean Account**: [Sign up](https://cloud.digitalocean.com/registrations/new) for a DigitalOcean account if you don't have one already.
 
 2. **Web Application Code**: Have your web application code ready for production. This could be a Node.js, Python, Ruby on Rails, or any other type of application.
 
@@ -126,6 +126,6 @@ Congratulations! You have successfully deployed your web application on DigitalO
 - Regularly back up your application data and configurations to prevent data loss. DigitalOcean provides snapshot and backup features for your droplets.
 - Enhance the security of your web application by regularly updating software, implementing firewalls, and following security best practices. Monitor your application logs for any suspicious activities.
 
-This tutorial covered the essential steps, but keep in mind that each application may have specific requirements. Refer to DigitalOcean's [https://docs.digitalocean.com](documentation) for more advanced configurations and optimizations.
+This tutorial covered the essential steps, but keep in mind that each application may have specific requirements. Refer to DigitalOcean's [documentation](https://docs.digitalocean.com) for more advanced configurations and optimizations.
 
 Happy coding!
