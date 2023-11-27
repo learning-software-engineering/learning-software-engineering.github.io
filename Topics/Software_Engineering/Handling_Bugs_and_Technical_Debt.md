@@ -22,7 +22,8 @@ A software bug is an error, flaw, failure, or fault in a computer program or sys
 
 5. **Verification**: Once fixed, bugs should undergo verification testing to confirm that the reported issue has been resolved.
 
-6. **Documentation**: Document the bug, its resolution, and any insights gained during the process. This information is valuable for future reference. Some tools available for bug documentation are [Jira](https://www.atlassian.com/software/jira), [GitHub Issues](https://github.com/features/issues), [Bugzilla](https://www.bugzilla.org/), [Trello](https://trello.com/), and [MantisBT](https://www.mantisbt.org/).
+6. **Documentation**: Document the bug, its resolution, and any insights gained during the process. This information is valuable for future reference. 
+    * Some tools available for bug documentation are [Jira](https://www.atlassian.com/software/jira), [GitHub Issues](https://github.com/features/issues), [Bugzilla](https://www.bugzilla.org/), [Trello](https://trello.com/), and [MantisBT](https://www.mantisbt.org/).
 
 ### Best Practices
 
@@ -62,7 +63,18 @@ Technical debt refers to the implied cost of additional work caused by choosing 
 
 * **Regular Code Reviews**: Conduct regular code reviews not only for new features but also to identify and address areas of technical debt.
 
-* **Tools and Metrics**: Use code quality metrics and tools to identify and measure technical debt. This data can inform decision-making and prioritize repayment efforts.
+* **Tools and Metrics**: Use code quality metrics and tools to identify and measure technical debt. This data can inform decision-making and prioritize repayment efforts. Some examples of code quality metrics are:
+
+    * [Code coverage](https://en.wikipedia.org/wiki/Code_coverage): The percentage of code covered by automated tests.
+        * Possible tools for code coverage include [JCov](https://wiki.openjdk.org/display/CodeTools/jcov) and [Codecov](https://about.codecov.io/).
+    * [Cyclomatic complexity measurement](https://en.wikipedia.org/wiki/Cyclomatic_complexity): Measurement of the complexity of code through counting the number of independent paths through the code.
+        * Possible tools for cyclomatic complexity measurement include [Visual Studio's Code Metrics](https://learn.microsoft.com/en-us/visualstudio/code-quality/code-metrics-cyclomatic-complexity?view=vs-2022).
+    * [Code duplication identification](https://en.wikipedia.org/wiki/Duplicate_code): Identification of duplicated code within a codebase.
+        * Possible tools for code duplication identification include [Clone Detective](https://marketplace.visualstudio.com/items?itemName=ImmoLandwerthMSFT.CloneDetectiveforVisualStudio).
+    * [Static code analysis](https://en.wikipedia.org/wiki/Static_program_analysis): Source code analysis without execution, identifying potential issues. 
+        * Possible tools for static code analysis include [SonarQube](https://www.sonarsource.com/products/sonarqube/), [ESLint](https://eslint.org/), and [PMD](https://pmd.github.io/).
+    * [Code smells identification](https://en.wikipedia.org/wiki/Code_smell): Indications of poor coding practices that may lead to potential issues.
+        * Possible tools for code smells identification are [ReSharper](https://www.jetbrains.com/resharper/).
 
 ## Conclusion
 
