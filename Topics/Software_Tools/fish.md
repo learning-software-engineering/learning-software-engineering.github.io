@@ -16,6 +16,7 @@
 - [A note on POSIX compliance](#a-note-on-posix-compliance)
 - [Default shell](#default-shell)
 - [Plugins](#plugins)
+- [Resources](#resources)
 - [References](#references)
 
 ## Introduction
