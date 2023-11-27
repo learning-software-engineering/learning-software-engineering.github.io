@@ -12,6 +12,20 @@ Nginx can do many things, like:
 
 You can find a more exhaustive list on the [offical Nginx docs](https://nginx.org/en/)
 
+# Nginx vs. Apache
+
+Apache is another popular webserver that is often used in place of Nginx. Nginx has several advantages over Apache:
+
+- Due to its asynchronous, event-driven architecture, Nginx tends to have better performance when serving static content and dealing with many concurrent connections
+- Nginx's configuration is easier to set up for reverse-proxying and load balancing than Apache, so it is often preferred as a gateway between your application and the public internet.
+
+There are also advantages to Apache, including:
+
+- Maturity. Apache has been around for a long time and has a large, stable ecosystem of modules available to extend its use-cases.
+- Apache also uses `.htaccess` files for configuration, which some developers argue are simpler than Nginx's configurations
+
+At the end of the day though, they're both highly reliable, tried-and-true technologies, so there's really no wrong choice. That said, developers tend to prefer Nginx nowadays, since it's more well-known than Apache and has better performance at scale.
+
 # Installation and Setup
 
 The installation processes varies depending upon your OS. It's most common to install Nginx on a Linux server, since this is what most of the cloud runs on. Here, we'll demonstrate how to install and setup Nginx on a cloud server running on Ubuntu 22.04. In case you want to install Nginx on Mac or Windows, try these tutorials:
@@ -33,7 +47,7 @@ In order to install Nginx on our server, we will first need to be connected to o
 
 ## Install Nginx
 
-On your server, run the following commands to refresh your server's package index, and install Nginx onto your server
+On your server, run the following commands to refresh your server's package index and install Nginx onto your server:
 
 ```
 sudo apt update
@@ -46,7 +60,7 @@ Now, configure your server's firewall to allow HTTP traffic via Nginx:
 sudo ufw allow 'Nginx HTTP'
 ```
 
-You can confirm HTTP traffic is now allowed with
+You can confirm HTTP traffic is now allowed with:
 
 ```
 sudo ufw status
@@ -56,7 +70,6 @@ The output should indicate that HTTP traffic is now allowed, like this:
 
 <img width="470" alt="Screenshot 2023-11-22 at 1 05 44 AM" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/36282235/a455f501-3f79-49da-84f3-c19747422de9">
 
-
 When we installed Nginx with `apt`, the operating system should have started the Nginx service at the end of the installation process. We can confirm Nginx is running by entering:
 
 ```
@@ -65,7 +78,6 @@ systemctl status nginx
 
 <img width="756" alt="Screenshot 2023-11-22 at 1 08 52 AM" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/36282235/c5d42a9e-8c98-4310-a90c-9c265c26cf01">
 
-
 If we ever need to restart or stop the Nginx service, we can do so with `systemctl restart nginx` and `systemctl stop nginx`.
 
 Now, let's navigate to our server in the browser, and see what's there. Go to `http://yourdomain.com`, where `yourdomain.com` is the domain name you have pointed at your server. If all goes well, you should see the default Nginx landing page, letting you know that the web server is running!
@@ -73,7 +85,9 @@ Now, let's navigate to our server in the browser, and see what's there. Go to `h
 ![Nginx Landing Page](https://assets.digitalocean.com/articles/nginx_1604/default_page.png)
 
 # Next Steps
+
 Now that we have Nginx installed and running on our server, the possibilities are endless. Here's a few ideas:
+
 1. To configure Nginx as a reverse proxy for an application server like Django or Express, try this [tutorial](https://www.digitalocean.com/community/tutorials/how-to-configure-nginx-as-a-reverse-proxy-on-ubuntu-22-04) from Digital Ocean explaining how to reverse proxy a simple Gunicorn server.
 2. To serve static content like prebuilt websites or images using Nginx, try this excellent [tutorial](https://docs.nginx.com/nginx/admin-guide/web-server/serving-static-content/) from the official Nginx website on how to serve static content.
 3. To secure Nginx with Let's Encrypt SSL and allow your websites to be accessed over HTTPS, try this [tutorial](https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-20-04) from Digital Ocean on how to set up secure SSL encryption with Nginx.
