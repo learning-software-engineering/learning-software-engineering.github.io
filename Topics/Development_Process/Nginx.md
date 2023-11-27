@@ -14,7 +14,10 @@ You can find a more exhaustive list on the [offical Nginx docs](https://nginx.or
 
 # Installation and Setup
 
-The installation processes varies depending upon your OS. It's most common to install Nginx on a Linux server, since this is what most of the cloud runs on. Here, we'll demonstrate how to install and setup Nginx on a cloud server running on Ubuntu 22.04.
+The installation processes varies depending upon your OS. It's most common to install Nginx on a Linux server, since this is what most of the cloud runs on. Here, we'll demonstrate how to install and setup Nginx on a cloud server running on Ubuntu 22.04. In case you want to install Nginx on Mac or Windows, try these tutorials:
+
+- [Install Nginx on MacOS](https://nginxtutorials.com/install-nginx-on-mac/)
+- [Install Nginx on Windows](https://medium.com/@chandramuthuraj/installing-nginx-on-windows-a-step-by-step-guide-6750575c63e2)
 
 We assume that you have the following:
 
