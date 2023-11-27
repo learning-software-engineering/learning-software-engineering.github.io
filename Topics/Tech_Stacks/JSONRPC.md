@@ -1,9 +1,9 @@
 # JSON-RPC
 
 ## Introduction
-JSON-RPC is an approach to building APIs for communication between different software systems. Let's compare it to REST, which is the most common way of developing APIs. JSON-RPC is not as popular, but it offers its own advantages. Like REST, JSON-RPC uses JSON for its data format and uses HTTP as a transport protocol. JSON-RPC focuses on remote procedure calls whereas the more popular REST is more focused on resource manipulation. 
+JSON-RPC is an approach to building APIs for communication between different software systems. Let's compare it to REST, which is the most common way of developing APIs. JSON-RPC is not as popular, but it offers its own advantages. Like REST, JSON-RPC uses JSON for its data format and uses HTTP as a transport protocol. JSON-RPC is mainly focused on calling functions or procedures on a remote server and asking this server to perform a certain action. On the other hand, REST is focused on working with and changing data.
 
-This makes it so that JSON-RPC is a better option in scenarios where remote functions have to be called on a server that require an action result. It's most useful for when complex calculations or calling remote procedures on the server are needed. For example, a good time to use JSON-RPC is transferring money between bank accounts on a remote system. 
+This makes it so that JSON-RPC is a better option in scenarios where remote functions have to be called on a server that require an action result. For example, a good time to use JSON-RPC is transferring money between bank accounts on a remote system. 
 
 REST is generally more useful in situations where actions such as adding data to databases or updating information are needed due to its ability to easily perform CRUD operations. [Read more about the differences between remote procedure calls and REST here](https://nordicapis.com/whats-the-difference-between-rpc-and-rest/). Below is a representation of how REST works.
 
