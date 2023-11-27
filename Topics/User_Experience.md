@@ -177,6 +177,26 @@ Jakob Nielsen's [10 Heuristics for Interaction Design](./User_Experience/Usabili
 Finally, to create a **prototype**, or a **high-fidelity prototype**, you essentially make your mock-up interactive by connecting all the pages. Figma (discussed in the [Design Tools](https://learning-software-engineering.github.io/Topics/User_Experience.html#figma) section) is a free tool that you can use to create your mock-up and prototype. With prototyping tools like Figma, you can easily stimulate button clicks, screen swipes, etc. without any code.
 
 ## Accessibility
+
+### What is accessibility in software?
+Accessibility is an important, and often overlooked aspect of building applications. Although accessibility may be out of scope for projects built in this course, it is an important skill and consideration to learn as you go forward in your professional software development career.
+
+Users may have a wide variety of accessibility needs. This may include users with vision, hearing, and mobility impairments, cognitive disabilities, and more. Examples of accessibility in software include: 
+* Screen readers for vision impairment 
+* Closed captions for hearing impairments
+* Font size adjustability for older users
+* Black and white filters for photosensitivity and colour blindness
+
+### Why should I make my app accessible?
+
+In Ontario, it is a [legal requirement](https://www.ontario.ca/page/how-make-websites-accessible) for websites and web apps to reach a certain level of accessibility. Aside from legal requirements, it is generally beneficial to build accessibility into your apps. As a business, supporting a diverse set of users will improve the experience of your customers, and as an individual your contributions will impact the friendliness and inclusion of the internet.
+
+### How can I make my app more accessible?
+The World Wide Web Consortium (W3C) provides explicit standards and guidelines for web accessibility. You can find a thorough and exhaustive list [here](https://www.w3.org/WAI/standards-guidelines/). This guide is quite detailed so it may be difficult to know where to start as you are developing your web app, but a11y (a community-driven accessibilty initiative) has boiled down the most popular and important standards into an easy to follow [checklist](https://www.a11yproject.com/checklist/).  
+
+Moreover, you don’t need to do all of this manually - there are many free and paid tools that you can use to audit and improve your website’s accessibility. A couple great starting resources are [Google’s developer tools](https://developer.chrome.com/docs/lighthouse/accessibility/) and [Siteimprove](https://www.siteimprove.com/).
+
+
 ### The 7 Universal Design Principles
 
 [Universal Design Principles](https://www.buffalo.edu/access/help-and-support/topic3/universaldesignprinciples.html) are not only used for software but can be incorporated generally as well. These 7 principles ensure accessibility, consistency, and user-friendly software. 
