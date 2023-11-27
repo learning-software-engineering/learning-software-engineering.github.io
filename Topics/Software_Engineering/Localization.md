@@ -37,7 +37,9 @@ The localization process typically involves the following steps:
 ## 4. Key Technical Aspects of Localization
 
 Key technical aspects of localization include:
-- **Translatable UI Elements**: Separating translatable content from the code.
+- **Translatable UI Elements**: Separating translatable content from the code. 
+    - For example, instead of hardcoding a button label like "Submit" in the code, use a key such as `submit_button_label`. 
+    - This key is then mapped to the appropriate text in separate resource files for each language, like "Soumettre" in a French resource file.
 - **Text Length Variations**: Accounting for language-specific text length differences.
 - **Number and Currency Formats**: Adapting to local conventions.
 - **Date and Time Formats**: Accommodating regional variations.
