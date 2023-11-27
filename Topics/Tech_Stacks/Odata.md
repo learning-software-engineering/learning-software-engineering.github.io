@@ -14,13 +14,19 @@
 
 ### [Additional Resources](#additional-resources-1)
 
+<a id="introduction-1"></a>
+
 ## Introduction
 
 In this guide, you will explore OData, a powerful protocol for building and consuming RESTful APIs. This tutorial aims to provide a foundational understanding of what OData is, its key concepts, and how to use it to create robust and interoperable APIs. Before you dive in, ensure you have a basic understanding of web development and RESTful principles.
 
+<a id="what-is-odata-1"></a>
+
 ## What is OData
 
-OData, or Open Data Protocol, is a standardized protocol for building and consuming RESTful APIs. Developed by Microsoft, it is now an OASIS standard. OData provides conventions for creating and consuming web services, making it easier for developers to create interoperable APIs. It is based on standard HTTP protocols and supports CRUD operations (Create, Read, Update, Delete) on resources.
+OData, or Open Data Protocol, is a standardized protocol for building and consuming RESTful APIs. Developed by Microsoft, it is now an [OASIS standard](https://www.oasis-open.org/standards) . OData provides conventions for creating and consuming web services, making it easier for developers to create interoperable APIs. It is based on standard HTTP protocols and supports CRUD operations (Create, Read, Update, Delete) on resources.
+
+<a id="getting-started-with-odata-1"></a>
 
 ## Getting Started with OData
 
@@ -35,6 +41,8 @@ OData, or Open Data Protocol, is a standardized protocol for building and consum
 
 4. **Enable Querying:**
    OData allows clients to query data using a standardized syntax. Ensure that your service supports OData query options, such as `$filter`, `$select`, `$top`, and `$orderby`.
+
+<a id="odata-basics-1"></a>
 
 ## OData Basics
 
@@ -63,7 +71,9 @@ At the core of OData is its ability to expose data entities as resources accessi
 - **Navigation Properties**
   Entities can have relationships with other entities through navigation properties. Clients can traverse these relationships to access related data.
 
-## How to Use OData for RESTful APIs (Example)
+<a id="how-to-use-odata-for-restful-apis-1"></a>
+
+## How to Use OData for RESTful APIs
 
 ### Setting Up OData
 
@@ -168,17 +178,19 @@ At the core of OData is its ability to expose data entities as resources accessi
 4. **Accessing OData Endpoints:**
    Your OData endpoints are now accessible. For example, to get a product by ID:
 
-   ```bash
+   ```http
    GET /odata/Product('product_id')
    ```
 
    To retrieve all products:
 
-   ```bash
+   ```http
    GET /odata/Product
    ```
 
    Customize and extend these routes based on your API requirements.
+
+<a id="additional-resources-1"></a>
 
 ## Additional Resources
 
