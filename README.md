@@ -25,6 +25,8 @@ Potential Topics--
     
     7. React Native
         1. Set up
+    8. Unity
+        1. Introduction to Unity Basics
         
 - Software Tools
     1. Git
