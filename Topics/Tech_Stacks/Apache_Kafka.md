@@ -31,9 +31,10 @@ Apache Kafka is a powerful tool in data processing and streaming, favored for it
 ### Step 1: Download Kafka
 [Download](https://www.apache.org/dyn/closer.cgi?path=/kafka/3.6.0/kafka_2.13-3.6.0.tgz) the latest Kafka release and extract it:
 
+<code>
 `$ tar -xzf kafka_2.13-3.6.0.tgz`
-
 `$ cd kafka_2.13-3.6.0`
+</code>
 
 ### Step 2: Set Up the Environment
 ***NOTE: Your local environment must have Java 8+ installed.***
@@ -47,6 +48,7 @@ Run the following commands in order to start all services in the correct order:
 Open *another* terminal session and run:
 
 `# Start the Kafka broker service`
+
 `$ bin/kafka-server-start.sh config/server.properties`
 
 Once all services have successfully launched, you will have a basic Kafka environment running and ready to use.
