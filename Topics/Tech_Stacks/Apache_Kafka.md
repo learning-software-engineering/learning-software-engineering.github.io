@@ -31,10 +31,8 @@ Apache Kafka is a powerful tool in data processing and streaming, favored for it
 ### Step 1: Download Kafka
 [Download](https://www.apache.org/dyn/closer.cgi?path=/kafka/3.6.0/kafka_2.13-3.6.0.tgz) the latest Kafka release and extract it:
 
-<code>
-`$ tar -xzf kafka_2.13-3.6.0.tgz`
-`$ cd kafka_2.13-3.6.0`
-</code>
+<code>1 $ tar -xzf kafka_2.13-3.6.0.tgz
+2 $ cd kafka_2.13-3.6.0</code>
 
 ### Step 2: Set Up the Environment
 ***NOTE: Your local environment must have Java 8+ installed.***
