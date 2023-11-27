@@ -25,6 +25,7 @@ An activated license is needed to use Unity. When you sign in to the Unity Hub f
 At the top of Unity Hub, click **Manage licenses**. If you do not see this, you can manage licenses by clicking on the **Preferences (or Settings) icon** on the top of the left tab bar beside your account icon > then select the **license** tab in the window that pops up. 
 Click **Add** to add a new license. 
 You can choose to get a free personal license or get an educational (student) license by applying for the Unity student plan on [this website](https://unity.com/products/unity-student).
+
 <img width="650" alt="image" src="https://github.com/ruiting-chen/learning-software-engineering.github.io/assets/51133017/ffddd0e9-cc10-451b-9dca-b92edee2c1bd">
 
 #### Install Unity Editor through Unity Hub:
