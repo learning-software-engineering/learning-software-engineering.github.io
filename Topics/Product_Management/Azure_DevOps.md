@@ -1,5 +1,5 @@
 ## Introduction to Azure DevOps
-Azure DevOps is a product management tool that helps teams manage projects by providing a set of services to support the entire software development life cycle of a product from planning to deployment. For CSC301 teams, two very useful tools are Azure Boards and Azure Test Plans.
+Azure DevOps is a product management tool provided by Microsoft that helps teams manage projects by providing a set of services to support the entire software development life cycle of a product from planning to deployment. For CSC301 teams, two very useful tools are Azure Boards and Azure Test Plans.
 ### Azure Boards for task management
 For task management, Azure DevOps provides Azure Board for teams to create work items and assign them to team members. The status of these work items can then be updated during the development phase. 
 A really useful feature of Azure Board is that it allows teams to create work items of different work types and group related work items into a hierarchical structure. Teams can define and customize their own work item types and create a work item hierarchy. A common work item hierarchy for agile process is:  
@@ -19,8 +19,9 @@ For testing, Azure DevOps provides Azure Test Plans for teams to create their ow
 
 More about Azure Test Plans: https://learn.microsoft.com/en-us/azure/devops/test/overview?view=azure-devops 
 
-### Conclusion
-Besides Azure Boards and Test Plans, there are many more tools in Azure DevOps such as Azure Pipelines which may also be helpful to CSC301 teams for deployment and github integration as well. 
+### Azure Pipelines for automated building
+Besides Azure Boards and Test Plans, Azure Pipelines may also be useful to CSC301 teams for deployment and github integration. Teams can create a new pipeline for their project and link their github repo to the pipeline, then depending on the application the team is building, Azure Pipelines will generate a template yml file which the team can then modify by selecting the commands they want to automatically run(build, test, etc) and add this file to their repo. With that the team now have a pipeline that can automatically build and test their project. Azure Pipelines also provides automated deployment for web apps to Azure App Services if the team uses Azure App Services for deployment.
+
 More about Azure Pipelines: https://learn.microsoft.com/en-us/azure/app-service/deploy-azure-pipelines?tabs=yaml 
 
 ### Resources
