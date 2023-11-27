@@ -60,7 +60,9 @@ Without any docstring or context, the types of this function is completely unkno
 def func(a: str, b: int) -> bool:
     ...
 ```
-Now it is clear that the first argument is a string, second argument is a integer, and the function returns a boolean. 
+Now it is clear that the first argument is a string, second argument is a integer, and the function returns a boolean.
+
+To see more detailed usage of Python type hints, visit official Python documentation: https://docs.python.org/3/library/typing.html
 
 ### Mypy
 
@@ -82,6 +84,10 @@ $ mypy demo.py
 demo.py:7: error: Argument 2 to "func" has incompatible type "str"; expected "int"  [arg-type]
 ```
 Based on the type hints, Mypy is able to inform us that we are using the wrong type for the second function call.
+
+Mypy documentation for more detailed usage and configuration:
+- https://mypy.readthedocs.io/en/stable/
+- https://mypy-lang.org/examples.html
 
 ## Pros and Cons
 
