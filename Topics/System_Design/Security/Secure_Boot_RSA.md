@@ -21,8 +21,19 @@ For a more in depth explanation of how the entire secure boot process works, fee
 ## What is RSA?
 RSA (Rivest–Shamir–Adleman) is an asymmetric encryption algorithm, meaning it uses a pair of keys where one key is used for encryption and one key is used for decryption. The security of RSA relies on the difficulty of factoring the product of two large prime numbers, making it computationally impossible to derive the private key from the public key.
 
-
 ![Diagram explaining Asymmetric Encryption](../assets/key.png)
+
+### Asymmetric Encryption versus Symmetric Encryption
+
+
+In symmetric encryption, a single key is used for both encryption and decryption, rather than a public private key pair. This means that the same key is used by both the sender and the recipient to secure and access the information.
+
+It is a lot faster than asymmetric encryption and computationally less intensive.
+The challenge in symmetric encryption lies in securely distributing and managing the shared secret key. If a third party gains access to the key, they can decrypt all the communication.
+
+An example of an asymmetric encryption algorithm is the [Advanced Encryption Standard (AES)](https://www.techtarget.com/searchsecurity/definition/Advanced-Encryption-Standard)
+
+![Diagram explaining Symmetric Encryption](../assets/symmetric.png)
 
 
 ### The Math behind RSA
