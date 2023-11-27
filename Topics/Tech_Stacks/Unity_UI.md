@@ -92,8 +92,8 @@ Rect Transform helps modify the position, rotation, and scale of the Game Object
 
 <img width="410" alt="285633157-d28a65b3-4864-4201-83f0-097dfe88a5e3" src="https://github.com/arielchen07/learning-software-engineering.github.io/assets/105243552/e298bda2-cf2a-4330-94c5-417038e178fb">
 
-![output-onlinegiftools (1)](https://github.com/arielchen07/learning-software-engineering.github.io/assets/105243552/9c98a900-9735-4c8a-91a9-d684f7fd3607)
-![output-onlinegiftools (3)](https://github.com/arielchen07/learning-software-engineering.github.io/assets/105243552/52a3d2c9-8495-4cb2-8ddf-dba5a73e597b)
+![UI_Anchored1](https://github.com/arielchen07/learning-software-engineering.github.io/assets/105243552/a23fe607-1f14-49e8-b2a1-6091d0dc4e7e)
+![UI_Anchored2](https://github.com/arielchen07/learning-software-engineering.github.io/assets/105243552/79bea6bf-2cd1-47d4-969c-e42ebe96e1bc)
 
 > Here are two cases of how pivot and anchor functioning.
 
