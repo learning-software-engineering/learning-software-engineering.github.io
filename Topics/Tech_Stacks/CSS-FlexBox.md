@@ -1,9 +1,9 @@
 # CSS (Cascading Style Sheets) - FlexBox
 
 ## Table of contents
-### [Introduction](#introduction)
-### [How to use Flexbox?](#HowtouseFlexBox?)
-### [Tips and Tricks](#tips-and-tricks)
+### [Introduction](#introduction-1)
+### [How to use Flexbox?](#how-to-use-FlexBox?-1)
+### [Tips and Tricks](#tips-and-tricks-1)
 
 
 ## Introduction
