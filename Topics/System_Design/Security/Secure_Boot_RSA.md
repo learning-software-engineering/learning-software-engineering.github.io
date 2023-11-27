@@ -4,6 +4,8 @@
 As technology evolves, we are found in an era dominated by digital connectivity as well as data-driven operations, where the security and integrity of computing systems have been more important than ever. Imagine if a device that is responsible for the functioning of a hospital or financial institution is compromised during startup; or if someone with malicious intent was able to gain control over the core components of your device before the OS is even launched.
 Malicious actors could manipulate firmware and bootloader code or even inject harmful software at the very foundation of your device. 
 
+In the year 2011 Sony's PlayStation network was the victim of a major security breach, where a lack of robust encryption allowed hackers to access and steal sensitive user information and data. This ultimately caused major financial losses for the company while damaging their reputation. The situation encountered by Sony should serve as a lesson for us all, as it highlights the importance of encryption; especially for sensitive user data, as inadequate security measures can lead to severe consequences.
+
 This documentation aims to explain the Secure Boot process, as well as RSA, its usages, and the importance of good security in Software Development
 
 ### How do you prevent security issues and gurantee that the OS you are loading on your device is untampered with?
