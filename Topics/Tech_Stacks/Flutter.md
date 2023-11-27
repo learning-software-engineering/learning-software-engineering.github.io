@@ -22,7 +22,7 @@ Many companies use Flutter to build their applications. Some of these companies 
 
 ## Why Flutter? Pros and Cons
 
-####Pros:
+#### Pros:
 
 1. **Single codebase for all platforms**
    There is no need to create separate code bases when working on iOS and Android devices. Flutter allows developers to build a single codebase and use it for several platforms such as the web, desktop and mobile. This results in quicker app launch and is cost effective.
@@ -31,7 +31,7 @@ Many companies use Flutter to build their applications. Some of these companies 
 3. **Hot Reload Feature**
    The ability to hot reload is one of the main benefits of using Flutter. This is for effective cross-platform development so it can complement the nature of Flutter. This feature’s function speeds up application development. Hot reloading allows developers to see the changes they make to the code in real time without losing the state of the app. It is useful when editing the UI of an app.
 
-###Cons:
+### Cons:
 
 1. **Dart’s low popularity**
    It’s a fact that Dart is a reliable programming language since it is fast. It is also true that developers are starting to make it an option. Yet, Dart is still not able to compete with other top programming languages such as Java, Kotlin, etc. However Dart is very similar to C# and Java, which makes it easy for programmers to learn.
@@ -71,7 +71,7 @@ The following is a summary from the offical [Flutter Docs](https://docs.flutter.
    5. Enter a project name, such as `my_app`, and press **Enter**.
    6. Wait for project creation to complete and the `main.dart` file to appear.
       The above commands create a Flutter project directory called my_app that contains a simple demo app that uses [Material Components](https://m3.material.io/components).
-   7. Your file structures should look as follows.
+   7. Your file structures should look as follows.<br>
       <img width="197" alt="Final File Structure" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/65613404/11b6c999-a556-452c-867f-9299a6cef3b1">
 
 4. **Running the App**
