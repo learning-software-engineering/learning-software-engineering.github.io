@@ -7,6 +7,8 @@ In this page we will go over what VertexAI is and how to get started with using 
 VertexAI is a platform offered by Google Cloud Protocols that allows users to seamlessly integrate generative AI into their applications.
 The platform allows users to access PALM2, which is Google's state of the art large language model (LLM), train their own models, and deploy their own models for production use.
 
+In terms of generative AI, Google offers 3 types, Language, Vision, and Speech. The Language generative AI is a typical large language model where the user passes in prompts and the AI generates a response. The Vision generative AI has 4 use cases, but at the time of writing there are only 2 are available to the general public. These are captioning images, asking questions about images that you upload. Lastly is the speech AI, this generative AI allows you to convert text to speech or speech to text. The speech generated is very human like and you have the option to choose between a male english speaker, a female english speaker, or a male spanish speaker (at the time of writing).
+
 You can read more at their own website. [VertexAI](https://cloud.google.com/vertex-ai?hl=en)
 
 ## Getting started with VertexAI
