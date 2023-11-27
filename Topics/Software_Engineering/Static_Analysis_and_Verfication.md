@@ -1,6 +1,7 @@
 # Introduction to Static Analysis and Formal Verification
 
 ## Table of Contents:
+- ### [Introduction](#Introduction)
 - ### [Example Applications](#Example-Applications)
 - ### [Static Analysis](#Static-Analysis)
 - ### [Formal Verification](#Formal-Verification)
@@ -9,7 +10,15 @@ ___
 
 
 
-## Example Applications
+## Introduction
+
+This page will focus on the topic of Static Analysis and Formal Verification, which is generally used a methods by developers or engineers to ensure that their code is working, with varying methods of rigor. 
+
+As, developers, we should be equipped with the tools to not just be confident in our code, but to test it in a way that is rigorous and ensures no errors are present. 
+
+It should be noted that the following sections are not comprehensive, as these are large theory heavy fields, which a thorough understanding of will require extensive research and learning. 
+
+### Example Applications
 
 People write software for a variety of purposes, ranging from simple e-commerce websites to helping navigate space rockets.
 In the former example, the risks are small. A bug in the code might mean a product might not be rendered properly, or trying to access a page returns an error.
@@ -18,10 +27,6 @@ In the latter example, the risks are huge. A bug in the code could cost millions
 This has happened, most notably to the Ariane 5G rocket in 1996, where an integer overflow error led to the rocket veering off course and self-destructing. 
 
 High risk applications are not limited to just space travel. Various forms of transportation including cars, healthcare, security, nuclear energy, and plenty more high-risk industries depend on software.
-
-Thus, as a developers, we should be equipped with the tools to not just be confident in our code, but to test it in a way that is rigorous and ensures no errors are present. 
-
-It should be noted that the following sections are not comprehensive, as these are large theory heavy fields, which a thorough understanding of will require extensive research and learning. 
 
 ## Static Analysis
 
@@ -55,6 +60,8 @@ You have almost likely used static analysis tools before, even if you haven't re
 A rigorous process to ensure "correctness" of software by mathematically proving the satisfaction of a given specification
 
 It is generally considered the highest level of assurance in software, and requires a developer knowledgeable about the code they are trying to verify, even though there are tools available.
+
+Generally includes some form of mathematical proofs to reason about the state of program at a given point. Commonly involves techniques such as induction to deal with iterative programs. 
 
 
 ### Model Checking
