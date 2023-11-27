@@ -31,52 +31,57 @@ Apache Kafka is a powerful tool in data processing and streaming, favored for it
 ### Step 1: Download Kafka
 [Download](https://www.apache.org/dyn/closer.cgi?path=/kafka/3.6.0/kafka_2.13-3.6.0.tgz) the latest Kafka release and extract it:
 
-<code>1 $ tar -xzf kafka_2.13-3.6.0.tgz
-2 $ cd kafka_2.13-3.6.0</code>
+```bash
+$ tar -xzf kafka_2.13-3.6.0.tgz
+$ cd kafka_2.13-3.6.0
+```
 
 ### Step 2: Set Up the Environment
 ***NOTE: Your local environment must have Java 8+ installed.***
 
 Run the following commands in order to start all services in the correct order:
 
-`# Start the ZooKeeper service`
-
-`$ bin/zookeeper-server-start.sh config/zookeeper.properties`
+```bash
+# Start the ZooKeeper service
+$ bin/zookeeper-server-start.sh config/zookeeper.properties
+```
 
 Open *another* terminal session and run:
-
-`# Start the Kafka broker service`
-
-`$ bin/kafka-server-start.sh config/server.properties`
+```bash
+# Start the Kafka broker service
+$ bin/kafka-server-start.sh config/server.properties
+```
 
 Once all services have successfully launched, you will have a basic Kafka environment running and ready to use.
 
 ### Step 3: Create a Topic
 Before you can write your first data, you must create a topic. Open another terminal session and run:
 
-`$ bin/kafka-topics.sh --create --topic quickstart-events --bootstrap-server localhost:9092`
+```bash
+$ bin/kafka-topics.sh --create --topic quickstart-events --bootstrap-server localhost:9092
+```
 
 All of Kafka's command line tools have additional options: run the `kafka-topics.sh` command without any arguments to display usage information.
 
 ### Step 3: Write Data into the Topic
 Run the console producer client to write a few data into your topic. By default, each line you enter will result in a separate event being written to the topic.
 
-`$ bin/kafka-console-producer.sh --topic quickstart-events --bootstrap-server localhost:9092`
-
-`This is my first event`
-
-`This is my second event`
+```bash
+$ bin/kafka-console-producer.sh --topic quickstart-events --bootstrap-server localhost:9092
+This is my first event
+This is my second event
+```
 
 You can stop the producer client with `Ctrl-C` at any time.
 
 ### Step 4: Read the Data
 Open another terminal session and run the console consumer client to read the events you just created:
 
-`$ bin/kafka-console-consumer.sh --topic quickstart-events --from-beginning --bootstrap-server localhost:9092`
-
-`This is my first event`
-
-`This is my second event`
+```bash
+$ bin/kafka-console-consumer.sh --topic quickstart-events --from-beginning --bootstrap-server localhost:9092
+This is my first event
+This is my second event
+```
 
 You can stop the consumer client with `Ctrl-C` at any time.
 
@@ -89,6 +94,8 @@ Lastly, if the Kafka with ZooKeeper section was followed, stop the ZooKeeper ser
 
 If you also want to delete any data of your local Kafka environment including any events you have created along the way, run the command:
 
-`$ rm -rf /tmp/kafka-logs /tmp/zookeeper /tmp/kraft-combined-logs`
+```bash
+$ rm -rf /tmp/kafka-logs /tmp/zookeeper /tmp/kraft-combined-logs
+```
 
 ## SpringBoot Kafka
