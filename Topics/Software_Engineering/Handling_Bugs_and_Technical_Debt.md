@@ -37,7 +37,7 @@ A software bug is an error, flaw, failure, or fault in a computer program or sys
 
 ### Definition
 
-Technical debt refers to the implied cost of additional work caused by choosing an easy or quick solution instead of a more robust and sustainable one. It accumulates when development teams prioritize rapid delivery over long-term maintainability.
+Technical debt refers to the implicit cost of additional work caused by choosing an easy or quick solution instead of a more robust and sustainable one. It accumulates when development teams prioritize rapid delivery over long-term maintainability.
 
 ### Types of Technical Debt
 
@@ -49,7 +49,7 @@ Technical debt refers to the implied cost of additional work caused by choosing 
 
 1. **Identification**: Regularly assess the codebase for potential technical debt. Use code analysis tools to identify areas that may need attention.
 
-2. **Documentation**: Clearly document instances of technical debt, including the reasons behind the choices made. This documentation aids in future decision-making and repayment strategies.
+2. **Documentation**: Clearly document intentional instances of technical debt, including the reasons behind the choices made. This documentation aids in future decision-making and repayment strategies.
 
 3. **Prioritization**: Prioritize the repayment of technical debt based on business priorities, impact on development speed, and potential risks.
 
