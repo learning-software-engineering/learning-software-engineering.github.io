@@ -75,6 +75,15 @@ $ echo /usr/local/bin/fish | sudo tee -a /etc/shells
 $ chsh -s /usr/local/bin/fish
 ```
 
+## Plugins
+
+First -- yes, this post starts with saying fish works out of the box, and it does!
+You could stop right before this section and be happy with your new found shell.
+
+But there's just one plugin to fish to leave you with: [Tide](https://github.com/IlanCosman/tide).
+Its most useful feature is that it enables asynchronous rendering, making the
+prompt instantly responsive.
+
 ## References
 
 [^1]:https://fishshell.com/docs/current/index.html
