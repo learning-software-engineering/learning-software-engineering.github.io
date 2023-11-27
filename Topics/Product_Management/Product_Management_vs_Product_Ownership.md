@@ -16,11 +16,11 @@ A product manager sits at the intersection of business, technology, and user exp
 
 ## What are a Product Manager's responsibilities?
 
-In larger organizations, product managers are embedded within teams of specialists. Researchers, analysts, and marketers help gather input, while developers and designers manage the day-to-day execution, draw up designs, test prototypes, and find bugs. These product managers have more help, but they also spend more time aligning the stakeholders behind a specific vision.
+In larger organizations, PMs are embedded within teams of specialists. Researchers, analysts, and marketers help gather input, while developers and designers manage the day-to-day execution, draw up designs, test prototypes, and find bugs. These PMs have more help, but they also spend more time aligning the stakeholders behind a specific vision.
 
-Product Managers at smaller organizations spend less time getting everyone to agree, but more time doing the hands-on work that comes with defining a vision and seeing it through.
+PMs at smaller organizations spend less time getting everyone to agree, but more time doing the hands-on work that comes with defining a vision and seeing it through.
 
-In general, a good product manager will spend their time on a handful of tasks such as:
+In general, a good PM will spend their time on a handful of tasks such as:
 * Understanding and representing user needs.
 * Monitoring the market and developing competitive analyses.
 * Defining a vision or roadmap for a product
@@ -36,25 +36,25 @@ As a member of the Scrum Team, the Product Owner provides clarity to the team ab
 
 ## What are a Product Owner's responsibilities?
 
-The product owner is accountable for effective Product Backlog management, which includes:
+The PO is accountable for effective Product Backlog management, which includes:
 
 * Listening to customers and turning their problems and complaints into user stories that create actionable items. They prioritize these stories and then arrange them in the product backlog.
 * Building and setting production process priorities to make sure the development team knows specifically what thing to focus on in order of importance
-* The product owner is present at all team meetings with other internal stakeholders such as the scrum master to make sure that the whole development process is following the product roadmap created by the product manager
-* They are the communication link between the customer and the development teams. The product owner is the embodiment of the customer's voice
-* Giving constructive feedback on the ratified roadmap. This is a communication link between the product owner and the product manager.
+* The PO is present at all team meetings with other internal stakeholders such as the scrum master to make sure that the whole development process is following the product roadmap created by the PM.
+* They are the communication link between the customer and the development teams. The PO is the embodiment of the customer's voice
+* Giving constructive feedback on the ratified roadmap. This is a communication link between the PO and the PM.
 
-The product owner may do this work or delegate the responsibility to others on the Scrum Team. Regardless of who does the work, the Product Owner remains accountable for it being accomplished and for the **value delivered**.
+The PO may do this work or delegate the responsibility to others on the Scrum Team. Regardless of who does the work, the PO remains accountable for it being accomplished and for the **value delivered**.
 
-It is critical for the Product Owner to earn the respect of the entire organization in order to get the support they need for the decisions they make. These decisions need to be transparent in the Product Backlog.
+It is critical for the PO to earn the respect of the entire organization in order to get the support they need for the decisions they make. These decisions need to be transparent in the Product Backlog.
 
-The product owner is one person who represents the needs of many stakeholders in the Product Backlog. If someone in the organization wants a change in the Product Backlog, they need to discuss this with the product owner and try to convince them. Ultimately, the product owner makes that decision. The product owner should also be getting feedback from customers on the product.
+The PO is one person who represents the needs of many stakeholders in the Product Backlog. If someone in the organization wants a change in the Product Backlog, they need to discuss this with the PO and try to convince them. Ultimately, the PO makes that decision. The PO should also be getting feedback from customers on the product.
 
 ## What is the difference between a product manager and a product owner?
 
-A product managers is with the product from conception to launch. However, the product owner role has a narrower focus when it comes to working with the development team.
+A PM is with the product from conception to launch. However, the PO role has a narrower focus when it comes to working with the development team.
 
-The product manager studies the customer's wants and needs, whereas the product owner makes sure that product development is following the product roadmap. The product manager decides what is going to be built or adapted and the product owner makes sure the development team does just that.
+The PM studies the customer's wants and needs, whereas the PO makes sure that product development is following the product roadmap. The PM decides what is going to be built or adapted and the PO makes sure the development team does just that.
 
 | Product Manager | Product Owner |
 |-----------------|---------------|
@@ -64,11 +64,13 @@ The product manager studies the customer's wants and needs, whereas the product 
 | Prioritize features. | Highlights needs for the development of a team. |
 | Product roadmap. | Backlog, epics, and user stories. |
 
-Basically, product managers are strategic, while product owners are more tactical. There are some similarities between both roles. For example, they guide the product through the development process and work with several of the same teams across the organization.
+Basically, PMs are strategic, while POs are more tactical. There are some similarities between both roles. For example, they guide the product through the development process and work with several of the same teams across the organization.
 
-In some cases, a PO might take on some of the more strategic roles of a PM, and vice versa. But in a prototypical agile organization, the team will have both product owners and product managers, each responsible for some variation of the functions listed above.
+In some cases, a PO might take on some of the more strategic roles of a PM, and vice versa. But in a prototypical agile organization, the team will have both POs and PMs, each responsible for some variation of the functions listed above.
 
-In that sense, a product owner is a type of product manager -more tactical, more internal-facing- who helps keep the product's progress on track in an agile organization.
+In that sense, a PO is a type of PM - more tactical, more internal-facing - who helps keep the product's progress on track in an agile organization.
+
+It is important to note that there is often an overlap between PO's and PM's. In fact, they often get misnamed in start-up companies where a PM can take on the role of PO or vice versa. Product Management is a relatively new field, which is why many are trying to find their footing with the correct naming conventions.
 
 ## Additional Resources
 
@@ -77,5 +79,7 @@ In that sense, a product owner is a type of product manager -more tactical, more
 - Read more about a product owner's role [here] (https://www.techtarget.com/searchsoftwarequality/definition/product-owner).
 
 - Read more about the difference between product manager and product owner [here] (https://www.productboard.com/blog/product-owner-vs-product-manager/).
+
+- Read more about the differences between both roles [here] (https://www.toptal.com/product-managers/product-management/product-manager-vs-product-owner-who-does-your-business-need)
 
 - Check out these books about product management (https://www.amazon.ca/INSPIRED-Create-Tech-Products-Customers/dp/1119387507) and (https://www.amazon.ca/Cracking-PM-Interview-Product-Technology/dp/0984782818).
