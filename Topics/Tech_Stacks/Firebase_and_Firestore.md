@@ -23,7 +23,7 @@ Firestore is a NoSql document database, this means that data is structured hiera
 - Next, type npx firebase init hosting to begin the project setup process
 - Next, follow the installation steps displayed in the terminal and choose the options you desire
 ```
-
+ 
 ## Setting Up Firestore 
 1. Before using in your app, go to the firebase console go to build > Firestore database > Create database >start in test mode >next 
 2. Add the following scripts in your app:
