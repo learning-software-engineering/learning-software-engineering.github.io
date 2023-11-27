@@ -3,6 +3,7 @@
 Potential topics--
 
 1. Methodologies & Frameworks
+
     1. Agile
         1. [Scrum](./Software_Engineering/Scrum.md)
            1. [User Stories](./Software_Engineering/User_Stories.md)
@@ -14,3 +15,6 @@ Potential topics--
 
 #### [Deploying Your Personal Website](./Software_Engineering/Deploying_Personal_Website.md)
 
+2. Software Design Patterns
+
+    1. [Scalable Architecture](./Software_Engineering/scalable_architecture.md)
