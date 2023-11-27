@@ -98,4 +98,5 @@ If you also want to delete any data of your local Kafka environment including an
 $ rm -rf /tmp/kafka-logs /tmp/zookeeper /tmp/kraft-combined-logs
 ```
 
-## SpringBoot Kafka
+## Reference
+If you want to know more detailed information, you could check Apache Kafka's offical [website](https://kafka.apache.org/) and its offical [documentation](https://kafka.apache.org/documentation/).
