@@ -57,6 +57,9 @@ peerConnection.addEventListener('icecandidate', event => {
     }
 });
 ```
+![webrtc-overview](https://github.com/davidlin2k/learning-software-engineering.github.io/assets/17074619/2d2c0426-7a93-4b42-93f4-0047d2377360)
+
+A diagram on how ICE candidates are retrived and exchanged.
 
 ## STUN and TURN servers
 
