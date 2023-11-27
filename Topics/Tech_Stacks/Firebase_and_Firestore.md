@@ -11,6 +11,7 @@ Firestore is a NoSql document database, this means that data is structured hiera
 
 
 ## Setting up Firebase for a Web Application :
+```
 1. First, create a firebase project and register that app w/ the project.
 2. Once registering is done you'll get a firebase config object to connect your app with firebase reasources
 3. In the firebase console follow the installation steps to create a new project
@@ -21,7 +22,7 @@ Firestore is a NoSql document database, this means that data is structured hiera
 - Next type npx firebase login, this will open up a browser to login with your firebase account
 - Next, type npx firebase init hosting to begin the project setup process
 - Next, follow the installation steps displayed in the terminal and choose the options you desire
-
+```
 
 ## Setting Up Firestore 
 1. Before using in your app, go to the firebase console go to build > Firestore database > Create database >start in test mode >next 
@@ -111,7 +112,7 @@ Next, we check to see if it exists and if it does, we extract the data.
 Here you may choose to do something different, like parsing it and displaying it somewhere.
 
 
-##Making Queries
+## Making Queries
 
 ```
 
