@@ -21,10 +21,10 @@ While colors can take on general meanings as shown above, designers have to keep
 * **Culture**: Cultures define and interpret colors differently. The meanings listed above are related to Western perceptions of color, which may differ from countries across the world. For example, while white may be associated with purity in Western cultures, it denotes connotations of death and mourning in numerous Asian cultures.
 * **Gender**: Different genders may favour different colors, a phenomenon whose roots can be traced back to evolutionary biology and psychology. For example, research has shown that females evolved to prefer pinkish/reddish color because of their role in foraging ripe fruits and caring for the young. 
 
-Other factors to consider are personal experience, mood, status and so on. The important point to recognize is that there are multiple forces acting on another that contribute to how an individual would perceive of a color, and is something that designers should keep in mind when making appropriate decisions about color branding. 
+Other factors to consider are personal experience, mood, status and so on. The important point to recognize is that there are multiple forces acting on one another that contribute to how an individual perceives color, and that it is crucial to understand the target user group and tailor your design to the group. 
 
 ## Color Harmony
-**Color harmony** describes the arrangement of the colors in a way that is the most attractive and harmonius for a user's perception. When colors are organized, feelings of pleasantness and calmness arise, while chaos and disgust result from disharmony. Designers formaulted some basic color schemes that work effectively, which will be highlighted in this section. 
+**Color harmony** describes the arrangement of the colors in a way that is the most attractive and harmonius for a user's perception. When colors are organized, feelings of pleasantness and calmness arise, while chaos and disgust result from disharmony. Designers have formulated some basic color schemes that work effectively, which will be highlighted in this section. 
 
 ![color-wheel_0](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/107783734/62cafc9d-4655-46e3-b19e-f3fa30548daf)
 This is the color wheel, which will be helpful in our analysis of color schemes. 
