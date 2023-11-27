@@ -23,7 +23,11 @@ The response object contains a result, which contains the correct value when the
 
 ![JSON-RPC Visualization](https://assets-global.website-files.com/5ff66329429d880392f6cba2/61b76e7fdf48bbef0026f39a_JSON%20works.png)
 
-JSON-RPC is very useful for a variety of reasons. It is simple and very straight forward due to its standard of remote procedure calls, making it easy to implement and understand. This also makes it so products built with JSON-RPC end up being more scalable. In addition, it serializes data in JSON format and is able to be implemented in a variety of languages, making it flexible.
+JSON-RPC is very useful for a variety of reasons. It is simple and very straight forward due to its standard of remote procedure calls, making it easy to implement and understand. This also makes it so products built with JSON-RPC end up being more scalable. In addition, it serializes data in JSON format and is able to be implemented in a variety of languages, making it flexible. Furthermore, JSON-RPC has standardized error handling, making debugging and troubleshooting a smoother process.
+
+Overall, JSON-RPC is a great tool due to its lightweight design and ease of implementation, making it a versatile and efficient choice for remote procedure calls in various applications.
+
+Below are some more resources related to JSON-RPC
 
 [Here is some basic documentation on JSON-RPC](https://www.jsonrpc.org/specification)
 
