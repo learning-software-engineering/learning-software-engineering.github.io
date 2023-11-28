@@ -19,7 +19,37 @@
 ## Introduction
 
 #### What are ```make``` and Makefiles
-```make``` is a software build automation tool that builds programs and libraries, and determines what needs to be recompiled. It accomplishes this by using Makefiles that specify compilation targets and link their dependencies, and checking their last modified dates during compilation. This guide will cover the basics of GNU make, some example usage, and some of the advantages and disadvantages of ```make``` and Makefiles. Hopefully, by the end of this guide you will be able to decide if ```make``` is right for you.
+```make``` is a software build automation tool that builds programs and libraries, and determines what needs to be recompiled. It accomplishes this by using Makefiles that specify compilation targets and link their dependencies, and checking their last modified dates during compilation. This guide will cover the basics of GNU make, some example usage, and some of the advantages and disadvantages of ```make``` and Makefiles. Hopefully, by the end of this guide you will be able to decide if ```make``` is right for you.  
+
+Before you continue on through this guide you should make sure you have the prerequisite knowledge below.
+
+#### Linux Shell
+
+Makefiles will commonly run Linux shell commands, so a basic understanding of shell commands would be beneficial. Additionally, in order to try out GNU make, you would have to have Linux (or a Unix-like) installed.  
+
+[Shell Command Basics](https://www.geeksforgeeks.org/basic-shell-commands-in-linux/)  
+
+Install Linux:
+- [Using a Virtual Machine to run Linux](https://www.virtualbox.org/wiki/Downloads)
+- [Using Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install)
+
+#### C Programming and Compilation
+Makefiles are typically used with C/C++ programming, and although they don't necessarily have to be used to compile C/C++ code, for demonstration purposes this guide will use C code. To follow along, make sure you understand how C source code and header files work, as well as the GCC compilation process with object files and executables (very basic use of gcc in this guide).
+Below are some resources that can help:  
+- [C Programming](https://www.w3schools.com/c/c_intro.php)  
+- [C Compilation](https://www.geeksforgeeks.org/compiling-a-c-program-behind-the-scenes/)  
+- [GCC Basics](https://phoxis.org/2009/12/01/beginners-guide-to-gcc/)  
+
+#### Installation
+In case you want to try it out yourself, make sure ```make``` is installed.
+Check ```make``` is installed:
+```bash
+$ make --version
+```
+If you get an error then run the following command (installed ```make``` + other essentials like gcc):
+```bash
+$ sudo apt-get install build-essential
+```
 
 ## Basic Makefile Characteristics
 
@@ -69,10 +99,10 @@ $(<i>functionname param,param,...</i>)
 
 #### Running a Simple Makefile
 
-The following will be written in a file called "Makefile", because make will automatically look for a file of that name in the current directory<sup><a href=#2>2</a>.</sup>.  
+The following will be written in a file called "Makefile", because ```make``` will automatically look for a file of that name in the current directory<sup><a href=#2>2</a>.</sup>.  
 For the following example, we will consider a simple C program with the source code files ```main.c``` and ```helper.c``` that will be compiled into the file ```program```:
 
-```
+```makefile
 # Compiler and compiler flags
 CC = gcc
 
@@ -107,18 +137,19 @@ $ make
 
 This is because none of the dependent prerequisites have been changed, so the program file is up to date. The same will occur if we explicitly call any of the other program targets (e.g. ```make main.o```). But if we want the program to be compiled on every ```make``` call, we should use phony targets.
 
+
 #### Phony Targets
 
 Phony targets are useful because unlike file targets, their rule will run every time the target comes up for remaking. A common example of this is the ```clean``` target, that is usually used to clean up the directory or library to remove the generated build artifacts. Below is an example of clean that removes all the .o object files in the directory:
 
-```
+```makefile
 clean:
 	rm *.o
 ```
 
 But for a phony target like this, if a file with the name corresponding to the target is ever created in this directory, the target would no longer be a phony target. ```make``` would check the ```clean``` file and would deem that it is up to date, and would not run its recipe. Therefore an explicit declaration that a target is phony can be made, using the special target ```.PHONY```. It would be added to the above example like so:
 
-```
+```makefile
 .PHONY: clean
 clean:
 	rm *.o
@@ -127,7 +158,8 @@ clean:
 #### Variable Assignment
 
 In the above example Makefile, the gcc variable was set with ```CC = gcc```. This is a recursively expanded variable. This would simply evaluate to ```gcc``` when referenced. But if it were to reference another variable, it would expand upon the referenced variable. For example if it were to be written like this:
-```
+
+```makefile
 GCC = cc
 CC = $(GCC)
 GCC = gcc
@@ -141,7 +173,8 @@ Simply expanded variables will simply expand any references during assignment an
 </pre>
 
 Doing the same variable assignments above with simply expanded variables:
-```
+
+```makefile
 GCC := cc
 CC := $(GCC)
 GCC := gcc
@@ -152,7 +185,7 @@ This behaviour makes recursively expanded variables usually more suited for stat
 
 Additionally, to append to a variable, use ```+=```. For the following example, ```CC``` would evaluate to ```gcc -o```: 
 
-```
+```makefile
 CC := gcc
 CC += -o
 ```
@@ -177,7 +210,7 @@ Instead of manually writing a target for each object file like in the previous s
 
 For example, in the following example, the ```all``` rule would run the corresponding pattern rule for ```objects```, and for each of ```main.o``` and ```helper.o``` in ```objects```, the target pattern would strip out the respective stems ```main``` and ```helper``` and apply it to the prerequisite pattern, resulting in the corresponding prerequisites ```main.c``` and ```helper.c```. Then each rule would be run, and their compile recipe would be executed, producing ```main.o``` and ```helper.o```:
 
-```
+```makefile
 OBJECTS = main.o helper.o
 
 all: $(OBJECTS)
@@ -192,12 +225,13 @@ Functions have a multitude of uses in Makefiles. Some simple useful ones are:
 - ```$(wildcard pattern)```: returns a a list of filenames that match the given pattern
 - ```$(foreach var,list,text)```: sets ```var``` to the evaluated ```text``` for each word in ```list```
 - ```$(if condition,true-part,false-part)```: returns ```true-part``` if ```condition``` is true, otherwise returns ```false-part```
+- ```$(patsubst pattern, replacement, text)```: returns the words in ```text``` that match ```pattern``` and replaces them with ```replacement```, similar to how pattern matching works in pattern rules
 
 #### Additional Tips
 
 You can have ```make``` silently execute commands using the ```@``` symbol. For example the following:
 
-```
+```makefile
 all:
 	echo Hello world
 	@echo Hello world
@@ -210,6 +244,54 @@ $ make all
 >>> echo Hello world
 >>> Hello world
 >>> Hello world
+```
+
+#### Intermediate Makefile Example
+
+Tying everything above together, here is an example of a more intermediate Makefile below:
+
+```makefile
+# Compiler and compiler flags
+CC = gcc
+CFLAGS = -Wall -O2
+
+# Target executable
+TARGET = program
+
+# Source files
+SRCS = $(wildcard *.c)
+
+# Object files
+OBJS = $(patsubst %.c, %.o, $(SRCS))
+
+# Default target
+all: $(TARGET)
+
+# Rule to build the executable
+$(TARGET): $(OBJS)
+	@$(CC) $(CFLAGS) -o $@ $^
+	@echo "Generate Program $@"
+
+# Rule to build object files from source files
+%.o: %.c
+	@$(CC) $(CFLAGS) -c -o $@ $<
+	@echo "CC $@"
+
+# Phony target to clean the build artifacts
+.PHONY: clean
+clean:
+	rm -f $(TARGET) $(OBJS)
+```
+
+In the Makefile above with the same source code files as the simple example before, ```main.c``` and ```helper.c```, we can compile the same program but keeping it more generalized and less hardcoding. First, the ```gcc``` and its flags variables are set, and so is the main target, ```program```. The source files this time are any .c source files in the directory, and the object files all correspond to a source .c file. The ```all``` rule would check the prerequisites ```$(OBJS)``` and go to the generic .o pattern rule, which uses the according .c prerequisite file and compiles them. Instead of the entire ```gcc``` command which can get lengthy and clog up the terminal, especially if we are consistently using the same compile flags, we silently output a simple message saying which file was compiled. The ```clean``` rule would then remove the ```program``` and all object files that were created. An example output of this would be:
+
+```bash
+$ make
+>>> CC helper.o
+>>> CC main.o
+>>> Generate Program program
+$ make clean
+>>> rm -f program helper.o main.o
 ```
 
 ## Managing Multiple Directories with Makefiles
@@ -257,7 +339,7 @@ unexport <i>variable ...</i>
 
 Here is an example of how you could manage a simple multi-directory project. The project directory is as follows:
 
-```
+```bash
 |-- debug
 |   |-- debug.c
 |   |-- debug.h
@@ -274,7 +356,7 @@ Here is an example of how you could manage a simple multi-directory project. The
 
 The top directory Makefile is as follows:
 
-```
+```makefile
 MAKE_DIR = $(PWD)
 MAIN_DIR    := $(MAKE_DIR)/main
 DEBUG_DIR   := $(MAKE_DIR)/debug
@@ -305,11 +387,11 @@ clean:
 
 And an example Makefile in the ```main``` subdirectory is as follows:
 
-```
+```makefile
 PROG = DEMO
 
 SRCS = $(wildcard *.c)
-OBJS = $(SRCS:.c=.o)
+OBJS = $(patsubst %.c, $.o, $(SRCS))
 
 $(PROG): $(OBJS)
 	@$(CC) $^ $(CFLAGS) -o $@
@@ -357,10 +439,10 @@ $ make
 - ```make``` doesn't easily address external dependencies: Managing source files dependencies is what ```make``` was built for, but third party library and package dependency management would require additional effort or external tools.
 
 ## Additional Resources
-- The official GNU ```make``` documentation: https://www.gnu.org/software/make/manual/html_node/index.html
-- A more detailed tutorial on Makefiles: https://github.com/Nuno-Jesus/Make-A-Make
-- A simple Makefile example: https://github.com/remonbonbon/makefile-example/tree/master
-- A more advanced Makefile managed project: https://github.com/skwee357/wrap-os/tree/master
+- [The official GNU ```make``` documentation](https://www.gnu.org/software/make/manual/html_node/index.html)
+- [A more detailed tutorial on Makefiles](https://github.com/Nuno-Jesus/Make-A-Make)
+- [A simple Makefile example](https://github.com/remonbonbon/makefile-example/tree/master)
+- [A more advanced Makefile managed project](https://github.com/skwee357/wrap-os/tree/master)
 
 ## Footnotes
 
