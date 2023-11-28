@@ -112,10 +112,10 @@ While leaders can and should try to directly impart what they want onto the peop
 
 Leaders should remember and value the personal development of everyone they work with as it is important to the individuals, and the team also benefits when its constituents improve. Also, people tend to remember who helped and encouraged them to get to where they are, so encouraging personal growth fosters a sense of loyalty and appreciation. In a similar vein, leaders should recognize the successes of the team and individuals, as people enjoy and deserve to feel credited for the effort that they have put in. This also helps the team morale, as well as infuses the idea that their work matters and is appreciated, which often leads to a more motivated and committed team. One method to help recognize the successes of the people you work with is to dedicate some time each week at the end of a meeting to call out any success stories that individuals or the team accomplished in this past week. 
 
-**Sources with Additional Tips:**
-https://www.shortcut.com/blog/6-key-skills-for-leading-a-software-team
-https://medium.com/the-andela-way/how-to-successfully-lead-a-software-development-team-6b9a6ffcf760
-https://www.forbes.com/sites/allbusiness/2023/04/10/how-to-successfully-manage-a-team-of-software-engineers/?sh=789f48b513c3
-https://www.shakebugs.com/blog/becoming-great-software-engineering-leader/
-https://www.businessnewsdaily.com/4991-effective-leadership-skills.html
-https://radixweb.com/blog/building-software-development-team
+**Sources with Additional Tips:**  
+https://www.shortcut.com/blog/6-key-skills-for-leading-a-software-team  
+https://medium.com/the-andela-way/how-to-successfully-lead-a-software-development-team-6b9a6ffcf760  
+https://www.forbes.com/sites/allbusiness/2023/04/10/how-to-successfully-manage-a-team-of-software-engineers/?sh=789f48b513c3  
+https://www.shakebugs.com/blog/becoming-great-software-engineering-leader/  
+https://www.businessnewsdaily.com/4991-effective-leadership-skills.html  
+https://radixweb.com/blog/building-software-development-team  
