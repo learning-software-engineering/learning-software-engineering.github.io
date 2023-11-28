@@ -1,11 +1,25 @@
 # GraphQL and REST APIs
+
+## Table of Contents
+1. [Overview & Motivation](#overview--motivation)
+    - [What is an API?](#what-is-an-api)
+    - [Why do we need APIs?](#why-do-we-need-apis)
+    - [Designing APIs](#designing-apis)
+2. [REST Overview](#rest-overview)
+3. [GraphQL Overview](#graphql-overview)
+4. [When does REST make sense to use?](#when-does-rest-make-sense-to-use)
+5. [When does GraphQL make sense to use?](#when-does-graphql-make-sense-to-use)
+6. [Quick Reference](#quick-reference-for-common-uses)
+7. [Summary](#summary)
+8. [Additional Readings](#additional-reading)
+
 ## Overview & Motivation
-### What is an API
+### What is an API?
 An API is an **application programming interface**, or in simpler words, a way for two pieces of software to communicate with one another.
 
 On this page, we will refer to things called `endpoints`. These are basically access ways for our API - you use these endpoints to communicate with the software.
 
-### Why do we need APIs
+### Why do we need APIs?
 Without APIs, there would be no way for software to communicate between one another. In fact, even within the same project, different components may have APIs between them to facilitate communication. Without APIs, software would never be able to interact with anything. Even something as simple as loading Google's webpage deals with many dozens of APIs without you knowing! 
 
 ### Designing APIs
@@ -69,10 +83,12 @@ For more information on setting up and creating your own API through REST or Gra
 - https://expressjs.com/en/starter/hello-world.html
 
 ## Summary
+In summary, there are many similar uses for GraphQL and REST. They can both accomplish the same things, but depending on your data structure, one would be better in terms of efficiency and complexity of development. GraphQL requires a lot more boilerplate code, and needs types and queries set up, while REST's setup just requires a few lines defining some simple endpoints.
+
 
 ## Additional Reading
-https://www.mulesoft.com/resources/api/what-is-an-api
-https://www.redhat.com/en/topics/api/what-is-a-rest-api
-https://www.ibm.com/topics/rest-apis
-https://www.apollographql.com/blog/graphql/basics/what-is-graphql-introduction/
-https://aws.amazon.com/compare/the-difference-between-graphql-and-rest/
+1. https://www.mulesoft.com/resources/api/what-is-an-api
+2. https://www.redhat.com/en/topics/api/what-is-a-rest-api
+3. https://www.ibm.com/topics/rest-apis
+4. https://www.apollographql.com/blog/graphql/basics/what-is-graphql-introduction/
+5. https://aws.amazon.com/compare/the-difference-between-graphql-and-rest/
