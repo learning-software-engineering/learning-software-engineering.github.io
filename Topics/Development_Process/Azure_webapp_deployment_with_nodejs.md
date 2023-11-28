@@ -157,7 +157,9 @@ Once you've completed the steps in the documentation and see that the Github Act
 
 ## Cost Management with Azure
 
-There are multiple scary stories of people learning to use cloud service providers, like Google Cloud Platform or AWS, and as they set up different services, when the bill comes around, they're faced with a staggeringly large bill. 
+There are scary stories of people learning to use cloud service providers, like Azure, Google Cloud Platform or AWS, and as they set up different services, when the bill comes around, they're faced with a staggeringly large bill. 
+
+While avoidable, inexperience can cause this to happen to anyone, whether it was a virtual machine set up with exorbitant amounts of memory and computing power by default, or a forgotten resource, such as a database or app service, that kept running and being charged. With the deployment we've set up, we've made use of always free products on Azure, which you can see [here](https://azure.microsoft.com/en-gb/free/free-account-faq/#layout-container-uid4f88), minimizing the risk of finding yourself paying a large bill.
 
 It can be scary to learn something new when such consequences are possible, but to avoid that, Azure provides a handful of tools to use to ensure that you are in control of what you spend.
 
