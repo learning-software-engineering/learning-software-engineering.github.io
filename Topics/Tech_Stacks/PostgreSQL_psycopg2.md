@@ -22,18 +22,18 @@ PostgreSQL is an open-source DBMS. As the name states, PostgreSQL is a relationa
 pyscopg2 is an adapter for Python that allows you to easily perform PostgreSQL operations in your Python programs. It's commonly used with other Python libraries like Flask, which collectively allow you to modify a PostgreSQL database in your application with minimal hassle.
 
 ## PostgreSQL installation
-The following link is to download PostgreSQL onto your computer: [https://www.postgresql.org/download/](https://www.postgresql.org/download/) . This link also shows the different versions of PostgreSQL to match your computer. Follow the instructions after downloading. For your convenience, here are the links to download the installer for PostgreSQL on different OS:
+The following link is to download PostgreSQL onto your computer: [https://www.postgresql.org/download/](https://www.postgresql.org/download/) . This link also shows the different versions of PostgreSQL to match your computer. Follow the instructions after downloading and make sure to remember the username and password during setup. For your convenience, here are the links to download the installer for PostgreSQL on different OS:
 - Windows: [https://www.postgresql.org/download/windows/](https://www.postgresql.org/download/windows/)
 - MacOS: [https://www.postgresql.org/download/macosx/](https://www.postgresql.org/download/macosx/)
 - Linux: [https://www.postgresql.org/download/linux/](https://www.postgresql.org/download/linux/)
 
-Once installed, you can create a database, relation, and tables with the PostgreSQL client called "pgAdmin". pgAdmin is automatically downloaded when using the links above and can be accessed by searching your task bar. You can also perform queries on relations and tables through its query tool. More information on how to use pgAdmin can be found at this [link](https://www.pgadmin.org/docs/pgadmin4/6.21/index.html).
-
-If you are using MacOS, you can also run the command `brew install postgresql` in your terminal. Note that you also have to have Homebrew installed for this command to work. `brew install postgresql` allows the user to use PostgreSQL on their command line by simply initiating a PostgreSQL environment with the command `psql`.
+If you are using MacOS, you can also run the command `brew install postgresql` in your terminal. Note that you also have to have Homebrew installed for this command to work. `brew install postgresql` allows the user to use PostgreSQL on their command line by simply initiating a PostgreSQL environment with the command `psql`. More information can be found [here](https://www.moncefbelyamani.com/how-to-install-postgresql-on-a-mac-with-homebrew-and-lunchy/).
 
 For Windows users, the user should download PostgreSQL through the link provided above. If the user wants to utilize PostgreSQL on the command line, they must (after installation):
 1. Add the PostgreSQL bin directory path to the PATH environment variable.
 2. Run the command `psql -U <username>`, where `<username>` is the username you selected during installation.
+
+Once installed, you can create a database, relation, and tables with the PostgreSQL client called **pgAdmin**. **pgAdmin** is automatically downloaded when using the links above and can be accessed by searching your task bar. (If you are using Homebrew, you have to install **pgAdmin** separately by running `brew install --cask pgadmin4`.) You can also perform queries on relations and tables through its query tool. More information on how to use **pgAdmin** can be found at this [link](https://www.pgadmin.org/docs/pgadmin4/6.21/index.html).
 
 ## psycopg2 Installation
 To work with psycopg2, you can use pip to install it by running `pip install psycopg2` in your console. Make sure you execute this command in the directory you will be using psycopg2. Once finished, you can import psycopg2 (`import psycopg2` at the top of the relevant Python file), and perform the desired operations.
@@ -45,16 +45,15 @@ A quick and basic runover of PostgreSQL.
 To create a database in PostgreSQL, you can either use pgAdmin or the command line. 
 
 In pgAdmin, you can:
-1. Open pgAdmin on your computer.
-2. Click on **Servers**.
-3. Click on **PostgreSQL**. The version of PostgreSQL should follow after the name.
-4. Right click on **Databases** and click **Create**
-5. Follow the instructions in pgAdmin.
+1. Click on **Servers**.
+2. Click on **PostgreSQL**. The version of PostgreSQL should follow after the name.
+3. Right click on **Databases** and click **Create**
+4. Follow the instructions in pgAdmin.
 
 In the command line:
 1. Type `psql` to initialize the PostgreSQL environment.
-2. Type `CREATE DATABASE` followed by the name of the database. For example, `CREATE DATABASE CourseInfo`.
-3. For any errors, you can refer to this [link](https://www.postgresql.org/docs/current/sql-createdatabase.html)
+2. Type `CREATE DATABASE **name**;`, where `**name**` is the name of the database to create.
+Documentation on setting database parameters can be found [here](https://www.postgresql.org/docs/current/sql-createdatabase.html).
 
 
 ### Create Schema
@@ -62,30 +61,29 @@ To create a table, you must first create a schema in your database.
 
 To do this in pgAdmin:
 1. Click on your desired database.
-2. Find the **Schemas** directory.
-3. Right click and select **Create**
-4. Follow the rest of the instructions in pgAdmin
+2. Right click the **Schemas** directory and select **Create**.
+3. Fill in the fields on the dialog and press **Save**.
 
 To do this in the command line:
-1. Type `psql` to initialize the PostgreSQL environment.
-2. Type `\c DBNAME` where DBNAME is the name of the desired database
-2. Type `CREATE SCHEMA` followed by the name of the schema. For example, `CREATE SCHEMA SchoolSchema`.
+1. Execute `psql` to initialize the PostgreSQL environment.
+2. Execute `\c **DBNAME**;` where `**DBNAME**` is the name of the desired database.
+3. Run `CREATE SCHEMA **schema_name**;`. If the operation was successful, you should see the message `CREATE SCHEMA` on the next line.
+4. Run `\dn` to get a list of available schemas.
 
 
 ### Create Tables
-After creating your schema you can create tables/relations to perform operations on. 
+After creating your schema you can create tables/relations to perform operations on. A table contains columns, which describes the attributes of the data being stored, and rows, which are record of intances of the table. Each row contains a set of values that corresponds to the columns of the table.
 
 To create a table in pgAdmin:
 1. Right click on your desired schema.
-2. Select **Create**
-3. Select **Table**
-4. Follow the instructions in pgAdmin
+2. Select **Create** then **Table**.
+4. Follow the instructions in pgAdmin.
 
 To create a table in the command line:
-1. Type `psql` to initialize the PostgreSQL environment.
-2. Type `\c DBNAME` where `DBNAME` is the name of the desired database
-3. Type `SET search_path TO schema_name;` where `schema_name` is the name of the desired schema you want to put your table in.
-4. Type `CREATE TABLE table_name (column1 int PRIMARY KEY, ...);`, where `table_name` is the desired name of the table. Inside the round braces is a list of the columns that you want in the table. For each column, you must specify a name and datatype. For example, a table can be created like this:
+1. Execute `psql` to initialize the PostgreSQL environment.
+2. Execute `\c **DBNAME**` where `**DBNAME**` is the name of the desired database
+3. Run `SET search_path TO **schema_name**;` where `**schema_name**` is the name of the schema you want to put your table in.
+4. Type `CREATE TABLE **table_name** (column1 int PRIMARY KEY, ...);`, where `**table_name**` is the name of the table to create. Inside the round braces is a list of the columns that you want in the table. For each column, you must specify a name and datatype. For example, a table can be created like this:
 
 ``` 
 CREATE TABLE accounts (
@@ -95,7 +93,7 @@ CREATE TABLE accounts (
 	email VARCHAR ( 255 ) UNIQUE NOT NULL
 );
 ```
-The text after the datatypes (e.g. `UNIQUE NOT NULL`) are optional.
+The text after the datatypes (e.g. `UNIQUE NOT NULL`) are optional [constraints](https://www.postgresql.org/docs/16/ddl-constraints.html#DDL-CONSTRAINTS-EXCLUSION) that define conditions that must be satisfied by the data.
 
 Here is a link for information on datatypes in PostgreSQL: [https://www.postgresql.org/docs/current/datatype.html](https://www.postgresql.org/docs/current/datatype.html)
 
