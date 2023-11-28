@@ -8,6 +8,8 @@
 
 ### [Array Basics](#array-basics-1)
 
+### [Matrices and Operations](#matrices-and-operations-1)
+
 ### [Additional Resources](#additional-resources-1)
 
 ## Introduction
@@ -32,7 +34,7 @@ import numpy as np
 ```
 
 ## Array Basics
-The most basic object to create in NumPy is the array, which is similar to the default Python list, however it is designed to be more efficient, flexible, and comes with a variety of additional methods. An array can be created with an inputted Python list:
+The most basic object to create in NumPy is the array, which is similar to the default Python list, however it is designed to be more memory efficient, reliable, and it comes with a variety of additional methods. An array can be created with an inputted Python list:
 ```py
 firstArray = np.array([4, 2, 3, 1, 5])
 print(firstArray) # '[4 2 3 1 5]'
@@ -89,6 +91,100 @@ print(zeroToEightEven) # '[0. 2. 4. 6. 8.]'
 
 # Creating an array of random values of type 8-bit integer
 shortInts = np.empty(3, dtype=np.int8)
+```
+
+## Matrices and Operations
+So far, this page has only discussed one-dimensional arrays, which only represents a small part of what NumPy has to offer. In this section two-dimensional arrays (matrices) will be discussed, however arrays can be created in even higher dimensions in the same way.
+
+The matrices in NumPy act like matrices seen in algebra courses, which means that they store a two-dimensional grid of values. A matrix with 3 rows and 5 columns has shape represented by the tuple (3, 5), and an array with 5 elements has shape (5, ). There is only one shape attribute in the array's tuple due to it having only one dimension.
+
+Similar to how arrays are created, matrices can be created using a two-dimensional Python list, however it is important to note the matries must have a constant number of elements in each row (inner list), following in the same logic that an algebraic matrix cannot have missing values in a given position on the grid. Below are some examples of how to properly and improperly create matrices, an example of a 3-dimensional array, as well as some basic operations that can be carried out with them:
+```py
+# This will create a basic matrix with 3 rows and 5 columns
+matrix = np.array([[1, 2, 3, 4, 5], [6, 7, 8, 9, 10], [11, 12, 13, 14, 15]])
+
+# Indexing works as expected, like Python lists
+print(matrix[1][0]) # '6'
+print(matrix[0]) # '[1 2 3 4 5]'
+print(matrix)
+"""
+[[ 1  2  3  4  5]
+ [ 6  7  8  9 10]
+ [11 12 13 14 15]]
+"""
+
+# size returns total number of elements in the matrix
+print(matrix.size) # '15'
+# ndim returns number of dimensions
+print(matrix.ndim) # '2'
+# shape returns shape tuple
+print(matrix.shape) # '(3, 5)'
+
+# This matrix definition would raise an error, since each row has a non-fixed number of elements
+# invalid = np.array([[1, 2, 3], [4, 5], [6]])
+
+# Example of a three-dimensional array (3+ dimension arrays are commonly called 'tensors')
+tensor = np.array([[[1, 2], [1, 2]], [[1, 2], [1, 2]]])
+print(tensor)
+"""
+[[[1 2]
+  [1 2]]
+
+ [[1 2]
+  [1 2]]]
+"""
+
+# shape will have three values since this object has three dimensions
+print(tensor.shape) # '(2, 2, 2)'
+```
+
+Finally, it is important to be familiar with a few operations that can be performed on arrays. If you have taken mathematical classes which incorporate matrices in their coursework, you should be familiar with the concept of matrix addiion and scalar multiplication, which can both be performed using NumPy with operations referred to as aggregation and broadcasting, respectively.
+Aggregation acts as the basic form of addition between arrays. You can aggregate two arrays of any dimension together if they match shape, but it is also possible to aggregate a matrix with another "matrix" with only one row, in which case that one row will be aggregated with each row in the other matrix. Addition with an array and a scalar value is also supported, in which case that one value will be added to each array element.
+On the other hand, broadcasting acts as multiplication. You can broadcast an array with a scalar to multiply each element in the array by the scalar, or by an array of the same shape to multiply the two respective array elements in each position.
+NumPy also provides a square() method which, as you may expect, returns an array of the same shape as the inputted one, but with each element squared; an average() method for calculating the average of an array, as well as a flip() method which returns the inputted array but with every element in reverse order. This reversal carries down all dimensions.
+One final significant note to make is that since most of these operations return an array or a scalar, it is simple to chain these operations in order to represent more complex mathematical equations which involve a sequence of steps. Provided below is a block of code displaying how the functions described above work.
+```py
+# Definitions from earlier to be re-used:
+"""
+firstArray = np.array([4, 2, 3, 1, 5])
+matrix = np.array([[1, 2, 3, 4, 5], [6, 7, 8, 9, 10], [11, 12, 13, 14, 15]])
+"""
+# Broadcasting with a scalar
+print(firstArray * 0.5) # '[2.  1.  1.5 0.5 2.5]'
+# Addition with a scalar
+secondArray = firstArray + 1 
+print(secondArray) # '[5 3 4 2 6]'
+# Broadcasting with an array
+print(firstArray * secondArray) # '[20  6 12  2 30]'
+# NumPy square() method
+print(np.square(firstArray)) # '[16  4  9  1 25]'
+
+# Reversal of a matrix (reversal of rows as well as the elements within each row occurs)
+matrixTwo = np.flip(matrix)
+print(matrixTwo)
+"""
+[[15 14 13 12 11]
+ [10  9  8  7  6]
+ [ 5  4  3  2  1]]
+"""
+# Aggregation with matrix with only one row
+print(matrix + firstArray)
+"""
+[[ 5  4  6  5 10]
+ [10  9 11 10 15]
+ [15 14 16 15 20]]
+"""
+# Aggregation with two matrices of equal shape
+print(matrix + matrixTwo)
+"""
+[[16 16 16 16 16]
+ [16 16 16 16 16]
+ [16 16 16 16 16]]
+"""
+# Average of arrays of various shapes
+print(np.average(firstArray)) # '3.0'
+print(np.average(matrix)) # '8.0'
+print(np.average(tensor)) # '1.5'
 ```
 
 ## Additional Resources
