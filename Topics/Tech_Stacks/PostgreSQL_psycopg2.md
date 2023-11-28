@@ -22,10 +22,10 @@ PostgreSQL is an open-source DBMS. As the name states, PostgreSQL is a relationa
 pyscopg2 is an adapter for Python that allows you to easily perform PostgreSQL operations in your Python programs. It's commonly used with other Python libraries like Flask, which collectively allow you to modify a PostgreSQL database in your application with minimal hassle.
 
 ## PostgreSQL installation
-The following link is to download PostgreSQL onto your computer: https://www.postgresql.org/download/ . This link also shows the different versions of PostgreSQL to match your computer. Follow the instructions after downloading. For your convenience, here are the links to download the installer for PostgreSQL on different OS:
-- Windows: https://www.postgresql.org/download/windows/
-- MacOS: https://www.postgresql.org/download/macosx/
-- Linux: https://www.postgresql.org/download/linux/
+The following link is to download PostgreSQL onto your computer: [https://www.postgresql.org/download/](https://www.postgresql.org/download/) . This link also shows the different versions of PostgreSQL to match your computer. Follow the instructions after downloading. For your convenience, here are the links to download the installer for PostgreSQL on different OS:
+- Windows: [https://www.postgresql.org/download/windows/](https://www.postgresql.org/download/windows/)
+- MacOS: [https://www.postgresql.org/download/macosx/](https://www.postgresql.org/download/macosx/)
+- Linux: [https://www.postgresql.org/download/linux/](https://www.postgresql.org/download/linux/)
 
 Once installed, you can create a database, relation, and tables with the PostgreSQL client called "pgAdmin". pgAdmin is automatically downloaded when using the links above and can be accessed by searching your task bar. You can also perform queries on relations and tables through its query tool. More information on how to use pgAdmin can be found at this [link](https://www.pgadmin.org/docs/pgadmin4/6.21/index.html).
 
