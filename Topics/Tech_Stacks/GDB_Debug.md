@@ -2,9 +2,9 @@
 
 ## Table of contents
 
-#### [What is GDB]
-#### [What can do by GDB]
-#### [How to use GDB]
+#### What is GDB
+#### What can do by GDB
+#### How to use GDB
 
 
 ## What is GDB?
@@ -51,7 +51,8 @@ These features make GDB an essential tool for understanding and debugging progra
 3. **Start GDB:**
     `gdb program` and you will see:
 
-    `GNU gdb (Ubuntu 12.1-0ubuntu1~22.04) 12.1
+    ...
+    GNU gdb (Ubuntu 12.1-0ubuntu1~22.04) 12.1
     Copyright (C) 2022 Free Software Foundation, Inc.
     License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
     This is free software: you are free to change and redistribute it.
@@ -60,11 +61,12 @@ These features make GDB an essential tool for understanding and debugging progra
     This GDB was configured as "x86_64-linux-gnu".
     Type "show configuration" for configuration details.
     For bug reporting instructions, please see:
-    --Type <RET> for more, q to quit, c to continue without paging--`
+    --Type <RET> for more, q to quit, c to continue without paging--
+    ...
 
     and you can type `q` to quit and `c` to continue.
 
-4. **Set Breakpoints:**
+5. **Set Breakpoints:**
     GDB provides various ways to set breakpoints, allowing you to control where your program stops during debugging. 
 
     1. [Line Number Breakpoint]: 
@@ -92,10 +94,10 @@ These features make GDB an essential tool for understanding and debugging progra
          
          Example: To set a breakpoint at line 15 and break only if the variable `x` is greater than 10, use `break 15 if x > 10`.
 
-5. **Run Your Program:**
+6. **Run Your Program:**
     `run`
 
-6. **Interact with Your Program:**
+7. **Interact with Your Program:**
     1. `step`: Execute the current line and stop at the first possible occasion, even if it's inside a function.
 
     2. `next`: Execute the current line and stop at the next line in the same function.
@@ -106,6 +108,6 @@ These features make GDB an essential tool for understanding and debugging progra
 
     5. `backtrace`: Display a backtrace of the function call stack.
 
-7. **Exit GDB:**
+8. **Exit GDB:**
     `quit`
 
