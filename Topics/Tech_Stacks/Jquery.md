@@ -150,6 +150,21 @@ $("#myDiv").find(".child");
 
 ---
 
+ # jQuery Frequently Asked Questions
+
+## 1. What is jQuery and why is it used?
+jQuery is a fast and concise JavaScript library that simplifies HTML document traversal and manipulation, event handling, animations, and Ajax interactions. It's used to make it easier and quicker to write JavaScript, especially for tasks like handling DOM elements, creating dynamic web page content, and managing browser events.
+
+## 2. How do I add jQuery to my web project?
+To use jQuery, you need to include it in your web project. This is typically done by adding a `<script>` tag in your HTML file that points to a hosted version of jQuery, such as `<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>`. You can also download jQuery and host it on your server.
+
+## 3. Is jQuery still relevant with modern JavaScript and frameworks?
+While modern JavaScript and frameworks have incorporated many features that simplify tasks previously reliant on jQuery, jQuery remains relevant for certain projects, especially for maintaining older codebases or for quick prototyping. Its simplicity and ease of use still make it a viable choice in scenarios where the overhead of larger frameworks isn't justified.
+
+## 4. Can I use jQuery together with other JavaScript frameworks like React or Angular?
+While it's technically possible to use jQuery with frameworks like React or Angular, it's generally not recommended. These frameworks have their own ways of handling the DOM and state management, and mixing them with jQuery can lead to difficult-to-maintain code and potential conflicts. If working with these frameworks, it's best to use their native methods for DOM manipulation and state management.
+
+
 ## Resources for Further Learning
 
 1. [jQuery Official Documentation](https://api.jquery.com/) - Comprehensive and authoritative source of information.
