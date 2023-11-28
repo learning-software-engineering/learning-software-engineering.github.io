@@ -13,11 +13,15 @@
 ### [Additional Resources](#additional-resources-1)
 
 ## Introduction
-This is a short introduction to NumPy, for people looking for a basic overview of the library before doing further research into how to use it, which can be done through visiting some of the additional resources linked at the bottom of this page. Specifically, all the topics covered on this page as well as many more are discussed in both the official beginners guide and the video tutorial linked resources.
+This is a short introduction to NumPy, for people looking for a basic overview of the library before doing further research into how to use it, which can be done through visiting some of the additional resources linked at the bottom of this page. Specifically, all the topics covered on this page as well as many more are discussed in both the official beginner's guide and the video tutorial linked resources.
+
 NumPy is a Python library which provides users with new data structures which represent arrays of one or more dimensions, as well as a variety of methods for different mathematical operations which chain together effectively. It is designed for use in engineering, statistical, mathematical, as well as any other computing and/or scientific contexts where complicated operations are to be conducted on data sets of various shapes efficiently.
+
+You may find it useful to include NumPy in your Python project if you are dealing with many collections and need to perform operations to every element in the collections or to the form of the collection itself without significantly increasing the program's runtime. If you are working on a software project in Python related to a physical field of engineering or data analysis where many precise calculations need to be made as efficiently as possible, then NumPy would prove itself effective.
 
 ## Set Up
 In order to use NumPy, it needs to be installed just like any other Python library. The most basic way this can be done is having Python already installed and installing NumPy through the shell using pip or Anaconda:
+
 Using pip:
 ```bash
 > pip install numpy
@@ -26,9 +30,9 @@ Using Anaconda:
 ```bash
 > conda install numpy
 ```
-For more detailed instructions on ways to install NumPy, there is a linked additional resource at the bottom of the page labelled 'Installing NumPy'.
+For more detailed instructions on ways to install NumPy, there is a linked additional resource at the bottom of the page labelled "Installing NumPy".
 
-Finally, in order to use NumPy resources in your Python code, it is important to import the library. The general convention is to give the package the name 'np' in the import as a shorthand, however it is technically not necessary. Code blocks in this page will be written assuming that the import is done as is below:
+Finally, in order to use NumPy resources in your Python code, it is important to import the library. The general convention is to give the import the name "np" as a shorthand, however it is technically not necessary. Code blocks in this page will be written with the import statement done as shown below:
 ```py
 import numpy as np
 ```
@@ -36,6 +40,8 @@ import numpy as np
 ## Array Basics
 The most basic object to create in NumPy is the array, which is similar to the default Python list, however it is designed to be more memory efficient, reliable, and it comes with a variety of additional methods. An array can be created with an inputted Python list:
 ```py
+import numpy as np
+
 firstArray = np.array([4, 2, 3, 1, 5])
 print(firstArray) # '[4 2 3 1 5]'
 
@@ -60,9 +66,12 @@ concatenated = np.concatenate((first, second))
 print(concatenated) # '['a' 'b' 'c' 'd' 'e' 'f']'
 ```
 
-An array can also be created with fixed values, such as 0's or 1's, or if speed is a concern, then there is a method to create an array with random values at each index (it is important to remember this if using NumPy's 'empty()' function):
+An array can also be created with fixed values, such as 0's or 1's, or if speed is a concern, then there is an even faster method to create an array with random values at each index (it is important to remember this if using NumPy's 'empty()' function):
 ```py
-# Create arrays with inputted size attributes. The default type of each element in these arrays is a 64-bit float, which is why 0 appears as '0.'.
+import numpy as np
+
+# Create arrays with inputted size attributes.
+# The default type of each element in these arrays is a 64-bit float, which is why 0 appears as '0.'.
 # Array with random values in each index.
 empty = np.empty(3)
 
@@ -73,10 +82,13 @@ print(zeroArray) # '[0. 0. 0.]'
 print(oneArray) # '[1. 1. 1.]'
 ```
 
-It is important to mention that arrays must contain elements of the same type. There will be an example below showcasing what happens when given a list of various types as an argumen to the array constructor. 
+It is important to mention that arrays must contain elements of the same type. There will be an example below showcasing what happens when given a list of various types as an argument to the array constructor. 
 Additionally, arrays can be constructed as a range (similar to Python's 'range' function), which can also be defined as a range spaced linearly. 
+
 Finally, as mentioned above, arrays are defined by default to contain elements of the type np.float64, which is a 64-bit floating point number. When creating an array, a pre-defined NumPy data type can be passed in to define the type of the array elements:
 ```py
+import numpy as np
+
 # Creating this array will make each element turn into a string:
 variety = np.array([True, 2, 'c'])
 print(variety) # '['True' '2' 'c']'
@@ -86,7 +98,8 @@ zeroToTwo = np.arange(3)
 print(zeroToTwo) # '[0 1 2]'
 
 # Creating a linearly spaced array
-zeroToEightEven = np.linspace(0, 8, 5) # This means to divide the range from 0 to 8 (inclusive) into 5 points, dividing the space between each part linearly.
+# This example divides the range from 0 to 8 (inclusive) into 5 points, dividing the space between each part linearly.
+zeroToEightEven = np.linspace(0, 8, 5) 
 print(zeroToEightEven) # '[0. 2. 4. 6. 8.]'
 
 # Creating an array of random values of type 8-bit integer
@@ -98,8 +111,10 @@ So far, this page has only discussed one-dimensional arrays, which only represen
 
 The matrices in NumPy act like matrices seen in algebra courses, which means that they store a two-dimensional grid of values. A matrix with 3 rows and 5 columns has shape represented by the tuple (3, 5), and an array with 5 elements has shape (5, ). There is only one shape attribute in the array's tuple due to it having only one dimension.
 
-Similar to how arrays are created, matrices can be created using a two-dimensional Python list, however it is important to note the matries must have a constant number of elements in each row (inner list), following in the same logic that an algebraic matrix cannot have missing values in a given position on the grid. Below are some examples of how to properly and improperly create matrices, an example of a 3-dimensional array, as well as some basic operations that can be carried out with them:
+Similar to how arrays are created, matrices can be created using a two-dimensional Python list, however it is important to note the matrices must have a constant number of elements in each row (inner list), following in the same logic that an algebraic matrix cannot have missing values in a given position on the grid. Below are some examples of how to properly and improperly create matrices, an example of a 3-dimensional array, as well as some basic operations that can be carried out with them:
 ```py
+import numpy as np
+
 # This will create a basic matrix with 3 rows and 5 columns
 matrix = np.array([[1, 2, 3, 4, 5], [6, 7, 8, 9, 10], [11, 12, 13, 14, 15]])
 
@@ -148,11 +163,12 @@ NumPy also provides a square() method which, as you may expect, returns an array
 
 One final significant note to make is that since most of these operations return an array or a scalar, it is simple to chain these operations in order to represent more complex mathematical equations which involve a sequence of steps. Provided below is a block of code displaying how the functions described above work.
 ```py
+import numpy as np
+
 # Definitions from earlier to be re-used:
-"""
 firstArray = np.array([4, 2, 3, 1, 5])
 matrix = np.array([[1, 2, 3, 4, 5], [6, 7, 8, 9, 10], [11, 12, 13, 14, 15]])
-"""
+
 # Broadcasting with a scalar
 print(firstArray * 0.5) # '[2.  1.  1.5 0.5 2.5]'
 # Addition with a scalar
@@ -195,5 +211,5 @@ print(np.average(tensor)) # '1.5'
 
 - [NumPy Home Page](https://numpy.org/)
 - [Installing NumPy](https://numpy.org/install/)
-- [NumPy Official Beginners Guide](https://numpy.org/doc/stable/user/absolute_beginners.html)
+- [NumPy Official Beginner's Guide](https://numpy.org/doc/stable/user/absolute_beginners.html)
 - [Video Tutorial for Beginners](https://www.youtube.com/watch?v=QUT1VHiLmmI&ab_channel=freeCodeCamp.org)
