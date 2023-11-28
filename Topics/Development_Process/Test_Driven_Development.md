@@ -1,0 +1,46 @@
+# Test Driven Devlopment 101
+
+## Table of Contents:
+### [What is Test Driven Devlopment (TDD)](#introduction)
+### [TDD Development Cycle](#tdd-development-cycle)
+### [Pro's and Cons](#pros-and-cons)
+### [Conclusion](#conclusion)
+
+
+
+## Introduction
+
+Test Driven Devlopment (TDD) is a development practice in which developers create a set of tests before implementing the code that they are going to test. The idea is that the developer writes tests around the expected results and requirements which they know in advance.If the tests pass after implemting the software then the developer can have confidence that their code is working as expected. On the other hand if any of the tests fails then it signals to the developer that something is wrong.
+
+
+## TDD Development Cycle
+
+A common phrase you might see when talking about TDD is the "Red-Green-Refactor" cycle. This cycle is the key principal in TDD. This cycle refers to the three states that occur when developing using this practice.
+
+**Red State**: When the developer initally writes tests that are going to fail because they are simply not implemented yet or there have been changes in the requirements
+
+**Green State**: When the developer writes code so that all the tests pass which ensures that the requirements and expected behavours are met
+
+**Refactor State**: Once the tests have passed you can go back and clean up the previously written code in any which way you want, so that there is less duplication or readibiliy etc.
+
+The core concept behind TDD is that once you get to the refactor state you should have already had a working version of your code, so if in the process of refactoring you change a behavoiur the tests will once again return back to the red state and the cycle continues.
+
+## Pros and Cons
+
+You might be thinking to yourself "wow TDD seems great, it ensures that the code does exactly what you want it to do why is this not the standard?". For as great as a principle TDD is it also has its drawbacks, its up the developer to decide wheter or not TDD fits their use case.
+
+#### Pros
+- **Easy Detection of Bugs**: Since you write tests early into the development process you are able to catch bugs earlier on
+- **Code Quality**: Usually as a by product of TDD the developer has to think a little more about the design of the code leading to better code quality overall
+- **Regression Testing**: All the tests that are written provide a thorough test suite which can be run (usually using CI) to ensure that any changes haven't broken other parts
+- **Documentation**: The tests are self documentation of the code as they should show how to use the code and the behaviour of the code
+
+#### Cons
+- **Time-consuming**: Writing comprehensive tests for your code before you start actually coding takes a lot of time, especially the inital cost of creating something new
+- **Maitence of Test Suite**: As the code base grows larger that means the tests need to be updated accordingly. Staying on top of this once again has a large time cost
+- **Over Testing**: While having tests are a good thing sometimes the focus might shift too much to the tests where there are simply too many tests or that the code is written simply to pass a test
+- **Learing Curve**: Typically writing tests include using a library or framework of some sort to do the testing. This means that the developer has to learn how to use this framework in addition to the envirmonment which they are developing
+
+#### Conclusion
+
+Test driven development is a methodolgy where you first write tests outlining how you want the code to work and then write the code to achieve that behaviour. The idea behind this concept is that there is an inital investment of time and complexity but it forces the developer to write better code that will be easier to maintain in the future and that the time saved in debugging and maintenance will offset the initial investment. However TDD is not a one-size-fits all and there are scarios in which TDD can have more downsides than rewards.
