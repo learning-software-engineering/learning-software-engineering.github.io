@@ -23,7 +23,7 @@ As such, they allow us to simply treat all data as objects in our code, and leve
 ## Example:
 Lets take a simple example, where we want to connect to a database, create a user table, and add a new user to our database. How would that look as SQL Queries compared to an ORM? 
 
-```
+```js
 // First the example using an ORM!
 import {Sequelize, DataTypes} from 'sequelize'
 
@@ -55,7 +55,7 @@ await Student.create({
 await sequelize.close()
 ```
 
-```
+```js
 // The following is the equivalent code using RAW SQL more heavily
 import { Client } from 'pg'
 const client = new Client() // Server Details go here
