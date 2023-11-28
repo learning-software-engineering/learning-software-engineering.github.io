@@ -71,7 +71,7 @@ These features make GDB an essential tool for understanding and debugging progra
         This is the most common type of breakpoint. It stops program execution at a specific line of source code.
         
         Example: `break 10`
-        
+
     2. [Function Name Breakpoint]: 
         This breakpoint stops the program when it enters or exits a specified function.
         
@@ -102,9 +102,9 @@ These features make GDB an essential tool for understanding and debugging progra
 
     3. `continue`: Resume program execution until the next breakpoint is hit.
 
-    4.`print`: Display the value of a variable or expression.
+    4. `print`: Display the value of a variable or expression.
 
-    5.`backtrace`: Display a backtrace of the function call stack.
+    5. `backtrace`: Display a backtrace of the function call stack.
 
 7. **Exit GDB:**
     `quit`
