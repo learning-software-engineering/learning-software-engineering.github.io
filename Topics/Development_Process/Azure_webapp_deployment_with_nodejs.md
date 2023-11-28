@@ -38,9 +38,7 @@ While we won't be going into too much detail here, you will need to have Node.js
 
 ## Deployment
 
-Azure has a variety of ways to host your application, including Azure App Service, Azure Functions, Azure Container Instances, Azure Kubernetes Service, and more, which you can choose to suit your specific usecase. 
-
-See more about the different kinds of hosting options and reasons to choose one over the other [here](https://learn.microsoft.com/en-us/azure/developer/intro/hosting-apps-on-azure).
+Azure has a variety of ways to host your applications, and these options can be seen [here](https://learn.microsoft.com/en-us/azure/developer/intro/hosting-apps-on-azure).
 
 The following will detail how one would deploy a Node.js Web App using Azure App service, and integrate it with Github Actions for CI/CD.
 
