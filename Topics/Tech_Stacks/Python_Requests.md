@@ -78,6 +78,9 @@ A full list of HTTP response codes can be found [here](https://developer.mozilla
 ## Parsing
 With the webpage retrieved, you can now parse the data using a library such as [BeautifulSoup4](https://pypi.org/project/beautifulsoup4/).
 
+## JavaScript
+It is important to note that Requests **does not load JavaScript**, so the response given by Requests might be different than what you mgiht expect. To work around this, you can consider alternative libraries such as [`Requests-HTML`](https://pypi.org/project/requests-html/), or disable JavaScript on your web browser (you can use an extension such as [Disable JavaScript](https://chromewebstore.google.com/detail/disable-javascript/jfpdlihdedhlmhlbgooailmfhahieoem) or use developer tools in your specific browser) to view the webpage that Requests will deliver.
+
 ## Useful Resources
 - [Requests Documentation](https://requests.readthedocs.io/en/latest/)
 - [HTTP Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
