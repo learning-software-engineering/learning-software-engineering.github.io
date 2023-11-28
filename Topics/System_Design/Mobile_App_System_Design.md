@@ -15,6 +15,8 @@ The touch interface of mobile devices should be also kept in mind when designing
 ### 3. Contextual Use
 Mobile apps are often used on-the-go, requiring a user experience such that any important functions can be done by quick and efficient interactions. To illustrate this a good example is Uber. The Uber app would often be used in situations where the user is outside or not necessarily in a situation where they want to take their time. The Uber app is clearly designed with this in mind requiring only three taps from opening the app to ordering a ride fulfilling its main function. 
 
+
+
 ## Performance 
 
 ### 1. Battery Life 
@@ -25,3 +27,7 @@ The hardware resources available to a mobile device are more limited when compar
 
 ### 3. Network Variability
 As stated earlier mobile apps are often used on the go, which also means that the network strength may vary. With that in mind, mobile apps should minimize the number of API calls made to the backend. Apps should also cache the data retrieved from a backend API, that is store the retrieved data in a local data store like SQLite on Android or Core Data on iOS. A caching policy should be designed for the application, for example, the app should only make an API call if a particular piece of data is not available in the cache or a sufficient amount of time has passed thus assuming that the data could have changed. Caching will also improve performance, limiting the need for API calls while also making the app less reliant on a strong network.
+
+
+## Conclusion
+In conclusion, the development of a mobile app requires distinct system design decisions, as mobile devices have many aspects that are unique to them. As discussed there are key factors such as user interface design that should be tailored for smaller screens, touch interactions, and contextual use. Additionally, performance considerations should also be included in the system design of a mobile app, in particular battery life, resource constraints, and network variability that can be solved by employing techniques such as caching. When integrated the elements discussed contribute not only to functional mobile apps but also, to engaging and efficiently meeting the needs of their users. 
