@@ -58,9 +58,35 @@ Selenium has uses within automating browser interactivity, such as extracting in
 
     Now, download the appropriate Chrome WebDriver version matching your Chrome browser version and place it in the project directory.
 
+3. **Start Writing Code**
+
+    At this point, you are ready to start using Selenium. Now you can import the specific functionality you want within Selenium with the import statement `from selenium import [specific module]` to fit your specific use cases.
+
 ## Headless drivers
 
+If you are running your scripts from a headless terminal (with no GUI), or don't want the browser actions to be visible, you can use selenium with a headless WebDriver. This is useful if your testing environment is a server that you are connected to with SSH. 
+
+With Python, you can accomplish this by using `pyvirtualdisplay`. Before your Selenium interaction, initiate your virtual display using:
+```python
+display = Display(visible=0, size=(800, 600))
+display.start()
+```
+
+Then, after the interaction runs, close your virtual display.
+```python
+display.close()
+```
+Typically, you would use a _try, except, finally_ statement to execute the code, and you would instantiate the display at the top of the `try` block, and close it at the end of the `finally `block.
+
 ## Automation
+
+The Selenium WebDriver can be used for many purposes, including logging in to websites, filling out forms, and clicking buttons. For example, if there is a particular task that you need to do every day that requires you to login to a website, and then navigate to a certian page this is a simple task in Selenium. You can then automate this script to run at a given time interval on a linux server using `cron`. For example, you could include this following line your _crontab_ to schedule the script to run at midnight everyday:
+
+```bash
+0 0 * * * python3 /path/to/selenium/script.py
+```
+
+You can learn more about what the numbers and wildcards mean [here](https://crontab.guru/once-a-day), or you can check out the [linux man page](https://man7.org/linux/man-pages/man5/crontab.5.html) to learn more about cron.
 
 ## Acknowledgements:
 - **Selenium**: Selenium is an open-source framework for automating browser interactions. To learn more about Selenium and its capabilities, please visit the official Selenium website: [Selenium Documentation](https://www.selenium.dev/documentation/en/)
