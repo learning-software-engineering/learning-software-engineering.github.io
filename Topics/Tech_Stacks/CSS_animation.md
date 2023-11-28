@@ -29,17 +29,32 @@ All this does is allow you to configure the timing, duration, and other details 
 This does not configure the appearance of the animation, this is specified using '@keyframes' rules, which we'll touch upon later. 
 
 'animation' sub-properties:
-- animation-composition
-- animation-delay
-- animation-direction
-- animation-duration
-- animation-fill-mode
-- animation-iteration-count
-- animation-name
-- animation-play-state
-- animation-timeline
-- animation-timing-function
+- [animation-composition:](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-composition) 
+  - Specifies how the styles of an element should be combined with styles of its descendants during the animation.
+- [animation-delay:](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-delay) 
+  - Sets the delay before an animation starts, allowing you to control when an animation begins after it is triggered.
+- [animation-direction:](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-direction) 
+  - Defines whether the animation should play in a forward, backward, or alternate direction.
+- [animation-duration:](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-duration)
+  - Sets the total duration of an animation, indicating how long it takes to complete one cycle.
+- [animation-fill-mode:](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-fill-mode)
+  - Determines how the styles are applied to an element before and after the animation, including options like filling backwards or forwards.
+- [animation-iteration-count:](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-iteration-count) 
+  - Specifies the number of times an animation cycle should be played before stopping.
+- [animation-name:](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-name)
+  - Assigns a name to the animation, referencing a keyframe rule that defines the styles for each animation state.
+- [animation-play-state:](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-play-state) 
+  - Controls whether an animation is running or paused, providing dynamic control over the animation's playback.
+- [animation-timeline:](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timeline) 
+  - Determines the timeline to which the animation belongs, allowing synchronization with other animations.
+- [animation-timing-function:](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timing-function) 
+  - Defines the acceleration curve for an animation, specifying how the intermediate values are calculated over the duration of the animation.
 
+The 'animation' property itself encompasses the above sub-properties and can be used as shorthand to declare all the above properties in one statement (more on this after)
+
+[Link to learn more about 'animation' and its sub-properties:](https://developer.mozilla.org/en-US/docs/Web/CSS/animation)
+
+### Using 'animation' and its sub-properties:
 
 There are two ways to set an the CSS animation style of an HTML element: 
 - Using 'animation' property directly (shorthand):
