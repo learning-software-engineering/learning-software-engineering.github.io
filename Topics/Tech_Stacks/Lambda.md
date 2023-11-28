@@ -20,7 +20,7 @@ Thanks to Lambda's simplicity, getting started is fairly simple. Explore the off
 - [AWS Lambda Resources](https://aws.amazon.com/lambda/resources/?aws-lambda-resources-blog.sort-by=item.additionalFields.createdDate&aws-lambda-resources-blog.sort-order=desc)
 
 
-## Why Use Lambda?
+## Why Use AWS Lambda?
 
 - **Serverless Computing:** Eliminates server management, allowing focus solely on code development and execution.
 - **Event-Driven Model:** Responds to various triggers like HTTP requests, database changes, or file uploads.
@@ -49,15 +49,14 @@ Thanks to Lambda's simplicity, getting started is fairly simple. Explore the off
 ## Example Use Cases
 
 
-###1. Web Applications
+### 1. Web Applications
 
 A user clicks on the web app to get local weather information. Then the App makes a REST API call to an endpoint triggering the Lambda. The Lambda runs the necessary code to retrive the local weather information from the db and returns data back to the user. 
 
-<img src="https://d1.awsstatic.com/product-marketing/Lambda/Diagrams/product-page-diagram_Lambda-WebApplications%202.c7f8cf38e12cb1daae9965ca048e10d676094dc1.png
-">
+<img src="https://d1.awsstatic.com/product-marketing/Lambda/Diagrams/product-page-diagram_Lambda-WebApplications%202.c7f8cf38e12cb1daae9965ca048e10d676094dc1.png">
 
 
-###2. File Processing 
+### 2. File Processing 
 Solving cross-device development challenges typically involves high costs and manual tasks, slowing down development teams. Yet, AWS Lambda offers a solution: automate a multi-platform media and content delivery pipeline. For example, a photograph is taken, and is uploaded to a database like an S3 bucket. Then that triggers a Lambda which runs the image resizing code into sizes that fit mobile, tablet, and laptop. 
 
 
