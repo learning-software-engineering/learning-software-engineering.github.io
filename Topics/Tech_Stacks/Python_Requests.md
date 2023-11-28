@@ -2,7 +2,7 @@
 
 ## Table of Contents
 ### [Introduction](#introduction-1)
-### [Basic Syntax](#basic-syntax-1)
+### [Basic Usage](#basic-usage-1)
 ### [Using Your Web Browswer](#using-your-web-browser)
 ### [Storage](#storage-1)
 ### [Useful Resources](#useful-resources-1)
@@ -16,7 +16,11 @@ pip install requests
 pip install beautifulsoup4
 ```
 
-## Basic Syntax
+## Basic Usage
+Most webpages can be scraped/retrieved using the GET method. 
+```python
+requests.get(url, params=params)
+```
 
 ## Using Your Web Browser
 
