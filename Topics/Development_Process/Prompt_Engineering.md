@@ -1,0 +1,77 @@
+## Introduction to Prompt Engineering with LLAMA2 on VertexAI
+
+Prompt engineering is an art and science of designing input queries (prompts) to generate the desired output from language models like LLAMA2 on VertexAI. The quality of the output is directly influenced by how well the prompt is structured, making this skill vital for those utilizing language models in their applications.
+
+When structuring prompts, it is crucial to consider clarity, context, and specificity. A well-engineered prompt should be clear and concise, providing enough context to guide the model towards the intended output without being overly specific, which may limit the model's creativity or lead to biased responses.
+
+## Steps for Structuring Highly-Effective Prompts
+
+1. Understand Your Model: Know the capabilities and limitations of your model to set realistic expectations for its output​​.
+
+2. Define the Input: Clearly state what you want the model to respond to. This can be a direct question, a task you want the model to perform, an entity to operate on, or a completion of a given text​​.
+
+3. Provide Context: Offer additional information and instructions that specify how the model should behave or what information it should consider when generating a response​​.
+
+4. Use Examples: Include input-output pairs to demonstrate the format or style of response you're looking for. This can help the model understand the pattern it should follow​​.
+
+5. Clear Instructions: Tell the model exactly what to do in a straightforward manner. Clarity is key to preventing misinterpretation by the model​​.
+
+6. Partial Inputs: Let the model complete a thought or statement. This method leverages the model's predictive capabilities and can be especially powerful when combined with examples and context​​.
+
+7. Contextual Information: Provide all necessary information within the prompt, especially if the task requires specific knowledge or constraints​​.
+
+8. Prefixes: Use prefixes to indicate different sections or types of content within your prompt, helping the model understand and categorize the information more effectively​​.
+
+9. Adjust Parameters: Experiment with parameters like max output tokens, temperature, top-K, and top-P to fine-tune the creativity and randomness of the responses​​.
+
+10. Iterative Design: Prompt engineering is rarely perfect on the first try. Iterate on your prompt based on the responses you get, refining until you achieve the desired output​​.
+
+## Writing Prompts - A Sample Scenario
+
+Suppose you are an educator and you want the llm to generate 5 MCQ's for you based on certain text that you provide. You want the output in json format
+This is how a good prompt is structured:
+
+"Context: You are a teacher who wants to create multiple-choice questions based on readings given to the students.
+
+ Example Text: The Tinder Fire was a wildfire that burned 16,309 acres (66.00 km2) of the Coconino National Forest in the U.S. state of Arizona during April and May 2018. 
+
+ Example output: "{\"Question\": \"When did the Tinder Fire occur\", \"Answer\": \"A\", \"A\": \"April and May 2018\", \"B\": \"April and May 2019\", \"C\": \"May and June 2018\", \"D\": \"Jan and Feb 2018\"}"
+
+ Using the following information and nothing else, generate 5 Multiple Choice questions based on the information above and return them in JSON format.
+ Exactly follow the JSON format of the example question below. Each question should be separated by "&&" and nothing else.
+ 
+ Actual Text: {text you want to provide}"
+
+
+The provided prompt is well-structured for the following reasons:
+
+1. Clarity of Task: It clearly defines the context and role of the user, in this case, an educator, setting a clear purpose for the language model's task of generating multiple-choice questions.
+
+2. Specific Example: By including an example of the desired output in JSON format, the prompt sets explicit expectations for the structure and content of the language model's responses, reducing ambiguity.
+
+3. Precise Instructions: The prompt specifies the exact number of questions, the separation character, and the information to be used, guiding the model to produce a well-organized and focused output.
+
+For the similar scenario, this is one example of a bad prompt:
+
+"Context: You are a teacher who wants to create multiple-choice questions based on readings given to the students.
+ Using the following information and nothing else, generate 5 Multiple Choice questions based on the information above and return them in JSON format.
+ Exactly follow the JSON format of the example question below. Each question should be separated by "&&" and nothing else.
+ Text:{text you want to provide} "
+
+
+The provided prompt is not well-structured for the following reasons:
+
+1. Lack of Example Text: Unlike the good prompt, the bad prompt does not include example text to demonstrate the type of content from which the questions should be derived. This omission can lead to confusion about the scope and nature of the content being tested.
+
+2. Absence of Output Format Description: The bad prompt fails to specify how the JSON format should be structured, unlike the good prompt which includes a detailed example. This lack of clarity can result in varied and potentially incorrect output formats.
+
+3. agueness in Instruction: The second prompt is vague in its instructions, missing out on details such as the level of difficulty of the questions or the specific areas of the text to focus on, which could lead to a mismatch in expectations and actual output.
+
+
+## Additional Resources
+
+1. How to Talk to an LLM: LLM Prompt Engineering for Beginners - UC Today : (https://www.uctoday.com/unified-communications/how-to-talk-to-an-llm-llm-prompt-engineering-for-beginners/#:~:text=,depth%20task%20descriptions)
+
+2. Master Prompt Engineering: Demystifying Prompting Through a Structured Approach : (https://promptengineering.org/master-prompt-engineering-demystifying-prompting-through-a-structured-approach/#:~:text=,can%20quickly%20grasp%20your%20intent) 
+
+3. A guide to prompting llama2 : (https://replicate.com/blog/how-to-prompt-llama) 
