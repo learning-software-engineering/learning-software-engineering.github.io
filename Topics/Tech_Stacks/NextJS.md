@@ -138,3 +138,4 @@ Styling in Next.js can be done using various approaches. You can use CSS modules
 - [Next.js Styling](https://nextjs.org/docs/basic-features/built-in-css-support)
 - [Next.js Optimizing](https://nextjs.org/docs/pages/building-your-application/optimizing)
 - [Tailwind CSS Documentation](https://tailwindcss.com/docs)
+- [Popular Youtube Tutorial on Next.JS](https://www.youtube.com/watch?v=ZVnjOPwW4ZA)
