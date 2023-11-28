@@ -33,7 +33,11 @@
 ### [GraphQL with Apollo](./GraphQL_Apollo.md)
 ### [React.js Bad Practice - Prop Drilling](./Tech_Stacks/React_Prop_Drilling.md)
 ### [Introduction to Static Typing in Python](./Tech_Stacks/Python_Static_Typing.md)
+<<<<<<< HEAD
 ### [Debugging with GDB](./Tech_Stacks/GDB_Debug.md)
 ### [Learning Express.js](./Tech_Stacks/Express.md)
 ### [Introduction to React ChartJS](./Tech_Stacks/ReactChartJS.md)
 ### [Setting up Firebase and Intro to Firestore](./Tech_Stacks/Firebase_and_Firestore.md)
+=======
+### [Learning Odata](./Tech_Stacks/Odata.md)
+>>>>>>> 4abad6f... Updated Tech Stacks Index.
