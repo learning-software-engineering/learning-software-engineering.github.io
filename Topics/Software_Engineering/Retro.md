@@ -38,6 +38,10 @@ Finding time to review successes, concerns, and failures gives the team a chance
 
 ## Planning a Retro Meeting
 
+Planning a Retro Meeting is quite similar to hosting any other standup or planning meeting. If you are a remote team, using tools like Google Docs or Sketch.io to collaboratively work together in a virtual environment helps bridge the gap between an in-person meeting and a vitural one.
+
+If you are hosting an in-person meeting, try to incorporate visual aids whenever you can, retro meetings primarily work well when the data you collect is in front of your team members.
+
 ### Before the Retro Meeting
 
 When planning a retro meeting, try to keep the retro near the end of the completed sprint or the start of the next sprint. This timing allows people to best remember what has happened during the sprint, and allow everyone to consider what to repeat and not to repeat during the next one. You may also set up a feedback form over the course of the sprint to allow less talkative members a chance to place some issues that could help shape the context of the retro. This also allows team members to anonymously bring up issues that they would otherwise be too uncomfortable bringing up.
@@ -57,6 +61,8 @@ Once the team is warmed up, start to introduce the data points you collected. Pr
 It is important during the sprint to provide visual aids and concrete numbers to help members get an overall feel for what happened during the sprint. Get people to summarize what they see, and try to get them to summarize the overall tasks they feel were done. Though it may feel unhelpful, it forces your team to think about their progress and tests them on whether they are properly staying up to date with the project and aligned with the goals they promised themselves.
 
 Once tasks and project goals were discussed, open up the meeting for discussions. This should take up the bulk of your meeting. Ask the team what went wrong during sprint? What went right? If you have comments and concerns that were brought up before the meeting, introduce them to the team and ask them if there is a current solution to said issue. Always look to get context about any issues, however, as making assumptions can easily lead to miscommunication and misunderstandings.
+
+Remember that interpersonal conflicts are a delicate subject. In the context of a retro meeting, a good rule of thumb is to keep the conflict to a separate, more private meeting if the subject matter is sensitive, or should not involve all members of the team. Be sure to cut off discussions if they seem to be devolving into full-blown arguments. For example, if someone is not completing their work, and the other group members are bringing this up, it is a good idea to leave the topic outside the retro, and have a team lead talk to them to get a better sense of the situation.
 
 If you have any issues or concerns brought up from previous retros, now is the time to ask the team on whether any potential solutions were thought up of that could help alleviate those issues.
 
