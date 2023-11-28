@@ -24,5 +24,7 @@
 ### [Learning Cypress](./Tech_Stacks/Cypress.md)
 ### [Establishing Peer to Peer Connection with WebRTC](./Tech_Stacks/WebRTC.md)
 ### [Introduction to Unity Basics](./Tech_Stacks/Unity_Intro.md)
+### [A Beginner's Guide for Unity UI Design](./Tech_Stacks/Unity_UI.md)
 ### [Learning JSON-RPC](./Tech_Stacks/JSONRPC.md)
+### [React.js Bad Practice - Prop Drilling](./Tech_Stacks/React_Prop_Drilling.md)
 ### [Introduction to Static Typing in Python](./Tech_Stacks/Python_Static_Typing.md)
