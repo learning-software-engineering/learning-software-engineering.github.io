@@ -14,7 +14,7 @@ Design patterns are solutions to common problems encountered in software design.
 
 
 ## Types of Design Patterns
-In this short introduction, we will use an Objected Oriented Programming (OOP) language as the underlying programming languages. Please be awarer of the relationship between OOP and Design Patterns. Design Patterns are more general and can be applied to any programming languages, not just OOP ones; but good OOP principles usually adhere to design patterns closely. 
+In this short introduction, we will use an Objected Oriented Programming (OOP) language as the underlying programming languages. Please be aware of the relationship between OOP and Design Patterns. Design Patterns are more general and can be applied to any programming languages, not just OOP ones; but good OOP principles usually adhere to design patterns closely. 
 
 ### 1. Creational Patterns
 Creational patterns focus on object creation mechanisms, dealing with the process of object instantiation.
