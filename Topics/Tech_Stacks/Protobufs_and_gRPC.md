@@ -36,6 +36,8 @@ For example, lets say our file name is `example.proto`, by compiling our proto w
 After we get our generated methods, we can simply make our Proto objects within python directly.
 
 ### Client End
+
+Below is a very simple client that sends in the `RequestObject` from our proto definition with the text field set to `'CSC301'`.
 ```Python
 def example() -> None:
     ip = 'localhost:50051'
@@ -46,3 +48,22 @@ def example() -> None:
 ```
 
 ### Server End
+Below is a very simplified version of a server for handling requests. The server initialization is left out, but more details can be found on the official website. It simply takes our request's text field which would be the `RequestObject`'s text and appends on `' is fun'`. This new result `'CSC301 is fun'` will then be set to our `ResponseObject` text field and returned. 
+
+```Python
+# ExampleServicer is Auto generated
+class ExampleServicer(example_pb2_grpc.ExampleServicer):
+    def example(self, request, context):
+
+        # Get the text from request object (passed in by client)
+        new_text = request.text + ' is fun'
+
+        # Create a ResponseObject (from proto definition)
+        return example_pb2.ResponseObject(text=new_text)
+```
+
+Running this server with our client we should get the return `'CSC301 is fun'` back on the client end.
+
+## Conclusion
+Protobufs are an efficient way to serialize data, and is very convenient as it supports a variety of languages. It is also very simple to set data fields as seen from our example above due to the auto generated functions that we get from compiling our proto file. Protobufs work very well with gRPC, which we can use to establish communication between microservices.
+
