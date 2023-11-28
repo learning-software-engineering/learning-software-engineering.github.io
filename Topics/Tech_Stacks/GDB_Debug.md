@@ -51,7 +51,7 @@ These features make GDB an essential tool for understanding and debugging progra
 3. **Start GDB:**
     `gdb program` and you will see:
 
-    ...
+    ```
     GNU gdb (Ubuntu 12.1-0ubuntu1~22.04) 12.1
     Copyright (C) 2022 Free Software Foundation, Inc.
     License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
@@ -62,7 +62,7 @@ These features make GDB an essential tool for understanding and debugging progra
     Type "show configuration" for configuration details.
     For bug reporting instructions, please see:
     --Type <RET> for more, q to quit, c to continue without paging--
-    ...
+    ```
 
     and you can type `q` to quit and `c` to continue.
 
