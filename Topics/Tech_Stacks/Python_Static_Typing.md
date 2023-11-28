@@ -53,7 +53,7 @@ In the next section, we will see how we can add static typing to Python to make 
 Introduced in [PEP-484](https://peps.python.org/pep-0484/), Python added type hints to the language thus making static type checking in Python possible. With this change, we can now define types for functions and variables in Python. In older versions of Python, a function that takes in a string and an integer as parameter and returns a boolean might have the following signature:
 ```python
 def func(a, b):
-    pass
+    ...
 ```
 Without any docstring or context, the types of this function are completely unknown to anyone who sees this function signature. But since Python3.5, we can now define the function as follows:
 ```python
