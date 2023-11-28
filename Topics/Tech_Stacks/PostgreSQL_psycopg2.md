@@ -29,11 +29,11 @@ The following link is to download PostgreSQL onto your computer: https://www.pos
 
 Once installed, you can create a database, relation, and tables with the PostgreSQL client called "pgAdmin". pgAdmin is automatically downloaded when using the links above and can be accessed by searching your task bar. You can also perform queries on relations and tables through its query tool. More information on how to use pgAdmin can be found at this [link](https://www.pgadmin.org/docs/pgadmin4/6.21/index.html).
 
-If you are using MacOS, you can also run the command "brew install postgresql" in your terminal. Note that you also have to have Homebrew installed for this command to work. "brew install postgresql" allows the user to use PostgreSQL on their command line by simply initiating a PostgreSQL environment with the command "psql".
+If you are using MacOS, you can also run the command `brew install postgresql` in your terminal. Note that you also have to have Homebrew installed for this command to work. `brew install postgresql` allows the user to use PostgreSQL on their command line by simply initiating a PostgreSQL environment with the command "psql".
 
 For Windows users, the user should download PostgreSQL through the link provided above. If the user wants to utilize PostgreSQL on the command line, they must (after installation):
 1. Add the PostgreSQL bin directory path to the PATH environment variable.
-2. Run the command "psql -U username"
+2. Run the command `psql -U username`
 
 ## psycopg2 Installation
 To work with psycopg2, you can use pip to install it by running `pip install psycopg2` in your console. Make sure you execute this command in the directory you will be using psycopg2. Once finished, you can import psycopg2 (`import psycopg2` at the top of the relevant Python file), and perform the desired operations.
@@ -52,8 +52,8 @@ In pgAdmin, you can:
 5. Follow the instructions in pgAdmin.
 
 In the command line:
-1. Type "psql" to initialize the PostgreSQL environment.
-2. Type "CREATE DATABASE" followed by the name of the database. For example, "CREATE DATABASE CourseInfo".
+1. Type `psql` to initialize the PostgreSQL environment.
+2. Type `CREATE DATABASE` followed by the name of the database. For example, `CREATE DATABASE CourseInfo`.
 3. For any errors, you can refer to this [link](https://www.postgresql.org/docs/current/sql-createdatabase.html)
 
 
@@ -67,9 +67,9 @@ To do this in pgAdmin:
 4. Follow the rest of the instructions in pgAdmin
 
 To do this in the command line:
-1. Type "psql" to initialize the PostgreSQL environment.
-2. Type "\c DBNAME" where DBNAME is the name of the desired database
-2. Type "CREATE SCHEMA" followed by the name of the schema. For example, "CREATE SCHEMA SchoolSchema".
+1. Type `psql` to initialize the PostgreSQL environment.
+2. Type `\c DBNAME` where DBNAME is the name of the desired database
+2. Type `CREATE SCHEMA` followed by the name of the schema. For example, `CREATE SCHEMA SchoolSchema`.
 
 
 ### Create Tables
@@ -82,10 +82,10 @@ To create a table in pgAdmin:
 4. Follow the instructions in pgAdmin
 
 To create a table in the command line:
-1. Type "psql" to initialize the PostgreSQL environment.
-2. Type "\c DBNAME" where DBNAME is the name of the desired database
-3. Type "SET search_path TO schema_name;" where schema_name is the name of the desired schema you want to put your table in.
-4. Type "CREATE TABLE table_name (column1 int PRIMARY KEY, ...);", where table_name is the desired name of the table. Inside the round braces is a list of the columns that you want in the table. For each column, you must specify a name and datatype. For example, a table can be created like this:
+1. Type `psql` to initialize the PostgreSQL environment.
+2. Type `\c DBNAME` where DBNAME is the name of the desired database
+3. Type `SET search_path TO schema_name;` where schema_name is the name of the desired schema you want to put your table in.
+4. Type `CREATE TABLE table_name (column1 int PRIMARY KEY, ...);`, where table_name is the desired name of the table. Inside the round braces is a list of the columns that you want in the table. For each column, you must specify a name and datatype. For example, a table can be created like this:
 
 ``` 
 CREATE TABLE accounts (
@@ -95,7 +95,7 @@ CREATE TABLE accounts (
 	email VARCHAR ( 255 ) UNIQUE NOT NULL
 );
 ```
-The text after the datatypes (e.g. UNIQUE NOT NULL) are optional.
+The text after the datatypes (e.g. `UNIQUE NOT NULL`) are optional.
 
 Here is a link for information on datatypes in PostgreSQL: https://www.postgresql.org/docs/current/datatype.html
 
@@ -105,21 +105,21 @@ Here is a link for more details and examples of how to create a table: https://w
 ### Table Operations
 Moving onto table operations. To select data from a certain column in a table, you can use a query like:
 ``` 
-    SELECT col_name1, col_name2 FROM table_name;
+    SELECT col1, col2 FROM table1;
 ```
-This gives you a smaller table that only contains the columns "col_name1" and "col_name2" from your selected table in your relation. 
+This gives you a smaller table that only contains the columns _col1_ and _col2_ from your selected table in your relation. 
 
-You can also merge two different tables by changing the FROM clause to contain 2 tables:
+You can also merge two different tables by changing the `FROM` clause to contain 2 tables:
 ```
-    SELECT col1_table1, col2_table2 FROM table1_name, table2_name;
+    SELECT col1_table1, col2_table2 FROM table1, table2;
 ```
-This operation, first, performs a cross product between table1 and table2, where every row of one table is matched with every other row of the other table. Then it selects the data present in the new cross-products table from columns col1_table1 and col2_table2.
+This operation, first, performs a cross product between table1 and table2, where every row of one table is matched with every other row of the other table. Then it selects the data present in the new cross-products table from columns _col1_table1_ and _col2_table2_.
 
 In addition, you can perform filtering on tables:
 ```
-SELECT col1_table1, col2_table2 FROM table1_name, table2_name WHERE col1_table1 > 1;
+SELECT col1_table1, col2_table2 FROM table1, table2 WHERE col1_table1 > 1;
 ```
-Here it only shows data from the previous table where the value of a row in the column "col1_table1" is greater than 1. This is the syntax for when the table and column names between table 1 and table 2 are unique.
+Here it only shows data from the previous table where the value of a row in the column _col1_table1_ is greater than 1. This is the syntax for when the table and column names between table 1 and table 2 are unique.
 
 There are many other features of PostgreSQL.
 
