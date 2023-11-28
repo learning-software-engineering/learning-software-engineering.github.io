@@ -145,10 +145,53 @@ Finally, if you wish to ensure your plugin `tsconfig.json` is aligned with the r
 Congratulations! You have successfully connected to the online database. You can now upload and extract data as needed in the future.
 
 
+### How to setup preferred database options and images:
 
+Added a new configuration option where the admin can define their preferred databases, in order:
 
+You can change the setting of "engine_name" attribute in `superset/db_engine_specs/` as following:
 
+```
+PREFERRED_DATABASES: list[str] = [
+    "PostgreSQL",
+    "Presto",
+    "MySQL",
+    "SQLite",
+]
+```
 
+### Setting images:
+
+To set the images of your preferred database, admins must create a mapping in the superset_text.yml file with engine and location of the image. The image can be host locally inside your static/file directory or online.
+
+```
+DB_IMAGES:
+  postgresql: "path/to/image/postgres.jpg"
+  bigquery: "path/to/s3bucket/bigquery.jpg"
+  snowflake: "path/to/image/snowflake.jpg"
+```
+
+### How to add new database engines to available endpoint:
+
+When the user selects a database not in this list they will see the old dialog asking for the SQLAlchemy URI. New databases can be added gradually to the new flow. In order to support the rich configuration a DB engine spec needs to have the following attributes:
+
+1. `parameters_schema`: a Marshmallow schema defining the parameters needed to configure the database. For Postgres this includes username, password, host, port, etc.
+
+2. `default_driver`: the name of the recommended driver for the DB engine spec. Many SQLAlchemy dialects support multiple drivers, but usually one is the official 
+recommendation. For Postgres we use "psycopg2".
+
+3. `sqlalchemy_uri_placeholder`: a string that helps the user in case they want to type the URI directly.
+
+4. `encryption_parameters`: parameters used to build the URI when the user opts for an encrypted connection. For Postgres this is `{"sslmode": "require"}`.
+In addition, the DB engine spec must implement these class methods:
+
+`build_sqlalchemy_uri(cls, parameters, encrypted_extra)`: this method receives the distinct parameters and builds the URI from them.
+
+`get_parameters_from_uri(cls, uri, encrypted_extra)`: this method does the opposite, extracting the parameters from a given URI.
+
+`validate_parameters(cls, parameters)`: this method is used for `onBlur` validation of the form. It should return a list of `SupersetError` indicating which parameters are missing, and which parameters are definitely incorrect 
+
+For databases like MySQL and Postgres that use the standard format of `engine+driver://user:password@host:port/dbname`, you need to do is add the `BasicParametersMixin` to the DB engine spec, and then define the parameters 2-4 (`parameters_schema` is already present in the mixin).
 
 
 
@@ -159,3 +202,4 @@ Congratulations! You have successfully connected to the online database. You can
 * [Apache Superset GitHub Page](https://github.com/apache/superset/)
 * [GitHub Issues for Apache Superset](https://github.com/apache/superset/issues)
 * [Aiven cloud]  (https://aiven.io/)
+* [Apache Superset: Using Database Connection UI] (https://superset.apache.org/docs/databases/db-connection-ui/#setting-images)
