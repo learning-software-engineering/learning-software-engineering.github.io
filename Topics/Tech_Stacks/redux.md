@@ -12,6 +12,7 @@ This tutorial provides a comprehensive guide to Redux, a popular state managemen
   - [Introduction](#introduction)
   - [Table of Contents](#table-of-contents)
   - [What is Redux?](#what-is-redux)
+  - [Why Do We Use Redux?](#why-do-we-use-redux)
   - [How to Install Redux](#how-to-install-redux)
   - [Core Concepts](#core-concepts)
     - [Store](#store)
@@ -24,6 +25,17 @@ This tutorial provides a comprehensive guide to Redux, a popular state managemen
 ## What is Redux?
 
 Redux is a predictable state container for JavaScript applications. It's used for managing the state of your app in a more predictable and easier-to-debug manner. Redux maintains the state of an entire application in a single immutable state tree, which can't be changed directly. When changes are made, a new object is created and merged with the state.
+
+## Why Do We Use Redux?
+
+Redux is used for several reasons:
+
+- **Predictability**: It makes the state of your app predictable and transparent. Every change is predictable and happens one at a time.
+- **Maintainability**: Redux makes the state changes maintainable and easy to understand, which is especially beneficial in large applications with complex state changes.
+- **Debugging**: With Redux, it's easier to debug an application as it provides a clear view of when, how, and why your application's state changed.
+- **Flexibility**: Redux can be used with any UI layer, and has a large ecosystem of addons.
+
+However, Redux is not always the best choice for state management. It's best suited for large applications with complex state changes. For smaller applications, you can use React's built-in state management. Complexity is subjective, so it's up to you to decide whether Redux is the right choice for your application.
 
 ## How to Install Redux
 
