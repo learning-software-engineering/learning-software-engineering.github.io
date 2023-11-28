@@ -83,6 +83,17 @@ The above image shows the difference between  "_justify-content: center_" and "_
 }
 ```
 
+One last nice property we can use is "_flex-wrap_". This property will make sure as our window size shrinks (based on our primary axis), it will move around the flex items to bit in the container instead of overflowing outside the screen. Here is how we can use it:
+
+```
+.flex-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+```
+![items before wrap](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/110127056/a1bda3c7-74ff-47db-8265-dc99e9e20453)
+
+![items after wrap](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/110127056/7a8c018a-97cf-49a6-bb46-2035313284fc)
 
 
 
