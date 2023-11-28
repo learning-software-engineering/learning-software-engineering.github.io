@@ -31,7 +31,6 @@ This set up will be for Flask and Python, equivalent setups can be done for othe
 
 #### Create a Firebase Project
 First go to the [Firebase Console](https://console.firebase.google.com/u/0/)
-
 Click on "Add Project" and set it up as per your needs
 
 #### Add Firebase to your Python/Flask application
@@ -54,7 +53,7 @@ firebase_admin.initialize_app(cred, {
 # You can put your credentials elsewhere as a JSON file for security
 ```
 
-## 4. Structuring Data
+## 4. Strucuring Data
 Firebase stores data in JSON format. As a developer, it is important to follow good practices as JSON can get messy very quickly. 
 
 The Firebase team themselves have made an easy guide for this: [Structure Guide](https://firebase.google.com/docs/database/admin/structure-data)
@@ -121,7 +120,21 @@ for user_id, user_info in query.items():
     print(user_id, user_info)
 ``` 
 
-## 6. Additional Resources
+## 6. Advantages and Disadvantages
+
+### Advantages
+- Google Analytics gives comprehensive insights about the usage of your application
+- Performance Monitoring helps you gain insight into the performance of your application on various platforms
+- Scalability is great as it scales automatically, even for large applications
+- Cross-Platform SDKs makes it easier for a developer to integrate services into various applications
+
+### Disadvantages
+- High data usage and having a lot of clients can incur heavy costs
+- It does not support complex querying like other SQL databases
+- Configuring security rules can requires attention to detail and must be tested throughly
+
+
+## 7. Additional Resources
 [Official Documentation](https://firebase.google.com/docs/database) 
 
 [Python Pyerbase Tutorial Series](https://www.youtube.com/playlist?list=PLs3IFJPw3G9Jwaimh5yTKot1kV5zmzupt)
