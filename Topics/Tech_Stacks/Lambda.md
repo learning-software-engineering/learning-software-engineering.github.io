@@ -61,7 +61,7 @@ Thanks to Lambda's simplicity, getting started is simple.
 1. Go to the [Functions section](https://console.aws.amazon.com/lambda/home#/functions) within the Lambda console.
 2. Click on **Create function.**
 3. Choose **Author from scratch.**
-4. Under **Basic information*:**
+4. Under **Basic information:**
    - Enter **myLambdaFunction** as the Function name.
    - Select either Node.js 18.x or Python 3.11 as the Runtime.
    - Keep the architecture set to x86_64.
@@ -77,7 +77,14 @@ To create the test event
 
 2. Click the **Test** button. 
 
-Just like that you have created your first hello world Lambda function and invoked it.
+Upon successful verification, a green banner will display, and upon clicking for further details, the following JSON is presented:
+```
+{
+  "statusCode": 200,
+  "body": "\"Hello from Lambda!\""
+}
+```
+In this manner, you've effectively created and invoked your first "Hello World" Lambda function.
 
 
 ## Additional Resources
