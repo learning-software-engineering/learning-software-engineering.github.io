@@ -54,3 +54,5 @@ To learn more about these properties, [W3Schoole](https://www.w3schools.com/css/
 One of the most commonly used property is "_flex-direction_". This property allows us to change the default axis from horizontal to vertical. We can see an example of this below:
 
 ![flex-direction column](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/110127056/a004b2b4-b6ea-4500-8b68-4afc6daf87f8)
+
+This changes our primary axis and secondary axis, which will impact two other properties "_justify-content_" for organizing based on the primary axis and "_align-items_" based on the secondary axis. These two axis are swapped when we use "_flex-direction: column_".
