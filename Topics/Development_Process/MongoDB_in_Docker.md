@@ -9,7 +9,7 @@ A quick-start tutorial for using MongoDB in a Docker container.
 
 ## Using the Official Image
 
-You can find the official images for both MongoDB community and enterprise on docker hub: (https://hub.docker.com/u/mongodb). 
+You can find [MongoDB's official images](https://hub.docker.com/u/mongodb) for both MongoDB community and enterprise on docker hub. 
 
 Using the community edition for this example, pull the image by using this command: 
 
@@ -19,7 +19,7 @@ docker pull mongodb/mongodb-community-server
 
 Alternatively you can also find MongoDB's and other images through Docker Desktop's search bar. 
 
-If you just want to get a database server up and running, the easiest way is to use Docker Desktop's GUI. Navigate to the 'Images' tab on the left hand tab, and find the 'mongodb-community-server' image that you just pulled. Under actions click the run button and it will open up a popup prompting you to input optional settings. The only absolutely necessary field to input to get up and running is the 'Ports' field. [Read here first.](./MongoDB_in_Docker.md#a-quick-summary-about-ports) 
+If you just want to get a database server up and running, the easiest way is to use Docker Desktop's GUI. Navigate to the 'Images' tab on the left hand tab, and find the 'mongodb-community-server' image that you just pulled. Under actions click the run button and it will open up a popup prompting you to input optional settings. The only absolutely necessary field to input to get up and running is the 'Ports' field. [Read about ports here.](./MongoDB_in_Docker.md#a-quick-summary-about-ports) 
 
 In the port field, you can see that Docker Desktop already fills in the container port and control protocol for you (27017/tcp), so all we have to do is input the host port. We can use the same port (27017) as common.
 
