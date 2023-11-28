@@ -12,6 +12,7 @@
    - [Event Handling](#event-handling)
    - [AJAX Support](#ajax-support)
    - [Animations and Effects](#animations-and-effects)
+   - [DOM Traversing](#dom-traversing)
 5. [Practical Example](#practical-example)
 6. [Resources for Further Learning](#resources-for-further-learning)
 7. [Conclusion](#conclusion)
@@ -95,29 +96,16 @@ $("#myButton").click(function(){
 - `$.post()`: Loads data from the server using a HTTP POST request.
 - `$.getJSON()`: Loads JSON-encoded data from the server using a GET HTTP request.
 
-With jQuery, you can easily make AJAX calls to asynchronously load data from the server without refreshing the web page.
-
-Code snippet for a typical ajax request using jquery.
+Example: Loading data from a server without refreshing the page.
 
 ```javascript
 $.ajax({
-  url: 'path/to/file',
-  type: 'GET', // or 'POST'
-  dataType: 'json', // could be 'text', 'html', 'script', etc.
-  data: {
-    param1: 'value1',
-    param2: 'value2'
-  },
-  success: function(response) {
-    // Code to execute when the request succeeds
-  },
-  error: function(xhr, status, error) {
-    // Code to execute on failure
-  }
+    url: "myData.json",
+    success: function(data){
+        console.log("Data loaded", data);
+    }
 });
 ```
-
-This is the most powerful and flexible of jQuery's AJAX methods. It allows you to make asynchronous HTTP requests to load and submit data from/to a server. You can control various aspects of the AJAX call such as URL, data to be sent, type of data expected in response, and actions to be performed upon successful completion or failure of the request.
 
 ### Animations and Effects
 
@@ -135,6 +123,29 @@ Example: Animating an element's visibility.
 $("#toggleButton").click(function(){
     $("#myElement").fadeToggle();
 });
+```
+
+### DOM Introduction
+
+1. **Web Page as a Tree:** Think of a web page like a family tree. The DOM turns every part of the web page (like text, images, headers) into "family members" called nodes. Just like in a family tree, these nodes have relationships with each other — parents, children, and siblings.
+2. **Nodes:** Everything in the web page is a node. The whole page is a document node, each HTML tag is an element node, the text inside the tags is a text node, and so on.
+3. **JavaScript Interaction:** The DOM lets JavaScript talk to the elements of the web page. For example, JavaScript can change text, add new images, or react to things like button clicks.
+4. **Changes in Real-Time:** When you use JavaScript to change something in the DOM, it updates the web page in real time. Add a paragraph, and it appears immediately. Change a color, and it changes right away.
+5. **Works Everywhere:** The DOM is a standard way of representing a web page, so it works across different web browsers and with different programming languages, though JavaScript is the most common.
+
+### DOM Traversing
+
+**Common functions:**
+
+- `.find()`: Gets the descendants of each element in the current set of matched elements.
+- `.closest()`: Gets the first element that matches the selector by testing the element itself and traversing up through its ancestors.
+- `.next()`, `.prev()`: Gets the immediately following or preceding sibling element.
+- `.parent()`: Gets the parent of each element in the current set of matched elements.
+
+Example: Finding a specific child element within a parent element.
+
+```javascript
+$("#myDiv").find(".child");
 ```
 
 ---
