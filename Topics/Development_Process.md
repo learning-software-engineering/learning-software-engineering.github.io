@@ -37,6 +37,10 @@
 
 ### [URL Sanitization](./Development_Process/URL_Sanitization.md)
 
+## Serverless Computing
+
+### [Serverless Computing](./Development_Process/Serverless_AWS_Lambda.md)
+
 ## SOLID PRINCIPLES:
 
 SOLID is a mnemonic acronym that represents a set of five very important software development principles which lead to code that is easier to read, maintain, and extend, leading to higher-quality software that is easier to evolve over time.
