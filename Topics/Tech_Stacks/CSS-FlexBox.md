@@ -57,6 +57,19 @@ One of the most commonly used property is "_flex-direction_". This property allo
 
 This changes our primary axis and secondary axis, which will impact two other properties "_justify-content_" for organizing based on the primary axis and "_align-items_" based on the secondary axis. These two axis are swapped when we use "_flex-direction: column_". Here is an example:
 
+```
+.flex-container{
+  display: flex;
+  justify-content: center;
+}
+```
+```
+.flex-container{
+  display: flex;
+  align-items: center;
+}
+```
+
 ![image](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/110127056/16bf1053-7dfa-4fa3-8112-1f99446cdda4)
 
 The above image shows the difference between  "_justify-content: center_" and "_align-items: center_" for the default row flex direction (also known as horizontally aligned). We can combine these two property to center something in the middle of the screen. Here is how we can do that:
@@ -68,7 +81,8 @@ The above image shows the difference between  "_justify-content: center_" and "_
   justify-content: center;
   align-items: center; 
 }
-
 ```
+
+
 
 
