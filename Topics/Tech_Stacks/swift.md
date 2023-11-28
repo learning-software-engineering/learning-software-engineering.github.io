@@ -62,60 +62,83 @@ Make sure to use `SwiftUI` and `Swift` as your interface and language respective
 
 
 ## Swift View
-A view is a part of a swift application’s user interface. Creating a new project automatically creates a view called content view:  
+
+A view is a user interface component used to create the visual part of the application. Creating a new project automatically creates a view called `Content View`:  
+
 <p align="center">
-<img width="283" alt="Screenshot 2023-11-23 at 12 32 33 AM" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/97854264/58e8197c-897b-4bff-be4d-77b6daa62ecd">
+<img width="500" alt="Screenshot 2023-11-23 at 12 32 33 AM" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/97854264/58e8197c-897b-4bff-be4d-77b6daa62ecd">
 </p>
 
-Views in Swift are defined as structs and must conform to the View protocol. The content and behavior of the view are provided in the body of the view. To see how the view is transformed into the user’s interface and how users can interact with the view, we can either build and run our application on a simulated device or view the Xcode preview. Refer to the [Testing Your App - Simulators](#testing-your-app---simulators-background) to set up the simulator. An Xcode preview it generates a view preview without having to build and run the app. When we open up our project, the preview will appear, as shown below, displaying the view.
+Views in Swift are defined as structs and must conform to the View protocol. The content and behavior of the view are provided in the body of the view. To see how the view is transformed into the user’s interface and how users can interact with the view, we can either build and run our application on a `simulated device` or view the `Xcode preview`. An Xcode preview of a view is created automatically when we create a new view.  The Xcode preview will display the Content View as shown below:
 
-<img width="472" alt="Screenshot 2023-11-23 at 12 34 28 AM" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/97854264/93913afd-a6df-4958-a1e6-d7fe276814ea">
+<p align="center">
+<img width="1394" alt="Screenshot 2023-11-23 at 12 34 28 AM" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/97854264/93913afd-a6df-4958-a1e6-d7fe276814ea">
+</p>
+
+To see the view on a simulated device refer to the [Testing Your App - Simulators](#testing-your-app---simulators-background) for instrustion on how to set up a simulator. We cannot edit a view through the simulator. We must edit the view manually and rebuild and rerun our application to see the changes reflected on the simulator.
 
 **Editing a View**
 
-We can edit a view in two ways: manually or through the view inspector. Modifications to the view’s body will be reelected in real-time in the preview.For our example, we will show how to edit the text colour manually and through a view inspector. To edit a view through an inspector.
+We can edit a view in two ways: `manually` or through the `view inspector` (only when the view is opened in `Xcode preview`). Modifications to the view’s body will be reflected in real-time in the preview. For our example, we will show how to edit the text colour manually and through a view inspector. To edit a view through an inspector:
 
-1. Change from live mode ( default mode) to selectable mode to enable editing
-   
-<img width="357" alt="Screenshot 2023-11-23 at 12 35 23 AM" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/97854264/0854dc19-a15a-476b-bd4c-ab442d227f50">
+1. Change from `live mode` (default mode) to `selectable mode` to enable editing
 
-2. Command-control-click the element you want to edit, bringing up the structured editing pop-up. The pop-up shows the different attributes you can customize, which attributes to customize depending on the type of view. For our example, we will customize the colour attribute. Select “Show SwiftUI Inspector”.
-   
-<img width="252" alt="Screenshot 2023-11-23 at 12 35 54 AM" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/97854264/9f115e5b-7773-44e3-9e4b-48366bf54d2f">
+<p align="center">
+<img width="500" alt="Screenshot 2023-11-28 at 3 41 14 PM" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/97854264/34a7b952-c6e3-4a85-b746-cbd26c9fc3fc">
 
-3. Select the color attribute and choose the color purple.
-   
-<img width="351" alt="Screenshot 2023-11-23 at 12 36 25 AM" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/97854264/b6a04517-1aba-4dea-9b41-099aa592295b">
+</p>
+
+2. `Command-control-click` the element you want to edit, bringing up the structured editing pop-up. The pop-up shows the different attributes you can customize. For our example, we will customize the colour attribute. Select `Show SwiftUI Inspector`.
+
+<p align="center">
+<img width="500" alt="Screenshot 2023-11-23 at 12 35 54 AM" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/97854264/9f115e5b-7773-44e3-9e4b-48366bf54d2f">
+</p>
+
+3. Select the `color attribute` and choose the color `purple`.
+
+<p align="center">
+<img width="500" alt="Screenshot 2023-11-23 at 12 36 25 AM" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/97854264/b6a04517-1aba-4dea-9b41-099aa592295b">
+</p>
 
 The change will be reflected immediately on the simulated device, and Xcode will update your code to match the change. 
-
+<p align="center">
 <img width="1394" alt="Screenshot 2023-11-23 at 1 09 35 AM" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/97854264/8fd856b6-b23e-4860-866a-3dcb95c679a1">
+</p>
 
 
-To edit manually, we must add the line “foregroundColor (Color.purple)” to the view’s body ourselves.
+To edit manually, we must add the line `foregroundColor (Color.purple)` to the view’s body ourselves.
 
 **Combining Views**
 
-A single view with multiple elements can lead to a cluttered view body. We should separate each of these elements into their own separate view. We can then combine views by calling a view within the body of another view. For instance, in this scenario, the Circle Image and Map View are initially separate views and are  merged with the content view for display.
+A single view with multiple elements can lead to a cluttered view body. We should separate each of these elements into their own separate view. We can then combine views by calling a view within the body of another view. For instance, in this scenario, the [Circle Image and Map View](https://developer.apple.com/tutorials/swiftui/creating-and-combining-views) are initially separate views and are  merged with the content view for display.
 
 <img width="783" alt="Screenshot 2023-11-23 at 1 06 40 AM" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/97854264/498685ee-7c70-45de-b450-978c961510f1">
 
 
 **Previewing Light and Dark Modes, Orientations, and Device Types**
 
-We can see how our user interface will look in light and dark modes. Select the variant control and “Colour Scheme Variants” to do so.
-
+We can see how our user interface will look in light and dark modes. To do so select the `Variant Control` 
+<p align="center">
 <img width="528" alt="Screenshot 2023-11-23 at 12 39 27 AM" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/97854264/d0c765f1-5fce-4c88-993b-729a8d9b612d">
+</p>
 
+and choose `Colour Scheme Variants`.
+
+
+<p align="center">
 <img width="527" alt="Screenshot 2023-11-23 at 12 39 44 AM" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/97854264/eb34957e-5e9c-4ff6-9554-d8c8de007eb0">
+</p>
 
 We can also view how the user interface will look in different orientations by selecting the “Orientation Variant.”
-
+<p align="center">
 <img width="530" alt="Screenshot 2023-11-23 at 12 40 07 AM" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/97854264/2ca289f4-b042-4abc-8720-56566890dc9e">
+</p>
 
-To view the preview on different device types, you can change the device the preview is displayed on from the buttons below. Here is an example of the same view shown on an iPad.
+To view the preview on different device types, you can change the device the preview is displayed on from the buttons below. Here is an example of the same view shown on an iPad:
+<p align="center">
+<img width="524" alt="Screenshot 2023-11-28 at 3 53 35 PM" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/97854264/be90f760-ab75-4c5f-aeb7-75700f1d316b">
 
-<img width="529" alt="Screenshot 2023-11-23 at 12 40 28 AM" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/97854264/eedb61c6-47fd-4a0e-8d73-b5e8f8b1f287">
+</p>
 
 
 
