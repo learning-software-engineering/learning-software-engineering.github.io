@@ -96,7 +96,7 @@ Here are few popular LLM's you can make use of:
 
 3. A guide to prompting LlaMA2 : (https://replicate.com/blog/how-to-prompt-llama) 
 
-Here are resources for the LLM's discusses above:
+Here are resources for the LLM's discussed above:
 
 4. BLOOM: https://bigscience.huggingface.co/blog/bloom 
 
