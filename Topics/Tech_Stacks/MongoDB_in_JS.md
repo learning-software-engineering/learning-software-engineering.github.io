@@ -162,8 +162,6 @@ Now, to access the document we created in the last example, we can run `getDoc('
 }
 ```
 
-Oops! It seems I forgot to put a capital P at the beginning of the word Pluto. I guess we'll have to edit that document!
-
 ### Updating a Document
 
 To update a document, we can use the .updateOne method. This method takes as parameters a query object like .findOne() does, and an update document that contains of update operators. The method finds the desired document in the collection based off of the query object, then applies the supplied update operators to the found document.
@@ -186,8 +184,7 @@ async function updateName(id, name) {
   return update;
 }
 ```
-
-To update our Pluto document to correct our spelling mistake, we can then call `updateDoc('6563e3576df681ce14e61470', "Pluto");`. If we then run `getDoc('6563e3576df681ce14e61470')` again, it returns:
+Oops! It seems I forgot to put a capital P at the beginning of the word Pluto earlier. To update our Pluto document to correct our spelling mistake, we can call `updateDoc('6563e3576df681ce14e61470', "Pluto");`. If we then run `getDoc('6563e3576df681ce14e61470')` again, it returns:
 ```
 {
   _id: new ObjectId('6563e3576df681ce14e61470'),
