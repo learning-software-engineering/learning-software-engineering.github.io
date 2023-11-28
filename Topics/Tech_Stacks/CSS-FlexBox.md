@@ -12,7 +12,7 @@ Flexible Box Layout or often known as FlexBox, is a CSS layout model that allows
 -	Inline: To organize texts in our webpage
 -	Table: To organize in a 2D-grid based system
 -	Block: To organize grouped or sections of our webpage
--	Positioned: To mentioned specific position for items. 
+-	Positioned: To specify exact position for items. 
 
 These four layout modes required lots of code to do some simple tasks like “Centering a div”. This is where FlexBox comes in clutch! This not only made coding easier but also opened CSS Webpage-organization to a whole new level. 
 
