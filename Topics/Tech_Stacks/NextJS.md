@@ -12,7 +12,7 @@
 ### [References](#references-and-links-1)
 
 ## Introduction
-This guide will help you understand the fundamentals of Next.js, a powerful React framework designed for building modern web applications. Before diving into Next.js, it's recommended to have a basic understanding of React and JavaScript. If you need to brush up on React, please checkout our [React page](react).
+This guide will help you understand the fundamentals of Next.js, a powerful React framework designed for building modern web applications. Before diving into Next.js, it's recommended to have a basic understanding of React and JavaScript. If you need to brush up on React, please check out our [React page](react).
 
 ## What is Next.js
 Next.js is a React framework known for simplifying the development of React applications with a focus on server-side rendering, efficient routing, and improved developer experience. Its file-system-based router supports layouts, nested routing, loading states, and error handling. Next.js offers both client-side and server-side rendering, utilizing Client and Server Components for optimized rendering. The framework streamlines data fetching with async/await in Server Components and extends the fetch API for features like request memoization and data caching. Next.js supports various styling methods, including CSS Modules, Tailwind CSS, and CSS-in-JS. Furthermore it includes optimizations for images, fonts, and scripts to improve Core Web Vitals and user experience. For these reasons it is a popular choice for building full-stack web applications.
