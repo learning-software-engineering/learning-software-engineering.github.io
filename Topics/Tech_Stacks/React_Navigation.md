@@ -7,6 +7,7 @@
 ### [Navigation between Screens](#navigation-between-screens-1)
 ### [Passing Parameters between Screens](#passing-parameters-between-screens-1)
 ### [Limitations](#limitations-1)
+### [Reference](#reference-1)
 
 ##  Prerequisites
 1. [React Native](./ReactNative.md)
@@ -178,3 +179,6 @@ Now we will have a new parameter `route` to Page2. `route` is like `navigation`,
 ## Limitations
 ### Right-to-Left (RTL) Layout support
 The library sometimes encouter problems with RTL layout, thus, it is suggest to use other navigation method with RTL layout.
+
+## Reference
+React Navigation. https://reactnavigation.org
