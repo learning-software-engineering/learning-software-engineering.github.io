@@ -3,6 +3,11 @@
 ## Table of contents
 #### [Introduction](#introduction) 
 #### [Overview](#overview) 
+#### [Setting Up the Scene](#setting-up-the-scene) 
+#### [Creeating the Player](#creating-the-player)
+#### [Player Movement](#player-movement)
+#### [Conclusion](#conclusion)
+
 
 ## Introduction
 This tutorial will walk you through making a character controller for a top-down 2D game similar to many modern roguelikes such as Vampire Survivors.  
@@ -81,3 +86,6 @@ Now, back in the Unity editor. We need to make some changes before the player ca
 First, let's make the camera follow the player. An easy, although limiting, way to do this is by simply making the camera a child of the player. This will make the camera follow the player around. You can do this by dragging the camera object onto the player object in the heirarchy. Next, in the player's inspector, find the PlayerMovement script that we attached earlier. You will see two new fields, RB and MoveSpeed. These are the public class attributes we declared earlier. Remember that RB is supposed to be a reference to the player's rigidbody. We can do this by dragging the player object from the heirarchy into the RB field. When we drag a gameobject into a field, the editor will search through all of its components to see if there are any matching components of the same type as the variable. Finally, change the MoveSpeed field to 5 (or whatever speed you want your player to move at).
 <img src="https://i.ibb.co/J27xsNc/player-script.png" alt="player-script">  
 Now, if you play the game in the editor, the player should be moving around via the WASD buttons. Note that in this implementation, the player moves at a constant speed. If you want the player to speed up and slow down, consider looking into the [Rigidbody2D.AddForce] (https://docs.unity3d.com/ScriptReference/Rigidbody2D.AddForce.html) function.
+
+## Conclusion
+This tutorial covered a very basic implementation of a 2D Top-Down character controller. Movement is often a crucial element of any action game, and has many different implementations fitting for the specific game. Unity is well documented and has many online tutorials on topics such as character movement, so it is highly encouraged for you to explore. 
