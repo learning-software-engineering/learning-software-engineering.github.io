@@ -46,7 +46,7 @@ The following will detail how one would deploy a Node.js Web App using Azure App
 
 ### Azure App Service
 
-Azure application service allows you to build and host web applications, mobile backends and RESTful APL in the selected programming language without managing the infrastructure. It provides automatic scaling and high availability, supports Windows and Linux, and supports automatic deployment from GitHub, Azure Devops or any Git repository. You can refer to our quick start, tutorials and examples to learn how to use Azure application services.
+Azure application service allows you to build and host web applications, mobile backends and RESTful API in the selected programming language without managing the infrastructure. It provides automatic scaling and high availability, supports Windows and Linux, and supports automatic deployment from GitHub, Azure Devops or any Git repository. You can read more about Azure App Service from Microsoft's official documentation [here](https://learn.microsoft.com/en-us/azure/app-service/overview).
 
 #### Create Web app on Azure
 
