@@ -139,9 +139,13 @@ print(tensor.shape) # '(2, 2, 2)'
 ```
 
 Finally, it is important to be familiar with a few operations that can be performed on arrays. If you have taken mathematical classes which incorporate matrices in their coursework, you should be familiar with the concept of matrix addiion and scalar multiplication, which can both be performed using NumPy with operations referred to as aggregation and broadcasting, respectively.
+
 Aggregation acts as the basic form of addition between arrays. You can aggregate two arrays of any dimension together if they match shape, but it is also possible to aggregate a matrix with another "matrix" with only one row, in which case that one row will be aggregated with each row in the other matrix. Addition with an array and a scalar value is also supported, in which case that one value will be added to each array element.
+
 On the other hand, broadcasting acts as multiplication. You can broadcast an array with a scalar to multiply each element in the array by the scalar, or by an array of the same shape to multiply the two respective array elements in each position.
+
 NumPy also provides a square() method which, as you may expect, returns an array of the same shape as the inputted one, but with each element squared; an average() method for calculating the average of an array, as well as a flip() method which returns the inputted array but with every element in reverse order. This reversal carries down all dimensions.
+
 One final significant note to make is that since most of these operations return an array or a scalar, it is simple to chain these operations in order to represent more complex mathematical equations which involve a sequence of steps. Provided below is a block of code displaying how the functions described above work.
 ```py
 # Definitions from earlier to be re-used:
