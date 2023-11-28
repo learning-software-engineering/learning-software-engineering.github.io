@@ -217,6 +217,31 @@ WCAG 2.0 is further divided into three levels of conformance:
 - **Level AA**: The most common barriers for disabled users
 - **Level AAA**: The highest and most advanced level of accessibility.
 
+Here are some questions that you can ask yourself when trying to make you work more accessible:
+**Example 1 (Perceivable)**: Ensure that all images on your website have descriptive alt text. For videos, provide captions and audio descriptions.
+
+> 1. Have all non-text content (like images, videos, audio) been given text alternatives?
+> 2. Are there captions for all video content and transcripts for audio content?
+> 3. Can all information conveyed with color be understood without color?
+
+**Example 2 (Operable)**: Make sure that all functionalities of your website are accessible via keyboard, including navigation, forms, and custom controls.
+
+> 1. Can all website functionalities be operated through a keyboard alone?
+> 2. Are there mechanisms to help users navigate, find content, and determine where they are?
+> 3. Have you ensured that no content flashes more than three times in any one second period?
+
+**Example 3 (Understandable)**: Write content in clear, simple language and provide instructions or labels for complex forms or content.
+
+> 1. Is the text content readable and understandable for the widest possible audience?
+> 2. Does the website operate in predictable ways, such as consistent navigation and naming?
+> 3. Are error messages clear and helpful, guiding users towards solving the problem?
+
+**Example 4 (Robust)**:  Use standard HTML tags and validate your HTML to ensure compatibility with current and future user agents, including assistive technologies.
+
+> 1. Is the content compatible with current and future user agents, including assistive technologies?
+> 2. Have you used clean, standards-compliant HTML/CSS?
+> 3. Are there any custom components that might need ARIA roles to ensure they are accessible?
+
 #### Tools:
 
 [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/): The Contrast Checker provides a straightforward interface where users can input the hexadecimal codes of the text and background colors they are using on their website. Upon entering these values, the tool automatically calculates the contrast ratio between the text and background. This ratio is crucial for readability, especially under the WCAG, which sets minimum contrast standards for visual presentation of text.
