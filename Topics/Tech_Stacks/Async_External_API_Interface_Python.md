@@ -6,17 +6,17 @@
 3. [What does 'Asynchronous' mean?](#what-does-asynchronous-mean)
 4. [Installation](#installation)
 5. [Types of Requests](#types-of-requests)
-   1. [GET Request](#get-request)
-   2. [POST Request](#post-request)
-   3. [PUT Request](#put-request)
-   4. [DELETE Request](#delete-request)
+   - [GET Request](#get-request)
+   - [POST Request](#post-request)
+   - [PUT Request](#put-request)
+   - [DELETE Request](#delete-request)
 6. [Introduction to Sending Requests](#introduction-to-sending-requests)
    - [Session configuration](#session-configuration)
    - [Sending the request](#sending-the-request)
 7. [Asynchronous Requests](#asynchronous-requests)
    - [Asynchronous request execution](#asynchronous-request-execution)
-   - [The 'httpx' library](#using-httpx)
-   - [Using 'with'](#using-with)
+   - [The `asyncio` library](#the-asyncio-library)
+   - [Using `with`](#using-with)
 8. [A Note on API Tokens](#a-note-on-api-tokens)
 
 9. [Designing an Interface: Case Study](#designing-an-interface-case-study)
@@ -25,11 +25,12 @@
    - [Retrieving flows](#retrieving-flows)
    - [Interface basics](#interface-basics)
 10. [Evolving Your Interface: Case Study](#evolving-your-interface-case-study)
-   - [Interface initialization and API token configuration](#interface-initialization-and-api-token-configuration)
-   - [Interface utilities](#interface-utilities)
-   - [Sending requests](#sending-requests)
-   - [Separating requests into use-cases](#separating-requests-into-use-cases)
-11. [Conclusion](#conclusion)
+    - [Interface initialization and API token configuration](#interface-initialization-and-api-token-configuration)
+    - [Interface utilities](#interface-utilities)
+    - [Sending requests](#sending-requests)
+    - [Separating requests into use-cases](#separating-requests-into-use-cases)
+11. [`httpx` Error Handling](#httpx-error-handling)
+12. [Conclusion](#conclusion)
 
 
 ## Introduction
@@ -44,7 +45,17 @@ APIs are typically accessed via the use of a API Token or API Key. This is a str
 
 ## What does 'Asynchronous' mean?
 
-In traditional synchronous programming, tasks are executed sequentially, one after the other. Asynchronous programming, on the other hand, a program can perform tasks concurrently without waiting for each task to complete before starting the next one, improving overall efficiency and responsiveness. This is especially important in use cases like a web server that must accomodate many end-users.
+In traditional synchronous programming, tasks are executed sequentially, one after the other. Asynchronous programming, on the other hand, a program can perform tasks concurrently without waiting for each task to complete before starting the next one, improving overall efficiency and responsiveness.
+
+To illustrate this difference, consider a web server that must accomodate many end-users:
+
+Synchronous Approach:
+
+In a synchronous implementation, the server would handle one request at a time. When a client sends a request, the server then processes it when received, and while processing it cannot handle other requests. If the server encounters a blocking operation (such as reading from a file or making a network request), it would wait until that operation is completed before moving on to processing the next request. This approach has the benefit of simplicity, but suffers from inefficiency when waiting for operations to be completed. This however may be acceptable depending on the use case (such as if it is oriented for single-user use).
+
+Asynchronous Approach:
+
+In an asynchronous implementation, the server can start processing a request and, instead of waiting for time-consuming operations (like reading from a file or making a network request) to complete, it can move on to handle another request. This is well-suited for I/O tasks - where the program spends time waiting for external operations to complete - where being asynchronous improves server responsiveness.
 
 ## Installation
 
@@ -92,6 +103,7 @@ response = self.session.get(url='https://app.rapidpro.io/api/v2/flows.json',
 
 data = response.json()
 print(data)
+
 ```
 
 In this example, we are using the `requests` library as discussed to send a synchronous HTTP GET request to an API endpoint. Let's break down the key components of this motivating example:
@@ -127,9 +139,18 @@ import json
 data = json.loads(response.text)
 ```
 
+If you wish to see what the content of this response may look like, please see the response section [on this page](https://app.rapidpro.io/api/v2/flows). In general however, it will be in some format alike to a Python dictionary, like this:
+
+```python
+# Sample response to a API endpoint to get an attendence list of student names
+{
+    "results": ['Keanu Smith', 'Sarah Smith', 'Jimmy Woo']
+}
+```
+
 ## Asynchronous Requests
 
-Now, let's adapt this example to be asynchronous using `httpx` and `asyncio`. Before we proceed, again please ensure you have installed the `httpx` library for Python:
+Now, let's adapt this example to be asynchronous using `httpx` and the Python built-in library `asyncio`. Before we proceed, again please ensure you have installed the `httpx` library for Python:
 
 ```bash
 pip install httpx
@@ -163,7 +184,7 @@ The `async` and `await` keywords are introduced to make the request asynchronous
 
 The function in which the request is made is defined using the `async` keyword. Once the asynchronous request is made, we `await` the response and process it accordingly. We can then extract the JSON data from the response for further use (provided the request was successful).
 
-### The 'asyncio' library
+### The `asyncio` library
 `asyncio` is a Python built-in library that provides functionality for asynchronous programs. As this function defined here `make_async_request` is tagged as `async`, when it is called it must be called in an asynchronous fashion, such as:
 ```python
 async make_async_request()
@@ -173,7 +194,7 @@ However, sometimes this is not feasible, such as when we are calling this functi
 
 Note: `asyncio.run` cannot be used within a function that is itself `async`. If this is done, an exception will be raised.
 
-### Using 'with'
+### Using `with`
 Although with the `requests` library we were able to re-use the same `Session` to send multiple requests, this is not as feasible with `httpx.AsyncClient`. `AsyncClient` does provide this functionality, but due to its asynchronous nature one may encounter exceptions arising from trying to use an already in-use file descriptor. 
 
 It is recommended to re-create the `AsyncClient` before sending another request to avoid this issue. This is made all-the-easier using the `with` keyword that initializes the client as a local variable, which is then deleted once outside of the scope of the `with`:
@@ -219,7 +240,7 @@ import httpx
 
 
 class RapidProAPI:
-    def __init__(self, token):
+    def __init__(self, token: str):
         ...
 
     def set_api_token(self, token: str):
@@ -228,7 +249,7 @@ class RapidProAPI:
     async def get_connection_status(self):
         ...
 
-    async def get_flows(self, uuid='', before_date='', after_date=''):
+    async def get_flows(self, uuid: str = '', before_date: str = '', after_date: str = ''):
        ...
 
 ```
@@ -240,7 +261,7 @@ As you can see, here we have an outline of a class that handles API requests. We
 In the constructor (`__init__`), the class is initialized with the specified API token. The `set_api_token` method is provided for later updating the API token to be used in subsequent requests.
 
 ```python
-def __init__(self, token):
+def __init__(self, token: str):
     self._token = token
     self.API_URL = "https://app.rapidpro.io/api/v2/"
 
@@ -265,7 +286,7 @@ async def get_connection_status(self):
 The `get_flows` method retrieves flows from the RapidPro API based on specified parameters ID and date range.
 
 ```python
-async def get_flows(self, uuid='', before_date='', after_date=''):
+async def get_flows(self, uuid: str = '', before_date: str = '', after_date: str = ''):
     async with httpx.AsyncClient() as client:
         client.headers.update({'Authorization': f'Token {self._token}'})
         response = await client.get(url=f'{self.API_URL}flows.json',
@@ -303,7 +324,7 @@ class RapidProInterface:
     def get_flow(self, uuid: str):
         ...
 
-    def get_flows(self, before_date='', after_date=''):
+    def get_flows(self, before_date: str = '', after_date: str = ''):
         ...
 
     @staticmethod
@@ -313,7 +334,7 @@ class RapidProInterface:
     class AbstractRequestException(Exception):
         ...
 
-    class RequestParsingException(AbstractRequestException):
+    class ResponseParsingException(AbstractRequestException):
         pass
 
     class RequestFailureException(AbstractRequestException):
@@ -370,14 +391,14 @@ In combination with this, we have defined class-specific exceptions that can be 
 
 ```python
     class AbstractRequestException(Exception):
-        def __init__(self, message, response):
+        def __init__(self, message: str, response: httpx.Response):
             super().__init__({
                 "message": message,
                 "response": response})
             self.status_code = response.status_code
             self.message = message
 
-    class RequestParsingException(AbstractRequestException):
+    class ResponseParsingException(AbstractRequestException):
         pass
 
     class RequestFailureException(AbstractRequestException):
@@ -426,12 +447,12 @@ def get_flow(self, uuid: str):
             else:
                 return None  # no flows match this UUID
         except json.decoder.JSONDecodeError:
-            raise self.RequestParsingException("Failed to parse flow in HTTP response.", response)
+            raise self.ResponseParsingException("Failed to parse flow in HTTP response.", response)
     else:
         raise self.RequestFailureException(self.get_status_code_interpretation(response.status_code), response)
 
 
-def get_flows(self, before_date='', after_date=''):
+def get_flows(self, before_date: str = '', after_date: str = ''):
     response = run(self.rapidProAPI.get_flows(before_date=before_date, after_date=after_date))
     if response.is_success:
         try:
@@ -443,12 +464,34 @@ def get_flows(self, before_date='', after_date=''):
             else:
                 return []
         except json.decoder.JSONDecodeError:
-            raise self.RequestParsingException("Failed to parse flow in HTTP response.", response)
+            raise self.ResponseParsingException("Failed to parse flow in HTTP response.", response)
     else:
         raise self.RequestFailureException(self.get_status_code_interpretation(response.status_code), response)
 ```
 
 As we can see, this partition into two separate methods allows us to parse the responses differently. In `get_flow`, the ID of the requested resource is a parameter, meaning that only one resource is expected to be retrieved, and the response is parsed as such. In `get_flows`, all resources within a date range are requested, so the response is instead parsed as an array of resources.
+
+## `httpx` Error Handling
+
+A well-encapsulated API Interface will effectively catch any exceptions raised by the `httpx.AsyncClient`. There are a plethora of exceptions provided by the `httpx` library that can be caught if raised. [A full list of these exceptions can be seen here.](https://www.python-httpx.org/exceptions/)
+
+We can improve the example `get_connection_status` method by making use of these:
+
+```python
+async def get_connection_status(self):
+    async with httpx.AsyncClient() as client:
+        client.headers.update({'Authorization': f'Token {self._token}'.strip()})
+        try:
+            response = await client.get(url=f'{self.API_URL}',
+                                        timeout=2)
+        except httpx.TimeoutException as e:
+            ... # your error-handling code; could choose to resend or raise an error
+    return response
+```
+
+As we can see, we have introduced a timeout of 2 seconds in this GET request (`httpx` sets timeout to 6 seconds by default), and if this timeout is reached we will catch and handle the raised exception.
+
+There are many more exceptions that may be handled individually, or the superclass of these exceptions `httpx.HTTPError` may be caught to handle all of them.
 
 ## Conclusion
 
