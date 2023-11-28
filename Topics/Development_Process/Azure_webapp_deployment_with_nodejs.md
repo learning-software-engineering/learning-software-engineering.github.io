@@ -109,7 +109,6 @@ Note: The following deployment makes use of the Free and Shared service plan for
     - The default region and Linux plan defaults should suffice, but make sure to **change the Pricing Plan to Free F1 (Shared infrastructure)**.
     - Select **Review + Create** and then **Create**.
     
-    
     After you get a notification that the deployment succeeded, navigate to your web app on the Azure portal. 
     
     - On the sidebar, select **Deployment Center**.
@@ -119,7 +118,6 @@ Note: The following deployment makes use of the Free and Shared service plan for
     - After a couple minutes, confirm that you can access the deployed URL, and that there's a workflow file in your Github repository.
 
     Congratulations, you've deployed a web app using Azure, and integrated it with Github Actions too!
-
 
 2. Deploy your Web App with the Azure CLI (if you proceed with this option, you'll need to follow along with the [CI/CD with Github Actions](#cicd-with-github-actions) instructions to integrate Github Actions)
 
@@ -195,3 +193,6 @@ See other keywords in Azure's official [documentation](https://learn.microsoft.c
 - [Deploy Node.js Web App with Azure App Service](https://learn.microsoft.com/en-us/azure/app-service/quickstart-nodejs?tabs=linux&pivots=development-environment-vscode)
 - [Deploy App Service with Github Actions](https://learn.microsoft.com/en-us/azure/app-service/deploy-github-actions?tabs=applevel)
 - [Azure Cost Management](https://www.youtube.com/watch?v=7w88KBVesPI&t=320s)
+- [Azure Subscriptions, Licenses, and Accounts](https://learn.microsoft.com/en-us/microsoft-365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings?view=o365-worldwide)
+- [Azure App Service Pricing](https://azure.microsoft.com/en-ca/pricing/details/app-service/windows/)
+- [Microsoft Azure Free Account](https://azure.microsoft.com/en-gb/free/free-account-faq/#layout-container-uid4f88)
