@@ -40,6 +40,16 @@ Moreover, ALL header files should begin with the #define guard. For big projects
 #### Structs in C++
 If you have learned C, you may be familiar with the concept of structs. C++ also has structs, however, in addition to that, we also have classes. Although the two keywords behave basically the same in C++, we should ONLY use a struct for passive objects that carry data. Everything else should be a class. All fields of a struct should be public and as a result, should not have rules that imply relationships between different members, since direct access can break those rules.
 
+Imagine a scenario where you want to represent a basic geometric point:
+
+```cpp
+struct Point {
+    float x;
+    float y;
+};
+```
+Here a struct is a great design choice because the members are simple and benefit from having a name instead of just being referenced by indexes.
+
 As Google says, when in doubt, make a class.
 
 Nevertheless, when elements can have meaningful names (but not require some high level of functionality that would suit a class), we should prioritize a struct over pairs and tuples.
