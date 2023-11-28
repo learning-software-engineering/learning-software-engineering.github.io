@@ -1,5 +1,5 @@
 # Python Web Scraping with Requests & BeautifulSoup
-In this tutorial, we will go over how to use a combination of the Python libraries [Requests](https://pypi.org/project/requests/) and [BeautifulSoup4](https://pypi.org/project/beautifulsoup4/) to scrape data from webpages.
+In this tutorial, we will go over how to use a combination of the Python libraries [`Requests`](https://pypi.org/project/requests/) and [`BeautifulSoup4`](https://pypi.org/project/beautifulsoup4/) to scrape data from webpages.
 
 ## Table of Contents
 ### [Installation](#installation-1)
@@ -8,7 +8,7 @@ In this tutorial, we will go over how to use a combination of the Python librari
 ### [Useful Resources](#useful-resources-1)
 
 ## Installation
-To start, make sure to install `requests` and `bs4`.
+To start, make sure to install `requests` and `beautifulsoup4`.
 ```
 pip install requests
 pip install beautifulsoup4
