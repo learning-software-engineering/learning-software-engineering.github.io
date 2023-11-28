@@ -3,10 +3,10 @@
 ## Table of contents
 
 #### [Introduction](#Introduction-1)
-#### [Why Use Lambda?](#why-use-lambda-1)
+#### [Why Use Lambda?](#why-use-aws-lambda-1)
 #### [Limitations of AWS Lambda](#Limitations_of_AWS_Lambda-1)
 #### [Example Use Cases](#example-use-cases-1)
-#### [Additional Resources](#Additional-Resources)
+#### [Additional Resources](#Additional-Resources-1)
 ## Introduction
 
 <img src="https://miro.medium.com/v2/resize:fit:506/1*VKfs2PGyMm5FZfJD72kYCw.png" width="100" height="100" style="float: right; margin-right: 10px;">
