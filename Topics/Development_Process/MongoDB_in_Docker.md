@@ -1,6 +1,6 @@
 # MongoDB in Docker
 
-For more in depth information MongoDB provides a [list of Runtime Environments compatible with MongoDB including more information about MongoDB in docker](https://www.mongodb.com/compatibility). 
+A quick-start tutorial for using MongoDB in a Docker container.
 
 ## Table of Contents
 ### [The Official Image](#using-the-official-image)
@@ -101,5 +101,8 @@ services:
 
 
 
+## Additional Information
 
-    
+For more in depth information MongoDB provides a list of [Runtime Environments](https://www.mongodb.com/compatibility) compatible with MongoDB including more information about MongoDB in docker. [This tutorial](https://www.mongodb.com/compatibility/docker) from MongoDB is what this tutorial is based from. 
+
+For more information about MongoDB itself you can check out the [NoSQL page](../Tech_Stacks/NoSQL_databases_JSON_interactions.md) in this wiki. 
