@@ -67,6 +67,12 @@ If you believe that your CSS is behaving in unexpected ways due to selector spec
 
 Every browser has developer tools that you can take advantage of when debugging your CSS. They allow you to see which selectors have been executed, and which have not. In Google Chrome, Right-Click -> Inspect Element or F12 to access Chrome Dev Tools. Under the styles tab, you can see which styles have been crossed out, meaning that they have not been executed.
 
+![F12](https://media.geeksforgeeks.org/wp-content/uploads/20191014000644/edit-2.jpg)
+
+You can even hover over individual rules to check/uncheck them to enable/disable them!
+
+[Image Source](https://www.geeksforgeeks.org/chrome-inspect-element-tool-shortcut/)
+
 2. Check for inline styles
 
 Inline styles override any styles defined in stylesheets, since they have the highest specificity. It is discouraged to use inline styles, but they may be used as a last resort to achieve the correct styling.
