@@ -23,6 +23,7 @@
 ### [Temporal For Workflow Orchestration](./Tech_Stacks/Temporal.md)
 ### [Using Protobufs with gRPC](./Tech_Stacks/Protobufs_and_gRPC.md)
 ### [Learning Cypress](./Tech_Stacks/Cypress.md)
+### [Using the VertexAI SDK](./Tech_Stacks/VertexAI.md)
 ### [Establishing Peer to Peer Connection with WebRTC](./Tech_Stacks/WebRTC.md)
 ### [Introduction to Unity Basics](./Tech_Stacks/Unity_Intro.md)
 ### [A Beginner's Guide for Unity UI Design](./Tech_Stacks/Unity_UI.md)
