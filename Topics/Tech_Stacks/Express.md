@@ -10,6 +10,16 @@
 
 Express.js is a fast, unopinionated web framework for Node.js, widely used for building web applications and RESTful APIs. Known for its simplicity and flexibility, it allows developers to create efficient server-side applications with minimal overhead. It stands out for its efficient routing system and adaptable middleware capabilities, making it a preferred choice for developers aiming to create scalable and easily manageable web applications
 
+#### Prerequisites
+
+Before diving into Express.js, it will be good to have a foundational understanding of certain technologies and concepts:
+* Node.js: As Express.js is a framework for Node.js, it is beneficial to learn some basics of Node.js. The [Node.js Official Documentation](https://nodejs.org/en/docs/) provides a comprehensive introduction.
+* JavaScript: Since Express.js is written in JavaScript, it will be good to have a solid understanding of JavaScript, especially ES6 features. [Mozilla Developer Network (MDN) JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide) is an place to start or refresh your JavaScript skills.
+* HTTP: Familiarity with HTTP methods and status codes will be beneficial, as web development with Express.js involves handling HTTP requests and responses. The [MDN HTTP Overview](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview) offers a good explanation of HTTP concepts.
+
+#### Official Express.js Documentation
+For detailed information, best practices, and the most up-to-date guidance on using Express.js, refer to the [Official Express.js Documentation](https://expressjs.com/).
+
 ## Getting Started
 
 #### Installation
