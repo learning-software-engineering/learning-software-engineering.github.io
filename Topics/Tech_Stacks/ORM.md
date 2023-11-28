@@ -13,8 +13,8 @@ As such, they allow us to simply treat all data as objects in our code, and leve
 ## Example:
 Lets take a simple example, where we want to connect to a database, and add a new user to our database. How would that look as SQL Queries compared to an ORM 
 <p align="center" display="block">
-      <img src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/95612717/b6111831-1240-42f2-868f-76a08647c1db" align="left" width="45%">
-      <img src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/95612717/0faaecfe-2acd-48cc-a5c3-90b89f8833d0" align="right" width="45%">
+      <img src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/95612717/b6111831-1240-42f2-868f-76a08647c1db" align="left" width="50%">
+      <img src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/95612717/0faaecfe-2acd-48cc-a5c3-90b89f8833d0" align="right" width="50%">
 </p>
 
 These screenshots use the following packages for the ORM and raw SQL usage examples, respectively:
