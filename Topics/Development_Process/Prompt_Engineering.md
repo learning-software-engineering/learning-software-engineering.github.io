@@ -66,10 +66,10 @@ The provided prompt is not well-structured for the following reasons:
 
 2. Absence of Output Format Description: The bad prompt fails to specify how the JSON format should be structured, unlike the good prompt which includes a detailed example. This lack of clarity can result in varied and potentially incorrect output formats.
 
-3. agueness in Instruction: The second prompt is vague in its instructions, missing out on details such as the level of difficulty of the questions or the specific areas of the text to focus on, which could lead to a mismatch in expectations and actual output.
+3. Vagueness in Instruction: The second prompt is vague in its instructions, missing out on details such as the level of difficulty of the questions or the specific areas of the text to focus on, which could lead to a mismatch in expectations and actual output.
 
 
-## What LLM shoudl you choose?
+## What LLM should you choose?
 
 Here are few popular LLM's you can make use of:
 
@@ -94,4 +94,18 @@ Here are few popular LLM's you can make use of:
 
 2. Master Prompt Engineering: Demystifying Prompting Through a Structured Approach : (https://promptengineering.org/master-prompt-engineering-demystifying-prompting-through-a-structured-approach/#:~:text=,can%20quickly%20grasp%20your%20intent) 
 
-3. A guide to prompting llama2 : (https://replicate.com/blog/how-to-prompt-llama) 
+3. A guide to prompting LlaMA2 : (https://replicate.com/blog/how-to-prompt-llama) 
+
+Here are resources for the LLM's discusses above:
+
+4. BLOOM: https://bigscience.huggingface.co/blog/bloom 
+
+5. Claude: https://bigscience.huggingface.co/blog/bloom
+
+6. Cohere: https://cohere.com/
+
+7. GPT: https://openai.com/blog/chatgpt/
+
+8. LlaMA2: https://ai.meta.com/llama/
+
+9. PaLM2: https://ai.google/discover/palm2
