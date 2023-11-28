@@ -12,8 +12,6 @@ GDB (GNU Debugger) is a powerful open-source debugger commonly used in the field
 
 It is a command-line tool that allows developers to inspect and debug programs written in various programming languages, including C, C++, and even some other languages.
 
-Source: [GDB: The GNU Project Debugger](https://www.sourceware.org/gdb/)
-
 
 ## What can do by GDB?
 
@@ -41,7 +39,12 @@ These features make GDB an essential tool for understanding and debugging progra
 
         Red Hat-based systems like Fedora: `sudo dnf install gdb`
 
-    2. [macOS]: `brew install gdb`
+    2. [macOS]: 
+        If you do not downloa brew, you need to install:
+        
+        `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+
+        `brew install gdb`
 
 2. **Compile Your Program:**
     Before you can debug a program with GDB, you need to compile it with debugging symbols enabled. This ensures that GDB can associate source code lines with machine code instructions.
@@ -95,7 +98,9 @@ These features make GDB an essential tool for understanding and debugging progra
          Example: To set a breakpoint at line 15 and break only if the variable `x` is greater than 10, use `break 15 if x > 10`.
 
 6. **Run Your Program:**
-    `run`
+    You can just type to run your program after you add a breakpoint.
+
+    Example: `run`
 
 7. **Interact with Your Program:**
     1. `step`: Execute the current line and stop at the first possible occasion, even if it's inside a function.
@@ -109,5 +114,7 @@ These features make GDB an essential tool for understanding and debugging progra
     5. `backtrace`: Display a backtrace of the function call stack.
 
 8. **Exit GDB:**
+    If you would like to exit GDB, you just type `command + c` or 
+    
     `quit`
 
