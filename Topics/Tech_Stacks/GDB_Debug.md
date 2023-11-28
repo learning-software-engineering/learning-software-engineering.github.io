@@ -2,9 +2,9 @@
 
 ## Table of contents
 
-#### [What is GDB](#what-is-GDB)
-#### [What can do by GDB](#what-can-do-by-GDB)
-#### [How to use GDB](#how-to-use-GDB)
+#### [What is GDB]
+#### [What can do by GDB]
+#### [How to use GDB]
 
 
 ## What is GDB?
@@ -38,6 +38,7 @@ These features make GDB an essential tool for understanding and debugging progra
 1. **Install GDB:**
     1. [Linux]: 
         Debian-based systems like Ubuntu:`sudo apt-get install gdb`
+
         Red Hat-based systems like Fedora: `sudo dnf install gdb`
 
     2. [macOS]: `brew install gdb`
@@ -66,20 +67,43 @@ These features make GDB an essential tool for understanding and debugging progra
 4. **Set Breakpoints:**
     GDB provides various ways to set breakpoints, allowing you to control where your program stops during debugging. 
 
-    1. [Line Number Breakpoint]: `break 10`
-    2. [Function Name Breakpoint]: `break my_function`
-    3. [File and Line Number Breakpoint]: `break <<myfile.c>>:20`
-    4. [Address Breakpoint]: `break *0x0804835c`
-    5. [Condition Breakpoint]: To set a breakpoint at line 15 and break only if the variable `x` is greater than 10, use `break 15 if x > 10`.
+    1. [Line Number Breakpoint]: 
+        This is the most common type of breakpoint. It stops program execution at a specific line of source code.
+        
+        Example: `break 10`
+        
+    2. [Function Name Breakpoint]: 
+        This breakpoint stops the program when it enters or exits a specified function.
+        
+        Example: `break my_function`
+
+    3. [File and Line Number Breakpoint]: 
+        This breakpoint stops the program when it enters or exits a specified function.
+        
+        Example: `break <<myfile.c>>:20`
+
+    4. [Address Breakpoint]: 
+        You can set a breakpoint at a specific memory address, which is useful for debugging assembly code or low-level programming.
+        
+        Example: `break *0x0804835c`
+
+    5. [Condition Breakpoint]: 
+         This type of breakpoint stops the program only if a specified condition is true when the breakpoint is hit.
+         
+         Example: To set a breakpoint at line 15 and break only if the variable `x` is greater than 10, use `break 15 if x > 10`.
 
 5. **Run Your Program:**
     `run`
 
 6. **Interact with Your Program:**
     1. `step`: Execute the current line and stop at the first possible occasion, even if it's inside a function.
+
     2. `next`: Execute the current line and stop at the next line in the same function.
+
     3. `continue`: Resume program execution until the next breakpoint is hit.
+
     4.`print`: Display the value of a variable or expression.
+
     5.`backtrace`: Display a backtrace of the function call stack.
 
 7. **Exit GDB:**
