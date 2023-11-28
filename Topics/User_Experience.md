@@ -197,10 +197,12 @@ The World Wide Web Consortium (W3C) provides explicit standards and guidelines f
 Moreover, you don’t need to do all of this manually - there are many free and paid tools that you can use to audit and improve your website’s accessibility. A couple great starting resources are [Google’s developer tools](https://developer.chrome.com/docs/lighthouse/accessibility/) and [Siteimprove](https://www.siteimprove.com/).
 
 
-### The 7 Universal Design Principles
+### Design Principles
 
 [Universal Design Principles](https://www.buffalo.edu/access/help-and-support/topic3/universaldesignprinciples.html) are not only used for software but can be incorporated generally as well. These 7 principles ensure accessibility, consistency, and user-friendly software. 
 This article provides the 7 Universal Design Principles that make software accessible to all users, which plays an important role in diversifying the User Experience. 
+
+While it may feel overwhelming to come up with your own great design from scratch by following all these rules and principles, you may find it easier to learn from examples to avoid mistakes that others have made. [This article](https://www.interaction-design.org/literature/article/bad-design-vs-good-design-5-examples-we-can-learn-frombad-design-vs-good-design-5-examples-we-can-learn-from-130706) outlines 5 examples of bad design, with great explanations, takeaways, and lessons to learn.
 
 
 # Helpful Courses
