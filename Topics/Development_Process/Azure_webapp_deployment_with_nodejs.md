@@ -24,7 +24,7 @@ You can read more about the most popular [cloud service providers](#azure-termin
 
 Before being able to work with Azure, you must first create an account [here](https://azure.microsoft.com/en-ca/get-started/azure-portal). As mentioned earlier, after creating your account, you can get $100 in Azure credit with the [Github Student Developer Pack](https://education.github.com/pack) if you're an 18+ year old student.
 
-After creating an account, make sure you have an Azure subscription (such as Azure for Students above) to use.
+After creating an account, make sure you have an Azure subscription (such as Azure for Students above) to use. See more about the types of subscriptions at Microsoft's official documentation [here](https://learn.microsoft.com/en-us/microsoft-365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings?view=o365-worldwide).
 
 ## Installation
 
@@ -102,7 +102,7 @@ Now, you have two options:
 
     - Click on the **Create** dropdown and select **Web App**. 
     - For this simple example, you'll only need to fill out the first tab, **Basics**.
-    - Choose a subscription (Azure for Students if you've used the Github Student Developer Pack), a resource group (or create one), and create a name for your Web App.
+    - Choose a subscription (Azure for Students if you've used the Github Student Developer Pack), a [resource group](#azure-terminology) (or create one), and create a name for your Web App.
     - Choose `Code` for `Publish`, and the appropriate version of Node for your runtime stack.
     - The default region and Linux plan defaults should suffice, but make sure to **change the Pricing Plan to Free F1 (Shared infrastructure)**.
     - Select **Review + Create** and then **Create**.
@@ -161,9 +161,9 @@ It can be scary to learn something new when such consequences are possible, but 
 
 ### Cost Analysis
 
-In the Azure portal at **Billing** > **Cost Management** > **Cost Analysis**, you're able to view a breakdown of your costs and spending over time, and either with respect to your entire account, or if you want to be more specific, you can also scope to specific resource groups. With this, you're able to analyze your spending to be more aware of where most of your costs are going.
+In the Azure portal at **Billing** > **Cost Management** > **Cost Analysis**, you're able to view a breakdown of your costs and spending over time, and either with respect to your entire account, or if you want to be more specific, you can also scope to specific [resource groups](#azure-terminology). With this, you're able to analyze your spending to be more aware of where most of your costs are going.
 
-A more detailled look at cost analysis can be found [here](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/quick-acm-cost-analysis).
+A more detailed look at cost analysis can be found [here](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/quick-acm-cost-analysis).
 
 ### Budgets & Alerts
 
