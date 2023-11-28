@@ -1,4 +1,4 @@
-# Protobufs and gRPC
+# Using Protobufs with gRPC
 
 ## Introduction
 Protobufs are a way to serialize data whereas gRPC is used to send them over RPC calls between microservices. gRPC is usually closely used with Protobufs. Further in depth detail can be found on the official websites of both products. In this overview we will go over a very basic Protobuf implementation and then a basic call for gRPC. gRPC supports a wide variety of languages which is one of the features that makes it so useful since it allows microservices written in different languages to communicate between one another, for this example though we will use Python.
@@ -66,4 +66,3 @@ Running this server with our client we should get the return `'CSC301 is fun'` b
 
 ## Conclusion
 Protobufs are an efficient way to serialize data, and is very convenient as it supports a variety of languages. It is also very simple to set data fields as seen from our example above due to the auto generated functions that we get from compiling our proto file. Protobufs work very well with gRPC, which we can use to establish communication between microservices.
-
