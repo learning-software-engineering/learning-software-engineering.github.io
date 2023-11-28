@@ -33,7 +33,7 @@ If you are using MacOS, you can also run the command `brew install postgresql` i
 
 For Windows users, the user should download PostgreSQL through the link provided above. If the user wants to utilize PostgreSQL on the command line, they must (after installation):
 1. Add the PostgreSQL bin directory path to the PATH environment variable.
-2. Run the command `psql -U username`
+2. Run the command `psql -U <username>`, where `<username>` is the username you selected during installation.
 
 ## psycopg2 Installation
 To work with psycopg2, you can use pip to install it by running `pip install psycopg2` in your console. Make sure you execute this command in the directory you will be using psycopg2. Once finished, you can import psycopg2 (`import psycopg2` at the top of the relevant Python file), and perform the desired operations.
