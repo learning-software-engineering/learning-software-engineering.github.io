@@ -27,7 +27,7 @@
 Peewee is a lightweight Python ORM (Object-Relational Mapping). Essentially, this creates a bridge beteween object-oriented programs. Pydantic on the other hand is a data validation and parsing tool. My group combined these technologies, allowing us to improve database interactions, data validation, and general data management in our backend.
 
 ## What is Peewee?
-Peewee, as previously said, is an ORM that provides a simple and expressive API for working with backend databases. It supports a number of database backends, including SQLite, MySQL, and PostgreSQL; in our case, my group utilized it with a Postgresql database. Peewee simplified our database activities by allowing us to construct models by modeling database tables, making it easier to do CRUD operations without having to write our query statements in SQL; instead, we can write them in Python.
+Peewee, as previously said, is an ORM that provides a simple and expressive API for working with backend databases. It supports a number of database backends, including SQLite, MySQL, and PostgreSQL; in our case, my group utilized it with a Postgresql database. Peewee simplified our database activities by allowing us to construct models by modeling database tables, making it easier to do CRUD (Create, Read, Update, Delete) operations without having to write our query statements in SQL; instead, we can write them in Python.
 
 ## What is Pydantic?
 Pydantic ensures that data follows a given structure; in my group's instance, we ensured that our response models from API calls are of a specific kind. This is critical when we wish to specify our anticipated values from data so that they may be validated and worked with more easily. This was extremely useful in web development, API handling, and other situations where data integrity was critical.
@@ -235,7 +235,16 @@ def update_person(person_id, new_data):
     
     # Validate and update data
     person_data = PersonSchema.from_orm(person).dict()
+    '''
+    The line `updated_data = {**person_data, **new_data}` is using the ** operator to unpack two dictionaries and merge them into a new one.
+    The ** operator is used to unpack the 'person_data' and 'new_data' dictionaries.
+    If there are any overlapping keys, the values from 'new_data' will overwrite the ones from 'person_data'.
+    For example, if person_data = {'name': 'John', 'age': 30} and new_data = {'age': 40}, 
+    then the resulting updated_data will be {'name': 'John', 'age': 40}.
+    '''
     updated_data = {**person_data, **new_data}
+
+    
     updated_person = PersonSchema(**updated_data)
     
     # Save the updated data
