@@ -43,7 +43,6 @@ All selectors have 3 values, where each value represents the number of instances
 
 For example:
 
-
 `#im-an-id { ... }  /* IDs=1, Classes=0, Elements=0 */` -> Specificity = 100
 
 `.im-a-class { ... }  /* IDs=0, Classes=1, Elements=0 */` -> Specificity = 010
@@ -58,7 +57,7 @@ Suppose we introduce a fourth selector:
 
 This selector would have the highest specificity of all the previous examples. It has the same number of IDs as the first selector, but has 2 more classes, making it more specific.
 
-N.B. that selector combinators have no impact on the specificity calculation, and inline styles of an element have the highest specificity regardless of the categories above.
+N.B. that selector combinators and universal selectors have no impact on the specificity calculation, and inline styles of an element have the highest specificity regardless of the categories above. Also, the `!important` declaration overrides all other declarations.
 
 #### Troubleshooting
 
@@ -75,6 +74,10 @@ Inline styles override any styles defined in stylesheets, since they have the hi
 3. Document your styles
 
 Moreso a preventative measure, preplanning and keeping your styles organized is vital to the development of larger projects.
+
+4. [Specificity Calculator](https://specificity.keegan.st/)
+
+A useful tool for checking CSS code that is not evidently clear, and a great sanity check for experienced CSS programmers.
 
 #### Additional Resources:
 
