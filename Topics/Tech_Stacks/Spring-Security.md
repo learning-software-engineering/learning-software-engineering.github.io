@@ -7,7 +7,6 @@
 		- Spring provides a bulk of security functionality with servlet filters
 	- Two methods of securing an app: declarative and programmatic
 
-![[Pasted image 20231127183132.png]]
 ### Security Concepts
 - Authentication
 	- Check user id and password with credentials stored in app / db
@@ -70,7 +69,6 @@
 	- Includes support to defeat brute force attack
 
 	- Generate password
-		- www.luv2code.com/generate-bycrypt-password
 		- Enter plaintext password
 		- Generate a bcrypt password
 		- Multiple runs will generate a different password due to random password salting
