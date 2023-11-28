@@ -8,14 +8,18 @@
 
 ### [Making a Makefile](#making-a-makefile-1)
 
+### [Managing Multiple Directories with Makefiles](#managing-multiple-directories-with-makefiles-1)
+
 ### [Advantages and Disadvantages to ```make``` and Makefiles](#advantages-and-disadvantages-to-make-and-makefiles-1)
 
 ### [Additional Resources](#additional-resources-1)
 
+### [Footnotes](#footnotes-1)
+
 ## Introduction
 
 #### What are ```make``` and Makefiles
-```make``` is a software build automation tool that builds programs and libraries, and determines what needs to be recompiled. It accomplishes this by using Makefiles that specify compilation targets and link their dependencies, and checking their last modified dates during compilation.
+```make``` is a software build automation tool that builds programs and libraries, and determines what needs to be recompiled. It accomplishes this by using Makefiles that specify compilation targets and link their dependencies, and checking their last modified dates during compilation. This guide will cover the basics of GNU make, some example usage, and some of the advantages and disadvantages of ```make``` and Makefiles. Hopefully, by the end of this guide you will be able to decide if ```make``` is right for you.
 
 ## Basic Makefile Characteristics
 
@@ -29,26 +33,43 @@ Prerequisites are files or tasks that the target depends on as inputs to create 
 
 #### Recipe
 
-A recipe is an action that ```make``` will execute for the target it is under. It can be one or more commands, but each single recipe line must be preceded by a tab character[^1]
+A recipe is an action that ```make``` will execute for the target it is under. It can be one or more commands, but each single recipe line must be preceded by a tab character<sup><a href=#1>1</a>.</sup>
 
 #### Rule
 
-Rules put the above together and link together the prerequisites to the target and define the recipes ```make``` will carry out for the designated target. By default, the first target of the first rule in the Makefile will be run by ```make```, other rules would have to be explicitly referenced by ```make target-name```.
+Rules put the above together and link together the prerequisites to the target and define the recipes ```make``` will carry out for the designated target. By default, the first target of the first rule in the Makefile will be run by ```make```, other rules would have to be explicitly referenced by ```make target-name```.  
+
+Rules are typically defined in this template below:
+<pre>
+<i>target ...</i> : <i>prerequisites...</i>
+      <i>recipe</i>
+      <i>...</i>
+</pre>
 
 #### Variables
 
-Variables store values to be used throughout the file that will be substituted in whenever the variable is referenced.
+Variables store values to be used throughout the file that will be substituted in whenever the variable is referenced.  
 
+Basic variables are defined and referenced in the manner below:
+<pre>
+<i>variable</i> = <i>text</i> ...
+$(<i>variable</i>)
+</pre>
 
 #### Functions
 
 Functions can be called to process some argument(s) and substitute some text similar to a variable. These functions are predefined by ```make```.
 
+Functions are typically called in the manner below:
+<pre>
+$(<i>functionname param,param,...</i>)
+</pre>
+
 ## Making a Makefile
 
 #### Running a Simple Makefile
 
-The following will be written in a file called "Makefile", because make will automatically look for a file of that name in the current directory[^2].  
+The following will be written in a file called "Makefile", because make will automatically look for a file of that name in the current directory<sup><a href=#2>2</a>.</sup>.  
 For the following example, we will consider a simple C program with the source code files ```main.c``` and ```helper.c``` that will be compiled into the file ```program```:
 
 ```
@@ -182,13 +203,141 @@ all:
 	@echo Hello world
 ```
 
-Would produce:
+Would not produce the second ```@echo Hello World``` command itself and only the output:
 
 ```bash
 $ make all
 >>> echo Hello world
 >>> Hello world
 >>> Hello world
+```
+
+## Managing Multiple Directories with Makefiles
+
+Now you have the knowledge to write some more intermediate Makefiles. But how would you manage a larger project/library with many subdirectories? Well, you can use multiple Makefiles and run them all from your top Makefile in your main directory.
+
+#### Calling Subdirectory Makefiles
+
+```make``` has some internal utility variables. One of them is a reference to the ```make``` command itself, ```$(MAKE)```. You can use this variable to call sub-```make```s on other Makefiles in subdirectories using the ```-C``` option, which specifies the directory the Makefile is in. Usage would usually be in the following template:
+
+<pre>
+$(MAKE) -C <i>subdirectory</i>
+</pre>
+
+You can tell when ```make``` is entering another directory because it will automatically notify you when and where it is entering and exiting, as well as the sub-make depth. The messages would typically be in the following template:
+
+<pre>
+make[<i>depth</i>]: Entering directory '<i>directory</i>'
+make[<i>depth</i>]: Leaving directory '<i>directory</i>'
+</pre>
+
+Another useful internal variable is ```$(PWD)```, which is like the shell command ```pwd``` that gets the current working directory.
+
+#### Exporting Variables
+
+You can explicitly communicate variable values from a top level make to a sub-```make``` in Makefiles using ```export```. These exported variables will be defined in the sub-```make``` by default, but will not override a variable that is explicitly defined in the Makefile of the sub-```make```. The typical usage would be in the template:
+
+<pre>
+export <i>variable ...</i>
+</pre>
+
+You can also export all the variables in the current Makefile by not specifying any variables:
+
+<pre>
+export
+</pre>
+
+If you want to specify any variables to not be exported, you can use ```unexport```:
+
+<pre>
+unexport <i>variable ...</i>
+</pre>
+
+#### Example Usage
+
+Here is an example of how you could manage a simple multi-directory project. The project directory is as follows:
+
+```
+|-- debug
+|   |-- debug.c
+|   |-- debug.h
+|   `-- Makefile
+|-- include
+|   |-- common.h
+|-- main
+|   |-- helper.c
+|   |-- main.c
+|   |-- main.h
+|   `-- Makefile
+`-- Makefile
+```
+
+The top directory Makefile is as follows:
+
+```
+MAKE_DIR = $(PWD)
+MAIN_DIR    := $(MAKE_DIR)/main
+DEBUG_DIR   := $(MAKE_DIR)/debug
+INCLUDE_DIR := $(MAKE_DIR)/include
+
+INC_SRCH_PATH := 
+INC_SRCH_PATH += -I$(MAIN_DIR)
+INC_SRCH_PATH += -I$(DEBUG_DIR)
+INC_SRCH_PATH += -I$(INCLUDE_DIR)
+
+CC = gcc
+
+CFLAGS :=
+CFLAGS += $(INC_SRCH_PATH)
+CFLAGS += -Wall -O -DDEBUG
+
+export MAKE_DIR CC CFLAGS INC_SRCH_PATH
+
+all:
+	@$(MAKE) -C main
+	@$(MAKE) -C debug
+
+.PHONY: clean
+clean:
+	@$(MAKE) -C main clean
+	@$(MAKE) -C debug clean
+```
+
+And an example Makefile in the ```main``` subdirectory is as follows:
+
+```
+PROG = DEMO
+
+SRCS = $(wildcard *.c)
+OBJS = $(SRCS:.c=.o)
+
+$(PROG): $(OBJS)
+	@$(CC) $^ $(CFLAGS) -o $@
+	@echo "  Generate Program $(PROG) from $^"
+
+$(OBJS): $(SRCS)
+	@$(CC) $(CFLAGS) -c $^
+	@echo "  CC $(OBJS)"
+
+.PHONY: clean
+clean:
+    @rm -f $(OBJS)
+```
+
+In the above example top directory Makefile, first the working directory is stored into variable ```MAKE_DIR```, and then used to create paths to the subdirectories. These subdirectories are all appended to the ```INC_SRCH_PATH``` variable. The ```CC``` variable is set to ```gcc```, and the ```CFLAGS``` variable appends ```INC_SRCH_PATH``` and some ```gcc``` flags. The ```MAKE_DIR CC CFLAGS INC_SRCH_PATH``` variables are then set to be exported to any sub-```make```s. The ```all``` and ```clean``` rules call sub-```make```s to the ```main``` and ```debug``` directories.  
+In the Makefile in the ```main``` directory, the ```DEMO``` target program is built with the prerequisites of any object files in corresponding to the C source files, which need to be compiled first. We can see that exported```CFLAGS``` variable can be useful to pass in the paths for input links between the source files and the same flags consistently in the project, so ```gcc``` can compile properly.  
+
+Some example output from the top directory would be:
+
+```bash
+$ make
+>>> make[1]: Entering directory '.../main'
+>>>   CC main.o helper.o
+>>>   Generate Program DEMO from main.o helper.o
+>>> make[1]: Leaving directory '.../main'
+>>> make[1]: Entering directory '.../debug'
+...
+>>> make[1]: Leaving directory '.../debug'
 ```
 
 ## Advantages and Disadvantages to ```make``` and Makefiles
@@ -215,14 +364,14 @@ $ make all
 
 ## Footnotes
 
-[^1]: The prefix for recipes can be changed by changing the .RECIPEPREFIX variable, for example the following is a valid makefile:
+<a name="1"></a> [↩](#Recipe)1. The prefix for recipes can be changed by changing the .RECIPEPREFIX variable, for example the following is a valid makefile:
 ```
 .RECIPEPREFIX = ~
 hello:
 ~ @echo hello world
 ```
-[^2]: If you want to call make on a file with a different name, use the ```-f``` option, e.g. calling ```make``` on a file named foo.mk:
+
+<a name="2"></a> [↩](#Running-a-Simple-Makefile)2. If you want to call make on a file with a different name, use the ```-f``` option, e.g. calling ```make``` on a file named foo.mk:
 ```
 make -f foo.mk
 ```
-
