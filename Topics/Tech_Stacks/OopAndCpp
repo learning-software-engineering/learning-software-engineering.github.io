@@ -8,9 +8,21 @@ Object-oriented programming or OOP are the fundamental principles that most mode
 * **Abstraction** involves simplifying complex systems by modeling classes based on the essential properties and behaviors that they share, focusing on what an object does rather than how it does it. This make it easy for code to be utilized by different developers and reduces complexity by hiding unnecessary details.
 
 ### Why is C++ a great language for upholding OOP principles?
-C++ has a variety of features that make object-oriented design easy. For example, it supports the creation of classes and objects, the fundamental building blocks of OOP, allowing users to define classes to encapsulate data and methods and then create instances(objects) of those classes. Furthermore, access specifiers like public, private, protected allow programmers to control the visibility of class members further enforcing the principle of encapsulation. C++ also supports both single and multiple inheritance, allowing classes to inherity properties and behaviors from one or more parent classes, giving us flexibility in our class hierarchies. Additionally, C++ has both compile-time (method overloading) and runtime polymorphism (method overriding); these tools not only enable polymorphism but also abstraction as they allow us to define abstract classes, facilitating the implementation of abstraction.
+C++ is a versatile and powerful programming language known for its efficiency and performance. It's used in a wide range of applications across various domains. Here are some common use cases for C++:
 
-We are going to explore OOP by tackling an object-oriented design problem, but before that we should talk about some important concepts and tools that make C++ special as well as the best practices that Google recommends for using them.
+1. **System Software**: C++ is commonly used in developing system software like operating systems (Windows, Linux), device drivers, and firmware.
+
+2. **Game Development**: Many parts of game development, especially engines and resource-intensive components like physics engines, are often written in C++ due to its performance.
+
+3. **High-Performance Applications**: C++ is used in applications where high performance is critical, such as real-time simulations, high-frequency trading systems, and scientific computing.
+
+4. **Embedded Systems**: Its ability to directly interact with hardware makes C++ a preferred choice for embedded systems, like those in automotive systems, IoT devices, and robotics.
+
+5. **Graphics and Animation Software**: Tools for graphics, animation, and visual effects often use C++ for their performance-critical components. Software like Adobe Photoshop and Autodesk Maya utilize C++.
+
+6. **Web Browsers**: Components of web browsers like Chrome and Firefox are implemented in C++ to optimize performance, especially in rendering engines and parts handling complex tasks.
+
+C++ has a variety of features that make object-oriented design easy. For example, it supports the creation of classes and objects, the fundamental building blocks of OOP, allowing users to define classes to encapsulate data and methods and then create instances(objects) of those classes. Furthermore, access specifiers like public, private, protected allow programmers to control the visibility of class members further enforcing the principle of encapsulation. C++ also supports both single and multiple inheritance, allowing classes to inherity properties and behaviors from one or more parent classes, giving us flexibility in our class hierarchies. Additionally, C++ has both compile-time (method overloading) and runtime polymorphism (method overriding); these tools not only enable polymorphism but also abstraction as they allow us to define abstract classes, facilitating the implementation of abstraction.
 
 #### Header Files
 In C++, header files (.h) are used to provide an interface to other parts of the program. Think of it as the bridge that connects .cpp or .cc files (the files containing our C++ source code). In them, we declare the structure and characteristics of entities without defining how they are implemented. Usually, we want to have one header file per source file. 
