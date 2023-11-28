@@ -16,7 +16,9 @@ This article will help users be able to get an idea of what Azure is, and how to
 
 Azure is a [cloud service provider](#azure-terminology) by Microsoft that provides extensive services, including application hosting, messaging, data, storage, and more, for developers to leverage when building applications. 
 
-It is one of the most popular [cloud service providers](#azure-terminology), and if you're an 18+ year old student, you can get $100 in Azure credit with the [Github Student Developer Pack](https://education.github.com/pack). 😁
+It is one of the most popular [cloud service providers](#azure-terminology), including Amazon Web Services and Google Cloud Platform, and if you're an 18+ year old student, you can get $100 in Azure credit with the [Github Student Developer Pack](https://education.github.com/pack). 😁
+
+You can read more about the most popular [cloud service providers](#azure-terminology) and comparisons between them [here]([cloud service providers](https://www.digitalocean.com/resources/article/comparing-aws-azure-gcp)).
 
 ## Getting Started
 
