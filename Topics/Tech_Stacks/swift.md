@@ -63,8 +63,9 @@ Make sure to use `SwiftUI` and `Swift` as your interface and language respective
 
 ## Swift View
 A view is a part of a swift application’s user interface. Creating a new project automatically creates a view called content view:  
-
+<p align="center">
 <img width="283" alt="Screenshot 2023-11-23 at 12 32 33 AM" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/97854264/58e8197c-897b-4bff-be4d-77b6daa62ecd">
+</p>
 
 Views in Swift are defined as structs and must conform to the View protocol. The content and behavior of the view are provided in the body of the view. To see how the view is transformed into the user’s interface and how users can interact with the view, we can either build and run our application on a simulated device or view the Xcode preview. Refer to the [Testing Your App - Simulators](#testing-your-app---simulators-background) to set up the simulator. An Xcode preview it generates a view preview without having to build and run the app. When we open up our project, the preview will appear, as shown below, displaying the view.
 
