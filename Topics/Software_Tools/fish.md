@@ -46,11 +46,11 @@ instructions for installing the latest version of fish on your platform.
 fish performs syntax highlighting as you type. Invalid or non-existent, unexecutable
 commands appear red if they cannot be executed.
 
-<img width="101" alt="gus" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/40929644/69c96e62-5404-4f37-840e-1bbdffcb6538">
+<img width="101" alt="invalid-syntax-highlighting" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/40929644/69c96e62-5404-4f37-840e-1bbdffcb6538">
 
 On the contrary, valid commands will appear in a different color.
 
-<img width="101" alt="git" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/40929644/46110031-e0e2-4522-b630-791f9c387005">
+<img width="101" alt="valid-syntax-highlighting" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/40929644/46110031-e0e2-4522-b630-791f9c387005">
 
 ## Autosuggestions
 
@@ -115,14 +115,16 @@ your login shell to it as follows:
 1. Add the shell to `/etc/shells/`:
 
 ```bash
-$ echo /usr/local/bin/fish | sudo tee -a /etc/shells
+echo /usr/local/bin/fish | sudo tee -a /etc/shells
 ```
 
 2. Change your default shell:
 
 ```bash
-$ chsh -s /usr/local/bin/fish
+chsh -s /usr/local/bin/fish
 ```
+
+Now, log out and log back in to see the changes in effect.
 
 ## Plugins
 
