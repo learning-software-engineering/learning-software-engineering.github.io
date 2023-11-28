@@ -52,7 +52,7 @@ In pgAdmin, you can:
 
 In the command line:
 1. Type `psql` to initialize the PostgreSQL environment.
-2. Type `CREATE DATABASE **name**;`, where `**name**` is the name of the database to create.
+2. Type `CREATE DATABASE dbname;`, where `dbname` is the name of the database to create.
 Documentation on setting database parameters can be found [here](https://www.postgresql.org/docs/current/sql-createdatabase.html).
 
 
@@ -66,8 +66,8 @@ To do this in pgAdmin:
 
 To do this in the command line:
 1. Execute `psql` to initialize the PostgreSQL environment.
-2. Execute `\c **DBNAME**;` where `**DBNAME**` is the name of the desired database.
-3. Run `CREATE SCHEMA **schema_name**;`. If the operation was successful, you should see the message `CREATE SCHEMA` on the next line.
+2. Execute `\c dbname;` where `dbname` is the name of the desired database.
+3. Run `CREATE SCHEMA schema_name;`. If the operation was successful, you should see the message `CREATE SCHEMA` on the next line.
 4. Run `\dn` to get a list of available schemas.
 
 
@@ -81,9 +81,9 @@ To create a table in pgAdmin:
 
 To create a table in the command line:
 1. Execute `psql` to initialize the PostgreSQL environment.
-2. Execute `\c **DBNAME**` where `**DBNAME**` is the name of the desired database
-3. Run `SET search_path TO **schema_name**;` where `**schema_name**` is the name of the schema you want to put your table in.
-4. Type `CREATE TABLE **table_name** (column1 int PRIMARY KEY, ...);`, where `**table_name**` is the name of the table to create. Inside the round braces is a list of the columns that you want in the table. For each column, you must specify a name and datatype. For example, a table can be created like this:
+2. Execute `\c dbname` where `dbname` is the name of the desired database
+3. Run `SET search_path TO schema_name;` where `schema_name` is the name of the schema you want to put your table in.
+4. Type `CREATE TABLE table_name (column1 int PRIMARY KEY, ...);`, where `table_name` is the name of the table to create. Inside the round braces is a list of the columns that you want in the table. For each column, you must specify a name and datatype. For example, a table can be created like this:
 
 ``` 
 CREATE TABLE accounts (
