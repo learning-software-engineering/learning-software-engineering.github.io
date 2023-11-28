@@ -18,6 +18,8 @@ This guide will help you understand the fundamentals of Next.js, a powerful Reac
 Next.js is a React framework known for simplifying the development of React applications with a focus on server-side rendering, efficient routing, and improved developer experience. Its file-system-based router supports layouts, nested routing, loading states, and error handling. Next.js offers both client-side and server-side rendering, utilizing Client and Server Components for optimized rendering. The framework streamlines data fetching with async/await in Server Components and extends the fetch API for features like request memoization and data caching. Next.js supports various styling methods, including CSS Modules, Tailwind CSS, and CSS-in-JS. Furthermore it includes optimizations for images, fonts, and scripts to improve Core Web Vitals and user experience. For these reasons it is a popular choice for building full-stack web applications.
 
 ## Getting Started
+Make sure you have Node.js 18.17 or later. You can install the latest version of Node.js [here](https://nodejs.org/en).
+
 To begin using Next.js, you need to set up a new project. To create a project run the following command:
 
 `npx create-next-app@latest`
