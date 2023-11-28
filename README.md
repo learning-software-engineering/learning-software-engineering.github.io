@@ -98,3 +98,4 @@ Potential Topics--
     1. Beginner's guide to product management and becoming a successful product manager with case studies.
 - Other useful resources
 - Teamwork
+    1. Effective Leadership
