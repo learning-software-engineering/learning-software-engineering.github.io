@@ -3,10 +3,15 @@
 # Table of Contents
 
 ### [Introduction](#introduction)
+
 ### [Motivation](#motivation)
+
 ### [Functional Design Requirements](#functional-design-requirements)
+
 ### [Non-Functional Design Requirements](#non-functional-design-requirements)
+
 ### [References](#references)
+
 ### [Additional Resources](#additional-resources)
 
 ## **Introduction**
@@ -79,3 +84,10 @@ Design requirements are helpful not only at the beginning of the design process,
 [2] Nuclino. A Guide to Functional Requirements (with Examples). Retrieved November 27, 2023 from https://www.nuclino.com/articles/functional-requirements 
 
 ## Additional Resources
+
+[Functional Requirements Examples and Templates] (https://www.jamasoftware.com/requirements-management-guide/writing-requirements/functional-requirements-examples-and-templates#:~:text=A%20functional%20requirement%20is%20a,details%20of%20the%20product's%20features)
+
+[Functional vs. Nonfunctional Requirements] (https://www.jamasoftware.com/requirements-management-guide/writing-requirements/functional-vs-non-functional-requirements)
+
+[What are Non-Functional Requirements?] (https://www.jamasoftware.com/requirements-management-guide/writing-requirements/how-non-functional-requirements-impact-product-development)
+
