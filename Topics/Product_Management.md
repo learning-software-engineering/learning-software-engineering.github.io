@@ -8,7 +8,7 @@ Some key features of a successful product manager:
 * Understand the product, people and environment that you are working with.
 * Guide your development team without being authoritative.
 * If you are making tradeoffs, be sure to explain and outline the opportunity cost.
-* [Perfecting writing, reading, and giving feedback for code reviews](./Product_Management/Code-Review-Best-Practices.md).
+* [Perfecting writing, reading, and giving feedback for code reviews](./Product_Management/Code_Review_Best_Practices.md).
 
  The following article outlines the product manager role and responsibilities, the main points that it entails and some tools and methologies to promote successful product management practices: [Product Management: Main Stages and Product Manager Role](https://www.altexsoft.com/blog/business/product-management-main-stages-and-product-manager-role/#:~:text=Product%20management%20is%20a%20process,development%2C%20marketing%2C%20and%20sales.)
  
