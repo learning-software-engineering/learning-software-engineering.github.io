@@ -60,7 +60,9 @@ element = soup.find('a', class_='title_url')
 ```
 You can then access any of the element's attributes:
 ```python
-href = element[href]
+element_href = element[href]
+element_classes = element[class]
+inner_text = element.get_text()
 ```
 You can also use regex to search for matching tags:
 ```python
