@@ -28,15 +28,15 @@ To achieve this goal, design requirements include specifications related to user
 
 When working with partner clients, scoping the problem that clients want to address and understanding the requirements that their ideal solution entails is very important. Establishing design requirements is highly valuable for CSC301 students, who need to create minimum-viable-products (MVPs) from scratch.
 
-### **1: Client Needs** 
+### **1. Client Needs** 
 
 After synthesizing user stories, extracting the functional and non-functional design requirements for any design, whether it is a web-application or mobile application, will allow students to gauge the specific features that they will be working on to create an MVP that accurately addresses client needs.
 
-### **2: Action Items**
+### **2. Action Items**
 
 The design requirements make sure that regardless of the platform the solution is being presented in, the main problem the clients present is solved and the user needs are met well. They can also be dissected to identify how the requirements match to various front-end, back-end, or database tasks, allowing for students to scope actionable task items.
 
-### **3: Communication**
+### **3. Communication**
 
 Accurately defining and documenting requirements makes sure that the communication between team members and clients are not lost and can be referred to later in the project to see if they have been met, especially after usability studies. Benefits include;
 
@@ -53,30 +53,30 @@ Examples include;
 - The system should support backward and forward navigation in the research article to follow the natural order of sections.
 - The system must allow visitors to sign up for the newsletter by inputting their email. 
 
-### **1: Extracting Action Items**
+### **Extracting Action Items**
 
 Functional requirements make it efficient for developers to extract specific front-end, database, and back-end tasks, which is useful for CSC301 students who might have sub-teams dedicated to these components. For example, from the first requirement "The system must enable users to verify their accounts using their phone number", developers infer that they need to complete the following tasks:
 
-1. Front-End Tasks
+#### 1. Front-End Tasks
 - Design and implement an interface for account verification
 - Create a component for users to input their phone number
 - Implement client-side validation for phone number format
 - Display appropriate confirmation/error messages to users based on verification
 - Integrate any libraries or frameworks to handle user input and interactions
 
-2. Back-End Tasks
+#### 2. Back-End Tasks
 - Implement server-side logic to handle the account verification process
 - Receive and validate the phone number input from the user
 - Generate a verification code and associate it with the user account
 - Send the verification code to the phone number of the user through an SMS service
 - Implement logic to receive and verify the code entered by the user
 
-3. Database Tasks
+#### 3. Database Tasks
 - Design a database schema to store user account information, including phone numbers and verification status
 - Implement database queries to insert, update, and retrieve user information during the verification process
 - Ensure data integrity and security measures, such as encryption for sensitive information.
 
-### **2: Relation to User Stories **
+### **Relation to User Stories**
 
 Functional requirements are not the same as user stories. In fact, user stories can be used to derive design requirements while centering user needs. An [example](https://www.nuclino.com/articles/functional-requirements) of this is as follows: 
 
