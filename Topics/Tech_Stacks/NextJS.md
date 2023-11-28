@@ -1,5 +1,4 @@
-# Learning Next.js, a React Framework
-
+# Understanding Next.js: A Comprehensive Guide to the React Framework
 ## Table of Contents
 ### [Introduction](#introduction-1)
 ### [What is Next.js](#what-is-nextjs-1)
