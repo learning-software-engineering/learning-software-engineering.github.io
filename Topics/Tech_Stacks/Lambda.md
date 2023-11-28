@@ -8,14 +8,9 @@
 #### [Example Use Cases](#example-use-cases-1)
 #### [Additional Resources](#Additional-Resources-1)
 ## Introduction
-<img src="https://miro.medium.com/v2/resize:fit:506/1*VKfs2PGyMm5FZfJD72kYCw.png" width="100" height="100" align="left">
+<img src="https://miro.medium.com/v2/resize:fit:506/1*VKfs2PGyMm5FZfJD72kYCw.png" width="100" height="100" align="right">
 
 AWS Lambda is a [serverless compute](https://en.wikipedia.org/wiki/Serverless_computing) service by Amazon Web Services (AWS), enabling you to execute code without the need to manage underlying servers. This event-driven platform responds to various triggers, such as file uploads, HTTP requests, or database modifications, allowing for seamless execution of functions in response to these events.
-
-Thanks to Lambda's simplicity, getting started is fairly simple. Explore the official AWS documentation and resources tailored to assist beginners in understanding Lambda and leveraging its capabilities effectively:
-
-- [Getting Started with Lambda](https://docs.aws.amazon.com/lambda/latest/dg/getting-started.html)
-- [AWS Lambda Resources](https://aws.amazon.com/lambda/resources/?aws-lambda-resources-blog.sort-by=item.additionalFields.createdDate&aws-lambda-resources-blog.sort-order=desc)
 
 
 ## Why Use AWS Lambda?
@@ -54,6 +49,14 @@ Solving cross-device development challenges typically involves high costs and ma
 Netflix showcases an excellent use case, leveraging AWS Lambda to process over 70 billion hours of content across 60 million users, transforming media files into over 50 formats.
 
 <img src="https://d1.awsstatic.com/product-marketing/Lambda/Diagrams/product-page-diagram_Lambda-RealTimeFileProcessing.a59577de4b6471674a540b878b0b684e0249a18c.png">
+
+
+## Getting Started
+
+Thanks to Lambda's simplicity, getting started is simple. Explore the official AWS documentation and resources tailored to assist beginners in understanding Lambda and leveraging its capabilities effectively:
+
+- [Getting Started with Lambda](https://docs.aws.amazon.com/lambda/latest/dg/getting-started.html)
+- [AWS Lambda Resources](https://aws.amazon.com/lambda/resources/?aws-lambda-resources-blog.sort-by=item.additionalFields.createdDate&aws-lambda-resources-blog.sort-order=desc)
 
 
 ## Additional Resources
