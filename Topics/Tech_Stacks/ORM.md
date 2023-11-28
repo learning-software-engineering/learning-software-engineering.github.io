@@ -23,13 +23,75 @@ As such, they allow us to simply treat all data as objects in our code, and leve
 ## Example:
 Lets take a simple example, where we want to connect to a database, create a user table, and add a new user to our database. How would that look as SQL Queries compared to an ORM? 
 
+```
+// First the example using an ORM!
+import {Sequelize, DataTypes} from 'sequelize'
 
+const sequelize = new Sequelize(); //Server details go here
+
+const Student = sequelize.define('Student', {
+    id: {
+        type: DataTypes.INTEGER,
+        primaryKey: true,
+        autoIncrement: true
+    },
+    username: {
+        type: DataTypes.STRING,
+        allowNull: false,
+    },
+    student_number: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+    },
+});
+
+await Student.sync({force:true}); // Ensures table is created in DB
+
+await Student.create({
+    username: 'sidiki',
+    student_number: 6789998212
+})
+
+await sequelize.close()
+```
+
+```
+// The following is the equivalent code using RAW SQL more heavily
+import { Client } from 'pg'
+const client = new Client() // Server Details go here
+await client.connect()
+ 
+const createTableQuery = await client.query(
+    ```
+    Create TABLE Student (
+        id SERIAL PRIMARY KEY,
+        username varchar(50),
+        student_number integer
+    );
+    ```
+);
+
+const student_username = "sidiki" 
+const student_number = 6789998212 
+
+const insertQuery = await client.query(
+    ```
+    Insert into Student (username, student_number) Values 
+    ('${student_username}', ${student_number});
+    ```
+)
+
+await client.end()
+
+```
+<!--
 <p align="center">
       <img  src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/95612717/b6111831-1240-42f2-868f-76a08647c1db" width="80%" height="50%" display="block">
 </p>
 <p align="center">
       <img src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/95612717/0faaecfe-2acd-48cc-a5c3-90b89f8833d0" width="80%" height="50%" display="block">
 </p>
+-->
 
 
 
