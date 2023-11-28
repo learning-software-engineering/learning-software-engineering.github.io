@@ -9,10 +9,11 @@
 #### [Additional Resources](#Additional-Resources-1)
 ## Introduction
 
-<img src="https://miro.medium.com/v2/resize:fit:506/1*VKfs2PGyMm5FZfJD72kYCw.png" width="100" height="100" style="float: right; margin-right: 10px;">
+<div style="float: right; margin-left: 10px;">
+  <img src="https://miro.medium.com/v2/resize:fit:506/1*VKfs2PGyMm5FZfJD72kYCw.png" width="100" height="100">
+</div>
 
 AWS Lambda is a [serverless compute](https://en.wikipedia.org/wiki/Serverless_computing) service by Amazon Web Services (AWS), enabling you to execute code without the need to manage underlying servers. This event-driven platform responds to various triggers, such as file uploads, HTTP requests, or database modifications, allowing for seamless execution of functions in response to these events.
-
 
 Thanks to Lambda's simplicity, getting started is fairly simple. Explore the official AWS documentation and resources tailored to assist beginners in understanding Lambda and leveraging its capabilities effectively:
 
@@ -36,25 +37,18 @@ Thanks to Lambda's simplicity, getting started is fairly simple. Explore the off
 ## Limitations of AWS Lambda 
 
 - **Long-Running Tasks:** Lambda has execution time limitations (currently 15 minutes). If your tasks consistently exceed this limit, an alternative computing solution might be more suitable.
-
 - **Predictable Workloads:** For workloads with consistent, predictable traffic, where maintaining and managing a server might be more cost-effective, a traditional server approach could be preferred over the event-driven nature of Lambda.
-
 - **Stateful Operations:** Lambda functions are stateless by design. If your application heavily relies on maintaining state between function invocations, it might not be well-suited for Lambda.
-
 - **Resource-Intensive Workloads:** Applications with resource-intensive processes that demand high CPU, memory, or specialized hardware might face limitations within the constrained environment Lambda provides.
-
 - **Cold Start Issues:** Lambda functions experience a "cold start" delay when invoked for the first time or after a period of inactivity. Applications sensitive to latency might find this initial delay unacceptable.
 
 
 ## Example Use Cases
-
-
 ### 1. Web Applications
 
 A user clicks on the web app to get local weather information. Then the App makes a REST API call to an endpoint triggering the Lambda. The Lambda runs the necessary code to retrive the local weather information from the db and returns data back to the user. 
 
 <img src="https://d1.awsstatic.com/product-marketing/Lambda/Diagrams/product-page-diagram_Lambda-WebApplications%202.c7f8cf38e12cb1daae9965ca048e10d676094dc1.png">
-
 
 ### 2. File Processing 
 Solving cross-device development challenges typically involves high costs and manual tasks, slowing down development teams. Yet, AWS Lambda offers a solution: automate a multi-platform media and content delivery pipeline. For example, a photograph is taken, and is uploaded to a database like an S3 bucket. Then that triggers a Lambda which runs the image resizing code into sizes that fit mobile, tablet, and laptop. 
@@ -66,9 +60,6 @@ Netflix showcases an excellent use case, leveraging AWS Lambda to process over 7
 
 
 ## Additional Resources
-
 - [AWS Documentation](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html)
-
 - [AWS Lambda Pricing](https://aws.amazon.com/lambda/pricing/)
-
 - [Serverless 101: AWS Lambda (A 9 min video intro to AWS)](https://aws.amazon.com/lambda/getting-started/)
