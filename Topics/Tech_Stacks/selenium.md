@@ -26,6 +26,37 @@ However, for the purposes of this introduction, we will refer to Selenium usage 
 Selenium has uses within automating browser interactivity, such as extracting information from the web and interacting with elements such as buttons and forms. It is an important tool used in automation to execute a plethora of different test cases you may want to perform on a website you are developing. If you are interested in learning more about using Selenium for testing purposes, you can check out [this guide](https://www.simplilearn.com/tutorials/python-tutorial/selenium-with-python#:~:text=Selenium%20with%20Python%20is%20used,skimming%20the%20entire%20site%2C%20etc.).
 
 ## Getting started
+1. **Install Selenium bindings**
+
+    The easiest way to install Selenium is with the `pip package manager`. With Python and pip installed, simply run the following command to get the latest version.
+    
+    ```bash
+    pip install selenium
+    ```
+    
+    You can then run the following command to see if you successfully installed Selenium.
+    
+    ```bash
+    pip show selenium
+    ```
+    
+    If the installation was successful, the output should be similar to the following.
+    
+    ```bash
+    Name: selenium
+    Version: 4.15.2
+    Summary: 
+    Home-page: https://www.selenium.dev
+    Author: 
+    Author-email: 
+    License: Apache 2.0
+    Location: /Users/john/CSC301/venv/lib/python3.11/site-packages
+    Requires: certifi, trio, trio-websocket, urllib3
+    Required-by: 
+    ```
+2. **Install Chrome WebDriver**
+
+    Now, download the appropriate Chrome WebDriver version matching your Chrome browser version and place it in the project directory.
 
 ## Headless drivers
 
