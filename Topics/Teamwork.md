@@ -61,6 +61,31 @@ Letting your emotions overwhelm you can also hinder effective communication in t
 
 [Statistics on why effective communication is important in the workplace.](https://www.linkedin.com/pulse/statistics-why-effective-communication-important-/?trk=pulse-article_more-articles_related-content-card)
 
+## Asking For Help
+
+A new environment produces new challenges. It may be the case that you are lost and are unsure of how to proceed. Here is a list of things you can do, as an individual and as a team member, to get yourself back on track.
+
+1) Attempt to fix the situation
+
+Before you ask for help, you should try to do it yourself. Software engineering, whether it is in this course or in the real world, is a field where you will be constantly learning. Learning cannot exist without attempting it yourself. There are a variety of resources that you can use to gain more insight on your situation, from documentation to online forums such as StackOverflow. 
+
+2) Isolate the specific issue
+
+If you still cannot fix the problem, then the best you can do is hone in on the problem. Find out which specific part of the code that is not working or the specific part of the problem statement you cannot understand.
+
+There are various methods to find where the issue lies. Writing test cases is an effective method to catch errors, as these test cases will continue to ensure that certain functionality of your code will always be correct throughout its development. If an error causes the code to not execute, reading the error message will provide the exact line where the error occurs. To understand why the error is occurring, the use of a debugger will help you inspect variables and hone further into the problem. Lastly, if all else fails, it is better to use print statements than do nothing at all.
+
+3) Explain the situation
+
+It is important to remember that you have the most experience with your own code. When asking for help, it is unwise to assume that your peer will instantly understand what you have attempted to do. So, the best first step is to explain the situation. Explain the general concept of the task you are trying to achieve, while keeping in mind their level of expertise on the subject. Doing so will ensure that you will both be on the same page when they give their assistance.
+
+4) Ask a specific question
+
+With all the previous steps complete, you can now ask a well-defined specific question, if you have not already solved your problem. With a fresh set of eyes on a small amount of code, it will be much easier to find a solution compared to asking for help combing through hundreds of lines of code.
+
+Remember, asking for help is not a sign of weakness. With different individuals at different levels of experience, a hard problem for you may be an issue that another individual has already experienced. So if you are stuck, it is better to ask for help than to do nothing at all. However, here are some things that you should avoid doing when asking for help.
+
+
 ## Conflict Resolution
 
 Working effectively in a team setting is a crucial yet often overlooked aspect of software engineering. Conflicts can arise in any team, and how they are resolved can have a significant impact on the team's success. Effective conflict resolution fosters a collaborative and supportive team environment where everyone's contributions are valued, and disagreements are handled constructively.
