@@ -4,6 +4,7 @@
 ### [Introduction](#introduction-1)
 ### [Installation](#installation-1)
 ### [Creating Dockerfiles](#creating-dockerfiles-1)
+### [Using Existing Images](#using-existing-images-1)
 ### [Next Steps](#next-steps-1)
 ### [Docker Terminology](#docker-terminology-1)
 
