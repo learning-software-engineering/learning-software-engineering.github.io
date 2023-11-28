@@ -5,28 +5,26 @@ React Native is a convenient JavaScript framework created by Meta Platforms Inc.
 
 Before my CSC301 advanture, I had no basics in React nor React Native. However, React Native is not a tough framework to learn, so don't stress out and feel free to dive into the [basic documentations](https://reactnative.dev/docs/tutorial) and [beginner courses](https://www.codecademy.com/learn/learn-react-native)! Many [interactive examples](https://reactnative.dev/docs/getting-started) are provided by the developers for you to test and play around with.
 
-Meanwhile, [EXPO](https://docs.expo.dev) is a open-source platform built around React Native. It contains a series of useful tools for developing a React Native app. This includes convenient commands to create and test your app universally on iOS, Android and web without additional configuration. Hence, it is highly recommended to use Expo if you are beginning the development of a mobile app. Furthermore, even existing React Native apps can have the `expo` package installed. <br>
+Meanwhile, [EXPO](https://docs.expo.dev) is a open-source platform built around React Native. It contains a series of useful tools for developing a React Native app. This includes convenient commands to create and test your app universally on iOS, Android and web without additional configuration. The Expo developers has also offered a well-designed [starter guide](https://docs.expo.dev/workflow/overview/), which is how I started the CSC301 project. Hence, it is highly recommended to use Expo if you are beginning the development of a mobile app. Furthermore, even existing React Native apps can have the `expo` package installed. <br>
 
 With Expo's [EAS Update](https://docs.expo.dev/eas-update/introduction/) and [EAS Build](https://docs.expo.dev/build/introduction/) features, development builds can be launched instantly, and your app can be tested on mobile devices or mobile device simulators. Official builds can also be launched efficiently to share among your team, or even make its way to AppStore and Google Play. Additionally, Expo offers a [web dashboard](https://expo.dev) with concise UI that aids the management of projects and their deployment. You can sign up for a free Expo account and manage your projects on this dashboard. The [Expo-CLI](https://docs.expo.dev/more/expo-cli/) is the command-line tool that connects all these tools together, and even helps to securely manage your project's dependencies.<br>
 
    1. Set up
       1. Installation
-         1. Install Node.js and npm (Node Package Manager) on your computer. You can download and install Node.js from the official website: https://nodejs.org/en/
+         1. Install Node.js and npm (Node Package Manager) on your computer. You can download and install Node.js from the [official website(https://nodejs.org/en/):
             #Note: Suggested to download the LTS version (or even numbered versions npm) because it is generally more stable. Use `npm -v` and `Node -v` to check your installed version.
          2. Install Expo Go on your [iOS device](https://apps.apple.com/us/app/expo-go/id982107779) or [Android device](https://play.google.com/store/apps/details?id=host.exp.exponent&hl=en_CA&gl=US&pli=1) via App Store and Google Play Store
          3. Download VS Code Extensions
             1. ES7+ React/Redux/React-Native snippets (Extension ID: dsznajder.es7-react-js-snippets)
             2. React Native Tools (Extension ID: msjsdiag.vscode-react-native)
       2. Command
-         1. Install Expo CLI (command line tool)
-            `npm install -g expo-cli`
-         2. Initialize expo
-            `expo init <your_app_name>`
-            #Note: you will be able to choose "blank", "blank (TypesScript)", "tabs (TypeScript)", or "minimal". I personally prefer blank because often times I need to delete files I don't want.
-         3. Start expo
+         1. Initialize your Expo App
+            `npx create-expo-app <your_app_name>`
+         2. Global Expo CLI (command line tool) is already deprecated. So all our commands will now be using the new Expo CLI which is bundled in the `expo` package at the initiation of your project. Hence, no command line tool is needed to be installed. To use the new Expo CLI, use:
+             `npx expo <command>` and `npx expo --help` to view all possible commands
+         3. Start Expo Development server
             `cd <your_app_name>`
             `npx expo start`
-            A development build will be launched
          4. Installing Dependencies
          `npx expo install <library-name>` or `npx expo install` to install libraries to local repository specified in `package.json`
             1. Useful dependencies:
