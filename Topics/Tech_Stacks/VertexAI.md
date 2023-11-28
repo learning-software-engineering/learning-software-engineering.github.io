@@ -79,9 +79,13 @@ response = model.predict(
 print(f"Response from Model: {response.text}")
 ```
 
+### Application for 301 Students
+
+VertexAI is highly applicable to us as CSC301 Students because as we leave the course and continue our studies we may be looking to build personal project and we may want to incoporate generative AI into the projects. Leveraging the technology offered by VertexAI we can easily build projects such as chat bots, and maybe come up with our own start-ups.
+
 ### Conclusion
 
-This article was guide for getting started with using the VertexAI SDK for the purpose of integrating generative AI into your applications. The provided instructions and code snippets showed how to use the generative AI studio by Google and how to use the VertexAI SDK in python to use PALM2 in python. Hopefully, you were able to learn how to get started with integrating PALM2 into your applications. Below are further readings that can help you use the other features that VertexAI offers and more in-depth guides.
+This article was guide for getting started with using the VertexAI SDK for the purpose of integrating generative AI into your applications. The provided instructions and code snippets showed how to use the generative AI studio by Google and how to use the VertexAI SDK in python to use PALM2 in python. Hopefully, you were able to learn how to get started with integrating PALM2 into your applications and were able to try out the code snippets yourself! Below are further readings that can help you use the other features that VertexAI offers and more in-depth guides.
 
 ### Articles and Resources
 
