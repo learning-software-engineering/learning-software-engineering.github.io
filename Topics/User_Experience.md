@@ -185,14 +185,14 @@ The core of accessibility lies in acknowledging and catering to the diverse need
 [Universal Design Principles](https://www.buffalo.edu/access/help-and-support/topic3/universaldesignprinciples.html) are not only used for software but can be incorporated generally as well. These 7 principles ensure accessibility, consistency, and user-friendly software. 
 This article provides the 7 Universal Design Principles that make software accessible to all users, which plays an important role in diversifying the User Experience. 
 
-### Web Content Accessibility Guildlines (WCAG)
+### Web Content Accessibility Guidelines (WCAG)
 
 The [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/standards-guidelines/wcag/) are a set of recommendations for making web content more accessible, primarily for people with disabilities, but also for all user interfaces and devices. Developed through the World Wide Web Consortium (W3C), specifically by the Web Accessibility Initiative (WAI), WCAG serves as the international standard for web accessibility.
 
 WCAG 2 is structured around four fundamental principles, often referred to by the acronym **POUR**, ensuring that web content is:
 
 1. **Perceivable**:  Information and user interface components must be presented in ways that users can perceive.
-    - Provide text alternative for non-text content.
+    - Provide text alternatives for non-text content.
     - Provide captions and other alternatives for multimedia.
     - Create content that can be presented in different ways, including by assistive technologies, without losing meaning.
     - Make it easier for users to see and hear content.
