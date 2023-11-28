@@ -8,7 +8,7 @@
 
 
 ## What is GDB?
-GDB (GNU Debugger) is a powerful open-source debugger commonly used in the field of computer science and software development, especially in the context of programming and debugging. 
+[GDB (GNU Debugger)](https://www.sourceware.org/gdb/) is a powerful open-source debugger commonly used in the field of computer science and software development, especially in the context of programming and debugging. 
 
 It is a command-line tool that allows developers to inspect and debug programs written in various programming languages, including C, C++, and even some other languages.
 
@@ -40,7 +40,7 @@ These features make GDB an essential tool for understanding and debugging progra
         Red Hat-based systems like Fedora: `sudo dnf install gdb`
 
     2. [macOS]: 
-        If you do not downloa brew, you need to install:
+        If you do not download brew, you need to install:
         
         `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 
