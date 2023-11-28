@@ -4,7 +4,7 @@ In this tutorial, we will go over how to use  the Python library [`Requests`](ht
 ## Table of Contents
 ### [Installation](#installation-1)
 ### [Basic Usage](#basic-usage-1)
-### [Parsing](#Parsing-1)
+### [Parsing](#parsing-1)
 ### [Useful Resources](#useful-resources-1)
 
 ## Installation
@@ -37,9 +37,35 @@ params = {
   'q': 'python',  # Keyword to search
 }
 ```
+You can then retrieve the content of the webpage, which in most cases is the HTML of the webpage.
+```python
+content = response.text
+```
+
 ### POST
+Some endpoints may use a HTML Form or a JSON object to set the necessary parameters to display the data that you need. In ths case, you can use the `POST` method.
+```python
+data = {
+  'key': 'value'
+}
+
+# Send data as HTML form
+response = requests.post(url, data=data)
+
+# Send data as JSON
+response = requests.post(url, json=data)
+```
+You can then utilize `response` in the same way as `GET`.
+
+To determine the data that you need to send, you can use the Network tab in your browser's developer tools to examine the specific `POST` request that website sends.
 
 ### Sessions
+Alternatively, you can use `SESSIONS` when making multiple requests to the same webpage, or if you want to persist cookies or other information like headers between requests. The syntax is largely the same with the exception of creating and using a session for making requests.
+```python
+session = requests.Session()
+response1 = session.post(url)
+response2 = session.get(url)
+```
 
 ### Status Code
 After executing the request, you can check the `status_code` of the request. In most cases, a value of `200` indicates success.
@@ -54,7 +80,6 @@ With the webpage retrieved, you can now parse the data using a library such as [
 
 ## Useful Resources
 - [Requests Documentation](https://requests.readthedocs.io/en/latest/)
-- [BeautifulSoup4 Documentation](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
 - [HTTP Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
 - [HTML Syntax](https://www.w3schools.com/html/)
 - [Requests Tutorial](https://www.w3schools.com/python/module_requests.asp)
