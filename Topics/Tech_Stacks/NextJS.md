@@ -68,13 +68,23 @@ your-nextjs-project
 ```
 
 ### Optimizations
-Next.js optimizes performance and efficiency in many ways. One such optimization is the Image component. We import the component as follows:
+#### Code Splitting
+Next.js excels in automatic code splitting, a crucial optimization technique. The framework divides your application code into smaller chunks, loading only the code required for the current page. This results in faster initial page loads and improved overall performance.
+
+#### Server-Side Rendering (SSR) Optimizations
+Next.js supports Server-Side Rendering, a powerful optimization that allows rendering pages on the server before sending them to the client. SSR enhances performance by reducing the client's workload and ensuring that users receive pre-rendered content.
+
+#### Built-in CSS and JavaScript Support
+Next.js provides support for CSS and JavaScript, optimizing the loading and execution of these resources. With automatic handling of critical CSS and efficient bundling of JavaScript, Next.js ensures a streamlined and performant application.
+
+#### Image Component Optimization
+There are other small optimizations that you can implement in your code, for instance the Image component:
 
 `import Image from 'next/image'`
 
 Since the Image component extends the HTML `<img>` element, you can use the standard HTML attributes such as `src`, `alt`, etc. The Image component will automatically perform optimizations such as size optimizations, faster page loads, and visual stability.
 
-There are many more optimzations the Next.js offers. To learn more, please visit the [optimizing page](https://nextjs.org/docs/app/building-your-application/optimizing) on the official documentation.
+There are many more optimizations the Next.js offers. To learn more, please visit the [optimizing page](https://nextjs.org/docs/app/building-your-application/optimizing) on the official documentation.
 
 ### API Routes
 Next.js allows you to create API routes easily. By adding files to the `pages/api` directory, you can define serverless functions that handle API requests. This feature simplifies the development of server-side logic without the need for a dedicated server. Here is an example. Suppose you want to fetch posts from some external source. We can create a new file named `post.js` inside the `pages/api` directory:
