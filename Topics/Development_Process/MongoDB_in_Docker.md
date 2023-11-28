@@ -29,18 +29,18 @@ If you have other images running as well, docker will not allow multiple images 
 
 Now that you have gotten your first MongoDB container up and running, lets explore the other optional settings.
 
-- Container name is self explanatory, this makes it easier to find and manage running containers
-- Volumes allows for data to persist even when the container is removed/not running. 
+- **Container** name is self explanatory, this makes it easier to find and manage running containers
+- **Volumes** allows for data to persist even when the container is removed/not running. 
     - This is often ideal when having to make changes to the image and recomposing, as you wouldn't want to lose your databases' data.
-    - In MongoDB's case, the container path **MUST** be '/data/db'
+    - In MongoDB's case, the container path **MUST** be '`/data/db`'
         - This corresponds to which folder in the container you want to be externally mounted
     - The Host path can then be any folder you like. This is where the data will live in your local machine. 
         - If you want to use this data in an another MongoDB container, you can simply remount the host path to the same container path.
-    - The environment variables for MongoDB are generally the root user and password.
-        - MONGO_INITDB_ROOT_USERNAME, MONGO_INITDB_ROOT_PASSWORD are the variables
-        - You can set the value of these to be whatever you want
+- The **environment variables** for MongoDB are generally the root user and password.
+    - `MONGO_INITDB_ROOT_USERNAME`, `MONGO_INITDB_ROOT_PASSWORD` are the variables
+    - You can set the value of these to be whatever you want
 
-In a final summary, what we have done so far is setup a MongoDB server in a docker container. Following the steps in the NoSQL page about MongoDB, using MongoDB compass, you can access your database through `'localhost:27017'` and putting username and password that you have set using the environment variables.
+In a final summary, what we have done so far is setup a MongoDB server in a docker container. Using [MongoDB compass](https://www.mongodb.com/products/tools/compass) or through your application, you can access your database through `'localhost:27017'` and putting username and password that you have set using the environment variables.
 
 In one command line, you can use:
 
@@ -48,7 +48,7 @@ In one command line, you can use:
 docker run --name containername -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=user -e MONGO_INITDB_ROOT_PASSWORD=pass mongodb/mongodb-community-server:latest
 ```
 
-From what we discussed above, you can infer that -p is publish port, -e is an environment variable, and the final argument is the image. MongoDB recommends specifying the version instead of latest to ensure the version used is the same as expected. 
+From what we discussed above, you can infer that `-p` is publish port, `-e` is an environment variable, and the final argument is the image corresponding to the image that you pulled. MongoDB recommends specifying the version instead of latest to ensure the version used is the same as expected. 
 
 Congratulations! You have created your first MongoDB container!
 
