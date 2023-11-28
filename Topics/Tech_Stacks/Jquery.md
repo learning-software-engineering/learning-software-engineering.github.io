@@ -5,20 +5,18 @@
 1. [Overview](#overview)
 2. [What is jQuery?](#what-is-jquery)
 3. [Getting Started with jQuery](#getting-started-with-jquery)
-
-- [Adding jQuery to Your Web Page](#adding-jquery-to-your-web-page)
-- [Basic Syntax](#basic-syntax)
-
+   - [Adding jQuery to Your Web Page](#adding-jquery-to-your-web-page)
+   - [Basic Syntax](#basic-syntax)
 4. [Key Features of jQuery](#key-features-of-jquery)
-
-- [DOM Manipulation](#dom-manipulation)
-- [Event Handling](#event-handling)
-- [AJAX Support](#ajax-support)
-- [Animations and Effects](#animations-and-effects)
-
+   - [DOM Manipulation](#dom-manipulation)
+   - [Event Handling](#event-handling)
+   - [AJAX Support](#ajax-support)
+   - [Animations and Effects](#animations-and-effects)
 5. [Practical Example](#practical-example)
 6. [Resources for Further Learning](#resources-for-further-learning)
 7. [Conclusion](#conclusion)
+
+---
 
 ## What is jQuery?
 
@@ -33,9 +31,7 @@ jQuery is a fast, small, and feature-rich JavaScript library. It simplifies thin
 To use jQuery, include it in your HTML:
 
 ```html
-
-<scriptsrc="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 ```
 
 ### Basic Syntax
@@ -45,17 +41,11 @@ jQuery syntax is designed to make it easy to navigate a document, select DOM ele
 Example:
 
 ```javascript
-
 $(document).ready(function(){
-
-$("p").click(function(){
-
-$(this).hide();
-
+    $("p").click(function(){
+        $(this).hide();
     });
-
 });
-
 ```
 
 This code makes all `<p>` elements hide when clicked.
@@ -66,100 +56,86 @@ This code makes all `<p>` elements hide when clicked.
 
 ### DOM Manipulation
 
-jQuery simplifies the process of manipulating the DOM. You can easily add, remove, or modify elements within your HTML document.
+**Common functions:**
+
+- `.append()`: Inserts content at the end of the selected elements.
+- `.remove()`: Removes the selected elements from the DOM.
+- `.html()`: Gets or sets the HTML content of the selected element.
+- `.attr()`: Gets or sets the value of an attribute on the selected elements.
 
 Example: Adding a new element to the DOM.
 
 ```javascript
-
-$("body").append("`<div class='new-element'>`New Element `</div>`");
-
+$("body").append("<div class='new-element'>New Element</div>");
 ```
 
 ### Event Handling
 
-jQuery offers a simpler syntax for attaching event listeners to elements in your web page, helping you manage user interactions more efficiently.
+**Common functions:**
+
+- `.click()`: Binds an event handler to the "click" JavaScript event.
+- `.on()`: Attaches one or more event handlers for the selected elements.
+- `.hover()`: Binds two event handlers to the mouseenter and mouseleave events.
+- `.bind()`: Attaches a handler to an event for the elements.
 
 Example: Handling a button click to change text.
 
 ```javascript
-
-
 $("#myButton").click(function(){
-
-$("#myText").text("Button clicked!");
-
+    $("#myText").text("Button clicked!");
 });
-
 ```
 
 ### AJAX Support
+
+**Common functions:**
+
+- `$.ajax()`: Performs an asynchronous HTTP (Ajax) request.
+- `$.get()`: Loads data from the server using a HTTP GET request.
+- `$.post()`: Loads data from the server using a HTTP POST request.
+- `$.getJSON()`: Loads JSON-encoded data from the server using a GET HTTP request.
 
 With jQuery, you can easily make AJAX calls to asynchronously load data from the server without refreshing the web page.
 
 Code snippet for a typical ajax request using jquery.
 
 ```javascript
-
 $.ajax({
-
-url:'path/to/file',
-
-type:'GET', // or 'POST'
-
-dataType:'json', // could be 'text', 'html', 'script', etc.
-
-data: {
-
-param1:'value1',
-
-param2:'value2'
-
+  url: 'path/to/file',
+  type: 'GET', // or 'POST'
+  dataType: 'json', // could be 'text', 'html', 'script', etc.
+  data: {
+    param1: 'value1',
+    param2: 'value2'
   },
-
-success:function(response) {
-
-// Code to execute when the request succeeds
-
+  success: function(response) {
+    // Code to execute when the request succeeds
   },
-
-error:function(xhr, status, error) {
-
-// Code to execute on failure
-
+  error: function(xhr, status, error) {
+    // Code to execute on failure
   }
-
 });
-
 ```
 
 This is the most powerful and flexible of jQuery's AJAX methods. It allows you to make asynchronous HTTP requests to load and submit data from/to a server. You can control various aspects of the AJAX call such as URL, data to be sent, type of data expected in response, and actions to be performed upon successful completion or failure of the request.
 
 ### Animations and Effects
 
-jQuery comes with built-in animation effects. You can show, hide, slide, fade elements, and more, with just a few lines of code.
+**Common functions:**
 
----
+- `.show()`: Displays the matched elements.
+- `.hide()`: Hides the matched elements.
+- `.fadeIn()`: Fades in the matched elements.
+- `.fadeOut()`: Fades out the matched elements.
+- `.slideToggle()`: Toggles between the slideUp() and slideDown() methods.
 
-## Practical Example
-
-Here's a simple example to demonstrate jQuery's power:
+Example: Animating an element's visibility.
 
 ```javascript
-
-$(document).ready(function(){
-
-$("#btn").click(function(){
-
-$("#test").hide();
-
-    });
-
+$("#toggleButton").click(function(){
+    $("#myElement").fadeToggle();
 });
-
 ```
-
-This code will hide the element with id `test` when the button with id `btn` is clicked.
 
 ---
 
