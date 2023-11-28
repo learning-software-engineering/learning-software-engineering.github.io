@@ -21,9 +21,9 @@ Alternatively you can also find MongoDB's and other images through Docker Deskto
 
 If you just want to get a database server up and running, the easiest way is to use Docker Desktop's GUI. Navigate to the 'Images' tab on the left hand tab, and find the 'mongodb-community-server' image that you just pulled. Under actions click the run button and it will open up a popup prompting you to input optional settings. The only absolutely necessary field to input to get up and running is the 'Ports' field. [Read about ports here.](./MongoDB_in_Docker.md#a-quick-summary-about-ports) 
 
-In the port field, you can see that Docker Desktop already fills in the container port and control protocol for you (27017/tcp), so all we have to do is input the host port. We can use the same port (27017) as common.
+In the port field, you can see that Docker Desktop already fills in the container port and control protocol for you (`27017/tcp`), so all we have to do is input the host port. We can use the same port (`27017`) as common.
 
-If you have multiple MongoDB containers running at once, using 27016 or other numbers around is also possible. 
+If you have multiple MongoDB containers running at once, using `27016` or other numbers around is also possible. 
 
 If you have other images running as well, docker will not allow multiple images to use the same port.
 
@@ -32,7 +32,7 @@ Now that you have gotten your first MongoDB container up and running, lets explo
 - Container name is self explanatory, this makes it easier to find and manage running containers
 - Volumes allows for data to persist even when the container is removed/not running. 
     - This is often ideal when having to make changes to the image and recomposing, as you wouldn't want to lose your databases' data.
-    - In MongoDB's case, the container path MUST be '/data/db'
+    - In MongoDB's case, the container path **MUST** be '/data/db'
         - This corresponds to which folder in the container you want to be externally mounted
     - The Host path can then be any folder you like. This is where the data will live in your local machine. 
         - If you want to use this data in an another MongoDB container, you can simply remount the host path to the same container path.
@@ -40,7 +40,7 @@ Now that you have gotten your first MongoDB container up and running, lets explo
         - MONGO_INITDB_ROOT_USERNAME, MONGO_INITDB_ROOT_PASSWORD are the variables
         - You can set the value of these to be whatever you want
 
-In a final summary, what we have done so far is setup a MongoDB server in a docker container. Following the steps in the NoSQL page about MongoDB, using MongoDB compass, you can access your database through 'localhost:27017' and putting username and password that you have set using the environment variables.
+In a final summary, what we have done so far is setup a MongoDB server in a docker container. Following the steps in the NoSQL page about MongoDB, using MongoDB compass, you can access your database through `'localhost:27017'` and putting username and password that you have set using the environment variables.
 
 In one command line, you can use:
 
@@ -54,15 +54,17 @@ Congratulations! You have created your first MongoDB container!
 
 ### A quick summary about ports: 
 
-The publish port argument generally looks like: XXXX:YYYY. 
+The publish port argument generally looks like: `XXXX:YYYY`. 
 
-The XXXX portion is the port that is used/exposed by the localhost. i.e. if the database was exposed on port 12345, to access the database you would use 'mongodb://localhost:12345/'
+The `XXXX` portion is the port that is used/exposed by the localhost. i.e. if the database was exposed on port `12345`, to access the database you would use 'mongodb://localhost:`12345`/'
 
-The YYYY portion is the port that is used/exposed within the docker container. This port cannot be accessed from localhost, unless published and mapped to an XXXX port. 
+The `YYYY` portion is the port that is used/exposed within the docker container. This port cannot be accessed from localhost, unless published and mapped to an `XXXX` port. 
 
-Sometimes the publish port argument also has /tcp or /http, these signify the protocol used by that port. 
+Sometimes the publish port argument also has `/tcp or /http`, these signify the protocol used by that port. 
 
-There are reserved ports that cannot be used as well as unofficial ports that most people agreed to be reserved. For example, most commonly 8000 or 8080 is used for http servers. There is a lot of inormation that can be said about this, so for the sake of this tutorial it is common to use the same port exposed in the container for database images. For the complete list of reserved ports see: [IANA](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml)
+There are reserved ports that cannot be used as well as unofficial ports that most people agreed to be reserved. For example, most commonly `8000 or 8080` is used for `http` servers. There is a lot of inormation that can be said about this, so for the sake of this tutorial it is common to use the same port exposed in the container for database images. For the complete list of reserved ports see: [IANA](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml).
+
+The Docker documentation goes into more detail about ports and the publish ports argument. 
 
 ## Setup Alongside Application
 
