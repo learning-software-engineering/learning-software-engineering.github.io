@@ -13,9 +13,9 @@
 
 Design requirements are expressions which outline “what” the desired product should achieve and “how” it should achieve them, corresponding to the usefulness and usability of designs.
 
-The usefulness of a product is addressed by the question “Are we designing the right thing?”, which considers whether this product is needed by users. 
+The usefulness of a product is addressed by the question “Are we designing the right thing?” [1], which considers whether this product is needed by users. 
 
-The usability of a product is addressed by the question “Are we designing the thing right?”, which considers whether users are able to use the product.
+The usability of a product is addressed by the question “Are we designing the thing right?” [1], which considers whether users are able to use the product.
 
 To achieve this goal, design requirements include specifications related to user interfaces, navigation, visual design, and additional elements which contribute to the satisfaction of end users and overall usability. This makes design requirements an integral part of the user experience.
 
@@ -66,16 +66,16 @@ Examples include;
 - The system should display as much text as possible, without compromising accessibility standards.
 - When the user presses the sign-up button, the system should load the confirmation screen in two seconds.
 
-As seen in the examples, non-functional design requirements impose constraints on how the functional requirements are implemented in terms of **performance, security, reliability, scalability, and portability.*
+As seen in the examples, non-functional design requirements impose constraints on how the functional requirements are implemented in terms of *performance, security, reliability, scalability, and portability.*
 
 ## Conclusion
 
-Design requirements are helpful not only at the beginning, but also throughout the design cycle: when determining which features that you want to implement or prioritize at each reiteration, you assess the possibilities against the design requirements to ensure centering client needs and main functionalities the desired system is trying to achieve. During low-fidelity prototyping such as MVPs, high-fidelity prototyping, and usability studies, the team can assess whether the design requirements were met and what changes can be made at each subsequent step to better address them.
+Design requirements are helpful not only at the beginning of the design process, but also throughout the entire development cycle.  When determining which features to implement or prioritize at each reiteration, assessing these decisions against the design requirements ensures centering client needs and main functionalities the desired system is trying to achieve. During low-fidelity prototyping, high-fidelity prototyping (such as MVPs), development, and following usability studies, the team can assess whether the design requirements were met and what changes can be made at each subsequent step to better address them.
 
 ## References
 
-Fanny Chevalier. 2023. Lecture 05.4: Synthesizing Actionable Insights - Design Requirements. CSC318. (November 2023).
+[1] Fanny Chevalier. 2023. Lecture 05.4: Synthesizing Actionable Insights - Design Requirements. CSC318. (November 2023).
 
-Nuclino. A Guide to Functional Requirements (with Examples). Retrieved November 27, 2023 from https://www.nuclino.com/articles/functional-requirements 
+[2] Nuclino. A Guide to Functional Requirements (with Examples). Retrieved November 27, 2023 from https://www.nuclino.com/articles/functional-requirements 
 
 ## Additional Resources
