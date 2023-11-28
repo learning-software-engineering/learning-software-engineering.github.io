@@ -53,14 +53,14 @@ Examples include;
 - The system should support backward and forward navigation in the research article to follow the natural order of sections.
 - The system must allow visitors to sign up for the newsletter by inputting their email. 
 
-Functional requirements are not the same as user stories. In fact, user stories can be used to derive design requirements while centering user needs. An [example] (https://www.nuclino.com/articles/functional-requirements) of this is as follows: 
+Functional requirements are not the same as user stories. In fact, user stories can be used to derive design requirements while centering user needs. An [example](https://www.nuclino.com/articles/functional-requirements) of this is as follows: 
 
 “User story: As an existing user, I want to be able to log into my account.
 
 Functional requirements:
 - The system must allow users to log into their account by entering their email and password.
 - The system must allow users to log in with their Google accounts.
-- The system must allow users to reset their password by clicking on "I forgot my password" and receiving a link to their verified email address.”
+- The system must allow users to reset their password by clicking on "I forgot my password" and receiving a link to their verified email address.” [2]
 
 ## **Non-Functional Design Requirements**
 
@@ -85,9 +85,9 @@ Design requirements are helpful not only at the beginning of the design process,
 
 ## Additional Resources
 
-[Functional Requirements Examples and Templates] (https://www.jamasoftware.com/requirements-management-guide/writing-requirements/functional-requirements-examples-and-templates#:~:text=A%20functional%20requirement%20is%20a,details%20of%20the%20product's%20features)
+[Functional Requirements Examples and Templates](https://www.jamasoftware.com/requirements-management-guide/writing-requirements/functional-requirements-examples-and-templates#:~:text=A%20functional%20requirement%20is%20a,details%20of%20the%20product's%20features)
 
-[Functional vs. Nonfunctional Requirements] (https://www.jamasoftware.com/requirements-management-guide/writing-requirements/functional-vs-non-functional-requirements)
+[Functional vs. Nonfunctional Requirements](https://www.jamasoftware.com/requirements-management-guide/writing-requirements/functional-vs-non-functional-requirements)
 
-[What are Non-Functional Requirements?] (https://www.jamasoftware.com/requirements-management-guide/writing-requirements/how-non-functional-requirements-impact-product-development)
+[What are Non-Functional Requirements?](https://www.jamasoftware.com/requirements-management-guide/writing-requirements/how-non-functional-requirements-impact-product-development)
 
