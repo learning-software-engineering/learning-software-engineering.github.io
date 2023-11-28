@@ -79,3 +79,31 @@ Technical debt refers to the implicit cost of additional work caused by choosing
 ## Conclusion
 
 Handling bugs and technical debt is an ongoing process that requires collaboration, communication, and a proactive mindset. By following best practices and integrating bug and technical debt management into the development workflow, teams can maintain a resilient and sustainable software ecosystem.
+
+## References / Additional Resources
+
+* [The Rise of Technical Debt](https://www.workwithloop.com/blog/the-rise-of-technical-debt-how-it-elevates-maintenance-costs)
+
+* [What is a bug?](https://www.techtarget.com/searchsoftwarequality/definition/bug)
+
+* [How to Write Effective Bug Reports](https://aqua-cloud.io/bug-reporting/)
+
+* [What is MoSCoW Prioritization?](https://www.productplan.com/glossary/moscow-prioritization/)
+
+* [Ensure Software Quality with a Bug Bash](https://zipboard.co/blog/bug-tracking/ensure-software-quality-with-a-bug-bash/)
+
+* [How to Write a Good Bug Report](https://intellisoft.io/cracking-the-code-how-to-write-a-bug-report-that-developers-love/)
+
+* [5 effective bug tracking tips](https://www.shakebugs.com/blog/bug-tracking-tips/)
+
+* [Bug Triage Meetings in Software Testing](https://blog.testlodge.com/bug-triage/)
+
+* [Tech Debt: What Is It & How to Reduce It?](https://www.zartis.com/technical-debt-management/)
+
+* [Technical Debt: Advantages, Disadvantages, and Benefits](https://www.bobstanke.com/blog/what-is-technical-debt)
+
+* [How to Prioritize Tech Debt](https://vfunction.com/blog/how-to-prioritize-tech-debt-strategies-for-effective-management/)
+
+* [Mastering Technical Debt](https://medium.com/@JacekWo/mastering-technical-debt-a-comprehensive-guide-to-understanding-managing-and-overcoming-19d2ced78942)
+
+* [Tackling Technical Debt](https://www.float.com/blog/tackling-technical-debt/)
