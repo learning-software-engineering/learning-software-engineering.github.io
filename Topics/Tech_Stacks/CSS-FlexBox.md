@@ -51,4 +51,6 @@ To learn more about these properties, [W3Schoole](https://www.w3schools.com/css/
 
 ## Tips and Tricks 
 
-Try out ... 
+One of the most commonly used property is "_flex-direction_". This property allows us to change the default axis from horizontal to vertical. We can see an example of this below:
+
+![flex-direction column](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/110127056/a004b2b4-b6ea-4500-8b68-4afc6daf87f8)
