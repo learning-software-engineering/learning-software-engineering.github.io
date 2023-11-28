@@ -148,8 +148,9 @@ To view the preview on different device types, you can change the device the pre
 In Xcode, unit tests are written using the `XCTest` framework. 
 
 You can add a new unit test case by going to `New File` and selecting the `Unit Test Case Class` template:
-
+<p align="center">
 <img width="726" alt="Unit Test Case" src="https://github.com/NonLan/learning-software-engineering.github.io/assets/95160562/360192fb-40ee-48c0-92d8-9585ad78eb7a">
+</p>
 
 Xcode will then automatically set up a test case class, and you can write your unit test there.
 
