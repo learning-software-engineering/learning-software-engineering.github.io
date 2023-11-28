@@ -23,14 +23,19 @@ Jira is a software development tool developed by Atlassian that allows teams to 
 <p>3. Bug: a problem which impairs or prevents the functions of a product.</p>
 <p>4. Subtask: the child of another issue, and is used to break down stories, tasks, or bugs into individually manageable pieces of work.</p>
 <p>5. Epic: the parent issue that groups stories, tasks, and bugs to capture a large, holistic body of work</p>
-<p>Aside from using the default suggested issue types, you can create and customize your issue types to match any method of project management you want.</p>
+<p>Aside from using the default suggested issue types, you can create and customize your issue types to match any method of project management you want. To learn more about the different issue types and their use cases, see this guide: https://support.atlassian.com/jira-cloud-administration/docs/what-are-issue-types/ 
+</p>
 
 <h4>Workflows:</h4>
 <p>Workflows in Jira define the lifecycle of an issue, guiding it from creation to completion. Jira's flexibility allows users to customize workflows based on their project's unique requirements. A typical workflow includes stages like "To Do," "In Progress," "In Review," and "Done." Understanding how to tailor workflows empowers teams to align Jira with their specific development processes.</p>
 
 <p>To create or modify workflows, navigate to the Jira settings and locate the Workflow section. From here, you can design custom workflows or modify existing ones to match your team's collaboration style.</p>
 
-By mastering issue types and workflows, you'll unlock Jira's potential for streamlined project management and efficient collaboration.
+Best Practices:
+* Tailor issue types and workflows to align with your project's needs.
+* Leverage epics to manage and visualize larger bodies of work.
+* Regularly review and optimize workflows based on team feedback.
+<p>By mastering issue types and workflows, you'll unlock Jira's potential for streamlined project management and efficient collaboration.</p>
 
 <h3>b. Agile boards</h3>
 <h4>Setting up Agile boards</h4>
@@ -44,11 +49,19 @@ By mastering issue types and workflows, you'll unlock Jira's potential for strea
 
 <p>For further details regarding board creation, see the below resources:</p>
 <p>Tutorial: https://www.atlassian.com/agile/tutorials/creating-your-agile-board</p>
+<p></p>Board: https://support.atlassian.com/jira-software-cloud/docs/what-is-a-jira-software-board/</p>
+<p>Scrum Board: https://support.atlassian.com/jira-software-cloud/docs/create-a-board/</p>
+<p>Kanban Board: https://support.atlassian.com/jira-software-cloud/docs/create-a-kanban-board-based-on-projects/</p>
 
 <h4>Managing and prioritizing your backlog effectively</h4>
 <p>A backlog is a list of issues that outline what tasks your team is going to work on in a project. Any project can only have one backlog. Effectively managing and prioritizing your backlog ensures that your team is always working on the most valuable tasks and issues.</p>
 <p>1. Creating your backlog: When you create a new Scrum or Kanban project, the backlog is created automatically. It can be found in the project sidebar.</p>
 <p>2. Managing Backlog items: Team members can populate the backlog with stories, tasks, and epics by creating issues.</p>
+
+To learn more, refer to Atlassian’s documentation:
+<p>Creating backlog tutorial (with example): https://confluence.atlassian.com/jirasoftwareserver/creating-your-backlog-938845071.html</p>
+<p>Using Scrum backlog: https://support.atlassian.com/jira-software-cloud/docs/use-your-scrum-backlog/</p>
+<p>Using Kanban backlog: https://support.atlassian.com/jira-software-cloud/docs/use-your-kanban-backlog/</p>
 
 <h2>3. Best Practices for Efficient Task Management</h2>
 <h3>a. Creating clear and concise issues</h3>
@@ -90,8 +103,10 @@ By mastering issue types and workflows, you'll unlock Jira's potential for strea
 
     a. Integrate Jira with external tools like Google Drive or Dropbox for seamless file sharing.
     b. Provide links to external documents for more extensive information.
+    c. Google Drive is available as an add-on: https://marketplace.atlassian.com/apps/1216787/google-drive-docs-for-jira?tab=overview&hosting=cloud
+    d. Dropbox is available as an add-on: https://marketplace.atlassian.com/apps/1216784/integration-for-dropbox-jira?tab=overview&hosting=cloud
 
-<p>By mastering the art of creating clear and concise issues, teams can streamline their workflow and minimize misunderstandings.
+<p>By mastering the art of creating clear and concise issues, teams can streamline their workflow and minimize misunderstandings. For more tips, see this resource: https://community.atlassian.com/t5/Jira-articles/How-to-write-a-useful-Jira-ticket/ba-p/2147004</p>
 
 <h3>b. Collaboration and communication</h3>
 <h4>Commenting in Jira</h4>
