@@ -1,8 +1,9 @@
-## Introduction to Prompt Engineering with LLAMA2 on VertexAI
+## Introduction to Prompt Engineering
 
-Prompt engineering is an art and science of designing input queries (prompts) to generate the desired output from language models like LLAMA2 on VertexAI. The quality of the output is directly influenced by how well the prompt is structured, making this skill vital for those utilizing language models in their applications.
+Prompt engineering is the art and science of designing input queries (prompts) to generate the desired output from language models like PaLM2 and GPT. The quality of the output is directly influenced by how well the prompt is structured, making this skill vital for those utilizing language models in their applications.
 
 When structuring prompts, it is crucial to consider clarity, context, and specificity. A well-engineered prompt should be clear and concise, providing enough context to guide the model towards the intended output without being overly specific, which may limit the model's creativity or lead to biased responses.
+
 
 ## Steps for Structuring Highly-Effective Prompts
 
@@ -25,6 +26,7 @@ When structuring prompts, it is crucial to consider clarity, context, and specif
 9. Adjust Parameters: Experiment with parameters like max output tokens, temperature, top-K, and top-P to fine-tune the creativity and randomness of the responses​​.
 
 10. Iterative Design: Prompt engineering is rarely perfect on the first try. Iterate on your prompt based on the responses you get, refining until you achieve the desired output​​.
+
 
 ## Writing Prompts - A Sample Scenario
 
@@ -55,7 +57,6 @@ For the similar scenario, this is one example of a bad prompt:
 
 "Context: You are a teacher who wants to create multiple-choice questions based on readings given to the students.
  Using the following information and nothing else, generate 5 Multiple Choice questions based on the information above and return them in JSON format.
- Exactly follow the JSON format of the example question below. Each question should be separated by "&&" and nothing else.
  Text:{text you want to provide} "
 
 
@@ -66,6 +67,25 @@ The provided prompt is not well-structured for the following reasons:
 2. Absence of Output Format Description: The bad prompt fails to specify how the JSON format should be structured, unlike the good prompt which includes a detailed example. This lack of clarity can result in varied and potentially incorrect output formats.
 
 3. agueness in Instruction: The second prompt is vague in its instructions, missing out on details such as the level of difficulty of the questions or the specific areas of the text to focus on, which could lead to a mismatch in expectations and actual output.
+
+
+## What LLM shoudl you choose?
+
+Here are few popular LLM's you can make use of:
+
+1. LLaMA-2: This model, developed by Meta, is known for its efficiency and scalability, making it suitable for research and development in language understanding and generation. LLaMA-2 is designed to be adaptable to various computational settings, from large-scale servers to smaller, more constrained environments.
+
+2. PaLM-2 (Pathways Language Model): Developed by Google, PaLM-2 is recognized for its advanced capabilities in language understanding, reasoning, and generation. It's particularly adept at handling complex natural language processing tasks, making it suitable for applications requiring deep linguistic analysis and nuanced language generation.
+
+3. GPT (OpenAI): Known for powering ChatGPT, GPT models like GPT-3.5 and GPT-4 are versatile, handling complex reasoning, understanding, and coding tasks. GPT-4, in particular, is multimodal, capable of processing both text and images, making it suitable for a wide range of general-purpose applications​​.
+
+4. BLOOM: An open-access, multilingual language model optimized for text generation and exploring language characteristics. It can generate text in 13 programming languages and 46 natural languages, suitable for multilingual text generation and language studies​​.
+
+5. Claude: Developed by Anthropic, this model is designed for high-reliability text processing tasks including text summarization, creative writing, coding, and search. It offers variations like "Claude Instant" for faster performance​​.
+
+6. Cohere: Created by former Google Brain team members, Cohere offers a range of models for different use cases. Its Cohere Command model is notable for its robustness and accuracy, making it suitable for diverse applications, from content creation to business analytics​​.
+
+7. Falcon: A series of open-source LLMs known for exceptional performance in reasoning and language tasks. The Falcon models, including Falcon 180B, are suitable for applications requiring high-performance language understanding and reasoning​
 
 
 ## Additional Resources
