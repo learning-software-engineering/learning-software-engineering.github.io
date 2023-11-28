@@ -54,13 +54,39 @@ Netflix showcases an excellent use case, leveraging AWS Lambda to process over 7
 
 ## Getting Started
 
-Thanks to Lambda's simplicity, getting started is simple. Explore the official AWS documentation and resources tailored to assist beginners in understanding Lambda and leveraging its capabilities effectively:
+Thanks to Lambda's simplicity, getting started is simple. 
 
-- [Getting Started with Lambda](https://docs.aws.amazon.com/lambda/latest/dg/getting-started.html)
-- [AWS Lambda Resources](https://aws.amazon.com/lambda/resources/?aws-lambda-resources-blog.sort-by=item.additionalFields.createdDate&aws-lambda-resources-blog.sort-order=desc)
+#### 1. Create a Lambda function with the console
+
+
+1. Go to the [Functions section](https://console.aws.amazon.com/lambda/home#/functions) within the Lambda console.
+2. Click on **Create function.**
+3. Choose **Author from scratch.**
+4. Under **Basic information*:**
+   - Enter **myLambdaFunction** as the Function name.
+   - Select either Node.js 18.x or Python 3.11 as the Runtime.
+   - Keep the architecture set to x86_64.
+5. Click on **Create function.**
+
+
+Lambda creates a function that returns the message `Hello from Lambda!`
+
+#### 2. Invoke the Lambda 
+
+To create the test event
+1. In the **Code source** pane, choose **Test**.
+
+2. Click the **Test** button. 
+
+Just like that you have created your first hello world Lambda function and invoked it.
 
 
 ## Additional Resources
+
+Explore the official AWS documentation and resources tailored to assist beginners in understanding Lambda and leveraging its capabilities effectively:
+
+- [Getting Started with Lambda](https://docs.aws.amazon.com/lambda/latest/dg/getting-started.html)
+- [AWS Lambda Resources](https://aws.amazon.com/lambda/resources/?aws-lambda-resources-blog.sort-by=item.additionalFields.createdDate&aws-lambda-resources-blog.sort-order=desc)
 - [AWS Documentation](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html)
 - [AWS Lambda Pricing](https://aws.amazon.com/lambda/pricing/)
 - [Serverless 101: AWS Lambda (A 9 min video intro to AWS)](https://aws.amazon.com/lambda/getting-started/)
