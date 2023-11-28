@@ -49,7 +49,9 @@ export default MyComponent;
 ```
 
 ### Pages and Routing
-One notable feature of Next.js is the automatic routing of pages. In Next.js, each file inside the `pages` directory becomes a route. For example, a file named `about.js` inside `pages` will be accessible at the `/about` route. This simple and intuitive routing system helps you structure your application without having to manually add routes like in standard React apps. Furthermore, Next.js supports dynamic routes, allowing you to create pages with dynamic content. For example, a file named `[id].js` inside `pages/posts` can match routes like `/posts/1`, `/posts/2`, and so on. This enables you to build flexible and dynamic applications. Here is an example directory tree with sample pages.
+One notable feature of Next.js is the automatic routing of pages. In Next.js, each file inside the `pages` directory becomes a route. For example, a file named `About.tsx` inside `pages` will be accessible at the `/about` route. This simple and intuitive routing system helps you structure your application without having to manually add routes like in standard React apps. Next.js eliminates this complexity by inferring routes from the file system, allowing you to focus on building components and pages rather than handling intricate routing logic.
+
+Furthermore, Next.js supports dynamic routes, allowing you to create pages with dynamic content. For example, a file named `[id].tsx` inside `pages/posts` can match routes like `/posts/1`, `/posts/2`, and so on. This enables you to build flexible and dynamic applications. Here is an example directory tree with sample pages.
 
 ```
 your-nextjs-project
@@ -57,14 +59,42 @@ your-nextjs-project
 |   |-- MyComponent.js
 |
 |-- pages
-|   |-- index.js
-|   |-- about.js
-|   |-- contact.js
+|   |-- Home.tsx
+|   |-- About.tsx
+|   |-- Contact.tsx
 |   |-- posts
-|       |-- [id].js
+|       |-- [id].tsx
 |
 |-- styles
     |-- main.css
+```
+
+Compare this to a traditional React app, where you would typically use additional libraries on top of manually defining routes. Here is an example of traditional React routing with the same pages as the above example (without the dynamic pages):
+
+```jsx
+import React, {useEffect} from "react";
+import "./App.sass";
+import {Route, Routes} from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+
+function App() {
+
+  return (
+    <div className="app-wrapper-wrapper">
+      <div className="app-wrapper">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </div>
+    </div>
+  );
+}
+
+export default App;
 ```
 
 ### Optimizations
