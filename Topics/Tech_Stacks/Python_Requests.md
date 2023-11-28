@@ -27,7 +27,28 @@ To determine the parameters needed, you can visit the website using your web bro
 
 For example, the parameters needed for Google Scholar are the language `hl` and the query `q`.
 
-![Google Scholar URL](https://imgur.com/a/ycFWgst)
+![Google Scholar URL](https://i.imgur.com/bOZUgYf.png)
+
+These parameters can then be included in a dctionary.
+```python
+params = {
+  'hl': 'en',     # Set the language to English
+  'q': 'python',  # Keyword to search
+}
+```
+After executign the request, you can check the `status_code` of the request to determine its success. A value of `200` indicates success.
+```python
+if response.status_code != 200:
+  # failure
+```
+A full list of HTTP response codes can be found [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status).
+
+### Using BeautifulSoup
+```python
+from bs4 import BeautifulSoup
+
+soup = BeautifulSoup(response.text, 'html.parser')
+```
 
 ## Storage
 
