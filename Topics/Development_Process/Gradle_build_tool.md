@@ -1,10 +1,10 @@
 # The Gradle build tool for java
 
-# Introduction
+## Introduction
 Build tools are essential in software development because they automate the process of converting our source code into executable programs. The process involves compiling code, linking resources, executing tests, and deploying the product. Without build tools, developers would have to manually execute each of these steps, which can be time-consuming and prone to human error, especially in projects with many dependencies.
 Gradle is one of the most powerful and flexible build tools. Its primarily used for Java projects but can also be applied to other programming languages such as C/C++ and Python. It's designed to support complex workflows and provides a versatile way to define build logic. Unlike some other build tools, Gradle scripts are generally concise and human-readable. Gradle is also highly extensible, offering a rich API that enables developers to write custom plugins and tasks. Its incremental build capabilities save time by only running tasks that are necessary. As a result, Gradle has become a popular choice among many developers. 
 
-# Dependency management with Gradle
+## Dependency management with Gradle
 Dependency management is a critical feature of Gradle that allows developers to automatically download and integrate libraries and other resources that their project depends upon. Maany projects organize unrelated functionality into different parts of a modular system.
 
 Gradle allows you to define different types of dependencies. Here's an example of how you might declare dependencies in a build.gradle file:
@@ -46,10 +46,10 @@ configurations.all {
 }
 ```
 
-# Dependency Resolution in Gradle
+## Dependency Resolution in Gradle
 You're likely to encounter version conflicts between dependencies. Gradle offers multiple strategies to help handle them:
 
-# Consistent Versions with Platform Constraints
+### Consistent Versions with Platform Constraints
 Gradle allows you to define a platform to enforce consistent versions of dependencies. This is particularly useful in large multi-module projects. Here's how you might use it:
 
 ```
@@ -64,7 +64,7 @@ dependencies {
 }
 ```
 
-# Dynamic Versions and Snapshots
+### Dynamic Versions and Snapshots
 Gradle provides robust support for dynamic versions and integrating with continuous integration development (CI/CD) pipelines through snapshot versions:
 
 ```
@@ -74,7 +74,7 @@ dependencies {
 }
 ```
 
-# Custom Dependency Resolution Logic
+### Custom Dependency Resolution Logic
 Sometimes, you may need to apply custom logic for dependency resolution. Gradle allows you to intercept and modify the dependency resolution process:
 
 ```
