@@ -1,10 +1,14 @@
 # Using ChartJS with React
 
 ## Table of Content
-1. [Setting Up](#setting-up)
-2. [Creating Line Graphs](#creating-bar-graphs)
-3. [Creating Bar Graphs](#creating-bar-graphs)
-4. [Additional Resources](#additional-resources)
+1. [Introduction](#introduction)
+2. [Setting Up](#setting-up)
+3. [Creating Line Graphs](#creating-line-graphs)
+4. [Creating Bar Graphs](#creating-bar-graphs)
+5. [Additional Resources](#additional-resources)
+
+## Introduction
+Creating visually appealing charts is a common requirement on modern web applications. However, coding charts and graphs from scratch could be cumbersome and prone to error. Thus, web developers can benefit from using modern,lightweight libraries for data visualization. For developers working with the React framework, `chart.js` and `react-chartjs-2` are two great options to create interactive charts and graphs. These libraries are compatible with most modern web browsers and React's component-based architecture, making them easy to implement in any React application.
 
 ## Setting Up
 This tutorial assumes basic React knowledge and that a React project has been set up locally. 
@@ -44,6 +48,8 @@ import Chart from "chart.js/auto";
 import { Line } from "react-chartjs-2";
 ```
 
+These import statements ensure that the React components from `react-chartjs-2` are loaded into our file. 
+
 #### Define the Data
 Before creating graphs, we first need to define some data to be visualized. 
 **Note:** Even though we are defining static data in this tutorial, the data can be fetched dynamically if your application has a backend.
@@ -64,11 +70,13 @@ const data = {
 };
 ```
 
+The `data` object represents the data associated with our line graph. The `labels` key represent the labels to appear on the **x-axis** of the graph. The `datasets` list represents the **lines** on the graph, where each object in `datasets` represent 1 line. Inside each object, we can customize the line's border and background colour, as well as the value associated with each label on the x-axis.
+
 #### Visualize the Data
 Now that we have the data, we can visualize it by passing the data as a prop into the `Line` component imported from `react-chartjs-2` as follow:
 
 ```
-export default function const LineChart() {
+export default function LineChart() {
   return (
     <div>
       <Line data={data} />
@@ -93,6 +101,8 @@ import Chart from "chart.js/auto";
 import { Bar } from "react-chartjs-2";
 ```
 
+These import statements ensure that the React components from `react-chartjs-2` are loaded into our file. 
+
 #### Define the Data
 Before creating graphs, we first need to define some data to be visualized. 
 **Note:** Even though we are defining static data in this tutorial, the data can be fetched dynamically if your application has a backend.
@@ -113,11 +123,13 @@ const data = {
 };
 ```
 
+Similar to the previous line graph, the `data` object represents the data associated with our bar graph. The `labels` key represent the labels to appear on the **x-axis** of the graph. The `datasets` list represents the **bars** on the graph, where each object in `datasets` represent 1 bar. Inside each object, we can customize the bar's border and background colour, as well as the value associated with each label on the x-axis.
+
 #### Visualize the Data
 Now that we have the data, we can visualize it by passing the data as a prop into the `Bar` component imported from `react-chartjs-2` as follow:
 
 ```
-export default function const BarChart() {
+export default function BarChart() {
   return (
     <div>
       <Bar data={data} />
