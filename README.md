@@ -27,6 +27,7 @@ Potential Topics--
         1. Set up
     8. Unity
         1. Introduction to Unity Basics
+        2. A Beginner's Guide for Unity UI Design
         
 - Software Tools
     1. Git
