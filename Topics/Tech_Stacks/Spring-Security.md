@@ -7,6 +7,9 @@
 		- Spring provides a bulk of security functionality with servlet filters
 	- Two methods of securing an app: declarative and programmatic
 
+![image](https://github.com/XavierQuan/spring-tools/assets/113052415/95a9299e-da14-40f2-8cb5-15f860133aff)
+
+
 ### Security Concepts
 - Authentication
 	- Check user id and password with credentials stored in app / db
