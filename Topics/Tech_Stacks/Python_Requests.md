@@ -1,15 +1,14 @@
 # Python Web Scraping with Requests & BeautifulSoup
+In this tutorial, we will go over how to use a combination of the Python libraries [requests](https://requests.readthedocs.io/en/latest/) and [BeautifulSoup4](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) to scrape data from webpages.
 
 ## Table of Contents
-### [Introduction](#introduction-1)
+### [Installation](#installation-1)
 ### [Basic Usage](#basic-usage-1)
 ### [Storage](#storage-1)
 ### [Useful Resources](#useful-resources-1)
 
-## Introduction
-In this tutorial, we will go over how to use a combination of the Python libraries [requests](https://requests.readthedocs.io/en/latest/) and [BeautifulSoup4](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) to scrape data from webpages.
-
-To start, install requests and bs4.
+## Installation
+To start, make sure to install `requests` and `bs4`.
 ```
 pip install requests
 pip install beautifulsoup4
@@ -36,7 +35,7 @@ params = {
   'q': 'python',  # Keyword to search
 }
 ```
-After executign the request, you can check the `status_code` of the request to determine its success. A value of `200` indicates success.
+After executing the request, you can check the `status_code` of the request. A value of `200` indicates success.
 ```python
 if response.status_code != 200:
   # failure
@@ -49,6 +48,7 @@ from bs4 import BeautifulSoup
 
 soup = BeautifulSoup(response.text, 'html.parser')
 ```
+
 
 ## Storage
 
