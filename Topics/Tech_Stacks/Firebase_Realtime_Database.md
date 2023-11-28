@@ -53,7 +53,7 @@ firebase_admin.initialize_app(cred, {
 # You can put your credentials elsewhere as a JSON file for security
 ```
 
-## 4. Strucuring Data
+## 4. Structuring Data
 Firebase stores data in JSON format. As a developer, it is important to follow good practices as JSON can get messy very quickly. 
 
 The Firebase team themselves have made an easy guide for this: [Structure Guide](https://firebase.google.com/docs/database/admin/structure-data)
