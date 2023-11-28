@@ -6,13 +6,12 @@
 ### [Installation](#installation-1)
 ### [Navigation between Screens](#navigation-between-screens-1)
 ### [Passing Parameters between Screens](#passing-parameters-between-screens-1)
-### [Troubleshooting](#troubleshooting-1)
 ### [Limitations](#limitations-1)
 
 ##  Prerequisites
 1. [React Native](./ReactNative.md)
 2. [React](./React.md)
-3. [React Hooks]
+
 
 ## Introduction
 React Navigation is a popular and widely used JavaScript library for building navigation and routing in React Native applications. Developed by the React Native community, React Navigation provides a flexible and extensible solution for managing the navigation and user flow within mobile apps.
@@ -175,6 +174,7 @@ function Page2({ route, navigation }) {
 ```
 Now we will have a new parameter `route` to Page2. `route` is like `navigation`, which is passed to all the `Screen component`. The value passed in is received and could be accessed in route.params in the destination page.
 
-## Troubleshooting
 
 ## Limitations
+### Right-to-Left (RTL) Layout support
+The library sometimes encouter problems with RTL layout, thus, it is suggest to use other navigation method with RTL layout.
