@@ -11,7 +11,7 @@
 
 
 ## Introductions:
-Most applications that you will build, infact most applications that exist today, require some sort of data permimnence. Meaning that data is stored somewhere, and is not lost when a site/app is reloaded. We employ database like MYSQL, PostgreSQL, and MongoDB to ensure that our data can we stored and we can safely interact with it. But how do we do that? There are many database drivers that can allow us to write queries as lines of code directly from within our javascript or python (or whatever language you prefer) scripts.
+Most applications that you will build, infact most applications that exist today, require some sort of data permimnence. Meaning that data is stored somewhere, and is not lost when a site/app is reloaded. We employ database like MYSQL, PostgreSQL, and MongoDB to ensure that our data can we stored and we can safely interact with it. But how do we do that? There are many database drivers that can allow us to write queries as lines of code directly from within our javascript or python (or whatever language you prefer) scripts. On the other hand, you may consider using an ORM to write your database code!
 
 
 ## What is an ORM:
