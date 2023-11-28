@@ -94,7 +94,9 @@ Note that the file structure inside your project directory should currently look
 
 Have this code in a Github repository to later integrate with Github actions.
 
-Now, you have two options:
+Now, you have two options: to deploy your web app with the Azure portal, or with the Azure CLI. You will be able to successfully deploy your web app regardless of which option you choose, so it mostly comes down to whichever option sounds more comfortable or interesting to you. However, also note that using the Azure portal will immediately integrate CI/CD with Github Actions with an automatically generated workflow.
+
+Note: The following deployment makes use of the Free and Shared service plan for App Service, given that this is for a demo and not a production deployment. If this is not the case for you, please look more into different plans [here](https://azure.microsoft.com/en-ca/pricing/details/app-service/windows/) and research properly what will work best for you.
 
 1. Deploy your Web App with the Azure portal (if you proceed with this option, the Azure portal will immediately integrate CI/CD with Github Actions)
 
