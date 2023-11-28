@@ -156,6 +156,9 @@ Make sure to use a universal, legible font style, and don't use extremely contra
 ### Responsive Design
 - [Responsive Design](https://devrix.com/tutorial/important-responsive-design/): Responsive Design generally refers to a design where the software is adaptable to the consumer's device. The responsive design can be many things including screen sizes, collapsing of navbars, adjusting texts based on the screens, scrolling effects and more. The benefits of a responsive design make your software accessible across varying devices and overall improves the user experience. The article demonstrates the importance and benefits of responsive design, the flexibility they provide, and the easiblity for the consumers upon making the said software. 
 
+### Optimizing UI with A/B Testing
+- [A/B Testing](./User_Experience/AB_Testing.md): A/B testing is a randomized experiment used to compare two versions of a webpage to determine which is more effective.
+
 ## User Experience Principles
 ### Nielsen's 10 Usability Heuristics
 
@@ -166,7 +169,10 @@ Jakob Nielsen's [10 Heuristics for Interaction Design](./User_Experience/Usabili
 
 **Wireframing** comes before the **mock-up** process, though as a software engineer, you probably won't be making any wireframes. A **mock-up** of your application is essentially a static design of your application's pages. A benefit of creating a mock-up is that you can communicate your design ideas to your teammates and get feedback from your customer/partner if you have one. Mock-ups are also known as **low-fidelity prototypes**
 
+
+### Accessibility Features of User Experience
 **Wireframes** are the "skeleton" of your mock-up; they communicate the general layout of your application and don't include details like specific text or colour. This is why you create wireframes before your mock-up.
+
 
 Finally, to create a **prototype**, or a **high-fidelity prototype**, you essentially make your mock-up interactive by connecting all the pages. Figma (discussed in the [Design Tools](https://learning-software-engineering.github.io/Topics/User_Experience.html#figma) section) is a free tool that you can use to create your mock-up and prototype. With prototyping tools like Figma, you can easily stimulate button clicks, screen swipes, etc. without any code.
 
