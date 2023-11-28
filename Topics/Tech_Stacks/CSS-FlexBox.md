@@ -40,7 +40,7 @@ There are lots of other properties that we can play around with in our container
 - flex-direction
 - flex-wrap
 - justify-content
-- align-content
+- align-items
 
 These are to name a few properties. These properties can be used to change how we want to oprganize our items (vertically or horizontally), whether we want to center our whole container, whether we want to center our items, how do we want to space the items, etc. The following image shows how we can play around with the flex propoerties to do various tasks:
 
@@ -55,4 +55,20 @@ One of the most commonly used property is "_flex-direction_". This property allo
 
 ![flex-direction column](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/110127056/a004b2b4-b6ea-4500-8b68-4afc6daf87f8)
 
-This changes our primary axis and secondary axis, which will impact two other properties "_justify-content_" for organizing based on the primary axis and "_align-items_" based on the secondary axis. These two axis are swapped when we use "_flex-direction: column_".
+This changes our primary axis and secondary axis, which will impact two other properties "_justify-content_" for organizing based on the primary axis and "_align-items_" based on the secondary axis. These two axis are swapped when we use "_flex-direction: column_". Here is an example:
+
+![image](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/110127056/16bf1053-7dfa-4fa3-8112-1f99446cdda4)
+
+The above image shows the difference between  "_justify-content: center_" and "_align-items: center_" for the default row flex direction (also known as horizontally aligned). We can combine these two property to center something in the middle of the screen. Here is how we can do that:
+
+```
+.flex-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
+
+```
+
+
