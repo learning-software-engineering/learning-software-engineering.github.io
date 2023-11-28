@@ -3,7 +3,6 @@
 ## Table of Contents
 ### [Introduction](#introduction-1)
 ### [Basic Usage](#basic-usage-1)
-### [Using Your Web Browswer](#using-your-web-browser)
 ### [Storage](#storage-1)
 ### [Useful Resources](#useful-resources-1)
 
@@ -17,12 +16,18 @@ pip install beautifulsoup4
 ```
 
 ## Basic Usage
-Most webpages can be scraped/retrieved using the GET method. 
+### Making Requests
+Most webpages can be scraped/retrieved using the GET method. This is analogous to sending a HTTP GET request.
 ```python
-requests.get(url, params=params)
-```
+import requests
 
-## Using Your Web Browser
+response = requests.get(url, params=params)
+```
+To determine the parameters needed, you can visit the website using your web broswer and then examine the end of the URL after the question mark.
+
+For example, the parameters needed for Google Scholar are the language `hl` and the query `q`.
+
+![Google Scholar URL](https://imgur.com/a/ycFWgst)
 
 ## Storage
 
