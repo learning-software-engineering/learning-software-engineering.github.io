@@ -68,3 +68,41 @@ def makeuppercase(event: firestore_fn.Event[firestore_fn.DocumentSnapshot | None
     print(f"Uppercasing {event.params['pushId']}: {original}")
     upper = original.upper()
     event.data.reference.update({"uppercase": upper})
+```
+
+### Additional Resources
+
+To deepen your understanding and explore further, here are some recommended resources:
+- [Firebase Documentation](https://firebase.google.com/docs): Detailed guides and references on Firebase services and Cloud Functions.
+- [Firebase YouTube Channel](https://www.youtube.com/user/Firebase): Video tutorials and demonstrations for implementing Firebase features.
+- [Firebase GitHub Repository](https://github.com/firebase): Access Firebase code samples, SDKs, and community-contributed projects.
+
+### Use Case: Implementing Custom Logic
+
+Let's consider an example where custom logic is applied within a serverless backend using Firebase Cloud Functions:
+
+Suppose you have a social media platform where users can post messages. You want to implement a feature that automatically categorizes these messages based on their content into different topics for easier organization and searchability.
+
+Using Firebase Cloud Functions, you can create a function triggered by the creation of a new message in Firestore. This function can analyze the content of the message, determine its category (e.g., sports, technology, travel), and update the Firestore document with the identified category.
+
+### Example: Categorizing Messages
+
+```python
+# Firebase Cloud Function to categorize messages based on content.
+from firebase_functions import firestore_fn
+
+@firestore_fn.on_document_created(document="messages/{pushId}")
+def categorize_message(event: firestore_fn.Event[firestore_fn.DocumentSnapshot | None]) -> None:
+    if event.data is None:
+        return
+
+    try:
+        message_text = event.data.get("text")
+    except KeyError:
+        return
+
+    # Perform content analysis to determine the category
+    category = analyze_content(message_text)
+
+    # Update the Firestore document with the identified category
+    event.data.reference.update({"category": category})
