@@ -68,8 +68,7 @@ A view is a part of a swift application’s user interface. Creating a new proje
 
 
 
-Views in Swift are defined as structs and must conform to the View protocol. The content and behavior of the view are provided in the body of the view. To see how the view is transformed into the user’s interface and how users can interact with the view, we can either build and run our application on a simulated device or view the Xcode preview. Refer to the [Testing Your App - Simulators: Background section] (#testing-your-app---simulators-background)
-
+Views in Swift are defined as structs and must conform to the View protocol. The content and behavior of the view are provided in the body of the view. To see how the view is transformed into the user’s interface and how users can interact with the view, we can either build and run our application on a simulated device or view the Xcode preview. Refer to the [Testing Your App - Simulators: Background](##testing-your-app---simulators-background)
 
 
 to set up the simulator. An Xcode preview it generates a view preview without having to build and run the app. When we open up our project, the preview will appear, as shown below, displaying the view.
