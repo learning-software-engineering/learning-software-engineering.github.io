@@ -3,7 +3,7 @@
 ## Table of contents
 
 #### [Introduction](#Introduction-1)
-#### [Why Use Lambda?](#why-use-aws-lambda-1)
+#### [Why Use Lambda](#why-use-aws-lambda-1)
 #### [Limitations of AWS Lambda](#Limitations_of_AWS_Lambda-1)
 #### [Example Use Cases](#example-use-cases-1)
 #### [Getting Started](#getting-started-1)
@@ -14,7 +14,7 @@
 AWS Lambda is a [serverless compute](https://en.wikipedia.org/wiki/Serverless_computing) service by Amazon Web Services (AWS), enabling you to execute code without the need to manage underlying servers. This event-driven platform responds to various triggers, such as file uploads, HTTP requests, or database modifications, allowing for seamless execution of functions in response to these events.
 
 
-## Why Use AWS Lambda?
+## Why Use AWS Lambda
 
 - **Serverless Computing:** Eliminates server management, allowing focus solely on code development and execution.
 - **Event-Driven Model:** Responds to various triggers like HTTP requests, database changes, or file uploads.
@@ -57,7 +57,6 @@ Netflix showcases an excellent use case, leveraging AWS Lambda to process over 7
 Thanks to Lambda's simplicity, getting started is simple. 
 
 #### 1. Create a Lambda function with the console
-
 
 1. Go to the [Functions section](https://console.aws.amazon.com/lambda/home#/functions) within the Lambda console.
 2. Click on **Create function.**
