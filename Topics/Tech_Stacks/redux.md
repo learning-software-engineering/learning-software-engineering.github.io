@@ -16,6 +16,9 @@ This tutorial provides a comprehensive guide to Redux, a popular state managemen
   - [How to Install Redux](#how-to-install-redux)
   - [Core Concepts](#core-concepts)
     - [Store](#store)
+      - [1. `dispatch`](#1-dispatch)
+      - [2. `getState`](#2-getstate)
+      - [3. `subscribe`](#3-subscribe)
     - [Action](#action)
     - [Reducer](#reducer)
     - [State](#state)
@@ -32,6 +35,8 @@ Redux is used for several reasons:
 
 - **Predictability**: It makes the state of your app predictable and transparent. Every change is predictable and happens one at a time.
 - **Maintainability**: Redux makes the state changes maintainable and easy to understand, which is especially beneficial in large applications with complex state changes.
+  + **Single Source of Truth**: Redux maintains the entire state of your application in a single store. This centralized approach ensures that the state is consistent across the app and makes it easier to track and manage state changes.
+  + Immutable State: In Redux, the state is immutable, meaning it cannot be changed directly.
 - **Debugging**: With Redux, it's easier to debug an application as it provides a clear view of when, how, and why your application's state changed.
 - **Flexibility**: Redux can be used with any UI layer, and has a large ecosystem of addons.
 
@@ -55,11 +60,42 @@ npm install react-redux
 
 ### Store
 
-The Store is the central hub where all application state is stored. It's created using Redux's `createStore` method. The Store provides several methods:
 
-- `dispatch`: Used to dispatch actions to the Store.
-- `getState`: Returns the current state held in the Redux Store.
-- `subscribe`: Allows you to listen for state changes in the Store.
+In Redux, a store is like a central warehouse that holds all the data your application needs. It's responsible for storing this data, updating it based on specific messages called actions, providing the current data to different parts of your application, and notifying them when any data changes. This centralization helps keep your application organized and ensures that the data flows in a predictable and manageable way.
+
+#### 1. `dispatch`
+
+- The `dispatch` method is used to send actions to the Store, which are processed by reducers to update the state.
+- Example:
+  ```javascript
+  // Dispatching an action
+  store.dispatch({ type: 'INCREMENT' });
+  ```
+
+#### 2. `getState`
+
+- The `getState` method returns the current state held in the Redux Store. It's useful for accessing the state of the application.
+- Example:
+  ```javascript
+  // Accessing the current state
+  const currentState = store.getState();
+  console.log(currentState);
+  ```
+
+#### 3. `subscribe`
+
+- The `subscribe` method allows you to listen for state changes in the Store. It takes a callback function that gets executed whenever the state changes.
+- Example:
+  ```javascript
+  // Subscribing to state changes
+  const unsubscribe = store.subscribe(() => 
+    console.log('State changed:', store.getState())
+  );
+
+  // To unsubscribe from the state changes
+  unsubscribe();
+  ```
+
 
 The Store ensures that state is kept consistent across your application.
 
