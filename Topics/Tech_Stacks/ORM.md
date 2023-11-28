@@ -10,6 +10,25 @@ An ORM (Object Relation Mapper) is a software tool that allows for the translati
 
 As such, they allow us to simply treat all data as objects in our code, and leverage the ORM when we want to store this object in our relational database of choice.
 
+## Example:
+Let's take a simple example, where we want to connect to a database, create a user table, and add a new user to our database. How would that look as SQL Queries compared to an ORM? 
+
+
+<p align="center">
+      <img  src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/95612717/b6111831-1240-42f2-868f-76a08647c1db" width="80%" height="50%" display="block">
+</p>
+<p align="center">
+      <img src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/95612717/0faaecfe-2acd-48cc-a5c3-90b89f8833d0" width="80%" height="50%" display="block">
+</p>
+
+
+These screenshots use the following packages for the ORM and raw SQL usage examples, respectively:
+1. https://sequelize.org/ 
+2. https://node-postgres.com/ 
+
+Looking at the two examples, despite the fact that a similar structure of steps is performed, we can immediately notice the differences between the 2 strategies of interacting with databases. The raw SQL strategy makes heavy use of strings, after all these strings are directly passed to the database to run the SQL code. On the other hand, the ORM method sets up object relation and creates an instance as if it were another object within our code.
+
+
 ## Should I Use One!?
 
 Although the implementation looks different, you can still do everything that ORMS have to offer with just raw SQL queries paired with a database driver and vice versa, so then which one should you actually use? 
