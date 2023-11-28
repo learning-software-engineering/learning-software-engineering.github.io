@@ -32,17 +32,17 @@ When working with partner clients, scoping the problem that clients want to addr
 
 ### **1. Client Needs** 
 
-After synthesizing user stories, extracting the functional and non-functional design requirements for any design, whether it is a web-application or mobile application, will allow students to gauge the specific features that they will be working on to create an MVP that accurately addresses client needs.
+After synthesizing user stories, extracting the functional and non-functional design requirements for any design (whether it is a web-application or mobile application) will allow students to gauge the specific features that they will be working on in order to create an MVP that accurately addresses client needs.
 
 ### **2. Action Items**
 
-The design requirements make sure that regardless of the platform the solution is being presented in, the main problem the clients present is solved and the user needs are met well. They can also be dissected to identify how the requirements match to various front-end, back-end, or database tasks, allowing for students to scope actionable task items.
+The design requirements make sure that regardless of the platform the solution is being presented in, the main problem the clients present is solved and the user needs are met. They can also be dissected to identify how the requirements match to various front-end, back-end, or database tasks, allowing for students to scope actionable task items.
 
 ### **3. Communication**
 
 Accurately defining and documenting requirements makes sure that the communication between team members and clients are not lost and can be referred to later in the project to see if they have been met, especially after usability studies. Benefits include;
 
-- **Clearer communication**: The developer team and the client are on the same page and can identify misunderstandings early on.
+- **Clearer communication**: Defining requirements ensures that the developer team and the client are on the same page and they can identify misunderstandings early on.
 - **Asynchronous communication**: With shared understanding and written documentation, certain questions can be addressed asynchronously, to see if a certain feature matches the clients design requirements.
 - **Efficiency**: There is less time spent on actively thinking about what the client had wanted. The written documentation can be easily referred to in later processes and can be used to hold clients accountable as well.
 
