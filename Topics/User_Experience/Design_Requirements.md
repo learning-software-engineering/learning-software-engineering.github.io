@@ -53,6 +53,31 @@ Examples include;
 - The system should support backward and forward navigation in the research article to follow the natural order of sections.
 - The system must allow visitors to sign up for the newsletter by inputting their email. 
 
+### **1: Extracting Action Items**
+
+Functional requirements make it efficient for developers to extract specific front-end, database, and back-end tasks, which is useful for CSC301 students who might have sub-teams dedicated to these components. For example, from the first requirement "The system must enable users to verify their accounts using their phone number", developers infer that they need to complete the following tasks:
+
+1. Front-End Tasks
+- Design and implement an interface for account verification
+- Create a component for users to input their phone number
+- Implement client-side validation for phone number format
+- Display appropriate confirmation/error messages to users based on verification
+- Integrate any libraries or frameworks to handle user input and interactions
+
+2. Back-End Tasks
+- Implement server-side logic to handle the account verification process
+- Receive and validate the phone number input from the user
+- Generate a verification code and associate it with the user account
+- Send the verification code to the phone number of the user through an SMS service
+- Implement logic to receive and verify the code entered by the user
+
+3. Database Tasks
+- Design a database schema to store user account information, including phone numbers and verification status
+- Implement database queries to insert, update, and retrieve user information during the verification process
+- Ensure data integrity and security measures, such as encryption for sensitive information.
+
+### **2: Relation to User Stories **
+
 Functional requirements are not the same as user stories. In fact, user stories can be used to derive design requirements while centering user needs. An [example](https://www.nuclino.com/articles/functional-requirements) of this is as follows: 
 
 “User story: As an existing user, I want to be able to log into my account.
