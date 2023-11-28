@@ -26,6 +26,25 @@
 	- Accessing secured endpoints will prompt for login
 	- Override default user name and generated password in application.properties
 
+``` Java
+// Spring Security Configuration
+@Configuration
+@EnableWebSecurity
+public class SecurityConfig extends WebSecurityConfigurerAdapter {
+
+    @Override
+    protected void configure(HttpSecurity http) throws Exception {
+        http
+            .authorizeRequests()
+            .anyRequest().authenticated()
+            .and()
+            .formLogin()
+            .and()
+            .httpBasic();
+    }
+}
+```
+
 - Dev Process
 	1. Create Spring Security Configuration (@Configuration)
 	2. Add users, passwords and roles
@@ -34,7 +53,15 @@
 				- ID - Description
 				- noop - Plain text passwords
 				- bcrypt - BCrypt password hashing
-
+``` Java
+@Autowired
+public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
+    auth.inMemoryAuthentication()
+        .withUser("user").password("{noop}password").roles("USER")
+        .and()
+        .withUser("admin").password("{bcrypt}encodedPassword").roles("ADMIN");
+}
+```
 - Cross-Site Request Forgery (CSRF)
 	- Spring Security can protect against CSRF attackes
 	- Embed additional authentication data / token into all HTML forms
@@ -46,6 +73,18 @@
 	- Traditional web apps with HTML forms to add / modify data
 	- If building REST API for non-browser clients
 		- disable CSRF protection, not required for stateless REST APIs that use POST, PUT, DELETE and / or PATCH
+
+``` Java
+@Override
+protected void configure(HttpSecurity http) throws Exception {
+    http
+        .csrf().disable() // Disable CSRF for stateless REST APIs
+        .authorizeRequests()
+        .anyRequest().authenticated()
+        .and()
+        .httpBasic();
+}
+```
 
 ### Database Access
 - Dev Process
@@ -98,6 +137,19 @@
 - Custom login form
 	- HTML + CSS
 
+``` Java
+@Override
+protected void configure(HttpSecurity http) throws Exception {
+    http
+        .authorizeRequests()
+        .anyRequest().authenticated()
+        .and()
+        .formLogin()
+            .loginPage("/login") // Custom login page URL
+            .permitAll(); // Allow access to all for login page
+}
+```
+
 - Dev Process
 	1. Modify Spring Security Configuration to reference custom login form
 	2. Develop a Controller to show the custom login form
@@ -122,6 +174,15 @@
 		- Invalidate user's HTTP session and remove session cookies
 		- Send user back to the login page
 		- Append a logout parameter: ?logout
+``` Java
+@Override
+protected void configure(HttpSecurity http) throws Exception {
+    http
+        .logout()
+            .logoutSuccessUrl("/login?logout") // Redirect after logout
+            .permitAll();
+}
+```
 
 - Restrict URLs Based on Roles
 	- Dev Process
@@ -131,6 +192,27 @@
 			- `requestMatchers(<< add path to match on >>).hasRole(<< authorized role >>)`
 			- Multiple roles: `requestMatchers(<< add path to match on >>).hasAnyRole(<< comma-delimited list of authorized roles >>)`
 
+``` Java
+@Override
+protected void configure(HttpSecurity http) throws Exception {
+    http
+        .authorizeRequests()
+        .antMatchers("/admin/**").hasRole("ADMIN") // Restrict '/admin/**' URLs to users with 'ADMIN' role
+        .antMatchers("/user/**").hasAnyRole("USER", "ADMIN") // '/user/**' for 'USER' and 'ADMIN'
+        .anyRequest().authenticated()
+        .and()
+        .formLogin();
+}
+```
+
 - Custom Access Denied Page
 	- Dev Process
 		1. Configure custom page access denied
+``` Java
+@Override
+protected void configure(HttpSecurity http) throws Exception {
+    http
+        .exceptionHandling()
+        .accessDeniedPage("/access-denied"); // Custom access denied page URL
+}
+```
