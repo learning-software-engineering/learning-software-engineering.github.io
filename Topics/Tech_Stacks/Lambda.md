@@ -41,7 +41,7 @@ AWS Lambda is a [serverless compute](https://en.wikipedia.org/wiki/Serverless_co
 
 A user clicks on the web app to get local weather information. Then the App makes a REST API call to an endpoint triggering the Lambda. The Lambda runs the necessary code to retrive the local weather information from the db and returns data back to the user. 
 
-<img src="https://d1.awsstatic.com/product-marketing/Lambda/Diagrams/product-page-diagram_Lambda-WebApplications%202.c7f8cf38e12cb1daae9965ca048e10d676094dc1.png">
+<img src="https://d1.awsstatic.com/product-marketing/Lambda/Diagrams/product-page-diagram_Lambda-WebApplications%202.c7f8cf38e12cb1daae9965ca048e10d676094dc1.png" width="80%">
 
 ### 2. File Processing 
 Solving cross-device development challenges typically involves high costs and manual tasks, slowing down development teams. Yet, AWS Lambda offers a solution: automate a multi-platform media and content delivery pipeline. For example, a photograph is taken, and is uploaded to a database like an S3 bucket. Then that triggers a Lambda which runs the image resizing code into sizes that fit mobile, tablet, and laptop. 
@@ -49,7 +49,7 @@ Solving cross-device development challenges typically involves high costs and ma
 
 Netflix showcases an excellent use case, leveraging AWS Lambda to process over 70 billion hours of content across 60 million users, transforming media files into over 50 formats.
 
-<img src="https://d1.awsstatic.com/product-marketing/Lambda/Diagrams/product-page-diagram_Lambda-RealTimeFileProcessing.a59577de4b6471674a540b878b0b684e0249a18c.png">
+<img src="https://d1.awsstatic.com/product-marketing/Lambda/Diagrams/product-page-diagram_Lambda-RealTimeFileProcessing.a59577de4b6471674a540b878b0b684e0249a18c.png" width="80%">
 
 
 ## Getting Started
