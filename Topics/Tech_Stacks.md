@@ -26,3 +26,4 @@
 ### [Introduction to Unity Basics](./Tech_Stacks/Unity_Intro.md)
 ### [Learning JSON-RPC](./Tech_Stacks/JSONRPC.md)
 ### [Introduction to Static Typing in Python](./Tech_Stacks/Python_Static_Typing.md)
+### [Selenum](./Tech_Stacks/selenium.md)
