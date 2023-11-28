@@ -8,10 +8,7 @@
 #### [Example Use Cases](#example-use-cases-1)
 #### [Additional Resources](#Additional-Resources-1)
 ## Introduction
-
-<div style="float: right; margin-left: 10px;">
-  <img src="https://miro.medium.com/v2/resize:fit:506/1*VKfs2PGyMm5FZfJD72kYCw.png" width="100" height="100">
-</div>
+<img src="https://miro.medium.com/v2/resize:fit:506/1*VKfs2PGyMm5FZfJD72kYCw.png" width="100" height="100" align="left">
 
 AWS Lambda is a [serverless compute](https://en.wikipedia.org/wiki/Serverless_computing) service by Amazon Web Services (AWS), enabling you to execute code without the need to manage underlying servers. This event-driven platform responds to various triggers, such as file uploads, HTTP requests, or database modifications, allowing for seamless execution of functions in response to these events.
 
