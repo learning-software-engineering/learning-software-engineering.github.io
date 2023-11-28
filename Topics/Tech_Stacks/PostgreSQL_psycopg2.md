@@ -93,7 +93,7 @@ CREATE TABLE accounts (
 	email VARCHAR ( 255 ) UNIQUE NOT NULL
 );
 ```
-The text after the datatypes (e.g. `UNIQUE NOT NULL`) are optional [constraints](https://www.postgresql.org/docs/16/ddl-constraints.html#DDL-CONSTRAINTS-EXCLUSION) that define conditions that must be satisfied by the data.
+The text after the datatypes (e.g. `UNIQUE NOT NULL`) are optional [constraints](https://www.postgresql.org/docs/16/ddl-constraints.html#DDL-CONSTRAINTS) that define conditions that must be satisfied by the data.
 
 Here is a link for information on datatypes in PostgreSQL: [https://www.postgresql.org/docs/current/datatype.html](https://www.postgresql.org/docs/current/datatype.html)
 
