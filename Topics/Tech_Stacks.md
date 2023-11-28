@@ -18,6 +18,7 @@
 ### [Learning Nodemailer](./Tech_Stacks/Nodemailer.md)
 ### [Learning Firebase for Serverless Backends and Cloud Functions](./Tech_Stacks/FirebaseServerlessCloud.md)
 ### [React Components Guide](./Tech_Stacks/React_Components.md)
+### [Learning Peewee ORM and Pydantic Models](./Tech_Stacks/Peewee_and_Pydantic_models.md)
 ### [Flutter](./Tech_Stacks/Flutter.md)
 ### [Temporal For Workflow Orchestration](./Tech_Stacks/Temporal.md)
 ### [Using Protobufs with gRPC](./Tech_Stacks/Protobufs_and_gRPC.md)
@@ -29,3 +30,5 @@
 ### [React.js Bad Practice - Prop Drilling](./Tech_Stacks/React_Prop_Drilling.md)
 ### [Introduction to Static Typing in Python](./Tech_Stacks/Python_Static_Typing.md)
 ### [Debugging with GDB](./Tech_Stacks/GDB_Debug.md)
+### [Learning Express.js](./Tech_Stacks/Express.md)
+### [Introduction to React ChartJS](./Tech_Stacks/ReactChartJS.md)
