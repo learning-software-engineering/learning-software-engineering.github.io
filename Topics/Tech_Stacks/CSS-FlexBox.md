@@ -95,5 +95,5 @@ One last nice property we can use is "_flex-wrap_". This property will make sure
 
 ![items after wrap](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/110127056/7a8c018a-97cf-49a6-bb46-2035313284fc)
 
-
+This is just the basics of using flexbox in CSS. There is so much more we can do with it by combining various properties together. I hope this was both educational and fun for you to learn about. Most importantly, always remember to 💪🏻😎
 
