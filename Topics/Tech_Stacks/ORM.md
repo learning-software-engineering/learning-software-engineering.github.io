@@ -1,5 +1,14 @@
 # ORM (Object Relation Mapper)
 
+## Table of Content
+### [Introductions](#introductions-1)
+### [What is an ORM](#what-is-an-orm-1)
+### [Example](#example-1)
+### [Should I use one?](#should-i-use-one-1)
+### [Advantages](#advantages-1)
+### [Disadvantages](#disadvantages-1)
+### [Conclusion](#conclusion-1)
+
 ## Introductions:
 Most applications that you will build, in fact most applications that exist today, require some sort of data permanence. Meaning that data is stored somewhere, and is not lost when a site/app is reloaded. We employ databases like MYSQL, PostgreSQL, and MongoDB to ensure that our data can we stored and we can safely interact with it. But how do we do that? There are many database drivers that can allow us to write queries as lines of code directly from within our javascript or python (or whatever language you prefer) scripts. On the other hand, you may consider using an ORM to write your database code!
 
@@ -13,14 +22,75 @@ As such, they allow us to simply treat all data as objects in our code, and leve
 ## Example:
 Let's take a simple example, where we want to connect to a database, create a user table, and add a new user to our database. How would that look as SQL Queries compared to an ORM? 
 
+```js
+// First the example using an ORM!
+import {Sequelize, DataTypes} from 'sequelize'
 
+const sequelize = new Sequelize(); //Server details go here
+
+const Student = sequelize.define('Student', {
+    id: {
+        type: DataTypes.INTEGER,
+        primaryKey: true,
+        autoIncrement: true
+    },
+    username: {
+        type: DataTypes.STRING,
+        allowNull: false,
+    },
+    student_number: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+    },
+});
+
+await Student.sync({force:true}); // Ensures table is created in DB
+
+await Student.create({
+    username: 'sidiki',
+    student_number: 6789998212
+})
+
+await sequelize.close()
+```
+
+```js
+// The following is the equivalent code using RAW SQL more heavily
+import { Client } from 'pg'
+const client = new Client() // Server Details go here
+await client.connect()
+
+const createTableQuery = await client.query(
+    ```
+    Create TABLE Student (
+        id SERIAL PRIMARY KEY,
+        username varchar(50),
+        student_number integer
+    );
+    ```
+);
+
+const student_username = "sidiki" 
+const student_number = 6789998212 
+
+const insertQuery = await client.query(
+    ```
+    Insert into Student (username, student_number) Values 
+    ('${student_username}', ${student_number});
+    ```
+)
+
+await client.end()
+
+```
+<!--
 <p align="center">
       <img  src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/95612717/b6111831-1240-42f2-868f-76a08647c1db" width="80%" height="50%" display="block">
 </p>
 <p align="center">
       <img src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/95612717/0faaecfe-2acd-48cc-a5c3-90b89f8833d0" width="80%" height="50%" display="block">
 </p>
-
+-->
 
 These screenshots use the following packages for the ORM and raw SQL usage examples, respectively:
 1. https://sequelize.org/ 
