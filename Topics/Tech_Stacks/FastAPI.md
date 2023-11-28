@@ -8,9 +8,9 @@
 
 ## Introduction
 
-FastAPI is a popular web framework in Python for writing REST APIs. It is fast and easy to use, with type hints and automatic data validation. 
+FastAPI is a popular web framework in Python for writing REST APIs up there with Python web frameworks like Flask and Django. It is fast and easy to use, with type hints and automatic data validation. 
 
-It also auto generates documentation for your APIs with the [OpenAPI](https://www.openapis.org/) specifications and with an UI such as [Swagger UI](https://swagger.io/)
+It also auto generates documentation for your APIs with the [OpenAPI](https://www.openapis.org/) specifications and with a UI such as [Swagger UI](https://swagger.io/)
 
 You can check out FastAPI's tutorials [here](https://fastapi.tiangolo.com/tutorial/) at their own website with instructions on how to install FastAPI and how to get started with your first REST API using FastAPI
 
@@ -33,8 +33,29 @@ def test():
 
 ```
 
-However, it is highly likely that not all your APIs are going to be in the same file. For example, take the above as your main.py. You are likely not going to put all your APIs there, so you may create a file called
-more_apis.py.
+However, it is highly likely that not all your APIs are going to be in the same file. In the end, you may have some advanced file structure like this:
+
+```
+backend_apis
+├── user_apis
+│   ├── user_apis.py
+├── user_usecases
+│   ├── user_usecases.py
+├── other_apis
+│   ├── other_apis.py
+└── main.py
+```
+
+
+For example, take the above as your main.py. You are likely not going to put all your APIs there, so you may create a file called more_apis.py. We will simply deal with the simple file structure like this that can be adjusted to any advanced file structure as you want:
+
+```
+backend_apis
+├── more_apis.py
+└── main.py
+```
+
+
 
 To connect more_apis.py with your main.py, you will need to use routers like this:
 
@@ -72,7 +93,7 @@ As always, you can check the official FastAPI tutorial [here](https://fastapi.ti
 
 ## Testing
 
-Testing with FastAPI can be automated with GitHub actions and uses FastAPI's TestClient and [pytest](https://docs.pytest.org/en/7.4.x/) to test. 
+Testing with FastAPI can be automated with GitHub Actions and uses FastAPI's [TestClient](https://fastapi.tiangolo.com/reference/testclient/) and [pytest](https://docs.pytest.org/en/7.4.x/) to test. TestClient essentially allows you to test the code directly like normal Python unit tests or pytests rather than like Postman testing.
 
 Your test file should look something like this, using the main.py above (wherever it is located in your file system) or any other API file:
 
@@ -92,7 +113,7 @@ def test_other_API():
 
 ```
 
-The pytest.ficture is one way to do setup and teardown for a test file. Check out more details about pytest fictures [here](https://docs.pytest.org/en/6.2.x/fixture.html#fixture). It may not be needed, as there are other ways to do the same thing. You can include it into the test file above if you would like.
+The pytest.ficture is one way to do setup and teardown for a test file. Check out more details about pytest fictures [here](https://docs.pytest.org/en/6.2.x/fixture.html#fixture). It may not be needed, as there are other ways to do the same thing such as other ways from pytest [here](https://docs.pytest.org/en/7.1.x/how-to/xunit_setup.html). You can include it into the test file above if you would like.
 
 ``` {python}
 # setup and teardown for doing things before and after tests
