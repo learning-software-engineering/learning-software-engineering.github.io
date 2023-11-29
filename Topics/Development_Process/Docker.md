@@ -4,6 +4,7 @@
 ### [Introduction](#introduction-1)
 ### [Installation](#installation-1)
 ### [Creating Dockerfiles](#creating-dockerfiles-1)
+### [Using Existing Images](#using-existing-images-1)
 ### [Next Steps](#next-steps-1)
 ### [Docker Terminology](#docker-terminology-1)
 
@@ -35,6 +36,13 @@ Once you've installed Docker, to see it in action you can follow any one of thes
 - [Dockerizing a React App](https://mherman.org/blog/dockerizing-a-react-app/) (This simple and quick tutorial for containerizing a React App, contains explanations when needed. I recommend this if you want to quickly get something running plus see what the next steps look like)
 - [Dockerize a Flask App](https://www.freecodecamp.org/news/how-to-dockerize-a-flask-app/) (Super detailed step-by-step explanations tutorial for containerizing a flask app. I recommend this if you want to understand the process in detail)
 - [Docker's official tutorial for containerizing an application](https://docs.docker.com/get-started/02_our_app/) (Can't go wrong with the official tutorial.)
+
+## Using Existing Images
+
+An alternative to manually creating images is to use existing images on 'Docker Hub'. The chances are for any purpose there is a docker image for you. From database images such as 'MySQL', 'MongoDB', 'PostgreSQL' and more, to usable out the box images such as 'Wordpress' for a Wordpress website and 'NextCloud' for a Google drive-esque cloud storage system. If you are unsure about creating your own image, you can always check out ones that other people have published. 
+
+For a quick tutorial on how to use an image: 
+- [Using the MongoDB image](./MongoDB_in_Docker.md#using-the-official-image)
 
 ### Automatic Dockerfile Generation
 
@@ -189,9 +197,11 @@ services:
       POSTGRES_DB: postgres
 ```
 
+For an alternative, you can check out another example [using MongoDB](./MongoDB_in_Docker.md#setup-alongside-application).
+
 Since the database is contained within the docker-compose network, it is perfectly secure to use the default `postgres` user and password, since it cannot be accessed through the wider internet. However, if you want to expose your database (which is not recommended), you can add the port `5432:5432` to the `db` service and use a stronger password.
 
-If you are using any other database, you can find the docker image on [Docker Hub](https://hub.docker.com/search?q=&type=image&category=Database) and follow the instructions there. Please be sure to read the docker container's documentation carefully! Most questions regarding database images can be answered by reading the documentation.
+If you are using any other database, you can find the docker image on [Docker Hub](https://hub.docker.com/search?q=&type=image&category=Database) and follow the instructions there. If you want a quick start tutorial, you can check out the tutorial for MongoDB above. Please be sure to read the docker container's documentation carefully! Most questions regarding database images can be answered by reading the documentation.
 
 ### Automatic Updates
 
