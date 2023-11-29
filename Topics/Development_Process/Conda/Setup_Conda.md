@@ -171,3 +171,13 @@ This allows me to remove the environment "TEST".
 After everything is done, you should not be able to find the environment named "TEST" anymore. Which means that we have successfully deleted the environment. 
 
 ![conda list env](conda_env_list.png)
+
+## External Sources
+
+The following are a list of references that you can check out if you are planning to learn more about Conda! 
+
+# External Learning Resources for Conda
+
+1. [**Conda Official Documentation**](https://docs.conda.io/en/latest/): This is the primary source of information about Conda, covering installation, commands, package management, and environment management. 
+
+2. [**Conda Cheat Sheet**](https://docs.conda.io/projects/conda/en/latest/user-guide/cheatsheet.html): A quick reference guide provided by the official Conda documentation, summarizing the most common Conda commands and their usage. 
