@@ -22,6 +22,16 @@ Figma is a cloud-based design tool that revolutionizes the way teams create, col
 - **Iterative Design Process**: Comments allow for an iterative approach, where designs are refined based on continuous team input.
 - **Inclusive Design Reviews**: Stakeholders can contribute feedback, making the design process more democratic and inclusive.
 
+## Why Prototyping in Figma is Beneficial
+
+### Enhancing Team Communication
+- **Visual and Interactive Clarity**: Prototypes in Figma provide a clear, interactive representation of the final product, helping teams understand and discuss complex design ideas.
+- **Efficient Feedback Loop**: Prototyping facilitates quick feedback cycles, crucial for agile and iterative design processes.
+
+### Streamlining Design and Development
+- **Reduces Miscommunication**: Clear, interactive prototypes minimize the risk of miscommunication between designers, developers, and stakeholders.
+- **Design Handoff**: Developers can use prototypes to understand design specifications and interactions accurately.
+
 ## In-Depth Guide to Prototyping in Figma
 
 ### Step 1: Setting Up Your Environment
@@ -51,16 +61,23 @@ Figma is a cloud-based design tool that revolutionizes the way teams create, col
 ### Step 6: Advanced Prototyping Techniques
 - **Overlay**: Create modals, menus, or dialogs that overlay other frames.
 - **Scrolling**: Implement scrolling to simulate long or wide content.
-- **Device Frames**: Test your designs in specific device frames for realism.
+- **Device Frames**: Test your designs in specific device frames for realism. 
 
 ### Step 7: Testing and Iteration
-- **Preview Mode**: Use the 'Present' mode to interact with your prototype.
+- **Preview Mode**: Use the 'Present' mode to interact with your prototype. ![Present button](https://imgur.com/seE5e9U.jpg)
 - **Usability Testing**: Conduct tests to gather user feedback.
 - **Iterate Based on Feedback**: Refine your prototype based on insights.
 
 ### Step 8: Sharing for Collaboration
 - **Share for Feedback**: Easily share prototypes with team members and stakeholders for valuable feedback.
 - **Collaborative Review Sessions**: Conduct live review sessions where team members can provide input in real-time.
+
+### Tips for Effective Prototyping in Figma
+- **Start Simple**: Begin with low-fidelity prototypes to outline basic functionality before moving to high-fidelity models.
+- **Utilize Figma's Auto Layout**: This feature can save time in making responsive designs that adapt to different screen sizes.
+- **Leverage Variants for Efficiency**: Use variants to manage multiple states of a component efficiently, such as buttons or input fields.
+- **Keyboard Shortcuts**: Familiarize yourself with Figma’s keyboard shortcuts to speed up your design workflow.
+- **Use Constraints for Responsive Design**: Apply constraints to elements within frames to maintain their relative position and size on different screen sizes.
 
 ## Conclusion
 
