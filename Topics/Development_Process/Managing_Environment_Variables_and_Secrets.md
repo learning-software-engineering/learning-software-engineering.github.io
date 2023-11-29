@@ -10,6 +10,7 @@ In this guide, we'll explore how to effectively manage environment variables and
 - [Securing Secrets](#securing-secrets)
 - [Switching Environments](#switching-environments)
 - [Best Practices](#best-practices)
+- [Further Reading](#further-reading)
 
 ## What Are Environment Variables?
 
@@ -51,6 +52,8 @@ Let us consider a class `JwtTokenProvider` which uses a predefined `jwtSecret` t
 public class JwtTokenProvider {
     private String jwtSecret = "Top Secret Key";
 
+    // Using the super secret jwtSecret, we want to generate a token for user authentication
+    // If jwtSecret is leaked, everyone can pretend to be anyone in our system which is bad!
     public String generateToken(String userId) {
         Date now = new Date();
         Date expiryDate = new Date(now.getTime() + jwtExpirationMs);
@@ -83,8 +86,9 @@ private String jwtSecret;
 Sadly, this approach does not really solve our security concerns. The secret is still very much visible in the source code! We solve this problem by loading our environment with the environment variable. For example, we could run the following on a Linux box:
 
 ```
-nosnow-user@Kiyosaki: export JWT_SECRET="Top Secret Key"
-nosnow-user@Kiyosaki: echo $JWT_SECRET
+nosnow-user@Kiyosaki: # Run this in the same environment as your application BEFORE running the application itself
+nosnow-user@Kiyosaki: export JWT_SECRET="Top Secret Key"  
+nosnow-user@Kiyosaki: echo $JWT_SECRET  # This is just to validate that your environment variable is set properly
 Top Secret Key
 ```
 
@@ -94,7 +98,7 @@ Lastly, we can rest easy knowing that our key no longer resides in our code by m
 app.jwtSecret=${JWT_SECRET}
 ```
 
-If you're still worried about this secret getting into the wrong hands, you can always store an encrypted version of the secret in your environment variable and use a library to decrypt this value when it is needed. This will render the secret almost useless, even if a bad actor has access to your environment. 
+If you're still worried about this secret getting into the wrong hands, you can always store an encrypted version of the secret in your environment variable and use a library to decrypt this value when it is needed. This will render the secret almost useless, even if a bad actor has access to your environment. Read more about this [here](https://www.baeldung.com/java-aes-encryption-decryption).
 
 ## Switching Environments
 
@@ -116,7 +120,7 @@ spring.datasource.username=${DATASOURCE_USERNAME}
 spring.datasource.password=${DATASOURCE_PASSWORD}
 ```
 
-`application.properties` is our default property file and we do not need to do anything special to activate it. However, on our deployed environment, we can use the `SPRING_PROFILES_ACTIVE` environment variable set to `deployment` which tells Spring to use `application-deployment.properties` instead. No changes to the code or to the property files are needed, hence there is no need for separate branches for each environment! 
+`application.properties` is our default property file and we do not need to do anything special to activate it. However, on our deployed environment, we can use the `SPRING_PROFILES_ACTIVE` environment variable set to `deployment` which tells Spring to use `application-deployment.properties` over the default. No changes to the code or to the property files are needed, hence there is no need for separate branches for each environment! For more information on Spring properties, visit this [link](https://www.baeldung.com/spring-profiles).
 
 ## Best Practices
 
@@ -126,3 +130,13 @@ Although environment variables are very useful for keeping our secrets safe and 
 - **Use Property Encryption:** Encrypting secrets (wherever they live) is good practice.
 - **Access Control:** Limit access to your environment. It would be pointless to store your secrets as environment variables if anyone can access your environment.
 - **Validate External Inputs:** Make sure that your environment and environment variables are not susceptible to injection of any sort. For example, if you're using GitHub actions to deploy your environment, it is very easy to print the environment variables out to the logs given appropriate changes to your workflow!
+
+## Further Reading
+
+1. **Spring Framework Documentation**: A comprehensive resource for all features and capabilities of the Spring framework. [Spring Documentation](https://docs.spring.io/spring-framework/docs/current/reference/html/)
+2. **Environment Variables in Cloud-Native Architectures**: Understand how environment variables are managed in cloud-native applications. [The Twelve-Factor App](https://12factor.net/config)
+3. **Securing Spring Boot Applications**: A detailed guide on securing Spring Boot applications, including managing secrets. [Baeldung - Spring Security](https://www.baeldung.com/spring-security-tutorial)
+4. **Spring Boot Profiles and Configuration Management**: Learn in-depth about profile-based configurations in Spring Boot. [Baeldung - Spring Profiles](https://www.baeldung.com/spring-profiles)
+5. **Using HashiCorp Vault with Spring**: A guide to integrating Spring applications with HashiCorp Vault for secret management. [Spring Vault Documentation](https://docs.spring.io/spring-vault/docs/current/reference/html/)
+6. **Jasypt for Encryption in Spring Applications**: Understanding property encryption in Spring using Jasypt. [Jasypt Integration](https://www.jasypt.org/spring-boot.html)
+7. **Continuous Integration and Deployment Best Practices**: Insights into CI/CD pipelines and environment variable management. [CI/CD Best Practices](https://about.gitlab.com/topics/ci-cd/ci-cd-best-practices/)
