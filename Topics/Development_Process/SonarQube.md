@@ -29,8 +29,9 @@
 - **Resource Intensiveness:** Running extensive code analysis can be resource-intensive and time-consuming.
 - **Initial Setup Complexity:** Setting up SonarQube and configuring rules might require initial investment in time and expertise.
 - **Maintenance Overhead:** Regular maintenance, including updating versions and plugins, is necessary for optimal performance.
-- **Learning Curve:** Understanding and interpreting the analysis reports might require familiarity with code quality metrics and best practices.
 - **False Positives/Negatives:** Like any automated analysis tool, SonarQube might sometimes generate false positives or miss certain issues.
+
+Overall, after the painful setup, I found that the tool is not only simple to use but also remarkably unintrusive, offering incredibly helpful suggestions along the way.
 
 ## Example Workflow
 
