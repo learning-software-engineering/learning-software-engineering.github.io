@@ -7,12 +7,12 @@ Professionalism can be defined as the conduct, behaviour, and attitude exhibited
 
 In software engineering, professionalism includes a wide range of behaviours that demonstrate a commitment to delivering high-quality work, effective collaboration and communication, and maintaining ethical standards. It is a combination of technical expertise and exhibiting behaviours that reflect positively on oneself and the software development community. It involves taking responsibility for one's work and continuously improving one's skills, whether they are technical or soft skills.
 
-Professionalism in software engineering can also be defined as a movement to make software engineering a profession, with aspects such as degree and certification programs, professional associations, professional ethics, and government licensing. (From Wikipedia: https://en.wikipedia.org/wiki/Software_engineering_professionalism).
+Professionalism in software engineering can also be defined as a movement to make software engineering a profession, with aspects such as degree and certification programs, professional associations, professional ethics, and government licensing. (1)
 
 ### The Role of Ethics in Software Engineering
 Ethics play a significant role in software engineering as they guide engineers in making responsible decisions that impact users, clients, and colleagues. Ethical considerations include data privacy, security, accessibility, and fairness, ensuring that the software development process benefits all stakeholders without causing harm.
 
-According to the Software Engineering Code of Ethics and Professional Practice ^2, the eight guiding principles for ethical behaviour in this field are as follows:
+According to the Software Engineering Code of Ethics and Professional Practice (2), the eight guiding principles for ethical behaviour in this field are as follows:
 
 1. Public: Software engineers shall act consistently with the public interest.
    
@@ -32,7 +32,7 @@ According to the Software Engineering Code of Ethics and Professional Practice ^
 
 These guiding principles are further broken down in the code into more concise and actionable items.
 
-According to a Fellow article by Brier Cook, five tips to help software engineers ensure they behave ethically are:
+According to a Fellow article by Brier Cook (3), five tips to help software engineers ensure they behave ethically are:
 
 1. **Ask yourself how the software could be misused**. Assuming that your software will be used in good faith or for its intended purpose, is not good enough. Thinking about the ways in which the software may be misused, will allow you to inhibit unethical use of your software before it occurs in the first place.
    
@@ -59,7 +59,7 @@ According to a Fellow article by Brier Cook, five tips to help software engineer
 6. Continuous learning and skill development: Pursuing ongoing learning opportunities and staying updated with industry trends and advancements showcases dedication to one's craft and adaptability.
 
 ### Importance of Professionalism in Software Engineering
-[FILL IN]
+Professionalism is important in software engineering because it allows you to be respected member of the software developement community. It can allow you to get jobs, stand out at a job and generally to be a person others think of for opportunities. Professional bahaviour also ensures that one is a reliable and respectful co-worker and allows software engineers to foster positive working relationships with others. (4)
 
 # Best Practices for Maintaining a Professional Demeanor in Various Situations
 
@@ -67,28 +67,38 @@ Professionalism is essential in all aspects of software engineering, and maintai
 
 ### Remote work environments
 1. Establish a dedicated workspace: Create a separate, distraction-free area for work to maintain focus and productivity.
-2.  Set boundaries: Clearly define your work hours and communicate them to your household members or roommates to minimize interruptions.
+   
+2. Set boundaries: Clearly define your work hours and communicate them to your household members or roommates to minimize interruptions.
+   
 3. Maintain a regular schedule: Following a consistent routine helps manage time effectively and maintain work-life balance.
+   
 4. Stay organized: Use productivity tools like task managers, calendars, and note-taking apps to keep track of tasks, deadlines, and meetings.
+   
 5. Communicate effectively with team members: Utilize appropriate communication channels, provide timely updates, and engage in virtual meetings to stay connected and aligned with the team.
+   
 6. Invest in reliable technology: Ensure that your computer, internet connection, and other essential tools are up-to-date and reliable to avoid technical issues during work.
 
 ### Client interactions
-1 Active listening: Pay attention to the client's needs and concerns, and ask clarifying questions to ensure a clear understanding of their requirements.
+1. Active listening: Pay attention to the client's needs and concerns, and ask clarifying questions to ensure a clear understanding of their requirements.
+   
 2. Professional appearance: Dress appropriately for video calls and ensure your background is tidy and uncluttered to present a professional image.
+   
 3. Setting realistic expectations: Communicate the scope, timeline, and potential challenges of a project upfront to avoid miscommunications and manage expectations.
+   
 4. Provide regular updates: Keep clients informed about project progress, milestones, and any changes or obstacles that may affect the project's outcome.
+   
 5. Delivering high-quality work: Strive for excellence in your work, thoroughly test your code, and address any issues promptly to ensure client satisfaction.
+    
 6. Handle difficult situations with grace: If conflicts or misunderstandings arise, remain calm, listen to the client's concerns, and work collaboratively to find a solution.
 
 ### Additional practices:
-You can find additional practices on this website: https://engineerscanada.ca/professional-practice-in-software-engineering
+You can find additional professional practices on this website: https://engineerscanada.ca/professional-practice-in-software-engineering
 
 By implementing these best practices, you can maintain a professional demeanour in various situations, enhancing your reputation as a software engineer and fostering positive relationships with colleagues and clients.
 
 # External resources for professional development
 
-Here are the external resources for professional development:
+Included in this section is a list of resources of various types that provide interesting insights into the worlds of professionalism and professional development.
 
 ### Articles:
 1. https://ethics.acm.org/code-of-ethics/software-engineering-code/ ----- "Teaching and Learning Guide for: Software Engineering Ethics" by Don Gotterbarn, ACM SIGCAS Computers and Society
@@ -102,8 +112,10 @@ Here are the external resources for professional development:
 https://www.podchaser.com/podcasts/software-engineering-daily-62587 ----- Software Engineering Daily - Daily interviews about technical software topics.
 
 ### School Resources:
-You can ask ASIP program ambassadors for help to provide related materials on how to become a professional software engineer. I cannot add the links here since the resources from ASIP are not open to the public.
+The Arts and Science Internship Program (ASIP) can provide materials on how to become a professional software engineer. The resources are not publically accessible on the internet, but computer science students participating in ASIP can reach out to their ambassadors for help in this area. The CSSU also hosts many events or shares information about opportunities/events that may be useful in exapnding one's knowledge about professionalism in software developement.
 
 # References
-(1)
+(1) https://en.wikipedia.org/wiki/Software_engineering_professionalism.
 (2) Don Gotterbarn, Keith Miller, and Simon Rogerson. 1997. Software engineering code of ethics. Commun. ACM 40, 11 (November 1997), 110-118. DOI: 10.1145/265684.265699
+(3) https://fellow.app/blog/engineering/engineering-everything-you-need-to-know-about-software-engineering-ethics/.
+(4) https://www.indeed.com/career-advice/career-development/why-is-professionalism-important
