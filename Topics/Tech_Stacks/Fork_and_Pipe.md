@@ -1,11 +1,11 @@
 ## Table of Contents
 
- 1. [Introduction](#Introduction)
- 2. [What is Inter-process Communication (IPC)](#IPC)
- 3. [Fork()](#fork)
- 4. [Pipe()](#pipe)
- 5. [IPC Using  fork()  and  pipe()](#implementation)
- 6. [Conclusion](#conclude)
+#### [Introduction](#Introduction)
+#### [What is Inter-process Communication (IPC)](#IPC)
+#### [Fork()](#fork)
+#### [Pipe()](#pipe)
+#### [IPC Using  fork()  and  pipe()](#implementation)
+#### [Conclusion](#conclude)
 
 ## Introduction
 This guide will help you understand the usage and implementation of Inter-process Communication (IPC) in C Programming language. 
