@@ -96,7 +96,7 @@ This changes our primary axis and secondary axis, which will impact two other pr
 
 The above image shows the difference between  "_justify-content: center_" and "_align-items: center_" for the default row flex direction (also known as horizontally aligned). We can combine these two property to center something in the middle of the screen. Here is how we can do that:
 
-# Combining Properties
+### Combining Properties
 
 ```
 .flex-container{
