@@ -1,6 +1,6 @@
-
 ## Table of Contents
 
+- [Understanding Containers & Kubernetes](#understanding-containers-&-kubernetes)
 - [Introduction](#introduction-to-openshift)
 - [Key Features](#key-features)
 - [Architecture](#architecture)
@@ -9,12 +9,17 @@
   - [Accessing your Cluster](#accessing-your-cluster)
   - [Creating an Application](#creating-an-application)
   - [Deploying an application](#deploying-an-application)
-  - [Accessing application](#accessing-application)z
+  - [Accessing application](#accessing-application)
 - [Additional Resources](#additional-resources)
+
+## Understanding Containers & Kubernetes
+
+Containers are units that can run applications and their dependencies in isolated environments. They package an application and its dependencies together, ensuring consistency across different environments. An example of containerization technology is Docker.
+Kubernetes is an open-source container orchestration platform. It provides a framework for automating the deployment, scaling, and management of containerized applications. 
 
 ## Introduction to OpenShift
 
-Red Hat OpenShift is an open source container application platform that runs on Red Hat Enterprise Linux CoreOS (RHCOS). It is built on existing Kubernetes features with additional features specific to OpenShift. It takes care of scaling, monitoring, logging, and metering functions like Kubernetes but also provides an in cluster docker registry, developer friendly environment amongst other features. 
+Red Hat OpenShift is an open-source container application platform that runs on Red Hat Enterprise Linux CoreOS (RHCOS). It is built on existing Kubernetes features with additional features specific to OpenShift. It takes care of scaling, monitoring, logging, and metering functions like Kubernetes but also provides an in-cluster docker registry, developer-friendly environment, amongst other features. 
 
 ## Key Features:
 
@@ -82,6 +87,7 @@ def hello_world():
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8080)
 ```
+Flask is a framework that is used to create web application. The code above creates a simple web app that prints Hello Word.
 
 - Create a requirements file called requirements.txt:
 ```
@@ -99,12 +105,15 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 CMD ["python", "app.py"]
 ```
+The docker file above is essentially used to build a docker image. It first imports a python base image for the container since it the application requires python to run. Then, it sets the working directory inside the container to /app. The `COPY . .` line copies the content of the /app folder to the container (i.e. app.py and requirements.txt). Then, it installs python dependencies based on the requirements.txt file. Finally, it runs the application.
 
 ### Deploying an application
 
 Now, we will create an image and push the image to our registry. In order to do so, we need to find our registry name, username and password
 - `oc get route -n openshift-image-registry` will provide you with the name of your image registry in your Openshift Cluster.
 - `oc whoami -t` will output the password for the registry
+
+**Note**: Openshift CLI is often abbreviated as oc thus it is the primary tool to interact with openshift
 
 Once you have your registry's URL, username and password, you can login with the following command:
 ```
@@ -132,7 +141,7 @@ oc expose svc/hello-world-app
 
 With the following command,  you can find the URL where the app has been deployed, i.e. there will be a "Hello World!"
 ```
-oc get route | grep hello-word-app
+oc get route | grep hello-world-app
 ```
 
 
