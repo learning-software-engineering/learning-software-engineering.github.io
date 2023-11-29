@@ -30,6 +30,7 @@
 ### [Introduction to Unity Basics](./Tech_Stacks/Unity_Intro.md)
 ### [A Beginner's Guide for Unity UI Design](./Tech_Stacks/Unity_UI.md)
 ### [Learning JSON-RPC](./Tech_Stacks/JSONRPC.md)
+### [GraphQL with Apollo](./GraphQL_Apollo.md)
 ### [React.js Bad Practice - Prop Drilling](./Tech_Stacks/React_Prop_Drilling.md)
 ### [Introduction to Static Typing in Python](./Tech_Stacks/Python_Static_Typing.md)
 ### [Debugging with GDB](./Tech_Stacks/GDB_Debug.md)
