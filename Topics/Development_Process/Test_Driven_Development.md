@@ -123,3 +123,22 @@ You might be thinking to yourself "wow TDD seems great, it ensures that the code
 #### Conclusion
 
 Test driven development is a methodolgy where you first write tests outlining how you want the code to work and then write the code to achieve that behaviour. The idea behind this concept is that there is an inital investment of time and complexity but it forces the developer to write better code that will be easier to maintain in the future and that the time saved in debugging and maintenance will offset the initial investment. However TDD is not a one-size-fits all and there are scarios in which TDD can have more downsides than rewards.
+
+#### Extra Resources
+
+Videos: 
+[Jim Coplien and Bob Martin Debate TDD](https://www.youtube.com/watch?v=KtHQGs3zFAM)
+[YOU DONT UNIT TEST???](https://www.youtube.com/watch?v=pvBHyip4peo)
+[Test-Driven Development // Fun TDD Introduction with JavaScript
+](https://www.youtube.com/watch?v=Jv2uxzhPFl4)
+
+Articles:
+[What is Test Driven Development](https://www.guru99.com/test-driven-development.html)
+[Test-driven development - IBM Garage Methodology](https://www.ibm.com/garage/method/practices/code/practice_test_driven_development/)
+
+Popular Testing Frameworks:
+[Cypress](https://docs.cypress.io/guides/overview/why-cypress)
+[PyUnit](https://wiki.python.org/moin/PyUnit)
+[doctests](https://docs.python.org/3/library/doctest.html)
+[JUnit](https://junit.org/junit5/)
+[Jest](https://jestjs.io/)
