@@ -85,12 +85,28 @@ To create a table in the command line:
 3. Run `SET search_path TO schema_name;` where `schema_name` is the name of the schema you want to put your table in.
 4. Type `CREATE TABLE table_name (column1 int PRIMARY KEY, ...);`, where `table_name` is the name of the table to create. Inside the round braces is a list of the columns that you want in the table. For each column, you must specify a name and datatype. For example, a table can be created like this:
 
+```
+CREATE TABLE sports (
+	sport_id SERIAL PRIMARY KEY,
+	sport_name VARCHAR(50) UNIQUE NOT NULL,
+);
+```
 ``` 
-CREATE TABLE accounts (
-	id serial PRIMARY KEY,
-	username VARCHAR ( 50 ) UNIQUE NOT NULL,
-	password VARCHAR ( 50 ) NOT NULL,
-	email VARCHAR ( 255 ) UNIQUE NOT NULL
+CREATE TABLE teams (
+	team_id SERIAL PRIMARY KEY,
+	team_name VARCHAR(50) NOT NULL,
+	sport_id INT NOT NULL,
+	FOREIGN KEY (sport_id) REFERENCES sports(sport_id),
+);
+```
+```
+CREATE TABLE players {
+	player_id SERIAL PRIMARY KEY,
+	first_name VARCHAR(50) NOT NULL,
+	last_name VARCHAR(50) NOT NULL,
+	age VARCHAR(50) NOT NULL,
+	team_id INT NOT NULL,
+	FOREIGN KEY (team_id) REFERENCES teams(team_id),
 );
 ```
 The text after the datatypes (e.g. `UNIQUE NOT NULL`) are optional [constraints](https://www.postgresql.org/docs/16/ddl-constraints.html#DDL-CONSTRAINTS) that define conditions that must be satisfied by the data.
@@ -101,17 +117,17 @@ Here is a link for more details and examples of how to create a table: [https://
 
 
 ### Table Operations
-Moving onto table operations. To select data from a certain column in a table, you can use a query like:
+In SQL, a query is a statement/command used to retrieve or manipulate data in a relational database. To retrieve data from a certain column in a table, you can use the `SELECT` statement and `FROM` clause:
 ``` 
-    SELECT col1, col2 FROM table1;
+    SELECT first_name, last_name FROM players;
 ```
-This gives you a smaller table that only contains the columns `col1` and `col2` from your selected table in your relation. 
+The output of this query is a smaller table that only contains the columns `first_name` and `last_name` of each row from the table `players`.
 
-You can also merge two different tables by changing the `FROM` clause to contain 2 tables:
+You can also take the cross product of two or more tables by listing the tables in the `FROM`:
 ```
-    SELECT col1_table1, col2_table2 FROM table1, table2;
+    SELECT sport_name, team_name FROM sports, teams;
 ```
-This operation, first, performs a cross product between `table1` and `table2`, where every row of one table is matched with every other row of the other table. Then it selects the data present in the new cross-products table from columns `col1_table1` and `col2_table2`.
+First, this query performs a cross product between `sports` and `teams`. Each row of table `sports` is matched with each row of the table `teams`. Then, it selects the data from the columns `sport_name` and `team_name` of every row present in the newly joined table.
 
 In addition, you can perform filtering on tables:
 ```
