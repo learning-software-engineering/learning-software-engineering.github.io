@@ -32,7 +32,7 @@ According to the Software Engineering Code of Ethics and Professional Practice (
     
 8. Self: Software engineers shall participate in lifelong learning regarding the practice of their profession and shall promote an ethical approach to the practice of the profession.
 
-These guiding principles are further broken down in the code into more concise and actionable items.
+These guiding principles are further broken down in the code into more concise and actionable items. Feel free to take a look at them using reference (2) to improve your understanding of ethical behaviour in software engineering.
 
 According to a Fellow article by Brier Cook (3), five tips to help software engineers ensure they behave ethically are:
 
@@ -42,7 +42,7 @@ According to a Fellow article by Brier Cook (3), five tips to help software engi
 
 3. **Avoid biases.**  "Don’t let enthusiasm cloud your judgment!" Always ask for a second opinion on your work to ensure it adheres to the ethical principles of software engineering.
 
-4. **Take accountability for the software.** "As a software engineer, you should aim to advance the integrity and reputation of the profession." Take responsibility for detecting and reolving errors in your software. Take both the successes and failures of your software as your own.
+4. **Take accountability for the software.** "As a software engineer, you should aim to advance the integrity and reputation of the profession." Take responsibility for detecting and resolving errors in your software. Take both the successes and failures of your software as your own.
 
 5. **Act as a responsible citizen.** Be a responsible citizen first and a software engineer second. Only work on projects which you believe to be safe and ethical.
 
@@ -62,7 +62,7 @@ According to a Fellow article by Brier Cook (3), five tips to help software engi
 
 ### Importance of Professionalism in Software Engineering
 
-Professionalism is important in software engineering because it allows you to be respected member of the software developement community. It can allow you to get jobs, stand out at a job and generally to be a person others think of for opportunities. Professional bahaviour also ensures that one is a reliable and respectful co-worker and allows software engineers to foster positive working relationships with others. (4)
+Professionalism is important in software engineering because it allows you to be a respected member of the software development community. It can allow you to get jobs, stand out at a job and generally be a person others think of for opportunities. Professional behaviour also ensures that one is a reliable and respectful co-worker and allows software engineers to foster positive working relationships with others. (4)
 
 # Best Practices for Maintaining a Professional Demeanor in Various Situations
 
@@ -102,7 +102,27 @@ You can find additional professional practices on this website: https://engineer
 
 By implementing these best practices, you can maintain a professional demeanour in various situations, enhancing your reputation as a software engineer and fostering positive relationships with colleagues and clients.
 
-# External resources for professional development
+# Business Communication as it Applies to Professionalism
+
+Another very important professional skill for software engineers is the ability to communicate technical information to a non-technical audience. Often, projects in software engineering will involve stakeholders or managers/team members with varying technical knowledge regarding the product. These folks want to understand the impact that your technical contributions have had on the project, what the new features are and how they work from a user's perspective. Software is not nearly as useful if it cannot be sold to the people who need it, so it is essential to know how to perform business communication with non-technical stakeholders or co-workers.
+
+Here are seven tips from a Lucidchart article (5) on communicating technical information to a non-technical audience:
+
+1. **Know your audience.** Think about who your audience is and what they know. What are their areas of expertise? What is their level of technical knowledge regarding the product in question? Answering these questions will allow you to decide on the nature of the information you should share; how technical can it be and what should it be focused on? It is important to curate the information you share for the people you will be sharing it with. "It’s best to not give the impression that you are oversimplifying for specific members of your audience."
+
+2. **Be attentive to your audience throughout your presentation.** Be observant of body language and the general tone of the room. This will allow you to adapt your presentation to the reaction of your audience members. If feel as though you are losing the attention of the room, it may be time to move on to the next topic, you may have gone into too much depth regarding this topic. If you have many confused faces looking back at you, you may need to dive more deeply into the current subject or re-explain yourself.
+
+3. **Incorporate storytelling when sharing technical information.** "Storytelling is more convincing than facts alone." For audience members who may not be as technically versed, the facts alone may not be convincing enough. Use storytelling to engage your listeners. In general, storytelling is a good idea since it allows you to plant ideas in the minds of the listeners.
+
+4. **Use visuals to explain technical information and processes**. Visualizing your concepts can make them easier to understand. In fact, research suggests that visuals can improve one's ability to synthesize information by 36%.
+
+5. **Avoid technical jargon when possible.** Certain technical jargon may confuse or disengage non-technical members from your presentation. Try to say exactly what you mean instead of using shorthands that are familiar to only other software engineers. This will ensure all audience members benefit in the same way from your presentation.
+
+6. **Focus on impact when explaining technical concepts**. The most important part of your presentation to the non-technical audience members will always be the impact of your work on the business and on the consumers/customers. To them, it does not matter what specific technology was used to decrease the CPU time of the product by 50%. It only matters that the consumer/customer can now enjoy a user experience that is 50% faster or that the business can now make 50% more money. It is not their job to worry about the technical details behind the product, so it is often not relevant to share those details with non-technical stakeholders or co-workers. "Focus on the initiatives and pain points that your audience cares most about, and your interactions will have a much greater impact with executives and other non-technical employees at your organization."
+
+7. **Encourage questions**. Sometimes audience members may be uncomfortable speaking up and asking questions when something is not clear to them during your presentation. "As you go through your presentation, pause and ask, 'Are there any questions?' Create an atmosphere where stakeholders feel comfortable asking for clarification and starting conversations. "
+
+# External Resources for Professional Development
 
 Included in this section is a list of resources of various types that provide interesting insights into the worlds of professionalism and professional development.
 
@@ -121,13 +141,15 @@ https://www.pluralsight.com/blog/it-ops/training-tips-for-it-pros ----- 4 reason
 https://www.podchaser.com/podcasts/software-engineering-daily-62587 ----- Software Engineering Daily - Daily interviews about technical software topics.
 
 ### School Resources:
-The Arts and Science Internship Program (ASIP) can provide materials on how to become a professional software engineer. The resources are not publically accessible on the internet, but computer science students participating in ASIP can reach out to their ambassadors for help in this area. The CSSU also hosts many events or shares information about opportunities/events that may be useful in exapnding one's knowledge about professionalism in software developement.
+The Arts and Science Internship Program (ASIP) can provide materials on how to become a professional software engineer. The resources are not publically accessible on the internet, but computer science students participating in ASIP can reach out to their ambassadors for help in this area. The CSSU also hosts many events or shares information about opportunities/events that may be useful in expanding one's knowledge about professionalism in software development.
 
-# References
-(1) https://en.wikipedia.org/wiki/Software_engineering_professionalism.
+# References for this Wiki Page
+(1) https://en.wikipedia.org/wiki/Software_engineering_professionalism
 
-(2) Don Gotterbarn, Keith Miller, and Simon Rogerson. 1997. Software engineering code of ethics. Commun. ACM 40, 11 (November 1997), 110-118. DOI: 10.1145/265684.265699
+(2) Don Gotterbarn, Keith Miller, and Simon Rogerson. 1997. Software engineering code of ethics. Commun. ACM 40, 11 (November 1997), 110-118. DOI: 10.1145/265684.265699.
 
-(3) https://fellow.app/blog/engineering/engineering-everything-you-need-to-know-about-software-engineering-ethics/.
+(3) https://fellow.app/blog/engineering/engineering-everything-you-need-to-know-about-software-engineering-ethics/
 
 (4) https://www.indeed.com/career-advice/career-development/why-is-professionalism-important
+
+(5) https://www.lucidchart.com/blog/how-to-explain-technical-ideas-to-a-non-technical-audience
