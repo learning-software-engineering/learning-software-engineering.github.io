@@ -39,6 +39,8 @@
 		- Bonus is adjusted by the operating system in every epoch, for each thread
 	- Using Dynamic Priority, the OS will give preference for interactive threads and threads that did not complete in the last epochs, or did not get enough time to run, preventing Starvation
 
+---
+
 ## Thread and Process
 - Multi-Thread
 	- Multithreaded if the tasks share a lot of data
@@ -47,6 +49,8 @@
 - Multi-Process
 	- Security and stability are of higher importance
 	- Tasks are unrelated to each other
+
+---
 
 ## Tread Class
 - Thread class: Encapsulates all thread related functionality
@@ -75,6 +79,8 @@
 		- Return when the thread has terminated
 		- Return if the thread did not terminated under 2 seconds (time limit)
 	- Do not rely on the order of execution
+
+---
 
 ## Performance & Optimizing for Latency
 - Performance criteria / definition
@@ -122,3 +128,50 @@
 		- Each thread is taking task from the queue whenever the thread is available
 		- If all the threads are busy, the tasks stay in the queue and wait for a thread
 		- Fixed Thread Pool executor - create a thread pool with a fix number of threads and comes with a built in queue
+
+---
+
+## Sharing Data Between Threads
+- Stack (exclusive)
+	- Memory region where
+		- Methods are called
+		- Arguments are passed
+		- Local variables are stored
+		- Local primitive types
+		- Local references
+	- Stack + Instruction Pointer = State of each thread's execution
+	- Stack's properties
+		- All variables belong to the thread executing on that stack
+		- Statically allocated when the thread is created
+		- The stack's size is fixed, and relatively small
+		- If our calling hierarchy is too deep, we may get an StackOverflowException (Risky with recursive calls)
+
+- Heap (shared)
+	- All the threads share the data located on the heap, and can access and allocate objects on at any moment
+	- What is allocated on the heap
+		- Objects (anything created with the new operator)
+			- String
+			- Object
+			- Collection
+		- Members of classes (attributes)
+		- Static variables
+	- Heap memory management
+		- governed and managed by Garbage Collector
+		- Object - stay as long as we have a reference to them
+		- Members of classes - exist as long as their parent object exist (same life cycle as their parents)
+		- Static variables - stay forever
+	- References is not Objects
+
+- Resource sharing between threads
+	- Text Editor
+		- UI Thread
+		- Document Saver Thread
+		- Both share the document data
+	- Work Queue Architecture
+		- Work Dispatcher Thread
+		- Queue - backed by a data structure, stored on the heap, shared resources by worker threads
+		- Worker Threads
+	- Database Microservice Architecture
+		- Every request is handled by a different thread
+		- All requests eventually becomes reads or writes from or to the database
+		- The connection to the database is consider shared resource
