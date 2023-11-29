@@ -7,8 +7,6 @@ This comprehensive module aims to provide a deep understanding of building and m
 ## Module Objectives
 - Master serverless architecture principles and their practical applications.
 - Acquire skills in setting up, developing, and deploying Google Cloud Functions.
-- Learn to integrate serverless functions with other Google Cloud services effectively.
-- Understand monitoring, logging, and optimizing serverless applications for performance and cost.
 
 ## Content
 
@@ -200,41 +198,6 @@ Deploying functions effectively is crucial. Here are steps and best practices:
 
 In conclusion, understanding these specifics about Google Cloud Functions helps in making informed decisions about when and why to use them, particularly in scenarios where their unique features and integrations provide advantages over other cloud providers' offerings.
 
-
-### 4. Writing Function Code
-- **Supported Languages**: Overview of languages and runtimes supported, with recommendations based on different use cases.
-- **Function Development**: Step-by-step guide on writing serverless functions, covering a range of scenarios from simple data processing to complex integrations.
-- **Local Testing**: Methods and tools for testing functions locally, including debugging tips.
-
-### 5. Advanced Function Configuration
-- **Environment Variables and Configuration**: Best practices for managing configuration and secrets in a secure manner.
-- **Resource Allocation**: Guidelines on setting memory and timeout configurations for optimal performance and cost.
-- **Security**: Detailed overview of setting up permissions, understanding the security model, and common security best practices in serverless environments.
-
-### 6. Integrating with Google Cloud Services
-- **Using Cloud Storage**: Tutorial on integrating Cloud Storage for data persistence, including reading and writing data.
-- **Event-driven Architecture with Cloud Pub/Sub**: Setting up a Pub/Sub trigger for a function, with a real-world example.
-- **Leveraging Google Cloud APIs**: Guide on enhancing functions with Google Cloud APIs, such as the Vision or Translate APIs, including code samples.
-
-### 7. Monitoring and Logging
-- **Using Google Cloud Monitoring**: Setup and usage instructions for monitoring tools, along with interpreting common metrics.
-- **Effective Logging**: Strategies for implementing logging in serverless applications, including log analysis techniques.
-
-### 8. Best Practices and Performance
-- **Code Efficiency**: Advanced tips for writing efficient serverless code, focusing on performance optimization.
-- **Cost Management**: Detailed strategies for managing and reducing costs associated with serverless functions.
-
-### 9. Capstone Project
-- **Building a Complete Serverless Application**: Comprehensive project that incorporates all the skills learned, with a step-by-step guide to building, deploying, and integrating a serverless application.
-- **Project Challenges**: Discussion on common challenges faced during project development and strategies to overcome them.
-
-### 10. Conclusion and Further Resources
-- **Recap of Key Topics**: Summarization of the key concepts learned throughout the module.
-- **Further Learning**: Curated list of additional resources, including advanced tutorials, community forums, and official Google documentation.
-
-## Assessment and Learning Outcomes
-- **Quizzes**: Regular quizzes with practical and theoretical questions to assess understanding after each major section.
-- **Final Project**: A comprehensive project where learners will develop and deploy a real-world serverless application, demonstrating the full range of skills acquired.
 
 ## Additional Resources
 - [Official Google Cloud Functions Documentation](https://cloud.google.com/functions/docs)
