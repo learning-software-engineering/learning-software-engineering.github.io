@@ -11,13 +11,16 @@
 <!-- intro -->
 With millions of users worldwide, Apple's iOS platform offers a vast audience for your apps, whether you aim to develop utility apps, games, or educational tools. Creating an iOS app not only unlocks the potential to reach a global audience but also provides an opportunity to learn new technologies and design principles. 
 
+Looking into some basics of Xcode and SwiftUI, we'll be diving into the both challenging and rewarding process of building an iOS app from scratch. Through this, we can get a feel for iOS development and learn the ropes around crafting a first product.
+
+
 ## Prerequisites
 <!-- anything the user may need -->
 Before we begin, ensure you have the following:
 
 1. **Apple computer** with latest macOS version.
 2. **Xcode**: Apple's integrated development environment (IDE), available for free from the [Mac App Store](https://apps.apple.com/us/app/xcode/id497799835?mt=12). Used to develop programs in macOS, iOS, iPadOS, watchOS, tvOS, and visionOS.
-3. **Basic programming knowledge**, preferably in Swift.
+3. **Basic programming knowledge**, preferably in Swift, Apple's preferred programming language for iOS.
 
 ## Steps to Creating an iOS App
 ### 1. Setup Your Development Environment
@@ -52,5 +55,7 @@ Developing an iOS app is a process of continuous learning and improvement. This 
 
 ## Additional Resources
 <!-- helpful things for more info? -->
-- Apple Developer Documentation
-- Swift Programming Language Guide
+Note that there are lots of online courses and tutorials about iOS development. Some may be perhaps more specific/well-suited to your project goals, and are great resources to consult as well.
+
+- [Apple Developer Documentation](https://developer.apple.com/documentation)
+- [Swift Programming Language Guide](https://docs.swift.org/swift-book)
