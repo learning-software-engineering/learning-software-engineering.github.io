@@ -2,7 +2,7 @@
 
 ## Table of contents
 ### [Introduction](#what-is-reactstrap?-1)
-### [What is Bootstrap](#what-is-reactstrap?-1)
+### [What is Reactstrap](#what-is-reactstrap?-1)
 ### [Where to begin](#where-to-begin-1)
 
 ## Preface
