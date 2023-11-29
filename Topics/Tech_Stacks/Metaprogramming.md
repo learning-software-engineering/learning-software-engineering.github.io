@@ -4,7 +4,8 @@ in Python to create a simple server architecture for handling messages between c
 The core concept involves using a base class, Message, 
 from which all specific message types inherit. Metaprogramming
 techniques are employed to dynamically generate JSON serialization/deserialization methods, enabling seamless
-communication between the server and clients.
+communication between the server and clients. Addiontally every Message class is in of itself a pydantic data class. Which means that it has
+all of the data validation capabilities that Pydantic has.
 
 ### JSON Schema
 
@@ -141,10 +142,10 @@ class SignInResponse(Message):
     error_message: Optional[str] = None
 ```
 
-### why you want to do this.
+### Why you should use this architecture.
 
-While there are many frameworks that do things like this for you. I think there are many advantages to doing it yourself.
-Addiotionally meta programming in python is incredibly powerful and can be used to do many things.
+While there are many frameworks that do things like this for you (see flask and django). I think there are many advantages to doing it yourself.
+Additionally meta programming in python is an incredibly powerful and can be used to do many things.
 Even if you won't use it for this specific purpose. I think it is a good thing to know about.
 
 ### further readings.
