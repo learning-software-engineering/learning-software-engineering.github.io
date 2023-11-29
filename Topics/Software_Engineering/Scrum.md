@@ -65,7 +65,7 @@ The scrum framework incorporates regular meetings and events that teams perform 
     - The standup is a regularly scheduled meeting in which members of the team will update members on their progress and mention blockers they are facing with their work.
 - Sprint review:
     - This occurs at the end of the sprint, where the team meets to demo the end product and showcase the completed sprint backlog items.
-- Sprint retrospective: 
+- [Sprint retrospective](./Retro.md):
     - Also occurring at the end of the sprint, the retro is where the team discusses the aspects of the sprint that worked and parts that could use improvement.
     - This builds in feedback and continual improvement of processes in the scrum framework.
 
