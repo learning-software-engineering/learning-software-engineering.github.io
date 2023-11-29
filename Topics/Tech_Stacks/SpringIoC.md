@@ -53,6 +53,79 @@ This setup leads to a design where the Controller doesn't need to know how to cr
 need to know how to create a Repository. The IoC container handles these responsibilities, leading to more modular,
 testable, and maintainable code.
 
+## Coding Example:
+
+### Example Classes:
+
+#### 1. Controller Class:
+
+```java
+public class MyController {
+    private MyService myService;
+
+    // Constructor injection
+    @Autowired
+    public MyController(MyService myService) {
+        this.myService = myService;
+    }
+
+    public void doSomething() {
+        System.out.println(myService.serve());
+    }
+}
+```
+
+#### 2. Service Class:
+
+```java
+public class MyService {
+    public String serve() {
+        return "Service Method Called";
+    }
+}
+```
+
+### Spring Configuration:
+
+You can define beans and their dependencies in an XML configuration file or via Java-based configuration:
+
+- #### XML Configuration Example:
+
+```xml
+
+<beans xmlns="http://www.springframework.org/schema/beans">
+    <bean id="myService" class="com.example.MyService"/>
+    <bean id="myController" class="com.example.MyController">
+        <constructor-arg ref="myService"/>
+    </bean>
+</beans>
+```
+
+- #### Java-based Configuration Example:
+
+```java
+@Configuration
+public class AppConfig {
+    @Bean
+    public MyService myService() {
+        return new MyService();
+    }
+
+    @Bean
+    public MyController myController() {
+        return new MyController(myService());
+    }
+}
+```
+
+### Running the Application:
+
+When the application runs, Spring's IoC container automatically creates and injects the MyService bean into the
+MyController bean. You can then call methods on MyController, and it will use MyService as configured.
+
+This code demonstrates how Spring manages object creation and dependency injection, abstracting away the boilerplate
+code needed to instantiate and manage dependencies manually.
+
 ## Conclusion
 
 Spring's IoC container is a powerful tool that aids in managing complex dependencies in modern applications. It
