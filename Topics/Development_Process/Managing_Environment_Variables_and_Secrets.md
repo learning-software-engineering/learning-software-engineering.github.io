@@ -5,6 +5,7 @@
 In this guide, we'll explore how to effectively manage environment variables and secrets. This is crucial for maintaining security and flexibility in different environments like development, testing, and production. We will be using the Spring framework as a running practical example.
 
 ## Table of Contents
+
 - [Introduction](#introduction)
 - [Understanding Environment Variables](#what-are-environment-variables)
 - [Securing Secrets](#securing-secrets)
@@ -135,8 +136,8 @@ Although environment variables are very useful for keeping our secrets safe and 
 
 1. **Spring Framework Documentation**: A comprehensive resource for all features and capabilities of the Spring framework. [Spring Documentation](https://docs.spring.io/spring-framework/docs/current/reference/html/)
 2. **Environment Variables in Cloud-Native Architectures**: Understand how environment variables are managed in cloud-native applications. [The Twelve-Factor App](https://12factor.net/config)
-3. **Securing Spring Boot Applications**: A detailed guide on securing Spring Boot applications, including managing secrets. [Baeldung - Spring Security](https://www.baeldung.com/spring-security-tutorial)
+3. **Securing Spring Boot Applications**: A detailed guide on securing Spring Boot applications, including managing secrets. [Baeldung - Spring Security](https://spring.io/guides/gs/securing-web/)
 4. **Spring Boot Profiles and Configuration Management**: Learn in-depth about profile-based configurations in Spring Boot. [Baeldung - Spring Profiles](https://www.baeldung.com/spring-profiles)
-5. **Using HashiCorp Vault with Spring**: A guide to integrating Spring applications with HashiCorp Vault for secret management. [Spring Vault Documentation](https://docs.spring.io/spring-vault/docs/current/reference/html/)
-6. **Jasypt for Encryption in Spring Applications**: Understanding property encryption in Spring using Jasypt. [Jasypt Integration](https://www.jasypt.org/spring-boot.html)
-7. **Continuous Integration and Deployment Best Practices**: Insights into CI/CD pipelines and environment variable management. [CI/CD Best Practices](https://about.gitlab.com/topics/ci-cd/ci-cd-best-practices/)
+5. **Using HashiCorp Vault with Spring**: A guide to integrating Spring applications with HashiCorp Vault for secret management. [Spring Vault Documentation](https://spring.io/projects/spring-vault)
+6. **Jasypt for Encryption in Spring Applications**: Understanding property encryption in Spring using Jasypt. [Jasypt Integration](https://www.baeldung.com/spring-boot-jasypt)
+7. **Continuous Integration and Deployment Best Practices**: Insights into CI/CD pipelines and environment variable management. [CI/CD Best Practices](https://www.jetbrains.com/teamcity/ci-cd-guide/ci-cd-best-practices/)
