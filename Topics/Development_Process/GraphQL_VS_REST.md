@@ -15,9 +15,9 @@
 
 ## Overview & Motivation
 ### What is an API?
-An API is an **application programming interface**, or in simpler words, a way for two pieces of software to communicate with one another.
+An API is an **application programming interface**, or in simpler words, a way for two pieces of software to communicate with one another. For example, every time you interact with Google's website, an API is being called in the background to get your search result data.
 
-On this page, we will refer to things called `endpoints`. These are basically access ways for our API - you use these endpoints to communicate with the software.
+On this page, we will refer to things called `endpoints`. These are basically access ways for our API - you use these endpoints to communicate with the software. For example, when you search something on Google, their `/search` API endpoint is used to access the actual search API.
 
 ### Why do we need APIs?
 Without APIs, there would be no way for software to communicate between one another. In fact, even within the same project, different components may have APIs between them to facilitate communication. Without APIs, software would never be able to interact with anything. Even something as simple as loading Google's webpage deals with many dozens of APIs without you knowing! 
