@@ -119,14 +119,16 @@ As stated in the article, slip-type mistakes often happen when the user knows ho
 
 - Choose Good Defaults: Based on established user stories, we can offer defaults that fit an expected user requirement. The user will not need to specify all information if they use this default, eliminating the potential for error. For example, a website for booking restaurant reservations may suggest available timeslots.
 
-- Use Forgiving Formatting: "Some tasks really do require users to type very detailed or precise information, but forcing people to provide this information in a very specific format can be at odds with good usability practices: If you are asking users to input numerical information into a form, be flexible, and format that information in a way that is easily scannable (by humans, not machines) in order to prevent mistakes." (9) We may format user input automatically, or sanitize user input, or provide clear restrictions.
+- Use Forgiving Formatting: "Some tasks really do require users to type very detailed or precise information, but forcing people to provide this information in a very specific format can be at odds with good usability practices: If you are asking users to input numerical information into a form, be flexible, and format that information in a way that is easily scannable (by humans, not machines) in order to prevent mistakes. (9)"  We may format user input automatically, or sanitize user input, or provide clear restrictions.
 
 Reducing Mistakes:
 
-When users interact with an application, they have a goal they want to achieve. Based on the user's understanding of how the system operates, the user forms a plan. Then they take action based on this plan, and see whether their goal has been achieved. Mistakes occur when there is a mismatch between user understanding of the software and how the software actually works, leading the user to create a plan that results in an unexpected outcome (10). Generally, to reduce mistakes it is necessary to both convey the designer's model of the application to the user and to design the application in such a way that it is intuitive and easy to learn.
+When users interact with an application, they have a goal they want to achieve. Based on the user's understanding of how the system operates, the user forms a plan. Then they take action based on this plan, and see whether their goal has been achieved.
 
+Mistakes occur when there is a mismatch between user understanding of the software and how the software actually works, leading the user to create a plan that results in an unexpected outcome (10). 
 
-**Example:** 
+Generally, it is necessary to both convey the designer's model of the application to the user and to design the application in such a way that it is intuitive and easy to learn. Providing clear instructions to users will reduce the likelihood of mistakes.
+
 
 ### **6: Recognition rather than recall**
 Minimize the user having to memorize and intake a lot of information by making objects, actions, and options clearly visible. The user should not have to remember how to get from one point of the application to another. Instructions for how to use the system should be easily accessible and visible as well, if appropriate. 
@@ -168,8 +170,7 @@ __How can we implement this?__
 
 - However, excessive duplication also results in inefficiency (12). It is important to study how the user approaches tasks and strike the right balance between flexibility and overduplication. For instance, an email program with four shortcuts to create a new email is overduplicated. 
 
-**Example:** The popular version control software GitHub supports a powerful command-line interface for advanced users or users more familiar with CLIs, as well as a GUI, GitHub Desktop, which newer users may find more intuitive.
-
+**Example:** The popular version control software GitHub supports a powerful command-line interface for advanced users or users more familiar with CLIs, as well as a GUI application GitHub Desktop, which newer users may find more intuitive. Thus, both experienced users and new users are catered to.
 
 
 ### **8: Aesthetic and minimalist design**
@@ -206,13 +207,17 @@ Provide accurate and straightforward error messages to users so they are able to
 __Why is this important?__
 This particular heuristic's importance is self-evident. We discussed earlier how users make 'slips' and 'mistakes'— errors in software operation— and how to build a system that tolerates these errors and makes them less likely. However, errors will still occur (as no useful system can be truly foolproof) and cause problems that must be resolved. 
 
-A software application can prevent some errors from being made, but can't fix most errors for the user (at least not yet). It is up to the user to recognize and rectify the error made. For the end user, if it's evident what the actual problem is then they can find a solution. Furthermore, if we as developers can guess at what the error is likely to be, we can provide actionable tips to fix the problem. Otherwise, if it's not clear what the problem is, the user has too little information to determine their next steps.
+A software application can prevent some errors from being made, but can't fix most errors for the user (at least not yet). It is up to the user to recognize and rectify the error made. For the end user, if it's evident what the actual problem is then they can find a solution. Furthermore, if we as developers can guess at what the error is likely to be, we can provide actionable tips to fix the problem. Otherwise, if it's not clear what the problem is, the user has too little information to determine their next steps (14). 
 
 __How can we implement this?__
 
-- Design clear error messages when problems occur, containing a quick explanation of the problem. When applicable, provide a fast solution.
+- Design clear error messages when problems occur, containing a quick explanation of the problem. When applicable, provide a fast solution. 
 
-- Provide resources and documentation for errors and fixes. In complex software applications this information is not necessarily suitable to be presented directly, in which case we can link the user to a resource page based on the error detected.
+- "Display the error message close to the error's source. Reduce cognitive load by displaying an error indicator adjacent to the interface where the error occurred. Proximity helps users associate the error message content with the interface elements needing attention (14).""\
+
+- Design error messages based on severity. For example, a digital marketplace may provide a small, highlighted warning message when a user-placed order is unlikely to be delivered in the desired timespan; if the user has made a mistake that will impede their progress, a large lightbox or popup dialog will inform them of a more severe problem.
+
+- Provide resources and documentation for errors and fixes. In complex software applications this information is not necessarily suitable to be presented directly, in which case we can link the user to appropriate assistance based on what the error is.
 
 - Provide diagnosis and debugging assistance through self-guided solutions or even a software 'wizard' for common problems.
 
@@ -270,4 +275,4 @@ Heuristics Applied to Everyday Life: https://www.zenhaiku.com/archives/usability
 
 13. Fessenden, T. (2021, January 24). Aesthetic and minimalist design (usability heuristic #8). Nielsen Norman Group. https://www.nngroup.com/articles/aesthetic-minimalist-design/ 
 
-14. 
+14. Neusesser, T. & Sunwall, E. (2023, May 14). Error-message guidelines. Nielsen Norman Group. https://www.nngroup.com/articles/error-message-guidelines/ 
