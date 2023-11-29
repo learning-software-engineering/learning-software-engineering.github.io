@@ -29,6 +29,10 @@
 
 ### [Requirements.txt](./Development_Process/Build_Requirements/Requirements_txt.md)
 
+## Documentation
+
+### [API documentation with SwaggerHub](./Development_Process/Documentation/Swagger_API_Documentation.md)
+
 ## React Testing Library
 
 ### [React Testing Library](./Development_Process/React_Testing_Library.md)
