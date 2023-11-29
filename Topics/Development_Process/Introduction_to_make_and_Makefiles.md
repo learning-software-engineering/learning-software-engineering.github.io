@@ -4,7 +4,7 @@
 
 ### [Introduction](#introduction-1)
 
-### [Basic Makefile Characteristics](#basic-makefile-characteristics-1)
+### [```make``` Basics](#make-basics-1)
 
 ### [Making a Makefile](#making-a-makefile-1)
 
@@ -25,7 +25,7 @@ Before you continue on through this guide you should make sure you have the prer
 
 #### Linux Shell
 
-Makefiles will commonly run Linux shell commands, so a basic understanding of shell commands would be beneficial. Additionally, in order to try out GNU make, you would have to have Linux (or a Unix-like) installed.  
+Makefiles will commonly run Linux shell commands, so a basic understanding of shell commands would be beneficial. Additionally, in order to try out GNU ```make```, you would have to have Linux (or a Unix-like) installed.  
 
 [Shell Command Basics](https://www.geeksforgeeks.org/basic-shell-commands-in-linux/)  
 
@@ -34,7 +34,7 @@ Install Linux:
 - [Using Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install)
 
 #### C Programming and Compilation
-Makefiles are typically used with C/C++ programming, and although they don't necessarily have to be used to compile C/C++ code, for demonstration purposes this guide will use C code. To follow along, make sure you understand how C source code and header files work, as well as the GCC compilation process with object files and executables (very basic use of gcc in this guide).
+Makefiles are typically used with C/C++ programming, and although they don't necessarily have to be used to compile C/C++ code, for demonstration purposes this guide will use C code. To follow along, make sure you understand how C source code and header files work, as well as the ```gcc``` compilation process with object files and executables (very basic use of ```gcc`````` in this guide).
 Below are some resources that can help:  
 - [C Programming](https://www.w3schools.com/c/c_intro.php)  
 - [C Compilation](https://www.geeksforgeeks.org/compiling-a-c-program-behind-the-scenes/)  
@@ -46,12 +46,12 @@ Check ```make``` is installed:
 ```bash
 $ make --version
 ```
-If you get an error then run the following command (installed ```make``` + other essentials like gcc):
+If you get an error then run the following command (installs ```make``` + other essentials like ```gcc```):
 ```bash
 $ sudo apt-get install build-essential
 ```
 
-## Basic Makefile Characteristics
+## ```make``` Basics
 
 #### Target
 
@@ -67,7 +67,7 @@ A recipe is an action that ```make``` will execute for the target it is under. I
 
 #### Rule
 
-Rules put the above together and link together the prerequisites to the target and define the recipes ```make``` will carry out for the designated target. By default, the first target of the first rule in the Makefile will be run by ```make```, other rules would have to be explicitly referenced by ```make target-name```.  
+Rules put the above together and link together the prerequisites to the target and define the recipes ```make``` will carry out for the designated target. By default, the first target of the first rule in the Makefile will be run by the ```make``` command.
 
 Rules are typically defined in this template below:
 <pre>
@@ -92,8 +92,16 @@ Functions can be called to process some argument(s) and substitute some text sim
 
 Functions are typically called in the manner below:
 <pre>
-$(<i>functionname param,param,...</i>)
+$(<i>function-name param,param,...</i>)
 </pre>
+
+#### Running ```make```
+
+GNU ```make``` is normally run in the Linux Shell using the ```make``` command. By default it will search for the file named ```Makefile``` in the directory where the command is run and make the first rule in the file. To specify a rule in the Makefile to make, you would run the ```make``` command and specify the target of the rule:
+
+<pre>
+make <i>target-name</i>
+</pre>.  
 
 ## Making a Makefile
 
@@ -118,7 +126,7 @@ helper.o: helper.c
 	$(CC) -c helper.c
 ```
 
-This example first defines the variable CC to refer to the gcc compiler. Then it writes the rules to build the executable and its prerequisites. If we run we will get the following:
+This example first defines the variable CC to refer to the ```gcc``` compiler. Then it writes the rules to build the executable and its prerequisites. If we run we will get the following:
 
 ```bash
 $ make
@@ -127,7 +135,7 @@ $ make
 >>> gcc -o program main.o helper.o
 ```
 
-Then, when the rule for the target ```program``` is run by default, it will check the prerequisites ```main.o``` and ```helper.o``` and run the rules for those two targets, executing the respective gcc compilation recipes. Once it has completed the prerequisites, it will execute its own gcc compile command. The result is that ```program```, ```main.o```, and ```helper.o``` will be created in the same directory. When the target is a file, like the first three rules above, it will recompile if any of the prerequisites change, i.e. ```main.o``` will recompile if ```main.c``` has changed since the last compilation.  
+Then, when the rule for the target ```program``` is run by default, it will check the prerequisites ```main.o``` and ```helper.o``` and run the rules for those two targets, executing the respective ```gcc``` compilation recipes. Once it has completed the prerequisites, it will execute its own ```gcc`` compile command. The result is that ```program```, ```main.o```, and ```helper.o``` will be created in the same directory. When the target is a file, like the first three rules above, it will recompile if any of the prerequisites change, i.e. ```main.o``` will recompile if ```main.c``` has changed since the last compilation.  
 Then if we run the same command again without changing any of the files, we would get the output:
 
 ```bash
@@ -157,7 +165,7 @@ clean:
 
 #### Variable Assignment
 
-In the above example Makefile, the gcc variable was set with ```CC = gcc```. This is a recursively expanded variable. This would simply evaluate to ```gcc``` when referenced. But if it were to reference another variable, it would expand upon the referenced variable. For example if it were to be written like this:
+In the above example Makefile, the ```gcc``` variable was set with ```CC = gcc```. This is an example of a recursively expanded variable. This would simply evaluate to ```gcc``` when referenced. But if it were to reference another variable, it would expand upon the referenced variable. For example, if it were to be written like this:
 
 ```makefile
 GCC = cc
@@ -165,7 +173,7 @@ CC = $(GCC)
 GCC = gcc
 ```
 
-Then ```$(CC)``` would evaluate to ```gcc```, as it references the ```GCC``` variable, which is redefined to ```gcc```. To avoid this behaviour, which can also end up being slow with more layers, as well as self-reference issues like ``CC = $(CC) -o```, which causes an infinite loop error, simply expanded variables can be used.  
+Then ```$(CC)``` would evaluate to ```gcc```, as it references the ```GCC``` variable, which is redefined to ```gcc```. To avoid this behaviour, which can also end up being slow with more layers, as well as self-reference issues like ```CC = $(CC) -o```, which causes an infinite loop error, simply expanded variables can be used.  
 Simply expanded variables will simply expand any references during assignment and store the value, rather than the reference, aka it stores the values at the time the variable was defined. Simply expanded variables are defined in the following manner:
 
 <pre>
@@ -208,7 +216,7 @@ Instead of manually writing a target for each object file like in the previous s
       <i>...</i>
 </pre>
 
-For example, in the following example, the ```all``` rule would run the corresponding pattern rule for ```objects```, and for each of ```main.o``` and ```helper.o``` in ```objects```, the target pattern would strip out the respective stems ```main``` and ```helper``` and apply it to the prerequisite pattern, resulting in the corresponding prerequisites ```main.c``` and ```helper.c```. Then each rule would be run, and their compile recipe would be executed, producing ```main.o``` and ```helper.o```:
+In the following example, the ```all``` rule would run the corresponding pattern rule for ```objects```, and for each of ```main.o``` and ```helper.o``` in ```objects```, the target pattern would strip out the respective stems ```main``` and ```helper``` and apply it to the prerequisite pattern, resulting in the corresponding prerequisites ```main.c``` and ```helper.c```. Then, each rule would be run, and their compile recipe would be executed, producing ```main.o``` and ```helper.o```:
 
 ```makefile
 OBJECTS = main.o helper.o
@@ -237,7 +245,7 @@ all:
 	@echo Hello world
 ```
 
-Would not produce the second ```@echo Hello World``` command itself and only the output:
+Would not produce the first but not the second ```echo Hello World``` command itself and only the output:
 
 ```bash
 $ make all
@@ -283,7 +291,7 @@ clean:
 	rm -f $(TARGET) $(OBJS)
 ```
 
-In the Makefile above with the same source code files as the simple example before, ```main.c``` and ```helper.c```, we can compile the same program but keeping it more generalized and less hardcoding. First, the ```gcc``` and its flags variables are set, and so is the main target, ```program```. The source files this time are any .c source files in the directory, and the object files all correspond to a source .c file. The ```all``` rule would check the prerequisites ```$(OBJS)``` and go to the generic .o pattern rule, which uses the according .c prerequisite file and compiles them. Instead of the entire ```gcc``` command which can get lengthy and clog up the terminal, especially if we are consistently using the same compile flags, we silently output a simple message saying which file was compiled. The ```clean``` rule would then remove the ```program``` and all object files that were created. An example output of this would be:
+In the Makefile above with the same source code files as the simple example before, ```main.c``` and ```helper.c```, we can compile the same program but keeping it more generalized with less hardcoding. First, the ```gcc``` and its flags variables are set, and so is the main target, ```program```. The source files this time are any .c source files in the directory, and the object files all correspond to a source .c file. The ```all``` rule would check the prerequisites ```$(OBJS)``` and go to the generic .o pattern rule, which uses the according .c prerequisite file and compiles them. Instead of the entire ```gcc``` command which can get lengthy and clog up the shell, especially if we know we are consistently using the same compile flags, we silently output a simple message saying which file was compiled. The ```clean``` rule would then remove the ```program``` and all object files that were created. An example output of this would be:
 
 ```bash
 $ make
@@ -329,7 +337,7 @@ You can also export all the variables in the current Makefile by not specifying 
 export
 </pre>
 
-If you want to specify any variables to not be exported, you can use ```unexport```:
+Additionally, if you want to specify any variables to not be exported, you can use ```unexport```:
 
 <pre>
 unexport <i>variable ...</i>
@@ -407,6 +415,7 @@ clean:
 ```
 
 In the above example top directory Makefile, first the working directory is stored into variable ```MAKE_DIR```, and then used to create paths to the subdirectories. These subdirectories are all appended to the ```INC_SRCH_PATH``` variable. The ```CC``` variable is set to ```gcc```, and the ```CFLAGS``` variable appends ```INC_SRCH_PATH``` and some ```gcc``` flags. The ```MAKE_DIR CC CFLAGS INC_SRCH_PATH``` variables are then set to be exported to any sub-```make```s. The ```all``` and ```clean``` rules call sub-```make```s to the ```main``` and ```debug``` directories.  
+
 In the Makefile in the ```main``` directory, the ```DEMO``` target program is built with the prerequisites of any object files in corresponding to the C source files, which need to be compiled first. We can see that exported```CFLAGS``` variable can be useful to pass in the paths for input links between the source files and the same flags consistently in the project, so ```gcc``` can compile properly.  
 
 Some example output from the top directory would be:
@@ -427,7 +436,7 @@ $ make
 #### Advantages
 - ```make``` is everlasting: It was first developed in 1976 and it's not going away any time soon. It provides a simple, standardized way to write projects that has stood the test of time, and is still widely used.
 - ```make``` is platform independent: Makefiles specify the commands needed to build targets, and the commands themselves are usually shell commands or calls to compilers and interpreters that can be execute on different platforms. Additionally, with variables you can define commands for compilers and tools, as well as using conditional statements to change them based on environment variables or other conditions, making it easy to to switch compilers/tools based on the platform/environment.
-- ```make``` make encourages you to record your code: The modular nature of Makefiles encourages you to record each step you make, enabling you and others to reliably reproduce the entire process. You are essentially mapping out a directed acyclic graph of your project with Makefiles.
+- ```make``` encourages you to record your code: The modular nature of Makefiles encourages you to record each step you make, enabling you and others to reliably reproduce the entire process. You are essentially mapping out a directed acyclic graph of your project with Makefiles.
 - ```make``` allows for easy and reliable CI: By providing a Makefile with common ```make``` targets like ```build```, ```compile```, ```lint```, and ```test```, you can start writing your project  Your CI will execute your ```make``` targets, deleting your generated files and rebuilding from scratch to test. You can then utilize other more modern dependency managers or script runners under the hood.
 - ```make``` functions off of timestamps: timestamps are built into approximately every filesystem, so you don't need to store extra metadata or do any further checks.
 
@@ -446,14 +455,15 @@ $ make
 
 ## Footnotes
 
-<a name="1"></a> [↩](#Recipe)1. The prefix for recipes can be changed by changing the .RECIPEPREFIX variable, for example the following is a valid makefile:
-```
+<a name="1"></a> [↩](#Recipe)1. The prefix for recipes can be changed by changing the ```.RECIPEPREFIX``` variable, for example the following is a valid makefile:
+```makefile
 .RECIPEPREFIX = ~
 hello:
 ~ @echo hello world
 ```
 
-<a name="2"></a> [↩](#Running-a-Simple-Makefile)2. If you want to call make on a file with a different name, use the ```-f``` option, e.g. calling ```make``` on a file named foo.mk:
-```
+<a name="2"></a> [↩](#Running-a-Simple-Makefile)2. If you want to call ```make``` on a file with a different name, use the ```-f``` option, e.g. calling ```make``` on a file named foo.mk:
+
+```bash
 make -f foo.mk
 ```
