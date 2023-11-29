@@ -90,3 +90,68 @@ Svelte offers a unique approach to building web applications with its compile-ti
 - Explore Svelte's official tutorials and examples.
 - Build a simple project to get hands-on experience.
 - Join the Svelte community for support and to stay updated.
+
+# Svelte Lifecycle Functions Guide (Extra Material)
+
+Svelte offers several lifecycle functions that help manage different stages in the lifecycle of a component. These functions are crucial for tasks like resource management, initializing functionality, and cleaning up before a component is destroyed.
+
+## onMount
+
+### Description
+`onMount` is used for code that needs to run after the component is initially rendered to the DOM. It's especially useful for tasks that require DOM elements to be present.
+
+### Example Usage
+
+    import { onMount } from 'svelte';
+
+    onMount(() => {
+        // Code that runs after the component is mounted
+    });
+
+## onDestroy
+
+### Description
+`onDestroy` is invoked right before the component is removed from the DOM. It's the perfect spot for cleaning up to prevent memory leaks, such as removing event listeners or canceling subscriptions.
+
+### Example Usage
+
+    import { onDestroy } from 'svelte';
+
+    onDestroy(() => {
+        // Cleanup code
+    });
+
+## beforeUpdate and afterUpdate
+
+### Description
+- `beforeUpdate` runs before the component's DOM is updated in response to state changes.
+- `afterUpdate` is called after the component's DOM has been updated.
+
+These functions are great for tasks that need to be executed right before or after the DOM updates, like recalculating layout or reading DOM measurements.
+
+### Example Usage
+
+    import { beforeUpdate, afterUpdate } from 'svelte';
+
+    beforeUpdate(() => {
+        // Code that runs before DOM updates
+    });
+
+    afterUpdate(() => {
+        // Code that runs after DOM updates
+    });
+
+## tick
+
+### Description
+`tick` is a function that returns a promise. This promise resolves after Svelte has made changes to the DOM in response to state changes. It's useful for coordinating DOM updates with asynchronous operations.
+
+### Example Usage
+
+    import { tick } from 'svelte';
+
+    async function updateAndAct() {
+        // Make state changes
+        await tick();
+        // Code that runs after the DOM has updated
+    }
