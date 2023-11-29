@@ -59,7 +59,7 @@ Selenium has uses within automating browser interactivity, such as extracting in
     Now, download the appropriate Chrome WebDriver version matching your Chrome browser version and place it in the project directory. You can find this in Google Chrome under `settings > about chrome` as shown.
     <img width="692" alt="image" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/76736219/3528648f-925f-49e4-9702-44da26f1d671">
 
-    Alternatively, you can download chrome [here](https://www.google.com/intl/en_ca/chrome/). Or, for Linux users you can use either _wget_ `wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+    Alternatively, you can download Chrome [here](https://www.google.com/intl/en_ca/chrome/). Or, for Linux users, you can use either _wget_ `wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 ` or _dpkg_ `sudo dpkg -i google-chrome-stable_current_amd64.deb`.
 
 
@@ -85,13 +85,37 @@ Typically, you would use a _try, except, finally_ statement to execute the code,
 
 ## Automation
 
-The Selenium WebDriver can be used for many purposes, including logging in to websites, filling out forms, and clicking buttons. For example, if there is a particular task that you need to do every day that requires you to login to a website, and then navigate to a certian page this is a simple task in Selenium. You can then automate this script to run at a given time interval on a linux server using `cron`. For example, you could include this following line your _crontab_ to schedule the script to run at midnight everyday:
+The Selenium WebDriver can be used for many purposes, including logging in to websites, filling out forms, and clicking buttons. For example, if there is a particular task that you need to do every day that requires you to log in to a website, and then navigate to a certain page this is a simple task in Selenium. You can then automate this script to run at a given time interval on a Linux server using `cron`. For example, you could include the following line in your _crontab_ to schedule the script to run at midnight every day:
 
 ```bash
 0 0 * * * python3 /path/to/selenium/script.py
 ```
 
-You can learn more about what the numbers and wildcards mean [here](https://crontab.guru/once-a-day), or you can check out the [linux man page](https://man7.org/linux/man-pages/man5/crontab.5.html) to learn more about cron.
+You can learn more about what the numbers and wildcards mean [here](https://crontab.guru/once-a-day), or you can check out the [linux man page](https://man7.org/linux/man-pages/man5/crontab.5.html) to learn more about corn.
+
+[This](https://github.com/jfitzgerald1126/Automated-Web-Intereaction) is a small program I made to log in to a website and click a certain button. 
+
+```python
+from login_utils import login
+from config_utils import load_config
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+
+driver = login()
+    config = load_config()
+
+    # Wait for the button element to be clickable
+    button_to_click = WebDriverWait(driver, 10).until(
+        EC.element_to_be_clickable((By.XPATH, config['button_to_click_xpath']))
+    )
+
+button_to_click.click()
+
+driver.quit()
+```
+
+In this code, `login_utils` inputs a specified username and password combination, and then returns the driver after logging in, and  `config_utils` serves to load the _xpath_ to the button to click. _Xpath_ is a part of the _XML Path Language_ and it is used to identify elements in an XML document and also works with HTML documents. The `WebDriverWait` function waits until the element is loaded and clickable, with a timeout of 10 seconds. Once the desired button is selected, you can just call the `.click()` method on it to simulate a user click. Once you are finished, simply close the WebDriver with `driver.quit()`.
 
 ## Acknowledgements:
 - **Selenium**: Selenium is an open-source framework for automating browser interactions. To learn more about Selenium and its capabilities, please visit the official Selenium website: [Selenium Documentation](https://www.selenium.dev/documentation/en/)
