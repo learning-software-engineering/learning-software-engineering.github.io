@@ -9,7 +9,7 @@ First, we should consider the event of inconsistent styling. This can mean not u
 
 ### How to choose which style is best for me?
 
-Now that we know how important coding style is important, how do we choose one? Luckily you don't have to invent this yourself. There are different guides to styling depending on factors such as coding language. Below, I'll highlight common naming conventions and commenting styles.
+Now that we know how important coding style is, how do we choose one? Luckily you don't have to invent this yourself. There are different guides to styling depending on factors such as coding language. Below, I'll highlight common naming conventions and commenting styles.
 
 #### Naming conventions
 There are many different naming conventions which you can learn [here](https://www.freecodecamp.org/news/programming-naming-conventions-explained/). However, I'll below popular naming conventions for python and java:
