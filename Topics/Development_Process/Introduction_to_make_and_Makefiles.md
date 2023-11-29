@@ -4,7 +4,7 @@
 
 ### [Introduction](#introduction-1)
 
-### [```make``` Basics](#make-basics-1)
+### [```make``` and Makefile Basics](#make-and-Makefile-basics-1)
 
 ### [Making a Makefile](#making-a-makefile-1)
 
@@ -51,7 +51,7 @@ If you get an error then run the following command (installs ```make``` + other 
 $ sudo apt-get install build-essential
 ```
 
-## ```make``` Basics
+## ```make``` and Makefile Basics
 
 #### Target
 
