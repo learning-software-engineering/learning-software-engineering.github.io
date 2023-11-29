@@ -61,7 +61,9 @@ Letting your emotions overwhelm you can also hinder effective communication in t
 
 [Statistics on why effective communication is important in the workplace.](https://www.linkedin.com/pulse/statistics-why-effective-communication-important-/?trk=pulse-article_more-articles_related-content-card)
 
-Asking For Help
+## Asking For Help
+
+### With a Coding Problem
 
 A new environment produces new challenges. It may be the case that you are lost and are unsure of how to proceed. Here is a list of things you can do, as an individual and as a team member, to get yourself back on track.
 
@@ -84,7 +86,8 @@ It is important to remember that you have the most experience with your own code
 With all the previous steps complete, you can now ask a well-defined specific question, if you have not already solved your problem. With a fresh set of eyes on a small amount of code, it will be much easier to find a solution compared to asking for help combing through hundreds of lines of code.
 
 Remember, asking for help is not a sign of weakness. With different individuals at different levels of experience, a hard problem for you may be an issue that another individual has already experienced. So if you are stuck, it is better to ask for help than to do nothing at all.
-Asking For Help (to start)
+
+### With Getting Started
 
 A related but different issue that may arise is that you do not know how to begin. Your initial attempts may be futile and you do not know how you should proceed to contribute to the overwhelming task at hand.
 
@@ -102,7 +105,7 @@ With the ability to articulate what you do not understand, you can now ask your 
 
 Remember, early on in the project may be the least stressful time. So, it is the best time to ask for help and learn the skills needed to thrive on your project. By starting, you gain the ability to understand where you went wrong once you ask for help, rather than being confused when your peers try to help you learn.
 
-Things to Avoid
+### Things to Avoid
 
 1) Do not ask questions in an attempt to be lazy
 
@@ -114,7 +117,7 @@ Remember that your peers may be learning this for the first time as well. Be pat
 
 Summary
 
-In short, navigating the challenges of a new environment, especially in software engineering, demands a proactive approach when seeking help. It is important to recognize that asking for help is a strength, not a weakness, and a learning process for all parties involved. It is a chance to foster patience and collaboration, which will ensure will ensure the most optimal growth and success.
+In short, navigating the challenges of a new environment, especially in software engineering, demands a proactive approach when seeking help. It is important to recognize that asking for help is a strength, not a weakness, and a learning process for all parties involved. It is a chance to foster patience and collaboration, which will ensure will ensure the most optimal growth and success
 
 
 ## Conflict Resolution
