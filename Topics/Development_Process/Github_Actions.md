@@ -2,7 +2,7 @@
 GitHub Actions is a powerful workflow automation tool that allows you to automate your software development workflows directly in your GitHub repository. In this guide, we'll walk through the process of setting up automated testing and deployment for a Python project using GitHub Actions and SSH.
 
 
-# Table of Contents
+## Table of Contents
 - [Table of Contents](#table-of-contents)
 - [Prerequisites](#prerequisites)
 - [Setting up the remote server](#setting-up-the-remote-server)
