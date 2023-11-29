@@ -26,6 +26,7 @@
 ### [Learning Cypress](./Tech_Stacks/Cypress.md)
 ### [Using the VertexAI SDK](./Tech_Stacks/VertexAI.md)
 ### [Establishing Peer to Peer Connection with WebRTC](./Tech_Stacks/WebRTC.md)
+### [Asynchronous External API Interface in Python App](./Tech_Stacks/Async_External_API_Interface_Python.md)
 ### [Introduction to Unity Basics](./Tech_Stacks/Unity_Intro.md)
 ### [A Beginner's Guide for Unity UI Design](./Tech_Stacks/Unity_UI.md)
 ### [Learning JSON-RPC](./Tech_Stacks/JSONRPC.md)
