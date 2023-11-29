@@ -24,11 +24,12 @@ There are many different naming conventions which you can learn [here](https://w
 When commenting, you want to consider a few things:
 - Redundancy. If the code is self-explanatory, it most likely does not need a comment attached to it. Your comments should not add noise to your code.
 - Usefulness. Commenting should add value to your code. It should either explain logic, or add extra information you might not get from the code itself.
-- Descriptive. TODO comments should properly outline what needs to be done. It should not be too vague.
+- Descriptive. TODO comments should properly outline what needs to be done. It should not be too vague. It should also be easy to read and understand not just for you, but for other people as well.
+- Functional. Comments are not meant store old pieces of code! That's what git is for. 
   
 ### How do I enforce my styling decisions?
 
-Other than remembering styling while working, depending on the language you are working with, you can find linters that will enforce specific coding standards (for example, spacing between functions, naming, etc.). Think of a linter as grammarly for coding!
+Other than remembering styling while working, depending on the language you are working with, you can find linters that will enforce specific coding standards (for example, spacing between functions, naming, etc.). Think of a linter as Grammarly for coding!
 
 ### Resources to learn more.
 - [Coding and Comment Style](https://mitcommlab.mit.edu/broad/commkit/coding-and-comment-style/#:~:text=Your%20code%20will%20only%20be,be%20consistent%20with%20field%20conventions.)
