@@ -43,12 +43,9 @@ There are also Different types of Software QA Engineers, each dedicated to a dif
 - Manual QA Tester: Manual QA testers are responsible for manually executing test cases, and play a crucial role in the initial stages of testing.
 - Automation QA Engineer: Automation QA engineers create and maintain automated tests. With these automated tools to perform repetitive tasks, they can easily ensure the reliability of software across multiple iterations.
 - Performance Testing Engineer: Performance testing engineers need to evaluate the efficiency of software in different conditions.
-- Security Testing Engineer: Security testing engineers focus on identifying possible security breaches and ensuring that the software is resistant to unauthorized access and protects sensitive data.
 - Web QA Engineer: Web QA engineers focus on testing web applications and websites. They make sure that the application works well across different web browsers (cross-browser compatibility), different devices (cross-device compatibility), and different window sizes (responsiveness).
 - Accessibility Testing Engineer: Accessibility testing engineers ensure that software applications can be accessed by people with different kinds of disabilities.
-- Regulatory Compliance QA Engineer: In industries with strict regulatory requirements, such as healthcare or finance, they ensure that the software meets the standards and regulations.
 - Continuous Integration/Continuous Deployment QA Engineer (CI/CD QA Engineers): CI/CD QA engineers focus on integrating quality assurance processes into automated build and deployment pipelines so that the tests can be conducted rapidly.
-- Data Quality Assurance Engineer: Data QA engineers ensure the accuracy, integrity, and security of the data used in the software.
 
 As we can see from above, QA engineers are more than simply writing automated test cases and doing manual tests one after another. Sometimes they require more knowledge than simply knowing how to code, like the accessibility testing engineers. They are also an important part of delivering a reliable and high-quality product.
 
@@ -72,7 +69,9 @@ There are many reasons why software testing is important. This blog [7 reasons w
 
 Most CS undergrad students might have only written automated tests before, so they might know test cases only as they are in unit tests. However, in software development, test cases are not only for automated tests. They are more often used in manual tests. Normally, we design test cases for manual tests and possibly convert them into automated tests later if needed.
 
-[This article](https://www.coursera.org/articles/how-to-write-test-cases) describes how to write test cases. It describes a test case vs test scenario, the various types of test cases and then, more importantly, a 10-step guide on how to write test cases:
+[This article](https://www.coursera.org/articles/how-to-write-test-cases) describes how to write test cases. It describes a test case vs test scenario, the various types of test cases and how to write test cases. Here, we will briefly go through the most important things covered in the article. 
+
+First of all, the article provided a very comprehensive 10-step guide for writing test cases:
 
 1. Define the area you want to cover from the test scenario.
 2. Ensure the test case is easy for testers to understand and execute.
