@@ -1,6 +1,24 @@
 # Automating Python Testing and Deployment with GitHub Actions and SSH
 GitHub Actions is a powerful workflow automation tool that allows you to automate your software development workflows directly in your GitHub repository. In this guide, we'll walk through the process of setting up automated testing and deployment for a Python project using GitHub Actions and SSH.
 
+
+# Table of Contents
+- [Table of Contents](#table-of-contents)
+- [Prerequisites](#prerequisites)
+- [Setting up the remote server](#setting-up-the-remote-server)
+    - [Installing Dependencies](#installing-dependencies)
+    - [Cloning the project](#cloning-the-project)
+    - [Creating a virtual environment](#creating-a-virtual-environment)
+    - [Deployment Script](#deployment-script)
+        - [What is tmux and why do we need it?](#what-is-tmux-and-why-do-we-need-it)
+- [Setting up the GitHub repository](#setting-up-the-github-repository)
+    - [Secrets](#secrets)
+    - [Workflow](#workflow)
+- [Testing the workflow](#testing-the-workflow)
+- [Further Reading](#further-reading)
+- [Conclusion](#conclusion)
+
+
 ## Prerequisites
 Before you start, ensure you have the following:
 - A python project hosted on GitHub.
@@ -87,7 +105,7 @@ First, we'll need to add our SSH credentials to the repository as secrets. This 
 - `SSH_PRIVATE_KEY`: The private key for the remote server.
 
 ### Workflow
-Next, we'll need to create a workflow file. This file will contain the steps that GitHub Actions will run when we push to the repository. To do this, create a new file named `.github/workflows/main.yml` and add the following code:
+Next, we'll need to create a workflow file. This is a [YAML file](https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html) that tells GitHub Actions what to do when certain events occur. To do this, create a new file named `.github/workflows/main.yml` and add the following code:
 
 ```yaml
 name: Test and Deploy
@@ -125,13 +143,16 @@ jobs:
 ```
 
 This workflow will run the following steps when we push to the main branch:
-1) Install Python 3.10
+1) Install Python 3.10 in a temporary environment
 2) Install the project's dependencies from `requirements.txt`
 3) Run the project's tests using pytest
 4) Run the `deploy.sh` script on the remote server using SSH if the tests pass.
 
 ## Testing the workflow
-Now that we've set up the workflow, we'll need to test it to make sure it works. To do this, push a commit to the main branch and check the Actions tab in the repository. If everything worked correctly, you should see a green checkmark next to the workflow name. If not, check the logs for the workflow to see what went wrong.
+Now that we've set up the workflow, we'll need to test it to make sure it works. To do this, push a commit to the main branch and check the Actions tab in the repository. If everything worked correctly, you should see a green checkmark next to the commit message like in [this image](https://i.imgur.com/PYAgSb9.png). If not, check the logs for the workflow to see what went wrong by clicking the commit message and then build.
+
+## Further Reading
+If you'd like to learn more about GitHub Actions, check out the [official documentation](https://docs.github.com/en/actions).
 
 ## Conclusion
 In this guide, we walked through the process of setting up automated testing and deployment for a Python project using GitHub Actions and SSH. We also tested the workflow to make sure it works correctly.
