@@ -1,4 +1,9 @@
-# Learning Apache Kafka
+# Getting Started With Apache Kafka
+
+## Table of Contents
+### [Introduction](#introduction)
+### [Why Kafka](#why-kafka)
+### [Quick Start](#quick-start)
 
 ## Introduction
 This article will help readers understand what Kafka is, why it is used, and how it works. **Apache Kafka**, an open-source stream-processing software platform developed by the Apache Software Foundation, written in Scala and Java. Designed with the fundamental premise of enabling high-throughput, fault-tolerant, publish-subscribe messaging systems, Kafka has become an essential tool in the handling of real-time data feeds.
