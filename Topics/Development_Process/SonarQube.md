@@ -36,13 +36,16 @@
 
 [SonarLint](https://www.sonarsource.com/products/sonarlint/), alongside SonarQube, exemplifies this process. It initiates within your IDE, detecting issues as you code. Serving as an advanced linter, SonarLint acts as your primary safeguard. Once coding is complete and you open a PR, it triggers your CI workflow, prompting an automatic analysis of your PR in SonarQube.
 
-<img src="https://assets-eu-01.kc-usercontent.com/ab5c5eb8-73f9-0195-1d55-9cb00242be02/4843cee9-af50-4284-8981-a8cdb4836c65/body-2548db75-1761-4a3b-bab7-5acd02bd5658_Diagram%2Bof%2BPR%2BDeco%2Bin%2Bthe%2BALM.png?w=1078&h=493&auto=format&fit=crop" width="75%" height="75%">
+<p align="center">
+<img src="https://assets-eu-01.kc-usercontent.com/ab5c5eb8-73f9-0195-1d55-9cb00242be02/4843cee9-af50-4284-8981-a8cdb4836c65/body-2548db75-1761-4a3b-bab7-5acd02bd5658_Diagram%2Bof%2BPR%2BDeco%2Bin%2Bthe%2BALM.png?w=1078&h=493&auto=format&fit=crop" width="60%">
+</>
 
 By utilizing the Quality Gate profile you've set up to meet your acceptance criteria, SonarQube evaluates your PR and provides a Pass or Fail assessment. A green Quality Gate indicates readiness for code merging, while a red one signals areas that need attention. Here, you'll observe an example of a failed Quality Gate within a GitHub PR.
 
-<div style="text-align:center">
-  <img src="https://assets-eu-01.kc-usercontent.com/ab5c5eb8-73f9-0195-1d55-9cb00242be02/c1b11005-3155-4826-9ed0-2fccba11afde/body-36e5e290-7294-466e-8016-615ba287c123_GH%2BPR%2B-%2BFailed%2BQG.png?w=360&h=403&auto=format&fit=crop" alt="Centered Image">
-</div>
+<p align="center">
+<img src="https://assets-eu-01.kc-usercontent.com/ab5c5eb8-73f9-0195-1d55-9cb00242be02/c1b11005-3155-4826-9ed0-2fccba11afde/body-36e5e290-7294-466e-8016-615ba287c123_GH%2BPR%2B-%2BFailed%2BQG.png?w=360&h=403&auto=format&fit=crop">
+</p>
+
 
 We attain the following objectives:
 
@@ -97,7 +100,7 @@ Now that you're logged in to your local SonarQube instance, let's analyze a proj
 
 
 After successfully analyzing your code, you'll see your first analysis on SonarQube:
-<img src="https://assets-eu-01.kc-usercontent.com/b98b0e99-a92d-0140-c108-93833c7e1e31/3295cf34-f8d6-401c-b26e-5ba90cf2267f/analyze-projects.png?w=1733&h=838&auto=format&fit=crop" width="75%" height="75%">
+<img src="https://assets-eu-01.kc-usercontent.com/b98b0e99-a92d-0140-c108-93833c7e1e31/3295cf34-f8d6-401c-b26e-5ba90cf2267f/analyze-projects.png?w=1733&h=838&auto=format&fit=crop" width="75%">
 
 
 #### 4. Review Analysis Reports
