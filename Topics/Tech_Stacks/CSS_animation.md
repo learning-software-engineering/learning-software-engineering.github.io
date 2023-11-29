@@ -138,7 +138,8 @@ Here's an example of it in code:
 
 ## Using An Animation
 
-If we want to an HTML element to use an animation (i.e. @keyframes rule) we've declared, we must 'bind' that animation to the HTML element. There are two ways to do this depending on if you're using 'animation' property shorthand or sub-properties:
+If we want to an HTML element to use an animation (i.e. @keyframes rule) we've declared, we must 'bind' that animation to the HTML element. When we 'bind' an animation to an HTML element, we mean we are setting the HTML 'animation-name' sub-property to the name of the '@keyframes' rule/animation we want that HTML element to display (or declaring the name in the 'animation' property if we're using shorthand). In other words, we are associated a '@keyframes' rule/animation to an HTML element.
+There are two ways to do this depending on if you're using 'animation' property shorthand or sub-properties:
 1. 'animation' property:
 ``` CSS
 p {
