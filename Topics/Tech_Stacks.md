@@ -17,6 +17,7 @@
 ### [Learning React Native](./Tech_Stacks/ReactNative.md)
 ### [Learning Nodemailer](./Tech_Stacks/Nodemailer.md)
 ### [Learning Firebase for Serverless Backends and Cloud Functions](./Tech_Stacks/FirebaseServerlessCloud.md)
+### [Learning Ruby on Rails](./Tech_Stacks/Ruby_on_Rails.md)
 ### [React Components Guide](./Tech_Stacks/React_Components.md)
 ### [Flutter](./Tech_Stacks/Flutter.md)
 ### [Temporal For Workflow Orchestration](./Tech_Stacks/Temporal.md)
