@@ -11,7 +11,6 @@ Potential topics--
         3. XP
     2. [Waterfall](./Software_Engineering/Waterfall.md)
     3. [Lean](./Software_Engineering/Lean.md)
-    4. 
 2. Core Concepts in Software Engineering
    1. [Localization in Software Engineering](./Software_Engineering/Localization.md)
 
