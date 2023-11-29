@@ -8,6 +8,8 @@
 
 ### [Django Project Deployment: AWS, Vercel, and Railway](./Development_Process/Django_Deployment_AWS_Railway_Vercel.md)
 
+### [Node.js Project Deployment: Azure](./Development_Process/Azure_webapp_deployment_with_nodejs.md)
+
 ### [Automated Frontend Deployment with Vercel](./Development_Process/Frontend_Automated_Deployment_Vercel.md)
 
 ### [Flask Application Deployment on Heroku](./Development_Process/Flask_App_Deployment_Heroku.md)
@@ -38,9 +40,14 @@
 ### [URL Sanitization](./Development_Process/URL_Sanitization.md)
 
 ## Design Decisions
+
 ### [GraphQL vs. REST: Which API type to use?](./Development_Process/GraphQL_VS_REST.md)
 
-## SOLID PRINCIPLES: 
+## Serverless Computing
+
+### [Serverless Computing](./Development_Process/Serverless_AWS_Lambda.md)
+
+## SOLID PRINCIPLES:
 
 SOLID is a mnemonic acronym that represents a set of five very important software development principles which lead to code that is easier to read, maintain, and extend, leading to higher-quality software that is easier to evolve over time.
 
@@ -96,3 +103,9 @@ This is only a simplification of what "Clean Architecture" is; the topic is so v
 
 ## Code Smells
 ### [Code Smells](./Development_Process/Code_Smells.md)
+
+## Prompt Engineering
+### [Basics of Prompt Engineering](./Development_Process/Prompt_Engineering.md)
+
+## Technical Documents
+### [Intro to Request for Comments (RFCs)](./Development_Process/Technical_Documents/Intro_to_rfcs.md)

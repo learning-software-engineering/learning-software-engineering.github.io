@@ -10,6 +10,7 @@ Some key features of a successful product manager:
 * If you are making tradeoffs, be sure to explain and outline the opportunity cost.
 * [Perfecting writing, reading, and giving feedback for code reviews](./Product_Management/Code_Review_Best_Practices.md).
 
+
  The following article outlines the product manager role and responsibilities, the main points that it entails and some tools and methologies to promote successful product management practices: [Product Management: Main Stages and Product Manager Role](https://www.altexsoft.com/blog/business/product-management-main-stages-and-product-manager-role/#:~:text=Product%20management%20is%20a%20process,development%2C%20marketing%2C%20and%20sales.)
  
  This article goes into a little bit further detail from a beginner's perspective on steps to take to become a successful product manager: [Product Manager: The role and best practices for beginners](https://www.atlassian.com/agile/product-management/product-manager)
@@ -54,4 +55,8 @@ Bezos laid the foundation for Amazon's business and management methodology in hi
 
 
 These principles illustrate Amazon's customer-centric culture and highlight the vital role of forward-thinking in product management. By consistently focusing on customer satisfaction and long-term value, Amazon demonstrates the effectiveness of a client-centered approach in product development and corporate strategy. You can read more about this in this [article](https://www.hustlebadger.com/what-do-product-teams-do/jeff-bezos-leadership-principles/#its-all-about-the-long-term).
+
+
+1. Core Concepts in Product Management
+    1. [Product Management vs Product Ownership](./Product_Management/Product_Management_vs_Product_Ownership.md)
 
