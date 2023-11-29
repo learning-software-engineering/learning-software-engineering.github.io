@@ -46,16 +46,23 @@ The full details as well as all Apple Certifications are available on the Apple 
 Prior to releasing the app for review, it would be good practice to beta test the app
 for any possibly new bugs.
 
-For exampel: a common error that many people find at this stage is with the push notifications. As this requires a certificate of its own, the first step should be to verify that the certificate is valid and that you have handled the distribution part of this testing stage correctly.
+**For exampel:** a common error that many people find at this stage is with the push notifications. As this requires a certificate of its own, the first step should be to verify that the certificate is valid and that you have handled the distribution part of this testing stage correctly.
 
-Below are some ways you can beta-test your app prior to releasing it onto the App Store
+Below are some ways you can beta-test your app prior to releasing it onto the App Store:
 
 #### TestFlight
-
+TestFlight can be considered the 'App Store' for beta testing your apps. It is considered its own 'app market' and as the developer(s), you can decide whether to release your app for public testing, or keep it internal for select testers. You should also make note of the fact that submitting an app onto TestFlight will also go through a review process just like the App Store, albeit with more lenient standards which could result in a quicker review time.
 
 #### Ad-Hoc
 
 
-### Review 
+
+For further clarification about App Distribution, you can refer to these **Apple's Documentation** links below:
+
+[Distributing your app for beta testing and releases](https://developer.apple.com/documentation/xcode/distributing-your-app-for-beta-testing-and-releases)
+
+[Distributing your app to registered devices](https://developer.apple.com/documentation/xcode/distributing-your-app-to-registered-devices)
+
+### App Store Submission 
 There will be a full review process
 <!-- TODO -->
