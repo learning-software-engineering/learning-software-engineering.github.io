@@ -9,7 +9,7 @@ all of the data validation capabilities that Pydantic has.
 
 ### JSON Schema
 
-Every class is serialized into JSON in the following manner. 
+Every class is serialized into JSON in the following schema. 
 
 ```json
 {
@@ -46,7 +46,8 @@ The magic happens in the message class from which all other message types inheri
 # note that message inherits from Basemodel. Which is a pydantic data class
 # this gives us many additionally powers in our message class
 # such as validation as well as easy JSON serialization.
-# Note it does force us to define classes while using types.
+# Note it does force us to define classes while using types. (though we don't need to implment
+# a init() method)
 class Message(BaseModel):
     #this is the method that generates the json serialization.
     # for example class SignIn(username: str, password: str) would return
@@ -63,7 +64,7 @@ class Message(BaseModel):
     # this is the method that generates the json deserialization and returns a 
     # specific Message object that we can use
     # for dynamic dispatch.
-    # for example {"SignIn": {"username": "john", "password": "basketball"}} 
+    # for example json = {"SignIn": {"username": "john", "password": "basketball"}} 
     # would return a SignIn object with the username set to john and password set to basketball.
     @staticmethod
     def from_json_message(message: str) -> Message:
@@ -74,13 +75,15 @@ class Message(BaseModel):
         data = json.loads(data)
         # we look up the class in the global scope and return a new instance of 
         # the class with the data as the arguments.
+        # note that cls is a class object which contains all relavant info about the class including it's constructor
         cls = globals()[name]
         return cls(**data)
 
     # this is the method that handles the logic of the message. We need to implement
     # this method in all our Message subclasses.
     # for example class SignIn(username: str, password: str) would return a SignInResponse object.
-    # this is how we get dynamic dispatch to work. We can call the respond method on any Message object and it will return the correct response. as defined by the subclass.
+    # this is how we get dynamic dispatch to work.
+    # We can call the respond method on any Message object and it will return the correct response. as defined by the subclass.
     def respond(self) -> Message:
         raise NotImplementedError
 ```
@@ -129,6 +132,7 @@ class SignIn(Message):
     # this handles the logic of the message. This is where we would do things like check if the user exists in the database.
     # or if the password is correct. and then we return a SignInResponse object.
     def respond(self) -> SignInResponse:
+        check_database for user and password
         return SignInResponse(success=True)
 
 
@@ -156,4 +160,4 @@ Even if you won't use it for this specific purpose. I think it is a good thing t
 ### further things this guide should cover (but isn't due to lack of time).
 - how to automatically generate a json schema from a class.
 - how to automatically add items to a database.
-- how to generate glue code so other languages can use these classes as well (this is mind twisting. Think of generating java code in python)
+- how to generate glue code so other languages can use these classes as well (this is mind twisting. Essentially generating java code in python).
