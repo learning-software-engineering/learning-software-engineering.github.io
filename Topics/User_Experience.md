@@ -191,19 +191,90 @@ Users may have a wide variety of accessibility needs. This may include users wit
 
 In Ontario, it is a [legal requirement](https://www.ontario.ca/page/how-make-websites-accessible) for websites and web apps to reach a certain level of accessibility. Aside from legal requirements, it is generally beneficial to build accessibility into your apps. As a business, supporting a diverse set of users will improve the experience of your customers, and as an individual your contributions will impact the friendliness and inclusion of the internet.
 
-### How can I make my app more accessible?
-The World Wide Web Consortium (W3C) provides explicit standards and guidelines for web accessibility. You can find a thorough and exhaustive list [here](https://www.w3.org/WAI/standards-guidelines/). This guide is quite detailed so it may be difficult to know where to start as you are developing your web app, but a11y (a community-driven accessibilty initiative) has boiled down the most popular and important standards into an easy to follow [checklist](https://www.a11yproject.com/checklist/).  
-
-Moreover, you don’t need to do all of this manually - there are many free and paid tools that you can use to audit and improve your website’s accessibility. A couple great starting resources are [Google’s developer tools](https://developer.chrome.com/docs/lighthouse/accessibility/) and [Siteimprove](https://www.siteimprove.com/).
-
-
 ### Design Principles
+The core of accessibility lies in acknowledging and catering to the diverse needs of users, which include visual, auditory, motor, and cognitive impairments. By implementing accessibility standards, developers can create products that are not only more usable for people with disabilities but also enhance the overall user experience for a broader audience. This involves designing software and interfaces that are flexible enough to meet different user needs and preferences, and are compatible with various assistive technologies.
 
 [Universal Design Principles](https://www.buffalo.edu/access/help-and-support/topic3/universaldesignprinciples.html) are not only used for software but can be incorporated generally as well. These 7 principles ensure accessibility, consistency, and user-friendly software. 
 This article provides the 7 Universal Design Principles that make software accessible to all users, which plays an important role in diversifying the User Experience. 
 
 While it may feel overwhelming to come up with your own great design from scratch by following all these rules and principles, you may find it easier to learn from examples to avoid mistakes that others have made. [This article](https://www.interaction-design.org/literature/article/bad-design-vs-good-design-5-examples-we-can-learn-frombad-design-vs-good-design-5-examples-we-can-learn-from-130706) outlines 5 examples of bad design, with great explanations, takeaways, and lessons to learn.
 
+### Web Content Accessibility Guidelines (WCAG)
+
+The [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/standards-guidelines/wcag/) are a set of recommendations for making web content more accessible, primarily for people with disabilities, but also for all user interfaces and devices. Developed through the World Wide Web Consortium (W3C), specifically by the Web Accessibility Initiative (WAI), WCAG serves as the international standard for web accessibility. This guide is quite detailed so it may be difficult to know where to start as you are developing your web app, but a11y (a community-driven accessibilty initiative) has boiled down the most popular and important standards into an easy to follow [checklist](https://www.a11yproject.com/checklist/).
+
+WCAG 2 is structured around four fundamental principles, often referred to by the acronym **POUR**, ensuring that web content is:
+
+1. **Perceivable**:  Information and user interface components must be presented in ways that users can perceive.
+    - Provide text alternatives for non-text content.
+    - Provide captions and other alternatives for multimedia.
+    - Create content that can be presented in different ways, including by assistive technologies, without losing meaning.
+    - Make it easier for users to see and hear content.
+
+2. **Operable**: User interface components and navigation must be operable.
+    - Make all functionality available from a keyboard.
+    - Give users enough time to read and use content.
+    - Do not use content that causes seizures or physical reactions.
+    - Help users navigate and find content.
+    - Make it easier to use inputs other than keyboard.
+
+3. **Understandable**: Information and the operation of user interfaces must be understandable.
+    - Make text readable and understandable.
+    - Make content appear and operate in predictable ways.
+    - Help users avoid and correct mistakes.
+
+4. **Robust**: Content must be robust enough to be reliably interpreted by a wide variety of user agents, including assistive technologies.
+    - Maximize compatibility with current and future user tools.
+
+WCAG 2.0 is further divided into three levels of conformance:
+- **Level A**: The most basic web accessibility features.
+- **Level AA**: The most common barriers for disabled users
+- **Level AAA**: The highest and most advanced level of accessibility.
+
+Here are some questions that you can ask yourself when trying to make you work more accessible:
+**Example 1 (Perceivable)**: Ensure that all images on your website have descriptive alt text. For videos, provide captions and audio descriptions.
+
+> 1. Have all non-text content (like images, videos, audio) been given text alternatives?
+> 2. Are there captions for all video content and transcripts for audio content?
+> 3. Can all information conveyed with color be understood without color?
+
+**Example 2 (Operable)**: Make sure that all functionalities of your website are accessible via keyboard, including navigation, forms, and custom controls.
+
+> 1. Can all website functionalities be operated through a keyboard alone?
+> 2. Are there mechanisms to help users navigate, find content, and determine where they are?
+> 3. Have you ensured that no content flashes more than three times in any one second period?
+
+**Example 3 (Understandable)**: Write content in clear, simple language and provide instructions or labels for complex forms or content.
+
+> 1. Is the text content readable and understandable for the widest possible audience?
+> 2. Does the website operate in predictable ways, such as consistent navigation and naming?
+> 3. Are error messages clear and helpful, guiding users towards solving the problem?
+
+**Example 4 (Robust)**:  Use standard HTML tags and validate your HTML to ensure compatibility with current and future user agents, including assistive technologies.
+
+> 1. Is the content compatible with current and future user agents, including assistive technologies?
+> 2. Have you used clean, standards-compliant HTML/CSS?
+> 3. Are there any custom components that might need ARIA roles to ensure they are accessible?
+
+#### Tools:
+
+[WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/): The Contrast Checker provides a straightforward interface where users can input the hexadecimal codes of the text and background colors they are using on their website. Upon entering these values, the tool automatically calculates the contrast ratio between the text and background. This ratio is crucial for readability, especially under the WCAG, which sets minimum contrast standards for visual presentation of text.
+
+[Stark](https://www.getstark.co/): Stark is a plugin for design tools like Adobe XD, Sketch, and Figma, focusing on accessibility. It features color contrast checkers and color blindness simulations to ensure designs meet accessibility standards, particularly WCAG. Integrated directly into design platforms, Stark is essential for creating inclusive digital products.
+
+[Google’s developer tools](https://developer.chrome.com/docs/lighthouse/accessibility/): Lighthouse is Google's accessibility auditing tool. It scores your webpage's accessbility and provides feedback on areas of improvement.
+
+[Siteimprove](https://www.siteimprove.com/): Siteimprove is a product that aims to help businesses improve their website through improvement of inclusion, user experience, and SEO.
+
+#### More readings:
+
+- [Designing accessible products](https://uxdesign.cc/designing-accessible-products-e8aa79b55ebc) by Adhithya Ramakumar
+
+- [Accessible Interface Design](https://babich.biz/blog/accessible-interface-design/) by Nick Babich
+
+- [Designing For Accessibility And Inclusion](https://www.smashingmagazine.com/2018/04/designing-accessibility-inclusion/) by Steven Lambert
+
+- [What is Accessibility?](https://www.interaction-design.org/literature/topics/accessibility) by Interaction Design Foundation
 
 # Helpful Courses
 - [The Design of Interactive Computational Media (CSC318) offered by U of T](https://artsci.calendar.utoronto.ca/course/csc318h1). CSC318 expands on the work done before coding projects. For example, the course will have you test how users would interact with your prototype of a UI and then modify it so that the UX is better for the user.
