@@ -3,7 +3,9 @@
 ## Table of Contents
 ### [Introduction](#introduction)
 ### [Why Kafka](#why-kafka)
-### [Quick Start](#quick-start)
+### [Real World Examples](#real-world-examples)
+### [Quick Set Up](#quick-set-up)
+### [Reference](#reference)
 
 ## Introduction
 This article will help readers understand what Kafka is, why it is used, and how it works. **Apache Kafka**, an open-source stream-processing software platform developed by the Apache Software Foundation, written in Scala and Java. Designed with the fundamental premise of enabling high-throughput, fault-tolerant, publish-subscribe messaging systems, Kafka has become an essential tool in the handling of real-time data feeds.
@@ -23,16 +25,34 @@ The above diagram shows the Kafka cluster architecture. The elements of the Kafk
 
 The above diagram illustrates the basic components and their interactions within a Kafka system:
 
-- **Producers**: Entities that publish (push) data to topics. In the diagram, Producer A and Producer B are shown sending messages to a Kafka topic.
 - **Topics**: A category or feed name to which messages are published. Very simplified, a topic is similar to a folder in a filesystem, and the data are the files in that folder. Topics in Kafka are multi-subscriber; that is, a topic can have zero, one, or many consumers that subscribe to the data written to it. "My Topic" is the Kafka topic in this case.
-- **Partition**: Topics are split into partitions (Partition 1, Partition 2, Partition 3), which allow for parallelism in both writing and reading data. Each partition is an ordered, immutable sequence of records.
-- **Consumers**: Entities that subscribe to topics and process the published messages. Consumer A, B, and C are shown each consuming from a specific partition.
+- **Partition**: Topics are split into partitions (Partition 1, Partition 2, Partition 3), which allow for parallelism in both writing and reading data. Each partition represents an ordered, immutable sequence of records. Furthermore, each partition operates independently, ensuring that activities in one do not affect the others.
+- **Partition offset**: Messages within a partition are assigned a unique sequential identifier known as the partition offset. This offset denotes the position of each record within the partition.
 
 
 ## Why Kafka
 Apache Kafka is a powerful tool in data processing and streaming, favored for its ability to handle high volumes of data with high throughput and low latency. Its distributed architecture ensures scalability and fault tolerance, making it reliable for critical applications. Kafka facilitates real-time data processing with its stream processing capabilities and is versatile in handling various data formats. Additionally, its integration with a wide range of systems and strong community support make it a go-to choice for complex data architectures in various applications.
 
-## Quick Start
+## Real World Examples
+This section lists only a few common use cases with real world examples. For more Apache Kafka use cases, you can check this link: [Use Cases](https://kafka.apache.org/uses).
+
+1. Real-Time Data Processing:
+
+    Uber uses Kafka for processing real-time data from its large amount of drivers and riders. This helps in tracking trips, optimizing routes, and managing supply and demand dynamically.
+
+2. Log Aggregation:
+    
+    LinkedIn uses Kafka for log aggregation. It helps in collecting and processing logs from various services for monitoring, troubleshooting, and performance analysis.
+
+3. Stream Processing:
+    
+    Netflix uses Kafka Streams for real-time stream processing to provide personalized viewing recommendations and to analyze viewing patterns.
+
+4. Messaging:
+    
+    Cisco uses Kafka as a message broker in their networking systems for efficiently processing network telemetry data and enabling asynchronous communication between different services.
+
+## Quick Set Up
 ### Step 1: Download Kafka
 [Download](https://www.apache.org/dyn/closer.cgi?path=/kafka/3.6.0/kafka_2.13-3.6.0.tgz) the latest Kafka release and extract it:
 
@@ -102,6 +122,9 @@ If you also want to delete any data of your local Kafka environment including an
 ```bash
 $ rm -rf /tmp/kafka-logs /tmp/zookeeper /tmp/kraft-combined-logs
 ```
+
+
+
 
 ## Reference
 If you want to know more detailed information, you could check Apache Kafka's offical [website](https://kafka.apache.org/) and its offical [documentation](https://kafka.apache.org/documentation/).
