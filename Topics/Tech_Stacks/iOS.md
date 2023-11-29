@@ -2,14 +2,14 @@
 
 ## Table of Contents
 1. [Introduction](#introduction)
-2. [Prerequistites](#)
+2. [Prerequisites](#)
 3. [Steps to Creating an iOS App](#steps-to-creating-an-ios-app)
 4. [Conclusion](#conclusion)
 5. [Additional Resources](#additional-resources)
 
 ## Introduction
 <!-- intro -->
-With millions of users worldwide, Apple's iOS platform offers a vast audience for your apps, whether you aim to develop utility apps, games, or educational tools. Creating an iOS app not only unlocks the potental to reach a global audience but also provides an opportunity to learn new technologies and design principles. 
+With millions of users worldwide, Apple's iOS platform offers a vast audience for your apps, whether you aim to develop utility apps, games, or educational tools. Creating an iOS app not only unlocks the potential to reach a global audience but also provides an opportunity to learn new technologies and design principles. 
 
 ## Prerequisites
 <!-- anything the user may need -->
