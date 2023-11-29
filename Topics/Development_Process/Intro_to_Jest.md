@@ -9,6 +9,12 @@
    - [System Requirements](#system-requirements)
    - [Installing Jest](#installing-jest)
    - [Configuring Jest for your project](#configuring-jest-for-your-project)
+3. [Test Cases and Test Suites](#3-test-cases-and-test-suites)
+   - [Writing a Test Case](#writing-a-test-case)
+   - [Write a Test Suite](#writing-a-test-suite)
+   - [Running Tests](#running-tests)
+4. [Matchers](#4-matchers)
+5. [Additional Resources](#additional-resources)
 
 ## 1. What is Jest?
 
@@ -184,3 +190,7 @@ The `expect` statement is similar to assertions you may have seen before. The pa
    - `toThrow`
 - Arrays/Iterables
    - `toContain`
+
+## Additional Resources
+
+### [Official Jest Documentation](https://jestjs.io/docs/getting-started)
