@@ -50,6 +50,8 @@ and the framework will handle performing the steps needed to get that result.
 [Hacking with Swift](https://www.hackingwithswift.com) is a great free resource for learning how to do specific things in Swift and SwiftUI
 when the issues arise.
 
+[Stanford CS193p](https://cs193p.sites.stanford.edu) is also a great resource for learning app development in SwiftUI for those who prefer a structured course with interactive assignments.
+
 ## Starting a Swift Project
 After launching Xcode, selecting `Create a new Xcode project`, and choosing which platform and type of app you want to make, you will then have
 to fill in the following info:
