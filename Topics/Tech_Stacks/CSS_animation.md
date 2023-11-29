@@ -165,8 +165,9 @@ Summarizing everything we've covered so far:
 - In each specific HTML element, we define how the animation 'binded' to that element will behave
 - We configure the 'binded' animations behaviour through using 'animation' property or its various sub-properties (ex. animation-duration: 3s;)
 
+Here's a short YouTube video that summarizes what we've learned in a visual, infographic way: https://www.youtube.com/watch?v=HZHHBwzmJLk
+
 ## References and Links
-- https://www.youtube.com/watch?v=HZHHBwzmJLk
 - https://www.w3schools.com/css/css3_animations.asp
 - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animations/Using_CSS_animations
 - https://developer.mozilla.org/en-US/docs/Web/CSS/animation
