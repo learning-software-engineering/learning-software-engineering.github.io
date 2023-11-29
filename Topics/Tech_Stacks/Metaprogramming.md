@@ -1,4 +1,4 @@
-### Goal for the article
+### What we are going to cover
 In this guide, we'll explore the utilization of metaprogramming
 in Python to create a simple server architecture for handling messages between clients and a server.  
 The core concept involves using a base class, Message, 
