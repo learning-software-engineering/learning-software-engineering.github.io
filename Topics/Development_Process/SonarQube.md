@@ -38,7 +38,7 @@
 
 <img src="https://assets-eu-01.kc-usercontent.com/ab5c5eb8-73f9-0195-1d55-9cb00242be02/4843cee9-af50-4284-8981-a8cdb4836c65/body-2548db75-1761-4a3b-bab7-5acd02bd5658_Diagram%2Bof%2BPR%2BDeco%2Bin%2Bthe%2BALM.png?w=1078&h=493&auto=format&fit=crop" width="75%" height="75%">
 
-Using the Quality Gate profile you’ve already established for your acceptance criteria, SonarQube ‘grades’ your PR and returns either Pass or Fail. If your Quality Gate is green, you can confidently merge your code. If it’s red, you have some work to do! Below, you'll see a failed Quality Gate in a GitHub PR.
+By utilizing the Quality Gate profile you've set up to meet your acceptance criteria, SonarQube evaluates your PR and provides a Pass or Fail assessment. A green Quality Gate indicates readiness for code merging, while a red one signals areas that need attention. Here, you'll observe an example of a failed Quality Gate within a GitHub PR.
 
 <div style="text-align:center">
   <img src="https://assets-eu-01.kc-usercontent.com/ab5c5eb8-73f9-0195-1d55-9cb00242be02/c1b11005-3155-4826-9ed0-2fccba11afde/body-36e5e290-7294-466e-8016-615ba287c123_GH%2BPR%2B-%2BFailed%2BQG.png?w=360&h=403&auto=format&fit=crop" alt="Centered Image">
@@ -56,10 +56,8 @@ Leverage SonarQube to identify potential security risks like SQL injection, cros
 
 ## Getting Started
 
-To begin working with SonarQube:
-
-#### 1. Install SonarLint
-- Get SonarLint for free by downloading it for your preferred IDE [here](https://www.sonarsource.com/products/sonarlint/ide-login/).
+#### 1. [Optional] Install SonarLint
+- Get SonarLint for free by downloading it for your preferred IDE [here](https://www.sonarsource.com/products/sonarlint/ide-login/). It is strongly recommended to do so it helps in real-time code analysis within your IDE, providing immediate feedback to improve code quality and prevent issues early in the development process.
 
 #### 2. Installing a local instance of SonarQube
 You can evaluate SonarQube using a traditional installation with the zip file or you can spin up a Docker container using one of our Docker images. Select the method you prefer below to expand the installation instructions:
