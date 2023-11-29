@@ -45,6 +45,7 @@ GraphQL is different from REST in the sense that it is not actually an API archi
     + To follow proper GraphQL standards, any endpoint that only sends back data would fall under `query`. Any endpoint that changes data in any way would fall under `mutation`.
 2. GraphQL is very specific; when you call an endpoint, you can request *exactly* what data you want, and you can send different structures of data, based on customizable `types`.
 3. GraphQL only requires one endpoint. Usually, this is found at the `/graphql` URL on a webapp. Since GraphQL is a query language, whenever call the endpoint, you use the request body to specify your query. From this, you can define mutations and queries, and can in fact, get multiple pieces on data through one request. Using the same example from REST, you would only need to send one `/graphql` request, and just write both queries for data in the same request. This allows you to get the same amount of data using one request instead of two separate ones.
+    + In GraphQL, you can send multiple queries, or multiple mutations via one request to the endpoint, meaning if you need to get many different pieces of data, or update multiple different data structures, it only requires one call. An example of this can be found in the [quick references](#quick-reference-for-common-uses) section.
 
 
 ## When does REST make sense to use?
@@ -69,6 +70,17 @@ const response = await fetch("http://example.com/movies.json", {
 });
 ```
 
+If you were using REST and want to get one movie, and get an actor's information, you would need to do this in two separate queries. 
+
+```javascript
+const response = await fetch("http://example.com/movies.json/Barbie", {
+  method: "GET"
+});
+const response2 = await fetch("http://example.com/movies.json/MargotRobbie", {
+  method: "GET"
+});
+```
+
 You can implement GraphQL in JavaScript with the GraphQL library. Here is an example GraphQL query, where you would get the director of the Barbie movie, similarly to the above request.
 ```graphql
 query {
@@ -77,6 +89,22 @@ query {
   }) 
   { director }
 }
+```
+
+Here is an additional example query, where you get a movie, and get an actor's information at the same time. You can do this in the same query.
+
+```graphql
+query {
+  getMovie(params: {
+    name: "Barbie"
+  }) 
+  { director }
+  getActor(params: {
+    name: "Margot Robbie"
+  })
+  { birthday }
+}
+
 ```
 
 For more information on setting up and creating your own API through REST or GraphQL, you can visit their respective documentation here:
