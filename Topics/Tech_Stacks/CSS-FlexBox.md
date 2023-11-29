@@ -2,7 +2,7 @@
 
 ## Table of contents
 ### [Introduction](#introduction-1)
-### [How to use Flexbox?](#how-to-use-flexBox-1)
+### [Flex-Container VS Flex-Item](#flex-container-vs-flex-item-1)
 ### [Tips and Tricks](#tips-and-tricks-1)
 ### [Conclusion](#conclusion-1)
 
@@ -20,7 +20,7 @@ These four layout modes required lots of code to do some simple tasks like “Ce
 
 [Image source](https://acciojob.com/blog/untitled-19/)
 
-## How to use FlexBox?
+## Flex-Container VS Flex-Item
 
 There are two things we need to understand in order to use FlexBox. 
 - Flex Container: This container will contain some items from our webpage. This container will also define the organization property of the items combined.
