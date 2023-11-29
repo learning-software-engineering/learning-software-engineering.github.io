@@ -22,6 +22,7 @@
 ### [Getting Started With Docker](./Development_Process/Docker.md)
 
 ### [Getting Started With WSL 2](./Development_Process/WSL.md)
+### [Setting up Conda for multiple Python environments](./Development_Process/Conda/Setup_Conda.md)
 
 ## Nginx
 
