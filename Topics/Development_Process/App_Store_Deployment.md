@@ -5,8 +5,8 @@ After working towards a useable version of your mobile app, your last step would
 
 ## Requirements
 - Apple Developer Account
-- Certificates
-<!-- TODO -->
+- Apple Certificates
+- Xcode (Requires a MacBook)
 
 
 ### Apple Developer Program
@@ -29,21 +29,32 @@ The most crucial component you will need to be able to deploy to the App Store i
 The full details are available on the Apple Developer Program enrollment page: [Apple Developer Program](https://developer.apple.com/programs/enroll/)
     
 
-### Certificates
-- Apple Push Notification Service Certificate
-- Apple Pay Payment Processing Certificate
-- Apple Pay Merchant Identity Certificate
-- Pass Type ID Certificate
-- iOS Distribution Certificate
+### iOS-Related Certificates
 
-The full details are available on the Apple Certificates page: 
+
+- **Apple Push Notification Service** Certificate (Notifications)
+- **Apple Pay Payment** Processing Certificate (Apple Pay)
+- **Apple Pay Merchant** Identity Certificate (Apple Pay)
+- **Pass Type** ID Certificate (Apple Wallet)
+- **iOS Distribution** Certificate (Auto-Generated on Account Creation)
+
+The full details as well as all Apple Certifications are available on the Apple Certificates page: 
 [Apple Certificates](https://developer.apple.com/support/certificates/)
 
 
-### TestFlight Beta Testing
+### Beta Testing
 Prior to releasing the app for review, it would be good practice to beta test the app
-for any possibly new bugs. A common error that many people find at this stage is with the push notifications. As this requires a certificate of its own, the first step should be to verify that the certificate is valid and that you have handled the distribution part of this testing stage correctly.
-<!-- TODO? More Examples? More Explanation? -->
+for any possibly new bugs.
+
+For exampel: a common error that many people find at this stage is with the push notifications. As this requires a certificate of its own, the first step should be to verify that the certificate is valid and that you have handled the distribution part of this testing stage correctly.
+
+Below are some ways you can beta-test your app prior to releasing it onto the App Store
+
+#### TestFlight
+
+
+#### Ad-Hoc
+
 
 ### Review 
 There will be a full review process
