@@ -11,6 +11,10 @@ applications.
 IoC in Spring inverts the flow of control compared to traditional programming. Instead of objects creating or finding
 their dependencies, these are supplied externally, typically by a framework or container.
 
+<p align="center">
+    <img src="https://docs.spring.io/spring-framework/docs/3.2.x/spring-framework-reference/html/images/container-magic.png" alt="Spring IoC Container" width="500" height="300">
+</p>
+
 ## Role of the Spring IoC Container
 
 The IoC container in Spring manages object creation, configuration, and assembly. This container:
