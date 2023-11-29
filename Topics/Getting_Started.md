@@ -24,6 +24,7 @@ We'll cover the essentials – from understanding programming languages to grasp
 Each section of this guide will be about a branch of software engineering, and each will give an outline explaining how a type of product is done. They will be all very basic in theory, so don't worry about them being too hard by now. When you really are about to dive deeper into the development section, things will be a bit overwhleming as there are many things to learn, but always remeber, everyone was a once a beginner. So stay clam, choose the branch of software engineering you want to learn, and get started!
 
 # 2. Full-Stack Development
+Here is [an article](https://www.coursera.org/ca/articles/full-stack-developer) talking boardly about Full-Stack Development, if you want you can check it first, but you can always come back to it after finishing reading things on this page.
 
 ## 2.1 Overview
 
