@@ -95,7 +95,7 @@ This is only a simplification of what "Clean Architecture" is; the topic is so v
 
 ## Clean coding
 ### [Code Smells](./Development_Process/Code_Smells.md)
-### [Coding styles](./Development_Process/clean_coding_styling.md)
+### [Coding and commenting styles](./Development_Process/clean_coding_styling.md)
 
 ## Prompt Engineering
 ### [Basics of Prompt Engineering](./Development_Process/Prompt_Engineering.md)
