@@ -63,8 +63,8 @@ class Message(BaseModel):
     # this is the method that generates the json deserialization and returns a 
     # specific Message object that we can use
     # for dynamic dispatch.
-    # for example {"SignIn": {"username": "username", "password": "password"}} 
-    # would return a SignIn object with the username and password fields set.
+    # for example {"SignIn": {"username": "john", "password": "basketball"}} 
+    # would return a SignIn object with the username set to john and password set to basketball.
     @staticmethod
     def from_json_message(message: str) -> Message:
         # we convert the json to a dictionary.
