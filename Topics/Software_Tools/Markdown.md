@@ -58,7 +58,7 @@ To create paragraphs, simply use at least one blank line in between lines of tex
 There are many more features used in Markdown, these are only a few. To read more about Markdown in regards to syntax, or other inquiries, consult this link: https://www.markdownguide.org/
 
 ## Use with Documentation
-
+Markdown is a vital tool used for documentation, an integral part of software engineering. The Markdown language can be used in README files, which are files with instructions on how to install, set up, and use the project, coupled with images, links and more. Markdown is also used in documentation within the project such as for API documentation, comments and descriptions written by developers, and more. Additionally, Markdown can be easily converted into different languages or formats such as PDF, HTML, and more.
 
 
 
