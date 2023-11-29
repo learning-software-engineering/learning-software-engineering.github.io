@@ -36,10 +36,22 @@ Vercel Step-by-Step Tutorial: Vercel's own documentation offers a comprehensive 
 
 ## Advanced Vercel Features
 
-Explore advanced features of Vercel:
-- **Custom Domains**: How to link a custom domain.
-- **CI/CD Integration**: Setting up continuous integration and deployment.
-- **Performance Analytics**: Utilizing Vercel's analytics for performance insights.
+- **Custom Domains**: 
+Learn to link a custom domain to your Vercel deployments for a professional touch. [This detailed tutorial](https://vercel.com/guides/custom-domains) guides you through the process of connecting a real domain to your Vercel project.
+  
+- **CI/CD Integration**: 
+Set up continuous integration and deployment to automate your workflow. Vercel seamlessly integrates with various CI/CD tools. [Here's how to set it up](https://vercel.com/docs/concepts/git).
+
+- **Performance Analytics**: 
+Utilize Vercel's analytics tools to gain insights into the performance of your deployed applications. Understand your application's metrics better with [Vercel Analytics](https://vercel.com/docs/analytics).
+
+- **Serverless Functions**: 
+Vercel supports Serverless Functions, which lets you deploy backend code without managing servers. [Learn about deploying Serverless Functions](https://vercel.com/docs/serverless-functions/introduction).
+
+- **Integrations**: 
+Enhance your projects with numerous integrations available on Vercel. From headless CMS to monitoring tools, [explore Vercel Integrations](https://vercel.com/integrations).
+
+Each feature comes with its own set of practices and considerations. These resources provide real-life examples and step-by-step guides to effectively utilize Vercel's advanced capabilities.
 
 At the end of this guide, you'll have a comprehensive understanding of Vercel's capabilities and be ready to utilize it for your frontend projects.
 
