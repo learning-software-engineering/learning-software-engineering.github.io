@@ -41,3 +41,4 @@
 ### [Setting up Firebase and Intro to Firestore](./Tech_Stacks/Firebase_and_Firestore.md)
 ### [Learning Odata](./Tech_Stacks/Odata.md)
 ### [Learning Github Actions](./Development_Process/Github_Actions.md)
+### [Introduction to OpenShift](./Tech_Stacks/OpenShift.md)
