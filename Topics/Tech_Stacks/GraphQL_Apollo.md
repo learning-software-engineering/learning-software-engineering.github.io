@@ -1,16 +1,17 @@
 # GraphQL With Apollo
 
-## Table of contents
+## Table of Contents
 ### [Introduction](#introduction)
 ### [GraphQL Explained](#graphql-explained)
 ### [Apollo Explained](#apollo-explained)
 ### [Tutorial With Basic Setup](#tutorial-with-basic-setup)
+### [Additional Tutorials](#additional-tutorials)
 
 ## Introduction
-GraphQL simply put is a query language used to build APIs. It is a framework that is very different from the traditional approach of API design. It allows clients to request exactly what they need, nothing more and nothing less, making it an incredibly efficient tool for data retrieval and manipulation. Used across various applications, from small-scale projects to large enterprise-level systems, GraphQL provides a flexible and efficient way to interact with data. It stands out due to its compatibility with a wide array of technologies, including but not limited to JavaScript frameworks like React, Vue.js, and Angular. Unlike SQL, which is a query language specifically for interacting with relational databases, GraphQL is not tied to any specific database or storage engine. Its agnostic nature allows it to work seamlessly with both relational databases like MySQL and PostgreSQL, as well as non-relational databases like MongoDB. At its core, GraphQL operates by defining a schema that describes all possible data points and relationships in the system, enabling clients to query precisely what they need, leading to optimized data loading and reduced network usage.
+GraphQL, simply put, is a query language used to build APIs. It is a technology that is very different from the traditional approach of API design. It allows clients to request exactly what they need, nothing more and nothing less, making it an incredibly efficient tool for data retrieval and manipulation. Used across various applications, from small-scale projects to large enterprise-level systems, GraphQL provides a flexible and efficient way to interact with data. It stands out due to its compatibility with a wide array of technologies, including but not limited to JavaScript technology like React, Vue.js, and Angular. Unlike SQL, which is a query language specifically for interacting with relational databases, GraphQL is not tied to any specific database or storage engine. Its agnostic nature allows it to work seamlessly with both relational databases like MySQL and PostgreSQL, as well as non-relational databases like MongoDB. At its core, GraphQL operates by defining a schema that describes all possible data points and relationships in the system, enabling clients to query precisely what they need, leading to optimized data loading and reduced network usage.
 
 ## GraphQL Explained
-Under the hood, GraphQL works in fashion such that a client sends a query to a GraphQL server. A query typically includes specific fields on the types related to the data it requests. This query is also just a string that follows the GraphQL query language syntax. The server then parses the incoming query, ensuring it is a valid one and uses the correct syntax. Once the query is validated, GraphQL ensures that the query matches the schema defined on the server. The schema defines all possible types, queries, mutations, and the relationships between these types. These definitions combine to form models. If the query asks for fields that don’t exist or are not allowed due to schema constraints, the validation step will fail, else, the necessary resolvers are executed. Resolvers are functions defined on the server for each field in the schema. When a field is requested, its corresponding resolver is called. The resolver function fetches the data for that field, which can involve retrieving data from databases or other data sources. After all resolvers have returned their data, GraphQL assembles this data into a response object that mirrors the structure of the query. The server sends this response object back to the client, typically in JSON format.
+Under the hood, GraphQL works by having a client send a query to a GraphQL server. A query typically includes specific fields on the types related to the data it requests. This query is also just a string that follows the GraphQL query language syntax. The server then parses the incoming query, ensuring it is a valid one and uses the correct syntax. Once the query is validated, GraphQL ensures that the query matches the schema defined on the server. The schema defines all possible types, queries, mutations, and the relationships between these types. These definitions combine to form models. If the query asks for fields that don’t exist or are not allowed due to schema constraints, the validation step will fail, else, the necessary resolvers are executed. Resolvers are functions defined on the server for each field in the schema. When a field is requested, its corresponding resolver is called. The resolver function fetches the data for that field, which can involve retrieving data from databases or other data sources. After all resolvers have returned their data, GraphQL assembles this data into a response object that mirrors the structure of the query. The server sends this response object back to the client, typically in JSON format.
 
 Though this process is similar to relational query languages (SQL), the key differences are:
 - Query Flexibility: GraphQL allows clients to define the structure of the response data, requesting exactly what they need in a single query. This flexibility reduces over-fetching or under-fetching of data. While SQL requires more rigid, predefined queries, specifying exact tables and columns to retrieve. Thus GraphQL offers more efficient data retrieval tailored to client needs, reducing bandwidth and improving performance.
@@ -34,8 +35,9 @@ Then initialize and install all dependencies:
 npm init -y
 npm install apollo-server graphql
 ```
+Note: we assume Node.js version 16.x or later is installed.
 
-Now ```cd``` to the project folder and in the root create an ```index.js``` file for the server, schema, and resolver code. 
+Now ```cd``` to the project folder and in the root, create an ```index.js``` file for the server, schema, and resolver code. 
 
 Then add the following schema, resolver and server side code: 
 ```
@@ -74,3 +76,9 @@ You should get the following as a response:
 ```{"data": {"hello": "Hello, world!"}}```
 
 Expand your GraphQL API by adding more types, queries, and mutations! Start integrating with a database like MongoDB or PostgreSQL to fetch and manipulate real data!
+
+## Additional Tutorials
+Here are some tutorials to help with content not covered in this file: 
+- Working with MongoDB: https://www.youtube.com/watch?v=C99qLWu7DKQ&ab_channel=CooperCodes
+- Working with PostgreSQL: https://hasura.io/docs/latest/index/
+- Working with React (Apollo Client work): https://www.youtube.com/watch?v=YyUWW04HwKY&ab_channel=PedroTech
