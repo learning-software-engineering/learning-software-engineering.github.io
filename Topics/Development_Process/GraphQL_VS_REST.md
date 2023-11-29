@@ -34,6 +34,7 @@ A REST API is any API that follows the REST architecture. The implementation of 
 1. In REST, you have to specify the `type` of the request you are sending when you call an API endpoint.
     + Some common examples include `GET`, `POST`, `PUT`, and `DELETE`. Others exist, but these are the ones used most often.
 2. REST is not specific; when you call an endpoint, you will get *all* of the data that endpoint can give, whether you like it or not.
+    + For example, if you are trying to get the first name of a User, through REST you would send a GET request to a `/users` endpoint, which would give you the entire User object (i.e, more data than usual) and you would be required to parse the response and get the First Name.
     + This can be ideal when you require a lot of data, but can also lead to larger than necessary load on your system if you have to call many API endpoints in quick succession.
 3. Every difference type of request in REST has to be called to a different endpoint. For instance, if you want to `GET` all `Users` and `Cars` at the same time, with a typical REST API, you would need to send two seprate `GET` requests to a `/users` and `/cars` endpoint.
 
