@@ -82,8 +82,8 @@ Variables store values to be used throughout the file that will be substituted i
 
 Basic variables are defined and referenced in the manner below:
 <pre>
-<i>variable</i> = <i>text</i> ...
-$(<i>variable</i>)
+<i>VARIABLE</i> = <i>text</i> ...
+$(<i>VARIABLE</i>)
 </pre>
 
 #### Functions
