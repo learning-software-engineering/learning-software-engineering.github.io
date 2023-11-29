@@ -27,6 +27,7 @@ Potential Topics--
         1. Set up
     8. Unity
         1. Introduction to Unity Basics
+        2. A Beginner's Guide for Unity UI Design
         
 - Software Tools
     1. Git
@@ -97,3 +98,4 @@ Potential Topics--
     1. Beginner's guide to product management and becoming a successful product manager with case studies.
 - Other useful resources
 - Teamwork
+    1. Effective Leadership
