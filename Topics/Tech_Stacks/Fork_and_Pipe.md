@@ -7,6 +7,7 @@
 #### [Fork()](#fork)
 #### [Pipe()](#pipe)
 #### [IPC Using  fork()  and  pipe()](#implementation)
+#### [Other Approaches to IPC](#other)
 #### [Conclusion](#conclude)
 
 ## Introduction
@@ -28,6 +29,15 @@ B-->A
  - When `fork()` is invoked, it creates a duplicate of the calling process (that is, the "parent process"), resulting in the formation of a "child process" that runs concurrently with the parent process.
   - After the `fork()` execution, both processes will carry out the next instruction once a new child process has been started.
   - The return value of `fork()` is an integer. It is usually employed to distinguish between the parent and child processes. The child process will receive a value of 0 returned by the `fork()` call, while the parent receives the child's process ID (PID).
+```c
+n = fork();
+if (n == 0) {
+  # I am the child.
+} else {
+  # I am the parent.
+  # n = the child's PID
+}
+```
  - The child process inherits the same memory contents, CPU registers, program counter, and open files from the parent process.
  - Both child and parent have the same files open at the same position. 
     -   Since they are sharing file handles, changes to the file offset made by the parent/child will be reflected in the child/parent.
@@ -105,10 +115,20 @@ else {
 ```
 The parent process writes the string "Hi my child\n" to the write end of the pipe (`fd[1]`), and the child process reads 11 bytes of data from the read end of the pipe (`fd[0]`).
 
+## Other Approaches to IPC <a name="other"></a>
+While **`fork()`** and **`pipe()`** are very useful for IPC, it's worth noting that other approaches to implement IPC exist. Here are some examples:
+-   **Message Queues:** Facilitate asynchronous communication between processes using message queues for data exchange.
+-   **Shared Memory:** Allows processes to share a region of memory for efficient, high-performance data sharing.
+-   **Sockets:** Enable communication between processes over a network or locally, providing a versatile IPC mechanism.
+-   **Signals:** Lightweight IPC method involving the use of signals for basic communication or synchronization between processes.
+
+These alternatives cater to diverse communication needs, from lightweight signaling to high-throughput data exchange.
+
 ## Conclusion <a name="conclude"></a>
 Understanding the roles of **`fork()`** and **`pipe()`** is foundational for implementing effective IPC strategies in C programming. Together, these functions empower developers to create and coordinate processes seamlessly. As programmers, this unlocks the potential to design robust, responsive, and efficient multi-process applications. 
 
 ## References
+
  - https://www.tutorialspoint.com/what-is-interprocess-communication
  - https://www.javatpoint.com/c-program-to-demonstrate-fork-and-pipe
  - https://ops-class.org/slides/2017-02-10-forksynch/
