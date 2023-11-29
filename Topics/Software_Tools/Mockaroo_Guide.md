@@ -52,7 +52,3 @@ Mockaroo is an invaluable tool for developers and testers, offering realistic da
 - Create an account to save your schemas for future use.
 
 Mockaroo simplifies testing and development by providing tailored, realistic data sets. The added visuals in this guide aim to make the process clearer and more user-friendly for all users.
-
----
-
-**Note**: The image URLs and descriptions in the markdown are placeholders and should be replaced with actual screenshots or a video tutorial link of Mockaroo in use.
