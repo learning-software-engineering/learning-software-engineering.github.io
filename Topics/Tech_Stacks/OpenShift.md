@@ -1,6 +1,6 @@
 ## Table of Contents
 
-- [Understanding Containers & Kubernetes](#understanding-containers-&-kubernetes)
+- [Understanding Containers & Kubernetes](#understanding-containers--kubernetes)
 - [Introduction](#introduction-to-openshift)
 - [Key Features](#key-features)
 - [Architecture](#architecture)
