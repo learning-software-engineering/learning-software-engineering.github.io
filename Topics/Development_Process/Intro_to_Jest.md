@@ -28,7 +28,6 @@ Jest provides several advantages for developers engaged in testing their applica
 
 - **Excellent Documentation and Community Support:** Jest has extensive documentation, and being widely adopted, it benefits from an active community, ensuring that developers can find help and resources easily.
 
-<!-- 2. Installation & Setup -->
 ## 2. Installation & Setup
 
 ### System Requirements
@@ -51,11 +50,137 @@ yarn add --dev jest
 ```
 
 ### Configuring Jest for your project
+Add the following to `package.json
+```javascript
+// package.json
+{
+  "scripts": {
+    "test": "jest"
+  }
+}
+```
+
 For the purpose of the guide, we will use Jest with its default configuration. For more customized setups, you can create a `jest.config.js` file in your project's root directory. 
 
 ```javascript
 // jest.config.js
 module.exports = {
-  // Your Jest configuration options go here
+  // config options go here
 };
 ```
+
+## 3. Test Cases and Test Suites
+
+### Writing a Test Case
+
+Writing a test in Jest involves defining a test function using the `test` or `it` keyword. 
+
+```javascript
+// _.test.js
+test('multiplies two positive numbers', () => {
+  expect(multiply(4, 2)).toBe(8);
+});
+
+test('handles division by zero', () => {
+  expect(() => divide(10, 0)).toThrow('Cannot divide by zero');
+});
+```
+
+### Writing a Test Suite
+
+A test suite is a way to group related test cases. It's created using the `describe` function. The first argument to `describe` is a string that describes the test suite, and the second argument is a function that contains the test cases.
+
+```javascript
+// math_functions.test.js
+describe('Calculator operations', () => {
+  test('adds two numbers', () => {
+    expect(add(2, 3)).toBe(5);
+  });
+
+  test('subtracts two numbers', () => {
+    expect(subtract(5, 3)).toBe(2);
+  });
+});
+```
+
+#### Nesting Test Suites
+You can nest `describes` to create a hierarchical structure
+```javascript
+describe('Calculator', () => {
+  describe('Addition', () => {
+    test('adds two positive numbers', () => {
+      expect(add(2, 3)).toBe(5);
+    });
+
+    test('adds a positive and a negative number', () => {
+      expect(add(5, -3)).toBe(2);
+    });
+  });
+
+  describe('Subtraction', () => {
+    test('subtracts two positive numbers', () => {
+      expect(subtract(5, 3)).toBe(2);
+    });
+
+    // ...
+  });
+});
+
+```
+
+### Running Tests
+You can run all Jest tests with the following:
+
+#### Using npm
+```bash
+npm test
+```
+
+#### Using Yarn:
+
+```bash
+yarn test
+```
+
+#### Running Specific Tests
+To run specific tests, you can use the `--test` flag followed by a pattern or a specific test name. For example, to run the division test:
+
+```bash
+npm test -- --test='handles division by zero'
+```
+
+To run the all Calculator operations tests:
+```bash
+npm test -- --test='Calculator operations'
+```
+
+To run a specific test in Calculator operations:
+
+```bash
+npm test -- --test='Calculator operations adds two numbers'
+```
+
+## 4. Matchers
+
+The `expect` statement is similar to assertions you may have seen before. The pattern you'll be seeing is `expect(expr).[not].matcher` You can add `not` to test for the opposite.
+
+- Equality
+   - `toBe` - matches identity
+   - `toEqual` - matches value
+- Numbers
+   - `toBeGreaterThan`
+   - `toBeLessThan`
+   - `toBeGreaterThanOrEqual`
+   - `toBeLessThanOrEqual`
+- Strings
+   - `toMatch` - a string or regex
+- Truthiness (because JavaScript is weird)
+   - `toBeNull`
+   - `toBeUndefined`
+   - `toBeDefined`
+   - `toBeTruthy`
+   - `toBeFalsy`
+- Errors/Exceptions
+   - `toThrow`
+- Arrays/Iterables
+   - `toContain`
