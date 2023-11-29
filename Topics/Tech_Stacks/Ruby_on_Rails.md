@@ -1,10 +1,24 @@
 # Introduction to Ruby on Rails
 
 ## Objective
-In this guide, we will cover an introduction of Rails and steps to quickly setting up a Rails application
+In this guide, we will cover setting up a Rails application and a few basic knowledge about layouts and principles of a Rails application
+
+## Prerequisite
+This guide assumes that you have prior experience with Ruby, a programming language. You might find a steep learning curve if you dive straight into Rails.
+
+Here are some useful resources to learn Ruby:
+- [Official Ruby Website](https://www.ruby-lang.org/en/documentation/)
+- [Ruby Tutorial For Beginners](https://www.rubyguides.com/ruby-tutorial/)
 
 ## What is Rails?
 Rails is a framework for web application development in the Ruby programming language. Its relationship to Ruby is similar to the one between Django and Python. The benefit of leveraging Rails is that it allows developers to write less code while still achieving more compared to other languages and frameworks. What makes Rails different from other frameworks is that it is opinionated software, designed with particular rules and preferences on how developers should write code. 
+
+## Two Major Principles in Rails
+### Don't Repeat Yourself
+This principle states that, in a software system, there should be a single, unambiguous, and authoritative representation for each piece of knowledge. Code is more robust and extensible as it prevents developers from repeatedly writing the same information.
+
+### Convention Over Configuration
+This principle states that the best approach in web development is to establish conventions, rather than specifying endless configuration files.
 
 ## Quick Setup to Create a New Rails Application
 ### Installation Ruby, SQLite3, and Rails
@@ -19,7 +33,7 @@ $ ruby --version
 $ sqlite3 --version
 ```
 
-3. Install Rails using `gen install` command from RubyGems.
+3. Install Rails using `gem install` command from RubyGems.
 ```bash
 $ gem install rails
 ```
