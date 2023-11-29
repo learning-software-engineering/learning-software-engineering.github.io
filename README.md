@@ -28,6 +28,7 @@ Potential Topics--
     8. Unity
         1. Introduction to Unity Basics
         2. A Beginner's Guide for Unity UI Design
+    9. Debugging in Python
         
 - Software Tools
     1. Git
