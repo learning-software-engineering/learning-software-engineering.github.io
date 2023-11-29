@@ -39,6 +39,10 @@
 
 ### [URL Sanitization](./Development_Process/URL_Sanitization.md)
 
+## Design Decisions
+
+### [GraphQL vs. REST: Which API type to use?](./Development_Process/GraphQL_VS_REST.md)
+
 ## Serverless Computing
 
 ### [Serverless Computing](./Development_Process/Serverless_AWS_Lambda.md)
