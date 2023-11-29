@@ -6,6 +6,7 @@
 ### [What is SwiftUI?](#what-is-swiftui-1)
 ### [Starting a Swift Project](#starting-a-swift-project-1)
 ### [Swift View](#swift-view-1)
+### [Design Patterns with SwiftUI](#design-patterns-with-swiftui)
 ### [Testing Your App - Unit Tests](#testing-your-app---unit-tests-1)
 ### [Testing Your App - Simulators](#testing-your-app---simulators-background)
 ### [Testing Your App - Debugging](#testing-your-app---debugging-1)
@@ -143,6 +144,8 @@ To view the preview on different device types, you can change the device the pre
 
 </p>
 
+
+## Design Patterns with SwiftUI
 
 
 
