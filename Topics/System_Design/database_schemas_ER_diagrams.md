@@ -73,6 +73,8 @@ Let’s draw arrows to create the connections for the foreign keys.
 
 This is our final schema in the form of a ER diagram using LcuidChart.
 
+**NOTE: You will see that in the diagrams aboveI have used Primary Key (PK) and Foreign Key (FK) as the type of the ID attributes. For clarification Primary Keys and Foreign Keys are not a type (in our case the type of the IDs are integers) I am just using it to state that it is a primary key or foreign key. You could also include the type and say Integer PK in your diagrams but it is not necessary.**
+
 There may be some further constraints to look for that you should create using your chosen sql language. For example every doctor should have a valid license (would probably have to create some new tables for that); also, there can’t be two points that start at the same time. Furthermore each appointment is strictly an hour long so there can’t be another appointment which starts earlier than an hour after another appointment e.g. if an appointment starts at 7:00 am the next appointment has to be 8:00 am or later.
 
 ### Helpful resources:
@@ -80,3 +82,7 @@ There may be some further constraints to look for that you should create using y
 * If you are really interested in database systems I would reccomend taking CSC343 as you will go into a lot more details than covered here as well as learn about making queries and relational algebra.
 
 * https://www.lucidchart.com/pages/er-diagrams#:~:text=Make%20an%20ERD-,What%20is%20an%20ER%20diagram%3F,each%20other%20within%20a%20system. This is a helpful guide on ER diagrams that goes into heavy details.
+
+* https://youtu.be/3BZz8R7mqu0?si=yjFV2lpJD1Ovexf. This is a short video giving a high level idea of what a database schema is.
+
+* https://www.educative.io/blog/what-are-database-schemas-examples. Another good resource that explains what a database schema is. Gives a SQL and a NoSQL example.
