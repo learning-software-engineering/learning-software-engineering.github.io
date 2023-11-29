@@ -105,8 +105,9 @@ This is only a simplification of what "Clean Architecture" is; the topic is so v
    - https://www.youtube.com/watch?v=2dKZ-dWaCiU 
    - https://github.com/ropalma/ICMC-USP/blob/master/Book%20-%20Clean%20Architecture%20-%20Robert%20Cecil%20Martin.pdf 
 
-## Code Smells
+## Clean coding
 ### [Code Smells](./Development_Process/Code_Smells.md)
+### [Coding and commenting styles](./Development_Process/clean_coding_styling.md)
 
 ## Prompt Engineering
 ### [Basics of Prompt Engineering](./Development_Process/Prompt_Engineering.md)
