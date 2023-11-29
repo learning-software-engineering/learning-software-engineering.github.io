@@ -15,7 +15,7 @@ Headers are an integral part of writeups and documentation, providing context an
 The bigger the header, the lower the amount of #'s to include.  
 
 ### Line Breaks
-Line breaks are an important part of write-ups. The way to implement line breaks in Markdown is to end a line with at least two spaces, and then hit enter/return and start typing on a new line. An example of the code, and its rendered output are in the below images.
+Line breaks are an important part of write-ups. The way to implement line breaks in Markdown is to end a line with at least two spaces, and then hit enter/return and start typing on a new line. An example of the code, and its rendered output are in the below images. The code implementation is highlighted in blue to display the two+ spaces that leads to line breaks.
 
 <img width="113" alt="linebreak1" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/74106672/4d803c2a-8d30-4e72-bc08-869835099faf">
 <img width="108" alt="linebreak2" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/74106672/52a8d3ea-bede-4a3e-b687-d2d77fe3f551">
