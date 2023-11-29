@@ -35,7 +35,7 @@ Defining and tracking UX metrics and Key Performance Indicators (KPIs) helps in 
 Ensuring UX design principles encompass accessibility and inclusivity, making software products usable for the widest possible audience.
 
 ## Case Studies and Further Reading:
-For more in-depth insights and examples of successful UX implementations in software projects, please refer to [this comprehensive resource](https://your-link-here.com). This link provides valuable information on UX design, tools, and resources for conducting user research and testing.
+For more in-depth insights and examples of successful UX implementations in software projects, please refer to [this comprehensive resource](https://www.nngroup.com/articles/doing-ux-agile-world/). This link provides valuable information on UX design, tools, and resources for conducting user research and testing.
 
 ## Conclusion:
 Integrating UX design principles in software engineering is crucial for creating technically sound and exceptionally user-friendly software, leading to more engaging, accessible, and successful software products, benefiting users and businesses alike.
