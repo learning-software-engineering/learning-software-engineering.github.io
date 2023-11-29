@@ -47,9 +47,9 @@ pnpm add @react-navigation/native-stack
 
 ## Navigation between Screens
 ### Step 1: Wrapping your app in NavigstionContainer
-In your entry file (`index.js` or `App.js`), wrap whole app in `NavigationContainer`.
+In your entry file (`index.js` or `App.js`), wrap the whole app in `NavigationContainer`.
 
-`NavigationContainer` serve as component responsible for manage all the navigators and navigation state. It's crucial to wrap the entire navigator structure with this component. 
+`NavigationContainer` serves as the parent component responsible for managing all navigation-related matters. It's crucial to wrap the entire navigator structure with this component. 
 
 For example:
 ```
@@ -63,7 +63,7 @@ export default function App() {
 ```
 
 ### Step 2: Creating a native stack navigator
-`createNativeStackNavigator` is a function containing 2 components: `Screen` and  `Navigator`.  All the pages that need to be navigate should be define as `Screen`, and all the `Screen` should be children of `Navigator` to define the configuration for routes. Each `Screen` object takes a name prop which refers to the name of the route and component prop which specifies the component to render for the route
+`createNativeStackNavigator` is a function containing 2 components: `Screen` and  `Navigator`.  All the pages that need to be navigated should be defined as `Screen`, and all the `Screen` should be children of `Navigator` to define the configuration for routes. Each `Screen` object takes a name prop which refers to the name of the route and a component prop which specifies the component to render for the route
 
 For example in `App.js`:
 ```
@@ -91,10 +91,10 @@ function App() {
 
 export default App;
 ```
-In the example above, fucntion Page define a screen for our application. We have added this screen into our navigation stack in App() and we set the inital page when we open the app to this page.
+In the example above, the function Page defines a screen for our application. We have added this screen to our navigation stack in App() and we set the initial page when we open the app to this page.
 
 ### Step 3: Navigation
-In step 2 we created a `Screen` component of Page. All the `Screen` component have a prop `navigation` automatically, adn this prop have different functions in which we could use to perform navigation actions. The function we will used for basic navigation is `navigate`. 
+In step 2 we created a `Screen` component of Page. All the `Screen` component have a prop `navigation` automatically, and this prop have different functions which we could use to perform navigation actions. The function we will use for basic navigation is `navigate`. 
 
 The `navigate` method is used to navigate to another screen given the screen name. 
 
@@ -139,17 +139,17 @@ export default App;
 
 ```
 
-`navigation` prop have another function `goBack`, in which is used to goBack to the previous page. To used it, we could just simply write
+`navigation` prop has another function `goBack`, which is used to go back to the previous page. To use it, we could just simply write
 ```navigation.goBack()```
 
-There are more useful function of `navigation` prop that could be used to perform different tasks. You can read about it more here: https://reactnavigation.org/docs/navigation-prop/
+There are more useful functions of `navigation` prop that could be used to perform different tasks. You can read about it more here: https://reactnavigation.org/docs/navigation-prop/
 
 ## Passing Parameters between Screens
-Sometime, we need to pass different values like ID or current status between screens when we navigate. 
+Sometimes, we need to pass different values like ID or current status between screens when we navigate. 
 
-We talked about `navigation.navigate` in the previous section. Actually, `navigation.navigate` can takes in two parameter:
+We talked about `navigation.navigate` in the previous section. Actually, `navigation.navigate` can take two parameters:
 ```navigation.navigate(name, params)``` 
-The parameter `name` refer the page name we want to navigate to, and the parameter `params` refer to the infomation to pass to the destination route.
+The parameter `name` refers to the page name we want to navigate to, and the parameter `params` refers to the information to pass to the destination route.
 
 From the example above, if we want not only to navigate to page2, but also pass value to page2. We could write:
 ```
@@ -164,7 +164,7 @@ function Page1({ navigation }) {
   );
 }
 ```
-We now have passed id of 1 to page2, then we could access this value in page 2 by:
+We now have passed the id of 1 to page2, then we could access this value in page 2 by:
 ```
 function Page2({ route, navigation }) {
   const {id} = route.params
@@ -173,12 +173,12 @@ function Page2({ route, navigation }) {
   );
 }
 ```
-Now we will have a new parameter `route` to Page2. `route` is like `navigation`, which is passed to all the `Screen component`. The value passed in is received and could be accessed in route.params in the destination page.
+Now we will have a new parameter `route` to Page2. `route` is like `navigation`, which is passed to all the `Screen component`. The value passed in is received and can be accessed in route.params in the destination page.
 
 
 ## Limitations
 ### Right-to-Left (RTL) Layout support
-The library sometimes encouter problems with RTL layout, thus, it is suggest to use other navigation method with RTL layout.
+The library sometimes encounters problems with RTL layout, thus, it is suggested to use other navigation methods with RTL layout.
 
 ## Reference
 React Navigation. https://reactnavigation.org
