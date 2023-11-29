@@ -75,3 +75,37 @@ Also, this guide is written with the assumption that the reader has a basic unde
    }
    </script>
    ```
+
+## Step 4: Use Supabase Methods in Vue Components
+
+Perform database operations using Supabase methods in your Vue components.
+
+```javascript
+// src/components/TemplateComponent.vue
+
+<script>
+import { supabase } from './lib/supabaseClient'
+
+export default {
+  methods: {
+    async getData() {
+      const { data, error } = await supabase
+        .from('table')
+        .select('*');
+
+      if (error) {
+        console.error('Something went wrong', error.message);
+      } else {
+        console.log('Fetched data:', data);
+      }
+    }
+  }
+}
+</script>
+```
+
+## Conclusion
+
+Well done! You've successfully integrated Supabase into a simple Vue.js project. The Supabase client has been set up, initialized in Vue, and your Supabase methods are ready to perform database interactions.
+
+To continue discovering what you can achieve with Supabase, dive into the [documentation](https://supabase.com/docs/guides/getting-started/features), or explore advanced topics such as [authentication](https://supabase.com/docs/guides/auth) or [real-time servers](https://supabase.com/docs/guides/realtime).
