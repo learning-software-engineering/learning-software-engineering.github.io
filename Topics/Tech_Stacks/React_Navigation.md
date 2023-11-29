@@ -98,7 +98,7 @@ In step 2 we created a `Screen` component of Page. All the `Screen` component ha
 
 The `navigate` method is used to navigate to another screen given the screen name. 
 
-For example we have two page: page1 and page2, code below will navigate page1 to page2:
+For example we have two pages: page1 and page2, code below will navigate page1 to page2:
 
 ```
 import { Button, View } from 'react-native';
