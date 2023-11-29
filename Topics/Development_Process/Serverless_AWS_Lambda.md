@@ -20,7 +20,7 @@
 
 It can be hard to set up and maintain your backend services. There are a ton of hosting options to choose from, and they can get pretty pricey.
 
-Serverless computing allows you to to build and run applications without needing to manage servers. Cloud providers such as AWS, Azure, Google Cloud automatically provision servers based on demand.
+Serverless computing allows you to to build and run applications without needing to manage servers. Cloud providers such as AWS, Azure, Google Cloud automatically provision servers based on demand. Server resources will be scaled up when necessary, or scaled down to 0 when not in use. 
 
 ## Benefits of Serverless Computing
 
@@ -37,10 +37,11 @@ There are some situations where you might not want to use serverless computing.
 
 1. **Boot-up time**: Serverless services are not constantly running, so when you make a request to code that hasn't been used in a while, you could face performance impacts.
 2. **Long running processes**: Since you pay for what you use, it is usually not cost-effective to use serverless for longer running processes. In these cases, you might want to consider other options to run your backend services on.
+3. Difficulty reproducing server environment: Since the cloud provider provisions the servers when the serverless function is called, it may be difficult to reproduce the environment that it is runs in. Most cloud providers will give you a choice of higher level options like OS, but you may not be able to choose the nitty-gritty details.
 
 ## AWS Lambda
 
-Lambda is a serverless compute service offered by Amazon Web Services (AWS). It allows you to run backend code triggered by events, such as other AWS services or your own services, without needing to provision or manage servers. And, you only pay for each request you make. In the free tier for AWS Lambda, you have access to 1 million free requests per month.
+Lambda is a serverless compute service offered by Amazon Web Services (AWS). Lambda functions are essentially backend code that can be triggered by event sources, such as other AWS services or your own services, without needing to provision or manage servers. You only pay for each request you make. In the free tier for AWS Lambda, you have access to 1 million free requests per month.
 
 ### Creating Lambda Functions in the AWS Console
 
