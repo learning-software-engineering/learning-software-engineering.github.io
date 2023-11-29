@@ -33,4 +33,4 @@
 ### [Debugging with GDB](./Tech_Stacks/GDB_Debug.md)
 ### [Learning Express.js](./Tech_Stacks/Express.md)
 ### [Introduction to React ChartJS](./Tech_Stacks/ReactChartJS.md)
-### [Setting up Firebase and Intro to Firestore] (./Tech_Stacks/Firebase_and_Firestore.md)
+### [Setting up Firebase and Intro to Firestore](./Tech_Stacks/Firebase_and_Firestore.md)
