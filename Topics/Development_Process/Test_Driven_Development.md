@@ -25,6 +25,85 @@ A common phrase you might see when talking about TDD is the "Red-Green-Refactor"
 
 The core concept behind TDD is that once you get to the refactor state you should have already had a working version of your code, so if in the process of refactoring you change a behavoiur the tests will once again return back to the red state and the cycle continues.
 
+#### Example
+
+For example lets say we want to make a calculator program in python, and we know want that calculator to have a multiplcation function. This is how that might look if we are using TDD
+
+This example will be written in python and uses the doctest package for tests
+
+First we will create our class with some examples that will tests if our implementation is correct 
+
+ ```python:
+import doctest
+
+class Calculator:
+    """
+    A simple calculator class that can multiply.
+
+    Examples:
+    >>> calc = Calculator()
+    >>> calc.multiply(2, 3)
+    6
+    """
+
+if __name__ == "__main__":
+    doctest.testmod()
+ ```
+
+This code will fail because we haven't implemented the multipy method yet but it showcases how we expect the method to behave. This is our **Red State**
+
+We then move on to implementing the methods and update our file like so
+ ```python:
+import doctest
+
+class Calculator:
+    """
+    A simple calculator class that can add and multiply.
+
+    Examples:
+    >>> calc = Calculator()
+    >>> calc.multiply(2, 3)
+    6
+    """
+
+    def multiply(self, a, b):
+        product = 0
+        for i in range(0, b):
+            product += a
+        return product
+
+if __name__ == "__main__":
+    doctest.testmod()
+ ```
+
+ At this point the test we wrote is now passing so we know that the method we just implemented is working the way we inteded it to work. This is our **Green State**
+
+ Now that we have a Green state we can move on to our **Refactor State**. If we change our multiply method fundamentally and alter its behaviour our original test will once again fail indicating that our refactor changed the behavouir, we want to refactor without changing any behaviour. We update our file like so.
+
+  ```python:
+import doctest
+
+class Calculator:
+    """
+    A simple calculator class that can add and multiply.
+
+    Examples:
+    >>> calc = Calculator()
+    >>> calc.multiply(2, 3)
+    6
+    """
+
+    def multiply(self, a, b):
+        return a * b
+
+if __name__ == "__main__":
+    doctest.testmod()
+ ```
+
+Our tests are still passing which means our refactor did not change any behaviour while we were able to optimize the code.
+
+This is a trivial example of TDD and following this pattern if we wanted to add more methods like add and subtract we can follow similar steps and be confident that those changes don't effect multiply as long as the multiply test is still passing
+
 ## Pros and Cons
 
 You might be thinking to yourself "wow TDD seems great, it ensures that the code does exactly what you want it to do why is this not the standard?". For as great as a principle TDD is it also has its drawbacks, its up the developer to decide wheter or not TDD fits their use case.
