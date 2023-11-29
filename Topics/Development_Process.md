@@ -8,6 +8,8 @@
 
 ### [Django Project Deployment: AWS, Vercel, and Railway](./Development_Process/Django_Deployment_AWS_Railway_Vercel.md)
 
+### [Node.js Project Deployment: Azure](./Development_Process/Azure_webapp_deployment_with_nodejs.md)
+
 ### [Automated Frontend Deployment with Vercel](./Development_Process/Frontend_Automated_Deployment_Vercel.md)
 
 ### [Flask Application Deployment on Heroku](./Development_Process/Flask_App_Deployment_Heroku.md)
@@ -29,6 +31,9 @@
 
 ### [Requirements.txt](./Development_Process/Build_Requirements/Requirements_txt.md)
 
+## Build tools
+### [Introduction to ```make``` and Makefiles](./Development_Process/Introduction_to_make_and_Makefiles.md)
+
 ## React Testing Library
 
 ### [React Testing Library](./Development_Process/React_Testing_Library.md)
@@ -36,6 +41,14 @@
 ## URL Sanitization
 
 ### [URL Sanitization](./Development_Process/URL_Sanitization.md)
+
+## Design Decisions
+
+### [GraphQL vs. REST: Which API type to use?](./Development_Process/GraphQL_VS_REST.md)
+
+## Serverless Computing
+
+### [Serverless Computing](./Development_Process/Serverless_AWS_Lambda.md)
 
 ## SOLID PRINCIPLES:
 
@@ -93,3 +106,9 @@ This is only a simplification of what "Clean Architecture" is; the topic is so v
 
 ## Code Smells
 ### [Code Smells](./Development_Process/Code_Smells.md)
+
+## Prompt Engineering
+### [Basics of Prompt Engineering](./Development_Process/Prompt_Engineering.md)
+
+## Technical Documents
+### [Intro to Request for Comments (RFCs)](./Development_Process/Technical_Documents/Intro_to_rfcs.md)
