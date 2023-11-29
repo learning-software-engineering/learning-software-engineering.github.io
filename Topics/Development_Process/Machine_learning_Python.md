@@ -5,6 +5,11 @@ programming languages for ML development. In this review, we'll delve into the d
 learning models in Python, explore the prominent libraries, discuss practical applications, and highlight the 
 significance of incorporating ML into your projects.
 
+Deep learning is a subfield of machine learning that focuses on artificial neural networks, which are inspired by the 
+structure and function of the human brain. In deep learning, these neural networks consist of multiple layers (deep layers) 
+that process and transform input data to produce an output. Each layer contains interconnected nodes (neurons) that learn to 
+extract hierarchical features from the input.
+
 ### Use Cases:
 
 1. **Predictive Analytics:**
@@ -53,7 +58,9 @@ significance of incorporating ML into your projects.
 ## Steps to building a model:
 
 If these steps do not make much sense to you, perhaps you should look into learning and resarching some of the theory that forms the 
-fundamental and core knowledge of Machine Learning.
+fundamental and core knowledge of Machine Learning. The following is an article by IBM 
+
+https://www.ibm.com/topics/machine-learning
 
 1. **Data Collection and Cleaning:**
    - Gather relevant data and preprocess it for model training.
