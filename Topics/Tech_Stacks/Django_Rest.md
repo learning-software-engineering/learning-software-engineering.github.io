@@ -47,12 +47,15 @@ Django Rest Framework is a popular library for building RESTful APIs with Django
  ```
  
  In order to add Django Rest Framework to your project, open the settings.py file and add 'rest_framework' to the INSTALLED_APPS list: ```INSTALLED_APPS = [..., 'rest_framework']```
- 
+  
+ After installing and configuring Django Rest Framework, we may now create a simple API. The first step is learning how to define a model in the database.
 
- ### How it Works
- 
- 
- After installing and configuring Django Rest Framework, we may now create a simple API. We first create a new model to represent our API resource. To illustrate the use of Django Rest Framework, we'll create a simple model for a todo item with two fields: its title as a CharField, i.e., a string and its complete as a BooleanField, i.e., a boolean value. We first create a new file called models.py in the API app folder by adding the following code:
+ ### Django ORM
+ As Django is a backend framework, there is a need for persistent storage of any data used by the web application. Django supports relational databases through its own built-in ORM. An [ORM](https://www.freecodecamp.org/news/what-is-an-orm-the-meaning-of-object-relational-mapping-database-tools/) (Object Relational Mapper) provides a layer of abstraction from the database, allowing the user to define relations and make queries using objects, rather than having to write raw SQL code. This makes ORMs suitable for working with object-oriented programming. Another benefit of ORMs is that the application is separated from the actual database implementation, which means the database can be changed (for example, from SQLite to PostgreSQL once the app is ready for production) without affecting the app.
+
+ ### Defining a model
+
+We first create a new model to represent our API resource. To illustrate the use of Django Rest Framework, we'll create a simple model for a to-do item with two fields: its title as a CharField, i.e., a string, and its complete as a BooleanField, i.e., a boolean value. We first create a new file called models.py in the API app folder by adding the following code:
 
 ``` {python}
 from django.db import models
@@ -61,6 +64,11 @@ class TodoItem(models.Model):
     title = models.CharField(max_length=200)
     completed = models.BooleanField(default=False)
 ```
+
+### Migrations
+
+
+ ### Creating an API
 
 Assuming we want to create an API for your TodoItem model that allows clients to create, read, update, and delete TodoItem instances. We may define a serializer class in serializers.py in the app API folder that converts TodoItem instances to JSON. We add the following code in serializers.py:
 
