@@ -115,9 +115,8 @@ Ultimately, it's a significant gain for you: enhancing your skills as a develope
 
 Explore these resources to deepen your understanding and proficiency with SonarQube:
 
-- [Official SonarQube Documentation](https://docs.sonarqube.org/latest/)
-- [Community Plugins and Extensions](https://docs.sonarqube.org/latest/extend/adding-plugins/)
-- [SonarQube Rule Set](https://rules.sonarsource.com/)
+- [Official SonarQube Documentation](https://docs.sonarsource.com/sonarqube/latest/)
 - [SonarQube Video Tutorial for Beginners](https://www.youtube.com/watch?v=y8zJOjsT4E8)
 - [SonarQube User Groups and Forums](https://community.sonarsource.com/)
+- [SonarQube Rule Set](https://rules.sonarsource.com/)
   
