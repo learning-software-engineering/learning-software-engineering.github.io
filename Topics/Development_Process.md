@@ -31,6 +31,9 @@
 
 ### [Requirements.txt](./Development_Process/Build_Requirements/Requirements_txt.md)
 
+## Build tools
+### [Introduction to ```make``` and Makefiles](./Development_Process/Introduction_to_make_and_Makefiles.md)
+
 ## Testing Frameworks
 
 ### [React Testing Library](./Development_Process/React_Testing_Library.md)
@@ -40,6 +43,14 @@
 ## URL Sanitization
 
 ### [URL Sanitization](./Development_Process/URL_Sanitization.md)
+
+## Design Decisions
+
+### [GraphQL vs. REST: Which API type to use?](./Development_Process/GraphQL_VS_REST.md)
+
+## Serverless Computing
+
+### [Serverless Computing](./Development_Process/Serverless_AWS_Lambda.md)
 
 ## SOLID PRINCIPLES:
 
@@ -100,3 +111,6 @@ This is only a simplification of what "Clean Architecture" is; the topic is so v
 
 ## Prompt Engineering
 ### [Basics of Prompt Engineering](./Development_Process/Prompt_Engineering.md)
+
+## Technical Documents
+### [Intro to Request for Comments (RFCs)](./Development_Process/Technical_Documents/Intro_to_rfcs.md)
