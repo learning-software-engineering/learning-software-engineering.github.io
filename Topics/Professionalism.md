@@ -12,6 +12,38 @@ Professionalism in software engineering can also be defined as a movement to mak
 ### The Role of Ethics in Software Engineering
 Ethics play a significant role in software engineering as they guide engineers in making responsible decisions that impact users, clients, and colleagues. Ethical considerations include data privacy, security, accessibility, and fairness, ensuring that the software development process benefits all stakeholders without causing harm.
 
+According to the Software Engineering Code of Ethics and Professional Practice ^2, the eight guiding principles for ethical behaviour in this field are as follows:
+
+1. Public: Software engineers shall act consistently with the public interest.
+   
+2. Client and employer: Software engineers shall act in a manner that is in the best interests of their client and employer consistent with the public interest.
+   
+3. Product: Software engineers shall ensure that their products and related modifications meet the highest professional standards possible.
+
+4. Judgment: Software engineers shall maintain integrity and independence in their professional judgment.
+   
+5. Management: Software engineering managers and leaders shall subscribe to and promote an ethical approach to the management of software development and maintenance.
+   
+6. Profession: Software engineers shall advance the integrity and reputation of the profession consistent with the public interest.
+   
+7. Colleagues: Software engineers shall be fair to and supportive of their colleagues.
+    
+8. Self: Software engineers shall participate in lifelong learning regarding the practice of their profession and shall promote an ethical approach to the practice of the profession.
+
+These guiding principles are further broken down in the code into more concise and actionable items.
+
+According to a Fellow article by Brier Cook, five tips to help software engineers ensure they behave ethically are:
+
+1. **Ask yourself how the software could be misused**. Assuming that your software will be used in good faith or for its intended purpose, is not good enough. Thinking about the ways in which the software may be misused, will allow you to inhibit unethical use of your software before it occurs in the first place.
+   
+2. **Be honest about your intent**. "Use simple language and be honest about your product!". Ethical behaviour in software engineering involves users being able to make informed decisions about their use of your product, which can only occur when we are honest.
+
+3. **Avoid biases.**  "Don’t let enthusiasm cloud your judgment!" Always ask for a second opinion on your work to ensure it adheres to the ethical principles of software engineering.
+
+4. **Take accountability for the software.** "As a software engineer, you should aim to advance the integrity and reputation of the profession." Take responsibility for detecting and reolving errors in your software. Take both the successes and failures of your software as your own.
+
+5. **Act as a responsible citizen.** Be a responsible citizen first and a software engineer second. Only work on projects which you believe to be safe and ethical.
+
 ### Examples of Professional Behavior in Software Engineering
 
 1. Adherence to coding standards: Consistently following established coding standards and best practices ensures that the code is readable, maintainable, and efficient.
@@ -71,3 +103,7 @@ https://www.podchaser.com/podcasts/software-engineering-daily-62587 ----- Softwa
 
 ### School Resources:
 You can ask ASIP program ambassadors for help to provide related materials on how to become a professional software engineer. I cannot add the links here since the resources from ASIP are not open to the public.
+
+# References
+(1)
+(2) Don Gotterbarn, Keith Miller, and Simon Rogerson. 1997. Software engineering code of ethics. Commun. ACM 40, 11 (November 1997), 110-118. DOI: 10.1145/265684.265699
