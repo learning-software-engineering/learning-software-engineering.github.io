@@ -1,6 +1,11 @@
 
 # Understanding Angular: A Guide for Beginners
 
+# Prerequisites
+- HTML
+- CSS
+- TypeScript
+
 ## 1. What are Components?
 
 ### Definition
@@ -68,7 +73,7 @@ Imagine you wanted to dynamically input users into your list component and outpu
 ```
 <app-list [users]="usersFromAppComponent" (oldestUser)="oldestUser($event)"></app-list>
 ```
-
+In Angular, `$event` represents the data emitted by an event. In our code, `$event` carries the data from the `oldestUser` event of `app-list` to the `oldestUser` method in the parent component, enabling inter-component communication.
 
 **list.component.ts**
 ```
@@ -176,6 +181,14 @@ import { OtherCoolAboutComponent} from './other-cool-about.component';
 })
 export class AboutModule { }
 ```
+
+## Additional Resources
+- [Angular Docs](https://angular.io/docs)
+- [Angular Tutorial](https://angular.io/tutorial)
+- [Angular Cheatsheet](https://angular.io/guide/cheatsheet)
+- [Angular Tutorial for Beginners](https://www.youtube.com/watch?v=2OHbjep_WjQ)
+- [Angular Crash Course](https://www.youtube.com/watch?v=Fdf5aTYRW0E)
+
 
 
 
