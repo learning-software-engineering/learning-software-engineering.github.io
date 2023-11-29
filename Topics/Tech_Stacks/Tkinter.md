@@ -31,8 +31,8 @@ A Tkinter GUI has two main components
 Lets begin by creating a new Python file and importing Tkinter
 
 ```python
-   import tkinter as tk
-   ```
+import tkinter as tk
+```
    
 And that's all there is to it, you have successfully set up Tkinter.
 
