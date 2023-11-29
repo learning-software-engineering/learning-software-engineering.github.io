@@ -98,3 +98,6 @@ This is only a simplification of what "Clean Architecture" is; the topic is so v
 
 ## Prompt Engineering
 ### [Basics of Prompt Engineering](./Development_Process/Prompt_Engineering.md)
+
+## Technical Documents
+### [Intro to Request for Comments (RFCs)](./Development_Process/Technical_Documents/Intro_to_rfcs.md)
