@@ -45,3 +45,12 @@ Lean is an ideology that originated from the manufacturing principles of a car c
    - Lean works well with small projects with a short deadline. If there are fewer people, it means that there is a higher chance that everyone agrees and follows Lean principles. Short deadlines work well with this methodology because Lean allows for teams to produce an MVP with minimal resources while still maintaining quality.
 ### Disadvantages:
    - Everyone on the team must adhere to the Lean methodology, or else their workflow will disrupt the overall workflow and in the end, it will cause the team to have more waste and more delays.
+   - Takes a lot of planning and communication between team members.
+   - Lean is to be right on time. If there happens to be unexpected problems due to poor planning, then it can result in much more waste.
+
+### Differences with Other Methodologies
+   - Agile vs. Lean
+      - The key difference is that Agile's main goal is to create something. Meanwhile, Lean's mail goal is to eliminate waste.
+   - Waterfall vs. Lean
+      - Waterfall works in sequential stages and there is little to no flexibility making it hard to return to a previous stage. Lean is flexible, as it is an iterative process, so in each iteration, there will be stages that have been visited before.
+   
