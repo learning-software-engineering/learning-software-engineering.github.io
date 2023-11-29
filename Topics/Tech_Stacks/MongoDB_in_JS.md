@@ -1,4 +1,4 @@
-# Using MongoDB with JavaScript
+# Using MongoDB with Node.js
 
 ## Table of contents
 ### [Introduction](#introduction-1)
@@ -14,13 +14,17 @@
 
 ## Introduction
 
-This is an introduction to MongoDB basics in JavaScript. This article assumes that the reader has a decent understanding of JavaScript.
+This is an introduction to MongoDB basics in JavaScript using Node.js. This article assumes that the reader has a decent understanding of JavaScript.
 
 MongoDB is a cross-platform document-oriented database program that uses JSON-like documents to store data.
 
-In this article we will cover the basics of connecting to and modifying the contents of MongoDB databases using JavaScript.
+Node.js is an open-source JavaScript runtime environment that lets developers use JavaScript for server-side scripting.
+
+In this article we will cover the basics of connecting to and modifying the contents of MongoDB databases using Node.js.
 
 ## Installation
+
+Node.js installers can be downloaded [here].(https://nodejs.org/en/download)
 
 MongoDB can be installed using npm by running `npm install mongodb` in the termimal.
 
