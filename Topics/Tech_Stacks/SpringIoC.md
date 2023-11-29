@@ -46,8 +46,7 @@ Spring IoC, these dependencies are injected by the container.
 - The **Controller** class declares a dependency on the **Service** class.
 - The **Service** class declares a dependency on the **Repository** class.
 - When the application starts, the Spring IoC container creates instances of these classes.
-- It then injects the **Service** instance into the **Controller**, and the **Repository** instance into the **Service
-  **.
+- It then injects the **Service** instance into the **Controller**, and the **Repository** instance into the **Service**.
 
 This setup leads to a design where the Controller doesn't need to know how to create a Service, nor does the Service
 need to know how to create a Repository. The IoC container handles these responsibilities, leading to more modular,
@@ -92,7 +91,6 @@ You can define beans and their dependencies in an XML configuration file or via 
 - #### XML Configuration Example:
 
 ```xml
-
 <beans xmlns="http://www.springframework.org/schema/beans">
     <bean id="myService" class="com.example.MyService"/>
     <bean id="myController" class="com.example.MyController">
