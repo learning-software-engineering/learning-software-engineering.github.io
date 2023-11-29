@@ -56,7 +56,12 @@ Selenium has uses within automating browser interactivity, such as extracting in
     ```
 2. **Install Chrome WebDriver**
 
-    Now, download the appropriate Chrome WebDriver version matching your Chrome browser version and place it in the project directory.
+    Now, download the appropriate Chrome WebDriver version matching your Chrome browser version and place it in the project directory. You can find this in Google Chrome under `settings > about chrome` as shown.
+    <img width="692" alt="image" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/76736219/3528648f-925f-49e4-9702-44da26f1d671">
+
+    Alternatively, you can download chrome [here](https://www.google.com/intl/en_ca/chrome/). Or, for Linux users you can use either _wget_ `wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+` or _dpkg_ `sudo dpkg -i google-chrome-stable_current_amd64.deb`.
+
 
 3. **Start Writing Code**
 
