@@ -89,7 +89,7 @@ Here's an example:
 
 There are two types of keywords called "keyframes" (don't get this mistaken with '@keywords' as a rule, which means the animation itself) we can use to determine how the transition will behave and when CSS style changes will occur over time:
 1. **Percentage keyframes**:
-Setting a percentage keyframe is like setting markers for when a change will occur based on the percentage of the animation that's been completed (ex. CSS styles within a 25% keyframe triggers when the animation is 25% finished). Here's an example:
+Defining percentage keyframes in CSS animation '@keyframes' rules is like placing markers that signify when a change should take place, relative to the percentage of the animation that has been completed. For instance, CSS styles within a 25% keyframe will activate when the animation reaches the 25% progress mark:
 ``` CSS
 @keyframes slidein {
   75% {
@@ -100,8 +100,8 @@ Setting a percentage keyframe is like setting markers for when a change will occ
 }
 ```
 2. **'from' and 'to' keyframes**:
-'from' essentially means at the beginning of the animation (0%). Similiarly, 'to' means at the end of the animation (100%).
-Here's an example:
+'from' essentially means at the beginning of the animation, and 'to' means at the end of the animation. Following the logic of how percentage keyframes work, we see that the style set in keyframe 'from' will take effect once the animation is 0% complete, and the style set in keyframe 'to' will take effect once the animation is 100% complete.
+Here's an example of it in code:
 ``` CSS
 @keyframes slidein {
   from {
@@ -153,6 +153,9 @@ p {
 }
 ```
 
+If the above is not clear, here is a page full of great examples of CSS animation with code to accompany the examples:
+https://chartscss.org/customization/animations/
+
 ## Summary
 
 Summarizing everything we've covered so far:
@@ -166,3 +169,4 @@ Summarizing everything we've covered so far:
 - https://www.w3schools.com/css/css3_animations.asp
 - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animations/Using_CSS_animations
 - https://developer.mozilla.org/en-US/docs/Web/CSS/animation
+- https://chartscss.org/customization/animations/
