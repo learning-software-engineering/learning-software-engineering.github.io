@@ -1,3 +1,5 @@
+# Inter-process Communication(IPC) with fork() and pipe() in C
+
 ## Table of Contents
 
 #### [Introduction](#Introduction)
@@ -13,6 +15,12 @@ In C programming, the **`fork()`** and **`pipe()`** functions are commonly used 
 
 ## What is Inter-process Communication (IPC) <a name="IPC"></a>
 Inter-process Communication (IPC) is a crucial mechanism provided by the operating system that allows processes to communicate with each other. This communication could involve a process letting another process know that some event has occurred or the transferring of data between processes.
+A diagram that illustrates interprocess communication is as follows:
+```mermaid
+graph LR
+A[Process 1] <-- IPC --> B[Process 2]
+B-->A
+```
 
 ## Fork()<a name="fork"></a>
 
@@ -36,7 +44,31 @@ Inter-process Communication (IPC) is a crucial mechanism provided by the operati
 
 1. Before calling  `fork()`,  the parent creates a pipe object by calling pipe().
 2.  Next, it calls  `fork()`. Now both the parent and the child can write/read data through the pipe. This may cause some chaos, we will have to make this a one-way communication.
+```mermaid
+flowchart LR
+A[Parent]
+B[Child]
+A--fork-->B
+```
+```mermaid
+flowchart LR
+A[Parent]
+B[Child]
+C[Pipe]
+A--write-->C
+B--write-->C
+C--read-->B
+C--read-->A
+```
 3.  After  `fork()`,  the parent closes its copy of the read-only end and the child closes its copy of the write-only end.
+```mermaid
+flowchart LR
+A[Parent]
+B[Child]
+C[Pipe]
+A--write-->C
+C--read-->B
+```
 4.  Now the parent can pass information to the child.
 
 **Note:** To ensure pipe work properly, you should:  **Always be sure to close the end of pipe you aren't concerned with.** \
