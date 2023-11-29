@@ -36,11 +36,11 @@ A REST API is any API that follows the REST architecture. The implementation of 
 2. REST is not specific; when you call an endpoint, you will get *all* of the data that endpoint can give, whether you like it or not.
     + For example, if you are trying to get the first name of a User, through REST you would send a GET request to a `/users` endpoint, which would give you the entire User object (i.e, more data than usual) and you would be required to parse the response and get the First Name.
     + This can be ideal when you require a lot of data, but can also lead to larger than necessary load on your system if you have to call many API endpoints in quick succession.
-3. Every difference type of request in REST has to be called to a different endpoint. For instance, if you want to `GET` all `Users` and `Cars` at the same time, with a typical REST API, you would need to send two seprate `GET` requests to a `/users` and `/cars` endpoint.
+3. Every different type of request in REST has to be called to a different endpoint. For instance, if you want to `GET` all `Users` and `Cars` at the same time, with a typical REST API, you would need to send two separate `GET` requests to a `/users` and `/cars` endpoint.
 
 
 ## GraphQL Overview
-GraphQL is difference from REST in the sense that it is not actually an API architecture. In fact, it is actually a `query language`, hence the QL in its name. This leads to a number of distinct characteristics that we will discuss:
+GraphQL is different from REST in the sense that it is not actually an API architecture. In fact, it is actually a `query language`, hence the QL in its name. This leads to a number of distinct characteristics that we will discuss:
 1. In GraphQL there are only two types of requests: `Queries`, and `Mutations`. A query is used to get data, i.e, "query" some data. Everything else would be a mutation; creating, updating, or deleting data all mutate, and thus they are mutations.
     + To follow proper GraphQL standards, any endpoint that only sends back data would fall under `query`. Any endpoint that changes data in any way would fall under `mutation`.
 2. GraphQL is very specific; when you call an endpoint, you can request *exactly* what data you want, and you can send different structures of data, based on customizable `types`.
