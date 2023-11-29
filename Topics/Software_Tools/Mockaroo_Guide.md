@@ -1,6 +1,6 @@
 # Using Mockaroo to Generate Mock Data
 
-Mockaroo is an invaluable tool for developers and testers, offering realistic data generation for application testing. Below is a guide on how to use Mockaroo, along with its benefits.
+Mockaroo is an invaluable tool for developers and testers, offering realistic data generation for application testing. This guide provides an overview of Mockaroo's capabilities and a step-by-step tutorial on how to use it, along with its benefits. We've now included visual aids to make the process even more accessible.
 
 ## Benefits of Using Mockaroo
 - **Realistic Data Sets**: Mockaroo provides data that closely mimics actual operational data, aiding in more accurate testing and development.
@@ -11,6 +11,10 @@ Mockaroo is an invaluable tool for developers and testers, offering realistic da
 - **API Access**: The availability of an API allows for dynamic data generation within automated testing frameworks.
 - **Time-Saving**: Reduces the time and effort needed to create mock data manually, increasing efficiency in the development process.
 - **Data Privacy Compliance**: By using synthetic data, Mockaroo helps in adhering to data privacy laws, as no real user data is involved in testing.
+
+## Visual Guide to Using Mockaroo
+![Mockaroo Interface](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/64294214/d20c6061-7611-4171-8b1f-c2d510244b8f)
+*Figure 1: Mockaroo Interface Overview*
 
 ## 1. Go to the Mockaroo Website
 - Visit [Mockaroo's website](https://www.mockaroo.com/).
@@ -36,7 +40,9 @@ Mockaroo is an invaluable tool for developers and testers, offering realistic da
 
 ## 7. Preview and Download
 - Use the "Preview" button to check your data.
-- Click “Download Data” to obtain your mock data file.
+- Click “Generate Data” to obtain your mock data file.
+![Preview and Download](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/64294214/da4fb2d1-d48d-40ee-96f9-e8a58bdf7ada)
+*Figure 2: Previewing and Downloading Data*
 
 ## 8. API Access (Optional)
 - Use Mockaroo's API for dynamic data generation.
@@ -45,4 +51,8 @@ Mockaroo is an invaluable tool for developers and testers, offering realistic da
 ## 9. Save Your Schema (Optional)
 - Create an account to save your schemas for future use.
 
-Mockaroo simplifies testing and development by providing tailored, realistic data sets.
+Mockaroo simplifies testing and development by providing tailored, realistic data sets. The added visuals in this guide aim to make the process clearer and more user-friendly for all users.
+
+---
+
+**Note**: The image URLs and descriptions in the markdown are placeholders and should be replaced with actual screenshots or a video tutorial link of Mockaroo in use.
