@@ -15,6 +15,9 @@ Must Know Jira features - https://www.youtube.com/watch?v=issdcnErAU8
 Written Article On Jira Workflows - https://support.atlassian.com/jira-work-management/docs/how-to-create-workflows/ 
 
 
+[Azure DevOps](./Product_Management/Azure_DevOps.md) : Azure DevOps is another very useful task management software that helps teams manage projects and tasks.
+
+
 # Examples of Modern Task Management Methodologies
 <h2>Agile</h2>
 <p>Agile is a task management methodology that is widely used in modern software development. It emphasizes flexibility, collaboration, and continuous improvement. Agile methodology focuses on delivering software features in small increments, which are known as sprints or iterations. At the start of each sprint, the team identifies the tasks that need to be completed and assigns them to team members. The team then works together to complete the tasks within the sprint period. The detailed executions may differ in different teams and projects, but there are several key principles to follow:</p>
