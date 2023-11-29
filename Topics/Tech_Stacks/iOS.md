@@ -16,7 +16,7 @@ With millions of users worldwide, Apple's iOS platform offers a vast audience fo
 Before we begin, ensure you have the following:
 
 1. **Apple computer** with latest macOS version.
-2. **Xcode**. Install [here](https://apps.apple.com/us/app/xcode/id497799835?mt=12)!
+2. **Xcode**: Apple's integrated development environment (IDE), available for free from the [Mac App Store](https://apps.apple.com/us/app/xcode/id497799835?mt=12). Used to develop programs in macOS, iOS, iPadOS, watchOS, tvOS, and visionOS.
 3. **Basic programming knowledge**, preferably in Swift.
 
 ## Steps to Creating an iOS App
