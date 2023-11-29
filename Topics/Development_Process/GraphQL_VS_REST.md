@@ -88,8 +88,9 @@ In summary, there are many similar uses for GraphQL and REST. They can both acco
 
 
 ## Additional Reading
-1. https://www.mulesoft.com/resources/api/what-is-an-api
-2. https://www.redhat.com/en/topics/api/what-is-a-rest-api
-3. https://www.ibm.com/topics/rest-apis
-4. https://www.apollographql.com/blog/graphql/basics/what-is-graphql-introduction/
-5. https://aws.amazon.com/compare/the-difference-between-graphql-and-rest/
+1. What is an API: https://www.mulesoft.com/resources/api/what-is-an-api
+2. What is a REST API (1): https://www.redhat.com/en/topics/api/what-is-a-rest-api
+3. What is a REST API (2): https://www.ibm.com/topics/rest-apis
+4. What is GraphQL: https://www.apollographql.com/blog/graphql/basics/what-is-graphql-introduction/
+5. Differences: https://aws.amazon.com/compare/the-difference-between-graphql-and-rest/
+6. Performance: https://nordicapis.com/rest-vs-graphql-a-side-by-side-comparison/
