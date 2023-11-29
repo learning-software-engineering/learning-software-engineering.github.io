@@ -80,6 +80,8 @@ Svelte is a modern JavaScript framework for building user interfaces. Unlike oth
 
 - **Official Documentation**: Visit [Svelte's official documentation](https://svelte.dev/docs) for comprehensive and detailed guides.
 - **Tutorial Videos**: https://www.youtube.com/watch?v=zojEMeQGGHs
+- **Advanced Concept: Store** https://www.youtube.com/watch?v=T64FIL1ii-0
+   - https://svelte.dev/docs/svelte-store
 
 ## Conclusion
 
