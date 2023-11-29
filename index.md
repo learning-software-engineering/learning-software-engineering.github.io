@@ -21,4 +21,3 @@ layout: default
 | 9  | [Tech Stacks](Topics/Tech_Stacks.md#tech-stacks)
 | 10  | [User Experience](Topics/User_Experience.md#resources-for-user-experience) |
 | 11 | [System Design](Topics/System_Design.md#system-design) |
-
