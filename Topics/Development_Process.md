@@ -93,3 +93,6 @@ This is only a simplification of what "Clean Architecture" is; the topic is so v
 
 ## Code Smells
 ### [Code Smells](./Development_Process/Code_Smells.md)
+
+## Prompt Engineering
+### [Basics of Prompt Engineering](./Development_Process/Prompt_Engineering.md)
