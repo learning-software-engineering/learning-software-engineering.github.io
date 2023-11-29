@@ -5,7 +5,7 @@ Build tools are essential in software development because they automate the proc
 Gradle is one of the most powerful and flexible build tools. Its primarily used for Java projects but can also be applied to other programming languages such as C/C++ and Python. It's designed to support complex workflows and provides a versatile way to define build logic. Unlike some other build tools, Gradle scripts are generally concise and human-readable. Gradle is also highly extensible, offering a rich API that enables developers to write custom plugins and tasks. Its incremental build capabilities save time by only running tasks that are necessary. As a result, Gradle has become a popular choice among many developers. 
 
 ## Dependency management with Gradle
-Dependency management is a critical feature of Gradle that allows developers to automatically download and integrate libraries and other resources that their project depends upon. Maany projects organize unrelated functionality into different parts of a modular system.
+Dependency management is a critical feature of Gradle that allows developers to automatically download and integrate libraries and other resources that their project depends upon. Many projects organize unrelated functionality into different parts of a modular system.
 
 Gradle allows you to define different types of dependencies. Here's an example of how you might declare dependencies in a build.gradle file:
 
@@ -88,7 +88,7 @@ configurations.all {
 }
 ```
 
-Building a projects with many declared dependencies can be difficult to debug. Tn addition to the conflict resolution strategies listed above, Gradle has created tools to visualize and analyze a project’s dependency graph. You can use a it's Build Scan® tool to generate reports that tell you which dependencies failed to resolve. Read more about the Build Scan® tool here:
+Building a projects with many declared dependencies can be difficult to debug. Tn addition to the conflict resolution strategies listed above, Gradle has created tools to visualize and analyze a project’s dependency graph. You can use it's Build Scan® tool to generate reports that tell you which dependencies failed to resolve. Read more about the Build Scan® tool here:
 https://scans.gradle.com/
 
 
