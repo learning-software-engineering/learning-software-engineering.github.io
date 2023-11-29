@@ -34,7 +34,7 @@ Install Linux:
 - [Using Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install)
 
 #### C Programming and Compilation
-Makefiles are typically used with C/C++ programming, and although they don't necessarily have to be used to compile C/C++ code, for demonstration purposes this guide will use C code. To follow along, make sure you understand how C source code and header files work, as well as the ```gcc``` compilation process with object files and executables (very basic use of ```gcc`````` in this guide).
+Makefiles are typically used with C/C++ programming, and although they don't necessarily have to be used to compile C/C++ code, for demonstration purposes this guide will use C code. To follow along, make sure you understand how C source code and header files work, as well as the ```gcc``` compilation process with object files and executables (very basic use of ```gcc``` in this guide).
 Below are some resources that can help:  
 - [C Programming](https://www.w3schools.com/c/c_intro.php)  
 - [C Compilation](https://www.geeksforgeeks.org/compiling-a-c-program-behind-the-scenes/)  
@@ -101,7 +101,7 @@ GNU ```make``` is normally run in the Linux Shell using the ```make``` command. 
 
 <pre>
 make <i>target-name</i>
-</pre>.  
+</pre>
 
 ## Making a Makefile
 
@@ -135,7 +135,7 @@ $ make
 >>> gcc -o program main.o helper.o
 ```
 
-Then, when the rule for the target ```program``` is run by default, it will check the prerequisites ```main.o``` and ```helper.o``` and run the rules for those two targets, executing the respective ```gcc``` compilation recipes. Once it has completed the prerequisites, it will execute its own ```gcc`` compile command. The result is that ```program```, ```main.o```, and ```helper.o``` will be created in the same directory. When the target is a file, like the first three rules above, it will recompile if any of the prerequisites change, i.e. ```main.o``` will recompile if ```main.c``` has changed since the last compilation.  
+Then, when the rule for the target ```program``` is run by default, it will check the prerequisites ```main.o``` and ```helper.o``` and run the rules for those two targets, executing the respective ```gcc``` compilation recipes. Once it has completed the prerequisites, it will execute its own ```gcc``` compile command. The result is that ```program```, ```main.o```, and ```helper.o``` will be created in the same directory. When the target is a file, like the first three rules above, it will recompile if any of the prerequisites change, i.e. ```main.o``` will recompile if ```main.c``` has changed since the last compilation.  
 Then if we run the same command again without changing any of the files, we would get the output:
 
 ```bash
