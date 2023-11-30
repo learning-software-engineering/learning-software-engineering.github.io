@@ -29,8 +29,6 @@
 
 ### [Requirements.txt](./Development_Process/Build_Requirements/Requirements_txt.md)
 
-### [CMakeLists.txt](./Development_Process/Build_Requirements/CMakeLists_txt.md)
-
 ## React Testing Library
 
 ### [React Testing Library](./Development_Process/React_Testing_Library.md)

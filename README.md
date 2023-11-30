@@ -64,7 +64,6 @@ Potential Topics--
         3. Build requirements
             1. requirements.txt
             2. packages
-            3. CMakeLists.txt
         4. Deployment
             1. Heroku
             2. AWS
@@ -73,12 +72,12 @@ Potential Topics--
             4. Digital Ocean
             5. Software development best practices:
             6. Vercel Frontend Deployment (Automated)
-    6. Designer Patterns
-    7. Clean Coding
+    1. Designer Patterns
+    2. Clean Coding
         1. Choose a coding style and stick to it
-    8. SOLID Principles
-    9. Code Smells
-    10. QA testing
+    3. SOLID Principles
+    4. Code Smells
+    5. QA testing
 - Professionalism
     1. Customer engagement
         1. Meeting best practices
