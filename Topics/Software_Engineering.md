@@ -13,6 +13,7 @@ Potential topics--
     3. [Lean](./Software_Engineering/Lean.md)
 2. Core Concepts in Software Engineering
    1. [Localization in Software Engineering](./Software_Engineering/Localization.md)
+   2. [Continuous Integration](./Software_Engineering/Continuous_Integration.md)
 
 #### [Deploying Your Personal Website](./Software_Engineering/Deploying_Personal_Website.md)
 
