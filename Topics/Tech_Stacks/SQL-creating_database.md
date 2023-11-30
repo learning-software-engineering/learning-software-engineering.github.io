@@ -45,6 +45,14 @@ The syntax to create a table is
 CREATE TABLE <tablename> (<column1_name column1_datatype other_attributes,
 column2_name column2_datatype other_attributes,...);
 
+Example :
+CREATE SCHEMA University
+CREATE TABLE Students(
+    utorid varchar(8),
+    fname varchar(15),
+    lname varchar(15)
+);
+
 Links :<br>
 https://www.w3schools.com/sql/sql_create_table.asp
 https://www.w3schools.com/sql/sql_alter.asp
