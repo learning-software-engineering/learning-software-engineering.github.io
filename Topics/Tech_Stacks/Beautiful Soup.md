@@ -60,6 +60,11 @@ url = "http://example.com"
 response = requests.get(url)
 soup = BeautifulSoup(response.content, 'html.parser')
 ```
+### Common Pitfalls:
+
+Incorrect URL: Make sure the URL you are trying to scrape is correct and accessible.\
+Handling Requests Errors: Be prepared to handle exceptions thrown by the requests library, like `ConnectionError` or 
+`HTTPError`.
 
 ## Navigating the Parse Tree
 ### An html parse tree:
@@ -139,9 +144,15 @@ just direct siblings.
   next_element = soup.body.p.next_element  
   # Get the next element in the parse tree after the first <p> tag
   ```
-## Searching the Tree
+### Common Pitfalls:
+- Nonexistent Tags: Always check for a tag's existence before accessing its attributes or contents to avoid 
+`AttributeError`.
+- Whitespace as Siblings: In HTML, whitespace, including newlines, can be counted as siblings. This can lead to 
+unexpected results when navigating siblings.
+- Nested Elements: When navigating nested elements, ensure that each parent element exists to avoid `NoneType` errors.
 
-Searching through an HTML or XML tree is one of the primary functionalities of BeautifulSoup. The library provides 
+## Searching the Tree
+Searching through an `HTML` or `XML` tree is one of the primary functionalities of BeautifulSoup. The library provides 
 several methods to locate elements based on their tags, attributes, or text content.
 
 ### Using `find()` and `find_all()`
@@ -183,6 +194,10 @@ BeautifulSoup allows you to search for elements based on their text content usin
   # Find element with specific text
   element_with_text = soup.find(string="Example text")
   ```
+### Common Pitfalls:
+Overlooking Search Methods: Each search method (find, find_all, etc.) has its use case. Choosing the wrong method can 
+lead to inefficient scraping.\
+Case Sensitivity: Tag and attribute names in searches are case-sensitive. Be mindful of this while searching for tags.
 
 ## Data Extraction
 
