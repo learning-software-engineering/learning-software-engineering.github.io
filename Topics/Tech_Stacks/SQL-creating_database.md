@@ -4,6 +4,10 @@
 1. [Introduction to SQL](#introduction-to-sql)
 2. [Understanding Schema in SQL](#understanding-schema-in-sql)
 3. [Steps for Database Creation](#steps-for-database-creation)
+    1. [How to create a schema](#how-to-create-a-schema)
+    2. [How to create tables in the schema](#how-to-create-tables-in-the-schema)
+    3. [Datatypes](#datatypes)
+    4. [Reaction policies](#reaction-policies)
 4. [Best Practices for Database Structure](#best-practices-for-database-structure)
 
 ### Introduction to SQL
