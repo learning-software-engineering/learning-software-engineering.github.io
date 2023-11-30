@@ -1,11 +1,11 @@
 # Intro to Reactstrap, a React Library for Bootstrap
 
 ## Table of contents
-### [Introduction](#what-is-reactstrap?-1)
-### [What is Reactstrap](#what-is-reactstrap?-1)
-### [Where to begin](#where-to-begin-1)
-### [Reactstrap Basics](#reactstrap-basics-1)
-### [Conclusion](#conclusion-1)
+### [Introduction](#preface)
+### [What is Reactstrap](#what-is-reactstrap)
+### [Where to begin](#where-to-begin)
+### [Reactstrap Basics](#reactstrap-basics)
+### [Conclusion](#conclusion)
 
 ## Preface
 This will serve as a guide for the basics of incorporating Reactstrap into your React frontend development. After reading, you will know how to install and setup the Reactstrap library for use in your React project. You will also be introduced to some popular Reactstrap components, and gain an understanding of the benefits of incorporating Reactstrap into your web app development. Prior knowledge of React and Bootstrap is recommended. The more familiar you become with React, the easier it becomes to incorporate Reactstrap into your workflow. Experience with Bootstrap will allow you to quickly adapt to using Reactstrap. Familiarity with CSS is also recommended as this allows you to understand what Reactstrap provides at a lower-level, which will allow you to further appreciate the advantages of incorporating Reactstrap into your workflow.
