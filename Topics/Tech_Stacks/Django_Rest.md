@@ -55,7 +55,9 @@ Django Rest Framework is a popular library for building RESTful APIs with Django
 
  ### Defining a model
 
-We first create a new model to represent our API resource. To illustrate the use of Django Rest Framework, we'll create a simple model for a to-do item with two fields: its title as a CharField, i.e., a string, and its complete as a BooleanField, i.e., a boolean value. We first create a new file called models.py in the API app folder by adding the following code:
+Using the Django ORM, we can define models in the database by creating Python classes. Each table is represented by a class, with the columns represented by attributes. Django provides field types for various SQL data types. Django also comes with some predefined models, such as the [User model](https://docs.djangoproject.com/en/4.2/topics/auth/default/#user-objects) with built-in authentication (but we won't be using the User model in this tutorial). 
+
+To create our API, we must first create a new model to represent our API resource. To illustrate the use of Django Rest Framework, we'll create a simple model for a to-do item with two fields: its title as a string, and its completed status as a boolean value. We first create a new file called models.py in the API app folder and define our model:
 
 ``` {python}
 from django.db import models
@@ -65,8 +67,16 @@ class TodoItem(models.Model):
     completed = models.BooleanField(default=False)
 ```
 
-### Migrations
+For this model, we have used a CharField for the string title. The CharField is used for small amounts of text, with a default max length of 255 characters. We have defined the max length to be 200 characters in this case. We have also used a BooleanField for the boolean completion status, and we have explicitly defined the default value to be False. Thus, whenever a value isn't provided for the completed field, it will automatically be set to False. 
 
+Django has many more field types to represent various data types. Aside from the max length and default value, there are also other options that can be passed to these field types, such as whether a value can be null and whether a value can be blank. More information about field types and field options can be found [here](https://docs.djangoproject.com/en/4.2/ref/models/fields/).
+
+Now that we have created a new model, we must create a migration for these changes to reflect in the database.
+
+### Migrations
+- commands
+- python3 manage.py makemigrations - creates a migration file containing all the changes made since the last migration, similar to Git history. not autoapplied as changing the database structure is an important (and potentially dangerous) operation
+- python3 manage.py migrate - applies migrations
 
  ### Creating an API
 
