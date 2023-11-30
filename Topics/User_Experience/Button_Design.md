@@ -5,8 +5,9 @@ When creating software, 99.9% of the time, we will need at least one button for 
 
 A poorly designed button can be confusing, misleading, or even frustrating enough that users give up on using the software. Here is an example:
 
+<p align="center">
 <img width="259" alt="poor_design" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/90407968/e6aeacd0-8853-4c1b-8737-ba21ac5b70aa">
-
+</p>
 
 This is a wrongly designed login page. Users will be confused about the priorities of those three solid buttons. The most important button 'LOGIN ME' is the one that deserves the most user attention. How can we do better?
 
@@ -64,7 +65,9 @@ More styling can be done by `loadingStyle` and `loadingTitleStyle`.
 ### **Solid vs Transparent**
 Some buttons are more significant than others. When designing buttons, there should be a clear priority hierarchy so that users can identify which buttons are the most important ones. (e.g. page navigation, proceed, cancel, etc.) If a button is important, we want to have a solid background with outstanding or contrasting colours. 
 
+<p align="center">
 <img width="491" alt="solid vs transparent" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/90407968/ffdf9f14-677c-4960-96cc-3f8224d23cb3">
+</p>
 
 **Code Demo:**
 This is a solid blue button:
