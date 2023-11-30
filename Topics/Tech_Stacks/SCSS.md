@@ -22,7 +22,9 @@
 
 ### [Compiling files to CSS](#compiling-scss-files-into-css-files)
 
-### [References](#references-and-links)
+### [References](#references-1)
+
+### [Additional Resources](#additional-resources-1)
 
 ## Introduction
 
@@ -315,10 +317,8 @@ Once you have created your SCSS files you will need to compile them into CSS fil
 3. Run `sass --watch INPUT_FOLDER_PATH:OUTPUT_FOLDER_PATH` in the command line to automatically re-compile .scss files within INPUT_FOLDER_PATH when saved into a .css file within OUTPUT_FOLDER_PATH
 4. Using the Live Sass Compiler extension in VSCode
 
-## References and Links
+## References
 
-[Our Wiki CSS Guide](./CSS.md),
-[BEM Website](https://getbem.com/),
 [SCSS Website](https://sass-lang.com/),
 [Variables](https://sass-lang.com/documentation/variables/),
 [Maps](https://sass-lang.com/documentation/values/maps/),
@@ -329,3 +329,10 @@ Once you have created your SCSS files you will need to compile them into CSS fil
 [Placeholder Selectors and Extend/Inheritance](https://sass-lang.com/documentation/at-rules/extend/),
 [Operators](https://sass-lang.com/documentation/operators/),
 [Compiling SCSS files into CSS files](https://sass-lang.com/guide/#preprocessing)
+
+## Additional Resources
+
+[Our Wiki CSS Guide](./CSS.md),
+[BEM Website](https://getbem.com/),
+[SCSS Video Tutorial](https://www.youtube.com/watch?v=_a5j7KoflTs),
+[Frontend Development Tutorial Using SCSS](https://www.youtube.com/watch?v=xV7S8BhIeBo&t=3222s)
