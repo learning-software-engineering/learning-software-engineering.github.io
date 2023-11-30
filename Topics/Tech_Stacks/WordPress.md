@@ -8,13 +8,13 @@ Initially launched in 2003, WordPress has become one of the most popular website
 renowned for its flexibility, ease of use, and vast community support.
 
 Here are seven key components that typically interact with WordPress in a software development context:
-1. WordPress: Central to the diagram, indicating its role as the core around which other technologies revolve.([WordPress learning resources](https://learn.wordpress.org/))
-3. PHP: Directly connected to WordPress, reflecting that WordPress is built on PHP and many plugins and themes are also PHP-based.
-4. MySQL: Linked to WordPress, signifying that WordPress uses MySQL for its database management.
-5. HTML/CSS/JS: These front-end technologies are essential for designing the user interface and user experience of WordPress sites.
-6. Plugins & Themes: These extend the functionality and appearance of WordPress sites, often using PHP, HTML, CSS, and JS.
-7. Server & Hosting: Necessary for deploying WordPress sites, with servers often configured to support PHP and MySQL.
-8. APIs & Services: Representing the integration of WordPress with various external APIs and services.
+1. **WordPress**: Central to the diagram, indicating its role as the core around which other technologies revolve.([WordPress learning resources](https://learn.wordpress.org/))
+3. **PHP**: Directly connected to WordPress, reflecting that WordPress is built on PHP and many plugins and themes are also PHP-based.
+4. **MySQL**: Linked to WordPress, signifying that WordPress uses MySQL for its database management.
+5. **HTML/CSS/JS**: These front-end technologies are essential for designing the user interface and user experience of WordPress sites.
+6. **Plugins & Themes**: These extend the functionality and appearance of WordPress sites, often using PHP, HTML, CSS, and JS.
+7. **Server & Hosting**: Necessary for deploying WordPress sites, with servers often configured to support PHP and MySQL.
+8. **APIs & Services**: Representing the integration of WordPress with various external APIs and services.
 
 ## Main funcitons and capabilities of WordPress
 1. **Website Creation and Management**: WordPress enables users to build and manage websites without needing extensive programming knowledge. 
@@ -85,5 +85,19 @@ Here is an useful [website](https://www.dreamhost.com/blog/how-to-create-your-fi
 2. **Minimal and Clean Code**: Keep custom code minimal and clean. Excessive or poor code can lead to security vulnerabilities and performance issues.
 3. **Responsive Design**: Ensure that customizations are responsive and work well on all devices.
 
+## Categorization of WordPress Plugins
+
+Here are some categorize of WordPress Plugins and corresponding examples might be helpful with your project.
+
+1. **SEO Optimization**: Plugins that help improve search engine rankings and on-site SEO strategies. Examples: Yoast SEO, All in One SEO Pack, Rank Math SEO
+2. **E-commerce Solutions**: Plugins that transform your site into a fully-functional e-commerce store. Examples: WooCommerce, Easy Digital Downloads, WP eCommerce.
+3. **Security Enhancement**: Plugins focusing on securing your website from threats and vulnerabilities. Examples: Wordfence Security, Sucuri Security, iThemes Security.
+4. **Performance Optimization**: Plugins designed to improve website speed and performance. Examples: W3 Total Cache, WP Super Cache, WP Rocket.
+5. **Social Media Integration**: Plugins for integrating social media platforms and functionalities into your site. Examples: Social Media Share Buttons, Smash Balloon Social Photo Feed, Jetpack.
+6. **Contact Forms**: Plugins to create and manage contact forms. Examples: Contact Form 7, WPForms, Ninja Forms.
+7. **Content Editing**: Plugins that enhance the content creation and editing experience.Examples: Gutenberg, Elementor, Beaver Builder.
+8. **Media Management**: Plugins for better management and optimization of media files. Examples: Smush, Envira Gallery, NextGEN Gallery.
+9. **Analytics and Data**: Plugins for website analytics and performance data. Examples: Google Analytics for WordPress by MonsterInsights, Jetpack by WordPress.com, ExactMetrics.
+10. **Backup and Migration**: Plugins for backing up and migrating your WordPress site. Examples: UpdraftPlus, BackupBuddy, Duplicator.
 
 
