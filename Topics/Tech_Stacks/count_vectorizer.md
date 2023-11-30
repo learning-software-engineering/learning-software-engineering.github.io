@@ -1,3 +1,9 @@
+***Table of contents***
+1.**Introduction**
+2.**How it works**
+3.**Usage**
+4.**Additional Resources**
+
 ***Introduction:***
 The CountVectorizer class in Python's Scikit-learn library helps machines understand text by turning it into numbers. Imagine it as a tool that transforms a bunch of words into a table of counts that a computer can analyze.
 
