@@ -47,20 +47,22 @@ CREATE TABLE <tablename> (
 <br>
 <column1_name column1_datatype other_attributes,
 <br>
-column2_name column2_datatype other_attributes,...);
+column2_name column2_datatype other_attributes,
+<br>
+...);
 
-Example :
-CREATE SCHEMA University
-CREATE TABLE Students(
-    utorid varchar(8),
-    fname varchar(15),
-    lname varchar(15)
+Example : <br>
+CREATE SCHEMA University<br>
+CREATE TABLE Students(<br>
+    utorid varchar(8),<br>
+    fname varchar(15),<br>
+    lname varchar(15)<br>
 );
 
 ![example_table_creation](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/113269746/98cfb7cb-731b-49da-bb9b-b1bf5e9ba087)
 
 Additional Resources :<br>
-https://www.w3schools.com/sql/sql_create_table.asp
+https://www.w3schools.com/sql/sql_create_table.asp <br>
 https://www.w3schools.com/sql/sql_alter.asp
 
 #### Datatypes
