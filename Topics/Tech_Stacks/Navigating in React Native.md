@@ -62,14 +62,19 @@ function HomeScreen({ navigation }) {
 
 ## Best Practices in Navigation
 
-- **Consistency**: Make sure the way you move around in your app is the same everywhere.
-- **Simplicity**: Don’t make the navigation in your app too complicated.
-- **Feedback**: Use things like animations to let users know when they're moving between screens.
+- **Consistency**: Maintain consistent navigation throughout your app. For example, if a swipe gesture brings up a menu on one screen, ensure it works similarly across all screens. Users should not have to relearn navigation patterns as they move through different parts of your app.
+
+- **Simplicity**: Keep navigation straightforward and intuitive. Avoid deep nesting of navigators which can confuse users. For instance, having more than three levels of nested navigators (like a stack inside a tab inside a drawer navigator) can make it hard for users to track their location within the app.
+
+- **Feedback**: Visual and interactive feedback during navigation is crucial. Incorporate animations for transitions between screens, but ensure they are fast enough not to hinder the user experience. Highlight the active tab in a tab navigator or use breadcrumbs in complex apps to show users their navigation path.
 
 ## Troubleshooting Common Issues
 
-- **Navigation Prop Undefined**: Check that you're giving the `navigation` prop to your components correctly.
-- **Incorrect Configuration**: Make sure all your navigators and screens are set up the right way.
+- **Navigation Prop Undefined**: This often occurs when a component is not properly registered within a navigator. Double-check your navigator's configuration and ensure that each screen is correctly defined with the required props.
+
+- **Incorrect Configuration**: Misconfigurations can lead to unexpected behaviors. This includes incorrect nesting of navigators or improper setup of initial routes.
+
+- **Performance Issues**: Sometimes, complex navigations can lead to performance issues. Optimize by reducing unnecessary screen re-renders and using lighter transition animations.
 
 ## Conclusion
 
