@@ -14,6 +14,8 @@
 
 ### [Flask Application Deployment on Heroku](./Development_Process/Flask_App_Deployment_Heroku.md)
 
+### [iOS App Deployment onto the App Store](./Development_Process/App_Store_Deployment.md)
+
 ### [Quality Assurance Testing](./Development_Process/QA_testing.md)
 
 - [Automated Testing](./Development_Process/Automated_Testing.md)
