@@ -297,7 +297,122 @@ struct InnerView: View {
 }
 ```
 
+Let's move on to using these features to implement the structure of an application that uses clean architecture. As an example let's imagine we are creating an app that keeps track of your startups daily scrum meetings. We can imagine that the data for the daily meetings needs to be stored on a database somewhere, that an interface is required to view this data and we may need to interact with this data as well.
 
+The main structure of the app will look like the following:
+
+<p align="center">
+<img src="https://i.postimg.cc/q7dB52Y6/temp-Image6-WSk-Bh.jpg">
+<p/>
+
+Let's go over how this looks for our current example app.
+
+**Data**
+
+A repository is a gateway for reading and writing data. We can abstract the details of where this data is coming from. For example, we could be fetching it from a third-party API or even a local database. Notice that this abstraction doesn't use any of the previously defined wrappers.
+
+```swift
+protocol Repository {
+    func loadScrumData() -> AnyPublisher<[Scrum], Error>
+    func loadScrumDetails(scrum: Scrum) -> AnyPublisher<Scrum.Details, Error>
+}
+
+struct ScrumDatabaseRepository: Repository {
+    
+    let dbURL: String
+    
+    init(dbURL: String) {
+        self.dbURL = dbURL
+    }
+    
+    func loadScrumData() -> AnyPublisher<[Scrum], Error> {
+        return call(database: dbURL, query: "select * from example.scrums;")
+    }
+
+    func loadScrumDetails(scrum: Scrum) -> AnyPublisher<Scrum.Details, Error> {
+        return call(database: dbURL, query: "select * from example.details where id=\(scrum.id);")
+    }
+}
+```
+
+
+**Business**
+
+The AppState is the only object in the pattern that requires the `ObservableObject` wrapper. Similar to Redux, AppState is a single source of truth and keeps the state for the entire application.
+
+```swift
+class AppState: ObservableObject {
+    @Published var userData = UserData()
+    @Published var routing = ViewRouting()
+    @Published var system = System()
+}
+```
+
+The interactor is the way we interface with the repository in order to update our AppState, which allows the business logic to be segregated in the interactor.
+
+```swift
+protocol Interactor {
+    func loadScrums()
+    func load(scrumDetails: Binding<Loadable<Scrum.Details>>, Scrum.Details)
+}
+
+struct ScrumInteractor: Interactor {
+    
+    let datasbaseRepository: ScrumDatabaseRepository
+    let appState: AppState
+    
+    init(databaseRepository: ScrumDatabaseRepository, appState: AppState) {
+        self.databaseRepository = databaseRepository
+        self.appState = appState
+    }
+
+    func loadCountries() {
+        appState.userData.scrums = .isLoading(last: appState.userData.scrums.value)
+        weak var weakAppState = appState
+        _ = databaseRepository.loadCountries()
+            .sinkToLoadable { weakAppState?.userData.countries = $0 }
+    }
+
+    func load(scrumDetails: Binding<Loadable<Scrum.Details>>, Scrum.Details) {
+        scrumDetails.wrappedValue = .isLoading(last: scrumDetails.wrappedValue.value)
+        _ = webRepository.loadScrumDetails(scrum: scrum)
+            .sinkToLoadable { scrumDetails.wrappedValue = $0 }
+    }
+}
+```
+
+**Presentation**
+
+The final layer for clean architecture is the view. It holds references to the interactor to dispatch actions and the AppState in order to properly re-render views when AppState changes.
+
+```swift
+struct ContentView: View {
+    @StateObject var state = AppState()
+    @StateObject var interactor: Interactor = ScrumInteractor(databaseRepository: "postgres://...", appState: state)
+
+    var body: some View {
+        VStack {
+            ScrumList()
+                .environment(\.interactor, interactor)
+        }
+        .environmentObject(state)
+    }
+}
+
+struct ScrumList: View {
+    
+    @EnvironmentObject var appState: AppState
+    @Environment(\.interactor) var interactor: Interactor
+    
+    var body: some View {
+        ...
+        .onAppear {
+            self.interactors.scrumInteractor.loadScrums()
+        }
+    }
+}
+```
+That's all there is to it! You now know how to incorporate SwiftUI wrappers and protocols to create clean, testable code. For more information on the wrappers and protocols mentioned checkout the [Apple Developer Documentation](https://developer.apple.com/documentation/technologies).
 
 
 ## Testing Your App - Unit Tests
