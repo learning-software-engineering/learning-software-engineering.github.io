@@ -4,6 +4,7 @@
 ### [What is Test Driven Development (TDD)](#introduction)
 ### [TDD Development Cycle](#tdd-development-cycle)
 ### [Pro's and Cons](#pros-and-cons)
+### [Type's of Testing](#types-of-testing)
 ### [Conclusion](#conclusion)
 
 
@@ -58,7 +59,7 @@ import doctest
 
 class Calculator:
     """
-    A simple calculator class that can add and multiply.
+    A simple calculator class that can multiply.
 
     Examples:
     >>> calc = Calculator()
@@ -85,7 +86,7 @@ import doctest
 
 class Calculator:
     """
-    A simple calculator class that can add and multiply.
+    A simple calculator class that can multiply.
 
     Examples:
     >>> calc = Calculator()
@@ -120,7 +121,13 @@ You might be thinking to yourself "wow TDD seems great, it ensures that the code
 - **Over Testing**: While having tests are a good thing sometimes the focus might shift too much to the tests where there are simply too many tests or that the code is written simply to pass a test
 - **Learning Curve**: Typically writing tests include using a library or framework of some sort to do the testing. This means that the developer has to learn how to use this framework in addition to the environment which they are developing
 
-#### Conclusion
+## Types of Testing
+
+Typically for TDD the type of tests written are unit tests, where we test a singular unit (i.e function,method,class). This way we can have confidence that the individual smaller parts of our entire system are working and if all the small parts work individually we either have a working system or an easier time debugging which area of the system is misbehaving. Unit tests are usually the go to when it comes to TDD.
+
+End-to-end(E2E) tests are more concerned about how different parts of the entire system are connected. They test the cohesion of all parts of the system whether that includes the frontend,backend,database etc. They typically test how users will interact with the system and ensure that services are running correctly. E2E tests are more related to behaviour driven development(BDD) which is out of the scope of this article but there will be links at the bottom to learn more.
+
+## Conclusion
 
 Test driven development is a methodology where you first write tests outlining how you want the code to work and then write the code to achieve that behaviour. The idea behind this concept is that there is an initial investment of time and complexity but it forces the developer to write better code that will be easier to maintain in the future and that the time saved in debugging and maintenance will offset the initial investment. However TDD is not a one-size-fits all and there are scenarios in which TDD can have more downsides than rewards.
 
@@ -142,3 +149,8 @@ Popular Testing Frameworks:
 [doctests](https://docs.python.org/3/library/doctest.html)
 [JUnit](https://junit.org/junit5/)
 [Jest](https://jestjs.io/)
+
+BDD:
+[What is BDD? - Agile Alliance](https://www.agilealliance.org/glossary/bdd/)
+[What is BDD? - Browser Stack](https://www.browserstack.com/guide/what-is-bdd)
+[TDD vs BDD](https://www.youtube.com/watch?v=Bq_oz7nCNUA)
