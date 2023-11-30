@@ -10,7 +10,7 @@ layout: default
 
 | #  | Topics |
 |----|--------|
-| 1  | [Getting Started](Topics/Development_Process.md#Getting_Started.md) |
+| 1  | [Getting Started](Topics/Getting_Started.md) |
 | 2  | [Development Process](Topics/Development_Process.md#resources-for-development-process) |
 | 3  | [Product Management](Topics/Product_Management.md#resources-for-product-management) |
 | 4  | [Professionalism](Topics/Professionalism.md#professionalism)|
