@@ -140,7 +140,7 @@ A `CMakeLists.txt` typically consists of the following elements:
     )
     ```
 
-* **set a source file**
+* **Set a source file**
   
     ```CMake
     # Add main.cpp file of the project root directory as a source file
