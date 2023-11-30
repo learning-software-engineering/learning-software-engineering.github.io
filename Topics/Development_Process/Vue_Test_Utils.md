@@ -13,13 +13,21 @@ Although it is possible to test Vue components without the VTU, it becomes signi
 The VTU makes it *much* easier to test your Vue.js components, especially when paired with a popular test runner like Jest.
 
 ## How do I install the VTU?
-If you have the Node Package Manager (*npm*) or *yarn* installed, type the following command:
+If you have the Node Package Manager (*npm*) or *yarn* installed, type one of the following commands:
 ```python
 # If you have npm
 npm install --save-dev @vue/test-utils
 
 # If you have yarn
 yarn add --dev @vue/test-utils
+```
+
+If you do not have *npm* installed, you can install the Node version manager (*nvm*) which will automatically install *npm* for you.
+You can click [here](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) and follow the documentation to download *nvm*.
+
+If you do not have *yarn*, you can install it after installing *npm* by typing the following command:
+```python
+npm install --global yarn
 ```
 
 ## How can I integrate the VTU with Jest?
