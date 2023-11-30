@@ -1,12 +1,23 @@
 # API Documentation with SwaggerHub
 
 ## Table of Contents
+- [Brief Outline of APIs ](#brief-outline-of-apis)
 - [Purpose of API Documentation](#purpose-of-api-documentation)
 - [Keys to Good API Documentation](#keys-to-good-api-documentation)
 - [Introduction of SwaggerHub](#introduction-of-swaggerhub)
   - [Features](#features)
 - [Other Free Tool](#other-free-tool)
 
+## Brief Outline of APIs
+API stands for application programming interface and from "is a set of defined rules that enable different applications to communicate with each other" ([IBM](https://www.ibm.com/topics/api)).
+
+Two main aspects of APIs:
+- endpoint: the location where a subset of the API's functions can be accessed 
+  - ex. a URL
+- method: clarifies what type of API function is desired
+  - ex. a POST method implies the user wants to create or add something
+
+For more information, click [here](https://www.postman.com/what-is-an-api/).
 
 ## Purpose of API Documentation
 As the name suggests, API documentation describes a handbook of instructions and expectations around working with the project's APIs. 
@@ -17,7 +28,6 @@ This is super important for projects with different people who are creating and 
 - proofread for correct spelling and grammar 
 - ensure the technical background needed to understand is reasonable
 - cover all the basics of each endpoint:
-  - the path of each endpoint
   - what methods each endpoint supports
   - what is accepted and/or what is returned from each endpoint
     - including sample responses and errors
