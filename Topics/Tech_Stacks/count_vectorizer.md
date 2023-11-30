@@ -1,4 +1,5 @@
-***Table of contents***
+***Table of contents*** 
+
 1.**Introduction**
 2.**How it works**
 3.**Usage**
