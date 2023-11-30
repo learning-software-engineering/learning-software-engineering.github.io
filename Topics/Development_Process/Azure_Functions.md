@@ -34,7 +34,8 @@ With that out of the way, once you create your account, you should now have a br
 
 We will be creating some resources in Azure, and every resource needs to go in a Resource Group. On the Home page, select "Resource Group", then select "Create resource group".
 
-Make sure that it's using the correct subscription, give your resource group any name you want, and chooser region you want. Select "Review + Create" then "Create".
+Make sure that it's using the correct subscription, give your resource group any name you want, and chooser region you want. Select "Review + Create" then "Create". The review screen should look like this (with a different name of course)
+![image](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/56797486/4789ba90-547d-4892-93b2-6cdd9f2f87ca)
 
 ### Create a Storage Account
 
@@ -52,9 +53,14 @@ In the "Create a Storage Account" menu:
 
 Select "Advanced" and tick "Allow enabling anonymous access on individual containers". This is for the purpose of the demo, otherwise you'll wound up with 401 UNAUTHORIZED errors upon trying to connect to your deployed Azure Function.
 
-Click on "Review" followed by "Create". This will deploy a brand new storage account for Azure. You should then see a "Go to Resource" button. Click it to be taken to the Overview page of your new storage account.
+Click on "Review" followed by "Create". The review screen should look like this, with your own names for the storage account and resource group of course:
+![image](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/56797486/efa9cc14-56a4-4d6e-904f-84cc82205a9d)
+
+This will deploy a brand new storage account for Azure. You should then see a "Go to Resource" button. Click it to be taken to the Overview page of your new storage account.
 
 There is a section for "Access Keys" on the left hand side of the Resource Overview page, underneath "Security + Networking". Click it, and reveal the key and connection string for either key. Put these values in a Notepad.
+![image](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/56797486/c5d15172-e610-4ee7-9624-d693ae01fcde)
+
 
 ### Create Azure Function App
 
@@ -70,6 +76,7 @@ Inside the Create Function App menu, we will configure the following:
 - Hosting will be Consumption
 
 Select "Review + Create" and ensure your configuration for the Azure Function App is correct. Then select "Create".
+![image](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/56797486/61488aad-ef1a-41ce-8ba2-eac54f4de3bf)
 
 ## System Setup
 
@@ -180,8 +187,7 @@ Ensuring that `myname-func-demo` matches the name of the Function App resource y
 Give it some time, and your Azure function should now be deployed! The output of the deployment should contain a URL where you can actually invoke your function.
 
 ## Additional Resources
-
-[Azure Functions Developer Guide](https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference)
-[Azure Functions Triggers and Bindings](https://learn.microsoft.com/en-CA/azure/azure-functions/functions-triggers-bindings)
-[Deploy Azure Functions Locally](https://learn.microsoft.com/en-us/azure/azure-functions/functions-run-local)
-[Connect to Azure Services](https://learn.microsoft.com/en-us/azure/azure-functions/add-bindings-existing-function)
+- [Azure Functions Developer Guide](https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference)
+- [Azure Functions Triggers and Bindings](https://learn.microsoft.com/en-CA/azure/azure-functions/functions-triggers-bindings)
+- [Deploy Azure Functions Locally](https://learn.microsoft.com/en-us/azure/azure-functions/functions-run-local)
+- [Connect to Azure Services](https://learn.microsoft.com/en-us/azure/azure-functions/add-bindings-existing-function)
