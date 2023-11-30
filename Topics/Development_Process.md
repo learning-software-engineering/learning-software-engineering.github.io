@@ -43,7 +43,7 @@
 
 ### [URL Sanitization](./Development_Process/URL_Sanitization.md)
 
-## Sonar
+## Code Quality
 
 ### [Developing With SonarQube](./Development_Process/SonarQube.md)
 
