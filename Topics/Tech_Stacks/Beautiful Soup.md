@@ -8,6 +8,7 @@
 ### [Navigating the Parse Tree](#navigating-the-parse-tree-1)
 ### [Searching the Tree](#searching-the-tree-1)
 ### [Additional Resources](#addtional-resources-1)
+### [Data Extraction](#data-extraction-1)
 
 ## Introduction
 
@@ -18,6 +19,8 @@ and best practices.
 For a more comprehensive guide, you can visit the official documentation at 
 [Beautiful Soup Documentation](https://www.crummy.com/software/BeautifulSoup/bs4/doc/).
 
+To help you scrape data from a website, please check [this](https://zapier.com/blog/inspect-element-tutorial/)
+<img src="https://images.ctfassets.net/lzny33ho1g45/6tl0bR7Iksg9zLxaLYQZKG/5b1f6ae648071253485f5629f0e63ce5/chrome_inspect_element_1.jpg?w=1520&fm=jpg&q=30&fit=thumb&h=760">
 ## Installation
 
 To use BeautifulSoup, you need to install it along with a parser. The most common parser is `lxml`. You can install 
@@ -27,6 +30,12 @@ both using pip:
 pip install beautifulsoup4
 pip install lxml
 ```
+
+#### Using the Built-in `html.parser`:
+While `lxml` is known for its speed and efficiency, in some environments, installing external libraries might not be 
+feasible. In such cases, you can use Python's built-in `html.parser`. It's slightly slower than lxml but does not require 
+any additional installation if you already have Python set up. For `XML` or `XHTML`, `lxml` is highly recommended.
+
 ## Set up
 
 To get started with BeautifulSoup, import it along with a request library like requests:
@@ -37,14 +46,25 @@ import requests
 ```
 ## Parsing HTML
 
-You can parse HTML by fetching a web page using requests and passing the content to BeautifulSoup:
-
+You can parse HTML by fetching a web page using requests and passing the content to BeautifulSoup: \
+When creating the BeautifulSoup object, you can also specify the parser you want to use: \
+- Using `lxml`:
+```
+url = "http://example.com"
+response = requests.get(url)
+soup = BeautifulSoup(response.content, 'lxml')
+```
+- Using `html.parser`:
 ```
 url = "http://example.com"
 response = requests.get(url)
 soup = BeautifulSoup(response.content, 'html.parser')
 ```
+
 ## Navigating the Parse Tree
+### An html parse tree:
+<img src="https://i.stack.imgur.com/V2vrr.gif">\
+[image source](https://i.stack.imgur.com/V2vrr.gif)
 
 BeautifulSoup allows for easy navigation of the HTML parse tree:
 
@@ -52,14 +72,42 @@ BeautifulSoup allows for easy navigation of the HTML parse tree:
 
 - **Using Tag Names**: Directly access tags as attributes of the BeautifulSoup object.
   ```
-  title = soup.title  # Gets the title tag
-  body = soup.body    # Accesses the body tag
+  # Sample HTML content
+  html_content = '''
+  <html>
+  <head>
+      <title>Example Page</title>
+  </head>
+  <body>
+      <p>Hello World!</p>
+  </body>
+  </html>
+  '''
+  
+  # Parsing the HTML
+  soup = BeautifulSoup(html_content, 'html.parser')
+  
+  # Accessing the title tag
+  
+  title = soup.title
+  print(title)
+  # Expected Output: <title>Example Page</title>
+  
+  # Accessing the body tag
+  body = soup.body
+  print(body)
+  # Expected Output: <body><p>Hello World!</p></body>
   ```
-- **Accessing Children**: Elements in the tree can have children, which are accessed using `.contents` or `.children`.
+- **Accessing Children**: Elements in the tree can have children, which are accessed using `.contents` or `.children`.\
+Continue with the above code:
   ```
   head_children = soup.head.contents  # List of children under the <head> tag
+  print(head_children)
+  # Expected Output: [<title>Example Page</title>]
+  
   for child in soup.body.children:    # Iterating over children of the <body> tag
       print(child)
+  # Expected Output: <p>Hello World!</p>
   ```
 
 ### Navigating Using Tag Names
@@ -136,6 +184,7 @@ BeautifulSoup allows you to search for elements based on their text content usin
   element_with_text = soup.find(string="Example text")
   ```
 
+## Data Extraction
 
 ### Get Text Method
 The `.get_text()` method is used to extract all the text from a document or a specific part of it. This method is 
@@ -224,8 +273,14 @@ for attribute, value in anchor_tag.attrs.items():
 This will print out all attributes and their values for the specified element.
 
 ## Additional resources
+Please look at `HTML_Guide.md` for reference to html content.
 
+More tutorials/resources on BeautifulSoup:\
 https://realpython.com/beautiful-soup-web-scraper-python/ \
 https://github.com/wention/BeautifulSoup4 \
 https://www.geeksforgeeks.org/implementing-web-scraping-python-beautiful-soup/ \
 https://www.tutorialspoint.com/beautiful_soup/index.htm
+
+How to navigate a website by inspecting:\
+https://zapier.com/blog/inspect-element-tutorial/ \
+https://blog.hubspot.com/website/how-to-inspect
