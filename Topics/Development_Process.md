@@ -71,6 +71,10 @@
 
 ### [Introduction to using Shell](./Development_Process/Shell/intro_to_shell.md)
 
+## Environment
+
+### [Managing Environment Variables and Secrets](Development_Process/Managing_Environment_Variables_and_Secrets.md)
+
 ## SOLID PRINCIPLES:
 
 SOLID is a mnemonic acronym that represents a set of five very important software development principles which lead to code that is easier to read, maintain, and extend, leading to higher-quality software that is easier to evolve over time.
