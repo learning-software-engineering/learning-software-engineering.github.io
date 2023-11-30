@@ -2,7 +2,7 @@
 ## Table of Contents
 ### [What is Selenium?](#what-is-selenium)
 ### [What can I do with Selenium?](#what-can-i-do)
-### [Getting started](#getting-started)
+### [Getting started](#get-started)
 ### [Headless drivers](#headless)
 ### [Automation](#auto)
 ### [Acknowledgements](#ack)
@@ -32,7 +32,7 @@ However, for the purposes of this introduction, we will refer to Selenium usage 
 ## <a name="what-can-i-do"></a> What can I do with Selenium?
 Selenium has uses within automating browser interactivity, such as extracting information from the web and interacting with elements such as buttons and forms. It is an important tool used in automation to execute a plethora of different test cases you may want to perform on a website you are developing. If you are interested in learning more about using Selenium for testing purposes, you can check out [this guide](https://www.simplilearn.com/tutorials/python-tutorial/selenium-with-python#:~:text=Selenium%20with%20Python%20is%20used,skimming%20the%20entire%20site%2C%20etc.).
 
-## <a name="getting-started"></a> Getting started
+## <a name="get-started"></a> Getting started
 1. **Install Selenium bindings**
 
     The easiest way to install Selenium is with the `pip package manager`. With Python and pip installed, simply run the following command to get the latest version.
