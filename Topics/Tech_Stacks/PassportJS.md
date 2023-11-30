@@ -1,13 +1,13 @@
 # Passport.js
 
 ## Table of contents
-### [Introduction](#introduction)
-### [Prerequisites](#prerequisites)
-### [Setup and Installation](#setup-and-installation)
-### [Strategies](#strategies)
-### [Sessions](#sessions)
-### [Authentication Requests](#authentication-requests)
-### [Summary](#summary)
+1. [Introduction](#introduction)
+2. [Prerequisites](#prerequisites)
+3. [Setup and Installation](#setup-and-installation)
+4. [Strategies](#strategies)
+5. [Sessions](#sessions)
+6. [Authentication Requests](#authentication-requests)
+7. [Summary](#summary)
 
 ## Introduction
 
