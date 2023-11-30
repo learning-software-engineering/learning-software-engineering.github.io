@@ -18,11 +18,13 @@
 
 ## **Introduction**
 
-Design requirements are expressions which outline “what” the desired product should achieve and “how” it should achieve them, corresponding to the usefulness and usability of designs.
+Design requirements are expressions which outline **“what”** the desired product should achieve and **“how”** it should achieve them, corresponding to the usefulness and usability of designs.
 
 The usefulness of a product is addressed by the question “Are we designing the right thing?” [1], which considers whether this product is needed by users. 
+- This aspect focuses on ensuring that developers are creating solutions for actual pain points that users have, rather than creating solutions based on assumptions that they make about the user experience.
 
 The usability of a product is addressed by the question “Are we designing the thing right?” [1], which considers whether users are able to use the product.
+- This aspect focuses on creating products that is the most satisfactory in terms of the goals of end users.
 
 To achieve this goal, design requirements include specifications related to user interfaces, navigation, visual design, and additional elements which contribute to the satisfaction of end users and overall usability. This makes design requirements an integral part of the user experience.
 
@@ -33,6 +35,13 @@ When working with partner clients, scoping the problem that clients want to addr
 ### **1. Client Needs** 
 
 After synthesizing user stories, extracting the functional and non-functional design requirements for any design (whether it is a web-application or mobile application) will allow students to gauge the specific features that they will be working on in order to create an MVP that accurately addresses client needs.
+
+Clients taking part in the process of extracting design requirements with developers can be beneficial for both parties, due to several reasons:
+
+- **Clear Understanding of Business Goals**: Clients have a deep understanding of their business goals and objectives. Their involvement ensures that the design requirements align closely with this overall vision.
+- **User-Centric Design**: Clients have insights into the preferences and expectations of end users, especially if they have been in the same industry for a long time. By participating in the design requirements extraction process, clients can contribute valuable input to ensure that the final product meets user needs and expectations.
+- **Feedback Loop**: Involving clients early in the design process help establishes an iterative approach. This continuous feedback loop allows for adjustments and refinements throughout the development phases.
+- **Empowerment and Engagement**: Clients that actively participate in the design process feel more empowered and engaged, which can lead to a better sense of partnership between the client and the development team.
 
 ### **2. Action Items**
 
