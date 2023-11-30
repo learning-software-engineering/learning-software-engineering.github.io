@@ -30,7 +30,7 @@ To read more about schema and their advantages, you can check out
 #### How to create a schema
 The first step of a good database creation should be to initialize a schema.
 <br>
-You can do so by
+You can do so by using the query 
 <br>CREATE SCHEMA <schema name>; <br>
 and then alter the schema to add tables to it.
 
@@ -42,7 +42,11 @@ CREATE TABLE table_name (...);
 A table is a fundamental structure used to store data in a relational database. It consists of rows and columns where each column represents a different attribute, and each row represents a record or an entry in the table
 
 The syntax to create a table is
-CREATE TABLE <tablename> (<column1_name column1_datatype other_attributes,
+<br>
+CREATE TABLE <tablename> (
+<br>
+<column1_name column1_datatype other_attributes,
+<br>
 column2_name column2_datatype other_attributes,...);
 
 Example :
