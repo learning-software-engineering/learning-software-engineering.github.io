@@ -5,7 +5,7 @@
 2. [Why Should I Care?](#why-should-i-care?)
 3. [PIPEDA](#pipeda)
 4. [Case Studies](#case-studies)
-5. [What Can I Do?](#what-can-i-do?)
+5. [Software Engineering Code of Ethics](#software-engineering-code-of-ethics)
 6. [Works Cited](#works-cited)
 
 ## Introduction
@@ -36,20 +36,25 @@ Canada's Personal Information Protection and Electronic Documents Act (PIPEDA) i
 In general, when designing sofwtare that collects user data, you must ensure that you only collect data that users consent to being collected, and only use it for the reasons that they consented to. Full transparency is also required, as users have a right to know which data you are storing if it pertains to them.
 
 ## Case Studies
-When evaluating the ethical quality of a service, we can typically look at three main factors: privacy, security and consent. 
+When evaluating the ethical quality of a service, we can typically look at three main factors: privacy, consent and security. 
 
 ### Facebook and Cambridge Analytica
+**Violation of Privacy**
 
 
 ### Sephora
+**Violation of Consent**
 Multi-million dollar company Sephora is an example of a company which has faced legal consequences due to poor ethical practices related to software design. The problem with their software design is a concept commonly referred to in conversations surrounding ethics - "opt in vs. opt out". What this means is that, generally, if you offer a user a product or service, or wish to gather their consent for data collection, for example, they must be opted out by default, not opted in. That is, if your website has a check box which the user needs to have selected in order for you to use their data, that check box must be unselected by default.
 
 In 2022, Sephora was found guilty of doing the opposite, opting users in to having their data sold by default. This resulted in a $1.2 million fine as an enforcement of the California Consumer Privacy Act.
 
 ### ChatGPT
+**Violation of Security**
 On March 24th, 2023, it was revealed that Open AI's system had an easily exploitable vulnerability, allowing users to, through an open-source library called Redis, see the chat histories of other users. This same vulnerability was also responsible for allowing users to view payment information of other users, as well as their full names, email addresses and payment addresses. 
 
 Open AI was thankfully able to detect this issue and take ChatGPT offline before it could impact any more than 1% of their users. However, with a large user base, 1% still implies many affected people, and this raises concerns for future problems as their user base only grows.
+
+## Software Engineering Code of Ethics
 
 ## Works Cited
 “Ethics in Software Engineering: A Key Component of Professional Practice.” Continuing Education for Professional Engineers PDHPRO, pdh-
