@@ -77,7 +77,7 @@ Let’s draw arrows to create the connections for the foreign keys.
 
 This is our final schema in the form of a ER diagram using LcuidChart.
 
-**NOTE: You will see that in the diagrams aboveI have used Primary Key (PK) and Foreign Key (FK) as the type of the ID attributes. For clarification Primary Keys and Foreign Keys are not a type (in our case the type of the IDs are integers) I am just using it to state that it is a primary key or foreign key. You could also include the type and say Integer PK in your diagrams but it is not necessary.**
+**NOTE: You will see that in the diagrams above I have used Primary Key (PK) and Foreign Key (FK) as the type of the ID attributes. For clarification Primary Keys and Foreign Keys are not a type (in our case the type of the IDs are integers) I am just using it to state that it is a primary key or foreign key. You could also include the type and say Integer PK in your diagrams but it is not necessary.**
 
 There may be some further constraints to look for that you should create using your chosen sql language. For example every doctor should have a valid license (would probably have to create some new tables for that); also, there can’t be two points that start at the same time. Furthermore each appointment is strictly an hour long so there can’t be another appointment which starts earlier than an hour after another appointment e.g. if an appointment starts at 7:00 am the next appointment has to be 8:00 am or later.
 
