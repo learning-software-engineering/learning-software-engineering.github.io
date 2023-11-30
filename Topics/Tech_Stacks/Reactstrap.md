@@ -55,9 +55,9 @@ const MyButtonComponent = () => {
 
 export default MyButtonComponent;
 ```
-In this file, we have simply created a button with the words "Click me" written on it. The button does not perform any functionality, feel free to expirement and add your own!
+In this file, we have simply created a button with the words "Click me" written on it. The button does not perform any functionality, feel free to experiment and add your own!
 Here is what this file looks like when it is ran locally (using npm start):
-<img alt="image" src="https://ibb.co/VDHGTJx">
+<img alt="image" src="https://i.ibb.co/ft8WHq9/Screenshot-2023-11-29-at-8-58-16-PM.png">
 
 
 Reactstrap offers a large library of componenets. Here is a list of some of the most popular, with links to their documentation:
