@@ -161,9 +161,18 @@ Once your workspace is set up, Linear will generate a list of tutorial issues. R
 
 To create a project, click on 'Roadmaps' in the sidebar. If it's your first project, click 'New Project' in the center of the page. If not, the button is located in the top-right corner. Consider each project as a phase or significant component of your software development cycle, with a defined goal or deadline.
 
+![create project](https://res.cloudinary.com/ai-character/image/upload/v1701309122/roadmap_rimzuw.png)
+
 <h3>Creating Issues in Linear</h3>
 
 To create a new issue, you can click on the small "+" button at the top-right corner on the Issues page or simply press the 'C' key. You just need to provide a title for your new issue, but you can also add a description, set the status (backlog, todo, in progress, etc.), assign it to a team member, or link it to a project. These details can be added or edited later as well.
+
+The "+" button is located here.
+![plus button](https://res.cloudinary.com/ai-character/image/upload/v1701309122/plus_xc8pcm.png)
+
+Alternatively, if you press the "C" key, you also should see this.
+![issue creation](https://res.cloudinary.com/ai-character/image/upload/v1701309122/c_z4chiw.png)
+
 
 <h3>Linking Linear Workspace to Github</h3>
 
@@ -172,6 +181,8 @@ To connect your workspace to Github, go to https://linear.app/settings/integrati
 <h3>Using the Linear and Github workflow</h3>
 
 After linking your Linear workspace with Github, Linear will automatically track your commits and pull requests to update their statuses. To enable this, you must use the specific branch name for each issue, which you can find on any issue detail page by pressing "Ctrl + Shift + ."
+
+![git branch name](https://res.cloudinary.com/ai-character/image/upload/v1701309122/branch_p9pcsl.png)
 
 <h3>Linear vs Jira</h3>
 
