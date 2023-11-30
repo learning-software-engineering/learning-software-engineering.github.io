@@ -151,6 +151,41 @@ Now that you have seen how to compose a view in SwiftUI, this section will go ov
 Before going over how to conform your project to this architecture, let's get familiar with the most common wrappers and protocols (the Swift equivalent of an 
 interface) used in SwiftUI.
 
+**`State`**
+
+The `State` wrapper is a concept similar to react native. It allows a view to own a property and is completely managed by SwiftUI's property storage. When a value wrapped in `State` changes, the view is re-rendered to reflect them. `State` properties can be shared with subviews through a `Binding`.
+
+**`Binding`**
+
+The `Binding` wrapper creates a connection between a property that stores data and a view that displays and changes the data. It connects the property to some source of truth that is defined elsewhere. Typically the `Binding` wrapper is used in conjunction with the `State` wrapper defined above. Changing the value of a `Binding` creates a waterfall and all views connected to the `State` property are re-rendered. Here is an example of both in use:
+
+```swift
+struct PlayerView: View {
+    @State private var isPlaying: Bool = false // Create the state here now.
+
+    var body: some View {
+        VStack {
+            PlayButton(isPlaying: $isPlaying) // Pass a binding.
+            ...
+        }
+    }
+}
+```
+
+```swift
+struct PlayButton: View {
+    @Binding var isPlaying: Bool // Play button now receives a binding.
+
+    var body: some View {
+        Button(isPlaying ? "Pause" : "Play") {
+            isPlaying.toggle()
+        }
+    }
+}
+```
+
+In this example the parent view PlayerView keeps a state variable isPlaying and passes it down the PlayButton view. Notice the `$` before referencing the variable, which allows us to reach the property wrapped in a `Binding`. In this subview, we use the binding to isPlaying to toggle it's value on a button press. This causes both the views to re-render because the binding changes the value at the source of truth.
+
 
 
 
