@@ -29,7 +29,7 @@ Red Hat OpenShift is an open-source container application platform that runs on 
 
 -	**Container Orchestration**: It uses Kubernetes to automate the deployment, scaling, and management of containers. These features allow developers to focus on application code rather than infrastructure.
 
--	**Developer**:  It provides several features that enhances development process by provided a user-friendly UI that allows developers to manage application, resources, and pod health. Additionally, it includes Source-to-Image (S2I) a tool which simplifies building and deploying container images from source code. 
+-	**Developer**:  It provides several features that enhances development process by providing a user-friendly UI that allows developers to manage application, resources, and pod health. Additionally, it includes Source-to-Image (S2I) a tool which simplifies building and deploying container images from source code. 
 
 -	**Operator**: This is a key feature that distinguishes OpenShift from Kubernetes. Operators are a method for packaging and running Kubernetes applications. It greatly simplifies installation, updates, and management. In essence, it automates the entire lifecycle management process.
 
@@ -50,7 +50,7 @@ This layer is an abstraction provided by Kubernetes primarily used to expose and
 -	**API and authentication**: To ensure the security of the cluster, any administration/ access request goes through the API.
 -	**Data Store**: Stores the state and information related to the environment and application.
 -	**Scheduler**: Determines where pods and jobs  will run  while considering current memory, CPU, and other environment factors.
-**Health/scaling**:  Monitors the well-being of pods and adjusts their scale according to CPU utilization. In the event of pod failure, the primary node initiates an automatic restart. In case of frequent failures, the pod is flagged as bas and is temporarily withheld from further restart attempts.
+**Health/scaling**:  Monitors the well-being of pods and adjusts their scale according to CPU utilization. In the event of pod failure, the primary node initiates an automatic restart. In case of frequent failures, the pod is flagged as bad and is temporarily withheld from further restart attempts.
 
 
 #### Worker node
@@ -87,7 +87,7 @@ def hello_world():
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8080)
 ```
-Flask is a framework that is used to create web application. The code above creates a simple web app that prints Hello Word.
+Flask is a framework that is used to create web application. The code above creates a simple web app that prints Hello World.
 
 - Create a requirements file called requirements.txt:
 ```
