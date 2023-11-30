@@ -9,5 +9,33 @@ This is a very fundamental feature often used in Natural Language Processng and 
 
 This process was invented to address issues in automated document searching. For example, common words like "and", "where", and "then" would be so frequent across all documents that it will be phased out of processing. But if one document focuses on transportation, words such as "public", "transit", and "streetcar" would appear much more frequently in this document compared to others which allows the algorithm to identify the document's most relevant words which we can extract to perform additional processing on.
 
+Instructions:
+
+1. Begin by installing the python library scikit-learn. This can be done through the pip installer with the command:
+
+    pip install scikit-learn
+
+  It can also be manually installed through your python IDE
+
+2. Import the library into your program
+
+    from sklearn.feature_extraction.text import TfidfVectorizer
+
+3. Create the TfidfVectorizer object:
+
+    tfidf_vectorizer = TfidfVectorizer()
+
+    There are many parameters and inputs you can use and adjust within the brackets. 
+    They can all be found through the documentation linked above.
+
+4. Fit and transform the data
+
+    tfidf_matrix = tfidf_vectorizer.fit_transform(your_documents)
+
+    #comment about what does your_documents mean
+
+5. The complete TF-IDF matrix can be seen in the tfidf_matrix variable. This can be outputted into a dataframe using the pandas library
+   or otherwise and the results can be displayed and interpreted for your program.
+
 
 Documentation can be seen here: https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html 
