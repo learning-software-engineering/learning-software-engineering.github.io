@@ -57,7 +57,7 @@ export default MyButtonComponent;
 ```
 In this file, we have simply created a button with the words "Click me" written on it. The button does not perform any functionality, feel free to expirement and add your own!
 Here is what this file looks like when it is ran locally (using npm start):
-<img width="304" alt="image" src="https://ibb.co/VDHGTJx">
+<img alt="image" src="https://ibb.co/VDHGTJx">
 
 
 Reactstrap offers a large library of componenets. Here is a list of some of the most popular, with links to their documentation:
