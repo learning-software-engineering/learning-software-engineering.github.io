@@ -68,7 +68,7 @@ add_executable(MyExecutable ${SOURCE_FILES})
                     # and expands to 3 arguments
   ```
 
-It also provides the basic **control flow** - conditional statements, looping constructs, and procedure definitions. Here are the examples:
+CMake also provides basic **control flow** statements - conditional statements, looping constructs, and procedure definitions. Here are the examples:
 
 * **Conditional statements (e.g [if](https://cmake.org/cmake/help/latest/command/if.html#command:if))**
     ```CMake
