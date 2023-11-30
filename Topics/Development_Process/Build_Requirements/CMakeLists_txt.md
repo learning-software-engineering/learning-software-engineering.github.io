@@ -23,7 +23,7 @@ To install CMake, check their [document](https://cmake.org/download/) on how to 
 
 When CMake processes a project, the entry point is a source file called `CMakeLists.txt` in the top level of the source directory.
 
-`CMakeLists.txt` is the CMake configuration file, which contains a set of directives and instructions describing the project's source files and targets (executable, library, or both) that will be used to build the program. It determines everything for the building process, from which source files to compile, to which options to choose for the libraries and to present to the users.
+`CMakeLists.txt` is the CMake configuration file, which contains a set of directives and instructions describing the project's source files and targets (executable, library, or both) that will be used to build the program. It determines everything for the building process, from which source files to compile, to which options to choose for the libraries and present to the users.
 
 Here is a simple example of what it looks like:
 ```CMake
