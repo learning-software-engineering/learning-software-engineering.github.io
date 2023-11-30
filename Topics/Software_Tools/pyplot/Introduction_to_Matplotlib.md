@@ -1,3 +1,47 @@
+## Table of Content
+
+- [Table of Content](#table-of-content)
+- [Introduction to Matplotlib](#introduction-to-matplotlib)
+  - [What is Matplotlib?](#what-is-matplotlib)
+  - [What is pyplot?](#what-is-pyplot)
+  - [Why Matplotlib?](#why-matplotlib)
+- [Setting Up the Environment for Matplotlib](#setting-up-the-environment-for-matplotlib)
+  - [Installing Matplotlib](#installing-matplotlib)
+  - [Test Your Setup](#test-your-setup)
+- [Basic Concepts of Matplotlib](#basic-concepts-of-matplotlib)
+  - [Introduction to core concepts](#introduction-to-core-concepts)
+    - [Figure](#figure)
+    - [Axes](#axes)
+    - [Pyplot interface](#pyplot-interface)
+    - [Understanding Plot Functions](#understanding-plot-functions)
+- [Customizing Plots in Matplotlib](#customizing-plots-in-matplotlib)
+  - [Colours, Line Styles and Markers](#colours-line-styles-and-markers)
+  - [Adding Labels, Titles, and Legends](#adding-labels-titles-and-legends)
+  - [Adjusting Axes](#adjusting-axes)
+  - [Grids](#grids)
+  - [Annotating Plots](#annotating-plots)
+- [Working with Multiple Plots and Figures in Matplotlib](#working-with-multiple-plots-and-figures-in-matplotlib)
+  - [Understanding Subplots](#understanding-subplots)
+    - [Creating Subplots](#creating-subplots)
+    - [Indexing Subplots](#indexing-subplots)
+    - [Customizing Individual Subplots](#customizing-individual-subplots)
+    - [Adding a Title to the Entire Figure](#adding-a-title-to-the-entire-figure)
+  - [Adjusting the Layout](#adjusting-the-layout)
+    - [Spacing](#spacing)
+    - [Automatic Adjustment](#automatic-adjustment)
+    - [Shared Axes](#shared-axes)
+- [Advanced Plot Types in Matplotlib](#advanced-plot-types-in-matplotlib)
+  - [Histogram](#histogram)
+    - [Basic  Histogram Creation](#basic--histogram-creation)
+    - [Histogram Customization](#histogram-customization)
+  - [Boxplots](#boxplots)
+    - [Boxplots creation:](#boxplots-creation)
+    - [Customizing Boxplots](#customizing-boxplots)
+  - [Radar Plot](#radar-plot)
+    - [Basic Radar Plot Creation](#basic-radar-plot-creation)
+    - [Customizing Radar Plot](#customizing-radar-plot)
+- [Resource Section](#resource-section)
+
 ## Introduction to Matplotlib
 ### What is Matplotlib?
 Matplotlib is a powerful, versatile library in Python used for creating static, interactive, and animated visualizations. It was initially developed by John D. Hunter in 2003 and has since become a fundamental tool in the data science and analytics community.
@@ -44,7 +88,7 @@ If you see a line chart, then congratulation! Your environment set up correctly.
 This section will introduce you to the core components of Matplotlib, namely **figures, axes, and plots**, along with an overview of the pyplot interface. 
 
 ### Introduction to core concepts
-#### Figure:
+#### Figure
 The entire window or page where the graph displayed on. Think it as a canvas where you can draw your graph on. Note that A figure can contains may axes. 
 
 #### Axes
@@ -54,7 +98,7 @@ An axes object is a part of a figure where we plot our data, it can contain two(
 Matplotlib offers several interfaces for creating plots, but the most commonly used is `pyplot` where it is extremely convenient for interactive work. Moreover, the whole tutorial will focus on this pyplot interface:
 - **Simple and Convenient**: `Pyplot` automates the creation of figures and axes, allowing you to just focus more on plotting the data.
 - **Ideal for Beginners**: Its simplicity makes it very accessible for beginners.
-- 
+
 #### Understanding Plot Functions
 `pyplot` module provides functions for different types of plot. Here we just show some simple examples, we will dive into them in later section. 
 
@@ -74,7 +118,8 @@ plt.ylabel("Y Axis")
 plt.show()
 ```
 Running this will generate a simple line showing a quadratic relationship:
-![Line Plot](./images/Pasted%20image%2020231126224825.png)
+<img src="./images/Pasted%20image%2020231126224825.png" alt="Line Plot" width="300"/>
+
 
 **scatter()**
 For Scatter plots
@@ -101,7 +146,8 @@ plt.show()
 ```
 This will generate a scatter plot where each point has a unique size and color, based on the provided lists. 
 
-![](./images/Pasted%20image%2020231126225111.png)
+<img src="./images/Pasted%20image%2020231126225111.png" alt="Scatter Plot" width="300"/>
+
 
 **bar()**
 Example:
@@ -119,7 +165,7 @@ plt.show()
 ```
 This will generate a simple bar chart showing data in a categorical format:
 
-![](./images/Pasted%20image%2020231126225345.png)
+<img src="./images/Pasted%20image%2020231126225345.png" alt="Bar Chart" width="300"/>
 
 **hist()**
 For Histograms
@@ -138,7 +184,7 @@ plt.show()
 ```
 This will generate a histogram showing the distribution of a dataset. 
 
-![](./images/Pasted%20image%2020231126225540.png)
+<img src="./images/Pasted%20image%2020231126225540.png" alt="Histogram" width="300"/>
 
 
 ## Customizing Plots in Matplotlib
@@ -160,7 +206,7 @@ plt.plot(x, y, color='green')
 plt.show()
 ```
 
- - ![](./images/Pasted%20image%2020231127110532.png)
+<img src="./images/Pasted%20image%2020231127110532.png" alt="Line Plot with Green Color" width="300"/>
 
 1. **Line Styles**: Alter the style of the plot lines.
     - Example:
@@ -169,14 +215,15 @@ plt.plot(x, y, linestyle='dashed')
 plt.show()
 ```
 
- - ![](./images/Pasted%20image%2020231127110651.png)
-1. **Markers**: Add markers to your plot points.
+<img src="./images/Pasted%20image%2020231127110651.png" alt="Dashed Line Plot" width="300"/>
+
+2. **Markers**: Add markers to your plot points.
     - Example: 
 ```python
 plt.plot(x, y, marker='o')
 plt.show()
 ```
-- ![](./images/Pasted%20image%2020231127110736.png)
+<img src="./images/Pasted%20image%2020231127110736.png" alt="Line Plot with Markers" width="300"/>
 
 ### Adding Labels, Titles, and Legends
 Effective labeling is key to making plots understandable and informative.
@@ -194,7 +241,7 @@ plt.title('My plot title')
 plt.legend(['x and y', 'x and z'])
 plt.show()
 ```
-- ![](./images/Pasted%20image%2020231127111257.png)
+<img src="./images/Pasted%20image%2020231127111257.png" alt="Plot with Labels, Titles, and Legends" width="300"/>
 
 
 ### Adjusting Axes
@@ -210,9 +257,11 @@ plt.ylim(-1, 1)
 plt.show()
 ```
 - Graph without adding axis limits:
-- ![](./images/Pasted%20image%2020231127112426.png)
+<img src="./images/Pasted%20image%2020231127112426.png" alt="Plot with Axis Limits" width="300"/>
+
 - Applying the axis limits we can get:
-- ![](./images/Pasted%20image%2020231127112338.png)
+<img src="./images/Pasted image 20231127112338.png" alt="Plot with Axis Limits" width="300"/>
+
 1. **Tick Marks**: Customize the ticks on the axes for better precision.
 ```python
 x = range(0, 10)  
@@ -224,7 +273,7 @@ plt.title("Customized Tick Marks")
 plt.show()
 ```
 
-- ![](./images/Pasted%20image%2020231127112911.png)
+<img src="./images/Pasted%20image%2020231127112911.png" alt="Plot with Customized Tick Marks" width="300"/>
 
 ### Grids
 Gridlines are helpful for reading and interpreting graphs more easily.
@@ -238,7 +287,7 @@ plt.title("Graph with grid lines show")
 plt.show()
 ```
 
-- ![](./images/Pasted%20image%2020231127113201.png)
+<img src="./images/Pasted%20image%2020231127113201.png" alt="Graph with Grid Lines" width="300"/>
 
 ### Annotating Plots
 Properly labeled axes and a descriptive title can greatly enhance the understandability of a plot.
@@ -252,7 +301,8 @@ plt.title("Graph with text annotation")
 plt.show()
 ```
 
-- ![](./images/Pasted%20image%2020231127113641.png)
+<img src="./images/Pasted%20image%2020231127113641.png" alt="Graph with Text Annotation" width="300"/>
+
 2. **Arrows**: Draw arrows to direct attention.
 `plt.annote()` method provides helper functionality to make annotations easy. 
 - `xy`: The point (x, y) to annotate
@@ -269,7 +319,7 @@ plt.title("Graph with Arrow Annotated")
 plt.show()
 ```
 
-- ![](./images/Pasted%20image%2020231127130606.png)
+<img src="./images/Pasted%20image%2020231127130606.png" alt="Graph with Arrow Annotation" width="300"/>
 
 
 ## Working with Multiple Plots and Figures in Matplotlib
@@ -321,7 +371,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-- ![](./images/Pasted%20image%2020231127121909.png)
+<img src="./images/Pasted%20image%2020231127121909.png" alt="Figure with Different Types of Subplots" width="300"/>
 
 ### Adjusting the Layout
 
@@ -329,7 +379,8 @@ When working with multiple plots, managing the spacing and layout is crucial to 
 
 If we don't adjust the layout, the graph may be overlapping and  looks something like:
 
-- ![](./images/Pasted%20image%2020231127120702.png)
+<img src="./images/Pasted%20image%2020231127120702.png" alt="Figure with Different Types of Subplots" width="300"/>
+
 #### Spacing
 - **Adjusting Spacing**: Control the space between subplots using `subplots_adjust()`.
     - Example: `plt.subplots_adjust(wspace=0.5, hspace=0.5)` adjusts the width and height spacing.
@@ -359,7 +410,8 @@ plt.subplots_adjust(wspace=0.5, hspace=0.5)
 plt.show()
 ```
 
-- ![](./images/Pasted%20image%2020231127120818.png)
+
+<img src="./images/Pasted%20image%2020231127120818.png" alt="Figure with Different Types of Subplots" width="300"/> 
 
 #### Automatic Adjustment
 - **Using `tight_layout()`**: This method automatically adjusts subplot params to fit the figure area neatly.
@@ -394,7 +446,8 @@ plt.tight_layout()
 plt.show()
 ```
 
-- ![](./images/Pasted%20image%2020231127121648.png)
+<img src="./images/Pasted%20image%2020231127121648.png" alt="Figure with Different Types of Subplots" width="300"/> 
+
 
 ## Advanced Plot Types in Matplotlib
 Matplotlib provides several advanced plot types for specialized data visualization needs. Here, we'll explore histograms, boxplots, heatmaps, 3D plots, and radar plots in more detail.
@@ -414,7 +467,7 @@ plt.hist(data, bins = 30)
 plt.show()
 ```
 
-- ![](./images/Pasted%20image%2020231127131857.png)
+<img src="./images/Pasted%20image%2020231127131857.png" alt="Basic Histogram Creation" width="300"/>
 
 
 #### Histogram Customization
@@ -423,14 +476,17 @@ plt.show()
 plt.hist(data, bins=15)
 ```
 
-- ![](./images/Pasted%20image%2020231127132239.png)
+
+<img src="./images/Pasted%20image%2020231127132239.png" alt="Basic Histogram Creation" width="300"/>
 
 
-2. **Changing Colors and Transparency**: Use the `color` and `alpha` parameters for aesthetic adjustments.
+1. **Changing Colors and Transparency**: Use the `color` and `alpha` parameters for aesthetic adjustments.
 ```python
 plt.hist(data, bins=30, color='green', alpha=0.5)
 ```
-- ![](./images/Pasted%20image%2020231127132335.png)
+
+<img src="./images/Pasted%20image%2020231127132335.png" alt="Basic Histogram Creation" width="300"/>
+
 
 
 
@@ -447,7 +503,8 @@ After this, just call `plt.boxplot()` on the generated data
 plt.boxplot(data)
 plt.show()
 ```
-- ![](./images/Pasted%20image%2020231127133958.png)
+
+<img src="./images/Pasted%20image%2020231127133958.png" alt="Basic Histogram Creation" width="300"/>
 
 Understanding Boxplots Element:
 - **Central Box**: Represents the interquartile range (IQR), the middle 50% of the dataset.
@@ -469,14 +526,16 @@ axs[0].boxplot(data, whis=[5, 95])
 axs[0].set_title("Customized Whiskers Length")
 ```
 
-- ![](./images/Pasted%20image%2020231127140236.png)
+<img src="./images/Pasted%20image%2020231127140236.png" alt="Basic Histogram Creation" width="300"/>
+
 
 2. **Adding Colours**
 ```python
 axs[0].boxplot(data, patch_artist=True, boxprops=dict(facecolor='blue'))
 axs[0].set_title("Customized Colour")
 ```
-- ![](./images/Pasted%20image%2020231127140350.png)
+<img src="./images/Pasted%20image%2020231127140350.png" alt="Basic Histogram Creation" width="300"/>
+
 
 3. **Horizontal Boxplots**
 ```python
@@ -484,7 +543,8 @@ axs[0].boxplot(data, vert=False)
 axs[0].set_title("Change to horizontal Boxplots")
 ```
 
-- ![](./images/Pasted%20image%2020231127140633.png)
+<img src="./images/Pasted%20image%2020231127140633.png" alt="Basic Histogram Creation" width="300"/>
+
 
 
 ### Radar Plot
@@ -526,7 +586,7 @@ ax.set_xticklabels(labels)
 plt.show()
 ```
 
-- ![](./images/Pasted%20image%2020231127143330.png)
+<img src="./images/Pasted%20image%2020231127143330.png" alt="Basic Radar Plot" width="300"/>
 
 
 #### Customizing Radar Plot
@@ -534,12 +594,20 @@ plt.show()
 ```python
 ax.fill(angles, stats, color='blue', alpha=0.4)
 ```
-- ![](./images/Pasted%20image%2020231127144512.png)
+<img src="./images/Pasted%20image%2020231127144512.png" alt="Basic Radar Plot" width="300"/>
+
 
 3. **Adjusting Line Style**: Change the line style for the perimeter and spokes.    
 ```python
 ax.plot(angles, stats, linestyle='dashed', color='black')
 ```
-- ![](./images/Pasted%20image%2020231127144825.png)
+<img src="./images/Pasted%20image%2020231127144825.png" alt="Basic Radar Plot" width="300"/>
 
 
+## Resource Section
+- **Official Documentation**
+Matplotlib Official Website: [Matplotlib.org](https://matplotlib.org)
+The official website is a great starting point, offering comprehensive documentation, examples, and tutorials.
+- **Online Tutorials and Guides**
+DataCamp's Matplotlib Course: [DataCamp Matplotlib Course](https://www.datacamp.com/courses/intermediate-python)
+DataCamp offers an interactive course that covers Matplotlib in the context of data science.
