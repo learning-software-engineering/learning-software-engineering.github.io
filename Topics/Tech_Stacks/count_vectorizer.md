@@ -1,12 +1,12 @@
 ***Table of contents*** 
 
-1.**Introduction**
+1.[Introduction](#introduction)
 
-2.**How it works**
+2.[How it works](#how it works)
 
-3.**Usage**
+3.[Usage](#usage)
 
-4.**Additional Resources**
+4.[Additional resources](#additional resources)
 
 ***Introduction:***
 
@@ -42,7 +42,7 @@ Each row represents a document, and each column is a unique word. The numbers sh
 ***Usage:***
 
 
-CountVectorizer is commonly used in tasks like text classification and clustering in machine learning. It's a crucial step in getting text ready for algorithms that work with numbers.
+CountVectorizer is commonly used in tasks like text classification,clustering, sentiment analysis, and text mining in machine learning. It's a crucial step in getting text ready for algorithms that work with numbers.
 
 ***Additional resources:***
 
