@@ -11,13 +11,14 @@
 - [Guides and Additional Resources](#guides-and-additional-resources)
 
 ---
-
-## Introduction to Kanban
 ---
+## Introduction to Kanban
+
 Kanban is a system framework used in agile and DevOps software development, focusing on complete work visualization and real-time communication. It allows team members to understand the status and progress of each task through a visual representation.
+
 ---
 ## Why Kanban Suits Software Teams
----
+
 Kanban is particularly effective in software development due to its flexibility, continuous delivery, and visual workload management.
 
 - **Flexibility**
