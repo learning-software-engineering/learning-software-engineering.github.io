@@ -28,6 +28,8 @@
 
 SCSS is a programming language that extends the capabilities of CSS by introducing new syntax to streamline the process of creating stylesheets. SCSS is a superset of CSS which means that all valid CSS code is also valid SCSS code. Due to this, it is recommended that before you start learning SCSS you should have some working knowledge of CSS. You can get started at [this CSS guide](./CSS.md), but it is suggested to have more practice with CSS. Although not required, it is also recomended to use the BEM methodology when creating class names for HTML elements. You can find more information about BEM on [their website here](https://getbem.com/).
 
+CSS, while essential for styling web pages, has limitations that SCSS addresses. One of these limitations is the lack of modularity in CSS whereas SCSS empowers developers to create modular and reusable components, reducing redundancy. SCSS also simplifies some of the clunky syntax for certain CSS features, one such instance of this is with variables. SCSS also inttroduces nesting to CSS, bringing its syntax closer to other popular languages. These are just a few of the changes SCSS brings to CSS to extend its capabilities that will be discussed in this guide.
+
 When giving examples of SCSS syntax, this guide will also display the compiled CSS code as a comparison. By the end of this guide, you should be able to create simple SCSS stylesheets for your website.
 
 ## Getting Started
