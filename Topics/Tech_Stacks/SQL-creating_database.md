@@ -53,7 +53,8 @@ CREATE TABLE Students(
     lname varchar(15)
 );
 
-![example_table_creation](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/113269746/9fbad0f9-42a4-4da7-bba5-be49d6b60582)
+![example_table_creation](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/113269746/233e090d-a9ef-4fdc-9fbd-db8fc1870558)
+
 
 
 Links :<br>
