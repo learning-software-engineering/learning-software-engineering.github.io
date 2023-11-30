@@ -113,7 +113,7 @@ As you can see, we are using the environment variable `NPM_KEY`, since we don't 
 
 ## Orbs
 
-You might have noticed that we have not defined a job for testing our node package. This is because we are going to be using a prebuilt job given by the CircleCI node orb. Specifically, we will be using the node/test job. From the CircleCI docs, `"Orbs are reusable packages of parameterizable configuration that can be used in any project. They are made up of reusable configuration elements, for example, jobs, commands, and executors."` You can even author your own orbs, which is out of the scope of this guide. You can see available orbs [here]('https://circleci.com/developer/orbs').
+You might have noticed that we have not defined a job for testing our node package. This is because we are going to be using a prebuilt job given by the CircleCI node orb. Specifically, we will be using the node/test job. To elaborate, nodes are like packages that contain things such as jobs and commands which we can use out of the box without needing to configure a third party installation or set up a secondary yaml file. This is extremely useful for devops engineers who don't want re-invent the wheel, such as writing a job for testing in node. This also helps keep the configuration readable and concise. From the CircleCI docs, `"Orbs are reusable packages of parameterizable configuration that can be used in any project. They are made up of reusable configuration elements, for example, jobs, commands, and executors."` You can even author your own orbs, which is out of the scope of this guide. You can see available orbs [here]('https://circleci.com/developer/orbs').
 
 
 ## Workflows
