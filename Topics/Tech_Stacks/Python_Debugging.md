@@ -43,5 +43,16 @@ If you would like to read more about the further uses of the debugger, you can r
 It can be tempting to simply use print statements everywhere to see the immediate values of the variables in the program. It is definitely quick and an intuitive way to debug. However, as your programs increase in length, the code can get very messy very quickly. Having too many print statements can become very difficult to manage. Sometimes, it’s even easy to forget what a print statement was referring to. For these reasons, it is bad practice to use print statements to debug, and tools like pdb should be utilized instead. 
 
 Python also offers other tools to aid with debugging, but these are not inbuilt into Python, unlike pdb. Some of these tools are listed below. 
-* PyCharm
-* Sentry 
+
+Pycharm 
+- Pycharm is an IDE that is commonly used to write python scripts
+- It allows you to add a breakpoint using it’s interface, but adding a red dot on one the lines
+- Then, a console will pop up where you can step through each individual line of code 
+- Using PyCharm instead of pdb may be useful if you prefer to use a interactive console, rather than typing out typing out commands
+- Read about how to use the pycharm debugger here: https://www.jetbrains.com/help/pycharm/debugging-your-first-python-application.html#where-is-the-problem 
+
+Sentry 
+- This is a third party error-tracking and performance monitoring tool
+- Specializes in monitoring web applications, which are often written in python 
+- Sentry is useful for monitoring live applications, but can be paid after a certain level of usage.
+- https://sentry.io/for/python/ 
