@@ -9,7 +9,8 @@
 5. [CI Tools](#5-ci-tools)
 6. [Best Practices](#6-best-practices)
 7. [Continuous Delivery vs. Continuous Deployment](#7-continuous-delivery-vs-continuous-deployment)
-8. [Challenges](#8-challenges)
+8. [Advantages and Disadvantages of CI over CD](#8-advantages-and-disadvantages-of-ci-over-cd)
+9. [Challenges](#9-challenges)
 
 ## 1. Definition
 
@@ -60,7 +61,38 @@ Continuous Integration (CI) is a software development practice in which team mem
 - **Continuous Delivery (CD):** The process of automatically deploying successful builds to staging or testing environments.
 - **Continuous Deployment (CD):** Automatically deploying successful builds to production, eliminating manual intervention.
 
-## 8. Challenges
+## 8. Advantages and Disadvantages of CI over CD
+
+### Advantages of Continuous Integration (CI)
+
+#### 1. Early Issue Detection
+
+- **Advantage:** CI allows early detection of integration issues and bugs, reducing the time and effort required for debugging.
+- **Example:** Automated tests identify issues as soon as code changes are integrated.
+
+#### 2. Controlled Deployment
+
+- **Advantage:** CI provides control over when and how changes are deployed to different environments.
+- **Example:** Successful builds are ready for deployment but require manual intervention.
+
+#### 3. Collaboration
+
+- **Advantage:** CI encourages collaboration among team members by providing a centralized and updated codebase.
+- **Example:** Developers regularly integrate their code changes into the shared repository.
+
+### Disadvantages of Continuous Integration (CI) compared to Continuous Deployment (CD)
+
+#### 1. Delayed Deployment
+
+- **Disadvantage:** CI does not automatically deploy changes to production, leading to potential delays.
+- **Example:** Deployment to production requires additional manual steps.
+
+#### 2. Limited Automation
+
+- **Disadvantage:** CI may involve manual steps in the deployment process, limiting automation.
+- **Example:** Certain deployment tasks require human intervention.
+
+## 9. Challenges
 
 - **Complex Integrations:** Large and complex projects may face challenges in integrating changes smoothly.
 - **Testing Speed:** As the codebase grows, the time taken for automated tests may increase.
