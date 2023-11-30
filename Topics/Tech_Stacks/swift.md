@@ -146,6 +146,10 @@ To view the preview on different device types, you can change the device the pre
 
 
 ## Design Patterns with SwiftUI
+Now that you have seen how to compose a view in SwiftUI, this section will go over how to apply some of the principles of [clean architecture](https://learning-software-engineering.github.io/Topics/Development_Process.html#clean-architecture) to your project. Simply put, there are three main abstraction layers; presentation, business (or domain), and data.
+
+Before going over how to conform your project to this architecture, let's get familiar with the most common wrappers and protocols (the Swift equivalent of an 
+interface) used in SwiftUI.
 
 
 
