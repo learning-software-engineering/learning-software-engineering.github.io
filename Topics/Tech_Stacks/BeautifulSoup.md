@@ -29,6 +29,13 @@ The resulting response object will contain the HTML source code for the website.
 Once you have the HTML, you can use Beautiful Soup to parse the HTML.
 ```python
 
+import requests
+from bs4 import BeautifulSoup
+
+# Get the HTML from the website
+url = 'https://example.com'
+response = requests.get(url)
+
 # Parse using bs4
 soup = BeautifulSoup(response.content, 'html.parser')
 ```
@@ -37,7 +44,24 @@ soup = BeautifulSoup(response.content, 'html.parser')
 Once you have parsed the HTML, you can extract data using HTML tags. For example, getting all the paragraphs.
 
 ```python
-all_p = soup.find_all('p')
+import requests
+from bs4 import BeautifulSoup
+
+# Get the HTML from the website
+url = 'https://example.com'
+response = requests.get(url)
+
+# Parse using bs4
+soup = BeautifulSoup(response.content, 'html.parser')
+
+# Find all paragraphs
+paragraphs = soup.find_all('p')
+
+# Iterate over paragraphs and store in variable
+all_paragraphs = []
+
+for paragraph in paragraphs:
+    all_paragraphs.append(paragraph.get_text())
 ```
 
 ## When to use Beatiful Soup
