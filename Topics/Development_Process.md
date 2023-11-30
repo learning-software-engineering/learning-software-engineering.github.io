@@ -69,12 +69,12 @@ The SOLID principles are:
 #### Liskov Substitution Principle (LSP)
 -  Subtypes must be able to be used in place of their parent types. According to this concept, it should be possible to swap out objects from a superclass for objects from a subclass without having any negative effects on the program's correctness. This necessitates abiding by the superclass's compact.
 
-- **Advantage**: This principle fosters code reusability and allows for easier substitution of objects within the same inheritance tree. It simplifies maintenance, reducing the need for extensive modifications when introducing new objects or making alterations within the hierarchy.
+- **Advantage**: This principle fosters code reusability and allows for easier substitution of objects within the same inheritance tree. It simplifies maintenance, reducing the need for extensive modifications when introducing new objects or making alterations within the hierarchy. It ensures that system evolution remains agile and manageable without causing extensive disruptions to the existing codebase.
 
 #### Interface Segregation Principle (ISP)
-- This principle emphasizes that a client should not be forced to implement an interface if it does not use all of the methods defined by the interface. 
+- This principle suggests that clients should not be forced to depend on interfaces they do not use. Instead of one large interface, it's better to have multiple smaller, specific interfaces that cater to the exact needs of the clients.
 
-- **Advantage**: Promotes flexibility and avoids unnecessary dependencies. This helps to avoid the creation of fat interfaces, which are interfaces that contain more methods than the client needs.
+- **Advantage**: Promotes flexibility and avoids unnecessary dependencies. This helps to avoid the creation of fat interfaces, which are interfaces that contain more methods than the client needs. Ultimately, ISP encourages a modular and precise approach to interface construction, contributing to better software architecture and maintainability.
 
 #### Dependency Inversion Principle (DIP)
 - High-level modules should not depend on low-level modules. Both should depend on abstractions. Abstractions should not depend on details. Details should depend on abstractions. This principle suggests that classes should depend on abstractions rather than concrete implementations, which makes the system more flexible and easier to modify.
