@@ -241,12 +241,12 @@ Placeholder selectors look and act very similar to the CSS class slector. The di
 
 ```scss
 %placeholder {
-  /*CSS Block A*/
+  font-weight: bold;
 }
 
 body,
 %placeholder {
-  /*CSS Block B*/
+  color: "red";
 }
 ```
 
@@ -254,7 +254,7 @@ body,
 
 ```css
 body {
-  /*CSS Block B*/
+  color: "red";
 }
 ```
 
