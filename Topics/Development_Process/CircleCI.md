@@ -7,11 +7,13 @@
 2. [Guide Overview and Prerequisites](#guide-overview-and-prerequisites)
 3. [Preconfiguration](#preconfiguration)
     - [Account Creation](#account-creation)
-4. [The config.yml file](#when-does-rest-make-sense-to-use)
-5. [When does GraphQL make sense to use?](#when-does-graphql-make-sense-to-use)
-6. [Quick Reference](#quick-reference-for-common-uses)
-7. [Summary](#summary)
-8. [Additional Readings](#additional-reading)
+    - [Connecting to a Project](#connecting-to-a-project)
+4. [The config.yml file](#the-configyml-file)
+5. [Jobs](#jobs)
+6. [Orbs](#orbs)
+7. [Workflows](#workflows)
+8. [Environment Variables](#environment-variables)
+9. [Summary](#summary)
 
 ## Overview & Motivation
 ### What is CircleCI? 
@@ -22,7 +24,7 @@ CircleCI is a continuous integration and continuous delivery (CI/CD) platform th
 - Separating platform for code and CI/CD.
     - Unlike Github Actions, which is a platform integrated into Github. CircleCI is a platform separate from where you store your code. For teams that want to have this clear separation, CircleCI is a suitable choice.
 - Performance
-    - CircleCI supports parellelization for faster builds and is faster than Github Actions in terms of build time.
+    - CircleCI supports parallelization for faster builds and is faster than Github Actions in terms of build time.
 - CLI
     - CircleCI provides a local command line interface which allows you to test configurations and run jobs locally through docker so that you don't have to push to github to check if your config.yml is properly configured.
 
@@ -47,7 +49,7 @@ You will have the option to choose between a "faster" or "fast" way to initializ
 Once you have created your project, you will be prompted to make the commit that contains your config yaml. Here, you will have a variety of configuration templates that you can choose to initialize with. For the purposes of this guide, use the "Hello World" option. Now commit and run.
 
 
-## The config.yml File
+## The Config.yml File
 When CircleCI reads a github repository, it first looks for the .circleci directory in the root directory. This directory contains configuration files that CircleCI uses to determine how to build, test, and deploy your application.
 The most important file in this directory is the config.yml file. This is file that contains all the confiugration information for your jobs and workflows.
 
@@ -108,11 +110,43 @@ It will run checkout, and then run the commands required to publish our node pac
 
 As you can see, we are using the environment variable `NPM_KEY`, since we don't want to include private data in our public config file. This is not yet defined in our CircleCI project. We will get to this in the [Environment Variables](#environment-variables) section.
 
-## Environment Variables
+## Orbs
+
+You might have noticed that we have not defined a job for testing our node package. This is because we are going to be using a prebuilt job given by the CircleCI node orb. Specifically, we will be using the node/test job. From the CircleCI docs, `"Orbs are reusable packages of parameterizable configuration that can be used in any project. They are made up of reusable configuration elements, for example, jobs, commands, and executors."` You can even author your own orbs, which is out of the scope of this guide. You can see available orbs [here]('https://circleci.com/developer/orbs').
+
 
 ## Workflows
+Like other CI/CD platforms, CircleCI uses workflows to organize jobs into sequential flows. Currently in out config.yaml file, say-hello-workflow is already defined. The workflow only runs one job: say-hello. 
+```yaml
+workflows:
+  say-hello-workflow:
+    jobs:
+      - say-hello
+  ```
+Let's define a new workflow called test-and-publish-workflow. The workflow will run the tests in our npm project, verify that the tests have passed succesfully, and then run the publishing job. It should look something like this:
+```yaml
+workflows:
+  say-hello-workflow:
+    jobs:
+      - say-hello
+  test-and-publish-workflow:
+    jobs:
+      - node/test:
+          test-results-for: jest 
+      - publish:
+          requires:
+            - node/test
+```
+As you can see, we run the node/test job from the node orb, passing in jest as the argument for the `test-results-for` parameter. We then run the publish job we defined previously, using the `requires` parameter to state that the job is dependent on the node/test job. 
 
+## Environment Variables
+Before we finalize the configuration file and push it to our repository, we first have to define our envrionment variables. There are a multitude of ways to do this in CircleCI depending on the scope that you want your environment variable to be accessible from, which you can see [here](https://circleci.com/docs/env-vars/). For this guide, we will define it for the whole project (your repo).
 
+Begin by going to your project settings on CircleCI. This can be accessed through your project page on the top-right. Now, on the left sidebar, go to the environment variables section. Here, click the `Add Environment Variable`, enter it's name, which in our case is `NPM_KEY` and it's value. 
+
+After you've pushed your updated config.yaml file onto github and envrionment variable defined, you should be able to see your pipeline commits on your CircleCI dashboard, along with the releases on NPM.
 
 ## Summary
-## Additional Reading
+Now you know how to initialize a CircleCI project, connect it to a Github repository, use prebuilt CircleCI containers to execute your jobs, use CircleCI orbs to simplify your workflow creation, define environment variables within your CircleCI project, and set up workflows to automate your CI/CD process. 
+
+For more information on CircleCI, you can check the official documentation [here]('https://circleci.com/docs/').
