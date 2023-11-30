@@ -32,7 +32,7 @@ Instructions:
 
     tfidf_matrix = tfidf_vectorizer.fit_transform(your_documents)
 
-    #comment about what does your_documents mean
+
 
 5. The complete TF-IDF matrix can be seen in the tfidf_matrix variable. This can be outputted into a dataframe using the pandas library
    or otherwise and the results can be displayed and interpreted for your program.
