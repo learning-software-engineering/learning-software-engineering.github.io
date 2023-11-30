@@ -52,7 +52,7 @@
 
 ---
 
-## Tread Class
+## Thread Class
 - Thread class: Encapsulates all thread related functionality
 - Two ways to run code on a new thread
 	- Implement Runnable interface, and pass to a new Thread object
