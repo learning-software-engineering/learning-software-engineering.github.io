@@ -1,6 +1,6 @@
 # Table of Contents
 1. [Introduction to Jenkins](#introduction-to-jenkins)
-2. [Terminolgy](#terminology)
+2. [Terminology](#terminology)
 3. [Setting up Jenkins with Github](#setting-up-jenkins-with-github)
 
 # Introduction to Jenkins
@@ -76,7 +76,6 @@ Once you have installed Jenkins and have unlocked your server, you should enter 
 
 Select **Install suggested plugins**. This will install the github plugins necessary to connect Jenkins to your repository. If you're interested in what plugins are actually being installed, you can find the list here: [Suggested Plugins](https://github.com/jenkinsci/jenkins/blob/6ca9b5ee5f601f72fcd094f8d159272c6b504b2f/core/src/main/resources/jenkins/install/platform-plugins.json). Jenkins will now prompt you to create an admin user. Ensure to save this login information in a secure location.
 
-<br>
 
 ## Creating a Jenkins Job
 1. Click on **new Item**. 
