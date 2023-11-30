@@ -22,7 +22,7 @@ More information: [Jenkins vs GitLab CI: Battle of CI/CD Tools](https://www.lamb
 
 <br>
 
-**Jenkins vs Circle CI:**
+**Jenkins vs CircleCI:**
 
 The biggest difference is that Jenkins is a free and open source software while CircleCI is a payed service. As a result of this, however, CircleCI has some perks. Jenkins requires a dedicated server to run on while CircleCI is hosted on the cloud. Therefore for Jenkins someone must moniter and maintain the server while in CircleCI it is managed for you. In addition, CircleCI offers a build configuration file that can be shared amongst teams. Jenkins build configurations are done through the UI and therefore any configuration settings are saved in the Jenkins file system. This can make sharing configurations hard. That being said, Jenkins has large community support which can be very helpful in comparison to CircleCI due to it being free and open source.
 
