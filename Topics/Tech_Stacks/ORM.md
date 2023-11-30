@@ -10,14 +10,14 @@
 ### [Conclusion](#conclusion-1)
 
 ## Introductions:
-Most applications that you will build, in fact most applications that exist today, require some sort of data permanence. Meaning that data is stored somewhere, and is not lost when a site/app is reloaded. We employ databases like MYSQL, PostgreSQL, and MongoDB to ensure that our data can we stored and we can safely interact with it. But how do we do that? There are many database drivers that can allow us to write queries as lines of code directly from within our javascript or python (or whatever language you prefer) scripts. On the other hand, you may consider using an ORM to write your database code!
+Most applications that you will build, in fact most applications that exist today, require some sort of data permanence. Meaning that data is stored somewhere, and is not lost when a site/app is reloaded. We employ databases like MYSQL, PostgreSQL, and MongoDB to ensure that our data can be stored and we can safely interact with it. But how do we do that? There are many database drivers that can allow us to write queries as lines of code directly from within our javascript or python (or whatever language you prefer) scripts. On the other hand, you may consider using an ORM to write your database code!
 
 
 ## What is an ORM:
 
-An ORM (Object Relation Mapper) is a software tool that allows for the translation of an entity between its representation in a database (A relation) and object-oriented programming languages (An Object).
+An ORM (Object Relation Mapper) is a software tool that allows for the translation of an entity between its representation in a database (A relation) and object-oriented programming languages (An Object). As such, they allow us to simply treat all data as objects in our code, and leverage the ORM when we want to store this object in our relational database of choice. 
 
-As such, they allow us to simply treat all data as objects in our code, and leverage the ORM when we want to store this object in our relational database of choice.
+- Its good to node that ORM alternatives exist for non-relational databases too, these would be ODMs (Object Document Models), for example, MongoDB has one called mongoose which applies to javascript/typescript. A lot of these discussions apply to these ODMs too. 
 
 ## Example:
 Let's take a simple example, where we want to connect to a database, create a user table, and add a new user to our database. How would that look as SQL Queries compared to an ORM? 
@@ -42,8 +42,10 @@ const Student = sequelize.define('Student', {
         type: DataTypes.INTEGER,
         allowNull: false,
     },
-});
+})
 
+
+// Note: await simply forces the code to wait for the asynchronous code to resolve before proceeding, such as syncing to the database. 
 await Student.sync({force:true}); // Ensures table is created in DB
 
 await Student.create({
@@ -68,7 +70,7 @@ const createTableQuery = await client.query(
         student_number integer
     );
     ```
-);
+)
 
 const student_username = "sidiki" 
 const student_number = 6789998212 
@@ -83,14 +85,6 @@ const insertQuery = await client.query(
 await client.end()
 
 ```
-<!--
-<p align="center">
-      <img  src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/95612717/b6111831-1240-42f2-868f-76a08647c1db" width="80%" height="50%" display="block">
-</p>
-<p align="center">
-      <img src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/95612717/0faaecfe-2acd-48cc-a5c3-90b89f8833d0" width="80%" height="50%" display="block">
-</p>
--->
 
 These screenshots use the following packages for the ORM and raw SQL usage examples, respectively:
 1. https://sequelize.org/ 
@@ -121,7 +115,7 @@ Different SQL databases have slightly different commands when we get to more com
 ### Disadvantages:
 
 1. **Performance**: \
-The layer of abstraction added by the ORMS also adds another layer of complexity and reduction in performance. Well-written SQL code performs much better than an ORM- this of course will scale with the size of an app.
+The layer of abstraction added by the ORMS also adds another layer of complexity and reduction in performance. Well-written SQL code performs much better than an ORM- this of course will scale with the size of an app (by performance we mean how quickly queries execute and return).
 
 2. **Learning an ORM**: \
 It is likely that you the reader probably know how to write SQL code, but what about Sequelize specifically? Learning an ORM (its syntax, conventions, and underlying intricacies) for projects adds additional prerequisite learning and can delay development 
