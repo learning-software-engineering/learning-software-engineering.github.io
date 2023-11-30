@@ -25,7 +25,7 @@ When CMake processes a project, the entry point is a source file called `CMakeLi
 
 `CMakeLists.txt` is the CMake configuration file, which contains a set of directives and instructions describing the project's source files and targets (executable, library, or both) that will be used to build the program. It determines everything for the building process, from which source files to compile, to which options to choose for the libraries and to present to the users.
 
-Here is a simple example of how it looks like:
+Here is a simple example of what it looks like:
 ```CMake
 # CMakeLists.txt
 
@@ -48,19 +48,19 @@ add_executable(MyExecutable ${SOURCE_FILES})
 ### CMake Language
 `CMakeLists.txt` is written in [CMake Language](https://cmake.org/cmake/help/latest/manual/cmake-language.7.html#manual:cmake-language(7)), which consists of comments, [commands](https://cmake.org/cmake/help/latest/manual/cmake-commands.7.html#manual:cmake-commands(7)), and [variables](https://cmake.org/cmake/help/latest/manual/cmake-variables.7.html#manual:cmake-variables(7)). 
 
-* **comments** start with `#`
+* **Comments** start with `#`
   ```CMake
   # This is a comment
   ```
-* **commands** start with command names and a list of whitespace-separated arguments (case-sensitive).
+* **Commands** start with command names and a list of whitespace-separated arguments (case-sensitive).
   ```CMake
   find_package(LIBIGL REQUIRED QUIET)
   ```
-* **variables** are case-sensitive with only alphanumeric characters and underscores. 
+* **Variables** are case-sensitive with only alphanumeric characters and underscores. 
 
   A number of useful variables are automatically defined by CMake (e.g `CMAKE_CURRENT_SOURCE_DIR`, `PROJECT_NAME`). 
 
-  Use *set* command to set variable names, and *${variable_name}* to reference a varible in command arguments. 
+  Use the *set* command to set variable names, and *${variable_name}* to reference a varible in command arguments. 
   ```CMake
   set(Foo a b c)    # Value of Foo is "a;b;c"
 
@@ -68,9 +68,9 @@ add_executable(MyExecutable ${SOURCE_FILES})
                     # and expands to 3 arguments
   ```
 
-It also provides the basic **control flow** - Conditional statements, Looping constructs, and Procedure definitions. Here are the examples:
+It also provides the basic **control flow** - conditional statements, looping constructs, and procedure definitions. Here are the examples:
 
-* **conditional statements (e.g [if](https://cmake.org/cmake/help/latest/command/if.html#command:if))**
+* **Conditional statements (e.g [if](https://cmake.org/cmake/help/latest/command/if.html#command:if))**
     ```CMake
     if(<condition>)
         <commands>
@@ -80,7 +80,7 @@ It also provides the basic **control flow** - Conditional statements, Looping co
         <commands>
     endif()
     ```
-* **looping Constructs (e.g [foreach](https://cmake.org/cmake/help/latest/command/foreach.html#command:foreach), [while](https://cmake.org/cmake/help/latest/command/while.html#command:while))**
+* **Looping constructs (e.g [foreach](https://cmake.org/cmake/help/latest/command/foreach.html#command:foreach), [while](https://cmake.org/cmake/help/latest/command/while.html#command:while))**
     ```CMake
     foreach(<variable>                           # similar to `for <variable> in <items>` in python.
             <items>)                             # list of items that are separated by semicolon or whitespace
@@ -91,7 +91,7 @@ It also provides the basic **control flow** - Conditional statements, Looping co
         <commands>
     endwhile()
     ```
-* **procedure definitions (e.g [function](https://cmake.org/cmake/help/latest/command/function.html#command:function), [macro](https://cmake.org/cmake/help/latest/command/macro.html#command:macro))**
+* **Procedure definitions (e.g [function](https://cmake.org/cmake/help/latest/command/function.html#command:function), [macro](https://cmake.org/cmake/help/latest/command/macro.html#command:macro))**
     ```CMake
     function(<function_name> <parameters>)
         <commands>
@@ -219,7 +219,7 @@ A `CMakeLists.txt` typically consists of the following elements:
 
  * Within any of the supported generators (Visual Studio, etc.), there are rules that will automatically invoke CMake to update the generated files, including MakeFiles or project files, whenever you edit a `CMakeLists.txt` file and rebuild.
 
-* There are much more CMake variables and commands that are useful in building a `CMakelists.txt`. Here is a [cheatsheet](https://cppcheatsheet.com/notes/cmake_basic.html) that consists of most of the popular variables/commands.
+* There are many more CMake variables and commands that are useful in building a `CMakelists.txt`. Here is a [cheatsheet](https://cppcheatsheet.com/notes/cmake_basic.html) that consists of most of the popular variables/commands.
 
 ## References
 
