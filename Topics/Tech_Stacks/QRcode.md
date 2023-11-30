@@ -14,6 +14,17 @@ This document provides introduction to QRcode with guidelines and examples to cr
 <a id='what-is-QRcode'></a>
 **quick-response code (QRcode)** is is a type of two-dimensional matrix barcode, which can be read by an imaging device, such as a camera, and processed using Reed–Solomon error correction until the image can be appropriately interpreted. The required data are then extracted from patterns that are present in both the horizontal and the vertical components of the QR image.
 
+### Benifit of using QRcode
+
+** Integrating QR codes into web application development can offer various benefits, depending on the specific use case. Here are some advantages:
+
+*** Efficient Data Transfer: QR codes can efficiently encode data, making them a quick and effective way to transfer information. This is especially useful for mobile devices where typing or manual input may be cumbersome.
+
+*** Enhanced User Experience: QR codes provide a seamless and user-friendly way to connect physical and digital experiences. Users can quickly scan a code to access information, download an app, or navigate to a specific URL without typing.
+
+*** Contactless Transactions: In scenarios where contactless transactions are essential (e.g., payments, ticketing), QR codes can facilitate secure and convenient exchanges between users and the web application.
+Error Detection and Correction: QR codes have built-in error correction capabilities, allowing for reliable data retrieval even if the code is partially damaged or distorted. This ensures a more robust user experience.
+
 
 ## qrcode library
 <a id='qrcode_library'></a>
@@ -58,3 +69,25 @@ To use the Python QR Code library, you can install it using the following pip co
 
         # Save the image
         img.save("hello_world_qrcode.png")
+
+** The version parameter is an integer from 1 to 40 that controls the size of the QR Code (the smallest, version 1, is a 21x21 matrix). Set to None and use the fit parameter when making the code to determine this automatically.
+
+** fill_color and back_color can change the background and the painting color of the QR, when using the default image factory. Both parameters accept RGB color tuples.
+
+```
+img = qr.make_image(back_color=(255, 195, 235), fill_color=(55, 95, 35))
+```
+
+*** The error_correction parameter controls the error correction used for the QR Code. The following four constants are made available on the qrcode package:
+
+ERROR_CORRECT_L: About 7% or less errors can be corrected.
+
+ERROR_CORRECT_M (default): About 15% or less errors can be corrected.
+
+ERROR_CORRECT_Q: About 25% or less errors can be corrected.
+
+ERROR_CORRECT_H: About 30% or less errors can be corrected.
+
+*** The box_size parameter controls how many pixels each “box” of the QR code is.
+
+*** The border parameter controls how many boxes thick the border should be (the default is 4, which is the minimum according to the specs).
