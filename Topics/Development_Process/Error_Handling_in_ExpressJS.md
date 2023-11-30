@@ -1,15 +1,13 @@
 # Graceful Error Handling in Express
 ## Table of Contents
-
-### [Introduction](#introduction)
-
-### [Goals of Error Handling for RESTful APIs](#goals)
-
-### [Syncronous Error Handling](#sync-err-handling)
-
-### [Asyncronous Error Handling](#async-err-handling)
-
-### [Using Bespoke Errors](#custom-err-object)
+1. [Introduction](#introduction)
+2. [Goals of Error Handling for RESTful APIs](#goals-of-error-handling-for-restful-apis)
+3. [Error Handling Middleware](#error-handling-middleware)
+4. [Custom Error Objects](#custom-error-objects)
+    - [Status Codes](#status-codes)
+    - [Implementing a Custom Error class](#implementing-a-custom-error-class)
+    - [Example Usage](#example-usage)
+5. [Conclusion](#conclusion)
 
 ## Introduction
 Express.JS (aka Express) is a scalable backend web framework for building RESTful APIs in the Node.JS programming language. It provides a variety of interelated features for server-side API development, including support for routing, middleware, templating (e.g. with EJS and Handlebars), static file serving and utilities for managing HTTP request-response flows. Error handling is an important aspect of any sofware project as it is critical for development, maintainability and functionality. It is especially important when building RESTful APIs where there exists specific expectations of how erroneous scenarios should be handled, such as setting appropriate status codes in response objects, returning error information in a consistent format etc.
