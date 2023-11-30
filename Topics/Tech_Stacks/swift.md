@@ -231,6 +231,72 @@ struct InnerView: View {
 
 In this example we have a UserProgress class with a published score attribute. An instance of UserProgress is instantiated in the parent view ContentView and its binding is passed to InnerView. When the button is pressed in the InnerView, the published attribute score changes, which tells SwiftUI to re-render the views that reference this instance of the observable object, thus the score is refreshed on every button tap.
 
+**`EnvironmentObject`**
+
+You may have noticed that using `StateObject` and `ObservedObject` requires us to explicitly pass the object from the parent view to the child view. If we have many child views or a deeply nested view hierarchy it may be cumbersome to keep passing this object down because not all views may require this specific object. To clean things up, we can wrap the `ObservedObject` in an `EnvironmentObject` instead and pass the `StateObject` in the view environment. This allows us to retrieve the `ObservableObject` from the parent view's `Environment` instead of the parameters of a view. SwiftUI automatically assigns environment objects based on type. We can use this concept to improve the previous example:
+
+```swift
+class UserProgress: ObservableObject {
+    @Published var score = 0
+}
+
+struct ContentView: View {
+    @StateObject var progress = UserProgress() 
+
+    var body: some View {
+        VStack {
+            Text("Your score is \(progress.score)")
+            InnerView() // No longer pass progress to the child view
+        }
+        .environmentObject(progress)
+    }
+}
+
+struct InnerView: View {
+    // Grab UserProgress instance from the view environment
+    @EnvironmentObject var progress: UserProgress
+
+    var body: some View {
+        Button("Increase Score") {
+            progress.score += 1
+        }
+    }
+}
+```
+
+**`@Environment`**
+
+We can also add an `ObservableObject` to a managed `Environment` instead, which allows us to retrieve custom values as well as predefined Swift values through keys. We can alternatively use this concept on the previous example as well:
+
+```swift
+class UserProgress: ObservableObject {
+    @Published var score = 0
+}
+
+struct ContentView: View {
+    @StateObject var progress = UserProgress() 
+
+    var body: some View {
+        VStack {
+            Text("Your score is \(progress.score)")
+            InnerView() // No longer pass progress to the child view
+                .environment(\.progress, progress) // Pass key-value pair
+        }
+    }
+}
+
+struct InnerView: View {
+    // Grab UserProgress instance from the view environment
+    @Environment(\.progress) var progress: UserProgress
+
+    var body: some View {
+        Button("Increase Score") {
+            progress.score += 1
+        }
+    }
+}
+```
+
 
 
 
