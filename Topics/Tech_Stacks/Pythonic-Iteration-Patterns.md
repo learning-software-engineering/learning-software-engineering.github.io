@@ -12,6 +12,8 @@ Switching to the intended way of getting the data dramatically improved the perf
 This was a lesson in communicating interfaces properly and not making assumptions about familiarity with certain things,
 but it also serves as a nice example of how knowing Python's simple iteration tools can greatly improve one's code.
 
+Note: this article assumes a Python version of 3.10 or greater.
+
 
 
 ## Basics `for` data types
@@ -74,8 +76,7 @@ for index in indices_of_a_collection:
     do_something_with(index, collection[index])
 ```
 ...there's probably a more idiomatic way to go about things.
-
-Here are a few of those potential ways to go about things:
+Here are a few of the iteration tools used in more idiomatic Python code:
 
 
 ### [Counting as you iterate: `enumerate`](https://docs.python.org/3/library/functions.html#enumerate)
