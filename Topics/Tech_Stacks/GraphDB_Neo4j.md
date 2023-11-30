@@ -1,5 +1,14 @@
 # Introduction to Graph Databases with Neo4j
 
+## Table of Contents
+### [Overview of Graph Databases](#overview-of-graph-databases-1)
+### [Neo4j - A Popular Graph Database](#neo4j---a-popular-graph-database-1)
+### [Working with Neo4j](#working-with-neo4j-1)
+### [Use Cases of Neo4j](#use-cases-of-neo4j-1)
+### [Conclusion](#conclusion-1)
+### [Additional Resources](#additional-resources-1)
+### [References](#references-1)
+
 ## Overview of Graph Databases
 Graph databases are a type of NoSQL database designed to treat relationships between data as equally important as the data itself. Unlike traditional relational databases that use tables, graph databases leverage graph theory to store, map, and query relationships. They consist of nodes and edges, with nodes representing entities and edges representing relationships between nodes. They offer a flexible structure for handling highly interconnected data with many-to-many relationships and complex hierarchies. They are ideal for applications requiring complex queries with high performance and flexibility. Graph databases are commonly used in social networks, recommendation engines, and fraud detection, and are well-suited for data visualization and analysis.
 
@@ -35,6 +44,7 @@ Here's a simple example to create a node:
 ```cypher
 CREATE (n:Person {name: 'Alice', age: 24})
 ```
+[See how the results look like in Neo4j](https://i.imgur.com/AnWd4Oh.png)
 
 This query creates a Person node with name and age properties. Person is the label for the node, and the CREATE clause is used to create the node.
 
@@ -46,7 +56,7 @@ CREATE (a)-[r:LOVES]->(b)
 RETURN r
 ```
 
-This query creates a LOVES relationship between two existing Person nodes. If the nodes do not already exist, the MATCH clause will not find them. The relationship is directed from Alice to Bob, indicating that Alice loves Bob.
+This query creates a LOVES relationship between two existing Person nodes. If the nodes do not already exist, the MATCH clause will not find them. This query will have no effect and do nothing. If they exist, the relationship will be created and it is directed from Alice to Bob, indicating that Alice loves Bob.
 
 Alternatively, you can create both nodes and their relationship in a single query:
 
@@ -54,6 +64,8 @@ Alternatively, you can create both nodes and their relationship in a single quer
 CREATE (p1:Person {name: 'Alice', age: 24})-[:LOVES]->(p2:Person {name: 'Bob', age: 27})
 RETURN p1, p2
 ```
+
+[See how the results look like in Neo4j](https://i.imgur.com/6vfDR34.png)
 
 #### Updating Nodes and Relationships
 
@@ -64,6 +76,7 @@ MATCH (p:Person {name: 'Alice'})
 SET p.birthdate = '1995-02-14'
 RETURN p
 ```
+[See how the results look like in Neo4j](https://i.imgur.com/Q2gbald.png)
 
 This query uses MATCH clause to find the `Person` node with name Alice. Then it updates the `birthdate` property of the node to 1995-02-14. The `SET` clause either sets a new property or updates an existing one.
 
@@ -101,9 +114,11 @@ ON MATCH SET p.lastLogin = timestamp()
 RETURN p
 ```
 
+[See how the results look like in Neo4j after we run the above cypher twice](https://i.imgur.com/7UbNWto.png) (Left: after the first run; Right: after the second run)
+
 This query will try to find a Person node with the name 'Charlie'. If the node exists, MERGE will bind that node to p, and ON MATCH will set its lastLogin property to the current timestamp. If the node does not exist, MERGE will create it with the specified age and occupation, and ON CREATE will set those properties.
 
-**For more detailed explanations of Cypher's capabilities, refer to the [official documentation](https://neo4j.com/docs/cypher-manual/current/clauses/create/).**
+**For more detailed explanations of Cypher's capabilities, refer to the [official documentation](https://neo4j.com/docs/cypher-manual/current/clauses/create/) and [Cypher Cheat Sheet](https://neo4j.com/docs/cypher-refcard/current/).**
 
 ## Use Cases of Neo4j
 - **Social Networks**: Managing complex and dynamic relationships between users.
@@ -118,7 +133,6 @@ Neo4j offers a powerful and flexible way to handle complex data relationships. I
 - [Neo4j Official Documentation](https://neo4j.com/docs/)
 - [Neo4j Developer Tools](https://neo4j.com/product/developer-tools/?utm_medium=PaidSearch&utm_source=google&utm_campaign=GDB&utm_content=AMS-X-Conversion-GDB-Text&utm_term=neo4j&gclid=CjwKCAiAvJarBhA1EiwAGgZl0OGjp81BEHYEB6RcTOGCJ0KmM0rPmvhK-q0rUkjDwJ4Sk9gAkzMOwxoC85oQAvD_BwE)
 - [Cypher Documentation](https://neo4j.com/docs/cypher-manual/current/)
-- [Cypher Cheat Sheet](https://neo4j.com/docs/cypher-refcard/current/)
 
 ## References
 - [Getting Started with Neo4j](https://neo4j.com/docs/getting-started/get-started-with-neo4j/graph-database/)
