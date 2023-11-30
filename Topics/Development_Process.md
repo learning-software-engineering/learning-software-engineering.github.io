@@ -39,7 +39,7 @@
 ## Build tools
 ### [Introduction to ```make``` and Makefiles](./Development_Process/Introduction_to_make_and_Makefiles.md)
 
-### [Getting Started With Jenkins](./Development_Process/Jenkins.md)
+### [Getting Started With Jenkins](./Development_Process/Jenkins/Jenkins.md)
 
 ## React Testing Library
 
