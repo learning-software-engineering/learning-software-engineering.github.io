@@ -26,11 +26,11 @@ import { Component } from '@angular/core';
   template: `list.component.html`,
 })
 export class ListComponent {
-    users = {
+    users = [
         { name: 'John', age: 20 },
         { name: 'Jane', age: 21 },
         { name: 'Jack', age: 22 },
-    }
+    ]
 }
 ```
 
@@ -188,7 +188,7 @@ export class AboutModule { }
 - [Angular Cheatsheet](https://angular.io/guide/cheatsheet)
 - [Angular Tutorial for Beginners](https://www.youtube.com/watch?v=2OHbjep_WjQ)
 - [Angular Crash Course](https://www.youtube.com/watch?v=Fdf5aTYRW0E)
-
+    
 
 
 
