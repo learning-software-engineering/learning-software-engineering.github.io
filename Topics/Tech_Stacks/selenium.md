@@ -1,6 +1,13 @@
 # Webscraping and Automation Using Selenium with Python
+# Table of Contents
+## [What is Selenium?](#what-is-selenium)
+## [What can I do with Selenium?](#what-can-i-do)
+## [Getting started](#getting-started)
+## [Headless drivers](#headless)
+## [Automation](#automation)
+## [Acknowledgements](#ack)
 
-## What is Selenium?
+## <a name="what-is-selenium"></a> What is Selenium?
 Selenium is an open-source browser automation framework that can be used within many different programming languages, including Python. From the [official documentation](https://www.selenium.dev/documentation/) this is a list compiled of languages and their support of Selenium. 
 
 | Programming Language | Selenium Support                             |
@@ -22,10 +29,10 @@ Selenium is an open-source browser automation framework that can be used within 
 
 However, for the purposes of this introduction, we will refer to Selenium usage in **Python**.
 
-## What can I do with Selenium?
+## <a name="what-can-i-do"></a> What can I do with Selenium?
 Selenium has uses within automating browser interactivity, such as extracting information from the web and interacting with elements such as buttons and forms. It is an important tool used in automation to execute a plethora of different test cases you may want to perform on a website you are developing. If you are interested in learning more about using Selenium for testing purposes, you can check out [this guide](https://www.simplilearn.com/tutorials/python-tutorial/selenium-with-python#:~:text=Selenium%20with%20Python%20is%20used,skimming%20the%20entire%20site%2C%20etc.).
 
-## Getting started
+## <a name="getting-started"></a> Getting started
 1. **Install Selenium bindings**
 
     The easiest way to install Selenium is with the `pip package manager`. With Python and pip installed, simply run the following command to get the latest version.
@@ -67,7 +74,7 @@ Selenium has uses within automating browser interactivity, such as extracting in
 
     At this point, you are ready to start using Selenium. Now you can import the specific functionality you want within Selenium with the import statement `from selenium import [specific module]` to fit your specific use cases.
 
-## Headless drivers
+## <a name="headless"></a> Headless drivers
 
 If you are running your scripts from a headless terminal (with no GUI), or don't want the browser actions to be visible, you can use selenium with a headless WebDriver. This is useful if your testing environment is a server that you are connected to with SSH. 
 
@@ -83,7 +90,7 @@ display.close()
 ```
 Typically, you would use a _try, except, finally_ statement to execute the code, and you would instantiate the display at the top of the `try` block, and close it at the end of the `finally `block.
 
-## Automation
+## <a name="automation"></a> Automation
 
 The Selenium WebDriver can be used for many purposes, including logging in to websites, filling out forms, and clicking buttons. For example, if there is a particular task that you need to do every day that requires you to log in to a website, and then navigate to a certain page this is a simple task in Selenium. You can then automate this script to run at a given time interval on a Linux server using `cron`. For example, you could include the following line in your _crontab_ to schedule the script to run at midnight every day:
 
@@ -117,7 +124,7 @@ driver.quit()
 
 In this code, `login_utils` inputs a specified username and password combination, and then returns the driver after logging in, and  `config_utils` serves to load the _xpath_ to the button to click. _Xpath_ is a part of the _XML Path Language_ and it is used to identify elements in an XML document and also works with HTML documents. The `WebDriverWait` function waits until the element is loaded and clickable, with a timeout of 10 seconds. Once the desired button is selected, you can just call the `.click()` method on it to simulate a user click. Once you are finished, simply close the WebDriver with `driver.quit()`.
 
-## Acknowledgements:
+## <a name="ack"></a> Acknowledgements:
 - **Selenium**: Selenium is an open-source framework for automating browser interactions. To learn more about Selenium and its capabilities, please visit the official Selenium website: [Selenium Documentation](https://www.selenium.dev/documentation/en/)
 - **Chrome WebDriver**: The Chrome WebDriver is a tool provided by Selenium for automating interactions with the Chrome browser. For detailed documentation and instructions on using Chrome WebDriver, please refer to the official ChromeDriver documentation: [ChromeDriver Documentation](https://sites.google.com/a/chromium.org/chromedriver/)
 
