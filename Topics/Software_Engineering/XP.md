@@ -1,5 +1,19 @@
 # Intro to XP
 
+## Table of Contents
+[What is XP?](#what-is-xp)
+
+[Is XP for me and my team](#is-xp-for-me-and-my-team)
+
+[Understanding XP -- its values and principles](#understanding-xp----its-values-and-principles)
+
+[Comparison with other agile methods](#comparison-with-other-agile-methodologies)
+
+[Further reading](#further-reading)
+
+[References](#references)
+
+
 ## What is XP?
 XP, short for Extreme Programming, is part of a bigger group of agile methodologies. Agile methodologies are project management approaches that divide the project into phases, with a focus on collaboration and ongoing improvement. XP is one of the most specific frameworks since it imposes engineering practices. It also specifically stresses customer satisfaction, which we will see being reflected in its values and principles as we discuss them later.
 
@@ -12,7 +26,7 @@ Implementing XP for your team would be useful if:
 * collaboration is important to your team
 * pair programming makes sense for your team
 * customer wants to be constantly involved in decision making (almost on a weekly basis)
-* your team size is small to medium
+* your team size is small to medium (ideally between 2 to 12 developers)
 
 
 ## Understanding XP -- its values and principles
@@ -66,7 +80,7 @@ There are a lot of principles when it comes to XP, but here we have summarized o
 
 ## Comparison with other agile methodologies
 
-### XP vs Scrum
+### XP vs [Scrum](../Software_Engineering/Scrum.md)
 
 **1. Duration of sprints.** Scrum teams usually work on sprints that are 2 weeks to 1 month long. XP sprints are usually only 1 to 2 weeks long.
 
@@ -74,7 +88,7 @@ There are a lot of principles when it comes to XP, but here we have summarized o
 
 **3. XP prescribes engineering practices.** As we have discussed, XP has a lot of specific implementation details that developers need to follow.
 
-### XP vs Waterfall
+### XP vs [Waterfall](../Software_Engineering/Waterfall.md)
 
 **1. Plan as you go.** Instead of a separate planning phase, planning takes place at the beginning of each sprint, which only lasts 1-2 weeks each.
 
