@@ -78,7 +78,7 @@ for index in indices_of_a_collection:
 Here are a few of those potential ways to go about things:
 
 
-### `enumerate`
+### [Counting as you iterate: `enumerate`](https://docs.python.org/3/library/functions.html#enumerate)
 ```python
 lst = [3, 1, 4]
 
@@ -97,7 +97,7 @@ for i, char in enumerate('abc', start=1):
 ```
 
 
-### `zip`
+### [Iteration in parallel: `zip`](https://docs.python.org/3/library/functions.html#zip)
 ```python
 lst_a = [1, 5, 9]
 lst_b = [2, 6, 5]
@@ -110,24 +110,31 @@ for i in range(len(lst_a)):
 # Write:
 for a, b, c in zip(lst_a, lst_b, lst_c):
     print(f'{a} & {b} & {c}')  # prints '1 & 2 & 3', then '5 & 6 & 5', then '9 & 5 & 8'
-
-# And instead of:
-for i in range(len(lst_a)):
-    print(f'{i}: {lst_a[i]} & {lst_b[i]} & {lst_c[i]}')
-
-# Write:
-for i, (a, b, c) in enumerate(zip(lst_a, lst_b, lst_c)):
-    print(f'{i}: {a} & {b} & {c}')  # prints '0: 1 & 2 & 3', then '1: 5 & 6 & 5', then '2: 9 & 5 & 8'
 ```
 Note that this is only equivalent if all the arguments to `zip` have the same number of items to iterate over.
-By default, iteration cuts off when any of the arguments to `zip` run out of items to iterate over.
+By default, iteration cuts off when any of the arguments to `zip` run out of items to iterate over:
+```python
+for a, b, c in zip([1, 5, 9, 2], [6, 5], [3, 5, 8]):
+    print(f'{a} & {b} & {c}')  # prints '1 & 6 & 3', then '5 & 5 & 5' -- nothing else
+```
 `zip` also supports an optional `strict` keyword argument to raise an error
-if the given iterables do not have the same number of items to iterate over.
+if the given iterables do not have the same number of items to iterate over:
+```python
+for a, b, c in zip([1, 5, 9, 2], [6, 5], [3, 5, 8], strict=True):
+    # prints '1 & 6 & 3', then '5 & 5 & 5', then raises a ValueError since there are no more items to take from [6, 5]
+    print(f'{a} & {b} & {c}')
+```
 Also see [`zip_longest` from the `itertools` module](
-https://docs.python.org/3/library/itertools.html#itertools.zip_longest).
+https://docs.python.org/3/library/itertools.html#itertools.zip_longest):
+```python
+import itertools
+
+for a, b, c in itertools.zip_longest([1, 5, 9, 2], [6, 5], [3, 5, 8], fillvalue=7):
+    print(f'{a} & {b} & {c}')  # prints '1 & 6 & 3', then '5 & 5 & 5', then '9 & 7 & 8', then '2 & 7 & 7'
+```
 
 
-### `reversed`
+### [Easy, efficient backwards iteration: `reversed`](https://docs.python.org/3/library/functions.html#reversed)
 ```python
 s = 'defghi'
 
@@ -145,7 +152,7 @@ for char in reversed(s):
 ```
 
 
-### `pairwise`
+### [Iterating over adjacent indices: `itertools.pairwise`](https://docs.python.org/3/library/itertools.html#itertools.pairwise)
 ```python
 s = 'monoid'
 
@@ -166,8 +173,8 @@ provides quite a few functions that can be helpful when trying to iterate over t
 
 ## Already done `for` you
 
-Python doesn't just have tools to make it nicer to write for loops and comprehensions --
-it also has a variety of functions that make it so that you don't _need_ to write those.
+Python doesn't just have tools to make it _nicer_ to write for loops and comprehensions --
+it also has a variety of functions that remove the need to write them in the first place.
 
 
 ### Constructors: comprehension shortcuts
@@ -179,12 +186,29 @@ you can simply write `list(iterable)` and `set(iterable)`. Similar functionality
 ### Grabbag of convenient functions
 
 Python comes with functions to compute the sum, product, maximum, or minimum of any iterable:
-`sum`, `prod` from the `math` module, `max`, and `min`.
-If you want to check if a criterion is satisfied for every item in an iterable, use the `all` function;
-for at least one item in an iterable, the `any` function.
+[`sum`](https://docs.python.org/3/library/functions.html#sum),
+[`prod` from the `math` module](https://docs.python.org/3/library/math.html#math.prod),
+[`max`](https://docs.python.org/3/library/functions.html#max),
+and [`min`](https://docs.python.org/3/library/functions.html#min).
+If you want to check if a criterion is satisfied for every item in an iterable,
+use the [`all`](https://docs.python.org/3/library/functions.html#all) function;
+for at least one item in an iterable,
+the [`any`](https://docs.python.org/3/library/functions.html#any) function.
+```python
+from math import prod
+
+sum([3, 1, 4])  # 8
+prod([3, 1, 4])  # 12
+max([3, 1, 4])  # 4
+min([3, 1, 4])  # 1
+all([True, True, True])  # True
+all([True, False, True])  # False
+any([False, True, False])  # True
+any([False, False, False])  # False
+```
 
 
-### `str.join`
+### [Whatever-separated values: `str.join`](https://docs.python.org/3/library/stdtypes.html#str.join)
 
 I've seen some variation of the following code from more than one person in relation to my team's project:
 ```python
@@ -205,30 +229,52 @@ result = ' | '.join(['a', 'monad', 'is', 'a', 'monoid'])
 ```
 
 
-### Removing the square brackets
 
-When using all of these functions, instead of giving a list comprehension as an argument, consider using a
-[generator comprehension](https://stackoverflow.com/questions/364802/how-does-a-generator-comprehension-works)
-instead -- instead of generating an entire list up front,
-items are computed on demand, making things more memory-efficient.
+## `for` use on any iterable
 
-For example:
+With the (unfortunate, but [understandable](https://peps.python.org/pep-0322/#rejected-alternatives))
+exception of `reversed`, all of the functions outlined in this article
+take more than just lists and strings as arguments -- they generally accept anything that can be iterated over.
+In particular, you can combine various iteration tools together:
 ```python
-lst = [3, 1, 4, 1, 5, 9]
+lst_a = [1, 5, 9]
+lst_b = [2, 6, 5]
+lst_c = [3, 5, 8]
 
 # Instead of:
-sum([x * 2 for x in lst])
+for i in range(len(lst_a)):
+    print(f'{i}: {lst_a[i]} & {lst_b[i]} & {lst_c[i]}')
+
+# Write:
+for i, (a, b, c) in enumerate(zip(lst_a, lst_b, lst_c)):
+    print(f'{i}: {a} & {b} & {c}')  # prints '0: 1 & 2 & 3', then '1: 5 & 6 & 5', then '2: 9 & 5 & 8'
+```
+
+One other notable type of iterable that can be used with the functions outlined in this article
+(again, except for `reversed`) is _generator objects_.
+Whenever you want to pass a list comprehension as an argument to one of these functions, consider using a
+[generator comprehension](https://stackoverflow.com/questions/364802/how-does-a-generator-comprehension-works) instead:
+```python
+# Instead of:
+sum([x ** 2 for x in range(1000)])
 
 # Simply write:
-sum(x * 2 for x in lst)
+sum(x ** 2 for x in range(1000))
 ```
+Instead of generating an entire list `[x ** 2 for x in range(1000)]` up front,
+the generator-based approach computes values on demand.
+Not only does this give us slightly shorter code,
+but it's also more memory efficient when there are many values to iterate over.
+
+There's a lot more to generators than this, but that's out of scope for this article. For more info, see
+[this StackOverflow question](https://stackoverflow.com/questions/1756096/understanding-generators-in-python?rq=3).
 
 
 
 ## Closing thoughts
 
 As you can see, there are a lot of nice little conveniences that Python provides to make one's life a little nicer.
-Not all of the things showcased here are even new concepts that need time and effort to understand --
+Not all of the things showcased here are even new concepts that take time and effort to understand --
 many are simply little units of functionality that can still have an impact on the readability of your code.
 
 My knowledge of these tools was built over time as I programmed more and more in Python.
