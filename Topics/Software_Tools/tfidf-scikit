@@ -81,7 +81,10 @@ To interpret these values. Notice that mouse and the have the lowest. Which mean
 meaning that they are not important words. Words such as tiny and away have higher values to show they are unique to 
 a document which makes them more important.
 
+After learning about TF-IDF lets examine some real life usecases for this tool! This tool is most commonly used 
+professionally for keyword retrieval and information retrieval. Instead of depending on someone's manual classification
+of text, we can use an AI algorithm to mathematically determine which articles are most relevant for a given topic, for example.
 
 
 
-Documentation can be seen here: https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html 
+Documentation can be seen here: https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html
