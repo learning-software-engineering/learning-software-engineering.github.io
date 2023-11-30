@@ -34,5 +34,13 @@ Now its time to connect to your EC2 instance from your machine.
 4) Next, run `sudo apt update`
 `curl -sL https://deb.nodesource.com/setup_lts.x | sudo -E bash -`
 `sudo apt-get install -y nodejs` to install sudo and NPM.
+5) Now, its time to clone your git repo into the EC2 instance. [This](https://stackoverflow.com/questions/19596974/ec2-how-to-clone-git-repository) stack overflow thread is an excellent step by step of creating a github deploy key. Only thing to note, all the commands ran should be done **inside** your local SSH terminal.
+6) Once you've cloned your repo into the EC2 instance, all that's left to do is deploy!
+## Deploying your app
+1) In order to make your app feel at home, run `npm i` to install all your node modules into this local repository.
+2) Next, build your project, by running `npm run build'. Your output should look something like this.![image](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/62919149/a5ca3219-0488-491e-bdbf-b3513f730811)
+3) Finally, to deploy your app as a background process on your cloud server, run `npm start &`.
+4) 
+
 
 
