@@ -332,3 +332,82 @@ public class ClassWithCriticalSections {
 	}
 }
 ```
+
+---
+
+## Atomic Operation
+- An operation or a set of operations is considered atomic if it appears to the rest of the system as if it occurred at once
+- Single step - all or nothing
+- No intermediate states
+- Which operations are atomic? Most are not
+	- All reference assignments are atomic
+		- All getters and setters
+	- All assignments to primitive types are safe except long and double (64 bits)
+		- Safe types: 
+			- int
+			- short
+			- byte
+			- float
+			- char
+			- boolean
+		- long / double solution:
+			- `volatile double x = 1.0;`
+			- `volatile double y = 9.0;`
+			- `x = y; //atomic`
+	- Classes in the java.util.concurrent.atomic
+		- More advanced atomic operations
+- Metrics Aggregation
+
+## Race
+- Race Condition
+	- Condition when multiple threads are accessing a shared resource
+	- At least one thread is modifying the resource
+	- The timing of threads' scheduling may cause incorrect results
+	- The core of the problem is non atomic operations performed on the shared resource
+- Solution
+	- Identification of the critical section where the race condition is happening
+	- Protection of the critical section by a synchronized block
+- Data Race
+	- Compiler and CPU may execute the instructions out of order to optimize performance and utilization
+	- They will do so while maintaining the logical correctness of the code
+	- Out of Order execution by the compiler and CPU are important features to speed up the code
+	- The compiler re-arranges instructions for better
+		- Branch prediction (optimized loops, "if" statements etc.)
+		- Vectorization - parallel instruction execution (SIMD)
+		- Prefetching instructions - better cache performance
+	- CPU re-arranges instructions for better hardware units utilization
+		- `x++; y++;` no dependency between the lines of code, out of order execution
+		- `x = 1; y = x + 2;` dependency between the lines of code, no reordering
+- Solution
+	- Establish a Happens - Before semantics by one of these methods:
+		- Synchronization of methods which modify shared variables
+		- Declaration of shared variables with the volatile keyword
+
+## Locking Strategies
+- Coarse-Grained Locking
+	- A single lock
+	- Eg: use synchronized keyword on methods
+		- easy to maintain
+		- overkill if methods are not interfering with each other
+		- in the worst case (all threads are accessing shared resources), only one thread at a time can make progress
+- Fine-Grained Locking
+	- Separate lock for every shared resource
+	- Eg: use synchronized keyword on attribute
+		- more fine grained locking strategy for more parallelism and less contention
+
+## Deadlock
+- A situation where every thread is trying to make progress, but cannot because they are waiting for another party to make a move
+- Conditions
+	- Mutual Exclusion - Only one thread can have exclusive access to a resource
+	- Hold and Wait - At least one thread is holding a resource and is waiting for another resource
+	- Non-preemptive allocation - A resource is released only after the thread is done using it
+	- Circular wait - A chain of at least two threads each one is holding one resource and waiting for another resource
+- Solution
+	- Avoid Circular wait - Enforce a strict order in lock acquisition
+		- Lock resources in the same order, everywhere
+		- easy to do with a small number of locks
+		- maybe hard to accomplish if there are many locks in different places
+	- Other techniques
+		- Deadlock detection - Watchdog
+		- Thread interruption (not possible with synchronized)
+		- tryLock operations (not possible with synchronized)
