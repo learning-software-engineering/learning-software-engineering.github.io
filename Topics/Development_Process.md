@@ -43,9 +43,11 @@
 ## Build tools
 ### [Introduction to ```make``` and Makefiles](./Development_Process/Introduction_to_make_and_Makefiles.md)
 
-## React Testing Library
+## Testing Frameworks
 
 ### [React Testing Library](./Development_Process/React_Testing_Library.md)
+
+### [Intro to Jest for JavaScript](./Development_Process/Intro_to_Jest.md)
 
 ## URL Sanitization
 
