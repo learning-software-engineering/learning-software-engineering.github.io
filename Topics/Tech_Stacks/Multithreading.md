@@ -58,20 +58,94 @@
 	- Implement Runnable interface, and pass to a new Thread object
 	- Extend Thread class, and create an object of that class
 
+Implement Runnable interface:
+```java
+class MyRunnable implements Runnable {
+    public void run() {
+        System.out.println("Running MyRunnable");
+    }
+
+    public static void main(String[] args) {
+        MyRunnable runnable = new MyRunnable();
+        Thread thread = new Thread(runnable);
+        thread.start();
+    }
+}
+```
+
+Extend Thread Class:
+```java
+class MyThread extends Thread {
+    public void run() {
+        System.out.println("Running MyThread");
+    }
+
+    public static void main(String[] args) {
+        MyThread thread = new MyThread();
+        thread.start();
+    }
+}
+```
+
 - Thread Termination
 	- Threads consume memory and kernel resources, CPU cycles and cache memory
 	- If a thread finished its work, but the application is still running, we want to clean up the thread's resources
 	- If a thread is misbehaving, we want to stop it
 	- By default, the application will not stop as long as at least one thread is still running
 
+```java
+class TerminatingThread extends Thread {
+    public void run() {
+        while (!isInterrupted()) {
+            // Perform work here
+        }
+        // Clean up code before thread ends
+    }
+}
+```
+
 - Interrupt a Thread
 	- If the thread is executing a method that throws an InterruptedException
 	- If the thread's code is handling the interrupt signal explicitly
+
+```java
+class InterruptExample extends Thread {
+    public void run() {
+        try {
+            Thread.sleep(10000); // Sleep for 10 seconds
+        } catch (InterruptedException e) {
+            System.out.println("Thread interrupted");
+        }
+    }
+
+    public static void main(String[] args) {
+        InterruptExample thread = new InterruptExample();
+        thread.start();
+        thread.interrupt(); // Interrupt the thread
+    }
+}
+```
 
 - Daemon Thread
 	- Background threads that do not prevent the application from exiting if the main thread terminates
 		- Scenario 1: Background tasks, that should not block our application from terminating
 		- Scenario 2: Code in a worker thread is not under our control, and we do not want it to block our application from terminating
+
+```java
+class DaemonExample extends Thread {
+    public void run() {
+        while (true) {
+            // Perform daemon task
+        }
+    }
+
+    public static void main(String[] args) {
+        DaemonExample thread = new DaemonExample();
+        thread.setDaemon(true); // Set as daemon thread
+        thread.start();
+    }
+}
+```
 
 - Joining Threads
 	- Thread B checks and goes to sleep. When Thread A finish the work, Thread B wakes up
@@ -79,6 +153,28 @@
 		- Return when the thread has terminated
 		- Return if the thread did not terminated under 2 seconds (time limit)
 	- Do not rely on the order of execution
+
+```java
+class JoinExample {
+    public static void main(String[] args) throws InterruptedException {
+        Thread threadA = new Thread(() -> {
+            // Code for Thread A
+        });
+
+        Thread threadB = new Thread(() -> {
+            try {
+                threadA.join(2000); // Join with a timeout of 2 seconds
+                // Code for Thread B after Thread A finishes or timeout occurs
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        });
+
+        threadA.start();
+        threadB.start();
+    }
+}
+```
 
 ---
 
@@ -175,3 +271,64 @@
 		- Every request is handled by a different thread
 		- All requests eventually becomes reads or writes from or to the database
 		- The connection to the database is consider shared resource
+
+---
+
+## Java Usage
+- Critical Sections
+	- Section of code that must be protected from concurrent execution
+	- No two threads can be performing those operations simultaneously
+	- If thread A is executing the critical section, thread B is blocked
+```java
+void aggregateFunction() {
+	// enter critical section
+	operation1();
+	operation2();
+	operation3();
+	// exit critical section
+}
+```
+
+- Synchronized
+	- Locking mechanism
+	- Used to restrict access to a critical section or entire method to a single thread at a time
+	- Monitor: When multiple threads are going to try to call these methods on the same object, only one thread would be able to execute either of those methods
+	- Lock: restrict access only to a section instead of a entire method. We can have multiple critical sections inside one class
+		- Synchronized block is Reentrant
+		- A thread cannot prevent itself from entering a critical section
+
+Monitor Method
+```java
+public class ClassWithCriticalSections {
+
+	public synchronized method1() {
+		...
+	}
+
+	public synchronized method2() {
+		...
+	}
+}
+```
+
+Lock Method
+```java
+public class ClassWithCriticalSections {
+
+	Object lockingObject = new Object();
+
+	public void method1() {
+	
+		// Concurrent execution
+		...
+		
+		sychronized(lockingObject) {
+			
+			// critical section
+		}
+
+		// Concurrent execution
+		...
+	}
+}
+```
