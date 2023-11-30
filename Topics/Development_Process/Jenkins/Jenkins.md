@@ -7,12 +7,10 @@
 ## What is Jenkins?
 Jenkins is an open source tool written in Java used for CI/CD (the method of frequently delivering software by automating the stages of developing, testing and deploying). For more information on CI/CD refer to the page on [Continous Integration](/Topics/Software_Engineering/continuous_integration/Continuous_Integration.md).
 
-<br>
 
 ## When should you use Jenkins?
 With Jenkins, you are able to trigger builds and automated testing with any change to your code repository. This can be used to run a suite of unit tests upon every commit to a 'main' branch of a repository. This ensures that the repository is tested frequently and any breaking commit can be found immediately. It can also be used to deploy your build to an environment for user acceptance testing before releasing it to production. If those pass, it can be merged into a final production ready repository where it can be deployed immediately.
 
-<br>
 
 ## Comparison with Other Tools:
 
@@ -37,25 +35,21 @@ More information: [CircleCI vs Jenkins: What's the Difference?](https://testsigm
 
 This is the main Jenkins server and it is ideally the machine you have installed Jenkins on. It is responsible for scheduling and delegating tasks to Jenkins agents (also known as slaves). This allows for the distribution of tasks and speeds up and improves performance. It also supervises the health of the agents and will stop delegating tasks to an agent if it is too busy. 
 
-<br>
 
 **Jenkins Node**
 
 A node is any machine that the agent executable runs on. As mentioned before, Jenkins moniters the health of these nodes with metrics such as disk space, free temp space, free swap, clock time/sync, and response time and will take it offline if it goes below a certain threshold.
 
-<br>
 
 **Jenkins Agent**
 
 Jenkins Agent is a Java executable which allows the node it is running on to connect to the Jenkins Controller. It will also install any packages or tools necessary for building and testing on the node. The Jenkins Controller can then send and communicate tasks to the Jenkins Agent to perform on the node. If you'd like to set up a Jenkins Agent yourself, here is a tutorial: https://www.baeldung.com/ops/jenkins-slave-node-setup.
 
-<br>
 
 **Jenkins Pipeline**
 
 A pipeline is a series of steps that the user defines and which Jenkins will run when the pipeline is triggered. There are multiple ways to create a pipeline including through a Jenkinsfile in your repository, through the Jenkins UI or through Blue Ocean. 
 
-<br>
 
 **Jenkins Architecture**
 
