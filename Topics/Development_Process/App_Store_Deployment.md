@@ -148,7 +148,7 @@ After selecting the app to 'Add for Review' you must also provide:
     - Notes/Documentation
     - Demo Account (if applicable)
 - Description and Features
-- Any extra information that pertains to how you would like your app to be presented
+- Any extra information that pertains to how you would like your app to be presented:
     - App banners, app promotions, etc.
 
 Congratulations! From this point on, all you have to do is sit back and wait for the review decision to come out. Make sure to make the appropriate changes if they were requested or download your app from the official App Store if it was approved!
