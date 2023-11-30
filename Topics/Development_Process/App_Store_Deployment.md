@@ -59,7 +59,7 @@ The full details of the Apple Developer Account requirements are available on th
 
 #### Certificate Creation
 To create certificates, you can head to the Certifications tab on the Apple Developer Website and choose which ones are applicable to your app. After, you would need to generate a CSR (Certificate Signing Request) on your MacBook.
-Apple's Certificates job states to follow [these steps](https://developer.apple.com/help/account/create-certificates/create-a-certificate-signing-request/) in order to generate the certificate:
+Apple's Certificates documentation states to follow [these exact steps](https://developer.apple.com/help/account/create-certificates/create-a-certificate-signing-request/) in order to generate the certificate:
 1. Launch Keychain Access located in /Applications/Utilities.
 
 2. Choose Keychain Access > Certificate Assistant > Request a Certificate from a Certificate Authority.
@@ -84,7 +84,7 @@ Prior to releasing the app for review, it would be good practice to beta test th
 **For example:** a common error that many people find at this stage is with the push notifications. 
 As this requires a certificate of its own, the first step should be to verify that the certificate is valid and that you have managed the distribution part of this testing stage correctly.
 
-In terms of beta testing, the two main choices are [TestFlight](#testflight-1) and [Ad-Hoc](#ad-hoc-1). They are two ways of distributing your app to your testers and while they will get both get the job done it is best to choose the one that best suits your needs. You will need to decide whether you prefer to keep your testing internal and only for those involved in the development process (limited access) or external and open to the public. 
+In terms of beta testing, the two main choices are [TestFlight](#testflight) and [Ad-Hoc](#ad-hoc). They are two ways of distributing your app to your testers and while they will get both get the job done it is best to choose the one that best suits your needs. You will need to decide whether you prefer to keep your testing internal and only for those involved in the development process (limited access) or external and open to the public. 
 
 #### TestFlight
 TestFlight can be considered the 'App Store' for beta testing your apps. 
@@ -104,19 +104,19 @@ The benefit of using Ad hoc is that you would not need the app to be reviewed be
 ### Distribution Process
 After you generate all your needed certificates, you would then need to register your **Provisioning Profile**, which grants you the permission to use, develop and distribute your app on Apple services. This is another security measure that verifies if your provisioning profile's App ID matches both your app and a valid distribution certificate. 
 
-To complete your provisioning profile, you would select the profiles page on the Apple Developer website and select the **iOS App Development** option. Then, you would select the app you wish to distribute as well as whether or not you would like to have offline support. After this, you would select all the certifications required in order for the app to function as well as all of the devices (iPhone/iPad/Mac) you want accessing it (if you chose to use [Ad-Hoc](#ad-hoc-1)). 
+To complete your provisioning profile, you would select the profiles page on the Apple Developer website and select the **iOS App Development** option. Then, you would select the app you wish to distribute as well as whether or not you would like to have offline support. After this, you would select all the certifications required in order for the app to function as well as all of the devices (iPhone/iPad/Mac) you want accessing it (if you chose to use [Ad-Hoc](#ad-hoc)). 
 You would then complete the registration process and download the profile to import onto Xcode where you will proceed to build the app.
 
 Now you can decide how you would like to distribute the app, where you can choose between the following options for distribution:
-- App Store Connect ([TestFlight](#testflight-1)/App Store)
-- [Ad-Hoc](#ad-hoc-1)
+- App Store Connect ([TestFlight](#testflight)/App Store)
+- [Ad-Hoc](#ad-hoc)
 - Enterprise
 - Development
 
-Should you choose [TestFlight](#testflight-1) in App Store Connect, your process would be simple, and you can follow further directions online on how your testers can download your app on the TestFlight app market. 
+Should you choose [TestFlight](#testflight) in App Store Connect, your process would be simple, and you can follow further directions online on how your testers can download your app on the TestFlight app market. 
 Following the steps would allow you to easily upload your .ipa onto App Store Connect where you can manage your next steps online.
 
-If you chose to use [Ad-Hoc](#ad-hoc-1), however, you would build a .ipa which you can send to your testers to install onto their device or device simulator on Xcode.
+If you chose to use [Ad-Hoc](#ad-hoc), however, you would build a .ipa which you can send to your testers to install onto their device or device simulator on Xcode.
 
 For further clarification about App Distribution, you can refer to these **Apple's Documentation** links below:
 
