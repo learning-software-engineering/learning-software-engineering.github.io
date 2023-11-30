@@ -18,6 +18,7 @@
 ## Overview & Motivation
 ### What is CircleCI? 
 CircleCI is a continuous integration and continuous delivery (CI/CD) platform that automates the software development process just like Github Actions, Jenkins, or Gitlab. It is designed to help software teams rapidly release code with confidence by automating the build, test, and deployment processes.
+![alt text](https://circleci.com/docs/assets/img/docs/arch.png)
 
 
 ### Why should you use it?
