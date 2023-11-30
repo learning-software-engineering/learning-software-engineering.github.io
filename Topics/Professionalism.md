@@ -16,23 +16,23 @@ Ethics play a significant role in software engineering as they guide engineers i
 
 According to the Software Engineering Code of Ethics and Professional Practice (2), the eight guiding principles for ethical behaviour in this field are as follows:
 
-1. Public: Software engineers shall act consistently with the public interest.
+1. Keep Public Interest in Mind (Public): Software engineers shall act consistently with the public interest.
    
-2. Client and employer: Software engineers shall act in a manner that is in the best interests of their client and employer consistent with the public interest.
+2. Consider Interest of Client and Employer (Client and Employer): Software engineers shall act in a manner that is in the best interests of their client and employer consistent with the public interest.
    
-3. Product: Software engineers shall ensure that their products and related modifications meet the highest professional standards possible.
+3. Ensure Highest Professional Standards in Products (Products): Software engineers shall ensure that their products and related modifications meet the highest professional standards possible.
 
-4. Judgment: Software engineers shall maintain integrity and independence in their professional judgment.
+4. Integrity and Independence in Judgment (Judgment): Software engineers shall maintain integrity and independence in their professional judgment.
    
-5. Management: Software engineering managers and leaders shall subscribe to and promote an ethical approach to the management of software development and maintenance.
+5. Ethical Management (Management): Software engineering managers and leaders shall subscribe to and promote an ethical approach to the management of software development and maintenance.
    
-6. Profession: Software engineers shall advance the integrity and reputation of the profession consistent with the public interest.
+6. Advance the Integrity and Reputation of the Profession (Profession): Software engineers shall advance the integrity and reputation of the profession consistent with the public interest.
    
-7. Colleagues: Software engineers shall be fair to and supportive of their colleagues.
+7. Fairness and Colleagues (Colleagues): Software engineers shall be fair to and supportive of their colleagues.
     
-8. Self: Software engineers shall participate in lifelong learning regarding the practice of their profession and shall promote an ethical approach to the practice of the profession.
+8. Lifelong Learning and Promoting Ethical Behaviour (Self): Software engineers shall participate in lifelong learning regarding the practice of their profession and shall promote an ethical approach to the practice of the profession.
 
-These guiding principles are further broken down in the code into more concise and actionable items. Feel free to take a look at them using reference (2) to improve your understanding of ethical behaviour in software engineering.
+These guiding principles are further broken down in the code into more concise and actionable items. Feel free to take a look at them using reference (2) to improve your understanding of ethical behaviour in software engineering. The titles of the principles have been changed to be more descriptive on this page, but the original titles are in parentheses for reference.
 
 According to a Fellow article by Brier Cook (3), five tips to help software engineers ensure they behave ethically are:
 
@@ -140,7 +140,7 @@ https://www.pluralsight.com/blog/it-ops/training-tips-for-it-pros ----- 4 reason
 ### Podcasts:
 https://www.podchaser.com/podcasts/software-engineering-daily-62587 ----- Software Engineering Daily - Daily interviews about technical software topics.
 
-### School Resources:
+### Resources from the University of Toronto:
 The Arts and Science Internship Program (ASIP) can provide materials on how to become a professional software engineer. The resources are not publically accessible on the internet, but computer science students participating in ASIP can reach out to their ambassadors for help in this area. The CSSU also hosts many events or shares information about opportunities/events that may be useful in expanding one's knowledge about professionalism in software development.
 
 # References for this Wiki Page
