@@ -1,3 +1,13 @@
+## Table of Contents
+- [Table of Contents](#table-of-contents)
+- [Introduction](#introduction)
+- [Installation and Setup](#installation-and-setup)
+- [Writing tests with React Testing Library](#writing-tests-with-react-testing-library)
+- [React Testing Library Resources](#react-testing-library-resources)
+- [Example (User Login)](#example-user-login)
+- [Codesandbox Example](#codesandbox-example)
+- [Conclusion](#conclusion)
+
 ## Introduction
 React Testing Library is a powerful tool for testing React components. It emphasizes writing tests that focus on user behavior rather than implementation details. This ensures that your tests remain robust even when components undergo refactoring changes. Jest and React Testing Library are both commonly used testing tools in the React ecosystem, but they serve different purposes, and often are used alongside one another. Jest might be used for testing utility functions, APIs, and other non-React-specific parts of an application. React Testing Library would be used for testing the actual React components, focusing on how they interact with the DOM and ensuring a user-centric approach.
 
@@ -53,16 +63,27 @@ To enhance your testing capabilities with React Testing Library, it's beneficial
 
 1. Querying Elements:
 	- When seeking optimal methods for querying elements on the page, refer to the React Testing Library Cheatsheet for Queries available at: [React Testing Library Cheatsheet for Queries](https://testing-library.com/docs/react-testing-library/cheatsheet/#queries)
+	- Examples:
+		- **getByText** *(find by element text content)*
+		- **findAllByPlaceholderText** *(find by input placeholder value)*
+		- **queryByRole** *(find by aria role)*
 
 2. Simulating User Interaction:
 	- For simulating user interactions, such as clicking, typing, and toggling, explore the API documentation on firing events: [React Testing Library API - Events](https://testing-library.com/docs/dom-testing-library/api-events)
 	- Additionally, for a comprehensive list of events supported, visit the event map repository on GitHub: [All Testing Library Events - GitHub Repository](https://github.com/testing-library/dom-testing-library/blob/main/src/event-map.js)
+	- Examples:
+		- **fireEvent.keyDown(domNode, {key: 'Enter', code: 'Enter', charCode: 13})** *(type a key)*
+		- **fireEevent.click(domNode)** *(click an element)*
 
 3. Handling Asynchronous Code:
 	- When dealing with asynchronous code and waiting for specific changes or events, refer to the asynchronous documentation in the React Testing Library API: [React Testing Library API - Async](https://testing-library.com/docs/dom-testing-library/api-async/)
 
 4. Matchers (Assertions):
 	- For assertions in your tests, including custom matchers, refer to the [Jest-Dom documentation](https://github.com/testing-library/jest-dom#custom-matchers) for a comprehensive guide on available matchers and their usage.
+	- Examples:
+		- **toBeInTheDocument()** *(assert whether an element is present in the document or not)*
+		- **toHaveStyle(css: string | object)** *(check if a certain element has some specific css properties)*
+		- **toHaveTextContent(text: string | RegExp, options?: {normalizeWhitespace: boolean})** *(check whether the given node has a text content)*
 
 For more in-depth information and examples, refer to the official React Testing Library documentation:
 
