@@ -11,6 +11,7 @@
 ### [Automated Frontend Deployment with Vercel](./Development_Process/Frontend_Automated_Deployment_Vercel.md)
 
 ### [Flask Application Deployment on Heroku](./Development_Process/Flask_App_Deployment_Heroku.md)
+### [NextJS Deployment on AWS](./Development_Process/NextJS_AWS_Deployment.md)
 
 ### [Quality Assurance Testing](./Development_Process/QA_testing.md)
 
