@@ -42,7 +42,8 @@ This is super important for projects with different people who are creating and 
 - easy to learn: there are many resources, [example](https://support.smartbear.com/swaggerhub/docs/en/get-started/basics-of-swaggerhub.html)
 - easy to share: by default, the API documentation is accessible by a public link, or the contents can be exported to a html file, json, etc.
 - easy to organize: can group endpoints and methods by tags
-- easy to standardize: can create schema for what typical responses may be
+- easy to standardize: specifications for each endpoint will follow a specific order and schemas can be created for outputs or inputs of the same format
+  - a schema on SwaggerHub is like an object in Python andd has attributes and types
 - easy to iterate: can create multiple versions, fork, and even merge API documents
 - interactive: can generate sample requests and outputs from the link to the API
 - free: the above features can all be accessed for free, however adding a collaborator requires the enteprise plan
