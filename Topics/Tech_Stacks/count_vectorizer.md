@@ -40,6 +40,8 @@ After using CountVectorizer, you might get a table like this:
 Each row represents a document, and each column is a unique word. The numbers show how many times each word appears in the respective document.
 
 ***Usage:***
+
+
 CountVectorizer is commonly used in tasks like text classification and clustering in machine learning. It's a crucial step in getting text ready for algorithms that work with numbers.
 
 ***Additional resources:***
