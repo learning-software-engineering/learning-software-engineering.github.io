@@ -8,7 +8,7 @@ Potential topics--
            1. [User Stories](./Software_Engineering/User_Stories.md)
            2. [Retro](./Software_Engineering/Retro.md)
         2. Kanban
-        3. XP
+        3. [XP](./Software_Engineering/XP.md)
     2. [Waterfall](./Software_Engineering/Waterfall.md)
     3. [REST](./Software_Engineering/RESTful_API.md)
     4. [Lean](./Software_Engineering/Lean.md)
