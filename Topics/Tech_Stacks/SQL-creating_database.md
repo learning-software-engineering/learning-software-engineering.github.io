@@ -53,6 +53,9 @@ CREATE TABLE Students(
     lname varchar(15)
 );
 
+![example_table_creation](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/113269746/9fbad0f9-42a4-4da7-bba5-be49d6b60582)
+
+
 Links :<br>
 https://www.w3schools.com/sql/sql_create_table.asp
 https://www.w3schools.com/sql/sql_alter.asp
@@ -78,6 +81,8 @@ When it comes to practices, there are a lot of practices that one can adopt in o
 1. Avoid redundancy
 
 Redundancy refers to the unnecessary repetition or duplication of data within a database. Redundancy can occur when the same data is stored in multiple places or when unnecessary columns are present in a table.
+<br>
+There are many ways to reduce redundancy and one of the ways is to normalize your data. There are algorithms like BCNF Decomposition, 3CNF etc. which can be useful.
 
 Links to check out:
 - https://www.mydbsync.com/blogs/ways-to-reduce-data-redundancy/
