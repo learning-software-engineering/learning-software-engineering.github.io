@@ -55,9 +55,7 @@ CREATE TABLE Students(
 
 ![example_table_creation](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/113269746/98cfb7cb-731b-49da-bb9b-b1bf5e9ba087)
 
-
-
-Links :<br>
+Additional Resources :<br>
 https://www.w3schools.com/sql/sql_create_table.asp
 https://www.w3schools.com/sql/sql_alter.asp
 
@@ -85,7 +83,7 @@ Redundancy refers to the unnecessary repetition or duplication of data within a 
 <br>
 There are many ways to reduce redundancy and one of the ways is to normalize your data. There are algorithms like BCNF Decomposition, 3CNF etc. which can be useful.
 
-Links to check out:
+Additional Resources:
 - https://www.mydbsync.com/blogs/ways-to-reduce-data-redundancy/
 - https://www.linkedin.com/advice/1/how-do-you-normalize-your-data-reduce-redundancy
 
