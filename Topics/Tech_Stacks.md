@@ -43,4 +43,5 @@
 ### [Introduction to React ChartJS](./Tech_Stacks/ReactChartJS.md)
 ### [Setting up Firebase and Intro to Firestore](./Tech_Stacks/Firebase_and_Firestore.md)
 ### [Learning Odata](./Tech_Stacks/Odata.md)
+### [Introduction to OpenShift](./Tech_Stacks/OpenShift.md)
 ### [Django Basics and Django Rest Framework](./Tech_Stacks/Django_Rest.md)
