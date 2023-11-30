@@ -88,7 +88,8 @@ Sadly, this approach does not really solve our security concerns. The secret is 
 
 ```
 nosnow-user@Kiyosaki: # Run this in the same environment as your application BEFORE running the application itself
-nosnow-user@Kiyosaki: export JWT_SECRET="Top Secret Key"  
+nosnow-user@Kiyosaki: export JWT_SECRET="Top Secret Key"
+nosnow-user@Kiyosaki: # Note: Instead of loading all of your secrets in by hand, you may keep them in an external file (i.e. an env file) or set up your environment to store these securely. 
 nosnow-user@Kiyosaki: echo $JWT_SECRET  # This is just to validate that your environment variable is set properly
 Top Secret Key
 ```
