@@ -124,7 +124,7 @@ The full Modal can be displayed statically if state isn't involved and the "show
 ```
 
 ## Extracting Data
-One of the primary applications of Modals is the ability to extract information from the user. We can do this through React-Bootstrap's Form component. The example below illustrates a function that takes in an item and when the form is opened, ask the user for the first name and last name, upon completion it updates the items first and last name accordingly.
+One of the primary applications of Modals is the ability to extract information from the user. We can do this through React-Bootstrap's Form component. The example below illustrates a function that takes in an item and when the form is opened, asks the user for the first name and last name, upon completion, it updates the item's first and last names accordingly.
 ```js
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
