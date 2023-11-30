@@ -17,7 +17,7 @@ Before continuing to learn PHP it is recommended to have a basic understanding o
 - JavaScript
 
 ## Why use PHP
-You may have heard PHP reffered to as a "dying language", but it is still widely used in web development. In fact, it is estimated that over 75% of websites use PHP in some way. PHP is a great choice for web development because it is easy to learn and use, as well as being free and open-source.
+You may have heard PHP reffered to as a "dying language", but it is still widely used in web development. In fact, it is estimated that over 75% of [websites](https://w3techs.com/technologies/details/pl-php) use PHP in some way. PHP is a great choice for web development because it is easy to learn and use, as well as being free and open-source.
 
 Additional advantages of PHP include:
 - It's cross-platform and flexbility, meaning it can run on any operating system and can be used to create a wide variety of web applications.
@@ -25,6 +25,7 @@ Additional advantages of PHP include:
 - It has a large community of developers and users that can provide support and resources.
 - It's scalable, and it can be used to create large-scale applications.
 
+You can learn more about the advantages and disadvantages of PHP [here](https://anywhere.epam.com/business/pros-and-cons-of-php).
 ## Setup
 To set up PHP on your machine, you will need:
 - A web server
