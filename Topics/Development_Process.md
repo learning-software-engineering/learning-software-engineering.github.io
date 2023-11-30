@@ -145,3 +145,6 @@ This is only a simplification of what "Clean Architecture" is; the topic is so v
 
 ## Technical Documents
 ### [Intro to Request for Comments (RFCs)](./Development_Process/Technical_Documents/Intro_to_rfcs.md)
+
+
+### [API documentation with SwaggerHub](./Development_Process/Documentation/Swagger_API_Documentation.md)
