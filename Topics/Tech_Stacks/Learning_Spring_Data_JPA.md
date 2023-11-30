@@ -1,5 +1,7 @@
 # Learning Spring Data JPA
-This is a step-by-step guide walking you through the process of building a 
+Spring Data JPA is a powerful tool that simplifies data access in Java applications by providing a higher-level abstraction for working with relational databases. It offers a streamlined approach to managing entities and their relationships, allowing developers to focus on business logic rather than boilerplate database code. With Spring Data JPA, you can easily perform CRUD operations, define custom queries, and leverage advanced features such as pagination, sorting, and locking. Whether you're building a small-scale application or a large enterprise system, Spring Data JPA empowers you to efficiently interact with the database, reducing development time and maintenance overhead.
+
+This article is a step-by-step guide walking you through the process of building a 
 Spring Boot application which stores and retrieves objects in a relational 
 database. We will compare different options for working with databases in 
 Java, specifically, Java Database Connectivity (JDBC), Spring JDBC, Java 
@@ -24,7 +26,7 @@ Make sure you have installed an [IDE](https://www.jetbrains.com/idea/download), 
 ## Step 1 - Initializing A Spring Boot Application
 You can use this [pre-initialized project](https://start.spring.io/#!type=maven-project&language=java&platformVersion=3.2.0&packaging=jar&jvmVersion=17&groupId=com.learning-software-engineering&artifactId=learning-spring-data-jpa&name=learning-spring-data-jpa&description=Demo%20project%20for%20Spring%20Data%20JPA%20&packageName=com.learning-software-engineering.learning-spring-data-jpa&dependencies=data-jdbc,data-jpa,h2,web) and click Generate to download a ZIP file, unzip it and open the project folder in your IDE.
 ## Step 2 - Launching H2 Console and Creating Person Table in H2
-The [H2 Database](https://www.h2database.com/html/main.html) is a Java SQL database. It is very fast, open source, light weight and great for learning purpose. It is an in-memory database, meaning that every time you stop your application, the data stored in H2 during the runtime is discarded. We will utilize its browser-based console to inspect our database table.
+The [H2 Database](https://www.h2database.com/html/main.html) is a Java SQL database. It is very fast, open source, light weight and great for learning purposes. It is an in-memory database, meaning that every time you stop your application, the data stored in H2 during the runtime is discarded. We will utilize its browser-based console to inspect our database table. (We use H2 for its simplicity, if you want to learn more about working with a persistent database, read [this](https://www.baeldung.com/java-connect-mysql).)  
 
 - Configure the H2 Console by copying the following code into `application.properties` under folder `src/main/resources`
 ```properties
@@ -45,10 +47,10 @@ CREATE TABLE Person(
 - Launch the Spring Boot Application by running the main method of the `LearningSpringDataJpaApplication` class under the folder `src/main/java/com/learningsoftwareengineering/learningspringdatajpa`
 - Open [H2 Console](http://localhost:8080/h2-console) in your browser. Copy `jdbc:h2:mem:testdb` and paste it into the field JDBC URL of the Login form. Click on Connect. 
 You should be able to see a `Person` table is created in the database, click on Run to see its columns. 
-  ![H2 Console Screenshot](https://github.com/learning-software-engineering/learning-software-engineering.github.io/blob/springdatajpa/Topics/Tech_Stacks/Learning_Spring_Data_JPA_Graphics/img.png))
+  ![H2 Console Screenshot](https://github.com/learning-software-engineering/learning-software-engineering.github.io/blob/springdatajpa/Topics/Tech_Stacks/Learning_Spring_Data_JPA_Graphics/img.png)
 
 ## Step 3 - Storing and Deleting Data Using Spring JDBC
-Now, let's add a few entries into the `Person` table and then delete an entry based on its id.
+Now, let's add a few entries to the `Person` table and then delete an entry based on its id.
 
 In the folder `src/main/java/com/learningsoftwareengineering/learningspringdatajpa`, create the following files and then rerun the application:
 -   `Person.java`
@@ -181,11 +183,10 @@ import jakarta.persistence.Id;
 public class Person {
     @Id // indicate this field is used as the primary key in the db table
     private Long id;
-    @Column(nullable = false, name = "first_name")
-    /* if you leave out name = "first_name"
-     * JPA will automatically convert this field name
-     * into a column name: first_name_in_spanish
+    /* if you don't use @Column.name = "first_name" to overwrite the field name
+     * JPA will automatically convert this field name into a column name: first_name_in_spanish
      */
+    @Column(nullable = false, name = "first_name")
     private String firstNameInSpanish;
     @Column(nullable = false)
     private String lastName;
@@ -244,7 +245,7 @@ private PersonJpaRepository repository;
 - Restart the application. Refresh the H2 Console to see the table `Person` is created and populated. 
 
 ## Step 5 - Storing, Deleting, and Retrieving Data Using Spring Data JPA 
-Spring Data JPA is a higher-level ***abstraction*** of JPA, making it even simpler to work with databases. Spring Data JPA *automatically* generate the necessary boilerplate code for common database operations. This means that you don't even need to write any code for common methods like `save`, `findById`, `findAll`, `deleteById`, etc.! All you need to do is to create an interface that extends `JpaRepository` interface. 
+Spring Data JPA is a higher-level ***abstraction*** of JPA, making it even simpler to work with databases. Spring Data JPA *automatically* generates the necessary boilerplate code for common database operations. This means that you don't even need to write any code for common methods like `save`, `findById`, `findAll`, `deleteById`, etc.! All you need to do is to create an interface that extends `JpaRepository` interface. 
 - create `PersonSpringDataJpaRepository.java` under `src/main/java/com/learningsoftwareengineering/learningspringdatajpa`
 ```java
 @Repository
