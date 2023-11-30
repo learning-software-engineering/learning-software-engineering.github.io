@@ -90,6 +90,26 @@ One way to reduce the number of states is to group related states into a single 
 const [name, setName] = useState("");
 const [email, setEmail] = useState("");
 const [bio, setBio] = useState("");
+
+// You will also need to update them separately in the handlers
+const handleChange = (e) => {
+  setName(e.target.value.name);
+  setEmail(e.target.value);
+  setBio(e.target.value);
+};
+
+// Or maybe even separate handlers!
+const handleNameChange = (e) => {
+  setName(e.target.value.name);
+};
+
+const handleEmailChange = (e) => {
+  setEmail(e.target.value);
+};
+
+const handleBioChange = (e) => {
+  setBio(e.target.value);
+};
 ```
 
 ```jsx
@@ -99,6 +119,11 @@ const [user, setUser] = useState({
   email: "",
   bio: "",
 });
+
+// To update the state, you only need to update the state object
+const handleChange = (e) => {
+  setUser({ ...user, [e.target.name]: e.target.value });
+};
 
 // It is also good to destruct the state object when using it
 const { name, email, bio } = user;
