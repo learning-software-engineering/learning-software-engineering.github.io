@@ -132,7 +132,7 @@ urlpatterns = [
 ]
 ```
 
-All in all, we have now built a simple API with the ability to list, create, update and delete todo list items. One can test the API by starting the Django development server using ``` python3 manage.py runserver ``` and visiting http://localhost:8000/todos/ in a web browser.
+All in all, we have now built a simple API with the ability to list, create, update and delete todo list items. One can test the API by starting the Django development server using ``` python3 manage.py runserver ``` and visiting http://localhost:8000/todos/ in a web browser. Running this command will also show any errors that need to be fixed in the shell, and this continuously updates whenever the code is changed.
 
 ### Extra Resources
 
