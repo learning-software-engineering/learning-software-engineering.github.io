@@ -1,5 +1,17 @@
 # Apple App Store Deployment
 
+## Table of Contents
+### [Introduction](#introduction-1)
+### [Requirements](#requirements-1)
+### [iOS Related Certificates](#ios-related-certificates-1)
+### [Certificate Creation](#certificate-creation-1)
+### [Beta Testing](#beta-testing-1)
+### [TestFlight](#testflight-1)
+### [Ad hoc](#ad-hoc-1)
+### [Distribution Process](#distribution-process-1)
+### [App Store Submission](#app-store-submission-1)
+### [Additional Information](#additional-information-1)
+
 ## Introduction
 After working towards a useable version of your mobile app, your last step would be to manage the deployment side. 
 The main difficulties faced with submitting an app to the App Store is that they set high standards for privacy and security. 
@@ -43,7 +55,7 @@ The full details of the Apple Developer Account requirements are available on th
     - Sign Apple Wallet passes.
 - **iOS Distribution** Certificate (Auto-Generated on Account Creation)
 
-#### Certificate Creation
+### Certificate Creation
 To create certificates, you can head to the Certifications tab on the Apple Developer Website and choose which ones are applicable to your app. After, you would need to generate a CSR (Certificate Signing Request) on your MacBook.
 Apple's Certificates job states to follow [these steps](https://developer.apple.com/help/account/create-certificates/create-a-certificate-signing-request/) in order to generate the certificate:
 1. Launch Keychain Access located in /Applications/Utilities.
@@ -87,7 +99,7 @@ From there you can select your iPhone and copy its UDID (make sure to include th
 
 The benefit of using Ad hoc is that you would not need the app to be reviewed before distributing it out for testing. This means that you would be able to get your app to your testers immediately and possibly avoid getting the app rejected during the review process.
 
-#### Distribution Process
+### Distribution Process
 After you generate all your needed certificates, you would then need to register your **Provisioning Profile**, which grants you the permission to use, develop and distribute your app on Apple services. This is another security measure that verifies if your provisioning profile's App ID matches both your app and a valid distribution certificate. 
 
 To complete your provisioning profile, you would select the profiles page on the Apple Developer website and select the **iOS App Development** option. Then, you would select the app you wish to distribute as well as whether or not you would like to have offline support. After this, you would select all the certifications required in order for the app to function as well as all of the devices (iPhone/iPad/Mac) you want accessing it (if you chose to use Ad Hoc). 
@@ -140,5 +152,7 @@ After selecting the app to 'Add for Review' you must also provide:
     - App banners, app promotions, etc.
 
 Congratulations! From this point on, all you have to do is sit back and wait for the review decision to come out. Make sure to make the appropriate changes if they were requested or download your app from the official App Store if it was approved!
+
+### Additional Information
 
 For further information on the App Review process, please consult Apple's [App Review Docs](https://developer.apple.com/app-store/review/#:~:text=On%20average%2C%2090%25%20of%20submissions,app%20for%20iPhone%20and%20iPad.). This contains all the steps, common issues, as well as contact information if you need further help in the app review process.
