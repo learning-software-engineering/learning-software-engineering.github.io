@@ -100,7 +100,7 @@ Here are some categorize of WordPress Plugins and corresponding examples might b
 9. **Analytics and Data**: Plugins for website analytics and performance data. Examples: Google Analytics for WordPress by MonsterInsights, Jetpack by WordPress.com, ExactMetrics.
 10. **Backup and Migration**: Plugins for backing up and migrating your WordPress site. Examples: UpdraftPlus, BackupBuddy, Duplicator.
 
-## Integration guide:
+## Integration guide
 
 Here provide an specific example of integration: Connecting Contact Form 7 with Mailchimp
 
