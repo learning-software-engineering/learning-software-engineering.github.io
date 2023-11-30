@@ -80,6 +80,24 @@ As to what you should name your classes, a popular convention is to use the BEM 
 
 You will sometimes find 2 dashes for the modifier like above, or an single dash, or even an underscore. These are not a hard rules. Whats important is to be consistent across your codebase.
 
+### Descriptive Naming
+
+Throughout this article, we haven't been using descriptive names for our examples. This is because we wanted to keep the examples short and simple. However, when writing code, it is important to use descriptive names for components, variables, and functions. This helps developers quickly identify the purpose of each component and function. For example, a button that submits a login form should be called `LoginButton` or `LoginSubmitButton` if there are other buttons in the page that it could be confused with. This is especially important when working with large codebases. Take a look at the following example:
+
+```jsx
+// This is a bad example
+const Button = ({ text, onClick }) => {
+  return <button onClick={onClick}>{text}</button>;
+};
+```
+
+```jsx
+// This is a better example
+const LoginSubmitButton = ({ submitText, onFormSubmit }) => {
+  return <button onClick={onFormSubmit}>{submitText}</button>;
+};
+```
+
 ## Component Structure
 
 When working with React, it is important to follow a consistent component structure. This helps developers quickly identify the purpose of each component and its role in the application. The following are some common principles for structuring React components:
