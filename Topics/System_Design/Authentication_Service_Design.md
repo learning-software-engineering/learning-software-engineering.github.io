@@ -1,4 +1,4 @@
-# Designing an Authentication Service
+# Introduction: Designing an Authentication Service
 
 **Authentication** is the first gateway users pass through when using any digital service to prove their identities. **Authorization** is how we ensure the *right people* are accessing the *right data*.
 A well-designed authentication and authorization service has to strike the correct balance of security and user convenience. This balance shifts depending on what service you're offering; an in-browser casual multiplayer game will have completely different needs for security and user convenience compared to governmental corporate software.
