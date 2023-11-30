@@ -80,6 +80,9 @@ A migration is a file that tells the ORM what changes have been made to the mode
 
 Be VERY careful with your migrations. If you are ever unsure, consult the [documentation](https://docs.djangoproject.com/en/4.2/topics/migrations/)!  
 
+### Querying models
+Once the database is fully set up with our models, we can write code that queries the database to find the specific data that we want. Each model has a ```.objects``` attribute, and all queries are methods of this attribute. The most basic query would be to get all the objects in that table - for our Todo class, this is done using ```TodoItem.objects.all()```, which returns a QuerySet (basically an unordered list) of all the TodoItem objects. There are many other queries found [here](https://docs.djangoproject.com/en/4.2/topics/db/queries/) that can be used to filter based on specific requirements and create and update objects.
+
  ### Creating an API
 
 Assuming we want to create an API for your TodoItem model that allows clients to create, read, update, and delete TodoItem instances. We may define a serializer class in serializers.py in the app API folder that converts TodoItem instances to JSON. We add the following code in serializers.py:
