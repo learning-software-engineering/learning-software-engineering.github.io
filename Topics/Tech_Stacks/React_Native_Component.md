@@ -12,6 +12,8 @@ Key aspects of each component are covered:
 
 It aims to serve as a concise study aid and quick reference for developers to understand and effectively use React Native's tools and features.
 
+For an example implementation guide of a React Native component, click [here](./React_Native_Component_Example.md).
+
 ## Table of contents
 
 - **[Basic UI Components](#basic-ui-components):**

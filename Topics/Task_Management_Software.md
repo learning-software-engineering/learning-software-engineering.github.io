@@ -149,6 +149,58 @@ Must Know Jira features - https://www.youtube.com/watch?v=issdcnErAU8
 
 Written Article On Jira Workflows - https://support.atlassian.com/jira-work-management/docs/how-to-create-workflows/ 
 
+<h2>Linear.app</h2>
+
+Linear is a modern and streamlined software project management tool, offering a more lightweight alternative to traditional platforms like Jira. It includes a variety of features, primarily focusing on project planning and progress tracking. Here's how to get started with Linear.
+
+<h3>Creating a Project in Linear</h3>
+
+First, visit https://linear.app/join and select a name and URL for your new workspace. The name can be your choice, but the URL must be unique and not already in use.
+
+Once your workspace is set up, Linear will generate a list of tutorial issues. Read through these for guidance, and when you're ready, you can delete them by right-clicking on each and selecting Delete.
+
+To create a project, click on 'Roadmaps' in the sidebar. If it's your first project, click 'New Project' in the center of the page. If not, the button is located in the top-right corner. Consider each project as a phase or significant component of your software development cycle, with a defined goal or deadline.
+
+![create project](https://res.cloudinary.com/ai-character/image/upload/v1701309122/roadmap_rimzuw.png)
+
+<h3>Creating Issues in Linear</h3>
+
+To create a new issue, you can click on the small "+" button at the top-right corner on the Issues page or simply press the 'C' key. You just need to provide a title for your new issue, but you can also add a description, set the status (backlog, todo, in progress, etc.), assign it to a team member, or link it to a project. These details can be added or edited later as well.
+
+The "+" button is located here.
+![plus button](https://res.cloudinary.com/ai-character/image/upload/v1701309122/plus_xc8pcm.png)
+
+Alternatively, if you press the "C" key, you also should see this.
+![issue creation](https://res.cloudinary.com/ai-character/image/upload/v1701309122/c_z4chiw.png)
+
+
+<h3>Linking Linear Workspace to Github</h3>
+
+To connect your workspace to Github, go to https://linear.app/settings/integrations/github and follow the instructions to integrate Linear with your Github pull requests and commits.
+
+<h3>Using the Linear and Github workflow</h3>
+
+After linking your Linear workspace with Github, Linear will automatically track your commits and pull requests to update their statuses. To enable this, you must use the specific branch name for each issue, which you can find on any issue detail page by pressing "Ctrl + Shift + ."
+
+![git branch name](https://res.cloudinary.com/ai-character/image/upload/v1701309122/branch_p9pcsl.png)
+
+<h3>Linear vs Jira</h3>
+
+This section helps you decided whether Linear or Jira is the right tool for your project by comparing them in detail.
+
+<h4>Advantages of Linear</h4>
+<ul>
+  <li>Linear has a more modern and clean UI interface</li>
+  <li>Linear is easier to set up compared to Jira</li>
+  <li>Linear offers a more streamlined workflow</li>
+</ul>
+<h4>Advantages of Jira</h4>
+<ul>
+  <li>The Atlassian ecosystem has a range of other products for software engineering that can be integrated with Jira easily, like Confluence and BitBucket</li>
+  <li>Jira is more flexible and has more customization potential</li>
+  <li>Jira has more comprehensive features, some of which Linear may not have</li>
+</ul>
+
 
 [Azure DevOps](./Product_Management/Azure_DevOps.md) : Azure DevOps is another very useful task management software that helps teams manage projects and tasks.
 
