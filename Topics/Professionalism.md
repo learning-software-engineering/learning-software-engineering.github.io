@@ -1,5 +1,18 @@
-## Professionalism
+# Professionalism
 
+# Table of Contents
+
+- ### [What is Professionalism in Software Engineering and Why is it Important?](#what-is-it)
+
+- ### [Best Practices for Maintaining a Professional Demeanor in Various Situations](#best-practices-for-maintaining-a-professional-demeanor-in-various-situations)
+
+- ### [Business Communication as it Applies to Professionalism](#business-communication-as-it-applies-to-professionalism)
+
+- ### [External Resources for Professional Development](#external-resources-for-professional-development)
+
+- ### [References for this Wiki Page](#references-for-this-wiki-page)
+
+<a id="what-is-it"></a>
 # What is Professionalism in Software Engineering and Why is it Important?
 
 ### Definition of Professionalism in Software Engineering
@@ -68,7 +81,7 @@ Professionalism is important in software engineering because it allows you to be
 
 Professionalism is essential in all aspects of software engineering, and maintaining a professional demeanour across various situations is crucial for career success. Below are examples of best practices for maintaining a professional demeanour in remote work environments and during client interactions.
 
-### Remote work environments
+### Remote Work Environments
 
 1. Establish a dedicated workspace: Create a separate, distraction-free area for work to maintain focus and productivity.
    
@@ -82,7 +95,7 @@ Professionalism is essential in all aspects of software engineering, and maintai
    
 6. Invest in reliable technology: Ensure that your computer, internet connection, and other essential tools are up-to-date and reliable to avoid technical issues during work.
 
-### Client interactions
+### Client Interactions
 
 1. Active listening: Pay attention to the client's needs and concerns, and ask clarifying questions to ensure a clear understanding of their requirements.
    
