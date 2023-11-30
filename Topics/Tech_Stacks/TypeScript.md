@@ -19,11 +19,24 @@ To play around with and experiment using TypeScript, feel free to visit the [pla
 
 ## Why use TypeScript
 
-TypeScript allows developers to catch potential errors early in the development process (at compile-time instead of runtime) and write more maintainable and scalable code. This can greatly reduce the likelihood of bugs and make code more reliable and easier to maintain, as well as improve code readability and make it easier to write reusable code. This makes TypeScript the preferred choice when building large-scale applications, especially in web development. Its syntax is similar to JavaScript, making it easy to learn and adopt for developers familiar with JavaScript.
+TypeScript allows developers to catch potential errors early in the development process (at compile-time instead of runtime) and write more maintainable and scalable code. This can greatly reduce the likelihood of bugs and make code more reliable and easier to maintain, as well as improve code readability and make it easier to write reusable code. This makes TypeScript the preferred choice when building large-scale applications, especially in web development. Its syntax is similar to JavaScript, making it easy to learn and adopt for developers familiar with JavaScript. Additionally, popular code editors such as VSCode offer additional quality-of-life functionalities such as autocompletion when writing in TypeScript, making it easier and faster to write code.
+
+As an example to demonstrate how TypeScript makes life easier, consider the situation where a company imports code from a third party. With JavaScript, since the IDE cannot validate JavaScript references directly, it requires a lot of care and manual testing to modify the imported code. However, with TypeScript, this issue is resolved because the IDE can automatically identify any errors that arise from incorrect references. [Here](https://www.toptal.com/typescript/typescript-vs-javascript-guide) is a more comprehensive guide on the differences between the two, and why TypeScript is more powerful and convenient.
 
 To learn more about why you should consider using TypeScript over JavaScript, visit [this blog here](https://www.geeksforgeeks.org/8-reasons-why-you-should-pick-typescript-over-javascript/).
 
 ## How to use TypeScript
+
+### Installing Node and npm
+
+Before you set up your web development project with TypeScript, you want to first install Node.js if you have not done so already. To install node, simply follow the steps below.
+
+1. Check if you already have Node and npm installed on your machine by opening up a terminal window, and running the command `node -v` and `npm -v`.
+2. Use a Node Version Manager to install Node.js and npm. If you're using MacOS or Linux, use nvm. If you're on Windows, use nodlist.
+3. To use nvm for installation, visit the [official nvm github page](github.com/nvm_sh/nvm) for a complete guide.
+4. To use nodist for installation, visit the [official nodist github page](github.com/nodists/nodist) for a complete guide.
+
+### Using TypeScript with common frameworks
 
 You can integrate TypeScript into any JavaScript code, but it is most commonly used for web development using JavaScript frameworks such as React and Angular.
 
@@ -56,6 +69,26 @@ Angular comes with TypeScript enabled by default. In fact, Angular is built enti
 4. Run the following command to create a new workspace and initial starter app:
 
     `ng new my-app`'
+
+### Vue
+
+To use TypeScript in your Vue 3 project using `create-vue`, which is the official Vue project scaffolding tool, follow the steps below:
+
+1. Open a terminal window, navigate to the location where the project will be created. 
+
+2. Run the command `npm create vue@latest` to initiate the project creation. (Note: if you do not have Node.js installed on your machine, follow the guide in the sections above to install it first before creating the Vue project)
+
+3. Follow the command line prompts to select the preferences for your project. Select `yes` for the prompt `Add TypeScript?`, and manage other settings to your preference.
+
+<img width="450" src="https://raw.githubusercontent.com/vuejs/create-vue/main/media/screenshot-cli.png"> [image source](https://github.com/vuejs/create-vue)
+
+4. Done! The Vue project is succesfully created.
+
+It is worth noting that this method is the preferred way to create Vue projects, instead of using Vue CLI, since create-vue is based on Vite. For more information, visit the create-vue Github repository [here](github.com/vuejs/create-vue).
+
+However, if you wish to set up your Vue project with Vue CLI, you can do so by following the instructions in [this video](https://youtu.be/JfI5PISLr9w?si=HEKZJlcRhWjb0F_0).
+
+For a more detailed overview of using TypeScript with Vue, visit the [official Vue.js guide page](vuejs.org/guide/typescript/overview.html).
 
 ## Additional Resources
 

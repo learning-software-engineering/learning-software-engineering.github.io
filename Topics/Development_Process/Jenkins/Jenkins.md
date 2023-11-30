@@ -1,6 +1,6 @@
 # Introduction to Jenkins
 ## What is Jenkins?
-Jenkins is an open source tool written in Java used for CI/CD (the method of frequently delivering software by automating the stages of developing, testing and deploying). For more information on CI/CD refer to the page on [Continous Integration](../../Software_Engineering/Continuous_Integration.md).
+Jenkins is an open source tool written in Java used for CI/CD (the method of frequently delivering software by automating the stages of developing, testing and deploying). For more information on CI/CD refer to the page on [Continous Integration](/Topics/Software_Engineering/continuous_integration/Continuous_Integration.md).
 
 <br>
 
@@ -46,10 +46,9 @@ A pipeline is a series of steps that the user defines and which Jenkins will run
 ## Setting up Jenkins Server
 To begin working, we need a Jenkins server that is up and running with the Github plugin. If you already have this feel free to skip to the next step. 
 
-Follow instructions on the Jenkins documentation for installation information specific to your machine:
-https://www.jenkins.io/doc/book/installing/
-- For MacOS: you will have to install Homebrew if you don’t have it already: 
-    - https://docs.brew.sh/Installation
+
+Follow instructions on the Jenkins documentation for installation information specific to your machine: [Jenkins Installation](https://www.jenkins.io/doc/book/installing/)
+- For MacOS: you will have to install Homebrew if you don’t have it already: [Homebrew Install](https://docs.brew.sh/Installation)
     - If you have an apple silicon machine, you may need to add homebrew to your PATH. This stack overflow answer has a fantastic step by step:
     - https://stackoverflow.com/questions/66666134/how-to-install-homebrew-on-m1-mac
 
@@ -72,7 +71,7 @@ Select **Install suggested plugins**. This will install the github plugins neces
     <img src="Assets/github-hook.png" alt="github-hook" width="50%"/>
 
 4. In the **Pipeline** section, select **Pipeline script from SCM**. For the **SCM**, select **Git**. Then add your repository URL. In the **script path**, add the path to your Jenkinsfile in your repository. 
-    - If you are unfamiliar with what a Jenkinsfile is check out the documentation for some more information: https://www.jenkins.io/doc/book/pipeline/jenkinsfile/. If you want to get started right away, create a file in your repo called Jenkinsfile and copy the script from the section <em>Creating a Jenkinsfile, Jenkinsfile (Declarative Pipeline)</em> in the documentation.
+    - If you are unfamiliar with what a Jenkinsfile is check out the documentation for some more information: [Jenkins Pipelines](https://www.jenkins.io/doc/book/pipeline/jenkinsfile/). If you want to get started right away, create a file in your repo called Jenkinsfile and copy the script from the section <em>Creating a Jenkinsfile, Jenkinsfile (Declarative Pipeline)</em> in the documentation.
     - **Note**: the default value for the option for the branch to build is <em>master</em>, but the default Github branch is called <em>main</em> now. Make sure to select the correct branch. 
     <img src="Assets/jenkins-pipeline-settings1.png" alt="pipeline-settings" width="70%"/>
     <img src="Assets/jenkins-pipeline-settings2.png" alt="pipeline-settings" width="70%"/>
