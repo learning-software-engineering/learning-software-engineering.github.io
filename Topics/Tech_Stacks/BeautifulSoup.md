@@ -1,6 +1,13 @@
 # Learning Beautiful Soup
 
-
+## Table of Contents
+- [Introduction](#introduction)
+- [Installation](#installation)
+- [Extracting HTML from a Webpage](#extracting-html-from-a-webpage)
+- [Parsing using Beautiful Soup](#parsing-using-beautiful-soup)
+- [Extracting the Data](#extracting-the-data)
+- [When to use Beautiful Soup](#when-to-use-beautiful-soup)
+- [Conclusion](#conclusion)
 
 ## Introduction
 Beautiful Soup is a Python library for parsing HTML and XML documents. It is often used as a tool for web scraping. Beautiful Soup provides a way for users to extract data from web pages. This guide serves as an introduction into using Beautiful Soup 4 for basic web scraping in your Python program. Before starting, you should have a basic understanding of HTML and Python.
