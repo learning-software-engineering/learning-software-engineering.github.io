@@ -49,3 +49,4 @@
 ### [Introduction to OpenShift](./Tech_Stacks/OpenShift.md)
 ### [Django Basics and Django Rest Framework](./Tech_Stacks/Django_Rest.md)
 ### [Inter-process Communication(IPC) with fork() and pipe() in C](./Tech_Stacks/Fork_and_Pipe.md)
+### [Pythonic Iteration Patterns](./Tech_Stacks/Pythonic-Iteration-Patterns.md)
