@@ -1,6 +1,8 @@
 ## Tech Stacks
 
 ### [Learning MySQL for databases](./Tech_Stacks/Learning_MySQL.md)
+### [Introduction to Graph Databases with Neo4j](./Tech_Stacks/GraphDB_Neo4j.md)
+### [Getting Started With Apache Kafka](./Tech_Stacks/Apache_Kafka.md)
 ### [Postman API Testing](./Tech_Stacks/Postman_Backend_Testing.md)
 ### [FastAPI](./Tech_Stacks/FastAPI.md)
 ### [Nuxt3](./Tech_Stacks/Nuxt3.md)
@@ -24,6 +26,7 @@
 ### [Temporal For Workflow Orchestration](./Tech_Stacks/Temporal.md)
 ### [Using Protobufs with gRPC](./Tech_Stacks/Protobufs_and_gRPC.md)
 ### [Learning Cypress](./Tech_Stacks/Cypress.md)
+### [Using MetaProgramming to build a server in python](./Tech_Stacks/Metaprogramming.md)
 ### [Using the VertexAI SDK](./Tech_Stacks/VertexAI.md)
 ### [Establishing Peer to Peer Connection with WebRTC](./Tech_Stacks/WebRTC.md)
 ### [Asynchronous External API Interface in Python App](./Tech_Stacks/Async_External_API_Interface_Python.md)
@@ -34,6 +37,7 @@
 ### [React.js Bad Practice - Prop Drilling](./Tech_Stacks/React_Prop_Drilling.md)
 ### [Introduction to Static Typing in Python](./Tech_Stacks/Python_Static_Typing.md)
 ### [Introduction to Python Tkinter](./Tech_Stacks/Tkinter.md)
+### [Creating Your First iOS App](./Tech_Stacks/iOS.md)
 ### [Debugging with GDB](./Tech_Stacks/GDB_Debug.md)
 ### [Learning Express.js](./Tech_Stacks/Express.md)
 ### [Introduction to React ChartJS](./Tech_Stacks/ReactChartJS.md)

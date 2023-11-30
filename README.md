@@ -79,6 +79,7 @@ Potential Topics--
     3. SOLID Principles
     4. Code Smells
     5. QA testing
+    6. Introduction to Conda (Python) 
 - Professionalism
     1. Customer engagement
         1. Meeting best practices
