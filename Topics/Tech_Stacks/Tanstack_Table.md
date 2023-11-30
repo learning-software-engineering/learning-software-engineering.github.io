@@ -12,6 +12,7 @@ Before integrating Tanstack Table, ensure your environment has:
 - Typescript 5 or later.
 - Node.js 12 or later.
 To check your React version, run `react -v` in your terminal. For Node.js, use `node -v`.
+Although Typescript is not fully required, it is highly recommended for this library and in general as it reinforces best practices with adding types to your Javascript code. With typescript, we can better define the table columns for other developers and the library does a lot of inference based on the types that you provide it.
 
 ## Installation
 To install Tanstack Table, open your terminal and navigate to your project directory. Run one of the following commands:
@@ -47,7 +48,31 @@ type Dog = {
     dogName: string
     dogSize: number
 }
+```
+First, we'll define the type of data that each of our columns should hold. We can also define some example data to provide our table.
+```typescript
+const exampleData: Dog[] = [
+    {
+        "dogBreed": "Labrador",
+        "dogName": "Bella",
+        "dogSize": 1.0
+    },
+    {
+        "dogBreed": "Beagle",
+        "dogName": "Max",
+        "dogSize": 1.2
+    },
+    {
+        "dogBreed": "German Shepherd",
+        "dogName": "Luna",
+        "dogSize": 2.0
+    },
+]
+```
+Our data does not need to exist as a constant, it can also be stored as a state variable in React, allowing you to change data on the fly and have the table react accordingly.
 
+Next, we'll tell the library how we want it to render our columns. Here, you can customize the rendering method for each column however in this example, we have opted to use the default method. If you would like to learn more about special cell formatting, [click here](https://tanstack.com/table/v8/docs/guide/column-defs#cell-formatting). 
+```typescript
 // Converts your typescript type into an object that the library can use effectively
 const columnHelper = createColumnHelper<Dog>()
 
@@ -55,7 +80,6 @@ const columnHelper = createColumnHelper<Dog>()
 // If you want columns to be grouped together you can define it here as well. 
 // See: https://tanstack.com/table/v8/docs/guide/grouping
 const defaultColumns = [
-  // Display Column, the accessor() function takes the name of the attribute you want to display.
   columnHelper.accessor("dogBreed", {
     header: "Dog Breed",
     cell: (info) => info.getValue(),
@@ -69,9 +93,21 @@ const defaultColumns = [
     cell: (info) => info.getValue(),
   })
 ]
+```
+Note: The accessor() function takes the name of the attribute you want to display.
 
-// Follows the same format as Dog[]
-const exampleData = [
+Next, we can begin writing our full component, here's the code that we have so far:
+
+```tsx
+import { useReactTable } from '@tanstack/react-table'
+
+type Dog = {
+    dogBreed: string
+    dogName: string
+    dogSize: number
+}
+
+const exampleData: Dog[] = [
     {
         "dogBreed": "Labrador",
         "dogName": "Bella",
@@ -89,14 +125,22 @@ const exampleData = [
     },
 ]
 
-```
+const columnHelper = createColumnHelper<Dog>()
 
-Next, we can begin writing our component.
-
-```tsx
-import { useReactTable } from '@tanstack/react-table'
-
-/* Insert code from above */
+const defaultColumns = [
+  columnHelper.accessor("dogBreed", {
+    header: "Dog Breed",
+    cell: (info) => info.getValue(),
+  }),
+  columnHelper.accessor("dogName", {
+    header: "Dog Name",
+    cell: (info) => info.getValue(),
+  }),
+  columnHelper.accessor("dogSize", {
+    header: "Dog Size",
+    cell: (info) => info.getValue(),
+  })
+]
 
 function DogTable() {
   const table = useReactTable({
@@ -104,8 +148,18 @@ function DogTable() {
     data
     // You can insert other options you want to add to your table, such as being able to resize, the columns, sorting methods, etc.
   })
-  
+
   return (
+    ...
+  )
+}
+```
+
+For the final implementation, we need to render the table in the return function.
+
+In the return function of the DogTable component, add the following code: 
+```tsx
+return (
     <table>
         <thead>
             {table.getHeaderGroups().map(headerGroup => (
@@ -136,6 +190,19 @@ function DogTable() {
             ))}
         </tbody>
     </table>
-  )
-}
+)
 ```
+
+This tells Tanstack Table to grab every single header we've provided it, and render each one in the ordinary table header HTML tag `<th>`
+
+For the row data, it repeats the exact same process but in `<tbody>` and with `<tr>`
+
+## Conclusion
+
+As we've shown, this is an extremely flexible model for building customizable tables. With this example, you can extend it further by changing how the table cells are rendered, either through CSS styling, tailwind styling, or mixing it with an entirely different UI library. 
+
+If you are interested in exploring how to build sorting functionality, you can explore it [here](https://tanstack.com/table/v8/docs/api/features/sorting).
+
+With this library you can also build extendable [filters](https://tanstack.com/table/v8/docs/api/features/filters), similar to the ones you would find in powerful applications such as Excel or Google Sheets.
+
+More resources on [pagination](https://tanstack.com/table/v8/docs/api/features/pagination), [pinning](https://tanstack.com/table/v8/docs/api/features/pinning) are also available.
