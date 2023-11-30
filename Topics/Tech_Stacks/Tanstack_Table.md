@@ -159,8 +159,9 @@ For the final implementation, we need to render the table in the return function
 
 In the return function of the DogTable component, add the following code: 
 ```tsx
-return (
+return (    
     <table>
+        {/* For building all the headers */}
         <thead>
             {table.getHeaderGroups().map(headerGroup => (
                 <tr key={headerGroup.id}>
@@ -175,6 +176,7 @@ return (
                 </tr>
             ))}
         </thead>
+        {/* For building all the rows of data */}
         <tbody>
             {table.getRowModel().rows.map(row => (
                 <tr key={row.id}>
