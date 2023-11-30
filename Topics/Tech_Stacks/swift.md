@@ -186,6 +186,51 @@ struct PlayButton: View {
 
 In this example the parent view PlayerView keeps a state variable isPlaying and passes it down the PlayButton view. Notice the `$` before referencing the variable, which allows us to reach the property wrapped in a `Binding`. In this subview, we use the binding to isPlaying to toggle it's value on a button press. This causes both the views to re-render because the binding changes the value at the source of truth.
 
+**`ObservableObject`**
+
+A class that conforms to this protocol can be used to refresh views when their `Published` attributes change.
+
+**`Published`**
+
+Class attributes can be wrapped with `Published`, which allows other variables to subscribe to their changes.
+
+**`StateObject`**
+
+When instantiating an object of a class that conforms to the `ObservableObject` protocol inside a parent view, we use the `StateObject` wrapper. The behaviour of this object is similar to the `State` wrapper defined above.
+
+**`ObservedObject`**
+
+When passing an instance of a class that conforms to the `ObservableObject` protocol inside a child view, we use the`ObservedObject` wrapper. The behaviour of this object is similar to the `Binding` wrapper defined above. Here is an example of a class and their views in use:
+
+```swift
+class UserProgress: ObservableObject { // Define class and protocol
+    @Published var score = 0 // Published attribute
+}
+
+struct ContentView: View {
+    @StateObject var progress = UserProgress() // Source of truth
+
+    var body: some View {
+        VStack {
+            Text("Your score is \(progress.score)")
+            InnerView(progress: progress)
+        }
+    }
+}
+
+struct InnerView: View {
+    @ObservedObject var progress: UserProgress // Binding from parent
+
+    var body: some View {
+        Button("Increase Score") {
+            progress.score += 1 // Updating this refreshes views
+        }
+    }
+}
+```
+
+In this example we have a UserProgress class with a published score attribute. An instance of UserProgress is instantiated in the parent view ContentView and its binding is passed to InnerView. When the button is pressed in the InnerView, the published attribute score changes, which tells SwiftUI to re-render the views that reference this instance of the observable object, thus the score is refreshed on every button tap.
+
 
 
 
