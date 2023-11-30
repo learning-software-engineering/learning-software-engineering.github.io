@@ -50,9 +50,11 @@ We also want to pick colors that denote the appropriate feelings that the associ
 
 #### Example
 Since creating a repository is something that is incentivized by GitHub, their objective is to draw users' attention to the button as much as possible. GitHub uses the color bright green to show contrast against the otherwise white background, directing users' focus toward the button. The color green also evokes feelings of correctness and positivity, which encourages the users to click on the button.
+
 <img width="695" alt="Screenshot 2023-11-27 at 10 23 56 AM" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/107783734/413c350c-3b79-42f1-8360-f3e04848f07b">
 
 On the other hand, deleting a repository is not something that is necessarily encouraged, and can have negative consequences. GitHub portrays this idea by using the color red to evoke feelings of caution and negativity, and to alert the users that this action is dangerous. In addition, the deletion buttons do not stand out from the background as much as the green button (shown above) did, as they had less contrast to the background. This is to prevent drawing the users' attention to these potentially dangerous and consequential actions.
+
 <img width="633" alt="Screenshot 2023-11-27 at 10 47 32 AM" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/107783734/6eab108e-b1c1-4d76-8e8a-3c9c61245566">
 
 ### Screens for Mobile Games
