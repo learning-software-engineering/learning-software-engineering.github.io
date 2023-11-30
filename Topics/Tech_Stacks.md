@@ -55,5 +55,4 @@
 ### [Inter-process Communication(IPC) with fork() and pipe() in C](./Tech_Stacks/Fork_and_Pipe.md)
 ### [Introduction to PHP](./Tech_Stacks/PHP.md)
 ### [Pythonic Iteration Patterns](./Tech_Stacks/Pythonic-Iteration-Patterns.md)
-### [Introcuction to SCSS](./Tech_Stacks/SCSS.md)
 ### [What is Web Assembly?](./Tech_Stacks/Web-Assembly.md)
