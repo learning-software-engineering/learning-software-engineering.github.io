@@ -68,11 +68,11 @@ Check https://www.w3schools.com/sql/sql_datatypes.asp for the list of datatypes,
 Reaction policies are actions defined on a database level to manage referential integrity constraints, especially when a referenced record is affected by a change (update or delete).
 Some of the most common reaction policies are :
 - CASCADE<br>
-  This action propagates the changes (update or delete) to the related rows automatically. For instance, if a record in a parent table is deleted, CASCADE will automatically delete all related records in the child table that reference the deleted record.
+  This action replicates the same changes (update or delete) to the related rows automatically. For example, if a record in a parent table is deleted, CASCADE will automatically delete all related records in the child table that reference the deleted record.
 - SET NULL<br>
-  With this action, if a referenced record is deleted or updated, the foreign key columns in the referencing table are set to NULL. This means the reference will no longer exist.
+  With this action, if a referenced record is deleted or updated, the foreign key columns in the referencing table are set to NULL.
 - RESTRICT<br>
-  This action prevents changes that would violate referential integrity. For instance, it prevents the deletion or update of a referenced record if there are still related records in the referencing table.
+  This action prevents changes that would violate referential integrity. For example, it prevents the deletion or update of a referenced record if there are still related records in the referencing table.
 
 ### Best Practices for Database Structure
 When it comes to practices, there are a lot of practices that one can adopt in order to build a nice and efficient. Here are some of the main things to keep in mind while building a database.
