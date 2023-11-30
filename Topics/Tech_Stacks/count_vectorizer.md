@@ -2,11 +2,11 @@
 
 1.[Introduction](#introduction)
 
-2.[How it works](#how it works)
+2.[How it works](#how-it-works)
 
 3.[Usage](#usage)
 
-4.[Additional resources](#additional resources)
+4.[Additional resources](#additional-resources)
 
 ***Introduction:***
 
