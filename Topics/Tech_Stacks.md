@@ -21,6 +21,7 @@
 ### [Introduction to Reactstrap](./Tech_Stacks/Reactstrap.md)
 ### [Learning Nodemailer](./Tech_Stacks/Nodemailer.md)
 ### [Learning Firebase for Serverless Backends and Cloud Functions](./Tech_Stacks/FirebaseServerlessCloud.md)
+### [Learning Ruby on Rails](./Tech_Stacks/Ruby_on_Rails.md)
 ### [React Components Guide](./Tech_Stacks/React_Components.md)
 ### [Learning Peewee ORM and Pydantic Models](./Tech_Stacks/Peewee_and_Pydantic_models.md)
 ### [Flutter](./Tech_Stacks/Flutter.md)
