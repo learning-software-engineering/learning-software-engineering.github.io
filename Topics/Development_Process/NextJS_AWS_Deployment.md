@@ -40,7 +40,7 @@ Now its time to connect to your EC2 instance from your machine.
 1) In order to make your app feel at home, run `npm i` to install all your node modules into this local repository.
 2) Next, build your project, by running `npm run build'. Your output should look something like this.![image](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/62919149/a5ca3219-0488-491e-bdbf-b3513f730811)
 3) Finally, to deploy your app as a background process on your cloud server, run `npm start &`.
-4) 
+4) Using the public IPv4 link, with `:YOUR_PORT_NUMBER`, you should see your deployed Next.js app up and running!
 
 
 
