@@ -22,7 +22,6 @@
 ### [Getting Started With Docker](./Development_Process/Docker.md)
 
 ### [Getting Started With WSL 2](./Development_Process/WSL.md)
-### [Setting up Conda for multiple Python environments](./Development_Process/Conda/Setup_Conda.md)
 
 ## Nginx
 
@@ -60,15 +59,12 @@ The SOLID principles are:
 #### Single Responsibility Principle (SRP): 
 - A class should only have one cause to change, according to the Single Responsibility Principle (SRP). According to the Single Responsibility Principle (SRP), each class or module should focus on a single concern, ensuring ease of understanding and modification. 
 
-
 - **Advantage**:  This principle promotes maintainability by isolating responsibilities, reducing potential bugs caused by interconnected changes. Each class or module focuses on a single concern, making it easier to understand, test, and modify. 
 
 #### Open/Closed Principle (OCP)
-
 - Software entities (classes, modules, functions, etc.) should be available for extension but closed for modification, according to the available/Closed Principle (OCP). It means system should be able to introduce new functionality without requiring changes to the existing code. Interfaces, polymorphism, and generalization are used to accomplish this.
 
 - **Advantage**: OCP achieves stability by encouraging developers to create adaptable and scalable systems that accommodate changes through extensions rather than direct modifications. This promotes a more stable codebase and reduces the risk of introducing bugs in previously functioning code.
-
 
 #### Liskov Substitution Principle (LSP)
 -  Subtypes must be able to be used in place of their parent types. According to this concept, it should be possible to swap out objects from a superclass for objects from a subclass without having any negative effects on the program's correctness. This necessitates abiding by the superclass's compact.
@@ -79,7 +75,6 @@ The SOLID principles are:
 - This principle emphasizes that a client should not be forced to implement an interface if it does not use all of the methods defined by the interface. 
 
 - **Advantage**: Promotes flexibility and avoids unnecessary dependencies. This helps to avoid the creation of fat interfaces, which are interfaces that contain more methods than the client needs.
-
 
 #### Dependency Inversion Principle (DIP)
 - High-level modules should not depend on low-level modules. Both should depend on abstractions. Abstractions should not depend on details. Details should depend on abstractions. This principle suggests that classes should depend on abstractions rather than concrete implementations, which makes the system more flexible and easier to modify.
@@ -144,7 +139,6 @@ This is only a simplification of what "Clean Architecture" is; the topic is so v
 
 ## Clean coding
 ### [Coding and commenting styles](./Development_Process/clean_coding_styling.md)
-
 
 ## Prompt Engineering
 ### [Basics of Prompt Engineering](./Development_Process/Prompt_Engineering.md)
