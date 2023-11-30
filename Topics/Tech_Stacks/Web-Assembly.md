@@ -50,6 +50,8 @@ Once you have run your server, if everything works as expected you should see "H
 
 ## Sources & Additional Reading
 
+Emscripten: https://emscripten.org/
+Emscripten Downloads and Instructions: https://emscripten.org/docs/getting_started/downloads.html
 WASM Example: https://developer.mozilla.org/en-US/docs/WebAssembly/C_to_wasm \
 WASM Project and Documentation: https://webassembly.org/
 
