@@ -27,6 +27,9 @@ Potential Topics--
         1. Set up
     8. Unity
         1. Introduction to Unity Basics
+        2. A Beginner's Guide for Unity UI Design 
+    9. Python
+        1. Pythonic iteration patterns
         
 - Software Tools
     1. Git
@@ -64,6 +67,7 @@ Potential Topics--
         3. Build requirements
             1. requirements.txt
             2. packages
+            3. CMakeLists.txt
         4. Deployment
             1. Heroku
             2. AWS
@@ -78,6 +82,7 @@ Potential Topics--
     3. SOLID Principles
     4. Code Smells
     5. QA testing
+    6. Introduction to Conda (Python) 
 - Professionalism
     1. Customer engagement
         1. Meeting best practices
@@ -97,3 +102,4 @@ Potential Topics--
     1. Beginner's guide to product management and becoming a successful product manager with case studies.
 - Other useful resources
 - Teamwork
+    1. Effective Leadership
