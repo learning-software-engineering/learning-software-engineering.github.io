@@ -1,6 +1,7 @@
 ## Tech Stacks
 
 ### [Learning MySQL for databases](./Tech_Stacks/Learning_MySQL.md)
+### [Getting Started With Apache Kafka](./Tech_Stacks/Apache_Kafka.md)
 ### [Postman API Testing](./Tech_Stacks/Postman_Backend_Testing.md)
 ### [FastAPI](./Tech_Stacks/FastAPI.md)
 ### [Nuxt3](./Tech_Stacks/Nuxt3.md)
