@@ -24,19 +24,19 @@ There are great legal implications to breaking ethical laws, and being unaware o
 ## PIPEDA
 Canada's Personal Information Protection and Electronic Documents Act (PIPEDA) is a set of laws regarding data collection and use in the context of businesses. To summarize, here is what it requires:
 
-* Consent: Organizations must obtain consent when collecting, using, or disclosing personal information.
-* Purpose Limitation: Organizations must collect personal information for a specific purpose and cannot use it for other reasons without consent.
-* Limited Collection: Organizations must only collect information necessary for the identified purpose.
-* Accuracy: Organizations must ensure that the collected information is accurate, complete and up-to-date.
-* Safeguards: Organizations must implement security measures to protect personal information against unauthorized access, disclosure, or misuse.
-* Openness: Organizations must be transparent about their policies and practices related to the handling of personal information.
-* Individual Access: Individuals have the right to access their own personal information held by an organization and request corrections if necessary.
-* Challenging Compliance: Individuals can challenge an organization's compliance with PIPEDA and seek recourse.
+* **Consent**: Organizations must obtain consent when collecting, using, or disclosing personal information.
+* **Purpose Limitation**: Organizations must collect personal information for a specific purpose and cannot use it for other reasons without consent.
+* **Limited Collection**: Organizations must only collect information necessary for the identified purpose.
+* **Accuracy**: Organizations must ensure that the collected information is accurate, complete and up-to-date.
+* **Safeguards**: Organizations must implement security measures to protect personal information against unauthorized access, disclosure, or misuse.
+* **Openness**: Organizations must be transparent about their policies and practices related to the handling of personal information.
+* **Individual Access**: Individuals have the right to access their own personal information held by an organization and request corrections if necessary.
+* **Challenging Compliance**: Individuals can challenge an organization's compliance with PIPEDA and seek recourse.
 
 In general, when designing software that collects user data, you must ensure that you only collect data that users consent to being collected, and only use it for the reasons that they consented to. Full transparency is also required, as users have a right to know which data you are storing if it pertains to them.
 
 ## Case Studies
-When evaluating the ethical quality of a service, we can look at three main factors: privacy, consent and security. 
+When evaluating the ethical quality of a service, we can look at four main factors: privacy, consent, security and accuracy. 
 
 ### Facebook and Cambridge Analytica
 **Violation of Privacy**
@@ -62,7 +62,7 @@ On March 24th, 2023, it was revealed that Open AI's system had an easily exploit
 Open AI was thankfully able to detect this issue and take ChatGPT offline before it could impact any more than 1% of their users. However, with a large user base, 1% still implies many affected people, and this raises concerns for future problems as their user base continues to grow.
 
 ### Amazon
-**Biased Algorithm**
+**Violation of Accuracy**
 
 Another case of unethical computing comes from a hiring algorithm scrapped by Amazon in 2015. Initially created to remove bias that recruiters may have towards candidates, Amazon's algorithm was unfortunatley proved to be just as biased if not more so. Specifically, the algorithm was revealed to have a negative bias towards female candidates, flagging words like "women's" when reveiwing resumes. The reason this happened was because Amazon used a biased dataset to train the algorithm - it was trained using a set of the past 10 years' worth of Amazon resumes, most of the approved ones being from male candidates. Hence, the algorithm "learned" that the ideal Amazon candidate must be male. 
 
@@ -72,14 +72,14 @@ Amazon should have hand-picked the data they trained the algorithm with. Althoug
 Now that you have some insights into what you shouldn't do, the Software Enginnering Code of Ethics details how you should act when making decisions regarding the ethical designs of your work.
 
 The 8 principles of this code of ethics are as follows:
-* Public: Software engineers shall act consistently with the public interest.
-* Client and employer: Software engineers shall act in a manner that is in the best interests of their client and employer consistent with the public interest.
-* Product: Software engineers shall ensure that their products and related modifications meet the highest professional standards possible.
-* Judgment: Software engineers shall maintain integrity and independence in their professional judgment.
-* Management: Software engineering managers and leaders shall subscribe to and promote an ethical approach to the management of software development and maintenance. 
-* Profession: Software engineers shall advance the integrity and reputation of the profession consistent with the public interest.
-* Colleagues: Software engineers shall be fair to and supportive of their colleagues.
-* Self: Software engineers shall participate in lifelong learning regarding the practice of their profession and shall promote an ethical approach to the practice of the profession.
+* **Public**: Software engineers shall act consistently with the public interest.
+* **Client and employer**: Software engineers shall act in a manner that is in the best interests of their client and employer consistent with the public interest.
+* **Product**: Software engineers shall ensure that their products and related modifications meet the highest professional standards possible.
+* **Judgment**: Software engineers shall maintain integrity and independence in their professional judgment.
+* **Management**: Software engineering managers and leaders shall subscribe to and promote an ethical approach to the management of software development and maintenance. 
+* **Profession**: Software engineers shall advance the integrity and reputation of the profession consistent with the public interest.
+* **Colleagues**: Software engineers shall be fair to and supportive of their colleagues.
+* **Self**: Software engineers shall participate in lifelong learning regarding the practice of their profession and shall promote an ethical approach to the practice of the profession.
 
 These principles can be applied in many ways. Below are some examples of questions you should ask yourself when designing software.
 
