@@ -37,7 +37,7 @@ Node.js is an open-source JavaScript server environment. It's free and runs on v
 ### On Mac
 
 1. **Download the Installer:**  
-    Download official Node.js for Mac from [here](https://nodejs.org/en/download/). Choose the right version for your local machine. Then a .msi file will be downloaded to your browser. Choose a location to save that file.
+    Download official Node.js for Mac from [here](https://nodejs.org/en/download/). Choose the right version for your local machine. Then a .pkg file will be downloaded to your browser. Choose a location to save that file.
 2. **Run Node.js Installer:**  
     The installer will be opened automatically, follow these steps:  
     Introduction > Continue License > Select Continue > Agree Installation Type > Install > Authenticate with your Mac to allow the Installation > Install Software Summary > Close.   
@@ -66,11 +66,11 @@ server.listen(port, hostname, () => {
 });
 ```
 
-- The createServer() is a method of creating new server.
-- The server is set to port 300
+- The createServer() is a method of creating new server
+- The server is set to port 3000
 - When a request is received, the request event is called and will provide two objects: a request and a response
 - The request is usually set by json strings, see details here: https://www.tutorialspoint.com/nodejs/nodejs_restful_api.htm
-- The response is used to return data to server, in this case it return a status of 200, the header and the "Hello World" argument.
+- The response is used to return data to server, in this case it return a status of 200, the header and the "Hello World" argument
 
 
 
