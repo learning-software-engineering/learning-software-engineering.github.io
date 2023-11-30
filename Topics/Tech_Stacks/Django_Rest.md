@@ -47,12 +47,19 @@ Django Rest Framework is a popular library for building RESTful APIs with Django
  ```
  
  In order to add Django Rest Framework to your project, open the settings.py file and add 'rest_framework' to the INSTALLED_APPS list: ```INSTALLED_APPS = [..., 'rest_framework']```
- 
+  
+ After installing and configuring Django Rest Framework, we may now create a simple API. The first step is learning how to define a model in the database.
 
- ### How it Works
- 
- 
- After installing and configuring Django Rest Framework, we may now create a simple API. We first create a new model to represent our API resource. To illustrate the use of Django Rest Framework, we'll create a simple model for a todo item with two fields: its title as a CharField, i.e., a string and its complete as a BooleanField, i.e., a boolean value. We first create a new file called models.py in the API app folder by adding the following code:
+ ### Django ORM
+ As Django is a backend framework, it needs a database to store any data used by the web application. Django supports relational databases through its own built-in ORM. An [ORM](https://www.freecodecamp.org/news/what-is-an-orm-the-meaning-of-object-relational-mapping-database-tools/) (Object Relational Mapper) provides a layer of abstraction from the database, allowing the user to define relations and make queries using objects, rather than having to write raw SQL code. This makes ORMs suitable for working with object-oriented programming. Another benefit of ORMs is that the application is separated from the actual database implementation, which means the database can be changed (for example, from SQLite to PostgreSQL once the app is ready for production) without affecting the app.
+
+ ### Defining a model
+
+Using the Django ORM, we can define models in the database by creating Python classes. Each table is represented by a class, with the columns represented by attributes. Django provides field types for various SQL data types. 
+
+Django also comes with some predefined models, such as the [User model](https://docs.djangoproject.com/en/4.2/topics/auth/default/#user-objects) with built-in authentication. We won't be using the User model in this tutorial, but it can be very useful for applications that require users to have accounts. 
+
+To create our API, we must first create a new model to represent our API resource. To illustrate the use of Django Rest Framework, we'll create a simple model for a to-do item with two fields: its title as a string, and its completed status as a boolean value. We first create a new file called models.py in the API app folder and define our model:
 
 ``` {python}
 from django.db import models
@@ -61,6 +68,24 @@ class TodoItem(models.Model):
     title = models.CharField(max_length=200)
     completed = models.BooleanField(default=False)
 ```
+
+For this model, we have used a CharField for the string title. A CharField is used for small amounts of text, with a default max length of 255 characters. We have defined the max length to be 200 characters in this case. We have also used a BooleanField for the boolean completion status, and we have explicitly defined the default value to be False. Thus, whenever a value isn't provided for the completed field, it will automatically be set to False. 
+
+Django has many more field types to represent various data types. Aside from the max length and default value, there are also other options that can be passed to these field types, such as whether a value can be null and whether a value can be blank. More information about field types and field options can be found [here](https://docs.djangoproject.com/en/4.2/ref/models/fields/).
+
+Now that we have created a new model, we must create a migration for these changes to reflect in the database.
+
+### Migrations
+A migration is a file that tells the ORM what changes have been made to the models. Whenever we make changes to our models, we must run the following two commands:
+- ```python3 manage.py makemigrations```: This command creates a migration file containing all the changes made since the last migration, similar to a Git history. These changes are not auto-applied as changing the database structure is an important (and potentially dangerous) operation that can result in data loss.
+- ```python3 manage.py migrate```: This command applies changes from any unapplied migration files to the database using SQL code. This syncs the state of the database tables with the models defined as Python classes.
+
+Be VERY careful with your migrations. If you accidentally delete a migration file, edit the migration file by hand, or edit the same model as someone else at the same time, you could create migration errors that are very complicated to resolve. If you are ever unsure, consult the [documentation](https://docs.djangoproject.com/en/4.2/topics/migrations/)!  
+
+### Querying models
+Once the database is fully set up with our models, we can write code that queries the database to find the specific data that we want. Each model has a ```.objects``` attribute, and all queries are methods of this attribute. The most basic query would be to get all the objects in that table - for our Todo class, this is done using ```TodoItem.objects.all()```, which returns a QuerySet (basically an unordered list) of all the TodoItem objects. There are many other queries found [here](https://docs.djangoproject.com/en/4.2/topics/db/queries/) that can be used to filter based on specific requirements and create and update objects.
+
+ ### Creating an API
 
 Assuming we want to create an API for your TodoItem model that allows clients to create, read, update, and delete TodoItem instances. We may define a serializer class in serializers.py in the app API folder that converts TodoItem instances to JSON. We add the following code in serializers.py:
 
@@ -109,7 +134,7 @@ urlpatterns = [
 ]
 ```
 
-All in all, we have now built a simple API with the ability to list, create, update and delete todo list items. One can test the API by starting the Django development server using ``` python3 manage.py runserver ``` and visiting http://localhost:8000/todos/ in a web browser.
+All in all, we have now built a simple API with the ability to list, create, update and delete todo list items. One can test the API by starting the Django development server using ``` python3 manage.py runserver ``` and visiting http://localhost:8000/todos/ in a web browser. Running this command will also show any errors that need to be fixed in the shell, and the server continuously checks for errors and updates whenever the code is changed.
 
 ### Extra Resources
 
