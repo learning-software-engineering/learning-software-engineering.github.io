@@ -57,24 +57,25 @@ SOLID is a mnemonic acronym that represents a set of five very important softwar
 The SOLID principles are:
 
 #### Single Responsibility Principle (SRP): 
-- A class should only have one cause to change, according to the Single Responsibility Principle (SRP). According to this theory, a class ought to have just one duty, which implies that there ought to be just one motivation for change.
+- A class should only have one cause to change, according to the Single Responsibility Principle (SRP). According to the Single Responsibility Principle (SRP), each class or module should focus on a single concern, ensuring ease of understanding and modification. 
 
-- **Advantage**: Improved maintainability and readability. Each class or module focuses on a single concern, making it easier to understand, test, and modify. Changes in one responsibility won't affect the others, reducing potential side effects and bugs.
+
+- **Advantage**:  This principle promotes maintainability by isolating responsibilities, reducing potential bugs caused by interconnected changes. Each class or module focuses on a single concern, making it easier to understand, test, and modify. 
 
 #### Open/Closed Principle (OCP)
 
-- Software entities (classes, modules, functions, etc.) should be available for extension but closed for modification, according to the available/Closed Principle (OCP). According to this principle, a system should be able to introduce new functionality without requiring changes to the existing code. Interfaces, polymorphism, and generalization are used to accomplish this.
+- Software entities (classes, modules, functions, etc.) should be available for extension but closed for modification, according to the available/Closed Principle (OCP). It means system should be able to introduce new functionality without requiring changes to the existing code. Interfaces, polymorphism, and generalization are used to accomplish this.
 
-- **Advantage**: Enhanced extensibility and stability. This promotes a more stable codebase and reduces the risk of introducing bugs in previously functioning code.
+- **Advantage**: OCP achieves stability by encouraging developers to create adaptable and scalable systems that accommodate changes through extensions rather than direct modifications. This promotes a more stable codebase and reduces the risk of introducing bugs in previously functioning code.
 
 
 #### Liskov Substitution Principle (LSP)
 -  Subtypes must be able to be used in place of their parent types. According to this concept, it should be possible to swap out objects from a superclass for objects from a subclass without having any negative effects on the program's correctness. This necessitates abiding by the superclass's compact.
 
-- **Advantage**: Ensures consistency and compatibility within class hierarchies. This fosters code reusability and allows for easier substitution of objects within the same inheritance tree.
+- **Advantage**: This principle fosters code reusability and allows for easier substitution of objects within the same inheritance tree. It simplifies maintenance, reducing the need for extensive modifications when introducing new objects or making alterations within the hierarchy.
 
 #### Interface Segregation Principle (ISP)
-- Clients should not be forced to depend on interfaces they do not use. This principle states that a client should not be forced to implement an interface if it does not use all of the methods defined by the interface. 
+- This principle emphasizes that a client should not be forced to implement an interface if it does not use all of the methods defined by the interface. 
 
 - **Advantage**: Promotes flexibility and avoids unnecessary dependencies. This helps to avoid the creation of fat interfaces, which are interfaces that contain more methods than the client needs.
 
@@ -84,7 +85,7 @@ The SOLID principles are:
 
 - **Advantage**: Encourages loose coupling and easier maintenance of the system. This facilitates easier modifications, replacements, and testing, as changes in low-level modules don’t affect the higher-level ones.
 
-## Resturant example of each principle
+## Restaurant example of each principle
 
 #### SRP
 Consider a **Chef** in a restaurant. Initially, the chef might handle multiple responsibilities: preparing dishes, managing inventory, and overseeing kitchen hygiene. Adhering to SRP, distinct roles are established. The chef focuses solely on cooking, while inventory management becomes the responsibility of a dedicated inventory manager. 
