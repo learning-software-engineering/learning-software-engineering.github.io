@@ -47,11 +47,39 @@ Furthermore, test design should closely mimic the way a user interacts with the 
 
 By structuring tests in this user-centric manner, developers ensure that the tests not only verify the correctness of the components but also validate their functionality from an end-user perspective. This approach enhances the adaptability of tests to changes in the application's behavior and promotes the creation of more meaningful and reliable test suites.
 
+## React Testing Library Resources
+
+To enhance your testing capabilities with React Testing Library, it's beneficial to explore specific resources that provide detailed information on queries, event simulation, and handling asynchronous code:
+
+1. Querying Elements:
+	- When seeking optimal methods for querying elements on the page, refer to the React Testing Library Cheatsheet for Queries available at: [React Testing Library Cheatsheet for Queries](https://testing-library.com/docs/react-testing-library/cheatsheet/#queries)
+
+2. Simulating User Interaction:
+	- For simulating user interactions, such as clicking, typing, and toggling, explore the API documentation on firing events: [React Testing Library API - Events](https://testing-library.com/docs/dom-testing-library/api-events)
+	- Additionally, for a comprehensive list of events supported, visit the event map repository on GitHub: [All Testing Library Events - GitHub Repository](https://github.com/testing-library/dom-testing-library/blob/main/src/event-map.js)
+
+3. Handling Asynchronous Code:
+	- When dealing with asynchronous code and waiting for specific changes or events, refer to the asynchronous documentation in the React Testing Library API: [React Testing Library API - Async](https://testing-library.com/docs/dom-testing-library/api-async/)
+
+4. Matchers (Assertions):
+	- For assertions in your tests, including custom matchers, refer to the [Jest-Dom documentation](https://github.com/testing-library/jest-dom#custom-matchers) for a comprehensive guide on available matchers and their usage.
+
+For more in-depth information and examples, refer to the official React Testing Library documentation:
+
+- [React Testing Library Documentation](https://testing-library.com/docs/react-testing-library/example-intro)
+
+- [React Testing Library Cheatsheet](https://testing-library.com/docs/react-testing-library/cheatsheet)
+
+
 ## Example (User Login)
 
 The following test is one way to test a successful login action. After pressing the button, the test tries to find a "Logout" button on the screen that should have been rendered. There are many other ways to do this depending on your application screens, but the goal of the test is to detect some change in the screen that only could have occured if the login was successful.
 
 ```
+import React from 'react';
+import { render, screen } from '@testing-library/react';
+import App from './App';
+
 it("should redirect to home page when logged in successfully", async () => {
 	render(<App />);
 	const emailField = screen.getByLabelText("Email");
@@ -66,22 +94,6 @@ it("should redirect to home page when logged in successfully", async () => {
 	expect(logoutText).toBeVisible();
 });
 ```
-
-## Official documentation (with more examples)
-
-For more in-depth information and examples, refer to the official React Testing Library documentation:
-
-- [React Testing Library Documentation](https://testing-library.com/docs/react-testing-library/example-intro)
-
-- [React Testing Library Cheatsheet](https://testing-library.com/docs/react-testing-library/cheatsheet)
-
-- [React Testing Library API - Events](https://testing-library.com/docs/dom-testing-library/api-events)
-
-- [All Testing Library Events - GitHub Repository](https://github.com/testing-library/dom-testing-library/blob/main/src/event-map.js)
-
-- [React Testing Library API - Async](https://testing-library.com/docs/dom-testing-library/api-async/)
-
-- [Jest-Dom matchers documentation](https://github.com/testing-library/jest-dom#custom-matchers)
 
 ## Codesandbox Example
 You can find runnable examples for many common use cases on Codesandbox. Refer to this example found in the official documentation: [codesandbox example](https://codesandbox.io/s/github/kentcdodds/react-testing-library-examples/tree/main/).
