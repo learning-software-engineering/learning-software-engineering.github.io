@@ -11,6 +11,9 @@ This process was invented to address issues in automated document searching. For
 
 Instructions:
 
+Before beginning, one should have a collection or corpus of documents ready. This could include newspaper articles and blog posts. The more documents you can run against the Vectorizer,
+the more accurate the comparisons will be.
+
 1. Begin by installing the python library scikit-learn. This can be done through the pip installer with the command:
 
     pip install scikit-learn
@@ -33,12 +36,46 @@ Instructions:
     tfidf_matrix = tfidf_vectorizer.fit_transform(your_documents)
 
 
-
 5. The complete TF-IDF matrix can be seen in the tfidf_matrix variable. This can be outputted into a dataframe using the pandas library
    or otherwise and the results can be displayed and interpreted for your program.
 
 By following these instructions, you can effectively use TF-IDF with the TfidfVectorizer in scikit-learn to preprocess your text data for various machine learning tasks such as classification, 
 clustering, or information retrieval.
+
+Example input and output:
+
+Say we had our list of documents. (Short strings for example)
+
+docs=["the house had a tiny little mouse", 
+"the cat saw the mouse", 
+"the mouse ran away from the house", 
+"the cat finally ate the mouse", 
+"the end of the mouse story" ]
+
+Upon running our instruction steps on these documents, we will see output after the commands:
+
+# print idf values 
+df_idf = pd.DataFrame(tfidf_transformer.idf_, index=cv.get_feature_names(),columns=["idf_weights"]) 
+
+# sort ascending 
+df_idf.sort_values(by=['idf_weights'])
+
+Giving us:
+
+mouse - 1.000
+the   - 1.000
+cat   - 1.693
+house - 1.693
+ate   - 2.098
+away  - 2.098
+...
+tiny  - 2.098
+
+To interpret these values. Notice that mouse and the have the lowest. Which means they appear in all of our documents, 
+meaning that they are not important words. Words such as tiny and away have higher values to show they are unique to 
+a document which makes them more important.
+
+
 
 
 Documentation can be seen here: https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html 
