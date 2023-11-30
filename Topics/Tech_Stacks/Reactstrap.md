@@ -60,7 +60,19 @@ Here is what this file looks like when it is ran locally (using npm start):
 
 <img alt="image" src="https://i.ibb.co/ft8WHq9/Screenshot-2023-11-29-at-8-58-16-PM.png" width="400" height="300">
 
+As you can see, the colour "primary" corresponds to the blue colouring of the button shown in the image. There are many other colour names built in to Reactstrap. Here is a link to the [Reactstrap Button documentation](https://reactstrap.github.io/?path=/docs/components-button--button), which contains more information about styles and colours for the Button component.
 
-Reactstrap offers a large library of componenets. Here is a list of some of the most popular, with links to their documentation:
-- Button
-- 
+In addition to Button, Reactstrap offers a large library of componenets. Here is a list of some of the most popular, with links to their documentation:
+- [Card](https://reactstrap.github.io/?path=/docs/components-card--card)
+- [Carousel](https://reactstrap.github.io/?path=/docs/components-card--card)
+- [Forms](https://reactstrap.github.io/?path=/docs/components-forms--input)
+- [Nav](https://reactstrap.github.io/?path=/docs/components-nav--navs)
+- [Modal](https://reactstrap.github.io/?path=/docs/components-modal--modal)
+- [Table](https://reactstrap.github.io/?path=/docs/components-table--table)
+- [Pagination](https://reactstrap.github.io/?path=/docs/components-pagination--pagination)
+
+And many more can be found on the Reactstrap website [linked here](https://reactstrap.github.io/).
+
+## Conclusion
+You should now be familiar with the purpose of the Reactstrap library. It is a great way to easily create styled React components without having to design your own custom CSS classes. We went over the steps for installing and setting up Reactstrap for usage in your react project, as well as an example of how we apply it in the code. Now that you have an idea of the basics, I encourage you to create your own stylish React componenets using the Reactstrap library, and to follow the links to the documentation to take your Reactstrap development to a new level!
+
