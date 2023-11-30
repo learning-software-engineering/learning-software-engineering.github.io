@@ -31,6 +31,11 @@
 
 ### [Requirements.txt](./Development_Process/Build_Requirements/Requirements_txt.md)
 
+## Github Actions
+
+### [Introduction to Github Actions](./Development_Process/Github_Actions.md)
+
+
 ## Build tools
 ### [Introduction to ```make``` and Makefiles](./Development_Process/Introduction_to_make_and_Makefiles.md)
 
@@ -49,6 +54,10 @@
 ## Serverless Computing
 
 ### [Serverless Computing](./Development_Process/Serverless_AWS_Lambda.md)
+
+## Introduction to Shells
+
+### [Introduction to using Shell](./Development_Process/Shell/intro_to_shell.md)
 
 ## SOLID PRINCIPLES:
 
@@ -134,8 +143,12 @@ This is only a simplification of what "Clean Architecture" is; the topic is so v
 
 - A very detailed explanation of Clean Architecture by Robert C. Martin or Uncle Bob and his book
 
-   - https://www.youtube.com/watch?v=2dKZ-dWaCiU 
-   - https://github.com/ropalma/ICMC-USP/blob/master/Book%20-%20Clean%20Architecture%20-%20Robert%20Cecil%20Martin.pdf 
+  - https://www.youtube.com/watch?v=2dKZ-dWaCiU
+  - https://github.com/ropalma/ICMC-USP/blob/master/Book%20-%20Clean%20Architecture%20-%20Robert%20Cecil%20Martin.pdf
+
+## Code Smells
+
+### [Code Smells](./Development_Process/Code_Smells.md)
 
 ## Clean coding
 ### [Coding and commenting styles](./Development_Process/clean_coding_styling.md)
