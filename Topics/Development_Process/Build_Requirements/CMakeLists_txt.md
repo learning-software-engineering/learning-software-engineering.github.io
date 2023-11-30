@@ -10,87 +10,26 @@
 ---
 ## Brief Introduction to CMake
 
-This article will help readers understand what `CMakeLists.txt` is, why it is used, and provide instructions on how to create a `CMakeLists.txt`. Before getting started, it is important to understand what is CMake. Note that it is presumed that the reader should have the very basic knowledge of C++, Make, and MakeFile.
+This article will help readers understand what `CMakeLists.txt` is, why it is used, and provide instructions on how to create a `CMakeLists.txt`. Before getting started, it is important to understand what CMake is. Note that the reader is presumed to have the very basic knowledge of C++, Make, and MakeFile.
 
-Unlike Make, which is a build system that drives the compiler and other build tools to build your code, CMake (or Cross-platform Make) is a "generator" of build systems that can be used for general purpose build. It is much more high-level that it can generate a low-level build script in Ninja or Make or many other build systems, and then you run it.
+Unlike Make, which is a build system that drives the compiler and other build tools to build your code, CMake (or Cross-platform Make) is a "generator" of build systems that can be used for general purpose builds. It is much more high-level such that it can generate a low-level build script in Ninja or Make or many other build systems that you can run with.
 
 The key feature of CMake is that it supports the cross-platform discovery of system libraries, and automatic discovery and configuration of the toolchain, which is much easier to use than Make.
 
-To install CMake, check their [document](https://cmake.org/download/) on how to download and install on Unix/Linux or Windows platform.
+To install CMake, check their [document](https://cmake.org/download/) on how to download and install on Unix/Linux or Windows.
 
 
 ## What is CMakeLists.txt?
 
 When CMake processes a project, the entry point is a source file called `CMakeLists.txt` in the top level of the source directory.
 
-`CMakeLists.txt` file is the CMake configuration file, which contains a set of directives and instructions describing the project's source files and taargets (executable, library, or both) that will be used to build the program. It determines everything for the building process, from which source files to compile, to which options to choose for the libraries and to present to the users.
+`CMakeLists.txt` is the CMake configuration file, which contains a set of directives and instructions describing the project's source files and targets (executable, library, or both) that will be used to build the program. It determines everything for the building process, from which source files to compile, to which options to choose for the libraries and to present to the users.
 
-## Creating CMakeLists.txt
+Here is a simple example of how it looks like:
+```CMake
+# CMakeLists.txt
 
-### CMake Language
-`CMakeLists.txt` is written in [CMake Language](https://cmake.org/cmake/help/latest/manual/cmake-language.7.html#manual:cmake-language(7)), which consists of comments, [commands](https://cmake.org/cmake/help/latest/manual/cmake-commands.7.html#manual:cmake-commands(7)), and [variables](https://cmake.org/cmake/help/latest/manual/cmake-variables.7.html#manual:cmake-variables(7)). 
-
-* **Comments** start with `#`
-  ```
-  # This is a comment
-  ```
-* **Commands** start with command names and a list of whitespace-separated arguments (case-sensitive).
-  ```
-  find_package(LIBIGL REQUIRED QUIET)
-  ```
-* **Variables** are case-sensitive with only alphanumeric characters and underscores. 
-
-  A number of useful variables are automatically defined by CMake (e.g `CMAKE_CURRENT_SOURCE_DIR`, `PROJECT_NAME`). 
-
-  Use *set* command to set variable names, and *${variable_name}* to reference a varible in command arguments. 
-  ```
-  set(Foo a b c)    # Value of Foo is "a;b;c"
-
-  command(${Foo})   # Foo is replaced by a;b;c 
-                    # and expands to 3 arguments
-  ```
-
-It also provides the basic **Flow Control** - Conditional statements, Looping constructs, and Procedure definitions. Here are the examples:
-
-* **Conditional statements (e.g [if](https://cmake.org/cmake/help/latest/command/if.html#command:if))**
-    ```
-    if(<condition>)
-    <commands>
-    elseif(<condition>)     # optional block, can be repeated
-    <commands>
-    else()                  # optional block
-    <commands>
-    endif()
-    ```
-* **Looping Constructs (e.g [foreach](https://cmake.org/cmake/help/latest/command/foreach.html#command:foreach), [while](https://cmake.org/cmake/help/latest/command/while.html#command:while))**
-    ```
-    foreach(<variable>                  # <variable> to be referenced
-            <list of variables>)        # <list of variables> to replace ${variable}
-    command(${variable} <arguments>)    # ${variable} - current value from the list
-    endforeach()
-
-    while(<condition>)
-    <commands>
-    endwhile()
-    ```
-* **Procedure definitions (e.g [function](https://cmake.org/cmake/help/latest/command/function.html#command:function), [macro](https://cmake.org/cmake/help/latest/command/macro.html#command:macro))**
-    ```
-    function(<function_name> <parameters>)
-    <commands>
-    endfunction()
-
-    macro(<macro_name> <parameters>)
-    <commands>
-    endmacro()
-    ```
-
-For more detailed knowledge of CMake Language, check the **highlighted links** above.
-
-### Key Components and Concepts
-
-A `CMakeLists.txt` typically consists of the following elements:
-
-```
+# The minimum version of CMake required
 cmake_minimum_required(VERSION 3.10)
 
 # Project name
@@ -103,20 +42,94 @@ set(SOURCE_FILES main.cpp)
 add_executable(MyExecutable ${SOURCE_FILES})
 
 ```
+
+## Creating CMakeLists.txt
+
+### CMake Language
+`CMakeLists.txt` is written in [CMake Language](https://cmake.org/cmake/help/latest/manual/cmake-language.7.html#manual:cmake-language(7)), which consists of comments, [commands](https://cmake.org/cmake/help/latest/manual/cmake-commands.7.html#manual:cmake-commands(7)), and [variables](https://cmake.org/cmake/help/latest/manual/cmake-variables.7.html#manual:cmake-variables(7)). 
+
+* **comments** start with `#`
+  ```CMake
+  # This is a comment
+  ```
+* **commands** start with command names and a list of whitespace-separated arguments (case-sensitive).
+  ```CMake
+  find_package(LIBIGL REQUIRED QUIET)
+  ```
+* **variables** are case-sensitive with only alphanumeric characters and underscores. 
+
+  A number of useful variables are automatically defined by CMake (e.g `CMAKE_CURRENT_SOURCE_DIR`, `PROJECT_NAME`). 
+
+  Use *set* command to set variable names, and *${variable_name}* to reference a varible in command arguments. 
+  ```CMake
+  set(Foo a b c)    # Value of Foo is "a;b;c"
+
+  command(${Foo})   # Foo is replaced by a;b;c 
+                    # and expands to 3 arguments
+  ```
+
+It also provides the basic **control flow** - Conditional statements, Looping constructs, and Procedure definitions. Here are the examples:
+
+* **conditional statements (e.g [if](https://cmake.org/cmake/help/latest/command/if.html#command:if))**
+    ```CMake
+    if(<condition>)
+        <commands>
+    elseif(<condition>)     # optional block, can be repeated
+        <commands>
+    else()                  # optional block
+        <commands>
+    endif()
+    ```
+* **looping Constructs (e.g [foreach](https://cmake.org/cmake/help/latest/command/foreach.html#command:foreach), [while](https://cmake.org/cmake/help/latest/command/while.html#command:while))**
+    ```CMake
+    foreach(<variable>                           # similar to `for <variable> in <items>` in python.
+            <items>)                             # list of items that are separated by semicolon or whitespace
+        command(${variable} <arguments>)         # ${variable} - current value from the list
+    endforeach()
+
+    while(<condition>)
+        <commands>
+    endwhile()
+    ```
+* **procedure definitions (e.g [function](https://cmake.org/cmake/help/latest/command/function.html#command:function), [macro](https://cmake.org/cmake/help/latest/command/macro.html#command:macro))**
+    ```CMake
+    function(<function_name> <parameters>)
+        <commands>
+    endfunction()
+
+    macro(<macro_name> <parameters>)
+        <commands>
+    endmacro()
+    ```
+
+For more detailed information on CMake Language, check the **highlighted links** above.
+
+### Key Components and Concepts
+
+A `CMakeLists.txt` typically consists of the following elements:
+
  * **cmake_minimum_required**
 
     CMake version check: the minimum version of CMake that should be used to process the project.
 
-    You can specify a range of versions (as a general rule, set the highest version you've tested with):
+    ```CMake
+    cmake_minimum_required(VERSION 3.10)
     ```
+
+    You can specify a range of versions (as a general rule, set the highest version you've tested with):
+    ```CMake
     cmake_minimum_required(VERSION 3.15...3.25)
     ```
  * **project**
 
     Create project with the name of the project that is given to the cmake command.
 
-    Projects can have versions, descriptions and languages specified.
+    ```CMake
+    project(MyProject)
     ```
+
+    Projects can have versions, descriptions and languages specified.
+    ```CMake
     project(MyProject
         VERSION
             1.0
@@ -126,17 +139,31 @@ add_executable(MyExecutable ${SOURCE_FILES})
             CXX
     )
     ```
- * **add_executable** - add executable target named `MyExecutable` with source files listed in `SOURCE_FILES` variable
+
+* **set a source file**
+  
+    ```CMake
+    # Add main.cpp file of the project root directory as a source file
+    set(SOURCE_FILES main.cpp)
+    ```
+
+ * **add_executable** 
+  
+    ```CMake
+    add_executable(MyExecutable ${SOURCE_FILES})
+    ```
+
+    Add executable target named `MyExecutable` with source files listed in `SOURCE_FILES` variable
 
 #### Other components
 * **Variables and Options** can be set in the `CMakeLists.txt` to control various aspects of the building process.
-    ```
+    ```CMake
     set(CMAKE_CXX_STANDARD 14)              # enables the c++14 standards
     option(BUILD_TESTS "Build tests" ON)    # build options - whether to build tests
     ```
 
 * **Include your directories and headerfiles**
-    ```
+    ```CMake
     # Adds directories to the compiler's include path.
     include_directories("${CMAKE_CURRENT_SOURCE_DIR}/include/")
     ```
@@ -156,7 +183,7 @@ add_executable(MyExecutable ${SOURCE_FILES})
 
     ``` 
     You can add the source files in the `src` directory by:
-    ```
+    ```CMake
     file(GLOB SRC_FILES "*.cpp")
 
     # Create a library or executable target using the source files
@@ -166,22 +193,25 @@ add_executable(MyExecutable ${SOURCE_FILES})
 
 
 * **External Libraries** can be located using `find_package`
-    ```
+    ```CMake
     # Appends the "cmake" directory to the module path
     # CMake modules are used to find and configure external libraries.
     set(CMAKE_MODULE_PATH 
         ${CMAKE_MODULE_PATH} 
         ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 
-    find_package(PACKAGE_NAME)     # Locate the package with PACKAGE_NAME
-
-    if(PACKAGE_NAME_FOUND)
+    find_package(PACKAGE_NAME)              # Locate the package with PACKAGE_NAME
+                            
+    if(PACKAGE_NAME_FOUND)                  # PACKAGE_NAME_FOUND is automatically generated by find_package()
         target_link_libraries (
-            MyExecutable <libaries>         # Links against it.
+            MyExecutable <libaries>         # Links against the libraries within the package.
         )
     endif()
+    ```
 
-    # The if-condition can be omitted if you specify the "REQUIRED":
+    The if-condition can be omitted if you specify the "REQUIRED":
+
+    ```CMake
     find_package(PACKAGE_NAME REQUIRED) 
     ```
 
