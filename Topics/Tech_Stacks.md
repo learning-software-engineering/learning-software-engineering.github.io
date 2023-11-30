@@ -100,10 +100,18 @@
 
 ### [Learning Odata](./Tech_Stacks/Odata.md)
 
+### [Learning about QRcode](./Tech_Stacks/QRcode.md)
+
 ### [Introduction to OpenShift](./Tech_Stacks/OpenShift.md)
+
+### [Django Basics and Django Rest Framework](./Tech_Stacks/Django_Rest.md)
 
 ### [Inter-process Communication(IPC) with fork() and pipe() in C](./Tech_Stacks/Fork_and_Pipe.md)
 
+### [Introduction to PHP](./Tech_Stacks/PHP.md)
+
 ### [Pythonic Iteration Patterns](./Tech_Stacks/Pythonic-Iteration-Patterns.md)
+
+### [Introcuction to SCSS](./Tech_Stacks/SCSS.md)
 
 ### [What is Web Assembly?](./Tech_Stacks/Web-Assembly.md)
