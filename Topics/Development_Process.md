@@ -27,6 +27,10 @@
 
 ### [Introduction to Nginx](./Development_Process/Nginx.md)
 
+## DuckDNS
+
+### [Overcoming Dynamic IPs with DuckDNS](./Development_Process/Duckdns.md)
+
 ## Build requirements
 
 ### [Requirements.txt](./Development_Process/Build_Requirements/Requirements_txt.md)
