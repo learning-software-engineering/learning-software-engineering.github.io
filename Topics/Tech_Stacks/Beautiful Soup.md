@@ -7,6 +7,7 @@
 ### [Parsing HTML](#parsing-html-1)
 ### [Navigating the Parse Tree](#navigating-the-parse-tree-1)
 ### [Searching the Tree](#searching-the-tree-1)
+### [Additional Resources](#addtional-resources-1)
 
 ## Introduction
 
@@ -77,15 +78,18 @@ BeautifulSoup allows for easy navigation of the HTML parse tree:
 
 - **Navigating Siblings**: Tags at the same level can be navigated using `.next_sibling` or `.previous_sibling`.
   ```
-  next_sibling = soup.body.p.next_sibling  # Get the next sibling of the first <p> tag
-  prev_sibling = soup.body.p.previous_sibling  # Get the previous sibling of the first <p> tag
+  # Get the next sibling of the first <p> tag
+  next_sibling = soup.body.p.next_sibling  
+  # Get the previous sibling of the first <p> tag
+  prev_sibling = soup.body.p.previous_sibling
   ```
 ### Navigating Back and Forth
 
 `.next_element` and `.previous_element`: These are used to jump to the next or previous element in the parse tree, not 
 just direct siblings.
   ```
-  next_element = soup.body.p.next_element  # Get the next element in the parse tree after the first <p> tag
+  next_element = soup.body.p.next_element  
+  # Get the next element in the parse tree after the first <p> tag
   ```
 ## Searching the Tree
 
@@ -132,6 +136,7 @@ BeautifulSoup allows you to search for elements based on their text content usin
   element_with_text = soup.find(string="Example text")
   ```
 
+
 ### Get Text Method
 The `.get_text()` method is used to extract all the text from a document or a specific part of it. This method is 
 invaluable when you are interested in the textual content of the HTML elements without any accompanying tags or 
@@ -161,3 +166,66 @@ remove leading and trailing whitespaces from the text.
 clean_text = soup.get_text(strip=True)
 print(clean_text)
 ```
+
+### Extracting Attributes from Tags
+In addition to extracting text from HTML elements, BeautifulSoup also allows you to extract attributes from these 
+elements. This is particularly useful for scraping data like links (href attributes), image sources (src attributes), 
+and other metadata embedded within tags.
+
+#### Basic Approach:
+
+You can access an attribute of an HTML element in the same way you would access a dictionary key in Python
+```
+# Sample HTML content
+html_content = '<a href="https://example.com">Click here!</a>'
+soup = BeautifulSoup(html_content, 'html.parser')
+
+# Extracting the 'href' attribute from the first <a> tag
+link = soup.find('a')['href']
+# you can also use link = soup.find('a').get('href')
+print(link)  # Output: https://example.com
+```
+In this example, `soup.find('a')` locates the first `<a>` tag, and `['href']` directly accesses its href attribute.
+
+#### Handling Multiple Tags:
+If your HTML has multiple `<a>` tags and you want to extract href from all of them, you can iterate over the results:
+
+```
+# Sample HTML content with multiple <a> tags
+html_content = '''
+<a href="https://example.com">Link 1</a>
+<a href="https://example.org">Link 2</a>
+'''
+
+soup = BeautifulSoup(html_content, 'html.parser')
+
+# Extracting 'href' attributes from all <a> tags
+for link in soup.find_all('a'):
+    print(link.get('href'))
+```
+
+In this case, `soup.find_all('a')` fetches all `<a>` tags, and `link.get('href')` is used to safely extract the href 
+attribute. Using `.get()` is safer because it returns None if the attribute doesn't exist, avoiding a KeyError.
+
+#### Extracting Multiple Attributes:
+In cases where you need to extract more than one attribute from an element, you can iterate over the element's 
+attributes:
+
+```
+# Extracting all attributes of the first anchor tag
+html_content = '''
+<a href="https://example.com" id="main_content">Link 1</a>
+'''
+soup = BeautifulSoup(html_content, 'html.parser')
+anchor_tag = soup.find('a')
+for attribute, value in anchor_tag.attrs.items():
+    print(f"{attribute}: {value}")
+```
+This will print out all attributes and their values for the specified element.
+
+## Additional resources
+
+https://realpython.com/beautiful-soup-web-scraper-python/ \
+https://github.com/wention/BeautifulSoup4 \
+https://www.geeksforgeeks.org/implementing-web-scraping-python-beautiful-soup/ \
+https://www.tutorialspoint.com/beautiful_soup/index.htm
