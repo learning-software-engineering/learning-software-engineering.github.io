@@ -8,6 +8,8 @@
 
 ### [Django Project Deployment: AWS, Vercel, and Railway](./Development_Process/Django_Deployment_AWS_Railway_Vercel.md)
 
+### [Node.js Project Deployment: Azure](./Development_Process/Azure_webapp_deployment_with_nodejs.md)
+
 ### [Automated Frontend Deployment with Vercel](./Development_Process/Frontend_Automated_Deployment_Vercel.md)
 
 ### [Flask Application Deployment on Heroku](./Development_Process/Flask_App_Deployment_Heroku.md)
@@ -20,6 +22,7 @@
 ### [Getting Started With Docker](./Development_Process/Docker.md)
 
 ### [Getting Started With WSL 2](./Development_Process/WSL.md)
+### [Setting up Conda for multiple Python environments](./Development_Process/Conda/Setup_Conda.md)
 
 ## Nginx
 
@@ -29,9 +32,8 @@
 
 ### [Requirements.txt](./Development_Process/Build_Requirements/Requirements_txt.md)
 
-## Documentation
-
-### [API documentation with SwaggerHub](./Development_Process/Documentation/Swagger_API_Documentation.md)
+## Build tools
+### [Introduction to ```make``` and Makefiles](./Development_Process/Introduction_to_make_and_Makefiles.md)
 
 ## React Testing Library
 
@@ -40,6 +42,14 @@
 ## URL Sanitization
 
 ### [URL Sanitization](./Development_Process/URL_Sanitization.md)
+
+## Design Decisions
+
+### [GraphQL vs. REST: Which API type to use?](./Development_Process/GraphQL_VS_REST.md)
+
+## Serverless Computing
+
+### [Serverless Computing](./Development_Process/Serverless_AWS_Lambda.md)
 
 ## SOLID PRINCIPLES:
 
@@ -95,5 +105,12 @@ This is only a simplification of what "Clean Architecture" is; the topic is so v
    - https://www.youtube.com/watch?v=2dKZ-dWaCiU 
    - https://github.com/ropalma/ICMC-USP/blob/master/Book%20-%20Clean%20Architecture%20-%20Robert%20Cecil%20Martin.pdf 
 
-## Code Smells
+## Clean coding
 ### [Code Smells](./Development_Process/Code_Smells.md)
+### [Coding and commenting styles](./Development_Process/clean_coding_styling.md)
+
+## Prompt Engineering
+### [Basics of Prompt Engineering](./Development_Process/Prompt_Engineering.md)
+
+## Technical Documents
+### [Intro to Request for Comments (RFCs)](./Development_Process/Technical_Documents/Intro_to_rfcs.md)
