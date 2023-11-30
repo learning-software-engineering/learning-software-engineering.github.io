@@ -1,5 +1,4 @@
-# Expanded Kanban Guide with Additional Categories and Information
-
+# KanBan Introduction and Implementation
 ## Table of Contents
 - [Introduction to Kanban](#introduction-to-kanban)
 - [Why Kanban Suits Software Teams](#why-kanban-suits-software-teams)
@@ -8,6 +7,7 @@
     - [Kanban Cards and Their Role](#kanban-cards-and-their-role)
 - [Benefits of Using Kanban](#benefits-of-using-kanban)
 - [Differences Between Scrum and Kanban](#differences-between-scrum-and-kanban)
+- [Applying Kanban to CSC301 Projects](#applying-kanban-to-csc301-projects)
 - [Guides and Additional Resources](#guides-and-additional-resources)
 
 ---
@@ -71,7 +71,45 @@ Kanban fosters an environment of ongoing improvement through continuous feedback
 | **Key Metrics**         | Velocity                                          | Cycle Time                                        |
 | **Change Philosophy**   | Changes discouraged during the sprint             | Changes can occur at any time                     |
 ---
+## Setting Up Kanban for CSC301 Projects
 
+#### 1. Create a Kanban Board
+   - **Choice of Board:** Decide whether to use a physical board (like a whiteboard with sticky notes) or a digital board (using tools such as Trello, Asana, or Jira).
+   - **Board Layout:** Set up your board with columns to represent different stages of tasks. Common columns include:
+   ![Kanban Columns](Kanban1.png)
+     - "Backlog" for tasks that are identified but not yet started.
+     - "To Do" for tasks that are ready to be worked on.
+     - "In Progress" for tasks currently being worked on.
+     - "Testing" for tasks undergoing testing.
+     - "Done" for completed tasks.
+
+#### 2. Define Tasks
+![Kanban Tasks](Kanban2.png)
+   - **Task Identification:** Break down the CSC301 project into smaller, manageable tasks or user stories. For example, if you're developing a software application, tasks might include writing specific code functions, designing a user interface, or conducting user research.
+   - **Task Representation:** Represent each task as a card or a sticky note on the board, starting in the "Backlog" column.
+
+#### 3. Limit Work in Progress (WIP)
+   - **Setting WIP Limits:** Determine the maximum number of tasks allowed in each column (except for "Backlog" and "Done") to prevent bottlenecks and ensure that team members focus on completing tasks rather than starting new ones.
+   - **Managing Workload:** Adjust WIP limits based on the team's capacity and the complexity of tasks to maintain a steady workflow.
+
+#### 4. Conduct Regular Meetings
+   - **Frequency and Duration:** Organize short, regular meetings (preferably daily or weekly) to review the board's status.
+   - **Meeting Goals:** During these meetings, the team should update the board with the progress of tasks, discuss any blockers or challenges, and plan for upcoming tasks.
+---
+### Example Scenario in a CSC301 Project
+
+#### Task Breakdown
+   - **Project Example:** Consider a project aimed at developing a web application.
+   - **Specific Tasks:** Breakdown tasks such as designing the UI, setting up the backend, writing specific features, conducting tests, etc. Each task is represented as a separate card on the Kanban board.
+
+#### Progress Tracking
+   - **Task Movement:** As work progresses, move each card from "Backlog", "To Do" to "In Progress," then to "Testing," and finally to "Done."
+   - **Visual Indicator:** This movement across the board provides a clear visual indicator of each task's progress and the overall project advancement.
+
+#### Adapting to Changes
+   - **Responding to New Requirements:** In case new features are requested, or significant bugs are discovered, add these as new cards to the board immediately.
+   - **Flexibility:** This process ensures that the team can quickly adapt their priorities and workflow to accommodate new developments or changes in the project requirements.
+---
 ## Conclusion
 
 
@@ -90,3 +128,4 @@ Happy exploring and implementing!
 
 
 ---
+
