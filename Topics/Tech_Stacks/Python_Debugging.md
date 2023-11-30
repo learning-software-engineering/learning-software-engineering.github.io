@@ -3,7 +3,10 @@
 One of the most important skills to have as a software developer is how to debug. Although it can be tempting to simply use print statements everywhere to debug, this method quickly gets messy as the code base grows. Luckily, python has a module called pdb which makes debugging much easier to manage! 
 
 
-Pdb is an interactive source code debugger for Python programs. This tool allows programmers to step through each line of code individually and inspect the values of all the variables. The commands will be discussed in more detail below. 
+Pdb is an interactive source code debugger for Python programs.
+This tool allows programmers to step through each line of code individually and inspect the values of all the variables. 
+It is built into Python already, so no extra installment is needed.
+The commands will be discussed in more detail below. 
 
 Firstly, to get started, you must import pdb into your program, using:
 
@@ -13,7 +16,7 @@ Then, insert the following line of code at the location where you want the debug
 
 ```breakpoint()```
 
-This will allow the debugger to run the program normally up to this line. 
+This will allow the debugger to run the program normally up to this line. Simply run your program to begin stepping through your code.
 
 
 ##PDB Commands 
@@ -42,17 +45,24 @@ If you would like to read more about the further uses of the debugger, you can r
 
 It can be tempting to simply use print statements everywhere to see the immediate values of the variables in the program. It is definitely quick and an intuitive way to debug. However, as your programs increase in length, the code can get very messy very quickly. Having too many print statements can become very difficult to manage. Sometimes, it’s even easy to forget what a print statement was referring to. For these reasons, it is bad practice to use print statements to debug, and tools like pdb should be utilized instead. 
 
-Python also offers other tools to aid with debugging, but these are not inbuilt into Python, unlike pdb. Some of these tools are listed below. 
+# Other Debugging Tools in Python
+
+Python also offers other tools to aid with debugging, but these are not in-built into Python Some of these tools are listed below. 
 
 Pycharm 
 - Pycharm is an IDE that is commonly used to write python scripts
-- It allows you to add a breakpoint using it’s interface, but adding a red dot on one the lines
-- Then, a console will pop up where you can step through each individual line of code 
-- Using PyCharm instead of pdb may be useful if you prefer to use a interactive console, rather than typing out typing out commands
-- Read about how to use the pycharm debugger here: https://www.jetbrains.com/help/pycharm/debugging-your-first-python-application.html#where-is-the-problem 
+- It allows you to add a breakpoint using it’s interface, by adding a red dot on one the lines
+- Then, a console will pop up where you can step through each individual line of code
+- Read about how to use the pycharm debugger here: https://www.jetbrains.com/help/pycharm/debugging-your-first-python-application.html
 
 Sentry 
 - This is a third party error-tracking and performance monitoring tool
-- Specializes in monitoring web applications, which are often written in python 
-- Sentry is useful for monitoring live applications, but can be paid after a certain level of usage.
-- https://sentry.io/for/python/ 
+- Specializes in monitoring web applications, which are often written in python
+- https://sentry.io/for/python/
+
+# Pros and Cons
+| Tool    | Pros                                                                      | Cons                                                                                              |
+|---------|---------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
+| PDB     | Easy and intuitive to use, no extra installment, compatible with any IDE  | No graphical interface, must go back and manually remove the breakpoint statements from your code |
+| PyCharm | Has an interface that is easy to use, don't need to type out the commands | Specific to one IDE, although other IDEs would have similar debugging strategies                  |
+| Sentry  | Useful for monitoring live applications                                   | Can be paid after a certain level of usage                                                        |
