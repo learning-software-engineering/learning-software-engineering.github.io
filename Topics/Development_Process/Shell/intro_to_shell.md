@@ -1,6 +1,7 @@
 # Detailed Introduction to Shell Commands
 
-Shell commands are the primary interface for users to interact with an operating system's services in a Unix or Unix-like environment. These commands are entered into a command-line interface (CLI), such as Bash in Linux or Command Prompt in Windows.
+Shell commands are the primary interface for users to interact with an operating system's services in a Unix or Unix-like environment. These commands are entered into a command-line interface (CLI), such as Bash in Linux, Command Prompt in Windows, and, as of recent versions, Zsh in MacOS, which is now the default shell.
+
 
 ## What is a Shell?
 
@@ -35,6 +36,43 @@ Understanding how to navigate the file system using the command line is a fundam
 - **Relative Path:** Specifies a location relative to the current directory.
 - **Absolute Path:** Specifies a location from the root directory.
 
+#### Simplified Example Scenario
+
+Imagine you have the following directories and files:
+
+```
+/
+└── home/
+    └── user/
+        ├── file1.txt
+        └── folder1/
+            └── file2.txt
+```
+
+#### Absolute Path
+
+An absolute path specifies the location from the root directory (`/`) and always starts with `/`.
+
+- The absolute path to `file1.txt` is `/home/user/file1.txt`.
+- The absolute path to `file2.txt` is `/home/user/folder1/file2.txt`.
+
+#### Relative Path
+
+A relative path specifies the location relative to the current working directory and does not start with `/`.
+
+- If your current working directory is `/home/user/`, the relative path to `file2.txt` is `folder1/file2.txt`.
+- If you are in the directory `/home/user/folder1/`, the relative path to `file1.txt` is `../file1.txt` (where `..` refers to one directory up).
+
+#### Example Usage in a Shell
+
+- Using absolute path: `cat /home/user/file1.txt` (works from any directory).
+- Using relative path: `cat folder1/file2.txt` (works if your current directory is `/home/user/`).
+
+This example succinctly illustrates the usage and difference between relative and absolute paths.
+
+Using relative paths is useful for accessing files within your current directory or subdirectories without typing the full path.
+
+
 ## Basic Navigation Commands
 
 - `pwd`: Print Working Directory. Shows your current directory.
@@ -42,13 +80,17 @@ Understanding how to navigate the file system using the command line is a fundam
 
 - `ls`: Lists files and directories.
   - **Usage:** `ls [options] [directory]`
-  - **Options:** `-l` for detailed view, `-a` to show hidden files.
-  - **Example:** `ls -la ~/Documents` - Lists all files in Documents with details.
+  - **Options:** `-l` for detailed view, `-a` to show hidden files. There are more options available for `ls`, but for brevity, only the most commonly used are listed here.
+
 
 - `cd`: Change Directory. Moves to another directory.
   - **Usage:** `cd [directory]`
   - **Example:** `cd /var/www` - Moves to the `/var/www` directory.
   - **Tip:** `cd ..` moves you up one directory.
+
+Here is an example of using these commands in a shell:
+
+![Basic Navigation Example](./Cmd_eg.jpg)
 
 ## Tips for Effective Navigation
 
@@ -93,8 +135,7 @@ Manipulating files is a frequent task in the command line. Here are some of the 
 ## Tips for Safe File Manipulation
 
 1. **Double-check file names and paths before executing commands**, especially with `rm`.
-2. **Use wildcards (`*`) carefully**, as they can affect multiple files.
-3. **Regularly back up important files** to avoid accidental loss.
+2. **Regularly back up important files** to avoid accidental loss.
 
 These commands form the foundation of file management in the Unix-like systems and are essential for day-to-day operations.
 
@@ -118,10 +159,13 @@ Being able to view and edit files directly from the command line is a valuable s
 - `nano`: A simple, easy-to-use text editor.
   - **Usage:** `nano [file]`
   - **Example:** `nano diary.txt` - Opens `diary.txt` for editing in nano.
+  - For more information, visit [Nano's official documentation](https://www.nano-editor.org/docs.php).
 
 - `vi`/`vim`: More advanced text editors, offering a wide range of features.
   - **Usage:** `vi [file]`
   - **Example:** `vi script.sh` - Opens `script.sh` for editing in vi.
+  - Visit [Vim's official website](https://www.vim.org/) for more information.
+
 
 ## Tips for Editing Files in the CLI
 
