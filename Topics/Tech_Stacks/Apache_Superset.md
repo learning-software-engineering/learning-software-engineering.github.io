@@ -193,6 +193,65 @@ In addition, the DB engine spec must implement these class methods:
 
 For databases like MySQL and Postgres that use the standard format of `engine+driver://user:password@host:port/dbname`, you need to do is add the `BasicParametersMixin` to the DB engine spec, and then define the parameters 2-4 (`parameters_schema` is already present in the mixin).
 
+### Potential connection failure:
+
+Inappropriate setup in Apache Superset can lead to potential connection failure to an external (or even built-in) database. If you encounter this issue, here is a possible solution to fix the problem:
+
+Since Apache Superset will not start without a user-specified value of `SECRET_KEY` in a Superset config file or `SUPERSET_SECRET_KEY` as an environment variable.
+
+To configure your application, you need to create a file `superset_config.py`. Add this file to your `PYTHONPATH` or create an environment variable `SUPERSET_CONFIG_PATH `specifying the full path of the `superset_config.py`.
+
+The following is an example of just a few of the parameters you can set in your superset_config.py file:
+
+```
+# Superset specific config
+ROW_LIMIT = 5000
+
+# Flask App Builder configuration
+# Your App secret key will be used for securely signing the session cookie
+# and encrypting sensitive information on the database
+# Make sure you are changing this key for your deployment with a strong key.
+# Alternatively you can set it with `SUPERSET_SECRET_KEY` environment variable.
+# You MUST set this for production environments or the server will not refuse
+# to start and you will see an error in the logs accordingly.
+SECRET_KEY = 'YOUR_OWN_RANDOM_GENERATED_SECRET_KEY'
+
+# The SQLAlchemy connection string to your database backend
+# This connection defines the path to the database that stores your
+# superset metadata (slices, connections, tables, dashboards, ...).
+# Note that the connection information to connect to the datasources
+# you want to explore are managed directly in the web UI
+# The check_same_thread=false property ensures the sqlite client does not attempt
+# to enforce single-threaded access, which may be problematic in some edge cases
+SQLALCHEMY_DATABASE_URI = 'sqlite:////path/to/superset.db?check_same_thread=false'
+
+# Flask-WTF flag for CSRF
+WTF_CSRF_ENABLED = True
+# Add endpoints that need to be exempt from CSRF protection
+WTF_CSRF_EXEMPT_LIST = []
+# A CSRF token that expires in 1 year
+WTF_CSRF_TIME_LIMIT = 60 * 60 * 24 * 365
+
+# Set this API key to enable Mapbox visualizations
+MAPBOX_API_KEY = ''
+```
+
+Make sure to change:
+
+`SQLALCHEMY_DATABASE_URI`: by default it is stored at ~/.superset/superset.db
+`SECRET_KEY`: to a long random string
+
+
+Adding an initial `SECRET_KEY`
+
+Superset requires a user-specified `SECRET_KEY` to start up. This requirement was added in version 2.1.0 to force secure configurations. Add a strong `SECRET_KEY` to your `superset_config.py` file like:
+
+```
+SECRET_KEY = 'YOUR_OWN_RANDOM_GENERATED_SECRET_KEY'
+```
+
+You can generate a strong secure key with `openssl rand -base64 42` command in terminal.
+
 
 
 ## Extra Resources:
@@ -203,3 +262,4 @@ For databases like MySQL and Postgres that use the standard format of `engine+dr
 * [GitHub Issues for Apache Superset](https://github.com/apache/superset/issues)
 * [Aiven cloud]  (https://aiven.io/)
 * [Apache Superset: Using Database Connection UI] (https://superset.apache.org/docs/databases/db-connection-ui/#setting-images)
+* [Apache Superset: Configuring Superset] (https://superset.apache.org/docs/installation/configuring-superset/)
