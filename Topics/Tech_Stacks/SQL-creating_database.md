@@ -98,6 +98,6 @@ Utilize these keys effectively to establish relationships between tables, enforc
 3. Use consistent naming conventions
 
 
-4. Avoid designing your schema in such a way that there are attributes that can be null.
+4. Construct your schema with the intention of minimizing the presence of nullable attributes.
 
 These are just some ideas and tips to create a basic schema. SQL is a very powerful languages, and you can do a lot more using it!
