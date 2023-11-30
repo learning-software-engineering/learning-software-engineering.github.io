@@ -40,6 +40,10 @@ Let’s create a simple schema for a hospital appointment booking system. Imagin
 
 I will be using LucidChart to create the ER diagrams (https://www.lucidchart.com/blog/getting-started-in-lucidchart)
 
+**ER (Entity Relationship) Diagrams:** Allow us to to describe a relationship between entitites within a system (in our case the tables in our database). You can learn more about them in the link I have provided above.
+
+**NOTE: the main limitation with ER diagarms is that they are not useful for unstructured data (data that doesn't have any relationship between each other)**
+
 First let us think about what tables/relations we will need and what data will be stored in them
 
 We will need a table for all of the types of members and then two other tables to split them into doctors and patients. Let’s for both Doctors and Patients you want to store their name, address, and phone number. 
