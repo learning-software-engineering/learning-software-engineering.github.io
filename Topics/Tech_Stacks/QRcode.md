@@ -10,7 +10,7 @@
 <a id='introduction'></a>
 This document provides introduction to QRcode with guidelines and examples to create QRcode with python library qrcode.
 
-## What is REST?
+## What is QRcode?
 <a id='what-is-QRcode'></a>
 **quick-response code (QRcode)** is is a type of two-dimensional matrix barcode, which can be read by an imaging device, such as a camera, and processed using Reed–Solomon error correction until the image can be appropriately interpreted. The required data are then extracted from patterns that are present in both the horizontal and the vertical components of the QR image.
 
@@ -37,8 +37,9 @@ To use the Python QR Code library, you can install it using the following pip co
 
 ## example
 <a id='example'></a>
-        import qrcode
 
+
+        import qrcode
         # Create a QR code instance
         qr = qrcode.QRCode(
             version=1,
