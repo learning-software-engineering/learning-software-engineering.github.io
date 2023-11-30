@@ -138,8 +138,12 @@ This is only a simplification of what "Clean Architecture" is; the topic is so v
 
 - A very detailed explanation of Clean Architecture by Robert C. Martin or Uncle Bob and his book
 
-   - https://www.youtube.com/watch?v=2dKZ-dWaCiU 
-   - https://github.com/ropalma/ICMC-USP/blob/master/Book%20-%20Clean%20Architecture%20-%20Robert%20Cecil%20Martin.pdf 
+  - https://www.youtube.com/watch?v=2dKZ-dWaCiU
+  - https://github.com/ropalma/ICMC-USP/blob/master/Book%20-%20Clean%20Architecture%20-%20Robert%20Cecil%20Martin.pdf
+
+## Code Smells
+
+### [Code Smells](./Development_Process/Code_Smells.md)
 
 ## Clean coding
 ### [Coding and commenting styles](./Development_Process/clean_coding_styling.md)
