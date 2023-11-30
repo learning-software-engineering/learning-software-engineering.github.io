@@ -1,4 +1,5 @@
-TF-IDF stands for term frequency inverse document frequency. This is a method used in statistics and machine learning that is able to calculate how relevant a word is to a document when compared against a collection of documents.
+TF-IDF stands for term frequency inverse document frequency. This is a method used in statistics and machine learning that is able to calculate how relevant a word is to a 
+document when compared against a collection of documents.
 
 Specific to sklearn.feature_extraction.text.TfidfVectorizer, it multiplies 2 metrics.
 
@@ -7,7 +8,9 @@ Specific to sklearn.feature_extraction.text.TfidfVectorizer, it multiplies 2 met
 
 This is a very fundamental feature often used in Natural Language Processng and helps to get words of interest within machine learning.
 
-This process was invented to address issues in automated document searching. For example, common words like "and", "where", and "then" would be so frequent across all documents that it will be phased out of processing. But if one document focuses on transportation, words such as "public", "transit", and "streetcar" would appear much more frequently in this document compared to others which allows the algorithm to identify the document's most relevant words which we can extract to perform additional processing on.
+This process was invented to address issues in automated document searching. For example, common words like "and", "where", and "then" would be so frequent across all documents that it will
+be phased out of processing. But if one document focuses on transportation, words such as "public", "transit", and "streetcar" would appear much more frequently in this document compared to
+others which allows the algorithm to identify the document's most relevant words which we can extract to perform additional processing on.
 
 Instructions:
 
