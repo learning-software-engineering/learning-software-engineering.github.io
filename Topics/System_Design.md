@@ -4,4 +4,4 @@
 
 ### [Intorudction to Database Schemas and ER Diagrams](./System_Design/database_schemas_ER_diagrams.md)
 
-### [Introduction to Designing an Authentication Service](./System_Design/Authentication_Service_Design.md)
+### [Introduction: Designing an Authentication Service](./System_Design/Authentication_Service_Design.md)
