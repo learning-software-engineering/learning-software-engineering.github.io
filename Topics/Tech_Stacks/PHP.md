@@ -5,11 +5,12 @@
 ### [Why use PHP](#why-use-php-1)
 ### [Setup](#setup-1)
 ### [PHP Basics](#php-basics-1)
+### [PHP Example Use Cases](#php-example-use-cases-1)
 ### [Additional Resources](#additional-resources-1)
 
 
 ## Introduction
-PHP stands for Hypertext Preprocessor, and it is a server-side scripting language designed for web development. This makes it different from client-side languages such as JavaScript, which is executed on the client's browser rather than the web server. PHP is embedded within HTML code and is widely used to create dynamic and interactive web pages. It can be used to perform various tasks such as collecting form data, generating dynamic page content, managing databases, handling cookies and sessions, and more.
+PHP stands for Hypertext Preprocessor, and it is a server-side scripting language designed for web development written in C. This makes it different from client-side languages such as JavaScript, which is executed on the client's browser rather than the web server. PHP is embedded within HTML code and is widely used to create dynamic and interactive web pages. It can be used to perform various tasks such as collecting form data, generating dynamic page content, managing databases, handling cookies and sessions, and more.
 
 Before continuing to learn PHP it is recommended to have a basic understanding of the commmon web development languages:
 - HTML
@@ -26,6 +27,7 @@ Additional advantages of PHP include:
 - It's scalable, and it can be used to create large-scale applications.
 
 You can learn more about the advantages and disadvantages of PHP [here](https://anywhere.epam.com/business/pros-and-cons-of-php).
+
 ## Setup
 To set up PHP on your machine, you will need:
 - A web server
@@ -65,6 +67,56 @@ Hello World!
 ```
 As we can see, the PHP script is embedded directly within the HTML code. By using echo, we can output text to the browser. 
 
+However the above example is the exact same as this static HTML page:
+```html
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My first PHP page</h1>
+
+Hello World!
+
+</body>
+</html>
+```
+Let's take a look at a few more complex examples of PHP in action.
+
+## PHP Example Use Cases
+### Variables
+Variables are used to store information. PHP has no command for declaring a variable. A variable is created the moment you first assign a value to it. Variables in PHP start with the $ sign, followed by the name of the variable. Variable names are case-sensitive. 
+
+```php
+<?php
+    $txt = "Hello World!";
+    $x = 5;
+    $y = 10.5;
+?>
+```
+In the above example, we have created three variables: $txt, $x, and $y. $txt stores the string "Hello World!", $x stores the integer 5, and $y stores the float 10.5. We can output the values of these variables in our HTML document using echo:
+```php
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+    // Display variables in a HTML list
+    $txt = "Hello World!";
+    $x = 5;
+    $y = 10.5;
+    echo "<ul>";
+    echo "<li>$txt</li>";
+    echo "<li>$x</li>";
+    echo "<li>$y</li>";
+    echo "</ul>";
+?>
+
+</body>
+</html>
+```
+You can see that in the above echo calls we don't just use the variables, but we also include HTML tags. By employing more powerful logic, we can make more complex reactive web pages, as PHP can be used to dynamically generate HTML content.   
+
+In addition to variables PHP has much of the functionality you would expect from a programming language, such as loops, conditionals, functions, and more. You can learn more about the specific PHP syntax for those operations [here](https://www.w3schools.com/php/php_if_else.asp).
 ## Additional Resources
 - Much of the information in this guide was taken from [this tutorial](https://www.w3schools.com/php/default.asp) by W3Schools. You can find more information about PHP as well as a step-by-step tutorial on how to get started with PHP on their website.
 - For a great and indepth way of getting started with PHP, check out [this YouTube course by FreeCodeCamp](https://www.youtube.com/watch?v=OK_JCtrrv-c&ab_channel=freeCodeCamp.org).
