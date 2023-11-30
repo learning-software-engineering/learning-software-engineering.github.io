@@ -173,6 +173,24 @@ To connect your workspace to Github, go to https://linear.app/settings/integrati
 
 After linking your Linear workspace with Github, Linear will automatically track your commits and pull requests to update their statuses. To enable this, you must use the specific branch name for each issue, which you can find on any issue detail page by pressing "Ctrl + Shift + ."
 
+<h3>Linear vs Jira</h3>
+
+This section helps you decided whether Linear or Jira is the right tool for your project by comparing them in detail.
+
+<h4>Advantages of Linear</h4>
+<ul>
+  <li>Linear has a more modern and clean UI interface</li>
+  <li>Linear is easier to set up compared to Jira</li>
+  <li>Linear offers a more streamlined workflow</li>
+</ul>
+<h4>Advantages of Jira</h4>
+<ul>
+  <li>The Atlassian ecosystem has a range of other products for software engineering that can be integrated with Jira easily, like Confluence and BitBucket</li>
+  <li>Jira is more flexible and has more customization potential</li>
+  <li>Jira has more comprehensive features, some of which Linear may not have</li>
+</ul>
+
+
 [Azure DevOps](./Product_Management/Azure_DevOps.md) : Azure DevOps is another very useful task management software that helps teams manage projects and tasks.
 
 
