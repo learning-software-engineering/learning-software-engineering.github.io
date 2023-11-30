@@ -63,7 +63,7 @@ Here is what this file looks like when it is ran locally (using npm start):
 
 As you can see, the colour "primary" corresponds to the blue colouring of the button shown in the image. There are many other colour names built in to Reactstrap. Here is a link to the [Reactstrap Button documentation](https://reactstrap.github.io/?path=/docs/components-button--button), which contains more information about styles and colours for the Button component.
 
-In addition to Button, Reactstrap offers a large library of componenets. Here is a list of some of the most popular, with links to their documentation:
+In addition to Button, Reactstrap offers a large library of components. Here is a list of some of the most popular, with links to their documentation:
 - [Card](https://reactstrap.github.io/?path=/docs/components-card--card)
 - [Carousel](https://reactstrap.github.io/?path=/docs/components-card--card)
 - [Forms](https://reactstrap.github.io/?path=/docs/components-forms--input)
@@ -75,4 +75,4 @@ In addition to Button, Reactstrap offers a large library of componenets. Here is
 And many more can be found on the Reactstrap website [linked here](https://reactstrap.github.io/).
 
 ## Conclusion
-You should now be familiar with the purpose of the Reactstrap library. It is a great way to easily create styled React components without having to design your own custom CSS classes. We went over the steps for installing and setting up Reactstrap for usage in your react project, as well as an example of how we apply it in the code. Now that you have an idea of the basics, I encourage you to create your own stylish React componenets using the Reactstrap library, and to follow the links to the documentation to take your Reactstrap development to a new level!
+You should now be familiar with the purpose of the Reactstrap library. It is a great way to easily create styled React components without having to design your own custom CSS classes. We went over the steps for installing and setting up Reactstrap for usage in your react project, as well as an example of how we apply it in the code. Now that you have an idea of the basics, I encourage you to create your own stylish React components using the Reactstrap library, and to follow the links to the documentation to take your Reactstrap development to a new level!
