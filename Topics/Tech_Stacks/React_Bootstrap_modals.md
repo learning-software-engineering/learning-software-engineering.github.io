@@ -48,6 +48,8 @@ function Example() {
 
   return (
     <>
+      //variant is a styling method using vanilla Bootstrap
+      //it is not needed for Modals and vanilla CSS can also be used to stylize it
       <Button variant="primary" onClick={handleShow}>
         Launch demo modal
       </Button>
