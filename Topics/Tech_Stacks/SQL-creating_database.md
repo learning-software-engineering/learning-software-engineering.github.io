@@ -3,7 +3,7 @@
 ## Table of Contents
 1. [Introduction to SQL](#introduction-to-sql)
 2. [Understanding Schema in SQL](#understanding-schema-in-sql)
-3. [Steps for Database Creation](#steps-for-database-creation)
+3. [Steps for Basic Database Creation](#steps-for-basic-database-creation)
     1. [How to create a schema](#how-to-create-a-schema)
     2. [How to create tables in the schema](#how-to-create-tables-in-the-schema)
     3. [Datatypes](#datatypes)
