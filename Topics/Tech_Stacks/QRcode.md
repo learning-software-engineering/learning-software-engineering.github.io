@@ -4,7 +4,7 @@
 #### [Introduction](#introduction)
 #### [What is QRcode?](#what-is-QRcode)
 #### [qrcode library](#qrcode_library)
-#### [example](example)
+#### [example](#example)
 
 ## Introduction
 <a id='introduction'></a>
@@ -35,7 +35,7 @@ To use the Python QR Code library, you can install it using the following pip co
 
 
 
-## qrcode library
+## example
 <a id='example'></a>
         import qrcode
 
