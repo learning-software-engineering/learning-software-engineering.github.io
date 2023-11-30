@@ -35,6 +35,9 @@ the more accurate the comparisons will be.
 
     tfidf_matrix = tfidf_vectorizer.fit_transform(your_documents)
 
+    In this command, the parameter your_documents should be a list of document content. Each element of the list
+    should be the full content of the doc. We format it this way so that the vectorizer can go through each one 
+    and treat it as different. 
 
 5. The complete TF-IDF matrix can be seen in the tfidf_matrix variable. This can be outputted into a dataframe using the pandas library
    or otherwise and the results can be displayed and interpreted for your program.
