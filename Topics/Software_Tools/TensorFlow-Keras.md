@@ -27,7 +27,7 @@ Here are some of the most popular AI-based tools used by programmers today:
 
 ### [GitHub Copilot](https://github.com/features/copilot):
 - GitHub Copilot is a widely used extension-based tool that directly provides contextualized assistance throughout the software development lifecycle.
-  - Basically, this tool can help with completing your code as well as respond to any questions regarding your code by utilizing the GitHub Copilot Chat extension.
+- Basically, this tool can help with completing your code as well as respond to any questions regarding your code by utilizing the GitHub Copilot Chat extension.
 - This tool is supported by almost every major IDE and platform, such as Visual Studio Code, JetBrains IDEs, and Vim.
 - Depending on how much information the tool has regarding a specific coding language, you can get immense help. For example:
   - JavaScript is supported incredibly well because of how much information the AI model was able to be trained on.
@@ -68,7 +68,7 @@ Here are some of the most popular frameworks used by programmers to build AI mod
 - TensorFlow is probably the most widely used framework for building and training AI models in the world right now.
 - In comparison to PyTorch, it is even simpler to build and train your own AI models and is better at deploying models in production to build AI products.
 - This framework provides a tool called [TensorBoard](https://www.tensorflow.org/tensorboard) which graphically displays the data for easy debugging.
-- TensorFlow can be used with most popular programming languages:
+- TensorFlow can be used with most popular programming languages. For example:
   - It has a stable API for Python.
   - It has APIs without a backward compatability guarantee for Javascript, C++, and Java.
   - It even has third-party language binding packages for C#, Haskell, Julia, MATLAB, R, Scala, Rust, OCaml, and Crystal.
@@ -82,7 +82,7 @@ Here are some of the most popular frameworks used by programmers to build AI mod
 - Keras has a plethora of pre-trained models, and with a fairly simple and quick use of [transfer learning](https://builtin.com/data-science/transfer-learning#), users do not even need to build and train a model from scratch, saving on time and resources.
 - This framework is a high-level API, meaning it is fairly abstracted and more generic, allowing for users to build and train models in quite literally just a few lines of code.
 - As it is an incredibly popular framework and is an open-source platform, Keras has a massive community of active users and researchers who constantly help one another and improve the framework.
-- However, this framework does have its own set of cons as well:
+- However, this framework does have its own set of cons as well. For example:
   - Compared to other frameworks like PyTorch and TensorFlow, Keras just does not have as much features, such as dynamic chart creation.
   - The Keras library's error messages are incredibly ineffective, meaning that it is more difficult to debug your code and understand what exactly went wrong.
   - As Keras is a high-level API, users do not have as much control over manipulating functions.
@@ -115,7 +115,7 @@ Here are some of the most popular AI model types used by programmers to build AI
 ### [Deep Neural Networks](https://www.bmc.com/blogs/deep-neural-network/):
 - Neural networks are one of the most popular implementations of AI models.
 - It consists of several layers of interconnected nodes (or neurons) organized into an input layer, one or more hidden layers, and an output layer.
-  - The design of this AI model type is actually based on the human brain's neural network, which is why the internal nodes of a neural network are also called neurons.
+- The design of this AI model type is actually based on the human brain's neural network, which is why the internal nodes of a neural network are also called neurons.
 - These models are usually trained in a supervised manner, however, there are variations of neural networks designed for unsupervised learning and reinforcement learning. For example:
   - Autoencoders and certain types of generative models are variations of neural networks designed for unsupervised learning.
   - Deep Q-networks are a variation of neural networks designed for reinforcement learning.
@@ -129,6 +129,6 @@ Here are some of the most popular AI model types used by programmers to build AI
 
 ## Additional Resources
 - [5 AI Tools Every Software Developer Should Be Using In 2023](https://medium.com/geekculture/5-ai-tools-every-software-developer-should-be-using-in-2022-afc4fb149c60)
-- [TensorFlow vs PyTorch: Deep Learning Frameworks [2023]](https://www.knowledgehut.com/blog/data-science/pytorch-vs-tensorflow#)
+- [TensorFlow vs PyTorch: Deep Learning Frameworks \[2023\]](https://www.knowledgehut.com/blog/data-science/pytorch-vs-tensorflow#)
 - [PyTorch vs Tensorflow vs Keras](https://www.datacamp.com/tutorial/pytorch-vs-tensorflow-vs-keras#)
 - [Best AI Models: Types and How to Choose Them](https://dataconomy.com/2023/04/04/best-ai-models-types-how-to-choose-what-is/)
