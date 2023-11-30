@@ -2,15 +2,15 @@
 
 ## Table of Contents
 
-### [Introduction](#introduction)
+### [Introduction](#introduction-1)
 
-### [Set Up](#set-up)
+### [Set Up](#set-up-1)
 
-### [Non Static Modal](#non-static-modal)
+### [Non Static Modal](#non-static-modal-1)
 
-### [Extracting Data](#extracting-data)
+### [Extracting Data](#extracting-data-1)
 
-### [Official Documentation](#official-documentation)
+### [Official Documentation](#official-documentation-1)
 
 ## Introduction
 This is a short introduction into using the Modal Component from React-Bootstrap. Modals are popups that can be used to notify the user or to obtain user information.
