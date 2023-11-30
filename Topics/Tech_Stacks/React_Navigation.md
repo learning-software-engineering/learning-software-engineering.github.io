@@ -15,6 +15,8 @@
 
 
 ## Introduction
+An easy and efficient way to navigate between screens is important when we are trying to develop a mobile app. The library React Navigation not only resolves this problem but also provides a straightforward method allowing the passing of different parameters between screens. The easy way of communication between screens is one of the biggest advantages of React Navigation library. Thus, this page will walk you through an introduction od using the React Navigation library to navigate and to communicate.
+
 React Navigation is a popular and widely used JavaScript library for building navigation and routing in React Native applications. Developed by the React Native community, React Navigation provides a flexible and extensible solution for managing the navigation and user flow within mobile apps.
 
 The library offers a declarative API, allowing developers to define navigation structures in a clear and intuitive manner. React Navigation supports various navigation patterns, such as stack navigation, tab navigation, drawer navigation, and more. It seamlessly integrates with React Native components, enabling the creation of smooth and native-like navigation experiences.
@@ -164,7 +166,7 @@ function Page1({ navigation }) {
   );
 }
 ```
-We now have passed the id of 1 to page2, then we could access this value in page 2 by:
+We now have passed the id of 1 to page2, then we could access this value on page 2 by:
 ```
 function Page2({ route, navigation }) {
   const {id} = route.params
@@ -179,6 +181,7 @@ Now we will have a new parameter `route` to Page2. `route` is like `navigation`,
 ## Limitations
 ### Right-to-Left (RTL) Layout support
 The library sometimes encounters problems with RTL layout, thus, it is suggested to use other navigation methods with RTL layout.
+Read more about RTL layout here: https://rtlstyling.com/posts/rtl-styling
 
 ## Reference
 React Navigation. https://reactnavigation.org
