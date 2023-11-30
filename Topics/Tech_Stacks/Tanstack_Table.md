@@ -155,6 +155,8 @@ function DogTable() {
 }
 ```
 
+For resources on all the various types of options you can pass to Tanstack table, see [here](https://tanstack.com/table/v8/docs/api/core/table)
+
 For the final implementation, we need to render the table in the return function.
 
 In the return function of the DogTable component, add the following code: 
