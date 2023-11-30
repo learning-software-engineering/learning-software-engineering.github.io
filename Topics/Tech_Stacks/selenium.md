@@ -1,11 +1,11 @@
 # Webscraping and Automation Using Selenium with Python
-# Table of Contents
-## [What is Selenium?](#what-is-selenium)
-## [What can I do with Selenium?](#what-can-i-do)
-## [Getting started](#getting-started)
-## [Headless drivers](#headless)
-## [Automation](#automation)
-## [Acknowledgements](#ack)
+## Table of Contents
+### [What is Selenium?](#what-is-selenium)
+### [What can I do with Selenium?](#what-can-i-do)
+### [Getting started](#getting-started)
+### [Headless drivers](#headless)
+### [Automation](#auto)
+### [Acknowledgements](#ack)
 
 ## <a name="what-is-selenium"></a> What is Selenium?
 Selenium is an open-source browser automation framework that can be used within many different programming languages, including Python. From the [official documentation](https://www.selenium.dev/documentation/) this is a list compiled of languages and their support of Selenium. 
@@ -90,7 +90,7 @@ display.close()
 ```
 Typically, you would use a _try, except, finally_ statement to execute the code, and you would instantiate the display at the top of the `try` block, and close it at the end of the `finally `block.
 
-## <a name="automation"></a> Automation
+## <a name="auto"></a> Automation
 
 The Selenium WebDriver can be used for many purposes, including logging in to websites, filling out forms, and clicking buttons. For example, if there is a particular task that you need to do every day that requires you to log in to a website, and then navigate to a certain page this is a simple task in Selenium. You can then automate this script to run at a given time interval on a Linux server using `cron`. For example, you could include the following line in your _crontab_ to schedule the script to run at midnight every day:
 
