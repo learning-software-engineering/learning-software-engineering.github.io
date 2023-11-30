@@ -11,7 +11,13 @@
 
 ## Introduction
 
-Passport.js is a widely used middleware for authentication and authorization in Node.js-based web applications. Its primary purpose is to simplify the process of user authentication by offering a flexible and modular framework. This flexibility allows developers to integrate Passport.js with many different authentication strategies such as verifying local username and password credentials, OAuth (for example, via Google or Facebook), and OpenID. 
+### What is Passport.js?
+
+Passport.js is a widely used middleware for authentication and authorization in Node.js-based web applications. Its primary purpose is to simplify the process of user authentication by offering a flexible and modular framework. 
+
+### Why should you use it?
+
+Passport.js is the most popular authentication middleware for Node.js. The flexibility and modularity of Passport allows developers to integrate Passport with many different authentication strategies such as verifying local username and password credentials, OAuth (for example, via Google or Facebook), and OpenID. This makes it much quicker to implement authentication into your application as opposed to writing it yourself from scratch. Given its popularity, Passport is also easily adaptable to a wide variety of web frameworks such as Express.js, making it much easier to work with and adopt into your projects.
 
 ## Prerequisites
 
@@ -39,7 +45,7 @@ app.use(passport.initialize());
 
 ## Strategies
 
-A Passport.js strategy is the method by which Passport logs in users and authenticates them. There are over 500 strategies that you can use with Passport. In this guide we will be looking specifically at the local strategy, however there are other common strategies such as OAuth with Google, Facebook, etc., or OpenID.
+A Passport.js strategy is the method by which Passport logs in users and authenticates them. There are over 500 strategies that you can use with Passport, making it one of the most versatile authentication middleware. In this guide we will be looking specifically at the local strategy.
 
 ### Local Strategy
 
@@ -79,6 +85,10 @@ The verify function `function(username, password, done) { ... }` is where you de
 `done` is a callback function that is called to indicate whether the authentication was successful or not.
 
 In the above code, the body of the verify function is just an example of what the logic to verify the user's credentials might look like. Your actual code might vary based on the requirements of your application.
+
+### Other Strategies
+
+While local strategy is the most common strategy, there are over 500 other strategies that a developer could incorporate into their web application. If you want to read more about these other strategies and how you can use them then check out [this link](https://www.passportjs.org/concepts/authentication/strategies/).
 
 ## Sessions
 
@@ -137,5 +147,5 @@ For login requests, we use `passport.authenticate` as middleware for the route. 
 ## Summary
 In this guide we learned about Passport.js and how to use it in our Express.js based application. We learned how to use Passport strategies, sessions, and how to use the middleware in our authentication routes. We see how Passport is extremely useful because of its flexibility and unobtrusiveness.
 
-To learn more, you can check out the official documentation at https://www.passportjs.org/docs/.
+To learn more, you can check out the official documentation [here](https://www.passportjs.org/docs/).
 
