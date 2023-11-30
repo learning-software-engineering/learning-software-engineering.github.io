@@ -3,11 +3,11 @@
 ## Introduction
 Protobufs are a way to serialize data whereas gRPC is used to send them over RPC calls between microservices. gRPC is usually closely used with Protobufs. Further in depth detail can be found on the official websites of both products. In this overview we will go over a very basic Protobuf implementation and then a basic call for gRPC. gRPC supports a wide variety of languages which is one of the features that makes it so useful since it allows microservices written in different languages to communicate between one another, for this example though we will use Python.
 
-https://protobuf.dev/
+[https://protobuf.dev](https://protobuf.dev)
 
-https://grpc.io/
+[https://grpc.io](https://grpc.io)
 
-A more in depth tutorial that this document was derived from can be found here: https://grpc.io/docs/languages/python/basics/
+A more in depth tutorial that this document was derived from can be found here: [https://grpc.io/docs/languages/python/basics](https://grpc.io/docs/languages/python/basics)
 
 ## Setting up the Protobuf
 Below is a very simple Protobuf, with a "message" and a "service". A "message" in Protobuf looks very similar to a C++ struct. It actually has the same functionality as a C++ struct, is essentially the data structure we are creating. The "service" is basically the definition for the rpc call itself. Usually there is some additional properties that must be specified in the file such as the Protobuf version etc. but for the purpose of this overview only the main part of our Protobuf file is include, which is the data structure we are serializing. One important key point to mention is that Protobufs all have the `.proto` file extension.
