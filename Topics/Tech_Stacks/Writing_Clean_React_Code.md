@@ -49,7 +49,20 @@ const ParentComponent = () => {
 
 - **CSS Classes and Files**: CSS classes should be named using kebab-case or camelCase. For example, a class that styles a div that acts as a container for a cards should be named `cards-container` or `cardsContainer` instead of `cards_container`. CSS Files follows the same convention as CSS classes.
 
-As to what you should name your classes, a popular convention is to use the BEM (Block, Element, Modifier) naming convention. This convention is useful for naming classes that are used to style components. It is a pretty big topic in its own right, so to learn more you might want to check out the [getbem.com website](https://getbem.com/introduction/).
+As to what you should name your classes, a popular convention is to use the BEM (Block, Element, Modifier) naming convention. This convention is useful for naming classes that are used to style components. It is a pretty big topic in its own right, so to learn more you might want to check out the [getbem.com website](https://getbem.com/introduction/). Look at a quick example below:
+
+```css
+/* In this example:
+  - login would be the block 
+  - submit-button would be the element
+  - disabled would be the modifier*/
+.login-submit-button--disabled {
+  background-color: #ccc;
+  color: #fff;
+}
+```
+
+You will sometimes find 2 dashes for the modifier like above, or an single dash, or even an underscore. These are not a hard rules. Whats important is to be consistent across your codebase.
 
 ## Component Structure
 
@@ -57,7 +70,7 @@ When working with React, it is important to follow a consistent component struct
 
 - **Break down components**: Components should be broken down into smaller components whenever possible. Large components are difficult to understand and debug. It is also easier to reuse smaller components, which avoids code repetition. This essentially goes back to the [Single Responsibility Principle](https://en.wikipedia.org/wiki/Single-responsibility_principle) in software engineering, which states that each component should be in charge of only one function. 'Robert C. Martin, the originator of the term, expresses the principle as, "A class should have only one reason to change"'([Wikipedia](https://en.wikipedia.org/wiki/Single-responsibility_principle)). For example, a component that renders a user profile page should be broken down into smaller components that render the user's name, profile picture, and bio.
 
-- **Organize component heirarchy into folders**: Components should be organized into folders based on their role in the application. At the highest level inside the components folder, there should be folders for each of the pages in the website. Within each page folder, there should be folders for each of the components that make up the page. The more deeply nested a component is within its page, the deeper it will be in the folder heirarchy. Moreover, test and CSS files should be together with the jsx files. For example, a website that has a home page and a user profile page should have the following folder structure:
+- **Organize component hierarchy into folders**: Components should be organized into folders based on their role in the application. At the highest level inside the components folder, there should be folders for each of the pages in the website. Within each page folder, there should be folders for each of the components that make up the page. The more deeply nested a component is within its page, the deeper it will be in the folder hierarchy. Moreover, test and CSS files should be together with the jsx files. For example, a website that has a home page and a user profile page should have the following folder structure:
 
   ```jsx
   src
@@ -129,11 +142,11 @@ const handleChange = (e) => {
 const { name, email, bio } = user;
 ```
 
-It is important to note that this is not always the best approach, since it can lead to a bloated state object, and its also important for everyone working in the codebase to be aware of the individual states that are grouped together in the state object.
+It is important to note that this is not always the best approach, since it can lead to a bloated state object, and it's also important for everyone working in the codebase to be aware of the individual states that are grouped together in the state object.
 
 State management is a very complex topic that warrants its own article, so to learn more you might want to check out the [React documentation on state and lifecycle](https://react.dev/learn/state-a-components-memory). [This resource](https://oskari.io/blog/stop-react-global-state-part-1) might also be useful to understand the different types of states a component may have.
 
-- **Only use Effects when necessary**: Effects are useful for performing side effects such as fetching data from a database or subscribing to an event listener, however they increase the complexity of the code and thus must only be used when necessary. If a component only needs to render data, then it should not use an effect. This helps reduce the complexity of the component and makes it easier to debug. Moreover, it is easier to reuse components that do not use effects since they are not tied to a specific effect. Look at the following example taken from the amazing open source course over at [Odin Project]().
+- **Only use Effects when necessary**: Effects are useful for performing side effects such as fetching data from a database or subscribing to an event listener, however they increase the complexity of the code and thus must only be used when necessary. If a component only needs to render data, then it should not use an effect. This helps reduce the complexity of the component and makes it easier to debug. Moreover, it is easier to reuse components that do not use effects since they are not tied to a specific effect. Look at the following example taken from the amazing open source course over at [Odin Project](https://www.theodinproject.com/lessons/node-path-react-new-how-to-deal-with-side-effects).
 
 ```jsx
 import React, { useState } from "react";
