@@ -61,6 +61,65 @@ Letting your emotions overwhelm you can also hinder effective communication in t
 
 [Statistics on why effective communication is important in the workplace.](https://www.linkedin.com/pulse/statistics-why-effective-communication-important-/?trk=pulse-article_more-articles_related-content-card)
 
+## Asking For Help
+
+### With a Coding Problem
+
+A new environment produces new challenges. It may be the case that you are lost and are unsure of how to proceed. Here is a list of things you can do, as an individual and as a team member, to get yourself back on track.
+
+1) Attempt to fix the situation
+
+Before you ask for help, you should try to do it yourself. Software engineering, whether it is in this course or in the real world, is a field where you will be constantly learning. Learning cannot exist without attempting it yourself. There are a variety of resources that you can use to gain more insight on your situation, from documentation to online forums such as StackOverflow. 
+
+2) Isolate the specific issue
+
+If you still cannot fix the problem, then the best you can do is hone in on the problem. Find out which specific part of the code that is not working or the specific part of the problem statement you cannot understand.
+
+There are various methods to find where the issue lies. Writing test cases is an effective method to catch errors, as these test cases will continue to ensure that certain functionality of your code will always be correct throughout its development. If an error causes the code to not execute, reading the error message will provide the exact line where the error occurs. To understand why the error is occurring, the use of a debugger will help you inspect variables and hone further into the problem. Lastly, if all else fails, it is better to use print statements than do nothing at all.
+
+3) Explain the situation
+
+It is important to remember that you have the most experience with your own code. When asking for help, it is unwise to assume that your peer will instantly understand what you have attempted to do. So, the best first step is to explain the situation. Explain the general concept of the task you are trying to achieve, while keeping in mind their level of expertise on the subject. Doing so will ensure that you will both be on the same page when they give their assistance.
+
+4) Ask a specific question
+
+With all the previous steps complete, you can now ask a well-defined specific question, if you have not already solved your problem. With a fresh set of eyes on a small amount of code, it will be much easier to find a solution compared to asking for help combing through hundreds of lines of code.
+
+Remember, asking for help is not a sign of weakness. With different individuals at different levels of experience, a hard problem for you may be an issue that another individual has already experienced. So if you are stuck, it is better to ask for help than to do nothing at all.
+
+### With Getting Started
+
+A related but different issue that may arise is that you do not know how to begin. Your initial attempts may be futile and you do not know how you should proceed to contribute to the overwhelming task at hand.
+
+1) Do not waste time
+
+Most likely if you do not know where to start, it is still early on into the project. This is a very important time as ideas and plans are being created that will affect the entire outcome of the project. So it is especially important to get started on learning the things you will need for the project to be successful. One of the very first things that you can do is to ask your peers for resources to get a better understanding of the material.
+
+2) Attempt to learn what you can
+
+With the internet at your disposal, there are many resources to find help. Try searching through youtube tutorials, online forums, this software engineering repository, and even use any AI-powered large language model of your choice. Break down the problem into smaller instances and try to tackle these challenges one at a time. Try to dig deeper into the topic that you do not understand so that you can at least articulate what you do not understand.
+
+3) Ask for clarification
+
+With the ability to articulate what you do not understand, you can now ask your peers for further help. Explain the parts of the problem that you understand, and ask questions about the parts that you do not understand. Maybe your task is something that another individual has already experienced, in which case they will be able to guide you through the process. Or, it may be a learning experience for the entire group.
+
+Remember, early on in the project may be the least stressful time. So, it is the best time to ask for help and learn the skills needed to thrive on your project. By starting, you gain the ability to understand where you went wrong once you ask for help, rather than being confused when your peers try to help you learn.
+
+### Things to Avoid
+
+1) Do not ask questions in an attempt to be lazy
+
+Remember that software engineering is a field where you must constantly be learning. If you are lazy and do not want to work, you will not learn. Without tackling challenges by yourself first, you will not pick up on the skills that will help you become successful in the field.
+
+2) Do not rush your peer for an answer
+
+Remember that your peers may be learning this for the first time as well. Be patient as they devote their own time to provide you the assistance you may need. Everyone is learning and trying their best, so do not let the stress of the situation manifest into uncooperative actions.
+
+Summary
+
+In short, navigating the challenges of a new environment, especially in software engineering, demands a proactive approach when seeking help. It is important to recognize that asking for help is a strength, not a weakness, and a learning process for all parties involved. It is a chance to foster patience and collaboration, which will ensure will ensure the most optimal growth and success
+
+
 ## Conflict Resolution
 
 Working effectively in a team setting is a crucial yet often overlooked aspect of software engineering. Conflicts can arise in any team, and how they are resolved can have a significant impact on the team's success. Effective conflict resolution fosters a collaborative and supportive team environment where everyone's contributions are valued, and disagreements are handled constructively.
