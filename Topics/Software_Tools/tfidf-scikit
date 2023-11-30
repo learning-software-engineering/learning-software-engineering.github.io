@@ -37,5 +37,8 @@ Instructions:
 5. The complete TF-IDF matrix can be seen in the tfidf_matrix variable. This can be outputted into a dataframe using the pandas library
    or otherwise and the results can be displayed and interpreted for your program.
 
+By following these instructions, you can effectively use TF-IDF with the TfidfVectorizer in scikit-learn to preprocess your text data for various machine learning tasks such as classification, 
+clustering, or information retrieval.
+
 
 Documentation can be seen here: https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html 
