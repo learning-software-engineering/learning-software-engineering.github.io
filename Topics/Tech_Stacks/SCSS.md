@@ -117,25 +117,29 @@ Nesting provides a much more intuitive way to visualize which HTML elements your
 ```scss
 .containerA {
   ul {
-    /*CSS Block A*/
+    margin: 0;
+    padding: 0;
+    list-style: none;
   }
 
   li {
-    /*CSS Block B*/
+    display: grid;
   }
 }
 
 .containerB {
   ul {
-    /*CSS Block C*/
+    margin: 10;
+    padding: 10;
+    list-style: none;
   }
 
   li {
-    /*CSS Block D*/
+    display: inline-block;
   }
 
   a {
-    /*CSS Block E*/
+    text-decoration: none;
   }
 }
 ```
@@ -144,23 +148,27 @@ Nesting provides a much more intuitive way to visualize which HTML elements your
 
 ```css
 .containerA ul {
-  /*CSS Block A*/
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .containerA li {
-  /*CSS Block B*/
+  display: grid;
 }
 
 .containerB ul {
-  /*CSS Block C*/
+  margin: 10;
+  padding: 10;
+  list-style: none;
 }
 
 .containerB li {
-  /*CSS Block D*/
+  display: inline-block;
 }
 
 .containerB a {
-  /*CSS Block E*/
+  text-decoration: none;
 }
 ```
 
@@ -172,14 +180,14 @@ Nesting is also the main reason why it is recomended to use the BEM methodology 
 
 ```scss
 .parent {
-  /*CSS Block A*/
+  display: flex;
 
   &__child {
-    /*CSS Block B*/
+    color: "red";
   }
 
   &:hover {
-    /*CSS Block C*/
+    text-decoration: underline;
   }
 }
 ```
@@ -188,15 +196,15 @@ Nesting is also the main reason why it is recomended to use the BEM methodology 
 
 ```css
 .parent {
-  /*CSS Block A*/
+  display: flex;
 }
 
 .parent__child {
-  /*CSS Block B*/
+  color: "red";
 }
 
 .parent:hover {
-  /*CSS Block C*/
+  text-decoration: underline;
 }
 ```
 
@@ -264,7 +272,7 @@ The question is then, why would we ever use placeholder selectors if they are ne
 
 ```scss
 %placeholder {
-  /*CSS Block A*/
+  font-weight: bold;
 }
 
 .classA {
@@ -273,7 +281,7 @@ The question is then, why would we ever use placeholder selectors if they are ne
 
 .classB {
   @extend %placeholder;
-  /*CSS Block B*/
+  color: "red";
 }
 ```
 
@@ -282,11 +290,11 @@ The question is then, why would we ever use placeholder selectors if they are ne
 ```css
 .classA,
 .classB {
-  /*CSS Block A*/
+  font-weight: bold;
 }
 
 .classB {
-  /*CSS Block B*/
+  color: "red";
 }
 ```
 
