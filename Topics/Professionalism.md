@@ -16,21 +16,21 @@ Ethics play a significant role in software engineering as they guide engineers i
 
 According to the Software Engineering Code of Ethics and Professional Practice (2), the eight guiding principles for ethical behaviour in this field are as follows:
 
-1. Keep Public Interest in Mind (Public): Software engineers shall act consistently with the public interest.
+1. **Keep Public Interest in Mind** (Public): Software engineers shall act consistently with the public interest.
    
-2. Consider Interest of Client and Employer (Client and Employer): Software engineers shall act in a manner that is in the best interests of their client and employer consistent with the public interest.
+2. **Interest of Client and Employer** (Client and Employer): Software engineers shall act in a manner that is in the best interests of their client and employer consistent with the public interest.
    
-3. Ensure Highest Professional Standards in Products (Products): Software engineers shall ensure that their products and related modifications meet the highest professional standards possible.
+3. **Highest Professional Standards in Products** (Products): Software engineers shall ensure that their products and related modifications meet the highest professional standards possible.
 
-4. Integrity and Independence in Judgment (Judgment): Software engineers shall maintain integrity and independence in their professional judgment.
+4. **Integrity and Independence in Judgment** (Judgment): Software engineers shall maintain integrity and independence in their professional judgment.
    
-5. Ethical Management (Management): Software engineering managers and leaders shall subscribe to and promote an ethical approach to the management of software development and maintenance.
+5. **Ethical Management** (Management): Software engineering managers and leaders shall subscribe to and promote an ethical approach to the management of software development and maintenance.
    
-6. Advance the Integrity and Reputation of the Profession (Profession): Software engineers shall advance the integrity and reputation of the profession consistent with the public interest.
+6. **Advance the Profession** (Profession): Software engineers shall advance the integrity and reputation of the profession consistent with the public interest.
    
-7. Fairness and Colleagues (Colleagues): Software engineers shall be fair to and supportive of their colleagues.
+7. **Fairness and Colleagues** (Colleagues): Software engineers shall be fair to and supportive of their colleagues.
     
-8. Lifelong Learning and Promoting Ethical Behaviour (Self): Software engineers shall participate in lifelong learning regarding the practice of their profession and shall promote an ethical approach to the practice of the profession.
+8. **Learning and Ethical Behaviour** (Self): Software engineers shall participate in lifelong learning regarding the practice of their profession and shall promote an ethical approach to the practice of the profession.
 
 These guiding principles are further broken down in the code into more concise and actionable items. Feel free to take a look at them using reference (2) to improve your understanding of ethical behaviour in software engineering. The titles of the principles have been changed to be more descriptive on this page, but the original titles are in parentheses for reference.
 
