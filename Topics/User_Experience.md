@@ -70,6 +70,9 @@ If you use a template, it'll prompt you to fill in specific information about yo
 
 A quick Google image search for "User Persona" will help tie all this information together.
 
+### Design Requirements
+#### [Design Requirements](./User_Experience/Design_Requirements.md)
+
 ## Visual Elements of User Interface Design
 ### Design Principles
 
