@@ -40,3 +40,5 @@ Once you have parsed the HTML, you can extract data using HTML tags. For example
 all_p = soup.find_all('p')
 ```
 
+## When to use Beatiful Soup
+Now that you know how to use Beautiful Soup on a basic level, all you need are the urls for your web scraping program. However, some scraping tasks require more powerful tools. Since Beautiful Soup only parses HTML, it cannot scrape data from dynamically generated content that rely on Javascript. It also cannot automate actions such as clicking buttons to get content. For more complex web pages, refer to the Selenium web scraping guide.
