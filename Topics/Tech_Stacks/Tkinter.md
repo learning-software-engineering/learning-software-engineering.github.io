@@ -4,14 +4,14 @@
 
 Tkinter is a Python GUI framework that comes with the Python standard library, Tkinter is cross-platform and the visual elements are rendered using native operating system elements.
 
-Tkinter is considered the go-to Python GUI framework, but GUIs built with Tkinter are often considered unaesthetically pleasing with designs often considered outdated. Given this, Tkinter is reccomended for proprietary buisness side applications.
+Tkinter is considered the go-to Python GUI framework, but GUIs built with Tkinter are often considered aesthetically unpleasing with designs often considered outdated. Given this, Tkinter is recommended for proprietary business side applications.
 
-Tkinter is lightwaeight and easy to learn compared to othe GUI frameworks. This makes it a valid candidate when selecting a framework for GUI applications in Python. Especially so if the priority is to quickly build a functional application.
+Tkinter is lightweight and easy to learn compared to other GUI frameworks. This makes it a valid candidate when selecting a framework for GUI applications in Python. Especially if the priority is to quickly build a functional application.
 
-In this introduction, we will be building a basic GUI and familiarising ourselves with some Tkinter components
+In this introduction, we will be building a basic GUI and familiarising ourselves with some Tkinter components.
 
 ---
-### Prerequisites
+### Prerequisites:
 - Basic knowledge of Python
 - Python installed on your system
 
@@ -62,7 +62,7 @@ greeting.pack()
 
 the resulting file should now look like:
 
-```
+```python
 import tkinter as tk
 
 window = tk.Tk()
@@ -92,7 +92,7 @@ def greeter():
 now to create the button we create and pack it similarily like the Labels from earlier
 
 ```python
-button = tk.Button(window, text="greet!", command = counter)
+button = tk.Button(window, text="greet!", command = greeter)
 button.pack()
 ```
 
