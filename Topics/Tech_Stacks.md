@@ -22,7 +22,6 @@
 ### [Learning Nodemailer](./Tech_Stacks/Nodemailer.md)
 ### [Learning Firebase for Serverless Backends and Cloud Functions](./Tech_Stacks/FirebaseServerlessCloud.md)
 ### [React Components Guide](./Tech_Stacks/React_Components.md)
-### [Deploying Django to AWS](./Tech_Stacks/Deploying_Django_to_AWS.md)
 ### [Learning Peewee ORM and Pydantic Models](./Tech_Stacks/Peewee_and_Pydantic_models.md)
 ### [Flutter](./Tech_Stacks/Flutter.md)
 ### [Temporal For Workflow Orchestration](./Tech_Stacks/Temporal.md)
