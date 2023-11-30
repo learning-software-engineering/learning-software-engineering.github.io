@@ -18,7 +18,8 @@ Make sure you have installed an [IDE](https://www.jetbrains.com/idea/download), 
 * [Step 2 - Launching H2 Console and Creating Person Table in H2](#step-2---launching-h2-console-and-creating-person-table-in-h2)
 * [Step 3 - Storing and Deleting Data Using Spring JDBC](#step-3---storing-and-deleting-data-using-spring-jdbc)
 * [Step 4 - Storing and Deleting Data Using JPA](#step-4---storing-and-deleting-data-using-jpa)
-* [Step 5 - Storing, Deleting, and Retrieving Data Using Spring Data JPA](#step-5---storing--deleting--and-retrieving-data-using-spring-data-jpa)
+* [Step 5 - Storing, Deleting, and Retrieving Data Using Spring Data JPA ](#step-5---storing-deleting-and-retrieving-data-using-spring-data-jpa)
+
 
 ## Step 1 - Initializing A Spring Boot Application
 You can use this [pre-initialized project](https://start.spring.io/#!type=maven-project&language=java&platformVersion=3.2.0&packaging=jar&jvmVersion=17&groupId=com.learning-software-engineering&artifactId=learning-spring-data-jpa&name=learning-spring-data-jpa&description=Demo%20project%20for%20Spring%20Data%20JPA%20&packageName=com.learning-software-engineering.learning-spring-data-jpa&dependencies=data-jdbc,data-jpa,h2,web) and click Generate to download a ZIP file, unzip it and open the project folder in your IDE.
@@ -44,7 +45,7 @@ CREATE TABLE Person(
 - Launch the Spring Boot Application by running the main method of the `LearningSpringDataJpaApplication` class under the folder `src/main/java/com/learningsoftwareengineering/learningspringdatajpa`
 - Open [H2 Console](http://localhost:8080/h2-console) in your browser. Copy `jdbc:h2:mem:testdb` and paste it into the field JDBC URL of the Login form. Click on Connect. 
 You should be able to see a `Person` table is created in the database, click on Run to see its columns. 
-![img.png](img.png)
+  ![H2 Console Screenshot](https://github.com/learning-software-engineering/learning-software-engineering.github.io/blob/springdatajpa/Topics/Tech_Stacks/Learning_Spring_Data_JPA_Graphics/img.png))
 
 ## Step 3 - Storing and Deleting Data Using Spring JDBC
 Now, let's add a few entries into the `Person` table and then delete an entry based on its id.
@@ -287,4 +288,5 @@ public interface PersonSpringDataJpaRepository extends JpaRepository<Person, Lon
             System.out.println(repository.findAll());
 ```
 ## Summary 
-![img_1.png](img_1.png)
+![Summary](https://github.com/learning-software-engineering/learning-software-engineering.github.io/blob/springdatajpa/Topics/Tech_Stacks/Learning_Spring_Data_JPA_Graphics/img_1.png)
+
