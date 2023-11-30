@@ -1,4 +1,4 @@
-# **Planning for Team Meetings in Software Engineering**
+# Planning for Team Meetings in Software Engineering
 
 
 In the dynamic field of software engineering, team meetings are not just routine gatherings; they are pivotal for steering projects towards success.Meetings that are done effectively can accelerate decision making processes, foster clear communication, and synchronization team efforts. On the other hand however, poorly planned meetings can easily devolve into time sinks and even lead to confusio nand project delays. Thus, it is important to understand how to plan and execute productive meetings, particularly so in the teamwork oriented enviornments that software engineers typically operate in. 
@@ -25,7 +25,7 @@ A well-structured agenda is critical for a productive meeting. In addition to be
 - **Preparation Notes:** Provide meeting participants any preparatory work or materials they should review before the meeting. This could be documents, reports, or specific data points necessary for the upcoming informed discussion 
 - **Distribute the agenda:** Finally, it is crucial to distribute the agenda well in advance, ideally a few days before the meeting in order to allow participants to prepare properly.
 
-## **During the Meeting**
+## During the Meeting
 Several elements ensure a disucssion remains focused, productive and on track. This stage requires a blend of structured facilitation, active participation, and the effective use of collaboration tools.
 
 ### Roles and Responsibilities
