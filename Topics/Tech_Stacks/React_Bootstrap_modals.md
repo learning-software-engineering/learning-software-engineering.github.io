@@ -17,7 +17,7 @@ This is a short introduction into using the Modal Component from React-Bootstrap
 This article covers the setup, how to create a modal that pops up and how to get user-entered information from the modal. There is official documentation linked at the bottom for further reading.
 
 ## Set Up
-In order to use Modals from React-Bootstrap we first need to install React-Bootstrap. Assuming you have React already installed, the most basic way this can be done is through bash with npm:
+In order to use Modals from React-Bootstrap we first need to install it. Assuming you have React already installed, the most basic way this can be done is through bash with npm:
 
 Using npm:
 ```sh
@@ -31,7 +31,7 @@ import Button from 'react-bootstrap/Button';
 // the frowned upon method
 import { Button } from 'react-bootstrap';
 ```
-Finally, users can optionally install vanilla Bootstrap if they wish to stylize their components with Bootstrap. Note that this is not required, see the Bootstrap article for more details.
+Finally, users can optionally install vanilla Bootstrap if they wish to stylize their components with it. Note that this is not required, see the Bootstrap article for more details.
 
 ## Non-Static Modal
 To create a standard modal that can be displayed and dismissed, use </ Modal> and useState. The Modal component includes <Modal.Header/>, <Modal.Title/>, <Modal.Body/>, and <Modal.Footer/> which each allows you to customize the component of the Modal they are named after.
