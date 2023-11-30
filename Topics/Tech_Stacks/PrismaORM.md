@@ -22,7 +22,7 @@ You install Prisma like any npm package, in your (preferably) TypeScript project
 ```
 npm install prisma --save-dev
 ```
-To install the package. Then run 
+To install the package using npm, if you wish you can also use yarn or bun or any popular JavaScript package manager. Afterwards please run 
 ```
 npx prisma init --datasource-provider sqlite
 ```
@@ -30,7 +30,9 @@ To set up prisma to use sqlite. Don't worry, you can always change the datasourc
 
 ## Schema and Models 
 
-Now you should be greeted with a new `prisma` directory in your project folder. Within this directory you'll find a `migration` folder and a `schema.prisma` file. The `migration` folder is where Prisma will store its migration history, and `schema.prisma` is where you'll do all your modelling.
+Now you should be greeted with a new `prisma` directory in your project folder. Within this directory you'll find a `migration` folder and a `schema.prisma` file. The `migration` folder is where Prisma will store its migration history, and `schema.prisma` is where you'll do all your modelling. 
+
+A migration file is a file that contains the SQL queries and DDL scripts that will modify the state of the database, and the migration history is a log of migrations that need to be applied to transform a blank database into one that follows the models laid out in your `schema.prisma` file.
 
 Prisma uses its own syntax, which I personally found pretty intuitive to learn. 
 
@@ -56,7 +58,7 @@ model Post {
 ```
 These two examples show the most important features of a model description. 
 
-`User` and `Post` are the names of tables; `id`, `email`, `name` are `User`'s fields or columns. `User` and `Post` have a many-to-one relationship defined by the `posts` field in `User` and the foreign key field `author` on `Post`. Next to the types of the fields starting with '@' are decorators, which you can use to define behaviour.
+These models are mapped directly into the SQLite database as follows: `User` and `Post` are the names of tables; `id`, `email`, `name` are `User`'s fields or columns. `User` and `Post` have a many-to-one relationship defined by the `posts` field in `User` and the foreign key field `author` on `Post`. Next to the types of the fields starting with '@' are decorators, which you can use to define behaviour.
 
 Database modelling is an art, and there is much that we're not covering, but this should give you an idea of what to expect. 
 
@@ -143,6 +145,8 @@ async function main() {
 ...
 ```
 
-And so on, you get the gist. The most difficult part of Prisma is learning these functions. But in my experience they're pretty intuitive and you'll pick up on them much faster than SQL.
+And so on, you get the gist. The most difficult part of Prisma is learning these functions. But in my experience they're pretty intuitive and you'll pick up on them much faster than SQL. As with most things, 
 
-This concludes this short quickstart, Prisma is a very useful library that's still under active development, I enjoyed using it for my projects and I encourage you to check it out as well. The [Prisma Documentation](https://www.prisma.io/docs) explains all of this better than I ever could. Good luck coding. 
+This concludes this short quickstart, Prisma is a very useful library that's still under active development, I enjoyed using it for my projects and I encourage you to check it out as well. The [Prisma Documentation](https://www.prisma.io/docs) explains all of this better than I ever could. To learn more about relational database consider consulting [this course on relational databases](https://www.coursera.org/learn/introduction-to-relational-databases), which you can enroll for free.
+
+Good luck coding. 
