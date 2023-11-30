@@ -156,7 +156,7 @@ A `CMakeLists.txt` typically consists of the following elements:
     Add executable target named `MyExecutable` with source files listed in the `SOURCE_FILES` variable
 
 #### Other components
-* **Variables and Options** can be set in the `CMakeLists.txt` to control various aspects of the building process.
+* **Variables and Options** can be set in `CMakeLists.txt` to control various aspects of the building process.
     ```CMake
     set(CMAKE_CXX_STANDARD 14)              # enables the c++14 standards
     option(BUILD_TESTS "Build tests" ON)    # build options - whether to build tests
