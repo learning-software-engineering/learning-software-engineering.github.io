@@ -38,7 +38,7 @@ A basic Kanban system requires minimal setup, making it a cost-effective option 
 Kanban boards visualize work in various stages and can be customized to fit team needs.
 
 - **Kanban Cards and Their Role**
-   <!-- ![Kanban Cards](Kanban3.png) -->
+   ![Kanban Cards](Kanban3.png)
 Each task in the Kanban system is represented by a card, containing key task information and tracking progress.
 ---
 ## Benefits of Using Kanban
