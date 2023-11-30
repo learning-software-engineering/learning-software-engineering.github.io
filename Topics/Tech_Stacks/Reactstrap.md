@@ -76,4 +76,4 @@ And many more can be found on the Reactstrap website [linked here](https://react
 
 ## Conclusion
 You should now be familiar with the purpose of the Reactstrap library. It is a great way to easily create styled React components without having to design your own custom CSS classes. We went over the steps for installing and setting up Reactstrap for usage in your react project, as well as an example of how we apply it in the code. Now that you have an idea of the basics, I encourage you to create your own stylish React componenets using the Reactstrap library, and to follow the links to the documentation to take your Reactstrap development to a new level!
-
+<a href="https://reactstrap.github.io/?path=/docs/components-pagination--pagination" target="_blank">Pagination</a>
