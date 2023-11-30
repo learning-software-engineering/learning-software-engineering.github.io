@@ -153,7 +153,7 @@ A `CMakeLists.txt` typically consists of the following elements:
     add_executable(MyExecutable ${SOURCE_FILES})
     ```
 
-    Add executable target named `MyExecutable` with source files listed in `SOURCE_FILES` variable
+    Add executable target named `MyExecutable` with source files listed in the `SOURCE_FILES` variable
 
 #### Other components
 * **Variables and Options** can be set in the `CMakeLists.txt` to control various aspects of the building process.
