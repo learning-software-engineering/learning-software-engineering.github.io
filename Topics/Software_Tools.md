@@ -9,3 +9,6 @@
 
 ## Shell
 ### [A fin-troduction to `fish`](./Software_Tools/fish.md)
+
+## AI
+### [Introduction to AI Frameworks in Software Engineering](./Software_Tools/TensorFlow-Keras.md)
