@@ -19,6 +19,8 @@
 ## 1. What is Jest?
 
 ### Introduction to Jest
+Testing is fundamental to the development process. Like good documentation, good testing is something all developers wish they had when joining a new project but may not incorporate into their day-to-day code. Tests ensure code reliability and help with maintainability, especially in large codebases. With JavaScript being one of the main programming languages of web development, ensuring that your code works is vital for the users of your web application.
+
 Jest is a popular JavaScript testing framework developed by Facebook/Meta for React, but it can be used for any JavaScript project. Jest focuses on simplicity, speed, and a developer-friendly testing experience. It comes with built-in functionalities like test assertion, mocking, and code coverage, making it a comprehensive solution for testing JavaScript code.
 
 ### Why use Jest for testing?
@@ -84,7 +86,7 @@ Writing a test in Jest involves defining a test function using the `test` or `it
 ```javascript
 // _.test.js
 test('multiplies two positive numbers', () => {
-  expect(multiply(4, 2)).toBe(8);
+  expect(multiply(4, 2)).toEqual(8);
 });
 
 test('handles division by zero', () => {
@@ -100,32 +102,32 @@ A test suite is a way to group related test cases. It's created using the `descr
 // math_functions.test.js
 describe('Calculator operations', () => {
   test('adds two numbers', () => {
-    expect(add(2, 3)).toBe(5);
+    expect(add(2, 3)).toEqual(5);
   });
 
   test('subtracts two numbers', () => {
-    expect(subtract(5, 3)).toBe(2);
+    expect(subtract(5, 3)).toEqual(2);
   });
 });
 ```
 
 #### Nesting Test Suites
-You can nest `describes` to create a hierarchical structure
+You can nest `describes` to create a hierarchical structure. As you'll see in the Running Tests section, you can run tests based on patterns of naming. By grouping tests sensibly, you can test groups selectively and later on use specific setup and teardown for a `describe` block.
 ```javascript
 describe('Calculator', () => {
   describe('Addition', () => {
     test('adds two positive numbers', () => {
-      expect(add(2, 3)).toBe(5);
+      expect(add(2, 3)).toEqual(5);
     });
 
     test('adds a positive and a negative number', () => {
-      expect(add(5, -3)).toBe(2);
+      expect(add(5, -3)).toEqual(2);
     });
   });
 
   describe('Subtraction', () => {
     test('subtracts two positive numbers', () => {
-      expect(subtract(5, 3)).toBe(2);
+      expect(subtract(5, 3)).toEqual(2);
     });
 
     // ...
@@ -168,7 +170,11 @@ npm test -- --test='Calculator operations adds two numbers'
 
 ## 4. Matchers
 
-The `expect` statement is similar to assertions you may have seen before. The pattern you'll be seeing is `expect(expr).[not].matcher` You can add `not` to test for the opposite.
+The `expect` statement is similar to assertions from other languages. In order to test the value of an expression Jest uses matchers. They compare the expression in the `expect` statement to value within the parentheses based on their self-explanatory name. 
+
+The pattern you'll be using is `expect(expr).[not].matcher(expr)` (You can add `not` to test for the opposite.)
+
+Here's a list of common matchers you might use:
 
 - Equality
    - `toBe` - matches identity
