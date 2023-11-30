@@ -3,11 +3,12 @@
 ## Table of Contents
 ### [Introduction](#introduction-1)
 ### [Requirements](#requirements-1)
-### [iOS Related Certificates](#ios-related-certificates-1)
-### [Certificate Creation](#certificate-creation-1)
+### [Certificates](#certificates-1)
+- [iOS Related Certificates](#ios-related-certificates)
+- [Certificate Creation](#certificate-creation)
 ### [Beta Testing](#beta-testing-1)
-### [TestFlight](#testflight-1)
-### [Ad hoc](#ad-hoc-1)
+- [TestFlight](#testflight)
+- [Ad hoc](#ad-hoc)
 ### [Distribution Process](#distribution-process-1)
 ### [App Store Submission](#app-store-submission-1)
 ### [Additional Information](#additional-information-1)
@@ -43,8 +44,9 @@ These are some possible hurdles to keep in mind when working on a project to rel
 The full details of the Apple Developer Account requirements are available on the Apple Developer Program enrollment page: [Apple Developer Program](https://developer.apple.com/programs/enroll/)
     
 
-### iOS-Related Certificates
+### Certificates
 
+#### iOS Related Certificates
 - **Apple Push Notification Service** Certificate (Notifications)
     - Handles push notifications that you would receive when you're not currently using the app (i.e., New Message from ________).
 - **Apple Pay Payment** Processing Certificate (Apple Pay)
@@ -55,7 +57,7 @@ The full details of the Apple Developer Account requirements are available on th
     - Sign Apple Wallet passes.
 - **iOS Distribution** Certificate (Auto-Generated on Account Creation)
 
-### Certificate Creation
+#### Certificate Creation
 To create certificates, you can head to the Certifications tab on the Apple Developer Website and choose which ones are applicable to your app. After, you would need to generate a CSR (Certificate Signing Request) on your MacBook.
 Apple's Certificates job states to follow [these steps](https://developer.apple.com/help/account/create-certificates/create-a-certificate-signing-request/) in order to generate the certificate:
 1. Launch Keychain Access located in /Applications/Utilities.
