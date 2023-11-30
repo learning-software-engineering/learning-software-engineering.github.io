@@ -286,7 +286,7 @@ struct ContentView: View {
 }
 
 struct InnerView: View {
-    // Grab UserProgress instance from the view environment
+    // Grab UserProgress instance from the environment
     @Environment(\.progress) var progress: UserProgress
 
     var body: some View {
