@@ -7,8 +7,8 @@
 ### [Parsing HTML](#parsing-html-1)
 ### [Navigating the Parse Tree](#navigating-the-parse-tree-1)
 ### [Searching the Tree](#searching-the-tree-1)
-### [Additional Resources](#addtional-resources-1)
 ### [Data Extraction](#data-extraction-1)
+### [Additional Resources](#additional-resources-1)
 
 ## Introduction
 
@@ -287,7 +287,7 @@ for attribute, value in anchor_tag.attrs.items():
 ```
 This will print out all attributes and their values for the specified element.
 
-## Additional resources
+## Additional Resources
 Please look at `HTML_Guide.md` for reference to html content.
 
 More tutorials/resources on BeautifulSoup:\
