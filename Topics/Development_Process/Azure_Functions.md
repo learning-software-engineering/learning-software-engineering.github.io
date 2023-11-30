@@ -178,3 +178,10 @@ func azure functionapp publish myname-func-demo
 Ensuring that `myname-func-demo` matches the name of the Function App resource you created earlier.
 
 Give it some time, and your Azure function should now be deployed! The output of the deployment should contain a URL where you can actually invoke your function.
+
+## Additional Resources
+
+[Azure Functions Developer Guide](https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference)
+[Azure Functions Triggers and Bindings](https://learn.microsoft.com/en-CA/azure/azure-functions/functions-triggers-bindings)
+[Deploy Azure Functions Locally](https://learn.microsoft.com/en-us/azure/azure-functions/functions-run-local)
+[Connect to Azure Services](https://learn.microsoft.com/en-us/azure/azure-functions/add-bindings-existing-function)
