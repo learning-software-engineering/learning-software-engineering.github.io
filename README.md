@@ -27,7 +27,9 @@ Potential Topics--
         1. Set up
     8. Unity
         1. Introduction to Unity Basics
-        2. A Beginner's Guide for Unity UI Design
+        2. A Beginner's Guide for Unity UI Design 
+    9. Python
+        1. Pythonic iteration patterns
         
 - Software Tools
     1. Git
@@ -65,6 +67,7 @@ Potential Topics--
         3. Build requirements
             1. requirements.txt
             2. packages
+            3. CMakeLists.txt
         4. Deployment
             1. Heroku
             2. AWS
