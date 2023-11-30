@@ -26,7 +26,7 @@ Here we will go through everything we need to do in the [Azure Portal](https://p
 
 First, you will need an Azure account. If you don't have one, sign up for [Azure](https://azure.microsoft.com/).
 
-**Disclaimer**: You will need a credit card. If you are new to Azure, you are eligible for a free tier. Moreover, you can link your UofT email to your Azure account to be for further credit. Microsoft will only put a small holding fee to verify your identity.
+**Disclaimer**: You will need a credit card. If you are new to Azure, you are eligible for a free tier. Microsoft will only put a small holding fee to verify your identity. Moreover, you can link your education email to your Azure account to check if you're eligible for additional Azure credit.
 
 With that out of the way, once you create your account, you should now have a brand new Azure subscription.
 
@@ -111,7 +111,7 @@ _Optional_: If you are using VS Code, go ahead and install the Azure Functions e
 
 ## Create an Azure Function
 
-Open up a terminal and `cd` into a directory you'd like to create our Azure Function project. Once there, run `func init`. Select `dotnet` followed by `c#`, and your Azure Functions project will be initialized.
+Open up a terminal and `cd` into a directory you'd like to create your Azure Function project. Once there, run `func init`. Select `dotnet` followed by `c#`, and your Azure Functions project will be initialized.
 
 We will be creating an Azure Function that responds to HTTP triggers. If you installed the Azure Functions extension in VS Code:
 
@@ -174,7 +174,7 @@ That's it! You've created your first Azure function.
 
 First, change the `AzureWebJobsStorage` property inside `local.settings.json` to the value of the connection string you copied when creating the Storage account.
 
-Now, open up a terminal and run `az login`. This will open a browser page and prompt you to sign in to your Azure account.
+Now, open up a terminal and run `az login` in any directory. This will open a browser page and prompt you to sign in to your Azure account. You can check that authentication was successful by running `az account show`. Now Azure will allow us to deploy our local Azure Function to the cloud!
 
 `cd` into your project directory and run:
 
