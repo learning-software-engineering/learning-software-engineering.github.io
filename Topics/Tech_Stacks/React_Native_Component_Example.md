@@ -8,6 +8,8 @@ This guide provides a quick demonstration on how to write customized components 
 -  **[Using ProductCard Component](#product_card)**
 -  **[Running the App](#running_app)**
 -  **[Further Customization](#further_customization)**
+-  **[Debugging React Native Components](#debuggingn)**
+-  **[Error Handling in React Native Components](#error_handling)**
 
 ### Step 1: Setup <a id="setup"></a>
 
@@ -146,3 +148,62 @@ Feel free to customize the `ProductCard` component further by adding props, styl
 This approach can be extended to create various customized components for different parts of your application, enhancing reusability and maintainability.
 
 Remember to test your components thoroughly to ensure they work as expected in various scenarios.
+
+### Debugging React Native Components <a id="debugging"></a>
+
+1.  **Console Logging:** The simplest way is to utilize console.log() statements within your component functions to log variable values, state changes, and function execution. These logs will appear in the terminal or console output, providing insights into the component's behavior. Here is an example:
+```jsx
+const CustomButton = ({ title, onPress, style }) => {
+  console.log('Title:', title); // Logging the title prop
+  // ... rest of the component code
+};
+```
+2.  **React Native Debugger:** You can also use tools like React Native Debugger, which provides a comprehensive debugging environment. It includes features like React DevTools, Redux DevTools, and a built-in inspector for examining network requests and state changes.
+
+### Error Handling in React Native Components <a id="error_handling"></a>
+1.  **Try-Catch Blocks:** You can enclose sections of code within try-catch blocks to catch and handle specific errors gracefully. This is especially useful for handling asynchronous operations, API calls, or critical parts of your component logic. Here is an example:
+```jsx
+try {
+  // Code that might throw an error
+} catch (error) {
+  // Handle the error here
+  console.error('An error occurred:', error);
+}
+```
+2. **Unit Testing for Error Scenarios:** You can also write unit tests using frameworks like Jest to cover error scenarios within your components. This ensures that your error handling mechanisms are functional and respond as expected. Here's a simple unit test for the ProductCard component we previously implemented using Jest and React Testing Library:
+```jsx
+// ProductCard.test.js
+
+import React from 'react';
+import { render } from '@testing-library/react-native';
+import ProductCard from './ProductCard';
+
+describe('ProductCard component', () => {
+  it('renders product details correctly', () => {
+    const product = {
+      id: 1,
+      name: 'Test Product',
+      price: 20.99,
+      image: 'https://example.com/test-product.jpg',
+    };
+
+    const { getByText, getByTestId } = render(<ProductCard product={product} />);
+
+    const productName = getByText('Test Product');
+    const productPrice = getByText('$20.99');
+    const productImage = getByTestId('product-image'); // Assuming you add testID to the Image component
+
+    expect(productName).toBeTruthy(); // check for product name
+    expect(productPrice).toBeTruthy(); // check for product price
+    expect(productImage).toBeTruthy(); // check for product image
+  });
+});
+```
+Note: In this example, we're assuming you've set a testID on the Image component inside the ProductCard to make it easier to select in the test. You can add testID to the Image component like this:
+```jsx
+<Image
+  source={{ uri: image }}
+  style={styles.image}
+  testID="product-image"
+/>
+```
