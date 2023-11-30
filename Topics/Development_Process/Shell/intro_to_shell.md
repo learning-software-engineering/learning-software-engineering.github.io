@@ -60,13 +60,13 @@ An absolute path specifies the location from the root directory (`/`) and always
 
 A relative path specifies the location relative to the current working directory and does not start with `/`.
 
-- If your current working directory is `/home/user/`, the relative path to `file2.txt` is `folder1/file2.txt`.
+- If your current working directory is `/home/user/`, the relative path to `file2.txt` is `./folder1/file2.txt`.
 - If you are in the directory `/home/user/folder1/`, the relative path to `file1.txt` is `../file1.txt` (where `..` refers to one directory up).
 
 #### Example Usage in a Shell
 
 - Using absolute path: `cat /home/user/file1.txt` (works from any directory).
-- Using relative path: `cat folder1/file2.txt` (works if your current directory is `/home/user/`).
+- Using relative path: `cat ./folder1/file2.txt` (works if your current directory is `/home/user/`).
 
 This example succinctly illustrates the usage and difference between relative and absolute paths.
 
