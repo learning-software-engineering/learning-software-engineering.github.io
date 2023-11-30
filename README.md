@@ -25,6 +25,9 @@ Potential Topics--
     
     7. React Native
         1. Set up
+    8. Unity
+        1. Introduction to Unity Basics
+        2. A Beginner's Guide for Unity UI Design
         
 - Software Tools
     1. Git
@@ -76,6 +79,7 @@ Potential Topics--
     3. SOLID Principles
     4. Code Smells
     5. QA testing
+    6. Introduction to Conda (Python) 
 - Professionalism
     1. Customer engagement
         1. Meeting best practices
@@ -92,6 +96,7 @@ Potential Topics--
     3. Helpful Courses
     4. User Experience Orientated Games
 - Product Management
-    1. Beginner's guide to product management and becoming a successful product manager
+    1. Beginner's guide to product management and becoming a successful product manager with case studies.
 - Other useful resources
 - Teamwork
+    1. Effective Leadership
