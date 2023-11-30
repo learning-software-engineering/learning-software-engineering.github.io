@@ -5,7 +5,7 @@
 1. [Introduction](#introduction)
 2. [Naming](#naming)
 3. [Component Structure](#component-structure)
-4. [Final Remarks](#final-Remarks)
+4. [Final Remarks](#final-remarks)
 5. [Citations](#citations)
 
 ## Introduction
@@ -55,7 +55,7 @@ As to what you should name your classes, a popular convention is to use the BEM 
 
 When working with React, it is important to follow a consistent component structure. This helps developers quickly identify the purpose of each component and its role in the application. The following are some common principles for structuring React components:
 
-- **Break down components**: Components should be broken down into smaller components whenever possible. Large components are difficult to understand and debug. It is also easier to reuse smaller components, which avoids code repetition. This essentially goes back to the [Single Responsibility Principle](https://en.wikipedia.org/wiki/Single-responsibility_principle) in software engineering, which states that each component should have a single responsibility. For example, a component that renders a user profile page should be broken down into smaller components that render the user's name, profile picture, and bio.
+- **Break down components**: Components should be broken down into smaller components whenever possible. Large components are difficult to understand and debug. It is also easier to reuse smaller components, which avoids code repetition. This essentially goes back to the [Single Responsibility Principle](https://en.wikipedia.org/wiki/Single-responsibility_principle) in software engineering, which states that each component should be in charge of only one function. 'Robert C. Martin, the originator of the term, expresses the principle as, "A class should have only one reason to change"'([Wikipedia](https://en.wikipedia.org/wiki/Single-responsibility_principle)). For example, a component that renders a user profile page should be broken down into smaller components that render the user's name, profile picture, and bio.
 
 - **Organize component heirarchy into folders**: Components should be organized into folders based on their role in the application. At the highest level inside the components folder, there should be folders for each of the pages in the website. Within each page folder, there should be folders for each of the components that make up the page. The more deeply nested a component is within its page, the deeper it will be in the folder heirarchy. Moreover, test and CSS files should be together with the jsx files. For example, a website that has a home page and a user profile page should have the following folder structure:
 
