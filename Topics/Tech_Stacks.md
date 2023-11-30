@@ -45,3 +45,4 @@
 ### [Learning Odata](./Tech_Stacks/Odata.md)
 ### [Introduction to OpenShift](./Tech_Stacks/OpenShift.md)
 ### [Django Basics and Django Rest Framework](./Tech_Stacks/Django_Rest.md)
+### [Lodash Basics with Javascript](./Tech_Stacks/Lodash.md)
