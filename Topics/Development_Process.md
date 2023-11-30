@@ -22,6 +22,7 @@
 ### [Getting Started With Docker](./Development_Process/Docker.md)
 
 ### [Getting Started With WSL 2](./Development_Process/WSL.md)
+### [Setting up Conda for multiple Python environments](./Development_Process/Conda/Setup_Conda.md)
 
 ## Nginx
 
@@ -141,8 +142,9 @@ This is only a simplification of what "Clean Architecture" is; the topic is so v
    - https://www.youtube.com/watch?v=2dKZ-dWaCiU 
    - https://github.com/ropalma/ICMC-USP/blob/master/Book%20-%20Clean%20Architecture%20-%20Robert%20Cecil%20Martin.pdf 
 
-## Code Smells
-### [Code Smells](./Development_Process/Code_Smells.md)
+## Clean coding
+### [Coding and commenting styles](./Development_Process/clean_coding_styling.md)
+
 
 ## Prompt Engineering
 ### [Basics of Prompt Engineering](./Development_Process/Prompt_Engineering.md)
