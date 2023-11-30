@@ -31,7 +31,7 @@ In order to keep DuckDNS up to date, you then need to have your server run a scr
 - Paste the following into the `duck.sh` file substituting values where appropriate:
 
 ```
-echo url="https://www.duckdns.org/update?domains=<YOUR COOL DOMAIN NAME>&token=<YOUR ACCOUNT NAME>&ip=" | curl -k -o <PATH TO FOLDER>/duckdns/duck.log -K -
+echo url="https://www.duckdns.org/update?domains=<YOUR COOL DOMAIN NAME>&token=<YOUR ACCOUNT TOKEN>&ip=" | curl -k -o <PATH TO FOLDER>/duckdns/duck.log -K -
 ```
 
 - Make the `duck.sh` file runnable by running `chmod 700 duck.sh`.
