@@ -3,9 +3,10 @@
 ## Table of Contents
 1. [Introduction](#introduction)
 2. [Why Should I Care?](#why-should-i-care?)
-3. [Case Studies](#case-studies)
-4. [What Can I Do?](#what-can-i-do?)
-5. [Works Cited](#works-cited)
+3. [PIPEDA](#pipeda)
+4. [Case Studies](#case-studies)
+5. [What Can I Do?](#what-can-i-do?)
+6. [Works Cited](#works-cited)
 
 ## Introduction
 In the age of big data collection, it has become a continuously greater challenge to maintain ethical practices when designing software. It seems as though every company which collects user data or has any form of software which users interact with has made mistakes in this field, sometimes with catastophic consequences. Hence, it is vital for any software enginner to be mindful and educated on the topic of ethics in computing, and how they can apply it to their work.
@@ -19,6 +20,20 @@ As a software engineer, you are personally and professionally responsible for ma
 
 ### Legal Consequences
 There are great legal implications to breaking ethical laws, and being unaware of them is seldom a reasonable justification. Violating the privacy of a user or otherwise handling their information irresponsibly can lead to lawsuits from that user, or from a client company. Poor practices can also result in detrimental fines and a ruined record; in the European Union, for example, the General Data Protection Regulation (GDPR) is strongly enforced, and non-compliance can result in a fine of millions of dollars. The Canadian equivalent to the GDPR is PIPEDA.
+
+## PIPEDA
+Canada's Personal Information Protection and Electronic Documents Act (PIPEDA) is a set of laws regarding data collection and use in the context of businesses. To summarize, here is what it requires:
+
+* Consent: Organizations must obtain consent when collecting, using, or disclosing personal information.
+* Purpose Limitation: Organizations must collect personal information for a specific purpose and cannot use it for other reasons without consent.
+* Limited Collection: Organizations must only collect information necessary for the identified purpose.
+* Accuracy: Organizations must ensure that the collected information is accurate, complete and up-to-date.
+* Safeguards: Organizations must implement security measures to protect personal information against unauthorized access, disclosure, or misuse.
+* Openness: Organizations must be transparent about their policies and practices related to the handling of personal information.
+* Individual Access: Individuals have the right to access their own personal information held by an organization and request corrections if necessary.
+* Challenging Compliance: Individuals can challenge an organization's compliance with PIPEDA and seek recourse.
+
+In general, when designing sofwtare that collects user data, you must ensure that you only collect data that users consent to being collected, and only use it for the reasons that they consented to. Full transparency is also required, as users have a right to know which data you are storing if it pertains to them.
 
 ## Case Studies
 When evaluating the ethical quality of a service, we can typically look at three main factors: privacy, security and consent. 
