@@ -117,6 +117,112 @@ In the above example, we have created three variables: $txt, $x, and $y. $txt st
 You can see that in the above echo calls we don't just use the variables, but we also include HTML tags. By employing more powerful logic, we can make more complex reactive web pages, as PHP can be used to dynamically generate HTML content.   
 
 In addition to variables PHP has much of the functionality you would expect from a programming language, such as loops, conditionals, functions, and more. You can learn more about the specific PHP syntax for those operations [here](https://www.w3schools.com/php/php_if_else.asp).
+
+### JavaScript
+We can also run JavaScript code directly in PHP. This allows us to use PHP together with JavaScript to create dynamic web pages.
+```php
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+    // Generate a random number between 1 and 10
+    $randomNumber = rand(1, 10);
+    echo "<p>Random number: $randomNumber</p>";
+?>
+
+<script>
+    // Use the random number in a JavaScript function
+    function multiplyByRandomNumber(num) {
+        return num * <?php echo $randomNumber; ?>;
+    }
+    document.write('<p>5 * random number = ' + multiplyByRandomNumber(5) + '</p>');
+</script>
+
+</body>
+</html>
+```
+In the example above we use the PHP rand() function to generate a random number between 1 and 10 and store it in the $randomNumber variable. We then use the PHP echo function to output the value of $randomNumber in the JavaScript function. This allows us to use the PHP variable in the JavaScript function.
+
+### Forms
+PHP can also be used to handle form data. In the following example, we have a simple HTML form that asks the user to enter their name. When the user submits the form, the PHP script will display the name they entered.
+```php
+<!DOCTYPE html>
+<html>
+<body>
+
+<form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
+    Name: <input type="text" name="name">
+    <input type="submit">
+</form>
+
+<?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        // collect value of input field
+        $name = $_POST['name'];
+        if (empty($name)) {
+            echo "Name is empty";
+        } else {
+            echo "Hello $name!";
+        }
+    }
+?>
+
+</body>
+</html>
+```
+### Databases
+PHP can also be used to connect to databases. In the following example, we connect to a MySQL database and display the contents of a table.
+```php
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+// Replace these values with your actual database credentials
+$servername = "your_servername";
+$username = "your_username";
+$password = "your_password";
+$dbname = "your_dbname";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// SQL query to retrieve data from the table
+$sql = "SELECT * FROM example_table";
+$result = $conn->query($sql);
+
+// Display table if there are results
+if ($result->num_rows > 0) {
+    echo "<table>";
+    echo "<tr><th>ID</th><th>Name</th><th>Description</th></tr>";
+
+    // Output data of each row
+    while($row = $result->fetch_assoc()) {
+        echo "<tr><td>" . $row["id"] . "</td><td>" . $row["name"] . "</td><td>" . $row["description"] . "</td></tr>";
+    }
+
+    echo "</table>";
+} else {
+    echo "0 results";
+}
+
+// Close connection
+$conn->close();
+?>
+
+</body>
+</html>
+```
+
+The above examples are just a few of the many ways PHP can be used. You can learn more about PHP and its extensive uses through the following resources.
+
 ## Additional Resources
-- Much of the information in this guide was taken from [this tutorial](https://www.w3schools.com/php/default.asp) by W3Schools. You can find more information about PHP as well as a step-by-step tutorial on how to get started with PHP on their website.
+- Much of the information in this guide was taken from [this tutorial](https://www.w3schools.com/php/default.asp) by W3Schools. You can find more information about PHP including a step-by-step tutorial on how to get started, as well as more advanced topics such as PHP forms, PHP cookies, PHP sessions, PHP filters, PHP MySQL, and PHP OOP on their website.
 - For a great and indepth way of getting started with PHP, check out [this YouTube course by FreeCodeCamp](https://www.youtube.com/watch?v=OK_JCtrrv-c&ab_channel=freeCodeCamp.org).
+- For a tutorial specific to web development with PHP, check out [this video by Simplilearn](https://www.youtube.com/watch?v=PGvrnas2_Pk).
