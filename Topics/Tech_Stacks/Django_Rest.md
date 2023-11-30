@@ -74,9 +74,11 @@ Django has many more field types to represent various data types. Aside from the
 Now that we have created a new model, we must create a migration for these changes to reflect in the database.
 
 ### Migrations
-- commands
-- python3 manage.py makemigrations - creates a migration file containing all the changes made since the last migration, similar to Git history. not autoapplied as changing the database structure is an important (and potentially dangerous) operation
-- python3 manage.py migrate - applies migrations
+A migration is a file that tells the ORM what changes have been made to the models. Whenever we make changes to our models, we must run the following two commands:
+- ```python3 manage.py makemigrations```: This command creates a migration file containing all the changes made since the last migration, similar to a Git history. These changes are not auto-applied as changing the database structure is an important (and potentially dangerous) operation.
+- ```python3 manage.py migrate```: This command applies changes from any unapplied migration files to the database using SQL code. This syncs the state of the database tables with the models defined as Python classes.
+
+Be VERY careful with your migrations. If you are ever unsure, consult the [documentation](https://docs.djangoproject.com/en/4.2/topics/migrations/)!  
 
  ### Creating an API
 
