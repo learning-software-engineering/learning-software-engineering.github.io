@@ -20,6 +20,7 @@
 - [Large Language Model (LLM) for Testing and Debugging](./Development_Process/LLM_Testing_Debugging.md)
 
 ### [Getting Started With Docker](./Development_Process/Docker.md)
+### [Deploying onto the App Store](./Development_Process/App_Store_Deployment.md)
 
 ### [Getting Started With WSL 2](./Development_Process/WSL.md)
 ### [Setting up Conda for multiple Python environments](./Development_Process/Conda/Setup_Conda.md)
