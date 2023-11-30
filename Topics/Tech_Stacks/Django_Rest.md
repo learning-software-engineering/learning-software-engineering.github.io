@@ -67,7 +67,7 @@ class TodoItem(models.Model):
     completed = models.BooleanField(default=False)
 ```
 
-For this model, we have used a CharField for the string title. The CharField is used for small amounts of text, with a default max length of 255 characters. We have defined the max length to be 200 characters in this case. We have also used a BooleanField for the boolean completion status, and we have explicitly defined the default value to be False. Thus, whenever a value isn't provided for the completed field, it will automatically be set to False. 
+For this model, we have used a CharField for the string title. A CharField is used for small amounts of text, with a default max length of 255 characters. We have defined the max length to be 200 characters in this case. We have also used a BooleanField for the boolean completion status, and we have explicitly defined the default value to be False. Thus, whenever a value isn't provided for the completed field, it will automatically be set to False. 
 
 Django has many more field types to represent various data types. Aside from the max length and default value, there are also other options that can be passed to these field types, such as whether a value can be null and whether a value can be blank. More information about field types and field options can be found [here](https://docs.djangoproject.com/en/4.2/ref/models/fields/).
 
@@ -75,10 +75,10 @@ Now that we have created a new model, we must create a migration for these chang
 
 ### Migrations
 A migration is a file that tells the ORM what changes have been made to the models. Whenever we make changes to our models, we must run the following two commands:
-- ```python3 manage.py makemigrations```: This command creates a migration file containing all the changes made since the last migration, similar to a Git history. These changes are not auto-applied as changing the database structure is an important (and potentially dangerous) operation.
+- ```python3 manage.py makemigrations```: This command creates a migration file containing all the changes made since the last migration, similar to a Git history. These changes are not auto-applied as changing the database structure is an important (and potentially dangerous) operation that can result in data loss.
 - ```python3 manage.py migrate```: This command applies changes from any unapplied migration files to the database using SQL code. This syncs the state of the database tables with the models defined as Python classes.
 
-Be VERY careful with your migrations. If you are ever unsure, consult the [documentation](https://docs.djangoproject.com/en/4.2/topics/migrations/)!  
+Be VERY careful with your migrations. If you accidentally delete a migration file, edit the migration file by hand, or edit the same model as someone else at  the same time, you could create migration errors that are very complicated to resolve. If you are ever unsure, consult the [documentation](https://docs.djangoproject.com/en/4.2/topics/migrations/)!  
 
 ### Querying models
 Once the database is fully set up with our models, we can write code that queries the database to find the specific data that we want. Each model has a ```.objects``` attribute, and all queries are methods of this attribute. The most basic query would be to get all the objects in that table - for our Todo class, this is done using ```TodoItem.objects.all()```, which returns a QuerySet (basically an unordered list) of all the TodoItem objects. There are many other queries found [here](https://docs.djangoproject.com/en/4.2/topics/db/queries/) that can be used to filter based on specific requirements and create and update objects.
@@ -132,7 +132,7 @@ urlpatterns = [
 ]
 ```
 
-All in all, we have now built a simple API with the ability to list, create, update and delete todo list items. One can test the API by starting the Django development server using ``` python3 manage.py runserver ``` and visiting http://localhost:8000/todos/ in a web browser. Running this command will also show any errors that need to be fixed in the shell, and this continuously updates whenever the code is changed.
+All in all, we have now built a simple API with the ability to list, create, update and delete todo list items. One can test the API by starting the Django development server using ``` python3 manage.py runserver ``` and visiting http://localhost:8000/todos/ in a web browser. Running this command will also show any errors that need to be fixed in the shell, and the server continuously checks for errors and updates whenever the code is changed.
 
 ### Extra Resources
 
