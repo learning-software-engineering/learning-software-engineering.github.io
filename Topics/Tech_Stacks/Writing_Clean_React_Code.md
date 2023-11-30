@@ -161,6 +161,32 @@ export default function AdditionDisplay() {
 
 - **Use React Fragments**: React fragments are useful for rendering multiple elements without adding an extra node to the DOM. This is especially useful when rendering lists of elements, or if your component returns a group of components (like when you refactor a big component to follow the Single Responsability Principle). Be aware that it is not a sin to utilize divs, since they are useful for styling and are useful to decouple data fetching like mentioned above, but if you don't need them, then you should use React Fragments instead.
 
+```jsx
+// If don't want to add a div to the DOM tree, you could do this!
+const List = () => {
+  return (
+    <>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </>
+  );
+};
+```
+
+```jsx
+// If you need to add properties to the fragment, you can do this!
+const List = () => {
+  return (
+    <React.Fragment key={item.id}>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </React.Fragment>
+  );
+};
+```
+
 ## Final Remarks
 
 Writing clean and efficient React code is essential for building scalable and maintainable applications. Clean code not only enhances readability but also contributes to better collaboration among developers. We have only scratch the surface in this article, but hopefully you have learned some useful tips and tricks to help you write cleaner React code. If you are interested in learning more, you might want to check out the resources in the citation section.
@@ -176,3 +202,7 @@ Writing clean and efficient React code is essential for building scalable and ma
 - [Greate article on state management](https://oskari.io/blog/stop-react-global-state-part-1)
 - [Fireship's video on some of the topics covered here (and more!)](https://www.youtube.com/watch?v=b0IZo2Aho9Y)
 - [Good article on file structure](https://medium.com/@kthamodaran/react-8-best-practices-folder-structure-5dbda48a69e)
+
+```
+
+```
