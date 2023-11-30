@@ -1,3 +1,8 @@
+# Table of Contents
+1. [Introduction to Jenkins](#introduction-to-jenkins)
+2. [Terminolgy](#terminology)
+3. [Setting up Jenkins with Github](#setting-up-jenkins-with-github)
+
 # Introduction to Jenkins
 ## What is Jenkins?
 Jenkins is an open source tool written in Java used for CI/CD (the method of frequently delivering software by automating the stages of developing, testing and deploying). For more information on CI/CD refer to the page on [Continous Integration](/Topics/Software_Engineering/continuous_integration/Continuous_Integration.md).
@@ -9,7 +14,7 @@ With Jenkins, you are able to trigger builds and automated testing with any chan
 
 <br>
 
-## Comparison with other Tools
+## Comparison with Other Tools:
 
 **Jenkins vs Gitlab:**
 
@@ -27,7 +32,7 @@ More information: [CircleCI vs Jenkins: What's the Difference?](https://testsigm
 
 <br>
 
-## Terminology
+# Terminology
 **Jenkins Controller**
 
 This is the main Jenkins server and it is ideally the machine you have installed Jenkins on. It is responsible for scheduling and delegating tasks to Jenkins agents (also known as slaves). This allows for the distribution of tasks and speeds up and improves performance. It also supervises the health of the agents and will stop delegating tasks to an agent if it is too busy. 
