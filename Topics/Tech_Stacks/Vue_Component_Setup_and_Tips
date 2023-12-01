@@ -1,38 +1,73 @@
-# Setting up Vue Components, How to Use them, and Other Tips!
+# Setting up Vue 3 Components, How to Use them, and Other Tips!
 
 ## Table of Contents
 
 #### [Introduction](#Introduction)
-#### [What is a Vue Component? ](#Pizza)
+#### [What is a Vue Component? ](#what)
 #### [Topics](#thing)
 #### [Topics again](#something)
 #### [Other Tips](#other)
 #### [Conclusion](#conclude)
 
 ## Introduction
-This guide will help you understand the usage and implementation of Inter-process Communication (IPC) in C Programming language. 
-In C programming, the **`fork()`** and **`pipe()`** functions are commonly used for process creation and Inter-process Communication, respectively. Here's an introduction to each and explanation of how they can be used together.
+This is a guide to the inner workings of Vue Components and their usage. It will tell you how to set them up,
+what the file format is, and also give general advice and things to watch out for. This guide assumes the reader has basic knowledge of HTML/CSS, as well as Javascript.
 
-## What is a Vue Component? <a name="Pizza"></a>
-Vue Components are like pizza.
+If you have no knowledge of Vue or how to set up a Vue project, it is imperative that you follow [Vue's Quick Start](https://vuejs.org/guide/quick-start.html) instructions for doing so.
 
- - Pizza.
+## What is a Vue Component? Why should I care? <a name="what"></a>
+The Vue.js framework is a Javascript component-based programming model for the development of User Interfaces (UI), and is commonly used for Web Applications. It builds on the syntax of HTML, allowing the user to "declaratively" describe what they want the code to do. This allows for a very reactive app, one that responds efficiently to state changes to update the DOM. What this means is, less work needs to be done by the programmer for the HTML to update. The API takes care of a lot of it!
 
-> To learn more, please visit the [pizza man page](https://youtube.com).
-## Calling `pizza()`<a name="implementation"></a>
+Components are how it's all done. Every .vue file is a Vue Component! In these files, you can condense the 3 key aspects of a webpage, the HTML, code-behind, and CSS styling. This centralization and user-friendliness has made Vue renowned for its simplicity.
 
-1. Before calling  `pizza()`,  put this if statement here.
+**Am I quoting too much from official documentation? Should I put my own spin on it or cut out general info about the Vue.js framework?**
+
+> To learn more, please visit the [Vue website](https://vuejs.org/guide/introduction.html).
+
+## Format of Vue Components<a name="implementation"></a>
+Here is the general format of a Vue Component.
+
 
 ```c
 # Example code
-if (pizza) {
-  pizza();
+<script setup>
+import { ref } from 'vue'
+const count = ref(0)
+</script>
+
+<template>
+  <button @click="count++">Count is: {{ count }}</button>
+</template>
+
+<style scoped>
+button {
+  font-weight: bold;
 }
+</style>
 ```
-The parent process writes the string "Hi my child\n" to the write end of the pipe (`fd[1]`), and the child process reads 11 bytes of data from the read end of the pipe (`fd[0]`).
+The top is the Javascript code-behind, the middle is the HTML, and the bottom is the CSS style. Nice and centralized. Thankfully, the order doesn't matter. However, as the script is the most complicated, we'll talk about it last.
+
+**Should I explain what the example code above means? Like, what import {ref} does? Or maybe I should give a different example, one similar to what we worked on in our CSC301 project? I worry it might be too long**
+
+### HTML Template
+Ever seen the HTML of a webpage? That and Vue's HTML template are almost identical. Just remember, the root container must be labelled as ```<template>```, and it can only have one container inside that. Inside *that* sub-container though, anything is possible! On top of things like your standard ```<div>```, you can also use **other** Vue Components that you've imported in the script section! More on that in a bit.
+
+Here, I'm going to *only* show how Vue HTML components have if-else visibility features, and the ability to insert components through built-in for loops. Am I missing anything important to do with HTML in Vue?
+
+### CSS
+The CSS styling in Vue works as it does anywhere else, but with one key difference. See that ```scoped``` attribute in the ```<style>``` tag? When the tag has that attribute, the CSS can only apply to the component it's present in. Removing it however, allows for usage anywhere else in the program. Just...be careful about CSS conflicts and shadowing.
+
+### Script
+This is the meat of Vue. This is where you essentially define the webpage as an Object-Oriented-Programming Class! It can have it's own methods, attributes, as well as import scripts and other components for use! It's a very dense part of learning Vue, but here are the basics.
+
+Here I'm going to explain how to mount the app, basically talking about props, the default{} variables, computed methods, import statements, etc. It's going to be a rather dense section, as I have to talk about class variables and how mounted() works at runtime. Should I go into asynchronous methods/components?
+
 ## Things to watch out for! <a name="other"></a>
-List things to watch out for
+Vue's reactivity and unique way of handling things can prove to be a double-edged sword if not handled properly. Here are some general tips:
+- If you want to display a document variable inside a component, and that component has an attribute that computes that same variable, you may cause Vue to enter an infinite update loop, where the computing of the variable will cause the displaying of the variable to cause the program to see the component as updated, so it recalculates the variable and redisplays it, and so on. This can crash the page or prevent it from displaying.
+- Uh what else?
 ## Conclusion <a name="conclude"></a>
 In conclusion, Vue is cool!
 ## References
- - Insert links here
+ - [Official Vue website](https://vuejs.org/guide/introduction.html)
+ - [Component Basics](https://vuejs.org/guide/essentials/component-basics.html)
