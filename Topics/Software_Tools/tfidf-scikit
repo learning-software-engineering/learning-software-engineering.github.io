@@ -1,0 +1,90 @@
+TF-IDF stands for term frequency inverse document frequency. This is a method used in statistics and machine learning that is able to calculate how relevant a word is to a 
+document when compared against a collection of documents.
+
+Specific to sklearn.feature_extraction.text.TfidfVectorizer, it multiplies 2 metrics.
+
+  1. How many times a word appears within a document of interest.
+  2. The inverse document frequency of the selected word across a massive corpus of documents.
+
+This is a very fundamental feature often used in Natural Language Processng and helps to get words of interest within machine learning.
+
+This process was invented to address issues in automated document searching. For example, common words like "and", "where", and "then" would be so frequent across all documents that it will
+be phased out of processing. But if one document focuses on transportation, words such as "public", "transit", and "streetcar" would appear much more frequently in this document compared to
+others which allows the algorithm to identify the document's most relevant words which we can extract to perform additional processing on.
+
+Instructions:
+
+Before beginning, one should have a collection or corpus of documents ready. This could include newspaper articles and blog posts. The more documents you can run against the Vectorizer,
+the more accurate the comparisons will be.
+
+1. Begin by installing the python library scikit-learn. This can be done through the pip installer with the command:
+
+    pip install scikit-learn
+
+  It can also be manually installed through your python IDE
+
+2. Import the library into your program
+
+    from sklearn.feature_extraction.text import TfidfVectorizer
+
+3. Create the TfidfVectorizer object:
+
+    tfidf_vectorizer = TfidfVectorizer()
+
+    There are many parameters and inputs you can use and adjust within the brackets. 
+    They can all be found through the documentation linked above.
+
+4. Fit and transform the data
+
+    tfidf_matrix = tfidf_vectorizer.fit_transform(your_documents)
+
+    In this command, the parameter your_documents should be a list of document content. Each element of the list
+    should be the full content of the doc. We format it this way so that the vectorizer can go through each one 
+    and treat it as different. 
+
+5. The complete TF-IDF matrix can be seen in the tfidf_matrix variable. This can be outputted into a dataframe using the pandas library
+   or otherwise and the results can be displayed and interpreted for your program.
+
+By following these instructions, you can effectively use TF-IDF with the TfidfVectorizer in scikit-learn to preprocess your text data for various machine learning tasks such as classification, 
+clustering, or information retrieval.
+
+Example input and output:
+
+Say we had our list of documents. (Short strings for example)
+
+docs=["the house had a tiny little mouse", 
+"the cat saw the mouse", 
+"the mouse ran away from the house", 
+"the cat finally ate the mouse", 
+"the end of the mouse story" ]
+
+Upon running our instruction steps on these documents, we will see output after the commands:
+
+# print idf values 
+df_idf = pd.DataFrame(tfidf_transformer.idf_, index=cv.get_feature_names(),columns=["idf_weights"]) 
+
+# sort ascending 
+df_idf.sort_values(by=['idf_weights'])
+
+Giving us:
+
+mouse - 1.000
+the   - 1.000
+cat   - 1.693
+house - 1.693
+ate   - 2.098
+away  - 2.098
+...
+tiny  - 2.098
+
+To interpret these values. Notice that mouse and the have the lowest. Which means they appear in all of our documents, 
+meaning that they are not important words. Words such as tiny and away have higher values to show they are unique to 
+a document which makes them more important.
+
+After learning about TF-IDF lets examine some real life usecases for this tool! This tool is most commonly used 
+professionally for keyword retrieval and information retrieval. Instead of depending on someone's manual classification
+of text, we can use an AI algorithm to mathematically determine which articles are most relevant for a given topic, for example.
+
+
+
+Documentation can be seen here: https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html
