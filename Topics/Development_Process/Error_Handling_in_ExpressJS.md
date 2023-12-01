@@ -10,9 +10,9 @@
 5. [Conclusion](#conclusion)
 
 ## Introduction
-Express.JS (aka Express) is a scalable backend web framework for building RESTful APIs in the Node.JS programming language. It provides a variety of interelated features for server-side API development, including support for routing, middleware, templating (e.g. with EJS and Handlebars), static file serving and utilities for managing HTTP request-response flows. Error handling is an important aspect of any sofware project as it is critical for development, maintainability and functionality. It is especially important when building RESTful APIs where there exists specific expectations of how erroneous scenarios should be handled, such as setting appropriate status codes in response objects, returning error information in a consistent format etc.
+[Express.JS](../Tech_Stacks/Express.md) (aka Express) is a scalable backend web framework for building [RESTful APIs](https://aws.amazon.com/what-is/restful-api/#:~:text=RESTful%20API%20is%20an%20interface,applications%20to%20perform%20various%20tasks.) with [Node.JS](../Tech_Stacks/NodeJS_Intro.md). It provides a variety of interelated features for server-side API development, including support for routing, middleware, templating (e.g. with EJS and Handlebars), static file serving and utilities for managing HTTP request-response flows. Error handling is an important aspect of any sofware project as it is critical for development, maintainability and functionality. It is especially important when building RESTful APIs where there exists specific expectations of how erroneous scenarios should be handled, such as setting appropriate status codes in response objects, returning error information in a consistent format etc.
 
-This guide aims to highlight the mechanisms in Express that afford graceful error handling and how they can be utilised with good practices. This article will assume knowledge of Express and that an operational Express server is set up with some API endpoints that carry out some logic.
+This guide aims to highlight the mechanisms in Express that afford graceful error handling and how they can be utilised with good practices. This article will assume knowledge of Express and that an operational Express server is set up with some API endpoints that carry out some logic (check out [this tutorial](https://www.digitalocean.com/community/tutorials/nodejs-express-basics) for some help getting started).
 
 ## Goals of Error Handling for RESTful APIs
 * **Appropriate status codes are set:** It is important that the HTTP status code is appropriate and as specific as possible with regard to the error that has occurred. Information about what each HTTP status code represents can be found [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status). For example, if a GET request for a resource fails because there are no resources corresponding to a provided identifying parameter, a 404 *"Not Found"* status code should be returned. Poor error handling will often be reflected by all error responses setting a  500 *"Internal Server Error* (typically used as generic catch-all status code but should be only set as a last resort).
@@ -48,7 +48,7 @@ module.exports = errorHandler;
 ```
 So what does this all mean? This middleware module is intended to be called every time an error is thrown in a request-response flow. It extracts information from the thrown error object, such as status code, error name, message and a stack trace and then prepares a response with an appropriate status code and an informative body. We will show how this data can be passed to the middleware in the [*Custom Error Objects*](#custom-err-objects) section. The middleware function then calls `next()` to ensure that the next express middleware (if one exists) is called.
 
-Now we must ensure that the error handler middleware is used by our Express app.  The example below shows where to include the error handling  middleware in a generic Express server file (i.e. after routers and all other middlewares). The NPM package `express-async-errors` is used to ensure that the middleware handles both syncronous and asyncronous request-response flows (otherwise the handler will only work with syncronous request-response flows). More information about this package can be found [here](https://www.npmjs.com/package/express-async-errors).
+Now we must ensure that the error handler middleware is used by our Express app.  The example below shows where to include the error handling  middleware in a generic Express server file (i.e. after routers and all other middlewares). The NPM package `express-async-errors` is used to ensure that the middleware handles both syncronous and asyncronous request-response flows (otherwise the handler will only work with syncronous request-response flows). Asyncronous request-response flows are very common in modern backend API development and so it is likely very important to include this in your application. The package can be installed by running `npm install express-async-errors` and more information can be found [here](https://www.npmjs.com/package/express-async-errors).
 
 ***server.js***
 ```
@@ -163,7 +163,7 @@ const routes = (app) => {
                 );
             }
             
-            res.status(STATUS.SUCCESS); // Set success status code 200
+            res.status(STATUS_CODES.SUCCESS); // Set success status code 200
             res.send(my_resource); // Return resource if it is found
 
         } catch(err) {
@@ -181,4 +181,4 @@ module.exports = routes;
 ```
 
 ## Conclusion
-Congrats! You now know how to implement graceful error handling for your Express application. This guide has provided the scaffolding so that you can tailor your implementation to your applications specific needs. For example, you can add additional attributes to the `Custom Error` class such as the paramaters provided for the request or some metadata about hardware resource consumption etc. Furthermore, you may wish to embed a more advanced logging library into the middleware to provide more detailed logging of error occurences. The possibilities are limitless!
+Congrats! You now know how to implement graceful error handling for your Express application. This guide has provided the scaffolding so that you can tailor your implementation to your applications specific needs. For example, you can add additional attributes to the `Custom Error` class such as the paramaters provided for the request or some metadata about hardware resource consumption etc. Furthermore, you may wish to embed a more advanced logging library into the middleware to provide more detailed logging of error occurences. Be sure to also consider [security and safety concerns](https://expressjs.com/en/advanced/best-practice-security.html) regarding what potentially traceable or identifiable information is logged and at what level. The possibilities are limitless!
