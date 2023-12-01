@@ -30,7 +30,7 @@ Algorithms may include: k-means, Principal Component Analysis
 
 #### Reinforcement Learning
 
-Reinforement Learning involves tasks such that past actions may affect the future actions. Unlike supervised learning, it does not require predictor-target paired dataset rather, it requires a defined reward signal such that how performing a certain action could be beneficial over the others. An example would be predicting the best move for the given chess board. 
+Reinforement Learning involves tasks such that past actions may affect the future actions. Unlike supervised learning, it does not require predictor-target paired dataset, but rather it requires a defined reward signal such that how performing a certain action could be beneficial over the others. An example would be predicting the best move for the given chess board. 
 
 Algorithms may include: Q-learning, Actor-Critic methods
 
