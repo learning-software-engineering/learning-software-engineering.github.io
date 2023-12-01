@@ -96,6 +96,8 @@
 
 ### [Selenum](./Tech_Stacks/selenium.md)
 
+### [Introduction to Beautiful Soup](./Tech_Stacks/Beautiful_Soup.md)
+
 ### [Setting up Firebase and Intro to Firestore](./Tech_Stacks/Firebase_and_Firestore.md)
 
 ### [Learning Odata](./Tech_Stacks/Odata.md)
