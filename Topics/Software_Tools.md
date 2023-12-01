@@ -12,10 +12,7 @@
 
 ## AI
 ### [Introduction to AI Frameworks in Software Engineering](./Software_Tools/TensorFlow-Keras.md)
-<<<<<<< HEAD
 ### [Using the OpenAI API in Python](./Software_Tools/OpenAI-API.md)
-=======
 
 ## AWS Glue
 ## [Introduction to AWS Glue and and a simple guide about how to use it](./Software_Tools/AWS_Glue.md)
->>>>>>> f2550f1 (software tools updated)
