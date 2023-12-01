@@ -121,6 +121,7 @@ Value can attract the eye. For example, you can use shading to create button sha
 
 ### Color Theory
 - [Colors Influence Choice](https://usabilitygeek.com/colour-user-experience-psychology/#:~:text=Colour%20plays%20a%20crucial%20role,and%20identified%20with%20your%20industry.): Users are shown certain colours to enforce actions. For example, red is commonly linked to aggressive or bad emotions and as such can be used as a cancel to dissuade people from refunding items.
+- Read an in depth analysis on color theory [here](./User_Experience/Color_Theory.md)
 
 ### Button Design
 
