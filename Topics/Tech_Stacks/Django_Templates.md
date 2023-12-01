@@ -108,11 +108,12 @@ STATICFILES_DIRS = [ BASE_DIR / 'static', ]
 
 `STATICFILES_DIRS = [ BASE_DIR / 'static', ]` tells Django to look in the `static` folder in the root directory. However, there are times where you may want to have `static` directories in each app directory, which can be configured accordingly.
 
-In the template, we must load the static files with the `{% load static %}` tag, and include a specific one using the `{% static %}` tag. Using the above file structure, we can include the `.css` file:
+In the template, we must load the static files with the `{% load static %}` tag, and include a specific file using the `{% static %}` tag. Using the above file structure, we can include the `.css` file:
 ```
 {% load static %}
 <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 ```
+Note that the `{% load static %}` tag must be used before any `{% static %}` tag, so it is generally placed at the top of the template.
 
 ### Built-in Filters
 Vaguely, filters transform variables in some way, including getting a variable's length, formatting a datetime object, converting a string to a title, and [more](https://docs.djangoproject.com/en/4.2/ref/templates/builtins/#filter).  They are characterized by the pipe `|` operator.
@@ -125,7 +126,7 @@ The following puts the length of `list` in a paragraph:
 ## Putting it together
 Revisiting our initial goal, we want to make WcDonald's webpage more configurable and dynamic. First, we create a template `menu.html` inside the app's `templates` folder. We want to allow changes to menu items, and control whether or not they are a special item.
 
-We can use a loop to display an abritrary number of menu items, and conditionals to decide whether they are a special or not:
+In our body, we can use a loop to display an abritrary number of menu items, and conditionals to decide whether they are a special or not. Additionally, to change the visibility of special items, we can include our `.css` files in the head:
 ```
 {% load static %}
 <!DOCTYPE html>
@@ -182,7 +183,11 @@ def view_menu(request):
 
     return render(request, template_name, context)
 ```
-This acheives the same webpage as before, but now we can
+This acheives the same webpage as before, but now we can change menu items at will and change the visiblity and inclusion of special items.
+
+Instead of passing in hard-coded context in the above example, a more powerful and practical example would have the context determined from processing the models.
+
+
 
 
 
