@@ -61,8 +61,12 @@ Here’s a general workflow you can use for writing a test for a Vue component: 
 * Define a new test, however your test runner expects you to.
 * Render that component using the render() method – this lets you simulate rendering a component, and interact with it. 
 * Find the component using a component query method 
-* Interact with the component as you’d expect (click on it, etc.) using the fireEvent method.
+* Interact with the component as you’d expect, if you need to (click on it, etc.) using the fireEvent method.
 * Make assertions about the UI components – e.g. is the button now red after clicking? – to verify it behaves and displays correctly during this miniature user interaction.
+
+You can see this workflow, and the relevant methods, in action from the following example.
+![image](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/59212220/afdb4f87-30f5-414a-b3dc-bff701e4cb75)
+
 
 <h3>On Running Tests</h3>
 Vue-testing-library tests are set up exactly like any other jest test – just make sure to configure jest’s test matchers so that it’s able to find your new tests. <br/> <br/>
