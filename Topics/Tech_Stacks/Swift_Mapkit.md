@@ -61,7 +61,7 @@ The standard style is the default and can be seen in the map we just made. It ma
 
 <ins>Imagery</ins>
 
-The imagery style provides a rendered satellite view map. Unlike standard, on imagery roads and locations are not marked.
+The imagery style provides a rendered satellite view map. Unlike standard, on imagery, roads and locations are not marked.
 ```swift
 import SwiftUI
 import MapKit
@@ -104,6 +104,7 @@ struct MapContentView: View {
 </p>
 
 **Additional Map Style Features**
+
 You can also add some additional features to the styles:
 - `elevation` (hybrid/standard): whether the maps render elevation
 - `showsTraffic` (hybrid/standard) : whether the map can display traffic
@@ -208,7 +209,7 @@ struct MapContentView: View {
 <img width=1000 src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/113125436/c64ff5e5-8286-4ad4-b24f-3eae8545f247"/>
 </p>
 
-Overall, the annotations allow you to make the map pins compeletely your own. The possibilities are endless.
+Overall, the annotations allow you to make the map pins completely your own. The possibilities are endless.
 
 ## Camera Position
 By default the map focuses on the map contents (markers, annotations, etc). To focus on a particular region or location, we can use `MapCameraPosition`. This can be helpful in a couple cases such as:
