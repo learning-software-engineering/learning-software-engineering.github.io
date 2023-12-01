@@ -121,3 +121,5 @@
 ### [What is Web Assembly?](./Tech_Stacks/Web-Assembly.md)
 
 ### [Using Python Ray Tasks to distribute your functions on multiple machines](./Tech_Stacks/Ray.md)
+
+### [Object Oriented Programming in C++](./Tech_Stacks/OopAndCpp.md)
