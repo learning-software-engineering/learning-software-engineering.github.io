@@ -1,13 +1,12 @@
 ## Machine Learning Basics
 
 ### Understanding Machine Learning:
-Machine Learning is about developing a customized algorithms that may be used for various purposes which may include predictions, identifying patterns such that a machine can perform tasks that humans are able to conduct. While a model that could explain the provided dataset effectively gets customized by fine tuning the parameters and hyperparameters, it is important that this model can generalize the provided dataset such a way so that a model shall be able to explain if new data were to be added on top. 
+Machine Learning is about developing customized algorithms that may be used for various purposes which may include predictions, and identifying patterns such that a machine can perform tasks that humans are able to conduct. While a model that could explain the provided dataset effectively gets customized by fine-tuning the [parameters](#Parameter) and [hyperparameters](#Hyperparameter), it is important that the model can generalize the provided dataset in such a way that a model shall be able to explain if new data were to be added on top.
 
-The parameters of these algorithms heavily depend on the provided dataset. This means it is possible that while the algorithm explains the current dataset fairly well, such an algorithm may not work well for the other dataset with the relevant context. This "over-fitting" can be prevented by splitting the dataset into three categories that may serve different purposes during the learning process.
+The [parameters](#Parameter) of these algorithms heavily depend on the provided dataset. This means it is possible that while the algorithm explains the current dataset fairly well, such an algorithm may not work well for the other dataset with the relevant context. This "over-fitting" can be prevented by splitting the dataset into three categories that may serve different purposes during the learning process.
 
-The first set of data is called training dataset. As the name suggests, this dataset is used to "train" the algorithm. When we say training, we really mean tuning the parameters of the algorithm to the given dataset. As this will determine the "optimal" algorithm that would solve the provided tasks, it is typical to have over 50% of the dataset as a training dataset. We may set hyperparameters to decide how the algorithm will learn.
-
-The second set of data serves as a verifier thus called validation dataset. In order to avoid over-fitting, this set of data will serve as an unknown yet reusable data to verify the generalization of the fitted model. Each time a model gets trained, it will try to explain the task on the validation dataset to let the Machine Learning practioner know its performance. While the accuracy measurement metrics may vary (i.e. one example would be a simple proportion of correct predictions), it is important to have a metric that is appropriate for the given task. Ideally, we would want to make sure the model to have the minimum error on validation set while having relatively low error on training set.
+The first set of data is called the training dataset. As the name suggests, this dataset is used to "train" the algorithm. When we say training, we mean tuning the parameters of the algorithm to the given dataset. As this will determine the "optimal" algorithm that would solve the provided tasks, it is typical to have over 50% of the dataset as a training dataset. We may set hyperparameters to decide how the algorithm will learn.
+The second set of data serves as a verifier thus called the validation dataset. In order to avoid over-fitting, this set of data will serve as an unknown yet reusable data to verify the generalization of the fitted model. Each time a model gets trained, it will try to explain the task on the validation dataset to let the Machine Learning practitioner know its performance. While the accuracy measurement metrics may vary (i.e. one example would be a simple proportion of correct predictions), it is important to have a metric that is appropriate for the given task. Ideally, we would want to make sure the model has the minimum error on the validation set while having a relatively low error on the training set.
 
 ![Image Credit: The Elements of Statistical Learning](example_machine_learning.png?raw=true "Training and Validation")
 
@@ -35,12 +34,6 @@ Reinforement Learning involves tasks such that past actions may affect the futur
 
 Algorithms may include: Q-learning, Actor-Critic methods
 
-Key Terminologies:
-* Model: A model in Machine Learning refers to an established statistical algorithm that can "explain" the provided dataset and task effectively
-* Task: A task in Machine Learning refers to a goal of the algorithm (i.e. predict certairn variable using the others).
-* Hyperparameter: A parameter that can be tuned which would dictate how the model gets trained. This needs to get manually set up by a Machine Learning practioner.
-* Parameter: A parameter that can be determined by the provided dataset. The values of parameters are assigned during the learning process and not by the Machine Learning practioner.
-
 
 ### Implementation in Software Engineering
 
@@ -51,6 +44,14 @@ Another major issue of implementing Machine Learning algorithms may lie in ethic
 However, if the task involves resolving tasks which may involve non-deterministic behaviours, these algorithms can be extremely powerful. That is, if there does not exist a feasible rule-based alrogithms to correctly resolve the task, it is worth considering implementation of the algorithms as none of the deterministic algorithm would do a better job.
 
 If implemented correctly, a Machine Learning algorithm could yield effecitve results in both generalization and specification which may be necessary to make a better software.
+
+### Appendix:
+* <span id="Model">Model</span>: A model in Machine Learning refers to an established statistical algorithm that can "explain" the provided dataset and task effectively
+* <span id="Task">Task</span>: A task in Machine Learning refers to a goal of the algorithm (i.e. predict certairn variable using the others).
+* <span id="Hyperparameter">Hyperparameter</span>: A parameter that can be tuned which would dictate how the model gets trained. This needs to get manually set up by a Machine Learning practioner BEFORE the training process starts.
+* <span id="Parameter">Parameter</span>: A parameter that can be determined by the provided dataset. The values of parameters are assigned during the learning process and not by the Machine Learning practioner. The parameters are set by the data and algorithm AFTER the training process.
+
+
 
 ### References
 
