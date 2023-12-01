@@ -37,13 +37,13 @@ Algorithms may include: Q-learning, Actor-Critic methods
 
 ### Implementation in Software Engineering
 
-The biggest draw backs of implementing Machine Learning algorithms are the requirements of large dataset and expensive computation time. Implementations may not be feasible if the none of the mentioned two can be achieved as the accuracy may be poor and the correct representation of the dataset may not be possible. As a developer, one should consider collecting data upon the user's consent if the quality and volume of the data become a problem. 
+The biggest drawbacks of implementing Machine Learning algorithms are the requirements of large datasets and expensive computation time. Implementations may not be feasible if none of the mentioned two can be achieved as the accuracy may be poor and the correct representation of the dataset may not be possible. As a developer, one should consider collecting data upon the user's consent if the quality and volume of the data become a problem. 
 
-Another major issue of implementing Machine Learning algorithms may lie in ethics. Due to the bias that may exist in the provided dataset, there have been numerous incidents where the algorithm resulted in discriminative behaviour. A developer should always know how the fitted model behaves to prevent this issue and make sure that the quality of the data provided is adequate. The process of data collection along with how those data get used is another ethical concern that a developer should have in mind. It is important to note that having the users' consents are a must and not an option when using their data.
+Another major issue of implementing Machine Learning algorithms may lie in ethics. Due to the bias that may exist in the provided dataset, there have been numerous incidents where the algorithm resulted in discriminative behaviour. A developer should always know how the fitted model behaves to prevent this issue and make sure that the quality of the data provided is adequate. The process of data collection along with how those data get used is another ethical concern that a developer should have in mind. It is important to note that having the users' consent is a must and not an option when using their data.
 
-However, if the task involves resolving tasks which may involve non-deterministic behaviours, these algorithms can be extremely powerful. That is, if there does not exist a feasible rule-based alrogithms to correctly resolve the task, it is worth considering implementation of the algorithms as none of the deterministic algorithm would do a better job.
+However, if the task involves resolving tasks that may involve non-deterministic behaviours, these algorithms can be extremely powerful. That is, if there are no feasible rule-based algorithms to correctly resolve the task, it is worth considering the implementation of the algorithms as none of the deterministic algorithms would do a better job.
 
-If implemented correctly, a Machine Learning algorithm could yield effecitve results in both generalization and specification which may be necessary to make a better software.
+If implemented correctly, a Machine Learning algorithm could yield effective results in both generalization and specification which may be necessary to make better software.
 
 ### Appendix:
 * **<span id="Model">Model</span>**: A model in Machine Learning refers to an established statistical algorithm that can "explain" the provided dataset and task effectively with optimized parameters.
