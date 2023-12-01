@@ -41,7 +41,7 @@ The biggest drawbacks of implementing Machine Learning algorithms are the requir
 
 Another major issue of implementing Machine Learning algorithms may lie in ethics. Due to the bias that may exist in the provided dataset, there have been numerous incidents where the algorithm resulted in discriminative behaviour. A developer should always know how the fitted model behaves to prevent this issue and make sure that the quality of the data provided is adequate. The process of data collection along with how those data get used is another ethical concern that a developer should have in mind. It is important to note that having the users' consent is a must and not an option when using their data.
 
-However, if the task involves resolving tasks that may involve non-deterministic behaviours, these algorithms can be extremely powerful. That is, if there are no feasible rule-based algorithms to correctly resolve the task, it is worth considering the implementation of the algorithms as none of the deterministic algorithms would do a better job.
+However, if the task involves resolving tasks that involve non-deterministic behaviours, Machine Learning algorithms can be extremely powerful. That is, if there are no feasible rule-based algorithms to correctly resolve the task, it is worth considering the implementation of Machine Learning algorithms as none of the deterministic algorithms would do a better job.
 
 If implemented correctly, a Machine Learning algorithm could yield effective results in both generalization and specification which may be necessary to make better software.
 
