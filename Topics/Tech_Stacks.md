@@ -125,3 +125,5 @@
 ### [Object Oriented Programming in C++](./Tech_Stacks/OopAndCpp.md)
 
 ### [Understanding Basic Machine Learning](./Tech_Stacks/Machine_Learning/Understanding_Machine_Learning.md)
+
+### [Quickstarting Prisma ORM](./Tech_Stacks/PrismaORM.md)
