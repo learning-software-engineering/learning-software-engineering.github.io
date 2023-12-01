@@ -108,6 +108,12 @@ If you need more help on how to write a test case, here is a [short blog](https:
 
 ## Automated testing
 
-Automated testing is an important part of QA testing, that involves engineers writing test scripts, and running them to get test results. Since the test scripts can be reused, it's extremely suitable for conducting tests repeatedly over many iterations of a product. Sometimes, there is a dedicated QA team that writes automated tests. Sometimes, the software development team will do the work.
+Automated testing is an important part of QA testing, that involves engineers writing test scripts, and running them to get test results. Here are some reasons that made automated testing a critical part of QA: 
+
+- Automated tests can be run very quickly in a great amount.
+- Automated tests can be run every time the repository is updated (integrated into the CI/CD pipeline).
+- Automated tests can be written by software developers, instead of professional testers.
+
+Since automated tests can be written by either professional QA testers or software developers, both practices are common in the industry.
 
 Detailed information about automated testing can be found on [this page](./Automated_Testing.md).
