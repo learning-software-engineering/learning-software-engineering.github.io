@@ -33,6 +33,8 @@ Potential Topics--
     10. Python
         1. Pythonic iteration patterns
     11. Debugging in Python
+    12. Spring
+        1. Learning Spring Data JPA
         
 - Software Tools
     1. Git
