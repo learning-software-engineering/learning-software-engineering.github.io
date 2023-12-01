@@ -13,6 +13,7 @@
 ### [Automated Frontend Deployment with Vercel](./Development_Process/Frontend_Automated_Deployment_Vercel.md)
 
 ### [Flask Application Deployment on Heroku](./Development_Process/Flask_App_Deployment_Heroku.md)
+### [NextJS Deployment on AWS](./Development_Process/NextJS_AWS_Deployment.md)
 
 ### [iOS App Deployment onto the App Store](./Development_Process/App_Store_Deployment.md)
 
@@ -175,6 +176,7 @@ This is only a simplification of what "Clean Architecture" is; the topic is so v
 
 ## Prompt Engineering
 ### [Basics of Prompt Engineering](./Development_Process/Prompt_Engineering.md)
+
 
 ## Technical Documents
 ### [Intro to Request for Comments (RFCs)](./Development_Process/Technical_Documents/Intro_to_rfcs.md)
