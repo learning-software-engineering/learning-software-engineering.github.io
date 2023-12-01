@@ -3,34 +3,32 @@
        
         `git stash`
        
-            saves a change before switching to a new branch
+       saves a change before switching to a new branch
        
         `git stash pop`
        
-            applies the latest stash and deletes the stash from the stash list
+       applies the latest stash and deletes the stash from the stash list
        
         `git stash list`
        
-            shows the list of all stashes
+       shows the list of all stashes
        
         `git stash apply stash_ID`
        
-            apply the # or stash ID from the stash list
+       apply the # or stash ID from the stash list
        
         `git stash drop stash_ID`
        
-            deletes the stash with stash_ID from the stash list
+       deletes the stash with stash_ID from the stash list
        
        `git stash clear`
        
-            deletes all stash
+       deletes all stash
        
     3. Retrieve Lost Commits
        
         `gitk --all $(git fsck --no-reflog | Select-String "(dangling commit )(.*)" | %{ $.Line.Split(' ')[2] })`
 
-       `git apply ##### `
-        OR 
         Search inside the pop up window and simply copy paste the code back
         Link: https://stackoverflow.com/questions/89332/how-do-i-recover-a-dropped-stash-in-git
        
@@ -51,6 +49,7 @@
         Link: https://stackoverflow.com/questions/12481639/remove-file-from-latest-commit
 
 4. Pull-requests
+   
     1. Update Pull-requests
        
         After pushing your commits to create a new pull request, sometimes you realize you need to change a file that is already committed on the pull request. So you would change the file, git add, commit, push it and then realize you cannot push it. The following command will help you resolve this issue.
@@ -67,7 +66,7 @@
    same point is that available to accomplish the task.
    different point is that git fetch is much safer than git pull.
 
-3.1: Wroks with remote branches
+3.1: Works with remote branches
 
 To gain a deeper understanding of how git fetch operates, it's helpful to explore the way Git manages and archives commits. Within a Git repository, there is a hidden directory named `.git/objects`. This directory serves as the storage for all commits, encompassing both those from local and remote sources. To differentiate between commits from local and remote branches, Git utilizes branch references (refs). The refs associated with local branches can be found in the `.git/refs/heads/` directory. When you run the git branch command, it displays a list of these local branch refs.
 
