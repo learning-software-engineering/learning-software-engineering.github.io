@@ -6,7 +6,7 @@
 ### [What is SwiftUI?](#what-is-swiftui-1)
 ### [Starting a Swift Project](#starting-a-swift-project-1)
 ### [Swift View](#swift-view-1)
-### [Design Patterns with SwiftUI](#design-patterns-with-swiftui)
+### [Design Patterns with SwiftUI](#design-patterns-with-swiftui-1)
 ### [Testing Your App - Unit Tests](#testing-your-app---unit-tests-1)
 ### [Testing Your App - Simulators](#testing-your-app---simulators-background)
 ### [Testing Your App - Debugging](#testing-your-app---debugging-1)
@@ -184,23 +184,25 @@ struct PlayButton: View {
 }
 ```
 
-In this example the parent view PlayerView keeps a state variable isPlaying and passes it down the PlayButton view. Notice the `$` before referencing the variable, which allows us to reach the property wrapped in a `Binding`. In this subview, we use the binding to isPlaying to toggle it's value on a button press. This causes both the views to re-render because the binding changes the value at the source of truth.
-
-**`ObservableObject`**
-
-A class that conforms to this protocol can be used to refresh views when their `Published` attributes change.
+In this example the parent view PlayerView keeps a state variable isPlaying and passes it down the PlayButton view. Notice the `$` before referencing the variable, which allows us to reach the property wrapped in a `Binding`. In this subview, we use the binding to isPlaying to toggle its value on a button press. This causes both the views to re-render because the binding changes the value at the source of truth.
 
 **`Published`**
 
 Class attributes can be wrapped with `Published`, which allows other variables to subscribe to their changes.
 
-**`StateObject`**
+**`ObservableObject`**
 
-When instantiating an object of a class that conforms to the `ObservableObject` protocol inside a parent view, we use the `StateObject` wrapper. The behaviour of this object is similar to the `State` wrapper defined above.
+A class that conforms to this protocol can be used to refresh views when their `Published` attributes change.
 
 **`ObservedObject`**
 
-When passing an instance of a class that conforms to the `ObservableObject` protocol inside a child view, we use the`ObservedObject` wrapper. The behaviour of this object is similar to the `Binding` wrapper defined above. Here is an example of a class and their views in use:
+When passing an instance of a class that conforms to the `ObservableObject` protocol inside a child view, we use the`ObservedObject` wrapper. The behaviour of this object is similar to the `Binding` wrapper defined above.
+
+
+
+**`StateObject`**
+
+When instantiating an object of a class that conforms to the `ObservableObject` protocol inside a parent view, we use the `StateObject` wrapper. The behaviour of this object is similar to the `State` wrapper defined above. Here is an example of a class and their views in use:
 
 ```swift
 class UserProgress: ObservableObject { // Define class and protocol
@@ -248,7 +250,7 @@ struct ContentView: View {
             Text("Your score is \(progress.score)")
             InnerView() // No longer pass progress to the child view
         }
-        .environmentObject(progress)
+        .environmentObject(progress) // Pass it through the environment instead
     }
 }
 
@@ -305,11 +307,11 @@ The main structure of the app will look like the following:
 <img src="https://i.postimg.cc/q7dB52Y6/temp-Image6-WSk-Bh.jpg">
 <p/>
 
-Let's go over how this looks for our current example app.
+Let's go over how this looks for our current example app. Note that each code block should be in its own file.
 
 **Data**
 
-A repository is a gateway for reading and writing data. We can abstract the details of where this data is coming from. For example, we could be fetching it from a third-party API or even a local database. Notice that this abstraction doesn't use any of the previously defined wrappers.
+A repository is a gateway for reading and writing data. We can abstract the details of where this data is coming from. For example, we could be fetching it from a third-party API or even a local database. Notice that this abstraction doesn't use any of the previously defined wrappers. It is instantiated by the Interactor below.
 
 ```swift
 protocol Repository {
@@ -348,7 +350,7 @@ class AppState: ObservableObject {
 }
 ```
 
-The interactor is the way we interface with the repository in order to update our AppState, which allows the business logic to be segregated in the interactor.
+The interactor is the way we interface with the repository in order to update our AppState, which allows the business logic to be segregated in the interactor. The interactor needs references to both the AppState and Repository because it delegates getting data from the Repository and updates the AppState accordingly.
 
 ```swift
 protocol Interactor {
@@ -358,7 +360,7 @@ protocol Interactor {
 
 struct ScrumInteractor: Interactor {
     
-    let datasbaseRepository: ScrumDatabaseRepository
+    let databaseRepository: ScrumDatabaseRepository
     let appState: AppState
     
     init(databaseRepository: ScrumDatabaseRepository, appState: AppState) {
@@ -412,7 +414,7 @@ struct ScrumList: View {
     }
 }
 ```
-That's all there is to it! You now know how to incorporate SwiftUI wrappers and protocols to create clean, testable code. For more information on the wrappers and protocols mentioned checkout the [Apple Developer Documentation](https://developer.apple.com/documentation/technologies).
+That's all there is to it! You now know how to incorporate SwiftUI wrappers and protocols to create clean, testable code. For more information on the wrappers and protocols mentioned, check out the [Apple Developer Documentation](https://developer.apple.com/documentation/technologies).
 
 
 ## Testing Your App - Unit Tests
