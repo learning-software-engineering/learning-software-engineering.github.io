@@ -42,6 +42,8 @@
 
 ## Build tools
 ### [Introduction to ```make``` and Makefiles](./Development_Process/Introduction_to_make_and_Makefiles.md)
+### [Introduction to Jenkins](./Development_Process/Jenkins/Jenkins.md)
+
 
 ## Testing Frameworks
 
@@ -65,9 +67,15 @@
 
 ### [Serverless Computing](./Development_Process/Serverless_AWS_Lambda.md)
 
+### [Azure Functions](./Development_Process/Azure_Functions.md)
+
 ## Introduction to Shells
 
 ### [Introduction to using Shell](./Development_Process/Shell/intro_to_shell.md)
+
+## Environment
+
+### [Managing Environment Variables and Secrets](Development_Process/Managing_Environment_Variables_and_Secrets.md)
 
 ## SOLID PRINCIPLES:
 

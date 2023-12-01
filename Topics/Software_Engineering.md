@@ -8,9 +8,11 @@ Potential topics--
            1. [User Stories](./Software_Engineering/User_Stories.md)
            2. [Retro](./Software_Engineering/Retro.md)
         2. Kanban
-        3. XP
+        3. [XP](./Software_Engineering/XP.md)
     2. [Waterfall](./Software_Engineering/Waterfall.md)
-    3. [Lean](./Software_Engineering/Lean.md)
+    3. [REST](./Software_Engineering/RESTful_API.md)
+    4. [Lean](./Software_Engineering/Lean.md)
+
 2. Core Concepts in Software Engineering
    1. [Localization in Software Engineering](./Software_Engineering/Localization.md)
    2. [Continuous Integration](./Software_Engineering/Continuous_Integration.md)
