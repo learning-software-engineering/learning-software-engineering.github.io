@@ -32,6 +32,10 @@ Potential Topics--
         2. A Beginner's Guide for Unity UI Design 
     10. Python
         1. Pythonic iteration patterns
+    11. Debugging in Python
+    12. Spring
+        1. Learning Spring Data JPA
+    13. TinyMCE API with ReactJS
         
 - Software Tools
     1. Git

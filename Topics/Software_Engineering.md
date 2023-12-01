@@ -8,7 +8,7 @@ Potential topics--
            1. [User Stories](./Software_Engineering/User_Stories.md)
            2. [Retro](./Software_Engineering/Retro.md)
         2. Kanban
-        3. XP
+        3. [XP](./Software_Engineering/XP.md)
     2. [Waterfall](./Software_Engineering/Waterfall.md)
     3. [REST](./Software_Engineering/RESTful_API.md)
     4. [Lean](./Software_Engineering/Lean.md)
@@ -21,3 +21,5 @@ Potential topics--
 
 #### [Handling Bugs and Technical Debt](./Software_Engineering/Handling_Bugs_and_Technical_Debt.md)
 Guidelines for effectively handling bugs through a systematic life cycle and technical debt through proactive identification, documentation, and strategic repayment practices, emphasizing the importance of maintaining a resilient and sustainable software development ecosystem.
+
+#### [Ethics In Software Engineering](./Software_Engineering/Ethics_In_Software_Engineering.md)

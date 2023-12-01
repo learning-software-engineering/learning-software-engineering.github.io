@@ -12,3 +12,4 @@
 
 ## AI
 ### [Introduction to AI Frameworks in Software Engineering](./Software_Tools/TensorFlow-Keras.md)
+### [Using the OpenAI API in Python](./Software_Tools/OpenAI-API.md)
