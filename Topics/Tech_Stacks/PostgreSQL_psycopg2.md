@@ -72,7 +72,7 @@ To do this in the command line:
 
 
 ### Create Tables
-After creating your schema you can create tables/relations to perform operations on. A table contains columns, which describes the attributes of the data being stored, and rows, which are record of intances of the table. Each row contains a set of values that corresponds to the columns of the table.
+After creating your schema you can create tables/relations to perform operations on. A table contains columns, which describes the attributes of the data being stored, and rows, which are records of instances of the table. Each row contains a set of values that corresponds to the columns of the table.
 
 To create a table in pgAdmin:
 1. Right click on your desired schema.
@@ -83,7 +83,8 @@ To create a table in the command line:
 1. Execute `psql` to initialize the PostgreSQL environment.
 2. Execute `\c dbname` where `dbname` is the name of the desired database
 3. Run `SET search_path TO schema_name;` where `schema_name` is the name of the schema you want to put your table in.
-4. Type `CREATE TABLE table_name (column1 int PRIMARY KEY, ...);`, where `table_name` is the name of the table to create. Inside the round braces is a list of the columns that you want in the table. For each column, you must specify a name and datatype. For example, a table can be created like this:
+   - `search_path` is a variable that determines the order in which schemas are searched when looking for database objects. This command is allows you to define the schema order. In this example, PostgreSQL searches for objects in `schema_name`. If `search_path` were set to `SET search_path TO schema1, schema2` and an object was not found in `schema1`, PostgreSQL would continue searching in the subsequent schema `schema2`.
+5. Type `CREATE TABLE table_name (column1 int PRIMARY KEY, ...);`, where `table_name` is the name of the table to create. Inside the round braces is a list of the columns that you want in the table. For each column, you must specify a name and datatype. For example, a table can be created like this:
 
 ```
 CREATE TABLE sports (
@@ -117,27 +118,134 @@ Here is a link for more details and examples of how to create a table: [https://
 
 
 ### Table Operations
-In SQL, a query is a statement/command used to retrieve or manipulate data in a relational database. To retrieve data from a certain column in a table, you can use the `SELECT` statement and `FROM` clause:
+In SQL, a query is a statement/command used to retrieve or manipulate data in a relational database. Suppose we have the following tables:
+`sports`:
+| sport_id | sport_name |
+| -------- | ---------- |
+| 1 | basketball |
+| 2 | soccer |
+| 3 | baseball |
+`teams`:
+| team_id | team_name | sport_id |
+| ------- | --------- | -------- |
+| 1 | Toronto Raptors | 1 |
+| 2 | San Antonio Spurs | 1 |
+| 3 | Golden State Warriors | 1 |
+| 4 | Manchester City F.C. | 2 |
+| 5 | Paris Saint-Germain F.C. | 2 |
+`players`:
+| player_id | first_name | last_name | age | team_id |
+| --------- | ---------- | --------- | --- | ------- |
+| 1 | Stephen | Curry | 35 | 3 |
+| 2 | Erling | Haaland | 23 | 4 |
+| 3 | Kylian | Mbappé | 24 | 5 |
+
+To retrieve all columns of a table, you can use the `SELECT *` statement and `FROM` clause:
+```
+	SELECT * FROM players;
+```
+This query outputs all columns of all rows of the table `players`, i.e. the entire table `players`:
+| player_id | first_name | last_name | age | team_id |
+| --------- | ---------- | --------- | --- | ------- |
+| 1 | Stephen | Curry | 35 | 3 |
+| 2 | Erling | Haaland | 23 | 4 |
+| 3 | Kylian | Mbappé | 24 | 5 |
+| 4 | Kang-in | Lee | 22 | 5 |
+
+To query only certain columns of a table, you can use the `SELECT` statement and specify the columns you want in the clause:
 ``` 
     SELECT first_name, last_name FROM players;
 ```
-The output of this query is a smaller table that only contains the columns `first_name` and `last_name` of each row from the table `players`.
+In this example, the output is a smaller table that only contains the columns `first_name` and `last_name` of each row from the table `players`:
+| first_name | last_name |
+| ---------- | --------- |
+| Stephen | Curry |
+| Erling | Haaland |
+| Kylian | Mbappé |
+| Kang-in | Lee |
 
-You can also take the cross product of two or more tables by listing the tables in the `FROM` clause:
+You can also get the Cartesian product of two or more tables by listing the tables in the `FROM` clause:
 ```
-    SELECT sport_name, team_name FROM sports, teams;
+    SELECT * FROM sports, teams;
 ```
-First, this query performs a cross product between `sports` and `teams`. Each row of table `sports` is matched with each row of the table `teams`. Then, it selects the data from the columns `sport_name` and `team_name` of every row present in the newly joined table.
+In this query, each row of table `sports` is combined with each row of the table `teams`, resulting in a combination of all rows:
+| sport_id | sport_name | team_id | team_name | sport_id |
+| -------- | ---------- | ------- | --------- | -------- |
+| 1 | basketball | 1 | Toronto Raptors | 1 |
+| 1 | basketball | 2 | San Antonio Spurs | 1 |
+| 1 | basketball | 3 | Golden State Warriors | 1 |
+| 1 | basketball | 4 | Manchester City F.C. | 2 |
+| 1 | basketball | 5 | Paris Saint-Germain F.C. | 2 |
+| 2 | soccer | 1 | Toronto Raptors | 1 |
+| 2 | soccer | 2 | San Antonio Spurs | 1 |
+| 2 | soccer | 3 | Golden State Warriors | 1 |
+| 2 | soccer | 4 | Manchester City F.C. | 2 |
+| 2 | soccer | 5 | Paris Saint-Germain F.C. | 2 |
+| 3 | baseball | 1 | Toronto Raptors | 1 |
+| 3 | baseball | 2 | San Antonio Spurs | 1 |
+| 3 | baseball | 3 | Golden State Warriors | 1 |
+| 3 | baseball | 4 | Manchester City F.C. | 2 |
+| 3 | baseball | 5 | Paris Saint-Germain F.C. | 2 |
+However, not all rows of the output are meaningful. For example, the fourth row associates basketball with Manchester City F.C., which is a soccer team. To filter out the nonsensical combinations, we can use the `WHERE` clause:
+```
+SELECT * FROM sports, teams WHERE sports.sport_id = teams.sport_id;
+```
+This clause allows you to retrieve only the rows that meet the specified conditions. The output of this query would be:
+| sport_id | sport_name | team_id | team_name | sport_id |
+| -------- | ---------- | ------- | --------- | -------- |
+| 1 | basketball | 1 | Toronto Raptors | 1 |
+| 1 | basketball | 2 | San Antonio Spurs | 1 |
+| 1 | basketball | 3 | Golden State Warriors | 1 |
+| 2 | soccer | 4 | Manchester City F.C. | 2 |
+| 2 | soccer | 5 | Paris Saint-Germain F.C. | 2 |
 
-In addition, you can perform filtering on tables by using `WHERE`:
+Although the query is now more targeted and relevant, the two `sport_id` columns are redundant. To get rid of the redundancy, one solution is to change the columns in the `SELECT` clause so that only one of the `sport_id` columns is retrieved:
 ```
-SELECT sport_name, team_name FROM sports, teams WHERE sports.sport_id = teams.sport_id;
+SELECT sports.sport_id, sport_name, team_id, team_name FROM sports, teams WHERE sports.sport_id = teams.sport_id;
 ```
-Here it only shows data from the previous table where the value of `sport_id` from `sports` matches that of `teams`.
+Another option is to use `NATURAL JOIN` in the `FROM` clause:
+```
+SELECT * FROM sports NATURAL JOIN teams;
+```
+`NATURAL JOIN` automatically matches and combines the columns with the same name in the tables being joined. Since `sport_id` is an attribute in both `sports` and `teams`, the resulting set includes all unqiue columns from both tables and excludes duplicate columns. The output of these queries are:
+| sport_id | sport_name | team_id | team_name |
+| -------- | ---------- | ------- | --------- |
+| 1 | basketball | 1 | Toronto Raptors |
+| 1 | basketball | 2 | San Antonio Spurs |
+| 1 | basketball | 3 | Golden State Warriors |
+| 2 | soccer | 4 | Manchester City F.C. |
+| 2 | soccer | 5 | Paris Saint-Germain F.C. |
+
+To select specific columns of the result set, we can use the same syntax that was mentioned before:
+```
+SELECT sport_name, team_name FROM sports NATURAL JOIN teams;
+```
+Output:
+| sport_name | team_name |
+| --------- | --------- |
+| basketball | Toronto Raptors |
+| basketball | San Antonio Spurs |
+| basketball | Golden State Warriors |
+| soccer | Manchester City F.C. |
+| soccer | Paris Saint-Germain F.C. |
+
+It is possible to rename attributes in the result set using the `AS` clause:
+```
+SELECT sport_name as sport, team_name as team FROM sports NATURAL JOIN teams;
+```
+Output:
+| sport | team |
+| --------- | --------- |
+| basketball | Toronto Raptors |
+| basketball | San Antonio Spurs |
+| basketball | Golden State Warriors |
+| soccer | Manchester City F.C. |
+| soccer | Paris Saint-Germain F.C. |
 
 There are many other features of PostgreSQL.
 
 Specifics of the syntax of PostgreSQL can be found in this [link](https://www.postgresql.org/docs/current/sql-syntax.html).
+More about queries can be found [here](https://www.postgresql.org/docs/current/tutorial-select.html) and types of joins can be found [here](https://www.postgresql.org/docs/current/tutorial-join.html).
 
 ## Setup and PostgreSQL Operations in psycopg2
 To start using PostgreSQL in a Python program with psycopg2, ensure you have finished the relevant installations, then follow the instructions below:
