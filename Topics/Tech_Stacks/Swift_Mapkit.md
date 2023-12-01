@@ -143,7 +143,7 @@ takes the same approach if you want to set a coordinate dynamically.
 ### Marker Customization
 There are a couple of ways to customize your marker, such as color and what is displayed in the marker bubble.
 <p align="center">
-<img width=1000 src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/113125436/6d12cc84-1e81-4038-a3d0-cac549de6a44" "/>
+<img width=1000 src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/113125436/6d12cc84-1e81-4038-a3d0-cac549de6a44"/>
 </p>
 
 **Color**
@@ -157,14 +157,18 @@ There are a couple of ways to customize your marker, such as color and what is d
 **Icon**
 
   To change the what is displayed in the Marker bubble you can add the `systemImage`, `image`, or `monogram` parameters to your Marker as shown below.
+
+  System Image:
   ```swift
-   \\ System Image
      Marker("Bahen", systemImage: "star.fill", coordinate: bahen)
-  
-   \\ Image
+  ```
+   Image:
+   ```swift
      Marker("Robarts", image: "<Your Image Name>", coordinate: robarts)
-  
-   \\ Monogram
+   ```
+
+  Monogram
+  ```swift
      Marker("University College", monogram: Text("UC"), coordinate: uc)
   ```
 
@@ -206,13 +210,46 @@ struct MapContentView: View {
 Overall, the annotations allow you to make the map pins compeletely your own.
 
 ## Camera Position
-By default the map focuses on the map contents (markers, annotaions, etc). To focus on a particular location. This can be helpful in a couple cases such as:
+By default the map focuses on the map contents (markers, annotaions, etc). To focus on a particular region or location, we can use `MapCameraPosition`. This can be helpful in a couple cases such as:
  - When you finish searching for a specific location, focus the map on that location
  - Focus the map on the location of the user
  - If the user presses a certain button, change map focus
 
-Using the `MapCameraPosition` we can specify where the user can 
+The default of the `MapCameraPosition` is known as `.automatic`. It will focus on the content of the map. The map without a camera position already does this, but `.automatic` could be helpful to update the camera postion back to its original state when zooming in/out too much or when you jump between different camera positions.
+```swift
+@State private var cameraPosition: MapCameraPosition = .automatic
+```
 
+An example of using `MapCameraPosition` to focus on a location is setting `.region`. In the example below, we focus the map on the CN Tower even though the marker is at Robarts.
+```swift
+import SwiftUI
+import MapKit
+
+struct MapContentView: View {
+    let robarts = CLLocationCoordinate2D(latitude: 43.664486, longitude: -79.399689)
+    @State private var cameraPosition: MapCameraPosition = .region(MKCoordinateRegion(
+        center: .init(latitude: 43.6426, longitude: -79.3871),
+        span: .init(latitudeDelta: 0.01, longitudeDelta: 0.01))
+    )
+
+    
+    var body: some View {
+        Map(position: $cameraPosition){
+            Marker("Robarts", coordinate: robarts)
+            
+        }
+    }
+}
+
+#Preview {
+    MapContentView()
+}
+```
+<p align="center">
+<img width=1000 src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/113125436/931abbb0-7217-4e86-84e8-3bec30437d47"/>
+</p>
+
+Beyond these introductory examples, `MapCameraPosition` has a big potential and is very useful when creating dynamic maps.
 
 ## Additional Resources
 MapKit for SwiftUI is very large and has a lot of possible implementations, so this tutorial was just the tip of the ice berg! Below are some additional resources
