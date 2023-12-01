@@ -22,20 +22,20 @@ We all know about usernames and passwords, or **single-factor authentication**, 
 3. Users easily forget their own credentials
 4. Credentials can be easily cracked
 
-A common theme we'll see is that authentication schemes will try to work around the weakest security link in the system, which are the users themselves. While small improvements can help, like security questions or increasing requirements for password hygiene (minimum N characters, with at least M special characters), modern approaches have better ways of working around this limitation. 
+A common theme we'll see is that authentication strategies will try to work around the weakest security link in the system, which are the users themselves. While small improvements can help, like security questions or increasing requirements for password hygiene (minimum N characters, with at least M special characters), modern approaches have better ways of working around the fact that the users are usually the point of failure.
 
 ### Multi-Factor Authentication (MFA) <a name="mfa"></a>
 
 Some MFA strategies require users to prove their credentials by demonstrating proof of *physical ownership* of an item. The most common among these is requiring the user to confirm their identity on a **separate device**, like a phone or a laptop; however, a really determined threat actor can bypass this by gaining remote access to the user's devices. 
 
-The best option of MFA strategies is by making the user prove their *inherent characteristics*; that is, things that are unique to them that no one else can ever take from them. **Biometrics** are a good example of this; many smartphones will use fingerprints and facial recognition, as an example.
+Instead, the best option of MFA strategies is by making the user prove their *inherent characteristics*; that is, things that are unique to them that no one else can ever take from them. **Biometrics** are a good example of this; many smartphones will use fingerprints and facial recognition, as an example.
 
 ### Standardized Protocols <a name="protocols"></a>
 
 Developers don't have to write everything from scratch; using a open protocol ensures that a service can have a standardized yet secure authentication mechanism. Several protocols exist (definitions from [this article](https://www.getkisi.com/blog/authentication-protocols-overview)):
 1. **[LDAP (Lightweight Directory Access Protocol)](https://www.getkisi.com/glossary/lightweight-directory-access-protocol)** allows users to "securely locate organizations, individuals, and other resources such as files and devices in a network"
 2. **[OAuth 2](https://tools.ietf.org/html/rfc6749)** is an "authorization framework that enables applications to obtain limited access to user accounts on an HTTP service, such as Facebook, GitHub, and DigitalOcean." 
-3. **[SAML (Security Assertion Markup Language)](https://saml.xml.org/)** is an "XML-based, open-standard data format for exchanging authentication and authorization data between parties, in particular, between an identity provider and a service provider." SAML is often to provide Single Sign-On (SSO) to users, which allows to access different services using only one account.
+3. **[SAML (Security Assertion Markup Language)](https://saml.xml.org/)** is an "XML-based, open-standard data format for exchanging authentication and authorization data between parties, in particular, between an identity provider and a service provider." SAML is often used to provide Single Sign-On (SSO) to users, which allows access to different services using only one account.
 
 ## Sessions and Tokens <a name="sessions-tokens"></a>
 
@@ -44,7 +44,8 @@ Session and token-based authentication schemes allow users to avoid having to au
 **Session-based authentication** is an older method that relies on the server to manage authentication. When a user logs in, the server generates a session, assigns a session ID stored in a browser cookie, and maintains authentication during the user's session on the site. While cookies are usually deleted upon logout, most modern browsers employ session restoring, retaining session cookies even after logout. This eliminates the need for repeated logins.
 
 **Token-based authentication** creates an *encrypted token* upon user login, granting users the ability to perform activities on the site. Unlike session IDs stored on the server, the *client* retains the token, either in memory or in a cookie.
-For session-based authentication, the server becomes complex with system or user scale. This is in contrast to token-based authentication; however, note that the latter may still involve storing API tokens in a database table for verification or revocation.
+
+For session-based authentication, the server becomes complex with system or user scale. On the other hand, token-based authentication may still involve storing API tokens in a database table for verification or revocation. Both have their tradeoffs!
 
 If you've ever heard of JSON Web Tokens (JWTs), that's a common form of token-based authentication! JWTs embed user data inside the token, allowing validation without database queries, making them suitable for serverless and stateless applications.
 
@@ -68,7 +69,7 @@ There's a few best practices to follow when we're building an authentication ser
 
 ## Design Considerations <a name="auth-design"></a>
 
-When it comes to building an authentication service for any kind of digital service, particularly in the context of microservice architectures, the best approach is to "use an API gateway—this is a service deployed in front of the microservices application, which serves as a single endpoint for all user requests." A good example of this are [interceptors in Axios](https://axios-http.com/docs/interceptors). Every API call in an mobile app or web service will pass through this checkpoint; it'll do something like attach a token, ensure a token is valid, or catch unauthorized access attempts. Other services sending requests to this checkpoint won't be aware of the underlying service at this gateway; it'll just package the requests accordingly, authenticate, and forward them. 
+When it comes to building an authentication service for any kind of digital service, particularly in the context of microservice architectures, the best approach is to "use an API gateway—this is a service deployed in front of the microservices application, which serves as a single endpoint for all user requests." ([Source](https://frontegg.com/blog/authentication)) A good example of this are [interceptors in Axios](https://axios-http.com/docs/interceptors). Every API call in an mobile app or web service will pass through this checkpoint; it'll do something like attach a token, ensure a token is valid, or catch unauthorized access attempts. Other services sending requests to this checkpoint won't be aware of the underlying service at this gateway; it'll just package the requests accordingly, authenticate, and forward them. 
 
 ## Common Technologies <a name="auth-common-tech"></a>
 
