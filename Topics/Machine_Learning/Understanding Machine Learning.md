@@ -11,7 +11,7 @@ The second set of data serves as a verifier thus called the validation dataset. 
 
 ![Image Credit: The Elements of Statistical Learning](example_machine_learning.png?raw=true "Training and Validation")
 
-The last set of data can be used for the testing purpose. It is important to note that while this dataset is similar to validation dataset such that it serves as an unknown data to be tested on, it cannot be reused for more testing purpose. The purpose of this dataset remains as demonstrating the performance of the algorithm in general.
+The last set of data can be used for the testing purpose. It is important to note that while this dataset is similar to validation dataset such that it serves as an unknown data to be tested on, it can only be used once for the final testing stage. The purpose of this dataset remains to demonstrate the performance of the algorithm in general.
 
 It can be easily seen that the existence of a large set of data is essential to develop Machine Learning algorithms for a given problem. Where the definition of "large" may depend on the context and the algorithms that are trying to be implemented, more data would usually result in a better fitted and generalized model. Fundamentally, since the algorithm goes through this provided "large" dataset to be trained on, Machine Learning algorithms go through computationally heavy training process which may not be feasible for certain situations. As a Machine Learning practioner and a Software developer, it is important to idenfity when to use these expensive processes and when to not. This primarily depends on which task an application needs to resolve.
 
