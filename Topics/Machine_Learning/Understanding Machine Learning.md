@@ -24,7 +24,7 @@ Algorithms may include: k-Nearest Neighbours, Decision Tree, Logistic Regression
 
 #### Unsupervised Learning
 
-If the nature of tasks involves a dataset which does not contain the "answers," it is impossible to "supervise" the machine's training process. However, a machine may be able to develop an algorithm such that patterns that may exist in the dataset can be indentified. For example, considering if we want to determine preferences on movies for the user. Given a dataset which contains the user's netflix history, an algorithm may be able to determine the categories of the movies that the user may prefer. 
+If the nature of tasks involves a dataset which does not contain the target variables (that is, we do not know what the data is supposed to represent beforehand), it is impossible to "supervise" the machine's training process. However, a machine may be able to develop an algorithm such that patterns that may exist in the dataset can be indentified. For example, considering if we want to determine preferences on movies for the user. Given a dataset which contains the user's netflix history, an algorithm may be able to determine the categories of the movies that the user may prefer. 
 
 Algorithms may include: k-means, Principal Component Analysis
 
