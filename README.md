@@ -36,6 +36,7 @@ Potential Topics--
     12. Spring
         1. Learning Spring Data JPA
     13. TinyMCE API with ReactJS
+    14. SQL
         
 - Software Tools
     1. Git
