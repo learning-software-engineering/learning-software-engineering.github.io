@@ -1,6 +1,6 @@
 # Introduction to the OpenAI API in Python
 
-OpenAI has emerged as the global leader in Large Language Models (LLMs), and has productionized such models into hits like ChatGPT, GitHub Copilot, and more. They've released an API that developers can use to query its sophisticated models. 
+OpenAI has emerged as the global leader in Large Language Models (LLMs), and has productionized such models into hits like ChatGPT, GitHub Copilot, and more. They've released an API that developers can use to query its sophisticated models using Curl, Node.js, or Python. This tutorial is for the Python version.
 
 Let's dive in.
 
