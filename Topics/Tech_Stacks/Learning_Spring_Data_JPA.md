@@ -49,7 +49,7 @@ CREATE TABLE Person(
 - Launch the Spring Boot Application by running the main method of the `LearningSpringDataJpaApplication` class under the folder `src/main/java/com/learningsoftwareengineering/learningspringdatajpa`
 - Open [H2 Console](http://localhost:8080/h2-console) in your browser. Copy `jdbc:h2:mem:testdb` and paste it into the field JDBC URL of the Login form. Click on Connect. 
 You should be able to see a `Person` table is created in the database, click on Run to see its columns. 
-  ![H2 Console Screenshot](https://github.com/learning-software-engineering/learning-software-engineering.github.io/blob/springdatajpa/Topics/Tech_Stacks/Learning_Spring_Data_JPA_Graphics/img.png)
+  ![H2 Console Screenshot](https://github.com/learning-software-engineering/learning-software-engineering.github.io/blob/main/Topics/Tech_Stacks/Learning_Spring_Data_JPA_Graphics/img.png)
 
 ## Step 3 - Storing and Deleting Data Using Spring JDBC
 Now, let's add a few entries to the `Person` table and then delete an entry based on its id.
@@ -291,7 +291,7 @@ public interface PersonSpringDataJpaRepository extends JpaRepository<Person, Lon
             System.out.println(repository.findAll());
 ```
 ## Summary Graph
-![Summary](https://github.com/learning-software-engineering/learning-software-engineering.github.io/blob/springdatajpa/Topics/Tech_Stacks/Learning_Spring_Data_JPA_Graphics/img_1.png)
+![Summary](https://github.com/learning-software-engineering/learning-software-engineering.github.io/blob/main/Topics/Tech_Stacks/Learning_Spring_Data_JPA_Graphics/img_1.png)
 ## Further Reading
 1. [Accessing Data with JPA by ](https://spring.io/guides/gs/accessing-data-jpa/): Spring's official Getting Started Guide for Spring Data JPA
 2. [Spring Boot Reference Documentation](https://docs.spring.io/spring-boot/docs/3.0.0-M3/reference/htmlsingle/#data.sql): You can read section 9.1.1-9.1.5 for further information related to this guide.
