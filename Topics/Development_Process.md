@@ -56,6 +56,11 @@
 
 ### [URL Sanitization](./Development_Process/URL_Sanitization.md)
 
+
+## Code Quality
+
+### [Developing With SonarQube](./Development_Process/SonarQube.md)
+
 ## Test Driven Development
 
 ### [Intro to Test Driven Development](./Development_Process/Test_Driven_Development.md)
