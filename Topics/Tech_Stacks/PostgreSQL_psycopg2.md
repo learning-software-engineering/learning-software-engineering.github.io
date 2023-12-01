@@ -247,7 +247,7 @@ Output:
 | soccer | Manchester City F.C. |
 | soccer | Paris Saint-Germain F.C. |
 
-To order the output based on a specific column, you can use the `ORDER BY` clause:
+To order the output based on a specific column(s), you can use the `ORDER BY` clause:
 ```
 SELECT * FROM teams ORDER BY team_name;
 ```
@@ -259,6 +259,34 @@ Output:
 | 5 | Paris Saint-Germain F.C. | 2 |
 | 2 | San Antonio Spurs | 1 |
 | 1 | Toronto Raptors | 1 |
+
+```
+SELECT sport_name as sport, team_name as team FROM sports NATURAL JOIN teams ORDER BY sport, team;
+```
+Output:
+| sport | team |
+| --------- | --------- |
+| basketball | Golden State Warriors |
+| basketball | San Antonio Spurs |
+| basketball | Toronto Raptors |
+| soccer | Manchester City F.C. |
+| soccer | Paris Saint-Germain F.C. |
+
+(Note: although using the original column names in the `ORDER BY` clause may work, it is generally recommended to use the aliases defined in the `SELECT` clause.)
+
+To order in descending order, use the `DESC` attribute:
+```
+SELECT * FROM teams ORDER BY team_name DESC;
+```
+Output:
+| team_id | team_name | sport_id |
+| ------- | --------- | -------- |
+| 1 | Toronto Raptors | 1 |
+| 2 | San Antonio Spurs | 1 |
+| 5 | Paris Saint-Germain F.C. | 2 |
+| 4 | Manchester City F.C. | 2 |
+| 3 | Golden State Warriors | 1 |
+
 
 PostgreSQL has several aggregate functions that perform calculations on a set of rows and returns a single value. Some commonly used functions are `COUNT()`, `SUM()`, `AVG()`, `MAX()` and `MIN()`. You can read more about them [here](https://www.postgresql.org/docs/9.5/functions-aggregate.html).
 
