@@ -129,3 +129,5 @@
 ### [Understanding Basic Machine Learning](./Tech_Stacks/Machine_Learning/Understanding_Machine_Learning.md)
 
 ### [Quickstarting Prisma ORM](./Tech_Stacks/PrismaORM.md)
+
+### [Developing Serverless Applications on Google Cloud](./Tech_Stacks/Google_Cloud.md)
