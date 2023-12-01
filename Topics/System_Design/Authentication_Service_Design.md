@@ -6,10 +6,10 @@ A well-designed authentication and authorization service has to strike the corre
 ## Table of Contents
 
 1. [Types of Authentication](#auth-types)
-	a. [Multi-Factor Authentication](#mfa)
-	b. [Standardized Protocols](#protocols)
+	1. [Multi-Factor Authentication](#mfa)
+	2. [Standardized Protocols](#protocols)
 2. [Sessions and Tokens](#sessions-tokens)
-	a. [Designing Token-Based Authentication](#token-design)
+	1. [Designing Token-Based Authentication](#token-design)
 4. [Design Considerations](#auth-design)
 5. [Common Technologies](#auth-common-tech)
 6. [Further Reading](#further-reading)
