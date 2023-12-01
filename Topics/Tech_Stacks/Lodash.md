@@ -2,11 +2,12 @@
 
 ## Table of Contents
 1. [Introduction](#introduction)
-2. [Installation](#installation)
-3. [Array Manipulation](#array-manipulation)
-4. [Object Manipulation](#object-manipulation)
-5. [Function Utilities](#function-utilities)
-6. [Additional Resources](#additional-resources)
+2. [Why Lodash](#why)
+3. [Installation](#installation)
+4. [Array Manipulation](#array-manipulation)
+5. [Object Manipulation](#object-manipulation)
+6. [Function Utilities](#function-utilities)
+7. [Additional Resources](#additional-resources)
 
 ## Introduction
 Lodash is a powerful JavaScript utility library that simplifies the handling of arrays, numbers, objects, strings, etc. It's designed to make JavaScript easier by taking the hassle out of working with arrays, numbers, objects, and strings.Lodash makes JavaScript easier by taking the hassle out of working with arrays, numbers, objects, strings, etc.
@@ -15,6 +16,26 @@ Lodash’s modular methods are great for:
 - **Iterating arrays, objects, & strings**
 - **Manipulating & testing values**
 - **Creating composite functions**
+
+## Why use Lodash
+
+1. **Enhanced Readability**:
+   - **Intuitive Function Names**: Lodash's functions have descriptive, intuitive names, making code easier to understand at a glance.
+   - **Consistent Syntax**: The consistent syntax in Lodash promotes a uniform coding style that is easy to follow.
+
+2. **Improved Maintainability**:
+   - **Modularity**: Lodash allows you to import only the functions you need, keeping your codebase lightweight and focused.
+   - **Chainable Methods**: By chaining methods, you can write sequences of operations in a clear and logical manner, which simplifies future code modifications.
+
+3. **Enhanced Performance**:
+   - **Optimized Operations**: Lodash is optimized for performance, particularly with large datasets and complex manipulations. Some tests in [this article](https://hackernoon.com/is-lodash-that-good-performance-comparison-of-javascript-and-lodash)
+   - **Efficiency in Data Handling**: Offers efficient handling of collections and deep object manipulation, often outperforming equivalent native JavaScript.
+
+
+While Lodash is a powerful utility library for JavaScript, modern JavaScript (ES6) has introduced many features that Lodash was originally designed to provide. There are other library like [Ramda](https://ramdajs.com/) and [Lazy](https://danieltao.com/lazy.js/) offer similar functionalities. If your project has already setup with ES6, this overlap can lead to redundant code and unnecessary increase in project size.
+
+Also in terms of performance, while Lodash is optimized for a variety of scenarios, native JavaScript methods are often more efficient for simple tasks. If your project doesn't requrie complex operation in array, object or function in javascript, native JavaScript is enough for the project.
+### Improved readability and maintainability
 
 
 ## Installation
