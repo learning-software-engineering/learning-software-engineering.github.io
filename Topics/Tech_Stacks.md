@@ -26,6 +26,8 @@
 
 ### [Learning PostgreSQL and psycopg2](./Tech_Stacks/PostgreSQL_psycopg2.md)
 
+### [HTML](./Tech_Stacks/HTML_Guide.md)
+
 ### [CSS](./Tech_Stacks/CSS.md)
 
 ### [Learning Bootstrap](./Tech_Stacks/Bootstrap.md)
