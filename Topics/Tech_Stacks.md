@@ -131,3 +131,5 @@
 ### [Quickstarting Prisma ORM](./Tech_Stacks/PrismaORM.md)
 
 ### [Developing Serverless Applications on Google Cloud](./Tech_Stacks/Google_Cloud.md)
+
+### [Inversion of Control and Dependency Injection with Spring](./Tech_Stacks/SpringIoC.md)
