@@ -13,15 +13,16 @@ SwiftUI is a very vast collection of features designed by Apple to make iOS deve
 ### [Additional Resources](#additional-resources-1)
 
 ## What is MapKit?
-MapKit is one of Apple’s API framework that allows iOS developers to build map-centered views and apps easily and efficiently. 
+MapKit is one of Apple’s API frameworks that allows iOS developers to build map-centered views and apps easily and efficiently. 
 
 Based on the [Apple documentation](https://developer.apple.com/documentation/mapkit/), MapKit can:
-
 - Embed maps directly into your app’s windows and views.
 - Add annotations and overlays to a map to call out points of interest.
 - Add LookAround capabilities to enable users to explore locations at street level.
 - Respond to user interactions with well known points of interest, geographical features, and boundaries.
-- Provide text completion to make it easy for users to search for a destination or point of interest.
+- Provide text completion for searchbars to make it easy for users to search for a destination or point of interest. 
+
+  
 ## Creating a Map
 Let’s start with a basic map.
 <p align="center">
@@ -46,11 +47,12 @@ struct MapContentView: View {
 ```
 
 
-Congratulations you made a map! As you can tell this is just the bare bones. Now that you have a map, you have to customize it to fit your needs.
+Congratulations, you made a map! As you can tell this is just the bare bones. Now that you have a map, you have to customize it to fit your needs.
 
 ### Customizing your map
 
 **Map Style**
+
 MapKit provides a couple of different map styles, such as `standard`, `imagery`, and `hybrid`. 
 
 <ins>Standard</ins>
@@ -125,11 +127,11 @@ takes the same approach if you want to set a coordinate dynamically.
   import MapKit
     
   struct MapContentView: View {
-     let robarts = CLLocationCoordinate2D(latitude: 43.664486, longitude: -79.399689)
+    let robarts = CLLocationCoordinate2D(latitude: 43.664486, longitude: -79.399689)
     var body: some View {
-             Map(){
-                    Marker("Robarts", coordinate: robarts)
-                 }
+        Map(){
+          Marker("Robarts", coordinate: robarts)
+        }
      }
   }
    
@@ -172,7 +174,7 @@ There are a couple of ways to customize your marker, such as color and what is d
      Marker("University College", monogram: Text("UC"), coordinate: uc)
   ```
 
-If you want more freedom with your designing map pins, try using [Annotations](#annotations) instead.
+If you want more freedom with your designing map pins, try using [Annotations](#annotations-1) instead.
 ## Annotations
 Annotations allow for MapKit developrs to completely redesign the location coordinate indicators.
 Unlike markers which had a set amount of parameters and there was no way to escape the bubble, Annotations instead takes in a Swift UI `View()`.
@@ -192,9 +194,8 @@ struct MapContentView: View {
                 Image(systemName: "books.vertical")
                     .padding(6)
                     .foregroundColor(.white)
-                    .background(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+                    .background(.blue)
             }
-            
         }
     }
 }
@@ -207,10 +208,10 @@ struct MapContentView: View {
 <img width=1000 src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/113125436/c64ff5e5-8286-4ad4-b24f-3eae8545f247"/>
 </p>
 
-Overall, the annotations allow you to make the map pins compeletely your own.
+Overall, the annotations allow you to make the map pins compeletely your own. The possibilities are endless.
 
 ## Camera Position
-By default the map focuses on the map contents (markers, annotaions, etc). To focus on a particular region or location, we can use `MapCameraPosition`. This can be helpful in a couple cases such as:
+By default the map focuses on the map contents (markers, annotations, etc). To focus on a particular region or location, we can use `MapCameraPosition`. This can be helpful in a couple cases such as:
  - When you finish searching for a specific location, focus the map on that location
  - Focus the map on the location of the user
  - If the user presses a certain button, change map focus
@@ -252,7 +253,7 @@ struct MapContentView: View {
 Beyond these introductory examples, `MapCameraPosition` has a big potential and is very useful when creating dynamic maps.
 
 ## Additional Resources
-MapKit for SwiftUI is very large and has a lot of possible implementations, so this tutorial was just the tip of the ice berg! Below are some additional resources
+MapKit for SwiftUI is very large and has a lot of possible implementations, so this tutorial was just the tip of the iceberg! Below are some additional resources
 that could help with your MapKit journey.
 
 **How to...**
