@@ -21,3 +21,5 @@ Potential topics--
 
 #### [Handling Bugs and Technical Debt](./Software_Engineering/Handling_Bugs_and_Technical_Debt.md)
 Guidelines for effectively handling bugs through a systematic life cycle and technical debt through proactive identification, documentation, and strategic repayment practices, emphasizing the importance of maintaining a resilient and sustainable software development ecosystem.
+
+#### [Ethics In Software Engineering](./Software_Engineering/Ethics_In_Software_Engineering.md)
