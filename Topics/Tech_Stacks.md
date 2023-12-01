@@ -123,3 +123,5 @@
 ### [Using Python Ray Tasks to distribute your functions on multiple machines](./Tech_Stacks/Ray.md)
 
 ### [Understanding Basic Machine Learning](./Tech_Stacks/Machine_Learning/Understanding%20Machine%20Learning.md)
+
+### [Object Oriented Programming in C++](./Tech_Stacks/OopAndCpp.md)
