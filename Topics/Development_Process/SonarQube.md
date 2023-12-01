@@ -14,6 +14,8 @@
 
 [SonarQube](https://www.sonarsource.com/products/sonarqube/) is an open-source platform designed to continuously inspect code quality while easily integrating into the existing development workflow. It provides comprehensive code analysis and reporting, aiding developers and teams in maintaining code health, identifying bugs, vulnerabilities, and enhancing overall software quality. The solution performs checks at every stage of the development process. 
 
+Now you may ask why can't I just use an IDE linter? The thing is linters tend to use open source and oftentimes outdated plugins that just nearly aren't as good as what Sonar has to offer. Linters  don't generally look at the big picture and instead look at the immediate/nearby lines of code whereas SonarQube provides a comprehensive analysis of code quality, security vulnerabilities, and bugs across an entire project where things can arise through multiple files and coupling.
+
 ## Advantages of SonarQube
 
 - **Code Quality Analysis:** Offers in-depth insights into code quality metrics, ensuring better maintainability and readability.
@@ -35,11 +37,11 @@ Overall, after the painful setup, I found that the tool is not only simple to us
 
 ## Example Workflow
 
-[SonarLint](https://www.sonarsource.com/products/sonarlint/), alongside SonarQube, exemplifies this process. It initiates within your IDE, detecting issues as you code. Serving as an advanced linter, SonarLint acts as your primary safeguard. Once coding is complete and you open a PR, it triggers your CI workflow, prompting an automatic analysis of your PR in SonarQube.
+[SonarLint](https://www.sonarsource.com/products/sonarlint/), alongside SonarQube, exemplifies this process. It initiates within your IDE, detecting issues as you code. Serving as an advanced linter, SonarLint acts as your primary safeguard analyzing the code locally. Once coding is complete and you open a PR, it triggers your CI workflow, prompting an automatic analysis of your PR in SonarQube.
 
 <p align="center">
 <img src="https://assets-eu-01.kc-usercontent.com/ab5c5eb8-73f9-0195-1d55-9cb00242be02/4843cee9-af50-4284-8981-a8cdb4836c65/body-2548db75-1761-4a3b-bab7-5acd02bd5658_Diagram%2Bof%2BPR%2BDeco%2Bin%2Bthe%2BALM.png?w=1078&h=493&auto=format&fit=crop" width="60%">
-</>
+</p>
 
 By utilizing the Quality Gate profile you've set up to meet your acceptance criteria, SonarQube evaluates your PR and provides a Pass or Fail assessment. A green Quality Gate indicates readiness for code merging, while a red one signals areas that need attention. Here, you'll observe an example of a failed Quality Gate within a GitHub PR.
 
@@ -48,7 +50,8 @@ By utilizing the Quality Gate profile you've set up to meet your acceptance crit
 </p>
 
 
-We attain the following objectives:
+
+You attain the following objectives:
 
 ###### 1. Continuous Code Quality Assurance
 
@@ -57,6 +60,12 @@ Integrate SonarQube into your CI/CD pipeline to continuously analyze code qualit
 ###### 2. Security Vulnerability Detection
 
 Leverage SonarQube to identify potential security risks like SQL injection, cross-site scripting (XSS), and other prevalent vulnerabilities within your codebase.
+
+And get the following workflow:
+<p align="center">
+<img src="https://assets-eu-01.kc-usercontent.com/b98b0e99-a92d-0140-c108-93833c7e1e31/f284da48-cd09-4c3b-83b4-9d9787d7845c/sonar-development-workflow.png?w=2912&h=1658&auto=format&fit=crop" width="60%">
+</p>
+
 
 ## Getting Started
 
@@ -88,6 +97,8 @@ You can evaluate SonarQube using a traditional installation with the zip file or
 Once your instance is up and running, Log in to http://localhost:9000 using System Administrator credentials:
 - login: `admin`
 - password: `admin`
+
+Note: This is an example of doing running SonarQube locally but you would generally do the same thing on a server so that your team does not have to individually run their own SonarQube server. The other option would be using the enterprise service called [SonarCloud](https://www.sonarsource.com/products/sonarcloud/). 
   
 #### 3. Analyzing a project
 
