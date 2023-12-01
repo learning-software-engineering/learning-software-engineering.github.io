@@ -107,6 +107,8 @@
 ### [Setting up Firebase and Intro to Firestore](./Tech_Stacks/Firebase_and_Firestore.md)
 
 ### [Learning Odata](./Tech_Stacks/Odata.md)
+### [Learning Github Actions](./Development_Process/Github_Actions.md)
+### [A Quick Primer on UI Testing in Vue](./Tech_Stacks/primer-ui-testing-vue.md)
 
 ### [Learning about QRcode](./Tech_Stacks/QRcode.md)
 
