@@ -55,6 +55,8 @@
 
 ### [Serverless Computing](./Development_Process/Serverless_AWS_Lambda.md)
 
+### [Azure Functions](./Development_Process/Azure_Functions.md)
+
 ## Introduction to Shells
 
 ### [Introduction to using Shell](./Development_Process/Shell/intro_to_shell.md)
