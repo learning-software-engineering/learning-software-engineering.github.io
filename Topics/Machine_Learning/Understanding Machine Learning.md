@@ -15,7 +15,7 @@ The last set of data can be used for the testing purpose. It is important to not
 
 It can be easily seen that the existence of a large set of data is essential to develop Machine Learning algorithms for a given problem. Where the definition of "large" may depend on the context and the algorithms that are trying to be implemented, more data would usually result in a better fitted and generalized model. Fundamentally, since the algorithm goes through this provided "large" dataset to be trained on, Machine Learning algorithms go through computationally heavy training process which may not be feasible for certain situations. As a Machine Learning practioner and a Software developer, it is important to idenfity when to use these expensive processes and when to not. This primarily depends on which task an application needs to resolve.
 
-There are three large branches of Machine Learning which may defer by the nature of the task:
+### Basic Machine Learning Paradigms
 
 #### Supervised Learning
 
