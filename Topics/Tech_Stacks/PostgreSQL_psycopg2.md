@@ -32,6 +32,7 @@ If you are using MacOS, you can also run the command `brew install postgresql` i
 For Windows users, the user should download PostgreSQL through the link provided above. If the user wants to utilize PostgreSQL on the command line, they must (after installation):
 1. Add the PostgreSQL bin directory path to the PATH environment variable.
 2. Run the command `psql -U username`, where `username` is the username you selected during installation.
+3. To exit psql, run `\q;`.
 
 Once installed, you can create a database, relation, and tables with the PostgreSQL client called **pgAdmin**. **pgAdmin** is automatically downloaded when using the links above and can be accessed by searching your task bar. (If you are using Homebrew, you have to install **pgAdmin** separately by running `brew install --cask pgadmin4`.) You can also perform queries on relations and tables through its query tool. More information on how to use **pgAdmin** can be found at this [link](https://www.pgadmin.org/docs/pgadmin4/6.21/index.html).
 
@@ -54,6 +55,7 @@ In the command line:
 1. Type `psql` to initialize the PostgreSQL environment.
 2. Type `CREATE DATABASE dbname;`, where `dbname` is the name of the database to create.
 Documentation on setting database parameters can be found [here](https://www.postgresql.org/docs/current/sql-createdatabase.html).
+To list all available databases, use `\l;`.
 
 
 ### Create Schema
@@ -68,7 +70,7 @@ To do this in the command line:
 1. Execute `psql` to initialize the PostgreSQL environment.
 2. Execute `\c dbname;` where `dbname` is the name of the desired database.
 3. Run `CREATE SCHEMA schema_name;`. If the operation was successful, you should see the message `CREATE SCHEMA` on the next line.
-4. Run `\dn` to get a list of available schemas.
+Run `\dn` to get a list of available schemas.
 
 
 ### Create Tables
@@ -85,6 +87,7 @@ To create a table in the command line:
 3. Run `SET search_path TO schema_name;` where `schema_name` is the name of the schema you want to put your table in.
    - `search_path` is a variable that determines the order in which schemas are searched when looking for database objects. This command is allows you to define the schema order. In this example, PostgreSQL searches for objects in `schema_name`. If `search_path` were set to `SET search_path TO schema1, schema2` and an object was not found in `schema1`, PostgreSQL would continue searching in the subsequent schema `schema2`.
 5. Type `CREATE TABLE table_name (column1 int PRIMARY KEY, ...);`, where `table_name` is the name of the table to create. Inside the round braces is a list of the columns that you want in the table. For each column, you must specify a name and datatype. For example, a table can be created like this:
+To see the structure of a specific table, use `\d table_name;` or `\d+ table_name;` for more detailed information (comments associated with the table columns). To list all tables in the current database, use `\dt;`
 
 ```
 CREATE TABLE sports (
@@ -117,8 +120,9 @@ Here is a link for information on datatypes in PostgreSQL: [https://www.postgres
 Here is a link for more details and examples of how to create a table: [https://www.postgresql.org/docs/current/sql-createtable.html](https://www.postgresql.org/docs/current/sql-createtable.html)
 
 
-### Table Operations
-In SQL, a query is a statement/command used to retrieve or manipulate data in a relational database. Suppose we have the following tables:
+### Running queries
+In SQL, a query is a statement/command used to retrieve or manipulate data in a relational database. To execute SQL scripts, you can use `\i path/to/script.sql`. Alternatively, you can run SQL queries directly on psql.
+Suppose we have the following tables:
 `sports`:
 | sport_id | sport_name |
 | -------- | ---------- |
