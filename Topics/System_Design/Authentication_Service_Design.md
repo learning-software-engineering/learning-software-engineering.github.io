@@ -66,7 +66,7 @@ There's a few best practices to follow when we're building an authentication ser
 5.  **Token Encryption:** When sensitive information is embedded in tokens, consider encrypting the token content. This adds an extra layer of security, especially for tokens containing user-specific data.
 6.  **Implement Rate Limiting:** Protect against abuse by implementing rate limiting on token-related endpoints. This helps mitigate the risk of brute force attacks or other malicious activities.
 
-## Design Considerations
+## Design Considerations <a name="auth-design"></a>
 
 When it comes to building an authentication service for any kind of digital service, particularly in the context of microservice architectures, the best approach is to "use an API gateway—this is a service deployed in front of the microservices application, which serves as a single endpoint for all user requests." A good example of this are [interceptors in Axios](https://axios-http.com/docs/interceptors). Every API call in an mobile app or web service will pass through this checkpoint; it'll do something like attach a token, ensure a token is valid, or catch unauthorized access attempts. Other services sending requests to this checkpoint won't be aware of the underlying service at this gateway; it'll just package the requests accordingly, authenticate, and forward them. 
 
