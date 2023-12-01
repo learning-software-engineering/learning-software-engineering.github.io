@@ -61,9 +61,10 @@ We can also pass in lists and dictionaries. Using a `.` performs a lookup to acc
 Assuming menu_items is a list of dictionaries, this would display the first dictionary's name value.
 
 ### Built-in Tags
-DTL's built-in tags is a convenient way to allow for conditional statements, loops, loading static files, and [more](https://docs.djangoproject.com/en/4.2/ref/templates/builtins/). Tags are characterized by the `%` symbol.
+DTL's built-in tags is a convenient way to allow for conditional statements, loops, loading static files, and [more](https://docs.djangoproject.com/en/4.2/ref/templates/builtins/). Tags are characterized by the `%` symbol inside curly braces.
 
 #### Conditional Statements
+The syntax and [boolean operators](https://docs.djangoproject.com/en/4.2/ref/templates/builtins/#boolean-operators) for conditionals inside the tags are similar to Python, except it must end with an `{% endif %}` tag.:
 ```
 {% if menu_item.is_special %}
     <li class="special">{{ menu_item.name}}</li>
@@ -71,8 +72,19 @@ DTL's built-in tags is a convenient way to allow for conditional statements, loo
     <li class="special">{{ menu_item.name}}</li>
 {% endif %}
 ```
-#### Loops
 
+#### Loops
+We can loop through lists, dictionaries, and its nested variants with the familiar Python syntax. Again, it must end with an `{% endfor %}` tag.:
+
+```
+{% for menu_item in menu_items %}
+ {% if menu_item.is_special %}
+    <li class="special">{{ menu_item.name }} {{ menu_item.price }}</li>
+  {% else %}
+    <li class="regular">{{ menu_item.name }} {{ menu_item.price }}</li>
+  {% endif %}
+{% endfor %}
+```
 #### Loading CSS Files
 
 
