@@ -7,13 +7,17 @@ For the last 15 years, mobile apps have emerged as vital tools in our daily live
 ## User Interface Design
 
 ### 1. Screen Size
-Compared to desktops, mobile screens are much smaller. The smaller screen size requires specific design considerations, in particular, mobile apps should prioritize essential features and focus on presenting relevant content. For example, in an e-commerce mobile app, the focus should be on the products being sold, in particular, the images of the products with more detailed information being hidden but still seamlessly accessible.
+Compared to desktops, mobile screens are much smaller. The smaller screen size requires specific design considerations, in particular, mobile apps should prioritize essential features and focus on presenting relevant content. For example, in an e-commerce mobile app, the focus should be on the products being sold, in particular, the images of the products with more detailed information being hidden but still seamlessly accessible. Below is an example of Wish, an e-commerce app that illustrates seamless accessibility of detailed information as it only takes one tap from the main tap target. Another aspect of screen size considerations is that the screen sizes on mobile vary greatly, therefore designers and developers must be careful to make sure that the app remains presentably on many different screens.
+
+![image](https://github.com/OrbitalVitamin/learning-software-engineering.github.io/assets/68557625/6c0444d2-4ea4-4d0d-93a0-162ebd6d19b4)
 
 ### 2. Touch Interface
 The touch interface of mobile devices should be also kept in mind when designing mobile applications. Unlike mouse clicks, touch interactions are not as precise, requiring designing larger and more accessible touch targets. In the example of an e-commerce mobile app, the sold products should all have a large image that is tapable and clearly separated from the other products. A Sub consideration of the touch interface is also that most users operate their devices with one hand and therefore tap using the thumb. Therefore any important elements to an application should be at the bottom of the screen. For example, on Instagram, the navigation bar is at the bottom of the screen so it is easily accessible to the thumb of the user.
 
+
+
 ### 3. Contextual Use
-Mobile apps are often used on-the-go, requiring a user experience such that any important functions can be done by quick and efficient interactions. To illustrate this a good example is Uber. The Uber app would often be used in situations where the user is outside or not necessarily in a situation where they want to take their time. The Uber app is clearly designed with this in mind requiring only three taps from opening the app to ordering a ride fulfilling its main function. 
+Mobile apps are often used on-the-go, requiring a user experience such that any important functions can be done by quick and efficient interactions. Generally, it is a good idea to limit the number of taps required to access a resource in an app; however, it depends on the product and particular use case. To illustrate this a good example is Uber. The Uber app would often be used in situations where the user is outside or not necessarily in a situation where they want to take their time. The Uber app is clearly designed with this in mind requiring only three taps from opening the app to ordering a ride fulfilling its main function. 
 
 
 
