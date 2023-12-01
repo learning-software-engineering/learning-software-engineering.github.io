@@ -6,6 +6,7 @@
 ### [What is SwiftUI?](#what-is-swiftui-1)
 ### [Starting a Swift Project](#starting-a-swift-project-1)
 ### [Swift View](#swift-view-1)
+### [Design Patterns with SwiftUI](#design-patterns-with-swiftui-1)
 ### [Testing Your App - Unit Tests](#testing-your-app---unit-tests-1)
 ### [Testing Your App - Simulators](#testing-your-app---simulators-background)
 ### [Testing Your App - Debugging](#testing-your-app---debugging-1)
@@ -49,6 +50,8 @@ and the framework will handle performing the steps needed to get that result.
 
 [Hacking with Swift](https://www.hackingwithswift.com) is a great free resource for learning how to do specific things in Swift and SwiftUI
 when the issues arise.
+
+[Stanford CS193p](https://cs193p.sites.stanford.edu) is also a great resource for learning app development in SwiftUI for those who prefer a structured course with interactive assignments.
 
 ## Starting a Swift Project
 After launching Xcode, selecting `Create a new Xcode project`, and choosing which platform and type of app you want to make, you will then have
@@ -142,7 +145,276 @@ To view the preview on different device types, you can change the device the pre
 </p>
 
 
+## Design Patterns with SwiftUI
+Now that you have seen how to compose a view in SwiftUI, this section will go over how to apply some of the principles of [clean architecture](https://learning-software-engineering.github.io/Topics/Development_Process.html#clean-architecture) to your project. Simply put, there are three main abstraction layers; presentation, business (or domain), and data.
 
+Before going over how to conform your project to this architecture, let's get familiar with the most common wrappers and protocols (the Swift equivalent of an 
+interface) used in SwiftUI.
+
+**`State`**
+
+The `State` wrapper is a concept similar to react native. It allows a view to own a property and is completely managed by SwiftUI's property storage. When a value wrapped in `State` changes, the view is re-rendered to reflect them. `State` properties can be shared with subviews through a `Binding`.
+
+**`Binding`**
+
+The `Binding` wrapper creates a connection between a property that stores data and a view that displays and changes the data. It connects the property to some source of truth that is defined elsewhere. Typically the `Binding` wrapper is used in conjunction with the `State` wrapper defined above. Changing the value of a `Binding` creates a waterfall and all views connected to the `State` property are re-rendered. Here is an example of both in use:
+
+```swift
+struct PlayerView: View {
+    @State private var isPlaying: Bool = false // Create the state here now.
+
+    var body: some View {
+        VStack {
+            PlayButton(isPlaying: $isPlaying) // Pass a binding.
+            ...
+        }
+    }
+}
+```
+
+```swift
+struct PlayButton: View {
+    @Binding var isPlaying: Bool // Play button now receives a binding.
+
+    var body: some View {
+        Button(isPlaying ? "Pause" : "Play") {
+            isPlaying.toggle()
+        }
+    }
+}
+```
+
+In this example the parent view PlayerView keeps a state variable isPlaying and passes it down the PlayButton view. Notice the `$` before referencing the variable, which allows us to reach the property wrapped in a `Binding`. In this subview, we use the binding to isPlaying to toggle its value on a button press. This causes both the views to re-render because the binding changes the value at the source of truth.
+
+**`Published`**
+
+Class attributes can be wrapped with `Published`, which allows other variables to subscribe to their changes.
+
+**`ObservableObject`**
+
+A class that conforms to this protocol can be used to refresh views when their `Published` attributes change.
+
+**`ObservedObject`**
+
+When passing an instance of a class that conforms to the `ObservableObject` protocol inside a child view, we use the`ObservedObject` wrapper. The behaviour of this object is similar to the `Binding` wrapper defined above.
+
+
+
+**`StateObject`**
+
+When instantiating an object of a class that conforms to the `ObservableObject` protocol inside a parent view, we use the `StateObject` wrapper. The behaviour of this object is similar to the `State` wrapper defined above. Here is an example of a class and their views in use:
+
+```swift
+class UserProgress: ObservableObject { // Define class and protocol
+    @Published var score = 0 // Published attribute
+}
+
+struct ContentView: View {
+    @StateObject var progress = UserProgress() // Source of truth
+
+    var body: some View {
+        VStack {
+            Text("Your score is \(progress.score)")
+            InnerView(progress: progress)
+        }
+    }
+}
+
+struct InnerView: View {
+    @ObservedObject var progress: UserProgress // Binding from parent
+
+    var body: some View {
+        Button("Increase Score") {
+            progress.score += 1 // Updating this refreshes views
+        }
+    }
+}
+```
+
+In this example we have a UserProgress class with a published score attribute. An instance of UserProgress is instantiated in the parent view ContentView and its binding is passed to InnerView. When the button is pressed in the InnerView, the published attribute score changes, which tells SwiftUI to re-render the views that reference this instance of the observable object, thus the score is refreshed on every button tap.
+
+**`EnvironmentObject`**
+
+You may have noticed that using `StateObject` and `ObservedObject` requires us to explicitly pass the object from the parent view to the child view. If we have many child views or a deeply nested view hierarchy it may be cumbersome to keep passing this object down because not all views may require this specific object. To clean things up, we can wrap the `ObservedObject` in an `EnvironmentObject` instead and pass the `StateObject` in the view environment. This allows us to retrieve the `ObservableObject` from the parent view's `Environment` instead of the parameters of a view. SwiftUI automatically assigns environment objects based on type. We can use this concept to improve the previous example:
+
+```swift
+class UserProgress: ObservableObject {
+    @Published var score = 0
+}
+
+struct ContentView: View {
+    @StateObject var progress = UserProgress() 
+
+    var body: some View {
+        VStack {
+            Text("Your score is \(progress.score)")
+            InnerView() // No longer pass progress to the child view
+        }
+        .environmentObject(progress) // Pass it through the environment instead
+    }
+}
+
+struct InnerView: View {
+    // Grab UserProgress instance from the view environment
+    @EnvironmentObject var progress: UserProgress
+
+    var body: some View {
+        Button("Increase Score") {
+            progress.score += 1
+        }
+    }
+}
+```
+
+**`@Environment`**
+
+We can also add an `ObservableObject` to a managed `Environment` instead, which allows us to retrieve custom values as well as predefined Swift values through keys. We can alternatively use this concept on the previous example as well:
+
+```swift
+class UserProgress: ObservableObject {
+    @Published var score = 0
+}
+
+struct ContentView: View {
+    @StateObject var progress = UserProgress() 
+
+    var body: some View {
+        VStack {
+            Text("Your score is \(progress.score)")
+            InnerView() // No longer pass progress to the child view
+                .environment(\.progress, progress) // Pass key-value pair
+        }
+    }
+}
+
+struct InnerView: View {
+    // Grab UserProgress instance from the environment
+    @Environment(\.progress) var progress: UserProgress
+
+    var body: some View {
+        Button("Increase Score") {
+            progress.score += 1
+        }
+    }
+}
+```
+
+Let's move on to using these features to implement the structure of an application that uses clean architecture. As an example let's imagine we are creating an app that keeps track of your startups daily scrum meetings. We can imagine that the data for the daily meetings needs to be stored on a database somewhere, that an interface is required to view this data and we may need to interact with this data as well.
+
+The main structure of the app will look like the following:
+
+<p align="center">
+<img src="https://i.postimg.cc/q7dB52Y6/temp-Image6-WSk-Bh.jpg">
+<p/>
+
+Let's go over how this looks for our current example app. Note that each code block should be in its own file.
+
+**Data**
+
+A repository is a gateway for reading and writing data. We can abstract the details of where this data is coming from. For example, we could be fetching it from a third-party API or even a local database. Notice that this abstraction doesn't use any of the previously defined wrappers. It is instantiated by the Interactor below.
+
+```swift
+protocol Repository {
+    func loadScrumData() -> AnyPublisher<[Scrum], Error>
+    func loadScrumDetails(scrum: Scrum) -> AnyPublisher<Scrum.Details, Error>
+}
+
+struct ScrumDatabaseRepository: Repository {
+    
+    let dbURL: String
+    
+    init(dbURL: String) {
+        self.dbURL = dbURL
+    }
+    
+    func loadScrumData() -> AnyPublisher<[Scrum], Error> {
+        return call(database: dbURL, query: "select * from example.scrums;")
+    }
+
+    func loadScrumDetails(scrum: Scrum) -> AnyPublisher<Scrum.Details, Error> {
+        return call(database: dbURL, query: "select * from example.details where id=\(scrum.id);")
+    }
+}
+```
+
+
+**Business**
+
+The AppState is the only object in the pattern that requires the `ObservableObject` wrapper. Similar to Redux, AppState is a single source of truth and keeps the state for the entire application.
+
+```swift
+class AppState: ObservableObject {
+    @Published var userData = UserData()
+    @Published var routing = ViewRouting()
+    @Published var system = System()
+}
+```
+
+The interactor is the way we interface with the repository in order to update our AppState, which allows the business logic to be segregated in the interactor. The interactor needs references to both the AppState and Repository because it delegates getting data from the Repository and updates the AppState accordingly.
+
+```swift
+protocol Interactor {
+    func loadScrums()
+    func load(scrumDetails: Binding<Loadable<Scrum.Details>>, Scrum.Details)
+}
+
+struct ScrumInteractor: Interactor {
+    
+    let databaseRepository: ScrumDatabaseRepository
+    let appState: AppState
+    
+    init(databaseRepository: ScrumDatabaseRepository, appState: AppState) {
+        self.databaseRepository = databaseRepository
+        self.appState = appState
+    }
+
+    func loadCountries() {
+        appState.userData.scrums = .isLoading(last: appState.userData.scrums.value)
+        weak var weakAppState = appState
+        _ = databaseRepository.loadCountries()
+            .sinkToLoadable { weakAppState?.userData.countries = $0 }
+    }
+
+    func load(scrumDetails: Binding<Loadable<Scrum.Details>>, Scrum.Details) {
+        scrumDetails.wrappedValue = .isLoading(last: scrumDetails.wrappedValue.value)
+        _ = webRepository.loadScrumDetails(scrum: scrum)
+            .sinkToLoadable { scrumDetails.wrappedValue = $0 }
+    }
+}
+```
+
+**Presentation**
+
+The final layer for clean architecture is the view. It holds references to the interactor to dispatch actions and the AppState in order to properly re-render views when AppState changes.
+
+```swift
+struct ContentView: View {
+    @StateObject var state = AppState()
+    @StateObject var interactor: Interactor = ScrumInteractor(databaseRepository: "postgres://...", appState: state)
+
+    var body: some View {
+        VStack {
+            ScrumList()
+                .environment(\.interactor, interactor)
+        }
+        .environmentObject(state)
+    }
+}
+
+struct ScrumList: View {
+    
+    @EnvironmentObject var appState: AppState
+    @Environment(\.interactor) var interactor: Interactor
+    
+    var body: some View {
+        ...
+        .onAppear {
+            self.interactors.scrumInteractor.loadScrums()
+        }
+    }
+}
+```
+That's all there is to it! You now know how to incorporate SwiftUI wrappers and protocols to create clean, testable code. For more information on the wrappers and protocols mentioned, check out the [Apple Developer Documentation](https://developer.apple.com/documentation/technologies).
 
 
 ## Testing Your App - Unit Tests
