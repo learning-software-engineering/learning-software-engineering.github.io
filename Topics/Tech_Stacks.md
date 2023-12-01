@@ -140,4 +140,4 @@
 
 ### [JSON Parsing](./Tech_Stacks/JsonParsing.md)
 
-### [NoSQL Database JSON Interaction](./Tech_Stacks/NoSQL_database_JSON_interactions.md)
+### [NoSQL Database JSON Interaction](./Tech_Stacks/NoSQL_databases_JSON_interactions.md)
