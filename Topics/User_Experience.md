@@ -182,16 +182,30 @@ Finally, to create a **prototype**, or a **high-fidelity prototype**, you essent
 
 ## Accessibility
 
-The core of accessibility lies in acknowledging and catering to the diverse needs of users, which include visual, auditory, motor, and cognitive impairments. By implementing accessibility standards, developers can create products that are not only more usable for people with disabilities but also enhance the overall user experience for a broader audience. This involves designing software and interfaces that are flexible enough to meet different user needs and preferences, and are compatible with various assistive technologies.
+### What is accessibility in software?
+Accessibility is an important, and often overlooked aspect of building applications. Although accessibility may be out of scope for projects built in this course, it is an important skill and consideration to learn as you go forward in your professional software development career.
 
-### The 7 Universal Design Principles
+Users may have a wide variety of accessibility needs. This may include users with vision, hearing, and mobility impairments, cognitive disabilities, and more. Examples of accessibility in software include: 
+* Screen readers for vision impairment 
+* Closed captions for hearing impairments
+* Font size adjustability for older users
+* Black and white filters for photosensitivity and colour blindness
+
+### Why should I make my app accessible?
+
+In Ontario, it is a [legal requirement](https://www.ontario.ca/page/how-make-websites-accessible) for websites and web apps to reach a certain level of accessibility. Aside from legal requirements, it is generally beneficial to build accessibility into your apps. As a business, supporting a diverse set of users will improve the experience of your customers, and as an individual your contributions will impact the friendliness and inclusion of the internet.
+
+### Design Principles
+The core of accessibility lies in acknowledging and catering to the diverse needs of users, which include visual, auditory, motor, and cognitive impairments. By implementing accessibility standards, developers can create products that are not only more usable for people with disabilities but also enhance the overall user experience for a broader audience. This involves designing software and interfaces that are flexible enough to meet different user needs and preferences, and are compatible with various assistive technologies.
 
 [Universal Design Principles](https://www.buffalo.edu/access/help-and-support/topic3/universaldesignprinciples.html) are not only used for software but can be incorporated generally as well. These 7 principles ensure accessibility, consistency, and user-friendly software. 
 This article provides the 7 Universal Design Principles that make software accessible to all users, which plays an important role in diversifying the User Experience. 
 
+While it may feel overwhelming to come up with your own great design from scratch by following all these rules and principles, you may find it easier to learn from examples to avoid mistakes that others have made. [This article](https://www.interaction-design.org/literature/article/bad-design-vs-good-design-5-examples-we-can-learn-frombad-design-vs-good-design-5-examples-we-can-learn-from-130706) outlines 5 examples of bad design, with great explanations, takeaways, and lessons to learn.
+
 ### Web Content Accessibility Guidelines (WCAG)
 
-The [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/standards-guidelines/wcag/) are a set of recommendations for making web content more accessible, primarily for people with disabilities, but also for all user interfaces and devices. Developed through the World Wide Web Consortium (W3C), specifically by the Web Accessibility Initiative (WAI), WCAG serves as the international standard for web accessibility.
+The [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/standards-guidelines/wcag/) are a set of recommendations for making web content more accessible, primarily for people with disabilities, but also for all user interfaces and devices. Developed through the World Wide Web Consortium (W3C), specifically by the Web Accessibility Initiative (WAI), WCAG serves as the international standard for web accessibility. This guide is quite detailed so it may be difficult to know where to start as you are developing your web app, but a11y (a community-driven accessibilty initiative) has boiled down the most popular and important standards into an easy to follow [checklist](https://www.a11yproject.com/checklist/).
 
 WCAG 2 is structured around four fundamental principles, often referred to by the acronym **POUR**, ensuring that web content is:
 
@@ -251,6 +265,10 @@ Here are some questions that you can ask yourself when trying to make you work m
 [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/): The Contrast Checker provides a straightforward interface where users can input the hexadecimal codes of the text and background colors they are using on their website. Upon entering these values, the tool automatically calculates the contrast ratio between the text and background. This ratio is crucial for readability, especially under the WCAG, which sets minimum contrast standards for visual presentation of text.
 
 [Stark](https://www.getstark.co/): Stark is a plugin for design tools like Adobe XD, Sketch, and Figma, focusing on accessibility. It features color contrast checkers and color blindness simulations to ensure designs meet accessibility standards, particularly WCAG. Integrated directly into design platforms, Stark is essential for creating inclusive digital products.
+
+[Google’s developer tools](https://developer.chrome.com/docs/lighthouse/accessibility/): Lighthouse is Google's accessibility auditing tool. It scores your webpage's accessbility and provides feedback on areas of improvement.
+
+[Siteimprove](https://www.siteimprove.com/): Siteimprove is a product that aims to help businesses improve their website through improvement of inclusion, user experience, and SEO.
 
 #### More readings:
 
