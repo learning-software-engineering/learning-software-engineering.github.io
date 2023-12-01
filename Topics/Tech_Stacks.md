@@ -125,3 +125,5 @@
 ### [Object Oriented Programming in C++](./Tech_Stacks/OopAndCpp.md)
 
 ### [Understanding Basic Machine Learning](./Tech_Stacks/Machine_Learning/Understanding_Machine_Learning.md)
+
+### [Vue Component Setup and Tips](./Tech_Stacks/Vue_Component_Setup_and_Tips)
