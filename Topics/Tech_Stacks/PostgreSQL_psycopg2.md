@@ -123,17 +123,17 @@ In SQL, a query is a statement/command used to retrieve or manipulate data in a 
 ```
 The output of this query is a smaller table that only contains the columns `first_name` and `last_name` of each row from the table `players`.
 
-You can also take the cross product of two or more tables by listing the tables in the `FROM`:
+You can also take the cross product of two or more tables by listing the tables in the `FROM` clause:
 ```
     SELECT sport_name, team_name FROM sports, teams;
 ```
 First, this query performs a cross product between `sports` and `teams`. Each row of table `sports` is matched with each row of the table `teams`. Then, it selects the data from the columns `sport_name` and `team_name` of every row present in the newly joined table.
 
-In addition, you can perform filtering on tables:
+In addition, you can perform filtering on tables by using `WHERE`:
 ```
-SELECT col1_table1, col2_table2 FROM table1, table2 WHERE col1_table1 > 1;
+SELECT sport_name, team_name FROM sports, teams WHERE sports.sport_id = teams.sport_id;
 ```
-Here it only shows data from the previous table where the value of a row in the column `col1_table1` is greater than 1. This is the syntax for when the table and column names between table 1 and table 2 are unique.
+Here it only shows data from the previous table where the value of `sport_id` from `sports` matches that of `teams`.
 
 There are many other features of PostgreSQL.
 
