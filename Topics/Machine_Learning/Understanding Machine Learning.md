@@ -1,7 +1,7 @@
 ## Machine Learning Basics
 
 ### Understanding Machine Learning:
-Machine Learning is about developing customized algorithms that may be used for various purposes which may include predictions, and identifying patterns such that a machine can perform tasks that humans are able to conduct. While a model that could explain the provided dataset effectively gets customized by fine-tuning the [parameters](## Parameter) and [hyperparameters](#Hyperparameter), it is important that the model can generalize the provided dataset in such a way that a model shall be able to explain if new data were to be added on top.
+Machine Learning is about developing customized algorithms that may be used for various purposes which may include predictions, and identifying patterns such that a machine can perform tasks that humans are able to conduct. While a model that could explain the provided dataset effectively gets customized by fine-tuning the [parameters](#Parameter) and [hyperparameters](#Hyperparameter), it is important that the model can generalize the provided dataset in such a way that a model shall be able to explain if new data were to be added on top.
 
 The [parameters](#Parameter) of these algorithms heavily depend on the provided dataset. This means it is possible that while the algorithm explains the current dataset fairly well, such an algorithm may not work well for the other dataset with the relevant context. This "over-fitting" can be prevented by splitting the dataset into three categories that may serve different purposes during the learning process.
 
@@ -46,10 +46,10 @@ However, if the task involves resolving tasks which may involve non-deterministi
 If implemented correctly, a Machine Learning algorithm could yield effecitve results in both generalization and specification which may be necessary to make a better software.
 
 ### Appendix:
-* <span class="Model">Model</span>: A model in Machine Learning refers to an established statistical algorithm that can "explain" the provided dataset and task effectively
-* <span class="Task">Task</span>: A task in Machine Learning refers to a goal of the algorithm (i.e. predict certairn variable using the others).
-* <span class="Hyperparameter">Hyperparameter</span>: A parameter that can be tuned which would dictate how the model gets trained. This needs to get manually set up by a Machine Learning practioner BEFORE the training process starts.
-* <span class="Parameter">Parameter</span>: A parameter that can be determined by the provided dataset. The values of parameters are assigned during the learning process and not by the Machine Learning practioner. The parameters are set by the data and algorithm AFTER the training process.
+* <span id="Model">Model</span>: A model in Machine Learning refers to an established statistical algorithm that can "explain" the provided dataset and task effectively
+* <span id="Task">Task</span>: A task in Machine Learning refers to a goal of the algorithm (i.e. predict certairn variable using the others).
+* <span id="Hyperparameter">Hyperparameter</span>: A parameter that can be tuned which would dictate how the model gets trained. This needs to get manually set up by a Machine Learning practioner BEFORE the training process starts.
+* <span id="Parameter">Parameter</span>: A parameter that can be determined by the provided dataset. The values of parameters are assigned during the learning process and not by the Machine Learning practioner. The parameters are set by the data and algorithm AFTER the training process.
 
 
 
