@@ -187,10 +187,7 @@ This acheives the same webpage as before, but now we can change menu items at wi
 
 Instead of passing in hard-coded context in the above example, a more powerful and practical example would have the context determined from processing the models.
 
+## Conclusion and Final Words
+Django templates are used in industry as are convenient, reusable, and flexible. According to the official Django Developers Survey in 2021, [79%](https://lp.jetbrains.com/django-developer-survey-2021-486/) of Django developers use the Django Template Engine.
 
-
-
-
-
- 
-
+It is important to note they are rendered on the server side, which may lead to performance issues and poor user experience. However, combining them with JavaScript (AJAX, React, etc.) is an effective way to mitigate this issue.
