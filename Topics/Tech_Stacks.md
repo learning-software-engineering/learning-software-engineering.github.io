@@ -24,6 +24,8 @@
 
 ### [Next.js Resources](./Tech_Stacks/NextJS.md)
 
+### [Node.js Resources](./Tech_Stacks/NodeJS_Intro.md)
+
 ### [Learning PostgreSQL and psycopg2](./Tech_Stacks/PostgreSQL_psycopg2.md)
 
 ### [HTML](./Tech_Stacks/HTML_Guide.md)
