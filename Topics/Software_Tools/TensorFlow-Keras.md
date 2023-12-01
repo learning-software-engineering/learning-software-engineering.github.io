@@ -6,6 +6,7 @@
   - [GitHub Copilot](#github-copilot)
   - [ChatGPT](#chatgpt)
   - [Tabnine](#tabnine)
+  - [OpenAI API](#openaiapi)
 - [Frameworks to Build Your Own Models](#frameworks-to-build-your-own-models)
   - [PyTorch](#pytorch)
   - [TensorFlow](#tensorflow)
