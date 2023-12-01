@@ -143,3 +143,5 @@
 ### [JSON Parsing](./Tech_Stacks/JsonParsing.md)
 
 ### [NoSQL Database JSON Interaction](./Tech_Stacks/NoSQL_databases_JSON_interactions.md)
+
+### [Creating a database in SQL](./Tech_Stacks/SQL-creating_database.md)
