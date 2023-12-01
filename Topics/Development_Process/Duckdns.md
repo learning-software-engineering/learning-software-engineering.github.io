@@ -4,7 +4,7 @@
 
 So you have chosen to deploy your application on AWS or perhaps you have turned a spare computer of yours into your home server. You are finally deployed and users can finally access your site! I mean, the address for your site may be something weird like `http://123.0.0.321` but at least _someone_ can access your site right?
 
-Well, if you ever have to restart your server to make updates or save some compute power when nobody is using your server, you may find that the next time you boot the server up, the IP address of your deployment has changed! Now you have to tell everyone your application has a new URL. This is because most hosting options (especially the free/low cost options) give your production server what is called a _Dynamic IP address_. In other words, services like AWS or your Internet Service Provider assign a new public (or external) IP address to your server whenever it boots up and joins the network. This is often done to save resources as an IP not used by one person can be used by another.
+Well, if you ever have to restart your server to make updates or save some computing power when nobody is using your server, you may find that the next time you boot the server up, the IP address of your deployment has changed! Now you have to tell everyone your application has a new URL. This is because most hosting options (especially the free/low-cost options) give your production server what is called a _Dynamic IP address_. In other words, services like AWS or your Internet Service Provider (ISP) assign a new public (or external) IP address to your server whenever it boots up and joins the network. This is often done to save resources as an IP not used by one person can be used by another.
 
 While you could contact your hosting service or ISP to make it so that the external IP address of your server, which everyone connects to, stays fixed, this can either be quite a hassle or cost you money (something most students don't have to spare!). To get around this problem, one can turn to a _Dynamic DNS_ provider. A popular choice of such a provider, among amateurs and hobbyists, is a service called DuckDNS.
 
@@ -18,9 +18,12 @@ To summarize what DuckDNS does, whenever a user tries to navigate to your applic
 
 ## How do I use DuckDNS?
 
-Using DuckDNS is very straightforward. You can sign up by logging into your twitter, github, or google account. You are then taken to a homepage that shows your account token and the domain name mappings you created. Simply create a new domain name for your application. You do not need to set your application's IP address on this page (the script that will be run does that for us).
+Using DuckDNS is very straightforward. You can sign up by logging into your X (formerly Twitter), Github, or Google account. You are then taken to a homepage that shows your account token and the domain name mappings you created. Simply create a new domain name for your application. You do not need to set your application's IP address on this page (the script that will be run does that for us).
 
 ![DuckDNS Account Page Image](https://wiki.odroid.com/_media/odroid-xu4/software/nas_guide/170828_ddns01_mosaic.png)
+```md
+Note: it is important to keep your account token secret. If someone ever manages to get access to your account token, they can use it to redirect your users to their site!
+```
 
 In order to keep DuckDNS up to date, you then need to have your server run a script to tell DuckDNS what its external IP address is. The simplest way to do this (if your server is running on linux) is through the use of a cron job. To do so, on your server:
 
@@ -44,7 +47,7 @@ If you have an issue getting the cron job to work, the node package [pm2](https:
 
 ## A Note for Home Servers
 
-Since DuckDNS updates your _external_ IP address, this will usually refer to your home router. This will be different from the actual IP address of your device on your home network that is running the server. After setting up DuckDNS, in order to tell your router to forward data to where your actual server is running you will need to do port forwarding. More information about what and why you would do this and how to setup your router for port forwarding can be found [here](https://portforward.com/)
+Since DuckDNS updates your _external_ IP address, this will usually refer to your home router. This will be different from the actual IP address of your device on your home network that is running the server. After setting up DuckDNS, in order to tell your router to forward data to where your actual server is running you will need to do port forwarding. More information about what and why you would do this and how to set up your router for port forwarding can be found [here](https://portforward.com/)
 
 ## External Resources
 
