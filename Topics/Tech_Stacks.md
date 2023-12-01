@@ -108,6 +108,8 @@
 
 ### [Django Basics and Django Rest Framework](./Tech_Stacks/Django_Rest.md)
 
+### [Introduction to Django Templates](./Tech_Stacks/Introduction_to_Django_Templates.md) 
+
 ### [Lodash Basics with Javascript](./Tech_Stacks/Lodash.md)
 
 ### [Inter-process Communication(IPC) with fork() and pipe() in C](./Tech_Stacks/Fork_and_Pipe.md)
