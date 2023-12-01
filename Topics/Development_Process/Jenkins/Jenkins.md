@@ -43,7 +43,7 @@ A node is any machine that the agent executable runs on. As mentioned before, Je
 
 **Jenkins Agent**
 
-Jenkins Agent is a Java executable which allows the node it is running on to connect to the Jenkins Controller. It will also install any packages or tools necessary for building and testing on the node. The Jenkins Controller can then send and communicate tasks to the Jenkins Agent to perform on the node. If you'd like to set up a Jenkins Agent yourself, here is a tutorial: https://www.baeldung.com/ops/jenkins-slave-node-setup.
+Jenkins Agent is a Java executable which allows the node it is running on to connect to the Jenkins Controller. It will also install any packages or tools necessary for building and testing on the node. The Jenkins Controller can then send and communicate tasks to the Jenkins Agent to perform on the node. If you'd like to set up a Jenkins Agent yourself, here is a tutorial: [Jenkins Slave Node Setup](https://www.baeldung.com/ops/jenkins-slave-node-setup.)
 
 
 **Jenkins Pipeline**
@@ -63,9 +63,9 @@ To begin working, we need a Jenkins server that is up and running with the Githu
 
 
 Follow instructions on the Jenkins documentation for installation information specific to your machine: [Jenkins Installation](https://www.jenkins.io/doc/book/installing/)
-- For MacOS: you will have to install Homebrew if you don’t have it already: [Homebrew Install](https://docs.brew.sh/Installation)
+- For MacOS: you will have to install Homebrew if you don’t have it already: [Install Homebrew](https://docs.brew.sh/Installation)
     - If you have an apple silicon machine, you may need to add homebrew to your PATH. This stack overflow answer has a fantastic step by step:
-    - https://stackoverflow.com/questions/66666134/how-to-install-homebrew-on-m1-mac
+    - [Stack Overflow Install Mac Homebrew](https://stackoverflow.com/questions/66666134/how-to-install-homebrew-on-m1-mac)
 
 <br>
 Once you have installed Jenkins and have unlocked your server, you should enter the customize Jenkins page:
@@ -109,7 +109,7 @@ Hooray, now any changes you make to your repository will trigger your job to run
 ## Sources:
 - Arvind. (2020, November 25). Jenkins Master and Slave Architecture – a complete guide. Edureka. https://www.edureka.co/blog/jenkins-master-and-slave-architecture-a-complete-guide/
 - CircleCI vs Jenkins: What’s the Difference? [2022 Updated]. (2023, May 3). Testsigma Blog. https://testsigma.com/blog/circleci-vs-jenkins/
-- GitLab vs. Jenkins: Top CI/CD Tool 2023 | Spiceworks - Spiceworks. (2023, March 10). Spiceworks. https://www.spiceworks.com/tech/devops/articles/gilab-vs-jenkins/#:~:text=While%20reviewing%2C%20testing%2C%20and%20reporting,code%20reviews%20and%20merge%20requests.
+- GitLab vs. Jenkins: Top CI/CD Tool 2023 | Spiceworks - Spiceworks. (2023, March 10). Spiceworks. https://www.spiceworks.com/tech/devops/articles/gilab-vs-jenkins#:~:text=While%20reviewing%2C%20testing%2C%20and%20reporting,code%20reviews%20and%20merge%20requests.
 - Jain, R. (2023, October 26). Jenkins vs GitLab CI: Battle of CI/CD Tools. LambdaTest. https://www.lambdatest.com/blog/jenkins-vs-gitlab-ci-battle-of-ci-cd-tools/
 - Munetsi, T. (2020, March 6). What is Jenkins used for? OpenLogic by Perforce. https://www.openlogic.com/blog/what-is-jenkins-used-for#:~:text=Jenkins%20is%20used%20to%20build,alongside%20other%20cloud%20native%20tools.
 - Managing nodes. (n.d.). Managing Nodes. https://www.jenkins.io/doc/book/managing/nodes/
