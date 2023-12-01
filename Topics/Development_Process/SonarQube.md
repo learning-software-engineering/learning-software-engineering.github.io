@@ -14,7 +14,7 @@
 
 [SonarQube](https://www.sonarsource.com/products/sonarqube/) is an open-source platform designed to continuously inspect code quality while easily integrating into the existing development workflow. It provides comprehensive code analysis and reporting, aiding developers and teams in maintaining code health, identifying bugs, vulnerabilities, and enhancing overall software quality. The solution performs checks at every stage of the development process. 
 
-Now you may ask why can't I just use an IDE linter? The thing is linters tend to use open source and oftentimes outdated plugins that just nearly aren't as good as what Sonar has to offer. Linters  don't generally look at the big picture and instead look at the immediate/nearby lines of code whereas SonarQube provides a comprehensive analysis of code quality, security vulnerabilities, and bugs across an entire project where things can arise through multiple files and coupling.
+Now you may ask why can't I just use an IDE linter? The thing is linters tend to use open source and oftentimes outdated plugins that just nearly aren't as good as what Sonar has to offer. Linters don't generally look at the big picture and instead look at the immediate/nearby lines of code whereas SonarQube provides a comprehensive analysis of code quality, security vulnerabilities, and bugs across an entire project where things can arise through multiple files and coupling.
 
 ## Advantages of SonarQube
 
@@ -29,7 +29,7 @@ Now you may ask why can't I just use an IDE linter? The thing is linters tend to
 ## Limitations and Considerations
 
 - **Resource Intensiveness:** Running extensive code analysis can be resource-intensive and time-consuming.
-- **Initial Setup Complexity:** Setting up SonarQube and configuring rules might require initial investment in time and expertise.
+- **Initial Setup Complexity:** Setting up SonarQube and configuring rules might require an initial investment in time and expertise.
 - **Maintenance Overhead:** Regular maintenance, including updating versions and plugins, is necessary for optimal performance.
 - **False Positives/Negatives:** Like any automated analysis tool, SonarQube might sometimes generate false positives or miss certain issues.
 
@@ -70,7 +70,7 @@ And get the following workflow:
 ## Getting Started
 
 #### 1. [Optional] Install SonarLint
-- Get SonarLint for free by downloading it for your preferred IDE [here](https://www.sonarsource.com/products/sonarlint/ide-login/). It is strongly recommended to do so it helps in real-time code analysis within your IDE, providing immediate feedback to improve code quality and prevent issues early in the development process.
+- Get SonarLint for free by downloading it for your preferred IDE [here](https://www.sonarsource.com/products/sonarlint/ide-login/). It is strongly recommended to do so as it helps in real-time code analysis within your IDE, providing immediate feedback to improve code quality and prevent issues early in the development process.
 
 #### 2. Installing a local instance of SonarQube
 You can evaluate SonarQube using a traditional installation with the zip file or you can spin up a Docker container using one of our Docker images. Select the method you prefer below to expand the installation instructions:
@@ -89,7 +89,7 @@ You can evaluate SonarQube using a traditional installation with the zip file or
       ```
 
 - From the Docker image
-  1. Find the Community Edition Docker image on [Docker hub](https://hub.docker.com/_/sonarqube/).
+  1. Find the Community Edition Docker image on [Docker Hub](https://hub.docker.com/_/sonarqube/).
   2. Start the server by running:
       `$ docker run -d --name sonarqube -e SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true -p 9000:9000 sonarqube:latest`
 
@@ -98,7 +98,7 @@ Once your instance is up and running, Log in to http://localhost:9000 using Syst
 - login: `admin`
 - password: `admin`
 
-Note: This is an example of doing running SonarQube locally but you would generally do the same thing on a server so that your team does not have to individually run their own SonarQube server. The other option would be using the enterprise service called [SonarCloud](https://www.sonarsource.com/products/sonarcloud/). 
+Note: This is an example of running SonarQube locally but you would generally do the same thing on a server so that your team does not have to individually run their own SonarQube server. The alternative option would be using the enterprise service called [SonarCloud](https://www.sonarsource.com/products/sonarcloud/). 
   
 #### 3. Analyzing a project
 
