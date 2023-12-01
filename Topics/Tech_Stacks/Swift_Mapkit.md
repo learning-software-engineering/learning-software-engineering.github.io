@@ -8,7 +8,9 @@ SwiftUI is a very vast collection of features designed by Apple to make iOS deve
 ### [What is MapKit?](#what-is-mapkit-1)
 ### [Creating a map](#creating-a-map-1)
 ### [Markers](#markers-1)
-### [Annotations] (#annotations-1)
+### [Annotations](#annotations-1)
+### [Camera Position](#camera-position-1)
+### [Additional Resources](#additional-resources-1)
 
 ## What is MapKit?
 MapKit is one of Apple’s API framework that allows iOS developers to build map-centered views and apps easily and efficiently. 
@@ -48,13 +50,14 @@ Congratulations you made a map! As you can tell this is just the bare bones. Now
 
 ### Customizing your map
 
+**Map Style**
 MapKit provides a couple of different map styles, such as `standard`, `imagery`, and `hybrid`. 
 
-**<ins>Standard</ins>**
+<ins>Standard</ins>
 
 The standard style is the default and can be seen in the map we just made. It marks most roads and road names, as well as location markings. Essentially a mini Apple Maps without functionality.
 
-**<ins>Imagery</ins>**
+<ins>Imagery</ins>
 
 The imagery style provides a rendered satellite view map. Unlike standard, on imagery roads and locations are not marked.
 ```swift
@@ -75,7 +78,7 @@ struct MapContentView: View {
 <img width=1000 src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/113125436/a71aecb0-bb55-4031-b395-bf7476dfca83" />
 </p>
 
-**<ins>Hybrid</ins>**
+<ins>Hybrid</ins>
 
 Want rendered satellite view and road/location names? Then the hybrid style is for you! Hybrid combines the view of `imagery` and the road/location naming of `standard`, hence the name hybrid.
 
@@ -98,9 +101,14 @@ struct MapContentView: View {
 <img width=1000 src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/113125436/3bceaf53-b17a-410a-aa1f-43094faad882" />
 </p>
 
+**Additional Map Style Features**
+You can also add some additional features to the styles:
+- `elevation` (hybrid/standard): whether the maps render elevation
+- `showsTraffic` (hybrid/standard) : whether the map can display traffic
+- `pointsOfInterest` (hybrid/standard) : a collection of certain `PointOfInterestCategories` objects for the map to show
+- `emphasis` (standard) : dictates how the app empasizes certain features
 
-
-
+For more information, visit [Apple documentation](https://developer.apple.com/documentation/mapkit/mapstyle) for Map Styles. 
 
 ## Markers
 Now that we have a general map, let’s add Markers. In MapKit, markers are a balloon-shaped annotation that marks a location based on a set of coordinates. 
@@ -130,11 +138,7 @@ takes the same approach if you want to set a coordinate dynamically.
   }
 
   ```
-You can also add some additional features to the styles:
-- `elevation` (hybrid/standard):
-- `point
 
-**Note:** *By default, the map will automatically frame to fit all markers and annotations. You can change this later on in the Specifying Region section.*
 
 ### Marker Customization
 There are a couple of ways to customize your marker, such as color and what is displayed in the marker bubble.
@@ -163,7 +167,7 @@ There are a couple of ways to customize your marker, such as color and what is d
    \\ Monogram
      Marker("University College", monogram: Text("UC"), coordinate: uc)
   ```
-  
+
 If you want more freedom with your designing map pins, try using [Annotations](#annotations) instead.
 ## Annotations
 Annotations allow for MapKit developrs to completely redesign the location coordinate indicators.
@@ -201,4 +205,22 @@ struct MapContentView: View {
 
 Overall, the annotations allow you to make the map pins compeletely your own.
 
-### Region
+## Camera Position
+By default the map focuses on the map contents (markers, annotaions, etc). To focus on a particular location. This can be helpful in a couple cases such as:
+ - When you finish searching for a specific location, focus the map on that location
+ - Focus the map on the location of the user
+ - If the user presses a certain button, change map focus
+
+Using the `MapCameraPosition` we can specify where the user can 
+
+
+## Additional Resources
+MapKit for SwiftUI is very large and has a lot of possible implementations, so this tutorial was just the tip of the ice berg! Below are some additional resources
+that could help with your MapKit journey.
+
+**How to...**
+- [Enable user location tracking](https://medium.com/@pblanesp/how-to-display-a-map-and-track-the-users-location-in-swiftui-7d288cdb747e)
+- [Implement a search bar](https://www.polpiella.dev/mapkit-and-swiftui-searchable-map)
+
+For general information, refer to the [Apple MapKit Documentation](https://developer.apple.com/documentation/mapkit/mapkit_for_appkit_and_uikit). It is very helpful,
+but a bit difficult to navigate.
