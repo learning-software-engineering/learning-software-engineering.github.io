@@ -32,6 +32,7 @@ Potential Topics--
         2. A Beginner's Guide for Unity UI Design 
     10. Python
         1. Pythonic iteration patterns
+    11. Debugging in Python
         
 - Software Tools
     1. Git
