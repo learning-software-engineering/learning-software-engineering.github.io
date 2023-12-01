@@ -31,7 +31,7 @@ If you are using MacOS, you can also run the command `brew install postgresql` i
 
 For Windows users, the user should download PostgreSQL through the link provided above. If the user wants to utilize PostgreSQL on the command line, they must (after installation):
 1. Add the PostgreSQL bin directory path to the PATH environment variable.
-2. Run the command `psql -U <username>`, where `<username>` is the username you selected during installation.
+2. Run the command `psql -U username`, where `username` is the username you selected during installation.
 
 Once installed, you can create a database, relation, and tables with the PostgreSQL client called **pgAdmin**. **pgAdmin** is automatically downloaded when using the links above and can be accessed by searching your task bar. (If you are using Homebrew, you have to install **pgAdmin** separately by running `brew install --cask pgadmin4`.) You can also perform queries on relations and tables through its query tool. More information on how to use **pgAdmin** can be found at this [link](https://www.pgadmin.org/docs/pgadmin4/6.21/index.html).
 
@@ -125,6 +125,7 @@ In SQL, a query is a statement/command used to retrieve or manipulate data in a 
 | 1 | basketball |
 | 2 | soccer |
 | 3 | baseball |
+
 `teams`:
 | team_id | team_name | sport_id |
 | ------- | --------- | -------- |
@@ -133,6 +134,7 @@ In SQL, a query is a statement/command used to retrieve or manipulate data in a 
 | 3 | Golden State Warriors | 1 |
 | 4 | Manchester City F.C. | 2 |
 | 5 | Paris Saint-Germain F.C. | 2 |
+
 `players`:
 | player_id | first_name | last_name | age | team_id |
 | --------- | ---------- | --------- | --- | ------- |
@@ -150,7 +152,6 @@ This query outputs all columns of all rows of the table `players`, i.e. the enti
 | 1 | Stephen | Curry | 35 | 3 |
 | 2 | Erling | Haaland | 23 | 4 |
 | 3 | Kylian | Mbappé | 24 | 5 |
-| 4 | Kang-in | Lee | 22 | 5 |
 
 To query only certain columns of a table, you can use the `SELECT` statement and specify the columns you want in the clause:
 ``` 
@@ -162,7 +163,6 @@ In this example, the output is a smaller table that only contains the columns `f
 | Stephen | Curry |
 | Erling | Haaland |
 | Kylian | Mbappé |
-| Kang-in | Lee |
 
 You can also get the Cartesian product of two or more tables by listing the tables in the `FROM` clause:
 ```
@@ -186,6 +186,7 @@ In this query, each row of table `sports` is combined with each row of the table
 | 3 | baseball | 3 | Golden State Warriors | 1 |
 | 3 | baseball | 4 | Manchester City F.C. | 2 |
 | 3 | baseball | 5 | Paris Saint-Germain F.C. | 2 |
+
 However, not all rows of the output are meaningful. For example, the fourth row associates basketball with Manchester City F.C., which is a soccer team. To filter out the nonsensical combinations, we can use the `WHERE` clause:
 ```
 SELECT * FROM sports, teams WHERE sports.sport_id = teams.sport_id;
