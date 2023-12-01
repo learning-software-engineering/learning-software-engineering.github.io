@@ -148,7 +148,7 @@ Suppose we have the following tables:
 
 To retrieve all columns of a table, you can use the `SELECT *` statement and `FROM` clause:
 ```
-	SELECT * FROM players;
+SELECT * FROM players;
 ```
 This query outputs all columns of all rows of the table `players`, i.e. the entire table `players`:
 | player_id | first_name | last_name | age | team_id |
@@ -159,7 +159,7 @@ This query outputs all columns of all rows of the table `players`, i.e. the enti
 
 To query only certain columns of a table, you can use the `SELECT` statement and specify the columns you want in the clause:
 ``` 
-    SELECT first_name, last_name FROM players;
+SELECT first_name, last_name FROM players;
 ```
 In this example, the output is a smaller table that only contains the columns `first_name` and `last_name` of each row from the table `players`:
 | first_name | last_name |
@@ -170,7 +170,7 @@ In this example, the output is a smaller table that only contains the columns `f
 
 You can also get the Cartesian product of two or more tables by listing the tables in the `FROM` clause:
 ```
-    SELECT * FROM sports, teams;
+SELECT * FROM sports, teams;
 ```
 In this query, each row of table `sports` is combined with each row of the table `teams`, resulting in a combination of all rows:
 | sport_id | sport_name | team_id | team_name | sport_id |
@@ -247,9 +247,22 @@ Output:
 | soccer | Manchester City F.C. |
 | soccer | Paris Saint-Germain F.C. |
 
-There are many other features of PostgreSQL.
+To order the output based on a specific column, you can use the `ORDER BY` clause:
+```
+SELECT * FROM teams ORDER BY team_name;
+```
+Output:
+| team_id | team_name | sport_id |
+| ------- | --------- | -------- |
+| 3 | Golden State Warriors | 1 |
+| 4 | Manchester City F.C. | 2 |
+| 5 | Paris Saint-Germain F.C. | 2 |
+| 2 | San Antonio Spurs | 1 |
+| 1 | Toronto Raptors | 1 |
 
-Specifics of the syntax of PostgreSQL can be found in this [link](https://www.postgresql.org/docs/current/sql-syntax.html).
+PostgreSQL has several aggregate functions that perform calculations on a set of rows and returns a single value. Some commonly used functions are `COUNT()`, `SUM()`, `AVG()`, `MAX()` and `MIN()`. You can read more about them [here](https://www.postgresql.org/docs/9.5/functions-aggregate.html).
+
+There are many other features of [PostgreSQL](https://www.postgresql.org/docs/). Specifics of the syntax of PostgreSQL can be found in this [link](https://www.postgresql.org/docs/current/sql-syntax.html).
 More about queries can be found [here](https://www.postgresql.org/docs/current/tutorial-select.html) and types of joins can be found [here](https://www.postgresql.org/docs/current/tutorial-join.html).
 
 ## Setup and PostgreSQL Operations in psycopg2
