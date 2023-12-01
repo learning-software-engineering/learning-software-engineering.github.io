@@ -14,6 +14,8 @@
 
 ### [Flask Application Deployment on Heroku](./Development_Process/Flask_App_Deployment_Heroku.md)
 
+### [iOS App Deployment onto the App Store](./Development_Process/App_Store_Deployment.md)
+
 ### [Quality Assurance Testing](./Development_Process/QA_testing.md)
 
 - [Automated Testing](./Development_Process/Automated_Testing.md)
@@ -40,14 +42,22 @@
 
 ## Build tools
 ### [Introduction to ```make``` and Makefiles](./Development_Process/Introduction_to_make_and_Makefiles.md)
+### [Introduction to Jenkins](./Development_Process/Jenkins/Jenkins.md)
 
-## React Testing Library
+
+## Testing Frameworks
 
 ### [React Testing Library](./Development_Process/React_Testing_Library.md)
+
+### [Intro to Jest for JavaScript](./Development_Process/Intro_to_Jest.md)
 
 ## URL Sanitization
 
 ### [URL Sanitization](./Development_Process/URL_Sanitization.md)
+
+## Test Driven Development
+
+### [Intro to Test Driven Development](./Development_Process/Test_Driven_Development.md)
 
 ## Design Decisions
 
@@ -57,9 +67,15 @@
 
 ### [Serverless Computing](./Development_Process/Serverless_AWS_Lambda.md)
 
+### [Azure Functions](./Development_Process/Azure_Functions.md)
+
 ## Introduction to Shells
 
 ### [Introduction to using Shell](./Development_Process/Shell/intro_to_shell.md)
+
+## Environment
+
+### [Managing Environment Variables and Secrets](Development_Process/Managing_Environment_Variables_and_Secrets.md)
 
 ## SOLID PRINCIPLES:
 

@@ -17,19 +17,25 @@ Potential Topics--
         1. Django Rest Framework
     3. Salesforce API
     
-    4. CSS (Cascading Style Sheets) 
-
-    5. TypeScript
-
-    6. JavaScript
+    4. CSS (Cascading Style Sheets)
     
-    7. React Native
+    5. Node.js
+
+    6. TypeScript
+
+    7. JavaScript
+    
+    8. React Native
         1. Set up
-    8. Unity
+    9. Unity
         1. Introduction to Unity Basics
         2. A Beginner's Guide for Unity UI Design 
-    9. Python
+    10. Python
         1. Pythonic iteration patterns
+    11. Debugging in Python
+    12. Spring
+        1. Learning Spring Data JPA
+    13. TinyMCE API with ReactJS
         
 - Software Tools
     1. Git
