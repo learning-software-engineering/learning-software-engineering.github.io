@@ -33,6 +33,7 @@ Potential Topics--
     10. Python
         1. Pythonic iteration patterns
     11. Debugging in Python
+    12. TinyMCE API with ReactJS
         
 - Software Tools
     1. Git
