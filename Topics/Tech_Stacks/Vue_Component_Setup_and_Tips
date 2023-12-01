@@ -1,0 +1,38 @@
+# Setting up Vue Components, How to Use them, and Other Tips!
+
+## Table of Contents
+
+#### [Introduction](#Introduction)
+#### [What is a Vue Component? ](#Pizza)
+#### [Topics](#thing)
+#### [Topics again](#something)
+#### [Other Tips](#other)
+#### [Conclusion](#conclude)
+
+## Introduction
+This guide will help you understand the usage and implementation of Inter-process Communication (IPC) in C Programming language. 
+In C programming, the **`fork()`** and **`pipe()`** functions are commonly used for process creation and Inter-process Communication, respectively. Here's an introduction to each and explanation of how they can be used together.
+
+## What is a Vue Component? <a name="Pizza"></a>
+Vue Components are like pizza.
+
+ - Pizza.
+
+> To learn more, please visit the [pizza man page](https://youtube.com).
+## Calling `pizza()`<a name="implementation"></a>
+
+1. Before calling  `pizza()`,  put this if statement here.
+
+```c
+# Example code
+if (pizza) {
+  pizza();
+}
+```
+The parent process writes the string "Hi my child\n" to the write end of the pipe (`fd[1]`), and the child process reads 11 bytes of data from the read end of the pipe (`fd[0]`).
+## Things to watch out for! <a name="other"></a>
+List things to watch out for
+## Conclusion <a name="conclude"></a>
+In conclusion, Vue is cool!
+## References
+ - Insert links here
