@@ -151,7 +151,7 @@ In our body, we can use a loop to display an abritrary number of menu items, and
 ```
 If the item is a special, then we can control its class and style it accordingly using the appropriate selector. 
 
-Next, we need to pass in the **context** through a view. The context will determine the menu items and special items. We can create a simple function-based view to serve our menu webpage. Inside this view, we must define our `context` dictionary and pass it into the `menu.html` template to render, using Django's built-in method:
+Next, we need to pass in the context through a view. The context will determine the menu items and special items. We can create a simple function-based view to serve our menu webpage. Inside this view, we must define our `context` dictionary and pass it into the `menu.html` template to render, using Django's built-in method:
 ```
 from django.shortcuts import render
 
