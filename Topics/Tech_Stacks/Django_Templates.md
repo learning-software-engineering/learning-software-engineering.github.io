@@ -74,8 +74,7 @@ The syntax and [boolean operators](https://docs.djangoproject.com/en/4.2/ref/tem
 ```
 
 #### Loops
-We can loop through lists, dictionaries, and its nested variants with the familiar Python syntax. Again, it must end with an `{% endfor %}` tag.:
-
+We can loop through lists, dictionaries, and its nested variants with the familiar Python syntax. Like conditionals, it must end with an `{% endfor %}` tag.:
 ```
 {% for menu_item in menu_items %}
  {% if menu_item.is_special %}
@@ -85,7 +84,30 @@ We can loop through lists, dictionaries, and its nested variants with the famili
   {% endif %}
 {% endfor %}
 ```
-#### Loading CSS Files
+
+#### Including CSS Files
+First, we can create a directory called `static` in the root `project` directory. Inside `static`, it is typical to have subdirectories for file types such as images, `.css`, and `.js` files:
+```
+project
+└── static
+    └── css
+        └── styles.css
+    └── js
+    └── img
+└── app
+    └── ...
+└── ...
+```
+With this setup, we have to configure `settings.py`:
+```
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/4.2/howto/static-files/
+STATIC_URL = 'static/'
+STATICFILES_DIRS = [ BASE_DIR / 'static', ]
+```
+
+`STATICFILES_DIRS = [ BASE_DIR / 'static', ]` tells Django to look in the `static` folder in the root directory. However, there are times where you may want to have `static` directories in each app directory, which can be configured accordingly.
+
 
 
 
