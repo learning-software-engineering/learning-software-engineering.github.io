@@ -21,6 +21,8 @@ Make sure you have installed an [IDE](https://www.jetbrains.com/idea/download), 
 * [Step 3 - Storing and Deleting Data Using Spring JDBC](#step-3---storing-and-deleting-data-using-spring-jdbc)
 * [Step 4 - Storing and Deleting Data Using JPA](#step-4---storing-and-deleting-data-using-jpa)
 * [Step 5 - Storing, Deleting, and Retrieving Data Using Spring Data JPA ](#step-5---storing-deleting-and-retrieving-data-using-spring-data-jpa)
+* [Summary Graph](#summary-graph)
+* [Further Reading](#further-reading)
 
 
 ## Step 1 - Initializing A Spring Boot Application
@@ -288,6 +290,10 @@ public interface PersonSpringDataJpaRepository extends JpaRepository<Person, Lon
             // retrieve all persons in the db
             System.out.println(repository.findAll());
 ```
-## Summary 
+## Summary Graph
 ![Summary](https://github.com/learning-software-engineering/learning-software-engineering.github.io/blob/springdatajpa/Topics/Tech_Stacks/Learning_Spring_Data_JPA_Graphics/img_1.png)
+## Further Reading
+1. [Accessing Data with JPA by ](https://spring.io/guides/gs/accessing-data-jpa/): Spring's official Getting Started Guide for Spring Data JPA
+2. [Spring Boot Reference Documentation](https://docs.spring.io/spring-boot/docs/3.0.0-M3/reference/htmlsingle/#data.sql): You can read section 9.1.1-9.1.5 for further information related to this guide.
+3. [Connect Java to a MySql Database](https://www.baeldung.com/java-connect-mysql): read this if you want to work with a persistent database like MySql.
 
