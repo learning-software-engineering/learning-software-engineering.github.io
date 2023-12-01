@@ -15,12 +15,16 @@ Most applications that you will build, in fact most applications that exist toda
 
 ## What is an ORM:
 
-An ORM (Object Relation Mapper) is a software tool that allows for the translation of an entity between its representation in a database (A relation) and object-oriented programming languages (An Object). As such, they allow us to simply treat all data as objects in our code, and leverage the ORM when we want to store this object in our relational database of choice. 
+An ORM (Object Relation Mapper) is a software tool that allows for the translation of an entity between its representation in a database (A relation) and object-oriented programming languages (An Object). As such, they allow us to simply treat all data as objects in our code, and leverage the ORM when we want to store this object in our relational database of choice - this means we add a layer of abstraction between our code and the database we are using so we don't have to worry about that translation process. 
 
 - Its good to node that ORM alternatives exist for non-relational databases too, these would be ODMs (Object Document Models), for example, MongoDB has one called mongoose which applies to javascript/typescript. A lot of these discussions apply to these ODMs too. 
 
 ## Example:
 Let's take a simple example, where we want to connect to a database, create a user table, and add a new user to our database. How would that look as SQL Queries compared to an ORM? 
+- This example will be using Javascript Code (ORMs of course exist for all programming languages, but would follow the same principles in each)
+The following snippets will use the following packages for the ORM and raw SQL usage examples, respectively:
+1. https://sequelize.org/ 
+2. https://node-postgres.com/
 
 ```js
 // First the example using an ORM!
@@ -86,16 +90,12 @@ await client.end()
 
 ```
 
-These screenshots use the following packages for the ORM and raw SQL usage examples, respectively:
-1. https://sequelize.org/ 
-2. https://node-postgres.com/ 
-
 Looking at the two examples, despite the fact that a similar structure of steps is performed, we can immediately notice the differences between the 2 strategies of interacting with databases. The raw SQL strategy makes heavy use of strings, after all these strings are directly passed to the database to run the SQL code. On the other hand, the ORM method sets up object relation and creates an instance as if it were another object within our code.
 
 
 ## Should I Use One!?
 
-Although the implementation looks different, you can still do everything that ORMS have to offer with just raw SQL queries paired with a database driver and vice versa, so then which one should you actually use? 
+Although the implementation looks different, you can still do everything that ORMs have to offer with just raw SQL queries paired with a database driver and vice versa, so then which one should you actually use? 
 As with many choices in the software engineering world (like which language to use, or which framework to code in) there are no clear-cut answers. It is your responsibility to understand the advantages and disadvantages of the two options and make an informed decision on how you will be interacting with your database. Let us discuss some of these tradeoffs so that you can make a more informed decision, whichever one you choose to use.
 
 ### Advantages:
@@ -115,7 +115,7 @@ Different SQL databases have slightly different commands when we get to more com
 ### Disadvantages:
 
 1. **Performance**: \
-The layer of abstraction added by the ORMS also adds another layer of complexity and reduction in performance. Well-written SQL code performs much better than an ORM- this of course will scale with the size of an app (by performance we mean how quickly queries execute and return).
+The layer of abstraction added by the ORMs also adds another layer of complexity and reduction in performance. Well-written SQL code performs much better than an ORM- this of course will scale with the size of an app (by performance we mean how quickly queries execute and return).
 
 2. **Learning an ORM**: \
 It is likely that you the reader probably know how to write SQL code, but what about Sequelize specifically? Learning an ORM (its syntax, conventions, and underlying intricacies) for projects adds additional prerequisite learning and can delay development 
