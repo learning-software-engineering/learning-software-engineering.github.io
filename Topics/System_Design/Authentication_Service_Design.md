@@ -79,5 +79,7 @@ Why reinvent the wheel? There are lots of existing libraries, 3rd party provider
 
 ## Further Reading <a name="further-reading"></a>
 [TryExponent: Authentication & Authorization](https://www.tryexponent.com/courses/fundamentals-system-design/authentication-authorization)
+
 [FrontEgg: How Does Authentication Work?](https://frontegg.com/blog/authentication#How-Does-Authentication-Work)
+
 [Tzachi Strugo: Authentication & Authorization in Microservices Architecture](https://dev.to/behalf/authentication-authorization-in-microservices-architecture-part-i-2cn0)
