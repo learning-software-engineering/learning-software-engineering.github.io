@@ -20,7 +20,7 @@ Based on the [Apple documentation](https://developer.apple.com/documentation/map
 - Add annotations and overlays to a map to call out points of interest.
 - Add LookAround capabilities to enable users to explore locations at street level.
 - Respond to user interactions with well known points of interest, geographical features, and boundaries.
-- Provide text completion for searchbars to make it easy for users to search for a destination or point of interest. 
+- Provide text completion for search bars to make it easy for users to search for a destination or point of interest. 
 
   
 ## Creating a Map
@@ -109,7 +109,7 @@ You can also add some additional features to the styles:
 - `elevation` (hybrid/standard): whether the maps render elevation
 - `showsTraffic` (hybrid/standard) : whether the map can display traffic
 - `pointsOfInterest` (hybrid/standard) : a collection of certain `PointOfInterestCategories` objects for the map to show
-- `emphasis` (standard) : dictates how the app empasizes certain features
+- `emphasis` (standard) : dictates how the app emphasizes certain features
 
 For more information, visit [Apple documentation](https://developer.apple.com/documentation/mapkit/mapstyle) for Map Styles. 
 
@@ -151,7 +151,7 @@ There are a couple of ways to customize your marker, such as color and what is d
 
 **Color**
   
-  To change color of your marker you can apply the `.tint()` method. Tint takes in a Color objext so you can either do a systen color such as `.blue` or your own custom color.
+  To change the color of your marker you can apply the `.tint()` method. Tint takes in a Color object so you can either do a system color such as `.blue` or your own custom color.
 
   ```swift
      Marker("Robarts", coordinate: robarts).tint(.blue)
@@ -159,7 +159,7 @@ There are a couple of ways to customize your marker, such as color and what is d
 
 **Icon**
 
-  To change the what is displayed in the Marker bubble you can add the `systemImage`, `image`, or `monogram` parameters to your Marker as shown below.
+  To change what is displayed in the Marker bubble you can add the `systemImage`, `image`, or `monogram` parameters to your Marker as shown below.
 
   System Image:
   ```swift
@@ -177,7 +177,7 @@ There are a couple of ways to customize your marker, such as color and what is d
 
 If you want more freedom with your designing map pins, try using [Annotations](#annotations-1) instead.
 ## Annotations
-Annotations allow for MapKit developrs to completely redesign the location coordinate indicators.
+Annotations allow for MapKit developers to completely redesign the location coordinate indicators.
 Unlike markers which had a set amount of parameters and there was no way to escape the bubble, Annotations instead takes in a Swift UI `View()`.
 
 For example, here we made the annotation to just be a system image with padding rather than a marker bubble.
@@ -217,7 +217,7 @@ By default the map focuses on the map contents (markers, annotations, etc). To f
  - Focus the map on the location of the user
  - If the user presses a certain button, change map focus
 
-The default of the `MapCameraPosition` is known as `.automatic`. It will focus on the content of the map. The map without a camera position already does this, but `.automatic` could be helpful to update the camera postion back to its original state when zooming in/out too much or when you jump between different camera positions.
+The default of the `MapCameraPosition` is known as `.automatic`. It will focus on the content of the map. The map without a camera position already does this, but `.automatic` could be helpful to update the camera position back to its original state when zooming in/out too much or when you jump between different camera positions.
 ```swift
 @State private var cameraPosition: MapCameraPosition = .automatic
 ```
