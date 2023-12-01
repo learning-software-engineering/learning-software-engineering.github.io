@@ -13,6 +13,7 @@
 ### [Automated Frontend Deployment with Vercel](./Development_Process/Frontend_Automated_Deployment_Vercel.md)
 
 ### [Flask Application Deployment on Heroku](./Development_Process/Flask_App_Deployment_Heroku.md)
+### [NextJS Deployment on AWS](./Development_Process/NextJS_AWS_Deployment.md)
 
 ### [iOS App Deployment onto the App Store](./Development_Process/App_Store_Deployment.md)
 
@@ -29,6 +30,10 @@
 
 ### [Introduction to Nginx](./Development_Process/Nginx.md)
 
+## DuckDNS
+
+### [Overcoming Dynamic IPs with DuckDNS](./Development_Process/Duckdns.md)
+
 ## Build requirements
 
 ### [Requirements.txt](./Development_Process/Build_Requirements/Requirements_txt.md)
@@ -42,6 +47,8 @@
 
 ## Build tools
 ### [Introduction to ```make``` and Makefiles](./Development_Process/Introduction_to_make_and_Makefiles.md)
+### [Introduction to Jenkins](./Development_Process/Jenkins/Jenkins.md)
+
 
 ## Testing Frameworks
 
@@ -53,6 +60,11 @@
 
 ### [URL Sanitization](./Development_Process/URL_Sanitization.md)
 
+
+## Code Quality
+
+### [Developing With SonarQube](./Development_Process/SonarQube.md)
+
 ## Test Driven Development
 
 ### [Intro to Test Driven Development](./Development_Process/Test_Driven_Development.md)
@@ -61,13 +73,21 @@
 
 ### [GraphQL vs. REST: Which API type to use?](./Development_Process/GraphQL_VS_REST.md)
 
+### [Graceful Error Handling in Express](./Development_Process/Error_Handling_in_ExpressJS.md)
+
 ## Serverless Computing
 
 ### [Serverless Computing](./Development_Process/Serverless_AWS_Lambda.md)
 
+### [Azure Functions](./Development_Process/Azure_Functions.md)
+
 ## Introduction to Shells
 
 ### [Introduction to using Shell](./Development_Process/Shell/intro_to_shell.md)
+
+## Environment
+
+### [Managing Environment Variables and Secrets](Development_Process/Managing_Environment_Variables_and_Secrets.md)
 
 ## SOLID PRINCIPLES:
 
@@ -165,6 +185,7 @@ This is only a simplification of what "Clean Architecture" is; the topic is so v
 
 ## Prompt Engineering
 ### [Basics of Prompt Engineering](./Development_Process/Prompt_Engineering.md)
+
 
 ## Technical Documents
 ### [Intro to Request for Comments (RFCs)](./Development_Process/Technical_Documents/Intro_to_rfcs.md)
