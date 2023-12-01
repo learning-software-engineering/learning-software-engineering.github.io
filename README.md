@@ -17,22 +17,17 @@ Potential Topics--
         1. Django Rest Framework
     3. Salesforce API
     
-    4. CSS (Cascading Style Sheets)
-    
-    5. Node.js
+    4. CSS (Cascading Style Sheets) 
 
-    6. TypeScript
+    5. TypeScript
 
-    7. JavaScript
+    6. JavaScript
     
-    8. React Native
+    7. React Native
         1. Set up
-    9. Unity
+    8. Unity
         1. Introduction to Unity Basics
-        2. A Beginner's Guide for Unity UI Design 
-    10. Python
-        1. Pythonic iteration patterns
-    11. Debugging in Python
+        2. A Beginner's Guide for Unity UI Design
     12. TinyMCE API with ReactJS
         
 - Software Tools
@@ -71,7 +66,6 @@ Potential Topics--
         3. Build requirements
             1. requirements.txt
             2. packages
-            3. CMakeLists.txt
         4. Deployment
             1. Heroku
             2. AWS
@@ -86,7 +80,6 @@ Potential Topics--
     3. SOLID Principles
     4. Code Smells
     5. QA testing
-    6. Introduction to Conda (Python) 
 - Professionalism
     1. Customer engagement
         1. Meeting best practices
