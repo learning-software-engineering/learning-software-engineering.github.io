@@ -120,6 +120,12 @@ On the worker node:
 ray stop
 ```
 
+## Scenarios for use
++ Rarallel Computing: If you have to compute with a giant numpy dataframe, you can use split this dataframe into spieces and distribute them as Ray tasks to compute in parallel.
++ Backend for Web Applications: Ray can be used to scale the backend of web applications, particularly for computationally intensive tasks like image processing, recommendation systems, or complex calculations.
++ Parallel Processing in Game Servers: Ray can be used in the backend of multiplayer online games for tasks like real-time player matchmaking, world state management, and AI computations.
++ Large-Scale Batch Jobs: For tasks like data migration, ETL (Extract, Transform, Load) processes, and batch analytics, Ray can efficiently distribute these tasks across a cluster, handling large volumes of data more effectively.
+
 ## Additional Resources
 (Ray)[https://www.ray.io/]
 
