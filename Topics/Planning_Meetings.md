@@ -47,7 +47,7 @@ The key to effective discussion management is about ensuring the conversations s
 
 ### Tool Utilization
 
-For hybrid/remote meetings, leveraging digital tool can be extremely beneficial. These tools should not only facilitate basic communication but also enrich the meeting experience. This includes tools like:
+For hybrid/remote meetings, leveraging digital tools can be extremely beneficial. These tools should not only facilitate basic communication but also enrich the meeting experience. This includes tools like:
 
 - **Video Conferencing Tools:** Choose platforms that provide reliable video and audio quality, such as Zoom or Microsoft Teams. Ideally, they should also provide key features such as screen sharing, breakout rooms, real-time chats, and the raise-hand feature.
 
