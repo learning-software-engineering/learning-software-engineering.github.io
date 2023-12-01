@@ -33,9 +33,9 @@ What if we want to change the menu items? Or change the visibility of items on s
 First, assuming we have setup our Django project, create a folder called `templates` inside the app folder. This is where Django looks for templates by default. Inside, we create HTML templates by using the `.html` extension. The resulting folder structure may resemble the following: 
 
 ```
-project
-└── app
-    └── templates
+project/
+└── app/
+    └── templates/
         └── index.html
     └── ...
 ```
@@ -88,13 +88,13 @@ We can loop through lists, dictionaries, and its nested variants with the famili
 #### Including CSS Files
 First, we can create a directory called `static` in the root `project` directory. Inside `static`, it is typical to have subdirectories for file types such as images, `.css`, and `.js` files:
 ```
-project
-└── static
-    └── css
+project/
+└── static/
+    └── css/
         └── styles.css
-    └── js
-    └── img
-└── app
+    └── js/
+    └── img/
+└── app/
     └── ...
 └── ...
 ```
@@ -108,6 +108,8 @@ STATICFILES_DIRS = [ BASE_DIR / 'static', ]
 
 `STATICFILES_DIRS = [ BASE_DIR / 'static', ]` tells Django to look in the `static` folder in the root directory. However, there are times where you may want to have `static` directories in each app directory, which can be configured accordingly.
 
+### Built-in Filters
+Vaguely, filters transform variables in some way, and are characterized by the pipe `|` operator. This may include getting a variable's length, formatting a datetime object, getting the first item in a list, etc.
 
 
 
