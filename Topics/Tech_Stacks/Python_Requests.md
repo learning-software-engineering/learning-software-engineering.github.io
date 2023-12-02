@@ -74,6 +74,21 @@ response1 = session.post(url)
 response2 = session.get(url)
 ```
 
+### User-Agent
+Some websites might employ protection against web scrapers. In those cases, you can add a User-Agent to send the request like a browser.
+```python
+headers = {
+    'User-Agent': 'My User Agent 1.0',
+}
+
+response = requests.get(url, headers=headers)
+
+# When using Sessions
+session = requests.Session()
+session.headers.update({'User-Agent': 'My User Agent 1.0'})
+```
+Some examples of user agents can be found [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent).
+
 ### Status Code
 After executing the request, you can check the `status_code` of the request. In most cases, a value of `200` indicates success.
 ```python
