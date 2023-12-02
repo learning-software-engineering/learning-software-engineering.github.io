@@ -41,6 +41,13 @@ You can then retrieve the content of the webpage, which in most cases is the HTM
 ```python
 content = response.text
 ```
+If you are retrieving JSON content from an API, you can use the corresponding `response.json()` method to output a dictionary.
+```python
+json_data = response.json()
+
+for key in json_data:
+  print(f"{key}: {json_data[key]}")
+```
 
 ### POST
 Some endpoints may use a HTML Form or a JSON object to set the necessary parameters to display the data that you need. In ths case, you can use the `POST` method.
