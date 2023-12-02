@@ -65,7 +65,7 @@ REST_FRAMEWORK = {
     ]
 }
 ```
-This allows all your API endpoints to be used by authenticated and unauthenticated requests. However, this should only be used when testing and proper authentication and permissions should be added once the application is ready for production. "REST_FRAMEWORK" is also where you will place any other default configurations such as default authentication, renderers, pagination, etc.
+This allows all your API endpoints to be used by authenticated and unauthenticated requests. However, this should only be used when testing and proper authentication and permissions should be added once the application is ready for production. "REST_FRAMEWORK" is also where you will place any other default configurations such as default authentication, renderers, pagination, etc. For the other Django Rest Framework configuration options, visit the official [Django Rest Framework website](https://www.django-rest-framework.org/api-guide/settings/).
 
 
 ### Serializers
