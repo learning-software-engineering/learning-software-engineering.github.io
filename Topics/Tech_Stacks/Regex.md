@@ -1,12 +1,12 @@
 # Introduction to Regular Expressions (Regex)
 
 ## Table of contents
-### [Introduction](#introduction)
-### [Language Support](#language-support)
-### [Basic Regular Expressions](#basic-regular-expressions)
-### [Common Case Uses](#common-case-uses)
-### [Extra Resources](#extra-resources)
-### [Greedy vs. Lazy Quantifiers](#greedy-vs-lazy-quantifiers)
+1. [Introduction](#introduction)
+2. [Language Support](#language-support)
+3. [Basic Regular Expressions](#basic-regular-expressions)
+4. [Greedy vs. Lazy Quantifiers](#greedy-vs-lazy-quantifiers)
+5. [Common Case Uses](#common-case-uses)
+6. [Extra Resources](#extra-resources)
 
 ## Introduction
 Regular expressions, also known as regex or regexp, are a sequence of characters that define pattern matching within strings. It is a powerful tool used in a variety of text and string processing tasks, such as data valdidation, data scraping, simple parsing, and more.
