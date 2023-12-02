@@ -20,4 +20,6 @@ layout: default
 | 8  | [Teamwork](Topics/Teamwork.md#resources-for-teamwork)
 | 9  | [Tech Stacks](Topics/Tech_Stacks.md#tech-stacks)
 | 10  | [User Experience](Topics/User_Experience.md#resources-for-user-experience) |
-| 11 | [System Design](Topics/System_Design.md#system-design) |
+| 11 | [System Design](Topics/System_Design.md#system-design)|
+| 12 | [DevOps](Topics/Dev_Ops.md)| 
+
