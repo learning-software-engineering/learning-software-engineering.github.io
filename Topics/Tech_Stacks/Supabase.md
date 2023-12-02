@@ -45,7 +45,7 @@ Also, this guide is written with the assumption that the reader has a basic unde
 
 2. **Retrieve your Supabase API Keys**: Access your Supabase project dashboard and retrieve your Supabase URL and API keys. On the left-hand side nav bar, go to Project Settings → API and find the Project API keys subsection.
 
-![Screenshot 2023-12-02 at 12-45-37 API Settings Supabase](https://hackmd.io/_uploads/rJQQRkYSa.png)
+![](./assets/supabasekeys.png)
 
 ## Step 3: Setting Up Supabase in Vue.js
 

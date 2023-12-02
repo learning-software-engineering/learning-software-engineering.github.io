@@ -35,3 +35,4 @@
 ### [Learning Express.js](./Tech_Stacks/Express.md)
 ### [Introduction to React ChartJS](./Tech_Stacks/ReactChartJS.md)
 ### [Setting up Firebase and Intro to Firestore](./Tech_Stacks/Firebase_and_Firestore.md)
+### [Using Supabase with Vue.js](./Tech_Stacks/Supabase.md)
