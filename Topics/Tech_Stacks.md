@@ -147,3 +147,5 @@
 ### [Creating a database in SQL](./Tech_Stacks/SQL-creating_database.md)
 
 ### [Vue Component Setup and Tips](./Tech_Stacks/Vue_Component_Setup_and_Tips)
+
+### [Introduction to C](./Tech_Stacks/C/C_Table_of_Contents.md)
