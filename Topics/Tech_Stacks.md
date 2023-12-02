@@ -112,6 +112,8 @@
 
 ### [Learning Github Actions](./Development_Process/Github_Actions.md)
 
+### [Django Rest Framework](./Tech_Stacks/Django_Rest.md)
+
 ### [A Quick Primer on UI Testing in Vue](./Tech_Stacks/primer-ui-testing-vue.md)
 
 ### [Learning about QRcode](./Tech_Stacks/QRcode.md)
