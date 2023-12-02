@@ -21,12 +21,21 @@ This documentation provides an overview of React lifecycle methods, explaining w
    - [Error Handling Phase](#error-handling-phase)
       - [getDerivedStateFromError](#getderivedstatefromerror)
       - [componentDidCatch](#componentdidcatch)
-3. [Conclusion](#conclusion)
-4. [Additional Resources](#additional-resources)
+3. [Real-World Use Cases](#real-world-use-cases)
+   - [Chat Applications](#1-chat-applications)
+   - [Social Media Feeds](#2-social-media-feeds)
+   - [Form Handling](#3-form-handling)
+4. [Best Practices](#best-practices)
+   - [Avoid Unnecessary Renders](#1-avoid-unnecessary-renders)
+   - [Perform Cleanup in `componentWillUnmount`](#2-perform-cleanup-in-componentwillunmount)
+   - [Use Functional Components and Hooks](#3-use-functional-components-and-hooks)
+5. [Conclusion](#conclusion)
+6. [Additional Resources](#additional-resources)
 
 ## Introduction
 
 React components go through a lifecycle, and React provides a set of methods called lifecycle methods that you can override to run code at particular times in the process. It is crucial to understand these methods to build an efficient React application.
+
 ## React Component Lifecycle
 
 React components have several lifecycle methods categorized into different phases:
@@ -162,6 +171,35 @@ componentDidCatch(error, info) {
 }
 ```
 
+## Real-World Use Cases
+
+### 1. Chat Applications
+
+In real-time chat applications, managing the state of the state interface requires understand of React lifecycle methods. The method `componentDidMount` can be used to connect to a WebSocket for real-time communication. The update phases can be utilized to handle incoming messages and keep the UI in sync with the chat data. The unmounting phase will happen when the user disconnects from the WebSocket. The `componentWillUnmount` method will be called, ensuring proper cleanup when a user leaves the chat.
+
+### 2. Social Media Feeds
+
+During the mounting phase, `componentDidMount` can be used to fetch the initial feed data. Then, in the updating phase, `shouldComponentUpdate` can help optimize performance by preventing unnecessary renders when the feed data hasn't changed. This creates optimal user experience when scrolling through lots of posts.
+
+### 3. Form Handling
+
+Lifecycle methods are valuable to manage form states. The method `getDerivedStateFromProps` can be used to update the form state when the prop changes. This allows for dynamic form behaviour. Also, methods like `componentDidUpdate` serves as a trigger to send data to the server.
+
+## Best Practices
+
+### 1. Avoid Unnecessary Renders
+
+Use `shouldComponentUpdate` to prevent unnecessary renders. When it comes to large datasets or frequently updating components, this is incredibly important. This will lead to a more responsive application.
+
+### 2. Clean up in `componentWillUnmount`
+
+It is best practice to always clean up resources in the `componentWillUnmount` phase. This includes unsubscribing from data sources, cancelling ongoing requrests, or closing connections to servers. This is crucial in preventing unexpected behaviours with your code.
+
+### 3. Use Functional Components and Hooks
+
+Hooks such as `useEffect` is an more readable alternative to class-based lifecycle methods. It is good practice to use them, and there is more information about them in the additional resources section. 
+
+
 ## Conclusion
 
 Understanding React lifecycle methods is fundamental for building robust and efficient React applications. Each phase provides developers with opportunities to perform specific tasks, such as initialization, rendering, updating, and cleanup. By utilizing these methods effectively, you can manage component behavior throughout its lifecycle.
@@ -176,6 +214,5 @@ Below are additional resources to enhance your understanding of React lifecycle 
 - [React Official Documentation](https://reactjs.org/docs/react-component.html): The official documentation provides in-depth information on React components and their lifecycles.
 - [React Hooks Documentation](https://reactjs.org/docs/hooks-intro.html): Explore the documentation on React Hooks for functional components, an alternative to class-based lifecycle methods.
 - [React Lifecycle Diagram](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/): A visual representation of React component lifecycles.
-- [React Training - Advanced React Patterns](https://reacttraining.com/patterns/): Advanced React Patterns by React Training includes insights into lifecycle methods and its best practices.
 
 
