@@ -90,12 +90,30 @@ session.headers.update({'User-Agent': 'My User Agent 1.0'})
 Some examples of user agents can be found [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent).
 
 ### Status Code
-After executing the request, you can check the `status_code` of the request. In most cases, a value of `200` indicates success.
+After executing the request, you can check the `status_code` of the request.
 ```python
 if response.status_code == 200:
   # success
 ```
+Responses are classified into five groups:
+- `100` level - Informational: the request was received and the process is being continued
+- `200` level - Successful: the request was successful
+- `300` level - Redirection: the request requires further action
+- `400` level - Client Error: the request contains errors or could not be fulfilled
+- `500` level - Server Error: the server could not fulfill the request
+
+In most cases, you only have to worry about whether the status code matched a value of `200` or not.
+
+Alternatively, you can use Request's built-in `raise_for_status()`, which will raise an `HTTPError` if an unsuccessful status code was returned.
+```python
+try:
+  response.raise_for_status()
+except requests.exceptions.HTTPError as e:
+  # handle error here
+```
+
 A full list of HTTP response codes can be found [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status).
+
 
 ## Parsing
 With the webpage retrieved, you can now parse the data using a library such as [BeautifulSoup4](https://pypi.org/project/beautifulsoup4/).
