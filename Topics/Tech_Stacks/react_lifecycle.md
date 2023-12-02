@@ -1,5 +1,6 @@
+# React Lifecycle
+
 This documentation provides an overview of React lifecycle methods, explaining when each method is called and how you can use them in your React components.
-		
 
 ## Table of Contents
 
