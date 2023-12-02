@@ -14,6 +14,8 @@
 
 ### [Building Apple Native Software Using Swift and SwiftUI](./Tech_Stacks/swift.md)
 
+### [Introduction to MapKit for SwiftUI](./Tech_Stacks/Swift_Mapkit.md)
+
 ### [How to access and use salesforce API](./Tech_Stacks/salesforce_api.md)
 
 ### [React Resources](./Tech_Stacks/React.md)
@@ -24,7 +26,11 @@
 
 ### [Next.js Resources](./Tech_Stacks/NextJS.md)
 
+### [Node.js Resources](./Tech_Stacks/NodeJS_Intro.md)
+
 ### [Learning PostgreSQL and psycopg2](./Tech_Stacks/PostgreSQL_psycopg2.md)
+
+### [HTML](./Tech_Stacks/HTML_Guide.md)
 
 ### [CSS](./Tech_Stacks/CSS.md)
 
@@ -101,12 +107,16 @@
 ### [Setting up Firebase and Intro to Firestore](./Tech_Stacks/Firebase_and_Firestore.md)
 
 ### [Learning Odata](./Tech_Stacks/Odata.md)
+### [Learning Github Actions](./Development_Process/Github_Actions.md)
+### [A Quick Primer on UI Testing in Vue](./Tech_Stacks/primer-ui-testing-vue.md)
 
 ### [Learning about QRcode](./Tech_Stacks/QRcode.md)
 
 ### [Introduction to OpenShift](./Tech_Stacks/OpenShift.md)
 
 ### [Django Basics and Django Rest Framework](./Tech_Stacks/Django_Rest.md)
+
+### [Lodash Basics with Javascript](./Tech_Stacks/Lodash.md)
 
 ### [Inter-process Communication(IPC) with fork() and pipe() in C](./Tech_Stacks/Fork_and_Pipe.md)
 
@@ -117,3 +127,23 @@
 ### [Introcuction to SCSS](./Tech_Stacks/SCSS.md)
 
 ### [What is Web Assembly?](./Tech_Stacks/Web-Assembly.md)
+
+### [Using Python Ray Tasks to distribute your functions on multiple machines](./Tech_Stacks/Ray.md)
+
+### [Object Oriented Programming in C++](./Tech_Stacks/OopAndCpp.md)
+
+### [Understanding Basic Machine Learning](./Tech_Stacks/Machine_Learning/Understanding_Machine_Learning.md)
+
+### [Quickstarting Prisma ORM](./Tech_Stacks/PrismaORM.md)
+
+### [Developing Serverless Applications on Google Cloud](./Tech_Stacks/Google_Cloud.md)
+
+### [Inversion of Control and Dependency Injection with Spring](./Tech_Stacks/SpringIoC.md)
+
+### [JSON Parsing](./Tech_Stacks/JsonParsing.md)
+
+### [NoSQL Database JSON Interaction](./Tech_Stacks/NoSQL_databases_JSON_interactions.md)
+
+### [Creating a database in SQL](./Tech_Stacks/SQL-creating_database.md)
+
+### [Vue Component Setup and Tips](./Tech_Stacks/Vue_Component_Setup_and_Tips)

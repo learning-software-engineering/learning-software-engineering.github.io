@@ -35,6 +35,8 @@ Potential Topics--
     11. Debugging in Python
     12. Spring
         1. Learning Spring Data JPA
+    13. TinyMCE API with ReactJS
+    14. SQL
         
 - Software Tools
     1. Git
@@ -66,6 +68,7 @@ Potential Topics--
         1. Automated Testing
             1. Unit testings
             2. Integration testing
+            3. API testing
         2. Build tools
             1. Maven
             2. Gradle
