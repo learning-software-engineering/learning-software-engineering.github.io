@@ -43,7 +43,9 @@ Also, this guide is written with the assumption that the reader has a basic unde
    npm install @supabase/supabase-js
    ```
 
-2. **Retrieve your Supabase API Keys**: Access your Supabase project dashboard and retrieve your Supabase URL and API keys (the dashboard is explained later).
+2. **Retrieve your Supabase API Keys**: Access your Supabase project dashboard and retrieve your Supabase URL and API keys. On the left-hand side nav bar, go to Project Settings → API and find the Project API keys subsection.
+
+![Screenshot 2023-12-02 at 12-45-37 API Settings Supabase](https://hackmd.io/_uploads/rJQQRkYSa.png)
 
 ## Step 3: Setting Up Supabase in Vue.js
 
@@ -69,16 +71,14 @@ Also, this guide is written with the assumption that the reader has a basic unde
    import { supabase } from './lib/supabaseClient'
 
    export default {
-     mounted() {
-       // Supabase methods go here
-     }
+     ...
    }
    </script>
    ```
 
 ## Step 4: Use Supabase Methods in Vue Components
 
-Perform database operations using Supabase methods in your Vue components.
+Perform database operations using Supabase methods in your Vue components. The template component below contains an example for each basic database operation (SELECT, INSERT, UPDATE, DELETE).
 
 ```javascript
 // src/components/TemplateComponent.vue
@@ -88,15 +88,44 @@ import { supabase } from './lib/supabaseClient'
 
 export default {
   methods: {
-    async getData() {
+    // SELECT
+    async selectData() {
       const { data, error } = await supabase
-        .from('table')
-        .select('*');
-
+          .from('employee')
+          .select('name')
       if (error) {
         console.error('Something went wrong', error.message);
       } else {
         console.log('Fetched data:', data);
+      }
+    },
+    // INSERT
+    async insertData() {
+      const { error } = await supabase
+          .from('department')
+          .insert({ id: 1, name: 'Sales' })
+      if (error) {
+        console.error('Something went wrong', error.message);
+      }
+    },
+    // UPDATE
+    async updateData() {
+      const { error } = await supabase
+          .from('location')
+          .update({ name: '1 Bloor St' })
+          .eq('id', 5)
+      if (error) {
+        console.error('Something went wrong', error.message);
+      }
+    },
+    // DELETE
+    async getData() {
+      const { error } = await supabase
+          .from('project')
+          .delete()
+          .eq('id', 1)
+      if (error) {
+        console.error('Something went wrong', error.message);
       }
     }
   }
