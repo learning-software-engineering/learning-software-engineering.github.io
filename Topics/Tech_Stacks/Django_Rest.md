@@ -187,6 +187,28 @@ class TodoItemSerializer(serializers.ModelSerializer):
 
 The code above converts instances of the Todo model to JSON format so that they can be returned in HTTP responses. This is where the TodoItemSerializer class comes in. It is defined in the serializers.py file and inherits from the ModelSerializer class provided by Django Rest Framework and defines the fields that should be serialized and the model that the serializer should be based on. In our case, we want to serialize the id, title, and completed fields of the TodoItem model, so we include these fields in the Meta class of the serializer.
 
+Here is an example of what the serialization looks like:
+
+``` {python}
+from .models import TodoItem
+from .serializers import TodoItemSerializer
+
+todo1 = TodoItem.objects.create(title="Finish Assignment", completed=False)
+todo2 = TodoItem.objects.create(title="Wash Dishes", completed=True)
+
+serializer = TodoItemSerializer([todo1, todo2], many=True)
+serialized_data = serializer.data
+
+print(serialized_data)
+```
+The output of the print statement are our model instances but in JSON format
+```
+[
+    {"id": 1, "title": "Finish Assignment", "completed": false},
+    {"id": 2, "title": "Wash Dishes", "completed": true}
+]
+```
+
 Next, we'll create a view to handle incoming HTTP requests (GET, POST, PUT, PATCH and DELETE). We create a new file called views.py in the API app folder and add the following code:
 
 ``` {python}
