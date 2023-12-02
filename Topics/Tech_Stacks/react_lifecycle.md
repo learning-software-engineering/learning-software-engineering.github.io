@@ -6,18 +6,23 @@ This documentation provides an overview of React lifecycle methods, explaining w
 
 1. [Introduction](#introduction)
 2. [React Component Lifecycle](#react-component-lifecycle)
-3. [Mounting Phase](#mounting-phase)
-    - [constructor](#constructor)
-    - [render](#render)
-    - [componentDidMount](#componentdidmount)
-4. [Updating Phase](#updating-phase)
-    - [static getDerivedStateFromProps](#static-getderivedstatefromprops)
-    - [shouldComponentUpdate](#shouldcomponentupdate)
-    - [render](#render)
-    - [getSnapshotBeforeUpdate](#getsnapshotbeforeupdate)
-    - [componentDidUpdate](#componentdidupdate)
-5. [Unmounting Phase](#unmounting-phase)
-    - [componentWillUnmount](#componentwillunmount)
+   - [Mounting Phase](#mounting-phase)
+      - [constructor](#constructor)
+      - [render](#render)
+      - [componentDidMount](#componentdidmount)
+   - [Updating Phase](#updating-phase)
+      - [static getDerivedStateFromProps](#static-getderivedstatefromprops)
+      - [shouldComponentUpdate](#shouldcomponentupdate)
+      - [render](#render-1)
+      - [getSnapshotBeforeUpdate](#getsnapshotbeforeupdate)
+      - [componentDidUpdate](#componentdidupdate)
+   - [Unmounting Phase](#unmounting-phase)
+      - [componentWillUnmount](#componentwillunmount)
+   - [Error Handling Phase](#error-handling-phase)
+      - [getDerivedStateFromError](#getderivedstatefromerror)
+      - [componentDidCatch](#componentdidcatch)
+3. [Conclusion](#conclusion)
+4. [Additional Resources](#additional-resources)
 
 ## Introduction
 
@@ -134,3 +139,43 @@ componentWillUnmount() {
   // Perform cleanup before the component is removed
 }
 ```
+
+## Error Handling Phase
+
+### `getDerivedStateFromError`
+
+The `getDerivedStateFromError` method is called when there is an error during the rendering. It updates the component's state in response to the error.
+
+```jsx
+static getDerivedStateFromError(error) {
+  return { hasError: true };
+}
+```
+
+### `componentDidCatch`
+
+The `componentDidCatch` method is used when a child component throws an error. Then, it logs the error and handles it by displaying a fallback UI.
+
+```jsx
+componentDidCatch(error, info) {
+  // Handle the error (e.g., log it)
+}
+```
+
+## Conclusion
+
+Understanding React lifecycle methods is fundamental for building robust and efficient React applications. Each phase provides developers with opportunities to perform specific tasks, such as initialization, rendering, updating, and cleanup. By utilizing these methods effectively, you can manage component behavior throughout its lifecycle.
+
+By mastering React's lifecycle methods, you gain control over the flow of your application. This will ensure optimal performance and user experience. Have fun working with React!
+
+
+## Additional Resources
+
+Below are additional resources to enhance your understanding of React lifecycle methods:
+
+- [React Official Documentation](https://reactjs.org/docs/react-component.html): The official documentation provides in-depth information on React components and their lifecycles.
+- [React Hooks Documentation](https://reactjs.org/docs/hooks-intro.html): Explore the documentation on React Hooks for functional components, an alternative to class-based lifecycle methods.
+- [React Lifecycle Diagram](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/): A visual representation of React component lifecycles.
+- [React Training - Advanced React Patterns](https://reacttraining.com/patterns/): Advanced React Patterns by React Training includes insights into lifecycle methods and its best practices.
+
+
