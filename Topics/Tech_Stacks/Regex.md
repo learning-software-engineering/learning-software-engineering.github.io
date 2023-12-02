@@ -1,9 +1,10 @@
-# Regular Expressions (Regex)
+# Introduction to Regular Expressions (Regex)
 
 ## Table of contents
 ### [Introduction](#introduction)
 ### [Language Support](#language-support)
 ### [Basic Regular Expressions](#basic-regular-expressions)
+### [Common Case Uses](#common-case-uses)
 ### [Extra Resources](#extra-resources)
 
 ## Introduction
@@ -118,6 +119,26 @@ All of these are used after an expression of character to signify their amount o
 `(a|b)` matches characters on the left or right of the pipe
 > `(h|i)` matches on `hi`, `hello`, `igloo`
 
+## Common Case Uses
+There are many uses for regex as the world of strings is endless, but some common ones include validation for emails, passwords, usernames, URLs, and more! These can be especially useful when your program needs has user accounts, where a user needs to sign up and login. Here are sample regex of the above:
+- Email: `/^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6})*$/`
+    -   Has a username which can include letters, numbers, dots, underscores, percentage signs, and hyphens
+    -   Requires the "@" symbol
+    -   Validates the domain name, which includes letters, numbers, dots, and hyphens
+    -   Has a top-level domain (TLD) consisting of 2 to 6 letters
+- Password: `/(?=(.*[0-9]))(?=.*[\!@#$%^&*()\\[\]{}\-_+=~'|:;"'<>,./?])(?=.*[a-z])(?=(.*[A-Z]))(?=(.*)).{8,}/`
+    - Requires at least one digit
+    - Requires at least one special character
+    - Requires at least one upper-case letter
+    - Requires at least one lower-case letter
+    - Has at least 8 characters
+- Username: `/^[a-z0-9_-]{3,16}$/`
+    - Has length of 3 to 16 characters
+    - Can include _ and -
+
+Something to note is that a lot of common regex that can be found online may not match certain cases. For example, the email regex provided above could not work with some emails that have newer or less common top-level domains. Some emails could also contain special characters, but this is not in this specified regex. There are also some libraries in different languages that handle pattern matching, for example phone numbers can be tricky to handle, so using a library such as Google Library's [libphonenumber](https://github.com/google/libphonenumber) is better and convenient.
+
 ## Extra Resources
 [RegexOne](https://regexone.com/) - Practice the basic regular expressions<br />
-[regex101](https://regex101.com/) - Build, test, and debug regex
+[regex101](https://regex101.com/) - Build, test, and debug regex<br />
+[Regexper](https://regexper.com/) - Railroad diagram to illustrate an inputted regex
