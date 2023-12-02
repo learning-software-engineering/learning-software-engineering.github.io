@@ -118,6 +118,9 @@ Value can attract the eye. For example, you can use shading to create button sha
 + whereas green usually indicates success.
 ! Orange feels like a warning of some sort.
 ```
+### Design Layout and Cognitive Load 
+The design of a web application or mobile app may have some consquences in the cognitive load for a user. COnfusing layouts may feel like a huge cogntive task when navigating a button as simple as the menu or trying to find the exact information they need. You can read more on this topic [here](./User_Experience/Page_Layout_and_Cognitive_Load.md)
+
 
 ### Color Theory
 - [Colors Influence Choice](https://usabilitygeek.com/colour-user-experience-psychology/#:~:text=Colour%20plays%20a%20crucial%20role,and%20identified%20with%20your%20industry.): Users are shown certain colours to enforce actions. For example, red is commonly linked to aggressive or bad emotions and as such can be used as a cancel to dissuade people from refunding items.
