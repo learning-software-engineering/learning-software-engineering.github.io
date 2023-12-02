@@ -6,6 +6,7 @@
 ### [Basic Regular Expressions](#basic-regular-expressions)
 ### [Common Case Uses](#common-case-uses)
 ### [Extra Resources](#extra-resources)
+### [Greedy vs. Lazy Quantifiers](#greedy-vs-lazy-quantifiers)
 
 ## Introduction
 Regular expressions, also known as regex or regexp, are a sequence of characters that define pattern matching within strings. It is a powerful tool used in a variety of text and string processing tasks, such as data valdidation, data scraping, simple parsing, and more.
@@ -118,6 +119,17 @@ All of these are used after an expression of character to signify their amount o
 ### Boolean "or"
 `(a|b)` matches characters on the left or right of the pipe
 > `(h|i)` matches on `hi`, `hello`, `igloo`
+
+## Greedy vs. Lazy Quantifiers
+Quantifiers (`*`, `+`, `?`, `{m}`, `{m, n}`) at first can seem simple to use, but they can be tricky in many cases! Given this example:
+> What does `“.+”` match on for this string: `She said “Hello!” and “How are you?” today.`
+
+Will this match on `“Hello!“` or `“Hello!” and “How are you?”`? Let’s introduce greedy and lazy quantifiers to find out!
+- Greedy Quantifiers:
+    - Using the example above, the regex will match on `“Hello!” and “How are you?”`. This is because the quantifier is considered greedy, as it will go to the end of the string because the dot matches all characters. Once it has reached the end of the entire string, the regex engine backtracks and until it finds the last `”`. 
+- Lazy Quantifiers:
+    - On the other hand, if we want to match on just `“Hello!”`, we use the regex `/".+?"/g`. Notice that we added the ‘?’ quantifier after the `+` quantifier! When adding a `?` after another quantifier, it switches from the greedy to lazy matching mode. This mean it will stop as soon as it matches the pattern!
+
 
 ## Common Case Uses
 There are many uses for regex as the world of strings is endless, but some common ones include validation for emails, passwords, usernames, URLs, and more! These can be especially useful when your program needs has user accounts, where a user needs to sign up and login. Here are sample regex of the above:
