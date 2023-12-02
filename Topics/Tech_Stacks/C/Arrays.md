@@ -83,7 +83,7 @@ int vec[10] = {0};
 
 However, giving more elements than the length of the array will result in an error.
 
-# The `Sizeof` Function
+# The `Sizeof` Function (Preview)
 
 We can use the `sizeof()` function to get **how many bytes** a literal, a variable, or a value of a certain type takes up in memory.
 
