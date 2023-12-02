@@ -79,9 +79,9 @@ The updated operator priority table is as follows:
 | <, <=, >, >= | (comparison operators - high priority) |
 | ==, != | (comparison operators - low priority) |
 | & | bitwise AND |
-| | | bitwise OR |
+| \| | bitwise OR |
 | && | logical AND |
-| || | logical OR |
+| \|\| | logical OR |
 | =, +=, -=, *=, /=, %=, &=, ^=, |=, <<=, >>= | (assignments and shorthands) |
 
 ## Pointers and Arrays
@@ -139,7 +139,7 @@ int i = ptr2 - ptr1;  // i is equal to 2
 
 We already know that when we define an array, say `int arr[10]`, the name of the array `arr` actually contains the **address to the first element of the array** (`arr == &arr[0]`).
 
-When we access an element of an array with `arr[i]`, what this actually means is `***(arr + i)**`, i.e. the value at the address `arr + i`, with the pointer arithmetic defined above.
+When we access an element of an array with `arr[i]`, what this actually means is `*(arr + i)`, i.e. the value at the address `arr + i`, with the pointer arithmetic defined above.
 
 This means that we can also have **negative indexes** for this notation, for example:
 
@@ -158,14 +158,14 @@ The newest operator priority table is thus:
 | [], ++ (postfix), -- (postfix) | (postfix unary operators) |
 | --- | --- |
 | !, ~, (typecast), +, -, ++ (prefix), -- (prefix),
-* (dereference), & (reference), sizeof | (prefix unary operators) |
+\* (dereference), & (reference), sizeof | (prefix unary operators) |
 | *, /, % | (binary arithmetic - high priority) |
 | +, - | (binary arithmetic - low priority) |
 | <<, >> | (bit shift operators) |
 | <, <=, >, >= | (comparison operators - high priority) |
 | ==, != | (comparison operators - low priority) |
 | & | bitwise AND |
-| | | bitwise OR |
+| \| | bitwise OR |
 | && | logical AND |
-| || | logical OR |
+| \|\| | logical OR |
 | =, +=, -=, *=, /=, %=, &=, ^=, |=, <<=, >>= | (assignments and shorthands) |

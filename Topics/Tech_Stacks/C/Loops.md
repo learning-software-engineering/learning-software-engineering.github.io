@@ -54,7 +54,7 @@ Now notice that since this type of loop will always have these 3 components:
 - Checking the condition (**before** running the loop body)
 - Modifying the counter (**after** running the loop body)
 
-We can create a shorthand for this type of loop, the `**for` loop**:
+We can create a shorthand for this type of loop, the `for` loop:
 
 ```c
 int n = 100;

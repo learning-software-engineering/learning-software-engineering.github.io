@@ -170,7 +170,7 @@ Takes 2 **boolean** inputs, gives 1 **boolean** output.
 Given bool variables or expressions `A` and `B`, the expression “`A || B`” returns a bool variable. It evaluates to **true** when **at least one** of the two is true. It evaluates to **false** if and only if both `A` and `B` are **false**.
     
     
-    | A | B | A || B |
+    | A | B | A \|\| B |
     | --- | --- | --- |
     | True | True | True |
     | True | False | True |
@@ -237,9 +237,9 @@ Thus the up-to-date operator precedence table would be:
 | <, <=, >, >= | (comparison operators - high priority) |
 | ==, != | (comparison operators - low priority) |
 | & | bitwise AND |
-| | | bitwise OR |
+| \| | bitwise OR |
 | && | logical AND |
-| || | logical OR |
+| \|\| | logical OR |
 | =, +=, -=, *=, /=, %=, &=, ^=, |=, <<=, >>= | (assignments and shorthands) |
 
 # Switch-Case

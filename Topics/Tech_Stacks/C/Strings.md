@@ -22,9 +22,9 @@ The `\0` null character is automatically added at the end.
 
 Note that in this case we cannot use `sizeof()` here to get the size of our `example` string, since it will return `100`, the number of **spaces available** for storage, **NOT 14**, the number of meaningful characters inside the array.
 
-To do this, C provides the `**strlen()**` ”**string length**” function in the `string.h` library.
+To do this, C provides the `strlen()` ”**string length**” function in the `string.h` library.
 
-`**strlen()`** basically counts from the beginning of the array to see how many non-null characters there are until it reaches the `\0` null character.
+`strlen()` basically counts from the beginning of the array to see how many non-null characters there are until it reaches the `\0` null character.
 
 Since `example[]` is an array, `example` is also a **pointer to the first character** of the string (`example == &example[0]` where `example` is of type `char *`). 
 
@@ -115,7 +115,7 @@ strncpy(str, "Computer", 3);  // str is now "Com"
 
 ## The `strcat` Function: Append One String to Another
 
-The `**strcat()**` function **appends a copy of the source string to the destination string**. Only the destination string is modified.
+The `strcat()` function **appends a copy of the source string to the destination string**. Only the destination string is modified.
 
 How it works: The function looks for the current string’s `\0` character, removes it, and adds the source string to the end of the destination string.
 

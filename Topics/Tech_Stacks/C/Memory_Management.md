@@ -4,7 +4,7 @@ In the examples so far, memory management is taken place outside of our awarenes
 
 But very often the developer wants to **have full control over how much memory is used and when exactly it is used**. This is especially important when you **don’t know in advance what the size of the data to be processed is**.
 
-To manage memory, C provides a set of specialized functions in the `**stdlib.h**` library.
+To manage memory, C provides a set of specialized functions in the `stdlib.h` library.
 
 ### General Idea:
 
