@@ -133,6 +133,8 @@ export default {
 </script>
 ```
 
+Of course, there's a lot more we can do to adjust database queries using Supabase. The [JavaScript database documentation](https://supabase.com/docs/reference/javascript/select) neatly covers a lot more function configuration.
+
 ## Conclusion
 
 Well done! You've successfully integrated Supabase into a simple Vue.js project. The Supabase client has been set up, initialized in Vue, and your Supabase methods are ready to perform database interactions.
