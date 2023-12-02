@@ -17,17 +17,26 @@ Potential Topics--
         1. Django Rest Framework
     3. Salesforce API
     
-    4. CSS (Cascading Style Sheets) 
-
-    5. TypeScript
-
-    6. JavaScript
+    4. CSS (Cascading Style Sheets)
     
-    7. React Native
+    5. Node.js
+
+    6. TypeScript
+
+    7. JavaScript
+    
+    8. React Native
         1. Set up
-    8. Unity
+    9. Unity
         1. Introduction to Unity Basics
-        2. A Beginner's Guide for Unity UI Design
+        2. A Beginner's Guide for Unity UI Design 
+    10. Python
+        1. Pythonic iteration patterns
+    11. Debugging in Python
+    12. Spring
+        1. Learning Spring Data JPA
+    13. TinyMCE API with ReactJS
+    14. SQL
         
 - Software Tools
     1. Git
@@ -59,12 +68,14 @@ Potential Topics--
         1. Automated Testing
             1. Unit testings
             2. Integration testing
+            3. API testing
         2. Build tools
             1. Maven
             2. Gradle
         3. Build requirements
             1. requirements.txt
             2. packages
+            3. CMakeLists.txt
         4. Deployment
             1. Heroku
             2. AWS
