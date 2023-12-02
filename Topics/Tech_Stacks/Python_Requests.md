@@ -114,9 +114,8 @@ except requests.exceptions.HTTPError as e:
 
 A full list of HTTP response codes can be found [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status).
 
-
 ## Parsing
-With the webpage retrieved, you can now parse the data using a library such as [BeautifulSoup4](https://pypi.org/project/beautifulsoup4/).
+With the webpage retrieved, you can now parse the HTML data using a library such as [`BeautifulSoup4`](https://pypi.org/project/beautifulsoup4/). This will allow load the page into a tree-like structure and allow you to search for and extract specific content from the response (e.g., the text of specific HTML elements). For a more detailed tutorial, you can follow this [link](https://scrapeops.io/python-web-scraping-playbook/python-beautifulsoup-find/).
 
 ## JavaScript
 It is important to note that Requests **does not load JavaScript**, so the response given by Requests might be different than what you mgiht expect. To work around this, you can consider alternative libraries such as [`Requests-HTML`](https://pypi.org/project/requests-html/), or disable JavaScript on your web browser (you can use an extension such as [Disable JavaScript](https://chromewebstore.google.com/detail/disable-javascript/jfpdlihdedhlmhlbgooailmfhahieoem) or use developer tools in your specific browser) to view the webpage that Requests will deliver.
