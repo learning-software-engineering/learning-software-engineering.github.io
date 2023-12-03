@@ -22,18 +22,19 @@ PostgreSQL is an open-source DBMS. As the name states, PostgreSQL is a relationa
 pyscopg2 is an adapter for Python that allows you to easily perform PostgreSQL operations in your Python programs. It's commonly used with other Python libraries like Flask, which collectively allow you to modify a PostgreSQL database in your application with minimal hassle.
 
 ## PostgreSQL installation
-The following link is to download PostgreSQL onto your computer: https://www.postgresql.org/download/ . This link also shows the different versions of PostgreSQL to match your computer. Follow the instructions after downloading. For your convenience, here are the links to download the installer for PostgreSQL on different OS:
-- Windows: https://www.postgresql.org/download/windows/
-- MacOS: https://www.postgresql.org/download/macosx/
-- Linux: https://www.postgresql.org/download/linux/
+The following link is to download PostgreSQL onto your computer: [https://www.postgresql.org/download/](https://www.postgresql.org/download/) . This link also shows the different versions of PostgreSQL to match your computer. Follow the instructions after downloading and make sure to remember the username and password during setup. For your convenience, here are the links to download the installer for PostgreSQL on different OS:
+- Windows: [https://www.postgresql.org/download/windows/](https://www.postgresql.org/download/windows/)
+- MacOS: [https://www.postgresql.org/download/macosx/](https://www.postgresql.org/download/macosx/)
+- Linux: [https://www.postgresql.org/download/linux/](https://www.postgresql.org/download/linux/)
 
-Once installed, you can create a database, relation, and tables with the PostgreSQL client called "pgAdmin". pgAdmin is automatically downloaded when using the links above and can be accessed by searching your task bar. You can also perform queries on relations and tables through its query tool. More information on how to use pgAdmin can be found at this [link](https://www.pgadmin.org/docs/pgadmin4/6.21/index.html).
-
-If you are using MacOS, you can also run the command "brew install postgresql" in your terminal. Note that you also have to have Homebrew installed for this command to work. "brew install postgresql" allows the user to use PostgreSQL on their command line by simply initiating a PostgreSQL environment with the command "psql".
+If you are using MacOS, you can also run the command `brew install postgresql` in your terminal. Note that you also have to have Homebrew installed for this command to work. `brew install postgresql` allows the user to use PostgreSQL on their command line by simply initiating a PostgreSQL environment with the command `psql`. More information can be found [here](https://www.moncefbelyamani.com/how-to-install-postgresql-on-a-mac-with-homebrew-and-lunchy/).
 
 For Windows users, the user should download PostgreSQL through the link provided above. If the user wants to utilize PostgreSQL on the command line, they must (after installation):
 1. Add the PostgreSQL bin directory path to the PATH environment variable.
-2. Run the command "psql -U username"
+2. Run the command `psql -U username`, where `username` is the username you selected during installation.
+3. To exit psql, run `\q;`.
+
+Once installed, you can create a database, relation, and tables with the PostgreSQL client called **pgAdmin**. **pgAdmin** is automatically downloaded when using the links above and can be accessed by searching your task bar. (If you are using Homebrew, you have to install **pgAdmin** separately by running `brew install --cask pgadmin4`.) You can also perform queries on relations and tables through its query tool. More information on how to use **pgAdmin** can be found at this [link](https://www.pgadmin.org/docs/pgadmin4/6.21/index.html).
 
 ## psycopg2 Installation
 To work with psycopg2, you can use pip to install it by running `pip install psycopg2` in your console. Make sure you execute this command in the directory you will be using psycopg2. Once finished, you can import psycopg2 (`import psycopg2` at the top of the relevant Python file), and perform the desired operations.
@@ -45,16 +46,16 @@ A quick and basic runover of PostgreSQL.
 To create a database in PostgreSQL, you can either use pgAdmin or the command line. 
 
 In pgAdmin, you can:
-1. Open pgAdmin on your computer.
-2. Click on "Servers".
-3. Click on "PostgreSQL". The version of PostgreSQL should follow after the name.
-4. Right click on "Databases" and click "Create"
-5. Follow the instructions in pgAdmin.
+1. Click on **Servers**.
+2. Click on **PostgreSQL**. The version of PostgreSQL should follow after the name.
+3. Right click on **Databases** and click **Create**
+4. Follow the instructions in pgAdmin.
 
 In the command line:
-1. Type "psql" to initialize the PostgreSQL environment.
-2. Type "CREATE DATABASE" followed by the name of the database. For example, "CREATE DATABASE CourseInfo".
-3. For any errors, you can refer to this [link](https://www.postgresql.org/docs/current/sql-createdatabase.html)
+1. Type `psql` to initialize the PostgreSQL environment.
+2. Type `CREATE DATABASE dbname;`, where `dbname` is the name of the database to create.
+Documentation on setting database parameters can be found [here](https://www.postgresql.org/docs/current/sql-createdatabase.html).
+To list all available databases, use `\l;`.
 
 
 ### Create Schema
@@ -62,68 +63,248 @@ To create a table, you must first create a schema in your database.
 
 To do this in pgAdmin:
 1. Click on your desired database.
-2. Find the "Schemas" directory.
-3. Right click and select "Create"
-4. Follow the rest of the instructions in pgAdmin
+2. Right click the **Schemas** directory and select **Create**.
+3. Fill in the fields on the dialog and press **Save**.
 
 To do this in the command line:
-1. Type "psql" to initialize the PostgreSQL environment.
-2. Type "\c DBNAME" where DBNAME is the name of the desired database
-2. Type "CREATE SCHEMA" followed by the name of the schema. For example, "CREATE SCHEMA SchoolSchema".
+1. Execute `psql` to initialize the PostgreSQL environment.
+2. Execute `\c dbname;` where `dbname` is the name of the desired database.
+3. Run `CREATE SCHEMA schema_name;`. If the operation was successful, you should see the message `CREATE SCHEMA` on the next line.
+Run `\dn` to get a list of available schemas.
 
 
 ### Create Tables
-After creating your schema you can create tables/relations to perform operations on. 
+After creating your schema you can create tables/relations to perform operations on. A table contains columns, which describes the attributes of the data being stored, and rows, which are records of instances of the table. Each row contains a set of values that corresponds to the columns of the table.
 
 To create a table in pgAdmin:
 1. Right click on your desired schema.
-2. Select "Create"
-3. Select "Table"
-4. Follow the instructions in pgAdmin
+2. Select **Create** then **Table**.
+4. Follow the instructions in pgAdmin.
 
 To create a table in the command line:
-1. Type "psql" to initialize the PostgreSQL environment.
-2. Type "\c DBNAME" where DBNAME is the name of the desired database
-3. Type "SET search_path TO schema_name;" where schema_name is the name of the desired schema you want to put your table in.
-4. Type "CREATE TABLE table_name (column1 int PRIMARY KEY, ...);", where table_name is the desired name of the table. Inside the round braces is a list of the columns that you want in the table. For each column, you must specify a name and datatype. For example, a table can be created like this:
+1. Execute `psql` to initialize the PostgreSQL environment.
+2. Execute `\c dbname` where `dbname` is the name of the desired database
+3. Run `SET search_path TO schema_name;` where `schema_name` is the name of the schema you want to put your table in.
+   - `search_path` is a variable that determines the order in which schemas are searched when looking for database objects. This command is allows you to define the schema order. In this example, PostgreSQL searches for objects in `schema_name`. If `search_path` were set to `SET search_path TO schema1, schema2` and an object was not found in `schema1`, PostgreSQL would continue searching in the subsequent schema `schema2`.
+5. Type `CREATE TABLE table_name (column1 int PRIMARY KEY, ...);`, where `table_name` is the name of the table to create. Inside the round braces is a list of the columns that you want in the table. For each column, you must specify a name and datatype. For example, a table can be created like this:
+To see the structure of a specific table, use `\d table_name;` or `\d+ table_name;` for more detailed information (comments associated with the table columns). To list all tables in the current database, use `\dt;`
 
-``` 
-CREATE TABLE accounts (
-	id serial PRIMARY KEY,
-	username VARCHAR ( 50 ) UNIQUE NOT NULL,
-	password VARCHAR ( 50 ) NOT NULL,
-	email VARCHAR ( 255 ) UNIQUE NOT NULL
+```
+CREATE TABLE sports (
+	sport_id SERIAL PRIMARY KEY,
+	sport_name VARCHAR(50) UNIQUE NOT NULL,
 );
 ```
-The text after the datatypes (e.g. UNIQUE NOT NULL) are optional.
-
-Here is a link for information on datatypes in PostgreSQL: https://www.postgresql.org/docs/current/datatype.html
-
-Here is a link for more details and examples of how to create a table: https://www.postgresql.org/docs/current/sql-createtable.html
-
-
-### Table Operations
-Moving onto table operations. To select data from a certain column in a table, you can use a query like:
 ``` 
-    SELECT col_name1, col_name2 FROM table_name;
+CREATE TABLE teams (
+	team_id SERIAL PRIMARY KEY,
+	team_name VARCHAR(50) NOT NULL,
+	sport_id INT NOT NULL,
+	FOREIGN KEY (sport_id) REFERENCES sports(sport_id),
+);
 ```
-This gives you a smaller table that only contains the columns "col_name1" and "col_name2" from your selected table in your relation. 
+```
+CREATE TABLE players {
+	player_id SERIAL PRIMARY KEY,
+	first_name VARCHAR(50) NOT NULL,
+	last_name VARCHAR(50) NOT NULL,
+	age VARCHAR(50) NOT NULL,
+	team_id INT NOT NULL,
+	FOREIGN KEY (team_id) REFERENCES teams(team_id),
+);
+```
+The text after the datatypes (e.g. `UNIQUE NOT NULL`) are optional [constraints](https://www.postgresql.org/docs/16/ddl-constraints.html#DDL-CONSTRAINTS) that define conditions that must be satisfied by the data.
 
-You can also merge two different tables by changing the FROM clause to contain 2 tables:
-```
-    SELECT col1_table1, col2_table2 FROM table1_name, table2_name;
-```
-This operation, first, performs a cross product between table1 and table2, where every row of one table is matched with every other row of the other table. Then it selects the data present in the new cross-products table from columns col1_table1 and col2_table2.
+Here is a link for information on datatypes in PostgreSQL: [https://www.postgresql.org/docs/current/datatype.html](https://www.postgresql.org/docs/current/datatype.html)
 
-In addition, you can perform filtering on tables:
-```
-SELECT col1_table1, col2_table2 FROM table1_name, table2_name WHERE col1_table1 > 1;
-```
-Here it only shows data from the previous table where the value of a row in the column "col1_table1" is greater than 1. This is the syntax for when the table and column names between table 1 and table 2 are unique.
+Here is a link for more details and examples of how to create a table: [https://www.postgresql.org/docs/current/sql-createtable.html](https://www.postgresql.org/docs/current/sql-createtable.html)
 
-There are many other features of PostgreSQL.
 
-Specifics of the syntax of PostgreSQL can be found in this [link](https://www.postgresql.org/docs/current/sql-syntax.html).
+### Running queries
+In SQL, a query is a statement/command used to retrieve or manipulate data in a relational database. To execute SQL scripts, you can use `\i path/to/script.sql`. Alternatively, you can run SQL queries directly on psql.
+Suppose we have the following tables:
+`sports`:
+| sport_id | sport_name |
+| -------- | ---------- |
+| 1 | basketball |
+| 2 | soccer |
+| 3 | baseball |
+
+`teams`:
+| team_id | team_name | sport_id |
+| ------- | --------- | -------- |
+| 1 | Toronto Raptors | 1 |
+| 2 | San Antonio Spurs | 1 |
+| 3 | Golden State Warriors | 1 |
+| 4 | Manchester City F.C. | 2 |
+| 5 | Paris Saint-Germain F.C. | 2 |
+
+`players`:
+| player_id | first_name | last_name | age | team_id |
+| --------- | ---------- | --------- | --- | ------- |
+| 1 | Stephen | Curry | 35 | 3 |
+| 2 | Erling | Haaland | 23 | 4 |
+| 3 | Kylian | Mbappé | 24 | 5 |
+
+#### `SELECT`
+To retrieve all columns of a table, you can use the `SELECT *` statement and `FROM` clause:
+```
+SELECT * FROM players;
+```
+This query outputs all columns of all rows of the table `players`, i.e. the entire table `players`:
+| player_id | first_name | last_name | age | team_id |
+| --------- | ---------- | --------- | --- | ------- |
+| 1 | Stephen | Curry | 35 | 3 |
+| 2 | Erling | Haaland | 23 | 4 |
+| 3 | Kylian | Mbappé | 24 | 5 |
+
+To query only certain columns of a table, you can use the `SELECT` statement and specify the columns you want in the clause:
+``` 
+SELECT first_name, last_name FROM players;
+```
+In this example, the output is a smaller table that only contains the columns `first_name` and `last_name` of each row from the table `players`:
+| first_name | last_name |
+| ---------- | --------- |
+| Stephen | Curry |
+| Erling | Haaland |
+| Kylian | Mbappé |
+
+#### `CROSS JOIN`
+You can get the Cartesian product of two or more tables by listing the tables in the `FROM` clause separated by commas:
+```
+SELECT * FROM sports, teams;
+```
+or by using the `CROSS JOIN` clause:
+```
+SELECT * FROM sports CROSS JOIN teams;
+```
+In these queries, each row of table `sports` is combined with each row of the table `teams`, resulting in a combination of all rows:
+| sport_id | sport_name | team_id | team_name | sport_id |
+| -------- | ---------- | ------- | --------- | -------- |
+| 1 | basketball | 1 | Toronto Raptors | 1 |
+| 1 | basketball | 2 | San Antonio Spurs | 1 |
+| 1 | basketball | 3 | Golden State Warriors | 1 |
+| 1 | basketball | 4 | Manchester City F.C. | 2 |
+| 1 | basketball | 5 | Paris Saint-Germain F.C. | 2 |
+| 2 | soccer | 1 | Toronto Raptors | 1 |
+| 2 | soccer | 2 | San Antonio Spurs | 1 |
+| 2 | soccer | 3 | Golden State Warriors | 1 |
+| 2 | soccer | 4 | Manchester City F.C. | 2 |
+| 2 | soccer | 5 | Paris Saint-Germain F.C. | 2 |
+| 3 | baseball | 1 | Toronto Raptors | 1 |
+| 3 | baseball | 2 | San Antonio Spurs | 1 |
+| 3 | baseball | 3 | Golden State Warriors | 1 |
+| 3 | baseball | 4 | Manchester City F.C. | 2 |
+| 3 | baseball | 5 | Paris Saint-Germain F.C. | 2 |
+
+#### `WHERE`
+The table `teams` has the column `sport_id`, but suppose we want to read off the sport name of each team. To do this, we need to combine it with the table `sports` to get the name associated with each `sport_id`. In the query above, we combined the two tables, but not all rows of the output are meaningful. For example, the fourth row associates basketball with Manchester City F.C., which is a soccer team. To filter out the nonsensical combinations, we can use the `WHERE` clause:
+```
+SELECT * FROM sports, teams WHERE sports.sport_id = teams.sport_id;
+```
+This clause allows you to retrieve only the rows that meet the specified conditions. The output of this query would be:
+| sport_id | sport_name | team_id | team_name | sport_id |
+| -------- | ---------- | ------- | --------- | -------- |
+| 1 | basketball | 1 | Toronto Raptors | 1 |
+| 1 | basketball | 2 | San Antonio Spurs | 1 |
+| 1 | basketball | 3 | Golden State Warriors | 1 |
+| 2 | soccer | 4 | Manchester City F.C. | 2 |
+| 2 | soccer | 5 | Paris Saint-Germain F.C. | 2 |
+
+By using `WHERE`, we were able to eliminate the rows where the `sport_id`'s didn't match. The output has one row per team, and each row contains the name of the sport associated with respective team.
+
+Although the query is now more targeted and relevant, the two `sport_id` columns are redundant. To get rid of the redundancy, one solution is to change the columns in the `SELECT` clause so that only one of the `sport_id` columns is retrieved:
+```
+SELECT sports.sport_id, sport_name, team_id, team_name FROM sports, teams WHERE sports.sport_id = teams.sport_id;
+```
+
+#### `NATURAL JOIN`
+Another option is to use `NATURAL JOIN` in the `FROM` clause:
+```
+SELECT * FROM sports NATURAL JOIN teams;
+```
+`NATURAL JOIN` automatically matches and combines the columns with the same name in the tables being joined. Since `sport_id` is an attribute in both `sports` and `teams`, the resulting set includes all unique columns from both tables and excludes duplicate columns. The output of these queries are:
+| sport_id | sport_name | team_id | team_name |
+| -------- | ---------- | ------- | --------- |
+| 1 | basketball | 1 | Toronto Raptors |
+| 1 | basketball | 2 | San Antonio Spurs |
+| 1 | basketball | 3 | Golden State Warriors |
+| 2 | soccer | 4 | Manchester City F.C. |
+| 2 | soccer | 5 | Paris Saint-Germain F.C. |
+
+To select specific columns of the result set, we can use the same syntax that was mentioned before:
+```
+SELECT sport_name, team_name FROM sports NATURAL JOIN teams;
+```
+Output:
+| sport_name | team_name |
+| --------- | --------- |
+| basketball | Toronto Raptors |
+| basketball | San Antonio Spurs |
+| basketball | Golden State Warriors |
+| soccer | Manchester City F.C. |
+| soccer | Paris Saint-Germain F.C. |
+
+#### `AS`
+It is possible to rename attributes in the result set using the `AS` clause:
+```
+SELECT sport_name as sport, team_name as team FROM sports NATURAL JOIN teams;
+```
+Output:
+| sport | team |
+| --------- | --------- |
+| basketball | Toronto Raptors |
+| basketball | San Antonio Spurs |
+| basketball | Golden State Warriors |
+| soccer | Manchester City F.C. |
+| soccer | Paris Saint-Germain F.C. |
+
+#### `ORDER BY`
+To order the output based on a specific column(s), you can use the `ORDER BY` clause:
+```
+SELECT * FROM teams ORDER BY team_name;
+```
+Output:
+| team_id | team_name | sport_id |
+| ------- | --------- | -------- |
+| 3 | Golden State Warriors | 1 |
+| 4 | Manchester City F.C. | 2 |
+| 5 | Paris Saint-Germain F.C. | 2 |
+| 2 | San Antonio Spurs | 1 |
+| 1 | Toronto Raptors | 1 |
+
+```
+SELECT sport_name as sport, team_name as team FROM sports NATURAL JOIN teams ORDER BY sport, team;
+```
+Output:
+| sport | team |
+| --------- | --------- |
+| basketball | Golden State Warriors |
+| basketball | San Antonio Spurs |
+| basketball | Toronto Raptors |
+| soccer | Manchester City F.C. |
+| soccer | Paris Saint-Germain F.C. |
+
+(Note: although using the original column names in the `ORDER BY` clause may work, it is generally recommended to use the aliases defined in the `SELECT` clause.)
+
+To order in descending order, use the `DESC` attribute:
+```
+SELECT * FROM teams ORDER BY team_name DESC;
+```
+Output:
+| team_id | team_name | sport_id |
+| ------- | --------- | -------- |
+| 1 | Toronto Raptors | 1 |
+| 2 | San Antonio Spurs | 1 |
+| 5 | Paris Saint-Germain F.C. | 2 |
+| 4 | Manchester City F.C. | 2 |
+| 3 | Golden State Warriors | 1 |
+
+
+PostgreSQL has several aggregate functions that perform calculations on a set of rows and returns a single value. Some commonly used functions are `COUNT()`, `SUM()`, `AVG()`, `MAX()` and `MIN()`. You can read more about them [here](https://www.postgresql.org/docs/9.5/functions-aggregate.html).
+
+There are many other features of [PostgreSQL](https://www.postgresql.org/docs/). Specifics of the syntax of PostgreSQL can be found in this [link](https://www.postgresql.org/docs/current/sql-syntax.html).
+More about queries can be found [here](https://www.postgresql.org/docs/current/tutorial-select.html) and types of joins can be found [here](https://www.postgresql.org/docs/current/tutorial-join.html).
 
 ## Setup and PostgreSQL Operations in psycopg2
 To start using PostgreSQL in a Python program with psycopg2, ensure you have finished the relevant installations, then follow the instructions below:
