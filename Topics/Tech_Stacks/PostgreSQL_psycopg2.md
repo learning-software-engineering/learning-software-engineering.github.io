@@ -146,6 +146,7 @@ Suppose we have the following tables:
 | 2 | Erling | Haaland | 23 | 4 |
 | 3 | Kylian | Mbappé | 24 | 5 |
 
+#### `SELECT`
 To retrieve all columns of a table, you can use the `SELECT *` statement and `FROM` clause:
 ```
 SELECT * FROM players;
@@ -168,11 +169,16 @@ In this example, the output is a smaller table that only contains the columns `f
 | Erling | Haaland |
 | Kylian | Mbappé |
 
-You can also get the Cartesian product of two or more tables by listing the tables in the `FROM` clause:
+#### `CROSS JOIN`
+You can get the Cartesian product of two or more tables by listing the tables in the `FROM` clause separated by commas:
 ```
 SELECT * FROM sports, teams;
 ```
-In this query, each row of table `sports` is combined with each row of the table `teams`, resulting in a combination of all rows:
+or by using the `CROSS JOIN` clause:
+```
+SELECT * FROM sports CROSS JOIN teams;
+```
+In these queries, each row of table `sports` is combined with each row of the table `teams`, resulting in a combination of all rows:
 | sport_id | sport_name | team_id | team_name | sport_id |
 | -------- | ---------- | ------- | --------- | -------- |
 | 1 | basketball | 1 | Toronto Raptors | 1 |
@@ -191,7 +197,8 @@ In this query, each row of table `sports` is combined with each row of the table
 | 3 | baseball | 4 | Manchester City F.C. | 2 |
 | 3 | baseball | 5 | Paris Saint-Germain F.C. | 2 |
 
-However, not all rows of the output are meaningful. For example, the fourth row associates basketball with Manchester City F.C., which is a soccer team. To filter out the nonsensical combinations, we can use the `WHERE` clause:
+#### `WHERE`
+The table `teams` has the column `sport_id`, but suppose we want the actual names of each sport rather than the ID. To do this, we need to combine it with the table `sports` to get the name associated with each `sport_id`. In the query above, we combined the two tables, but not all rows of the output are meaningful. For example, the fourth row associates basketball with Manchester City F.C., which is a soccer team. To filter out the nonsensical combinations, we can use the `WHERE` clause:
 ```
 SELECT * FROM sports, teams WHERE sports.sport_id = teams.sport_id;
 ```
@@ -204,15 +211,19 @@ This clause allows you to retrieve only the rows that meet the specified conditi
 | 2 | soccer | 4 | Manchester City F.C. | 2 |
 | 2 | soccer | 5 | Paris Saint-Germain F.C. | 2 |
 
+By using `WHERE`, we were able to eliminate the rows where the `sport_id`'s didn't match. The output has one row per team, and each row contains the name of the sport associated with respective team.
+
 Although the query is now more targeted and relevant, the two `sport_id` columns are redundant. To get rid of the redundancy, one solution is to change the columns in the `SELECT` clause so that only one of the `sport_id` columns is retrieved:
 ```
 SELECT sports.sport_id, sport_name, team_id, team_name FROM sports, teams WHERE sports.sport_id = teams.sport_id;
 ```
+
+#### `NATURAL JOIN`
 Another option is to use `NATURAL JOIN` in the `FROM` clause:
 ```
 SELECT * FROM sports NATURAL JOIN teams;
 ```
-`NATURAL JOIN` automatically matches and combines the columns with the same name in the tables being joined. Since `sport_id` is an attribute in both `sports` and `teams`, the resulting set includes all unqiue columns from both tables and excludes duplicate columns. The output of these queries are:
+`NATURAL JOIN` automatically matches and combines the columns with the same name in the tables being joined. Since `sport_id` is an attribute in both `sports` and `teams`, the resulting set includes all unique columns from both tables and excludes duplicate columns. The output of these queries are:
 | sport_id | sport_name | team_id | team_name |
 | -------- | ---------- | ------- | --------- |
 | 1 | basketball | 1 | Toronto Raptors |
@@ -234,6 +245,7 @@ Output:
 | soccer | Manchester City F.C. |
 | soccer | Paris Saint-Germain F.C. |
 
+#### `AS`
 It is possible to rename attributes in the result set using the `AS` clause:
 ```
 SELECT sport_name as sport, team_name as team FROM sports NATURAL JOIN teams;
@@ -247,6 +259,7 @@ Output:
 | soccer | Manchester City F.C. |
 | soccer | Paris Saint-Germain F.C. |
 
+#### `ORDER BY`
 To order the output based on a specific column(s), you can use the `ORDER BY` clause:
 ```
 SELECT * FROM teams ORDER BY team_name;
