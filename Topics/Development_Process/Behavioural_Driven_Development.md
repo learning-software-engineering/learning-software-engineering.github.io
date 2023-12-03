@@ -39,7 +39,9 @@ Behavioural-driven development uses these specifications to create automated tes
 >| IF  | the user provides the correct credentials  |
 >| THEN  | log them in and allow them to view the home page |
 
-Given these details from the customer, it is easy to create a unit test for these specifications, and it is easy for both technical and non-technical teams to confirm that this test confirms some desired behaviour. If the application is tested in this way for all specifications, it is easy to see how automated testing under BDD ensures the application aligns with the customer's vision.
+The developer could write a unit test to test a function that does what the specification details, and the specifications would be listed in the test documentation for readability. For example, they may write a function `log_in` that takes as parameters a user and the current page the user is on. The function then checks for valid credentials provided by the user, and if the user is currently on the log in page and not logged in, then the function changes the current page to the home page and updates the user's status to "logged in ". The specific design of this function (e.g. creating helper functions to get credentials or verify credentials, placing files in different modules) is up to the developer, but the unit test must pass for the acceptance criteria to be met.
+
+Since the test documentation is written in plain language, it is easy for both technical and non-technical teams to see that the test confirms some desired behaviour. If the application is tested in this way for all specifications, it is easy to see how automated testing under BDD ensures the application aligns with the customer's vision.
 
 As part of clean coding, use the same naming convention across all tests created using BDD. For example, `WhenXThenY` or `when_x_then_y` or `given_x_when_y_then_z`.
 
