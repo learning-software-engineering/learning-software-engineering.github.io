@@ -1,3 +1,9 @@
+{% raw %}
+---
+layout: default
+---
+{% endraw %}
+
 # Learning PostgreSQL and psycopg2
 
 ## Table of contents
@@ -123,6 +129,7 @@ Here is a link for more details and examples of how to create a table: [https://
 ### Running queries
 In SQL, a query is a statement/command used to retrieve or manipulate data in a relational database. To execute SQL scripts, you can use `\i path/to/script.sql`. Alternatively, you can run SQL queries directly on psql.
 Suppose we have the following tables:
+
 `sports`:
 | sport_id | sport_name |
 | -------- | ---------- |
@@ -145,6 +152,7 @@ Suppose we have the following tables:
 | 1 | Stephen | Curry | 35 | 3 |
 | 2 | Erling | Haaland | 23 | 4 |
 | 3 | Kylian | Mbappé | 24 | 5 |
+
 
 #### `SELECT`
 To retrieve all columns of a table, you can use the `SELECT *` statement and `FROM` clause:
