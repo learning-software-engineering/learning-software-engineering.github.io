@@ -8,8 +8,13 @@ A typical declaration specifies the variable's level number, name, and type.
 ```cobol
 DATA DIVISION.
 WORKING-STORAGE SECTION.
-01 NUM-A PIC 9(3).     -- Declares an integer variable with 3 digits
+-- - This line declares a variable named NUM-A. The 01 level number indicates that it's a top-level variable (not a sub-variable of another data item).
+--  The PIC 9(3) indicates that NUM-A is a numeric variable with space for three digits (essentially an integer that can range from 0 to 999).
+01 NUM-A PIC 9(3).     
 01 NUM-B PIC 9(3).
+-- -This line declares a variable named RESULT.
+-- It's also a top-level numeric variable, but with space for four digits (from 0 to 9999),
+-- which suggests it might be used to store the result of some operation involving both variabls, where the result could potentially be a four-digit number.
 01 RESULT PIC 9(4).
 ```
 
