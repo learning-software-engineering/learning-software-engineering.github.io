@@ -10,6 +10,9 @@ Before learning Django Rest Framework, make sure that you have a working knowled
 ### What Is Django Rest Framework?
 Django Rest Framework is a popular library for building RESTful APIs with Django. It provides powerful tools for building APIs, including serialization, authentication, and permissions. You can easily create APIs that support multiple formats like JSON and XML that can be consumed by a variety of client applications. To demonstrate the power of Django Rest Framework, we will create a simple API.
 
+### Why use Django Rest Framework?
+Although you can create a fullstack using the default Django framework, it creates a highly coupled application. If you want to switch out the Django frontend for another frontend like React or Vue or even porting your application to a mobile view, it will be very difficult and time consuming. However, with Django Rest Framework, Django will only be responsible for the backend logic which will allow simple changing of frontends and reduces coupling.
+
 ### Set-Up
 
  We first Install virtualenv by running ```python3 -m pip install virtualenv```. This will ensure that we have the necessary package installed to create and manage virtual environments.
@@ -46,12 +49,128 @@ Django Rest Framework is a popular library for building RESTful APIs with Django
 └── manage.py
  ```
  
- In order to add Django Rest Framework to your project, open the settings.py file and add 'rest_framework' to the INSTALLED_APPS list: ```INSTALLED_APPS = [..., 'rest_framework']```
-  
- After installing and configuring Django Rest Framework, we may now create a simple API. The first step is learning how to define a model in the database.
+ In order to add Django Rest Framework to your project, open the settings.py file and add 'rest_framework' to the INSTALLED_APPS list: 
+ ```
+INSTALLED_APPS = [
+    ..., 
+    'rest_framework',
+]
+ ```
+ 
+ While in the settings.py file, you should also add:
+```
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.AllowAny'
+    ]
+}
+```
+This allows all your API endpoints to be used by authenticated and unauthenticated requests. However, this should only be used when testing and proper authentication and permissions should be added once the application is ready for production. "REST_FRAMEWORK" is also where you will place any other default configurations such as default authentication, renderers, pagination, etc. For the other Django Rest Framework configuration options, visit the official [Django Rest Framework website](https://www.django-rest-framework.org/api-guide/settings/).
+
+
+### Serializers
+Since Django Rest Framework sends and receives data in JSON format, we need a way to convert Django Model data into a form that can be stored and transported in JSON format. This is exactly what serializers do. Serializers convert model data into JSON format and data received in JSON format back into model instances. Additionally, serializers also do data validation. To use serializers it is best practice to create a new file in your app called "serializers.py" and write all your serializers in that file. 
+
+This is what a serializer looks like:
+```
+from rest_framework import serializers
+from .models import ExampleModel
+
+class ExampleSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ExampleModel
+        fields = ['field1', 'field2']
+```
+To create the serializer, declare a new class called "Meta" inside the serializer. Then specify which model the serializer is for. Finally, specify the exact fields you want to serialize. It can be tedious to type out every field for every serializer you create so you can use ```fields = '__all__'```. If you want to serialize all fields except some specific ones, you can use ```exclude = ['field1', ...]``` instead of the fields attribute.
+
+
+### Views
+Views in Django Rest Framework are mostly the same as regular Django views. The minor differences are that Django Rest Views inherit from the APIView class instead of the View class. They also return a REST Response class instead of rendering a Django template or redirecting to another URL.
+
+Here is an example of a Django Rest View:
+```
+from rest_framework.views import APIView
+from rest_framework.response import Response
+
+class ExampleAPIView(APIView):
+    def get(self, request):
+        # Your logic here to fetch data or perform an action
+        data = {
+            'message': 'Hello, this is a basic Django Rest Framework view!',
+            'status': 'success'
+        }
+        
+        return Response(data)
+```
+You can handle other HTTP requests by overriding their respective methods just like regular Django Views.
+
+Writing views can be repetitive and time consuming so Django provides many generic views that you can use with minimal code. You only need to override methods in generic views if you want to customize their logic, otherwise you only need to specify a few values to use the view.
+
+Here are all the generic views that Django Rest Framework includes:
+```
+CreateAPIView
+    -implements the create method
+    -called using HTTP POST request
+
+RetrieveAPIView
+    -implements the retrieve method
+    -called using HTTP GET request
+
+ListAPIVIew
+    -implements the list method
+    -called using HTTP GET request
+    -must add queryset attribute or get_queryset method
+
+UpdateAPIView
+    -implements the update method
+    -called using HTTP PUT or HTTP PATCH request
+
+DestroyAPIView
+    -implements destroy method
+    -called using HTTP DELETE request
+```
+
+There are also generic views that combine multiple generic views:
+```
+ListCreateAPIView
+
+RetrieveUpdateAPIView
+
+RetrieveDestroyAPIView
+
+RetrieveUpdateDestroyAPIView
+```
+These views essentially combine the functionality of the generic views that were mentioned above. This allows for one API endpoint to do different things based on the type of HTTP request that was sent to the endpoint.
+
+
+### Customizing Generic Views
+
+To customize the logic of generic views, you must override the perform_create, perform_update, or perform_destroy methods. 
+
+For example, you could override the perform_create method to automatically make the user attribute of your model the current user when you are creating a new instance of the model.
+```
+from rest_framework.generics import CreateAPIView
+from .serializers import YourModelSerializer
+
+class CreateExample(CreateAPIView):
+    serializer_class = YourModelSerializer
+
+    def perform_create(self, serializer):
+        # Customize logic here, for example, setting the user attribute
+        user=self.request.user
+        serializer.save(user=user)
+```
 
  ### Django ORM
  As Django is a backend framework, it needs a database to store any data used by the web application. Django supports relational databases through its own built-in ORM. An [ORM](https://www.freecodecamp.org/news/what-is-an-orm-the-meaning-of-object-relational-mapping-database-tools/) (Object Relational Mapper) provides a layer of abstraction from the database, allowing the user to define relations and make queries using objects, rather than having to write raw SQL code. This makes ORMs suitable for working with object-oriented programming. Another benefit of ORMs is that the application is separated from the actual database implementation, which means the database can be changed (for example, from SQLite to PostgreSQL once the app is ready for production) without affecting the app.
+
+### An Example API
+ 
+After installing and configuring Django Rest Framework, we may now create a simple API. We first create a new model to represent our API resource. To illustrate the use of Django Rest Framework, we'll create a simple model for a todo item with two fields: its title as a CharField, i.e., a string and its complete as a BooleanField, i.e., a boolean value. We first create a new file called models.py in the API app folder by adding the following code:
+
+ In order to add Django Rest Framework to your project, open the settings.py file and add 'rest_framework' to the INSTALLED_APPS list: ```INSTALLED_APPS = [..., 'rest_framework']```
+  
+ After installing and configuring Django Rest Framework, we may now create a simple API. The first step is learning how to define a model in the database.
 
  ### Defining a model
 
@@ -100,6 +219,28 @@ class TodoItemSerializer(serializers.ModelSerializer):
 ```
 
 The code above converts instances of the Todo model to JSON format so that they can be returned in HTTP responses. This is where the TodoItemSerializer class comes in. It is defined in the serializers.py file and inherits from the ModelSerializer class provided by Django Rest Framework and defines the fields that should be serialized and the model that the serializer should be based on. In our case, we want to serialize the id, title, and completed fields of the TodoItem model, so we include these fields in the Meta class of the serializer.
+
+Here is an example of what the serialization looks like:
+
+``` {python}
+from .models import TodoItem
+from .serializers import TodoItemSerializer
+
+todo1 = TodoItem.objects.create(title="Finish Assignment", completed=False)
+todo2 = TodoItem.objects.create(title="Wash Dishes", completed=True)
+
+serializer = TodoItemSerializer([todo1, todo2], many=True)
+serialized_data = serializer.data
+
+print(serialized_data)
+```
+The output of the print statement are our model instances but in JSON format
+```
+[
+    {"id": 1, "title": "Finish Assignment", "completed": false},
+    {"id": 2, "title": "Wash Dishes", "completed": true}
+]
+```
 
 Next, we'll create a view to handle incoming HTTP requests (GET, POST, PUT, PATCH and DELETE). We create a new file called views.py in the API app folder and add the following code:
 
