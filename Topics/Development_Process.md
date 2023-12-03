@@ -26,13 +26,19 @@
 
 ### [Getting Started With WSL 2](./Development_Process/WSL.md)
 
-## Nginx
+## Accessing your Project
 
-### [Introduction to Nginx](./Development_Process/Nginx.md)
+### Nginx
 
-## DuckDNS
+#### [Introduction to Nginx](./Development_Process/Nginx.md)
 
-### [Overcoming Dynamic IPs with DuckDNS](./Development_Process/Duckdns.md)
+### Caddy
+
+#### [Getting Started with Caddy](./Development_Process/Caddy.md)
+
+### DuckDNS
+
+#### [Overcoming Dynamic IPs with DuckDNS](./Development_Process/Duckdns.md)
 
 ## Build requirements
 
