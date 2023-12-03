@@ -84,6 +84,7 @@ The syntax and [boolean operators](https://docs.djangoproject.com/en/4.2/ref/tem
 #### Loops
 We can loop through lists, dictionaries, and its nested variants with the familiar Python syntax. Like conditionals, it must end with an `{% raw %}{% endfor %}{% endraw %}` tag:
 ```
+{% raw %}
 {% for menu_item in menu_items %}
  {% if menu_item.is_special %}
     <li class="special">{{ menu_item.name }} {{ menu_item.price }}</li>
@@ -91,6 +92,7 @@ We can loop through lists, dictionaries, and its nested variants with the famili
     <li class="regular">{{ menu_item.name }} {{ menu_item.price }}</li>
   {% endif %}
 {% endfor %}
+{% endraw %}
 ```
 
 #### Including CSS Files
