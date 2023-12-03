@@ -11,7 +11,8 @@
 7. [Best Practices and Tips](#best-practices-and-tips)
 8. [Troubleshooting Common Issues](#troubleshooting-common-issues)
 9. [Conclusion](#conclusion)
-10. [Further Resources](#further-resources)
+10. [Updating SLURM](#updating-slurm)
+11. [Further Resources](#further-resources)
 
 ## Introduction to SLURM?
 
@@ -34,7 +35,7 @@ SLURM (Simple Linux Utility for Resource Management) is a highly efficient, robu
 
 ### Detailed Installation and Configuration
 
-**Installation**: To install SLURM, follow the comprehensive steps in the [SLURM installation guide](https://slurm.schedmd.com/quickstart_admin.html). Here is a summary of that guide.
+**Installation**: To install SLURM, follow the comprehensive steps in the [SLURM installation guide](https://slurm.schedmd.com/quickstart_admin.html). Below is a summary of that guide for a quick overview. Additionally, for visual learners, here's a [video tutorial on SLURM installation](https://www.youtube.com/watch?v=NH_Fb7X6Db0&ab_channel=SchedMDSlurm) that walks through the process step-by-step.
 
 1. **Download SLURM**: Obtain the latest version of SLURM from the [official website](https://www.schedmd.com/downloads.php). Choose the version compatible with your Linux distribution.
 
@@ -94,10 +95,33 @@ Remember, each HPC environment is unique, and specific configuration details mig
 
 ## Advanced SLURM Features
 
-- **Job Arrays**: Handle large sets of similar jobs efficiently with job arrays.
-- **GPU Scheduling**: Specific options for managing GPU resources for deep learning tasks.
-- **Dependency Chains**: Create complex workflows with dependent jobs.
-- **Quality of Service (QoS)**: Define priorities and resource limits for different job types.
+### Job Arrays
+
+Job arrays in SLURM manage large sets of similar jobs efficiently, ideal for tasks that need to be repeated with minor variations.
+
+- **Efficiency**: Manage multiple jobs with reduced overhead.
+- **Syntax**: Use `--array` in `sbatch` for creating job arrays. Example: `--array=1-100`.
+- **Resource Sharing**: Job arrays can share common resource allocations.
+- **Simplified Management**: Cancel or modify all jobs in an array with a single command.
+
+### GPU Scheduling
+
+SLURM's GPU scheduling is essential for GPU-intensive tasks, like deep learning.
+
+- **Resource Specification**: Specify GPU count with `--gres=gpu:<count>`.
+- **GPU Type**: Specify GPU types if needed (e.g., `--gres=gpu:tesla:2`).
+- **Exclusive Access**: Use flags like `--exclusive` for exclusive GPU access.
+- **Monitoring**: Integrate tools like `nvidia-smi` for GPU usage monitoring.
+
+### Dependency Chains
+
+Create complex workflows with job dependencies.
+
+- **Sequential Execution**: Use `--dependency=afterok:<jobid>` for starting jobs after the successful completion of others.
+- **Complex Dependencies**: Utilize various dependency types for specific start conditions.
+- **Error Management**: Set dependencies that respond to the success or failure of previous jobs.
+
+These advanced features enhance the efficiency and effectiveness of SLURM in complex HPC workflows.
 
 ## Using SLURM for Machine Learning
 
@@ -188,6 +212,34 @@ python train_model.py
 ## Conclusion
 
 SLURM is an essential tool for efficiently managing machine learning workloads in HPC environments. With the right knowledge and best practices, it can significantly enhance the productivity and efficiency of computational research.
+
+## Updating SLURM
+
+1. **Check for Updates**: Regularly visit the [SLURM official website](https://www.schedmd.com/downloads.php) or use your package manager to check for new releases.
+
+2. **Review Release Notes**: Before updating, review the release notes for the new version to understand the changes, improvements, and any backward-incompatible features.
+
+3. **Backup Configuration Files**: Always backup your existing SLURM configuration files (`slurm.conf`, etc.) and any custom scripts.
+
+4. **Testing in a Sandbox Environment**: If possible, test the new version in a sandbox environment. This helps in identifying any potential issues with your specific configuration or scripts.
+
+5. **Update Process**: Follow the official guidelines for updating SLURM. This usually involves downloading the new version, compiling it (if applicable), and replacing the old binaries while keeping the system’s configuration.
+
+6. **Restart SLURM Services**: After updating, restart the SLURM daemons (`slurmctld` and `slurmd`) on the control and compute nodes.
+
+7. **Verify the Update**: Use `slurmctld -V` and `slurmd -V` to verify that the new version is running. Also, check the overall system health and functionality.
+
+### Best Practices
+
+- **Scheduled Maintenance**: Plan and communicate the maintenance schedule for updates to minimize disruption.
+- **Change Log**: Maintain a change log for all updates and modifications.
+- **User Notification**: Notify users of important updates, especially if there are changes that might affect their work.
+
+Remember, updating a critical system like SLURM should be done cautiously and with thorough planning to ensure system stability and user productivity.
+
+## Further Resources
+
+...
 
 ## Further Resources
 
