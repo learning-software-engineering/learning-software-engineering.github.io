@@ -34,7 +34,7 @@ SLURM (Simple Linux Utility for Resource Management) is a highly efficient, robu
 
 ### Detailed Installation and Configuration
 
-**Installation**: To install SLURM, follow the comprehensive steps in the [SLURM installation guide](https://slurm.schedmd.com/quickstart_admin.html). Here is a summary of that.
+**Installation**: To install SLURM, follow the comprehensive steps in the [SLURM installation guide](https://slurm.schedmd.com/quickstart_admin.html). Here is a summary of that guide.
 
 1. **Download SLURM**: Obtain the latest version of SLURM from the [official website](https://www.schedmd.com/downloads.php). Choose the version compatible with your Linux distribution.
 
