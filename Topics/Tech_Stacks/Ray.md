@@ -9,6 +9,7 @@
 - [Creating a Ray Cluster](#creating-a-ray-cluster)
 - [Running a Task on the Cluster](#running-a-task-on-the-cluster)
 - [Stop Ray on the Cluster](#stop-ray-on-the-cluster)
+- [Scenarios for use](#scenarios-for-use)
 - [Additional Resources](#additional-resources)
 
 
@@ -130,4 +131,3 @@ ray stop
 (Ray)[https://www.ray.io/]
 
 (Introduction to Ray Core)[https://docs.ray.io/en/latest/ray-core/walkthrough.html#running-a-task]
-

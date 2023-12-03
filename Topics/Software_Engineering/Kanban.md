@@ -9,7 +9,7 @@
 - [Differences Between Scrum and Kanban](#differences-between-scrum-and-kanban)
 - [Applying Kanban to CSC301 Projects](#applying-kanban-to-csc301-projects)
 - [Guides and Additional Resources](#guides-and-additional-resources)
-
+ 
 ---
 ---
 ## Introduction to Kanban

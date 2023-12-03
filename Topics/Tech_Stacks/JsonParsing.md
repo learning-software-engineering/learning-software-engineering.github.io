@@ -1,7 +1,6 @@
 # Introduction to JSON Parsing
 
 
-
 ## Introduction to JSON
 
 JSON (JavaScript Object Notation), is a lightweight and human-readable data interchange format. It serves as a standard data format for transmitting and exchanging data between a server and a web application, as well as between different parts of an application. JSON is language-agnostic, meaning it can be easily understood and used by various programming languages.
