@@ -33,8 +33,9 @@ COMPUTE RESULT = NUM-A / NUM-B.    -- Division
 In COBOL, a function call is made using the CALL statement,
 where you specify the function name and pass any required parameters.
 
+### In this example, CALCULATE-INTEREST is the name of the function being called, and ACCOUNT-BALANCE and INTEREST-RATE are the parameters being passed to it. The function would use these parameters to perform its calculations and return the result, perhaps in another variable that was defined in the DATA DIVISION.
 ```cobol
-CALL 'FUNCTION-NAME' USING PARAM1 PARAM2.
+CALL 'CALCULATE-INTEREST' USING ACCOUNT-BALANCE INTEREST-RATE.
 ```
 
 ## Loops
