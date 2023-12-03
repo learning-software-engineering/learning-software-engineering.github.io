@@ -19,7 +19,7 @@ It's really good at dealing with a lot of data,
 which makes it perfect for things like finance,
 banking, and running the computer systems of companies and governments.
 Since it was built specifically for processing business data,
-it became a go-to language for handling big, transaction-based business activities.
+it became a go-to language for handling big, transaction-based business activities. 
 
 ## Current Status
 

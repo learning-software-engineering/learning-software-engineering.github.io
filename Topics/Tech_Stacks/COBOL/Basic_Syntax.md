@@ -121,5 +121,5 @@ You may ask: Why every line starts with a set of numbers like 000100, 000200, 00
 These numbers aren't required; they're mostly there to help find and organize the code,
 or for use in old-fashioned computer systems where they needed these numbers to
 work with programs on punch cards or to keep track of the line order.
-PROGRAM-ID: This line follows within the IDENTIFICATION DIVISION and
+PROGRAM-ID: This line follows within the IDENTIFICATION DIVISION and 
 is used to declare the name of the program.
