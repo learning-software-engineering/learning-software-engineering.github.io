@@ -98,7 +98,7 @@ app/
     └── ...
 └── ...
 ```
-With the above setup, we have do not have to configure `settings.py`. However, you may want a `static` folder in other locations, such as the `root` directory. In this case, you must configure `settings.py` [accordingly](https://docs.djangoproject.com/en/4.2/howto/static-files/#).
+With the above setup, we do not have to configure `settings.py`. However, you may want a `static` folder in other locations, such as the `root` directory. In this case, you must configure `settings.py` [accordingly](https://docs.djangoproject.com/en/4.2/howto/static-files/#).
 
 Now, in the template we must load the static files with the `{% load static %}` tag, and include a specific file using the `{% static %}` tag. With the above file structure, we can simply include the `.css` file as follows:
 ```
