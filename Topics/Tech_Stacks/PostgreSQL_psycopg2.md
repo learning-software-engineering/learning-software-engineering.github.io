@@ -1,9 +1,3 @@
-{% raw %}
----
-layout: default
----
-{% endraw %}
-
 # Learning PostgreSQL and psycopg2
 
 ## Table of contents
