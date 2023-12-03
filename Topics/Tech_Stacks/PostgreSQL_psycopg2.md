@@ -198,7 +198,7 @@ In these queries, each row of table `sports` is combined with each row of the ta
 | 3 | baseball | 5 | Paris Saint-Germain F.C. | 2 |
 
 #### `WHERE`
-The table `teams` has the column `sport_id`, but suppose we want the actual names of each sport rather than the ID. To do this, we need to combine it with the table `sports` to get the name associated with each `sport_id`. In the query above, we combined the two tables, but not all rows of the output are meaningful. For example, the fourth row associates basketball with Manchester City F.C., which is a soccer team. To filter out the nonsensical combinations, we can use the `WHERE` clause:
+The table `teams` has the column `sport_id`, but suppose we want to read off the sport name of each team. To do this, we need to combine it with the table `sports` to get the name associated with each `sport_id`. In the query above, we combined the two tables, but not all rows of the output are meaningful. For example, the fourth row associates basketball with Manchester City F.C., which is a soccer team. To filter out the nonsensical combinations, we can use the `WHERE` clause:
 ```
 SELECT * FROM sports, teams WHERE sports.sport_id = teams.sport_id;
 ```
