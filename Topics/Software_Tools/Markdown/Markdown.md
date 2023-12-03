@@ -1,7 +1,7 @@
 # Markdown Language and Documentation
 
 ## Introduction
-Markdown is a simple, easy-to-use, text-based language that known for its readability. It is widely used in software engineering, mainly for documentation in open-source projects, README files, and text-filled files on web pages. Markdown is supported by a variety of different platforms, mainly GitHub and Reddit. The purpose of this document, written in Markdown, is to give the reader a simple tutorial or crash course and detail its relevance and uses in the software engineering world.
+Markdown is a simple, easy-to-use, text-based language that known for its readability. It is widely used in software engineering, mainly for documentation in open-source projects, README files, and text-filled files on web pages. Markdown is supported by a variety of different platforms, mainly GitHub, Reddit, Gitlabs, the popular Stack Overflow, and more! The purpose of this document, written in Markdown, is to give the reader a simple tutorial or crash course and detail its relevance and uses in the software engineering world.
 
 ## Tutorial
 This section of the document will give a tutorial on the basic syntax for using Markdown.
@@ -50,12 +50,19 @@ To create ordered lists, number each item in the list with a number followed by 
 
 Unordered lists can be done by constitently using either dashes, astericks, or plus signs before each item. Indented items can be done by hitting tab before using the dash, asterick, or plus sign.  
 
+#### Nested Lists
+Nested lists use the same concepts as creating lists and indenting items. To create a nested list within the list being created, simply add at least two spaces after the end of the list element the new list will be nested under.   
+Then add four spaces from the position of the above list element before starting the new list element line with the symbol of your choice, numbers for ordered lists or astericks, dashes, etc. for unordered lists. An example is shown below.   
+![nestedloop1](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/74106672/6c164609-82ca-4777-80ce-fc477287f8fc)
+![nestedloop2](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/74106672/3bcb855e-cf1b-49a0-b68e-3a2199023754)
+
+
 ### Paragraphs
 To create paragraphs, simply use at least one blank line in between lines of text. An example is shown below.   
 <img width="115" alt="paragraph1" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/74106672/bcc50f47-7691-4b41-b947-52cb277d7f05">
 <img width="118" alt="paragraph2" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/74106672/9dbc7b5a-7121-4a6f-a413-d7cd6b1e642f">
 
-There are many more features used in Markdown, these are only a few. To read more about Markdown in regards to syntax, or other inquiries, consult this link: https://www.markdownguide.org/
+There are many more features available in Markdown besides the few mentioned above. Markdown supports tables, text strikethrough, emojis, code-style blocks, just to name a few. To read more about Markdown in regards to syntax, or other inquiries, consult this link: https://www.markdownguide.org/
 
 ## Use with Documentation
 Markdown is a vital tool used for documentation, an integral part of software engineering. The Markdown language can be used in README files, which are files with instructions on how to install, set up, and use the project, coupled with images, links and more. Markdown is also used in documentation within the project such as for API documentation, comments and descriptions written by developers, and more. Additionally, Markdown can be easily converted into different languages or formats such as PDF, HTML, and more.
