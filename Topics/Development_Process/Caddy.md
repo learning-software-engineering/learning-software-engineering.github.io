@@ -11,6 +11,7 @@ Caddy can be run using a [downloaded executable](https://github.com/caddyserver/
 
 # Quick Start
 
+
 ## Simple Reverse Proxy
 Caddy can be [used](https://caddyserver.com/docs/quick-starts/reverse-proxy) to manage requests made to your host
 
@@ -22,12 +23,18 @@ caddy reverse-proxy --from :80 --to :9000
 **Example**: 
 
 ## Simple File Server
-Caddy can host a [file server](https://caddyserver.com/docs/quick-starts/static-files) to browse and access files from a public folder on your server
+Caddy can host a [file server](https://caddyserver.com/docs/quick-starts/static-files) to browse and access files from a public folder on your server. The below would allow access through your webbrowser at https://example.com (assuming you have the domain example.com directed to your host's ip using a registration service)
 ```sh
 caddy file-server --root /srv --domain example.com --browse
 ```
 
-##  Running with a Caddyfile
+Caddy can serve static websites (i.e. plain HTML/CSS/JS) by using a similar command as above
+```sh
+caddy file-server --root /srv --domain example.com
+```
+
+
+## Running with a Caddyfile
 The following files will default to reading `/etc/caddy/Caddyfile`. A different location can be specified using the `--config` flag. Full documentation can be found at https://caddyserver.com/docs/command-line
 
 [`caddy validate`](https://caddyserver.com/docs/command-line#caddy-validate)
