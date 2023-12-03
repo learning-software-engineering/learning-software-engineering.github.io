@@ -125,27 +125,13 @@ In SQL, a query is a statement/command used to retrieve or manipulate data in a 
 Suppose we have the following tables:
 
 `sports`:
-| sport_id | sport_name |
-| -------- | ---------- |
-| 1 | basketball |
-| 2 | soccer |
-| 3 | baseball |
+![1](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/96089912/d98b165b-b44a-4e10-9cd7-b41a9d421c16)
 
 `teams`:
-| team_id | team_name | sport_id |
-| ------- | --------- | -------- |
-| 1 | Toronto Raptors | 1 |
-| 2 | San Antonio Spurs | 1 |
-| 3 | Golden State Warriors | 1 |
-| 4 | Manchester City F.C. | 2 |
-| 5 | Paris Saint-Germain F.C. | 2 |
+![2](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/96089912/84087bef-a6aa-456b-9111-472c539d364b)
 
 `players`:
-| player_id | first_name | last_name | age | team_id |
-| --------- | ---------- | --------- | --- | ------- |
-| 1 | Stephen | Curry | 35 | 3 |
-| 2 | Erling | Haaland | 23 | 4 |
-| 3 | Kylian | Mbappé | 24 | 5 |
+![3](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/96089912/22c7face-2365-4f6c-9b54-e762304a5dd1)
 
 
 #### `SELECT`
@@ -154,22 +140,15 @@ To retrieve all columns of a table, you can use the `SELECT *` statement and `FR
 SELECT * FROM players;
 ```
 This query outputs all columns of all rows of the table `players`, i.e. the entire table `players`:
-| player_id | first_name | last_name | age | team_id |
-| --------- | ---------- | --------- | --- | ------- |
-| 1 | Stephen | Curry | 35 | 3 |
-| 2 | Erling | Haaland | 23 | 4 |
-| 3 | Kylian | Mbappé | 24 | 5 |
+![4](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/96089912/73d6ce8f-852b-42cc-929a-544b98b5b825)
 
 To query only certain columns of a table, you can use the `SELECT` statement and specify the columns you want in the clause:
 ``` 
 SELECT first_name, last_name FROM players;
 ```
 In this example, the output is a smaller table that only contains the columns `first_name` and `last_name` of each row from the table `players`:
-| first_name | last_name |
-| ---------- | --------- |
-| Stephen | Curry |
-| Erling | Haaland |
-| Kylian | Mbappé |
+![5](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/96089912/a9825711-35d1-4e62-8cc9-43000b98e44d)
+
 
 #### `CROSS JOIN`
 You can get the Cartesian product of two or more tables by listing the tables in the `FROM` clause separated by commas:
@@ -181,23 +160,8 @@ or by using the `CROSS JOIN` clause:
 SELECT * FROM sports CROSS JOIN teams;
 ```
 In these queries, each row of table `sports` is combined with each row of the table `teams`, resulting in a combination of all rows:
-| sport_id | sport_name | team_id | team_name | sport_id |
-| -------- | ---------- | ------- | --------- | -------- |
-| 1 | basketball | 1 | Toronto Raptors | 1 |
-| 1 | basketball | 2 | San Antonio Spurs | 1 |
-| 1 | basketball | 3 | Golden State Warriors | 1 |
-| 1 | basketball | 4 | Manchester City F.C. | 2 |
-| 1 | basketball | 5 | Paris Saint-Germain F.C. | 2 |
-| 2 | soccer | 1 | Toronto Raptors | 1 |
-| 2 | soccer | 2 | San Antonio Spurs | 1 |
-| 2 | soccer | 3 | Golden State Warriors | 1 |
-| 2 | soccer | 4 | Manchester City F.C. | 2 |
-| 2 | soccer | 5 | Paris Saint-Germain F.C. | 2 |
-| 3 | baseball | 1 | Toronto Raptors | 1 |
-| 3 | baseball | 2 | San Antonio Spurs | 1 |
-| 3 | baseball | 3 | Golden State Warriors | 1 |
-| 3 | baseball | 4 | Manchester City F.C. | 2 |
-| 3 | baseball | 5 | Paris Saint-Germain F.C. | 2 |
+![6](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/96089912/b5c0e9cc-c779-467a-ac8e-f589c605fe81)
+
 
 #### `WHERE`
 The table `teams` has the column `sport_id`, but suppose we want to read off the sport name of each team. To do this, we need to combine it with the table `sports` to get the name associated with each `sport_id`. In the query above, we combined the two tables, but not all rows of the output are meaningful. For example, the fourth row associates basketball with Manchester City F.C., which is a soccer team. To filter out the nonsensical combinations, we can use the `WHERE` clause:
@@ -205,13 +169,7 @@ The table `teams` has the column `sport_id`, but suppose we want to read off the
 SELECT * FROM sports, teams WHERE sports.sport_id = teams.sport_id;
 ```
 This clause allows you to retrieve only the rows that meet the specified conditions. The output of this query would be:
-| sport_id | sport_name | team_id | team_name | sport_id |
-| -------- | ---------- | ------- | --------- | -------- |
-| 1 | basketball | 1 | Toronto Raptors | 1 |
-| 1 | basketball | 2 | San Antonio Spurs | 1 |
-| 1 | basketball | 3 | Golden State Warriors | 1 |
-| 2 | soccer | 4 | Manchester City F.C. | 2 |
-| 2 | soccer | 5 | Paris Saint-Germain F.C. | 2 |
+![7](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/96089912/30fbd91f-7992-4a23-92df-52411973a8b4)
 
 By using `WHERE`, we were able to eliminate the rows where the `sport_id`'s didn't match. The output has one row per team, and each row contains the name of the sport associated with respective team.
 
@@ -226,26 +184,16 @@ Another option is to use `NATURAL JOIN` in the `FROM` clause:
 SELECT * FROM sports NATURAL JOIN teams;
 ```
 `NATURAL JOIN` automatically matches and combines the columns with the same name in the tables being joined. Since `sport_id` is an attribute in both `sports` and `teams`, the resulting set includes all unique columns from both tables and excludes duplicate columns. The output of these queries are:
-| sport_id | sport_name | team_id | team_name |
-| -------- | ---------- | ------- | --------- |
-| 1 | basketball | 1 | Toronto Raptors |
-| 1 | basketball | 2 | San Antonio Spurs |
-| 1 | basketball | 3 | Golden State Warriors |
-| 2 | soccer | 4 | Manchester City F.C. |
-| 2 | soccer | 5 | Paris Saint-Germain F.C. |
+![8](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/96089912/00b8a3e8-808b-485c-b95d-2763da77ad7a)
+
 
 To select specific columns of the result set, we can use the same syntax that was mentioned before:
 ```
 SELECT sport_name, team_name FROM sports NATURAL JOIN teams;
 ```
 Output:
-| sport_name | team_name |
-| --------- | --------- |
-| basketball | Toronto Raptors |
-| basketball | San Antonio Spurs |
-| basketball | Golden State Warriors |
-| soccer | Manchester City F.C. |
-| soccer | Paris Saint-Germain F.C. |
+![9](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/96089912/0e96af5a-f681-49c1-a0e6-aa3346977b0a)
+
 
 #### `AS`
 It is possible to rename attributes in the result set using the `AS` clause:
@@ -253,13 +201,8 @@ It is possible to rename attributes in the result set using the `AS` clause:
 SELECT sport_name as sport, team_name as team FROM sports NATURAL JOIN teams;
 ```
 Output:
-| sport | team |
-| --------- | --------- |
-| basketball | Toronto Raptors |
-| basketball | San Antonio Spurs |
-| basketball | Golden State Warriors |
-| soccer | Manchester City F.C. |
-| soccer | Paris Saint-Germain F.C. |
+![10](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/96089912/a65573a6-4652-4bd3-95db-0b121aa9d251)
+
 
 #### `ORDER BY`
 To order the output based on a specific column(s), you can use the `ORDER BY` clause:
@@ -267,25 +210,13 @@ To order the output based on a specific column(s), you can use the `ORDER BY` cl
 SELECT * FROM teams ORDER BY team_name;
 ```
 Output:
-| team_id | team_name | sport_id |
-| ------- | --------- | -------- |
-| 3 | Golden State Warriors | 1 |
-| 4 | Manchester City F.C. | 2 |
-| 5 | Paris Saint-Germain F.C. | 2 |
-| 2 | San Antonio Spurs | 1 |
-| 1 | Toronto Raptors | 1 |
+![11](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/96089912/48dfffc0-1ccb-443f-9c40-0ff612b76317)
 
 ```
 SELECT sport_name as sport, team_name as team FROM sports NATURAL JOIN teams ORDER BY sport, team;
 ```
 Output:
-| sport | team |
-| --------- | --------- |
-| basketball | Golden State Warriors |
-| basketball | San Antonio Spurs |
-| basketball | Toronto Raptors |
-| soccer | Manchester City F.C. |
-| soccer | Paris Saint-Germain F.C. |
+![12](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/96089912/0ae32af9-cf2b-44b7-a895-0ba038a418d6)
 
 (Note: although using the original column names in the `ORDER BY` clause may work, it is generally recommended to use the aliases defined in the `SELECT` clause.)
 
@@ -294,13 +225,7 @@ To order in descending order, use the `DESC` attribute:
 SELECT * FROM teams ORDER BY team_name DESC;
 ```
 Output:
-| team_id | team_name | sport_id |
-| ------- | --------- | -------- |
-| 1 | Toronto Raptors | 1 |
-| 2 | San Antonio Spurs | 1 |
-| 5 | Paris Saint-Germain F.C. | 2 |
-| 4 | Manchester City F.C. | 2 |
-| 3 | Golden State Warriors | 1 |
+![13](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/96089912/2f4619ff-a2d7-443f-b4e4-148e317d84de)
 
 
 PostgreSQL has several aggregate functions that perform calculations on a set of rows and returns a single value. Some commonly used functions are `COUNT()`, `SUM()`, `AVG()`, `MAX()` and `MIN()`. You can read more about them [here](https://www.postgresql.org/docs/9.5/functions-aggregate.html).
