@@ -108,7 +108,7 @@
 
 ### [Django Basics and Django Rest Framework](./Tech_Stacks/Django_Rest.md)
 
-### [Introduction to Django Templates](./Tech_Stacks/Introduction_to_Django_Templates.md) 
+### [Django Templates](./Tech_Stacks/Django_Templates.md) 
 
 ### [Lodash Basics with Javascript](./Tech_Stacks/Lodash.md)
 
