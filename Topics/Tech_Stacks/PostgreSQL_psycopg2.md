@@ -1,3 +1,6 @@
+---
+layout: default
+---
 # Learning PostgreSQL and psycopg2
 
 ## Table of contents
