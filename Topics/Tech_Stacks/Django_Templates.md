@@ -11,6 +11,7 @@ Django projects typically process data in some way, such as tailoring informatio
 Django Template Language (DTL) can be used to dynamically generate HTML pages, and other text-based formats such as XML and CSV. This article will introduce basic DTL syntax through generating a simple HTML webpage. As a running example, suppose we have the following static page for our WcDonald's Restaurant website:
 
 ```
+{% raw %}
 <!DOCTYPE html>
 <html>
     <head>
@@ -25,6 +26,7 @@ Django Template Language (DTL) can be used to dynamically generate HTML pages, a
           </ul>
     </body>
 </html>
+{% endraw %}
 ```
 
 What if we want to change the menu items? Or change the visibility of items on sale, which also change periodically? We can do so by creating a Django template. But first, we must introduce some setup and basic syntax.
@@ -49,13 +51,17 @@ Django templates for webpages involve both static HTML tags, and DTL-specific [s
 ### Variables
 **Variable Substitution** is done by wrapping the variable name (passed in from the context) with double curly braces: 
 ```
+{% raw %}
 <li>{{ menu_item }}</li>
+{% endraw %}
 ```
 So this would render as a list item whose text is the value of `menu_item`. If this variable doesn't exist in the given context, then its value is `None` by default, and it would simply render an empty string. However, this can be [configured](https://docs.djangoproject.com/en/1.11/ref/templates/api/#how-invalid-variables-are-handled).
 
 We can also pass in lists/dictionaries. Using a `.` performs a lookup by index/attribute:
 ```
+{% raw %}
 <li>{{ menu_items.0.name }}</li>
+{% endraw %}
 ```
 
 Assuming `menu_items` is a list of dictionaries, this would display the first dictionary's `name` value.
@@ -64,13 +70,15 @@ Assuming `menu_items` is a list of dictionaries, this would display the first di
 DTL's built-in tags conveniently allow for conditional statements, loops, loading static files, and [more](https://docs.djangoproject.com/en/4.2/ref/templates/builtins/). Tags are characterized by the `%` symbol inside curly braces.
 
 #### Conditional Statements
-The syntax and [boolean operators](https://docs.djangoproject.com/en/4.2/ref/templates/builtins/#boolean-operators) for conditionals inside the tags are similar to Python, except it must end with an `{% endif %}` tag.:
+The syntax and [boolean operators](https://docs.djangoproject.com/en/4.2/ref/templates/builtins/#boolean-operators) for conditionals inside the tags are similar to Python, except it must end with an `{% raw %}{% endif %}{% endraw %}` tag.:
 ```
+{% raw %}
 {% if menu_item.is_special %}
     <li class="special">{{ menu_item.name}}</li>
 {% else %}
     <li class="regular">{{ menu_item.name}}</li>
 {% endif %}
+{% endraw %}
 ```
 
 #### Loops
@@ -100,19 +108,23 @@ app/
 ```
 With the above setup, we do not have to configure `settings.py`. However, you may want a `static` folder in other locations, such as the `root` directory. In this case, you must configure `settings.py` [accordingly](https://docs.djangoproject.com/en/4.2/howto/static-files/#).
 
-Now, in the template we must load the static files with the `{% load static %}` tag, and include a specific file using the `{% static %}` tag. With the above file structure, we can simply include the `.css` file as follows:
+Now, in the template we must load the static files with the `{% raw %}{% load static %}{% endraw %}` tag, and include a specific file using the `{% raw %}{% static %}{% endraw %}` tag. With the above file structure, we can simply include the `.css` file as follows:
 ```
+{% raw %}
 {% load static %}
 <link rel="stylesheet" href="{% static 'app/css/styles.css' %}">
+{% endraw %}
 ```
-Note that the `{% load static %}` tag must be used before any `{% static %}` tag, so it is generally placed near the top of the template.
+Note that the `{% raw %}{% load static %}{% endraw %}` tag must be used before any `{% raw %}{% static %}{% endraw %}` tag, so it is generally placed near the top of the template.
 
 ### Built-in Filters
 Vaguely, DTL filters transform variables in some way. This may include getting a variable's length, formatting a datetime object, converting a string to a title, and [more](https://docs.djangoproject.com/en/4.2/ref/templates/builtins/#filter).  They are characterized by the pipe `|` operator.
 
 The following puts the length of `list` in a paragraph:
 ```
+{% raw %}
 <p>{{ list | length }}</p>
+{% endraw %}
 ```
 
 ## Putting it together
@@ -120,6 +132,7 @@ Revisiting our initial goal, we want to make WcDonald's webpage more configurabl
 
 In our body, we can use a loop to display an abritrary number of menu items with conditionals to decide whether they are a special or not. Additionally, to change the visibility of special items, we can include our `.css` files in the head:
 ```
+{% raw %}
 {% load static %}
 <!DOCTYPE html>
 <html>
@@ -140,6 +153,7 @@ In our body, we can use a loop to display an abritrary number of menu items with
           </ul>
     </body>
 </html>
+{% endraw %}
 ```
 
 If the item is a special, then we can control its class and style it accordingly using the appropriate selector. 
