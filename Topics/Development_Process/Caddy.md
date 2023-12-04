@@ -8,6 +8,7 @@ The most common use of Caddy is as a simple reverse proxy or webserver, which wi
 
 Caddy can be run using a [downloaded executable](https://github.com/caddyserver/caddy/releases), but for best functionality you should use your preferred package manager. For example, on Debian or Ubuntu, using `sudo apt install caddy` will also install the `/etc/caddy/Caddyfile` config file, and a systemd service that you can use `systemd start caddy` to more robustly run in the background.
 
+If you have a different environment, or need more detailed instructions, refer to the [Caddy installation page]
 
 # Quick Start
 
@@ -15,12 +16,13 @@ Caddy can be run using a [downloaded executable](https://github.com/caddyserver/
 ## Simple Reverse Proxy
 Caddy can be [used](https://caddyserver.com/docs/quick-starts/reverse-proxy) to manage requests made to your host
 
-**Example**: Show your project running on port 9000 when you type `localhost` in your browser
+**Example**: Show your project running on port 9000 when you type `localhost` in your browser 
+
+> NOTE: by default, web browsers request port 80 unless a different protocol like `https://` is specified or a different port is specified
 ```sh
 caddy reverse-proxy --from :80 --to :9000
 ``` 
 
-**Example**: 
 
 ## Simple File Server
 Caddy can host a [file server](https://caddyserver.com/docs/quick-starts/static-files) to browse and access files from a public folder on your server. The below would allow access through your webbrowser at https://example.com (assuming you have the domain example.com directed to your host's ip using a registration service)
@@ -28,14 +30,18 @@ Caddy can host a [file server](https://caddyserver.com/docs/quick-starts/static-
 caddy file-server --root /srv --domain example.com --browse
 ```
 
-Caddy can serve static websites (i.e. plain HTML/CSS/JS) by using a similar command as above
+Caddy can also serve static websites (i.e. plain HTML/CSS/JS) by using the above command without the `--browse` flag
 ```sh
 caddy file-server --root /srv --domain example.com
 ```
 
 
-## Running with a Caddyfile
-The following files will default to reading `/etc/caddy/Caddyfile`. A different location can be specified using the `--config` flag. Full documentation can be found at https://caddyserver.com/docs/command-line
+## Caddyfile
+While there do exist [ways](https://caddyserver.com/docs/config-adapters) to tackle configuration using other formats, the most common (and easiest) way to do so is through the [Caddyfile](https://caddyserver.com/docs/caddyfile). All configuration you'll ever need to do can be done through it, though you can always keep different aspects of what you're doing in separate files and [import](https://caddyserver.com/docs/caddyfile/directives/import) them as necessary if your project is better organized that way.
+
+
+## Common Caddy Subcommands
+The following commands will default to reading `/etc/caddy/Caddyfile`. A different location can be specified using the `--config` flag. Full documentation on using can be found at https://caddyserver.com/docs/command-line
 
 [`caddy validate`](https://caddyserver.com/docs/command-line#caddy-validate)
 
@@ -48,14 +54,12 @@ The following files will default to reading `/etc/caddy/Caddyfile`. A different 
 [`caddy start`](https://caddyserver.com/docs/command-line#caddy-start) and [`caddy stop`](https://caddyserver.com/docs/command-line#caddy-stop)
 
 - Runs Caddy in the background (i.e. will give back the shell after starting)
- 
-While there do exist [ways](https://caddyserver.com/docs/config-adapters) to tackle caddy configuration using other formats, the most common (and easiest) way to do so is through the [Caddyfile](https://caddyserver.com/docs/caddyfile). All configuration you'll ever need to do can be done through it, though you can always keep different aspects of what you're doing in separate files and [import](https://caddyserver.com/docs/caddyfile/directives/import) them as necessary.
 
----
+## Caddyfile Examples 
 
-*This is assuming your frontend is being served on port 8080 and your backend on port 9000* 
+> NOTE: The following examples assume your frontend and backend are running on the same machine caddy is running on, with your frontend on port 8080 and your backend on port 9000
 
-**Example**: Serving API and frontend from the same machine but different subdomains
+**Example**: Serving API and frontend from the same machine, accessed through different subdomains
 ```s
 # No port specified will default to port 80 for HTTP
 # And port 443 for HTTPS 
@@ -68,7 +72,7 @@ api.example.com {
 }
 ```
 
-**Example**: Serving API from specific path
+**Example**: Serving API from specific path through a single domain/subdomain 
 ```s
 example.com {
     # Caddy will stop at the first match
@@ -122,9 +126,23 @@ In the context of a Caddyfile, an Address is the part of what is specifically be
  
 As you can see, the protocol (HTTP vs HTTPS) and port (`:8080`) can be specified
 
-#### Single Address in File
+### Single Address in File
 
-When using Caddy to serve content from a single Address, e.g. `localhost`, no brackets around the options are required. Simply type your Address at the top of the file, and list options (known as [directives](https://caddyserver.com/docs/caddyfile/directives)) line by line.
+When using Caddy to serve content from a single Address, e.g. `localhost`, no brackets around the options provided to the Address are required. Simply type your Address at the top of the file, and list options (known as [directives](https://caddyserver.com/docs/caddyfile/directives)) line by line.
+
+**Example**: Both of the following are complete Caddyfiles that will do the same thing as the first example on this page
+```s
+localhost {
+    reverse_proxy :9000
+}
+```
+
+```s
+# since this Caddyfile only involves one Address (localhost), we can put the options for it on new lines and avoid brackets!
+localhost
+
+reverse_proxy :9000
+```
 
 **Example**: Caddyfile version of the Simple File Server
 ```s
@@ -133,7 +151,9 @@ When using Caddy to serve content from a single Address, e.g. `localhost`, no br
 }
 
 # address by which to access Caddy
-# will respond to HTTP (port 80) and HTTPS (port 443) by default
+# normally the options below this would need to be enclosed
+# in a {} block following the Address, but since this file
+# only involves this one, we can keep the options as new lines 
 localhost 
 
 # Brackets ARE needed to specify multiple arguments to individual directives. 
