@@ -159,3 +159,5 @@
 ### [Introduction to C](./Tech_Stacks/C/C_Table_of_Contents.md)
 
 ### [StripeAPI Setup](./Tech_Stacks/StripeAPI.md)
+
+### [Intro to Flask with Flask-SQLAlchemy](./Tech_Stacks/Flask.md)
