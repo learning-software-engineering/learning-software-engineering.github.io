@@ -1,7 +1,7 @@
 # Intro to Godot
 
 ## What is Godot?
-{IMAGE OF GODOT ENGINE}
+![Godot Game Engine.png](Topics/Tech_Stacks/Godot/02-3d-outdoor-with-editor.png)
 Godot is an open source game engine which is considered a versatile platform for developing 2D as well as 3D games to release on the web, mobile, desktop and even console![^1]
 
 It was originally developed in 2001 by an Argentinian Game Studio. Ever since it got released as an open source game engine, the features it provide has tremendously improved.
