@@ -18,6 +18,8 @@ The features it includes are:
 - It supports Blender
 - It supports C# programming
 - It also has a custom programming language called GDScript which is similar to python in terms of syntax
+- Asset Library is a platform where users can upload and download pre-made assets for their game development
+![Godot Asset Library](Godot-intro-2.jpg)
 
 ## How to Get Started
 ### Installation
