@@ -21,7 +21,7 @@ The features it includes are:
 
 ## How to Get Started
 ### Installation
-1. Go to the Godot [official website](https://godotengine.org/) and download the engine.
+1. Go to the Godot [official website](https://godotengine.org/) and download the engine. (For linux users go to this [website](https://godotengine.org/download/linux/))
 	- There's 2 types of engine, one is the latest version and the other one is the Long Term Support (LTS) version
 	- I will be using the Latest Version (4.2.1) for this intro.
 2. Unzip the folder and open `Godot_v4.2.1-stable_win64.exe`
