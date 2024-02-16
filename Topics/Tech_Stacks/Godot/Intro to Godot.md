@@ -30,8 +30,10 @@ After opening the game engine, you'll see something like this:
 ![Godot Project Menu](Godot-intro-1.jpg)
 To create a new project you'll have to:
 1. Click on `New`
-2. Create a folder to store your project
-	- Note: Creating a project will not create a new directory, it'll simply put all the required files within the path you set it to.
-3. 
+2. Create a folder to store your project or find a path to the directory you want to store the project
+	- Note: Creating a project will not create a new directory, it'll simply put all the required files within the path you set it to
+3. Create and your done!
+### Introduction to the UI of the Game Engine
+
 ## References
 [^1]:[Introduction to Godot](https://docs.godotengine.org/en/stable/getting_started/introduction/introduction_to_godot.html)
