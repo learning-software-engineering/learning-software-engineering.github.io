@@ -55,7 +55,19 @@ Here's a breif introduction to the interface and what you could do with it.
 	- For example, 2D will take you to a 2D game development screen for 2D games, 3D will do something similar
 	- The script screen is where you write your code for your games and it's supported with a debugger.
  	- Scripts that are written are attached to the nodes created for your scene ([Read More Here](https://docs.godotengine.org/en/stable/getting_started/step_by_step/scripting_first_script.html))
- - 
+
+## What's next?
+Now that you know the basics for what the UI does you are now ready to hop into a tutorial to create your first game!
+
+Check out these tutorials for a start!
+### GDScript
+- [Godot GDScript Tutorial For Beginners Crash Course](https://www.youtube.com/watch?v=ytbwZgWvCfM)
+### 2D Games
+- [Make A 2D Platformer In 10 MINUTES (Godot 4)](https://www.youtube.com/watch?v=9u6edV5-EEI)
+- [2D Platformer Quick Start Guide ~ Godot 4 GameDev Tutorial for Beginners](https://www.youtube.com/watch?v=43c-Sm5GMbc)
+### 3D Games
+- [Godot 4 3D Platformer Lesson #1: Let's Get Started!](https://www.youtube.com/watch?v=CI-cVKuSD1s&list=PLda3VoSoc_TTp8Ng3C57spnNkOw3Hm_35)
+- [Design 3D Game Levels From Scratch - Godot 4 Tutorial](https://www.youtube.com/watch?v=dV6S_11pyzo)
 ## References
 [^1]: [Introduction to Godot](https://docs.godotengine.org/en/stable/getting_started/introduction/introduction_to_godot.html)
 [^2]: [Scenes and Nodes](https://docs.godotengine.org/en/3.1/getting_started/step_by_step/scenes_and_nodes.html#scenes)
