@@ -49,7 +49,13 @@ Here's a breif introduction to the interface and what you could do with it.
         - It always consist of one parent node, and running a game means running a scene. A game can consist of many scenes but for a game to run, they'll have to run on one of the scenes.
 2. File System [^3]
      - This is where all your scripts, images, models, audio and many other file component of your project are stored.
-3. 
+3. Game View / Screen
+     - This would be introduced with **#6** which is the different menu of the game engine
+     - When you click on one of the menus (i.e. 2D, 3D, Script, AssetLib), the Game View will take you to its corresponding Screen
+	- For example, 2D will take you to a 2D game development screen for 2D games, 3D will do something similar
+	- The script screen is where you write your code for your games and it's supported with a debugger.
+ 	- Scripts that are written are attached to the nodes created for your scene ([Read More Here](https://docs.godotengine.org/en/stable/getting_started/step_by_step/scripting_first_script.html))
+ - 
 ## References
 [^1]: [Introduction to Godot](https://docs.godotengine.org/en/stable/getting_started/introduction/introduction_to_godot.html)
 [^2]: [Scenes and Nodes](https://docs.godotengine.org/en/3.1/getting_started/step_by_step/scenes_and_nodes.html#scenes)
