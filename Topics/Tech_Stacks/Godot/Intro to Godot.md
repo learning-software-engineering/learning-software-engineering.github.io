@@ -71,6 +71,9 @@ That's all! Now you know the basics of the UI you can start learning the
 ## What's next?
 Now that you know the basics for what the UI does you are now ready to hop into a tutorial to create your first game!
 
+### Working with VSC on Godot
+Here's a [reddit post](https://www.reddit.com/r/godot/comments/16ve6y3/how_to_get_vscode_working_nicely_with_godot_and/) on how one could setup the workspace for VSC and Godot
+
 Check out these tutorials for a start!
 ### GDScript
 - [Godot GDScript Tutorial For Beginners Crash Course](https://www.youtube.com/watch?v=ytbwZgWvCfM): This will teach you the basics you need for Godot's custom programming language, GDScript
