@@ -36,6 +36,6 @@ To create a new project you'll have to:
 	- Note: Creating a project will not create a new directory, it'll simply put all the required files within the path you set it to
 3. Create and your done!
 ### Introduction to the UI of the Game Engine
-
+![Godot Project View](Godot-intro-3.jpg)
 ## References
 [^1]:[Introduction to Godot](https://docs.godotengine.org/en/stable/getting_started/introduction/introduction_to_godot.html)
