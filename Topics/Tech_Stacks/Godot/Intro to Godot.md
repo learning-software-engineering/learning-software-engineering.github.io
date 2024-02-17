@@ -56,8 +56,10 @@ Here's a breif introduction to the interface and what you could do with it.
 	- The script screen is where you write your code for your games and it's supported with a debugger.
  	- Scripts that are written are attached to the nodes created for your scene ([Read More Here](https://docs.godotengine.org/en/stable/getting_started/step_by_step/scripting_first_script.html))
   	- There's also the Assets Library tab which was mentioned here [here](#Features)
-4. Coding Miscellaneous
-     - 
+4. Coding/Miscellaneous Support
+     - The bottom tabs pops up when you click on the respective buttons such as Output, Debugger, Audio, Animation, Shader Editor
+     - They help you with constructing and interaction of different nodes within the game
+5. Inspector
 ## What's next?
 Now that you know the basics for what the UI does you are now ready to hop into a tutorial to create your first game!
 
