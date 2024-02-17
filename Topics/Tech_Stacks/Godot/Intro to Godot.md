@@ -37,5 +37,17 @@ To create a new project you'll have to:
 3. Create and your done!
 ### Introduction to the UI of the Game Engine
 ![Godot Project View](Godot-intro-3.jpg)
+Here's a breif introduction to the interface and what you could do with it.
+1. The Scene [^2]
+   - This is where you create Nodes.
+   	- Nodes are basically building blocks for a game, they could be either moving mobs, objects or even traps that the player node can interact with.
+   	- They have names, editable attributes, can be extended and have a callback attribute every frame
+   - The scene is basically a group of nodes that makes up a stage for your game
+        - It always consist of one parent node, and running a game means running a scene. A game can consist of many scenes but for a game to run, they'll have to run on one of the scenes.
+2. File System [^3]
+     
+3. 
 ## References
-[^1]:[Introduction to Godot](https://docs.godotengine.org/en/stable/getting_started/introduction/introduction_to_godot.html)
+[^1]: [Introduction to Godot](https://docs.godotengine.org/en/stable/getting_started/introduction/introduction_to_godot.html)
+[^2]: [Scenes and Nodes](https://docs.godotengine.org/en/3.1/getting_started/step_by_step/scenes_and_nodes.html#scenes)
+[^3]: [File System] (https://docs.godotengine.org/en/stable/getting_started/introduction/first_look_at_the_editor.html#:~:text=There%20are%20four%20main%20screen,design%20levels%20for%203D%20games.)
