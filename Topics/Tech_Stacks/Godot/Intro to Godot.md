@@ -3,7 +3,8 @@
 ## What is Godot?
 ![Godot Game Engine.png](02-3d-outdoor-with-editor.png)
 Godot is an open source game engine which is considered a versatile platform for developing 2D as well as 3D games to release on the web, mobile, desktop and even console![^1]
-
+Since Godot is a free open source game engine, it is less hideous to access compared to game engine like unity where you have to sign up for licenses and even pay fees to access the game engine.
+It could be considered a good platform to start learning game development since the game engine is free itself.
 It was originally developed in 2001 by an Argentinian Game Studio. Ever since it got released as an open source game engine, the features it provide has tremendously improved.
 
 Some games one might recognize that are made by the Godot game engine includes would be games like Dome Keeper as well as Endoparasitic.
