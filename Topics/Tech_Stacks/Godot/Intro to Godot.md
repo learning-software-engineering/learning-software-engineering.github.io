@@ -55,7 +55,9 @@ Here's a breif introduction to the interface and what you could do with it.
 	- For example, 2D will take you to a 2D game development screen for 2D games, 3D will do something similar
 	- The script screen is where you write your code for your games and it's supported with a debugger.
  	- Scripts that are written are attached to the nodes created for your scene ([Read More Here](https://docs.godotengine.org/en/stable/getting_started/step_by_step/scripting_first_script.html))
-
+  	- There's also Scripts tab as well as Assets Library which was mentioned here [here](#Features)
+4. Coding Miscellaneous
+     - 
 ## What's next?
 Now that you know the basics for what the UI does you are now ready to hop into a tutorial to create your first game!
 
