@@ -65,6 +65,8 @@ Here's a breif introduction to the interface and what you could do with it.
 
    - The inspector page let's you edit the properties of the nodes as shown in the image above.
 
+Another feature with this screen is that you are able to drag, set and dock the windows/tools tab according to your preference so you could personalize your own workspace and make it seem unique.
+
 That's all! Now you know the basics of the UI you can start learning the 
 ## What's next?
 Now that you know the basics for what the UI does you are now ready to hop into a tutorial to create your first game!
