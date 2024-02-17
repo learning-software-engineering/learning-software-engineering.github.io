@@ -60,6 +60,7 @@ Here's a breif introduction to the interface and what you could do with it.
      - The bottom tabs pops up when you click on the respective buttons such as Output, Debugger, Audio, Animation, Shader Editor
      - They help you with constructing and interaction of different nodes within the game
 5. Inspector
+   	![Image of Inspector](editor_intro_inspector_dock.webp)
 ## What's next?
 Now that you know the basics for what the UI does you are now ready to hop into a tutorial to create your first game!
 
