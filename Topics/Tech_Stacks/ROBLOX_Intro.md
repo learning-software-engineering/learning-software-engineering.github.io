@@ -28,7 +28,7 @@ At first glance a lot of people may dimiss ROBLOX as not being a "real" game eng
 But the truth is, ROBLOX really is capable of some awesome things:
 
 ![coaster](ROBLOX_Intro_images/coaster.png)
-*One of my theme parks in "Theme Park Tycoon 2", featuring a coaster builder that can rival that of Planet Coaster (believe, I've tried both!)*
+*One of my theme parks in "Theme Park Tycoon 2", which features an advanced coaster builder that can rival that of Planet Coaster (believe me, I've tried both!)*
 
 ## Download
 
