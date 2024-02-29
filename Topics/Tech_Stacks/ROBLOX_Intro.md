@@ -30,6 +30,9 @@ But the truth is, ROBLOX really is capable of some awesome things:
 ![coaster](ROBLOX_Intro_images/coaster.png)
 *One of my theme parks in "Theme Park Tycoon 2", which features an advanced coaster builder that can rival that of Planet Coaster (believe me, I've tried both!)*
 
+![retro studio](ROBLOX_Intro_images/retro.png)
+*RetroStudio, which allows players to create their own games emulating different eras of ROBLOX - an engine made in ROBLOX itself!*
+
 ## Download
 
 
@@ -50,6 +53,8 @@ But the truth is, ROBLOX really is capable of some awesome things:
 
 ### Games Mentioned
 [Natural Disaster Survival](https://www.roblox.com/games/189707/Natural-Disaster-Survival)
+
+[RetroStudio](https://www.roblox.com/games/5846386835/RetroStudio)
 
 [Theme Park Tycoon 2](https://www.roblox.com/games/69184822/Theme-Park-Tycoon-2)
 
