@@ -33,8 +33,10 @@ But the truth is, ROBLOX really is capable of some awesome things:
 ![retro studio](ROBLOX_Intro_images/retro.png)
 *RetroStudio, which allows players to create their own games emulating different eras of ROBLOX - an engine made in ROBLOX itself!*
 
-## Download
+There are a lot more but then the introduction would be too long, so let's just get started.
 
+## Download
+The first thing you'll need to do is create a ROBLOX account. Once you do that, you just need to head over to [the create page](https://create.roblox.com/landing) and download ROBLOX Studio. Easy!
 
 ## Creating a New Project
 
@@ -49,6 +51,8 @@ But the truth is, ROBLOX really is capable of some awesome things:
 
 
 ## References
+[ROBLOX Create Page](https://create.roblox.com/landing)
+
 [Luau](https://luau-lang.org/)
 
 ### Games Mentioned
