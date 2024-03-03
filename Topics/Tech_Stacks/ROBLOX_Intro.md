@@ -39,10 +39,21 @@ There are a lot more but then the introduction would be too long, so let's just 
 The first thing you'll need to do is create a ROBLOX account. Once you do that, you just need to head over to [the create page](https://create.roblox.com/landing) and download ROBLOX Studio. Easy!
 
 ## Creating a New Project
-
+Upon opening ROBLOX Studio, you'll be greeted with this page:
+![studio_home](ROBLOX_Intro_images/studiohome.png)
+You can see there are many starter templates for you to choose from. Let's start simple and fresh with the second option, "Classic Baseplate."
 
 ## ROBLOX Studio HUD Overview
+![studiohud](ROBLOX_Intro_images/studiohud.png)
+On the left side is the toolbox, this is where you can find lots of free models you can use. If you don't see it, you can enable it by pressing the "Toolbox" button in the top bar.
 
+On the right is the explorer, where you can see the full object hierarchy of your game. At the bottom of it is the properties panel, where you can view the properties of selected objects.
+
+In the middle of the screen is the camera. You can use the WASD keys to move the camera around, and right-click + drag to rotate it. You can hold the Shift key with WASD to move it slowly. You can also click and drag the scroll wheel to pan the camera.
+
+At the bottom of the camera is the console output. If you don't see it, go to the View tab (at the top of the screen) and press the "Output" button. While you're at it, make sure the command bar is enabled by pressing the "Command Bar" button, too.
+![viewbar](ROBLOX_Intro_images/viewbar.png)
+You can also enable the explorer and properties panel if you don't see them, too.
 
 ## Getting Started with Your First ROBLOX Experience
 
