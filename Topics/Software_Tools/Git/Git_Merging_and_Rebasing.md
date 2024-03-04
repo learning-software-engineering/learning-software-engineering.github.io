@@ -78,7 +78,7 @@ Merging resulted in a branch that looked like:
 ```
 
 But, wouldn’t it be nice if `feature` could look like:
-> A -> B -> C -> D -> E -> F -> G
+> A -> B -> C -> E -> F -> D -> G
 
 In a nutshell, we pretend that `feature` didn’t actually branch off at commit C, and instead branched off at the latest commit of `main`: commit F. You have just described rebasing!
 
@@ -99,7 +99,7 @@ An important note to make is that each commit is “moved” one-by-one, therefo
 Rebasing comes with a big advantage though: it creates an entirely linear history after the rebase because it acts as if the branch that is being rebased was created after the latest commit of the branch being rebased on. This may not seem like such a big deal, but when you’re trying to track down what commit caused a certain bug, you will be wishing that your git history was linear!
 
 Doesn't this:
-> A -> B -> C -> D -> E -> F -> G
+> A -> B -> C -> E -> F -> D -> G
 
 Look better than this?
 ```
@@ -129,12 +129,11 @@ When you start an interactive rebase, you’ll be met with a log of the commits 
 As a toy example:
 
 ```
-pick abc1234 Commit D
-pick def5678 Commit C
-pick ghi1234 Commit B
-pick jkl5678 Commit A
+pick abc1234 Commit A
+pick def5678 Commit B
+pick ghi1234 Commit C
+pick jkl5678 Commit D
 ```
-> Interactive rebase displays your commits in reverse chronological order. So, your latest commits are at the top.
 
 Note that `Commit <letter>` represents your commit message.
 
@@ -143,48 +142,48 @@ By default, each commit has “pick” to its left, which means Git will simply 
 - To change the order of your commits, copy-paste your commits into the order you want.
 ```
 // Swap Commit B and Commit C
-pick abc1234 Commit D
-pick ghi1234 Commit B
-pick def5678 Commit C
-pick jkl5678 Commit A
+pick abc1234 Commit A
+pick ghi1234 Commit C
+pick def5678 Commit B
+pick jkl5678 Commit D
 ```
 - To change a commit’s message, replace “pick” with “reword”.
 ```
-reword abc1234 Commit D
-pick def5678 Commit C
-pick ghi1234 Commit B
-pick jkl5678 Commit A
+reword abc1234 Commit A
+pick def5678 Commit B
+pick ghi1234 Commit C
+pick jkl5678 Commit D
 ```
 - To squash a commit into the previous commit, replace “pick” with “squash”.
 ```
-squash abc1234 Commit D
-pick def5678 Commit C
-pick ghi1234 Commit B
-pick jkl5678 Commit A
+pick abc1234 Commit A
+squash def5678 Commit B
+pick ghi1234 Commit C
+pick jkl5678 Commit D
 ```
-> The "previous" commit is the commit under this commit. So, we are squashing Commit D into Commit C.
+> We are squashing Commit B into Commit A.
 - To squash a commit into the previous commit but use the previous commit’s message, replace “pick” with “fixup”.
 ```
-fixup abc1234 Commit D
-pick def5678 Commit C
-pick ghi1234 Commit B
-pick jkl5678 Commit A
+pick abc1234 Commit A
+fixup def5678 Commit B
+pick ghi1234 Commit C
+pick jkl5678 Commit D
 ```
-> The "previous" commit is the commit under this commit. So, we are making Commit D a fixup of Commit C.
+> We are making Commit B a fixup of Commit A.
 - To drop (i.e. delete) a commit, replace “pick” with “drop”.
 ```
-drop abc1234 Commit D
-pick def5678 Commit C
-pick ghi1234 Commit B
-pick jkl5678 Commit A
+drop abc1234 Commit A
+pick def5678 Commit B
+pick ghi1234 Commit C
+pick jkl5678 Commit D
 ```
 > If you remove a line, the commit is implicitly dropped.
 - To edit or split up a commit, replace “pick” with “edit”.
 ```
-edit abc1234 Commit D
-pick def5678 Commit C
-pick ghi1234 Commit B
-pick jkl5678 Commit A
+edit abc1234 Commit A
+pick def5678 Commit B
+pick ghi1234 Commit C
+pick jkl5678 Commit D
 ```
 
 Once you’ve decided on your actions, save and exit the editor, and the rebase will begin. Remember that Git is applying your commits top-down, and so any conflicts that occur need to be solved on a commit-by-commit basis! If you get regrets on the rebase, you can cancel at any time with `git rebase --abort`, which will undo everything done during the rebase.
