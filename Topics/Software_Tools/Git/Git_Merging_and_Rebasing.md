@@ -14,7 +14,7 @@ Both `git merge` and `git rebase` are methods for integrating new commits that a
     If you prefer to read an article over watching a video, this is the resource for you, as it covers all of the topics that the above two videos cover. It also covers more scenarios that you may find yourself in while using rebase as part of your workflow. In particular, the section called [The Golden Rule of Rebasing](https://www.atlassian.com/git/tutorials/merging-vs-rebasing#the-golden-rule-of-rebasing) will help you make sure that you don't accidentally bring catastrophe upon your repository while using rebase. Additionally, there is a short section on interactive rebase, a powerful tool that give you control over your branch history. 
 
 
-# A primer on `git merge` and `git rebase`
+# `git merge` and `git rebase` in brief
 
 One of the most useful features that Git introduced was *branching*. This is the cornerstone of how collaboration is done in Git, but one of the complications is when you want to reconcile the changes made in one branch with the work done in another branch. 
 
@@ -26,7 +26,7 @@ There are two different ways of combining two branches: merging and rebasing. Th
 
 The first and classic way to combine the work done in two branches is to *merge* the two branches together. Merging is usually the default way to reconcile changes between branches because it preserves commit history (and is thus “safer”), and resolving merge conflicts is (relatively) simple compared to rebasing.
 
-Say you are currently checked out into the `feature` branch, and you want to merge your commits in that branch into the `main` branch.
+Say you want to merge some new commits from the `main` branch into your `feature` branch.
 
 Your `feature` branch branched off of the `main` branch at some commit. We’ll illustrate the commits in chronological order (so commit B was committed after commit A).
 
@@ -38,18 +38,27 @@ So, your `main` branch may look like:
 And, your `feature` branch may look like:
 > A -> B -> C -> D -> G
 
-But notice that there are commits in main that happened after feature was branched off. These are commits E and F. We want to merge the changes made in those commits into `feature`; perhaps they are useful for the work we’re doing in `feature`. 
+But notice that there are commits in `main` that happened after `feature` was branched off. In other words, we want commits E and F to be imported into the `feature` branch; perhaps they are useful for the work we’re doing in `feature`. 
 
-What we’ll do is merge `main` into `feature`. This firstly creates a merge commit in `feature` which incorporates all of the changes made in `main` but not in `feature` by comparing their *diffs*. Any changes made in `main` but not `feature` are then applied to `feature` via the merge commit.
+You run:
+
+```
+git checkout feature
+git merge main
+```
+
+What  this does is merge `main` into `feature`. This firstly creates a merge commit in `feature` which incorporates all of the changes made in `main` but not in `feature` by comparing their *diffs*. Any changes made in `main` but not `feature` are then applied to `feature` via the merge commit.
 
 Then, in the Git log, you’ll see that the commits in these two branches are preserved, but they then converge with the merge commit.
 
 So, `feature` now has both the commits of `main` and itself, so it is “up to date” with `main`:
-> Feature branch:
->
-> A -> B -> C -> E -> F -> (merge commit)
->
->             ↳ D -> G -> ⬏
+```
+Feature branch:
+
+ A -> B -> C -> E -> F -> (merge commit)
+
+             ↳ D -> G -> ⬏
+```
 
 ## Rebasing
 
@@ -58,13 +67,15 @@ As you saw, merging does not hide the fact that `feature` and `main` were being 
 Recall that the `main` branch looks like:
 > A -> B -> C -> E -> F
 
-And the `feature` branch look likes:
+And the `feature` branch looks like:
 > A -> B -> C -> D -> G
 
 Merging resulted in a branch that looked like:
-> A -> B -> C -> E -> F -> (merge commit)
->
->             ↳ D -> G -> ⬏
+```
+ A -> B -> C -> E -> F -> (merge commit)
+
+             ↳ D -> G -> ⬏
+```
 
 But, wouldn’t it be nice if `feature` could look like:
 > A -> B -> C -> D -> E -> F -> G
@@ -73,11 +84,17 @@ In a nutshell, we pretend that `feature` didn’t actually branch off at commit 
 
 Rebasing is when you change the commit at which a branch was branched off from another branch. 
 
-So, in our example, we are rebasing `feature` on `main`, because we are changing the base commit, or “rebasing” `feature`. 
+So, in our example, we are rebasing `feature` on `main`; we are changing the base commit of `feature` onto the latest commit of `main`. 
+
+So, you run:
+```
+git checkout feature
+git rebase main
+```
 
 You can visualize this as detaching every commit in `feature` after commit C (the last commit that `main` and `feature` share) and appending them to the end of `main`. Then, this new branch becomes the rebased version of `feature`.
 
-An important note to make is that each commit is “moved” one-by-one, therefore unlike merging, you can actually encounter multiple merge conflicts while rebasing. 
+An important note to make is that each commit is “moved” one-by-one, therefore unlike merging, you can actually encounter multiple rounds of merge conflicts while rebasing. If there is a conflict, Git will prompt you to resolve it as soon as Git encounters the conflicting commit. Unlike with merging, `git rebase` cannot count on a "merge commit" to solve conflicts since no new commits are created at all. 
 
 Rebasing comes with a big advantage though: it creates an entirely linear history after the rebase because it acts as if the branch that is being rebased was created after the latest commit of the branch being rebased on. This may not seem like such a big deal, but when you’re trying to track down what commit caused a certain bug, you will be wishing that your git history was linear!
 
@@ -85,16 +102,15 @@ Doesn't this:
 > A -> B -> C -> D -> E -> F -> G
 
 Look better than this?
->
-> A -> B -> C -> E -> F -> (merge commit)
->
->             ↳ D -> G -> ⬏
+```
+ A -> B -> C -> E -> F -> (merge commit)
 
-
+             ↳ D -> G -> ⬏
+```
 
 ### A small warning
 
-You should take care with rebasing if you’re working with a remote repository! Rebasing is rewriting history, and as a general rule, rewriting history is dangerous when done on a branch that multiple people work on. However, if you are the only person working on that branch, rebasing is harmless if you know what you are doing.
+You should take care with rebasing if you’re working with a remote repository! Rebasing is rewriting history, and as a general rule, rewriting history is dangerous when done on a branch that multiple people work on. However, if you are the only person working on that branch, rebasing can be harmless if you know what you are doing.
 
 The general advice is that you should only rebase branches that you are working on by yourself. If you expect multiple people to be working on a branch, you should stick to merging. You may also find that when two branches have diverged for a long time, rebasing may cause you to need to solve many rounds of merge conflicts, while merging requires only 1 round of merge conflicts (remember the merge commit?).
 
@@ -110,14 +126,66 @@ To start an interactive rebase, use `git rebase --i <commit hash>`, where <commi
 
 When you start an interactive rebase, you’ll be met with a log of the commits you’ll be rebasing (oldest commits at the top).
 
+As a toy example:
+
+```
+pick abc1234 Commit D
+pick def5678 Commit C
+pick ghi1234 Commit B
+pick jkl5678 Commit A
+```
+> Interactive rebase displays your commits in reverse chronological order. So, your latest commits are at the top.
+
+Note that `Commit <letter>` represents your commit message.
+
 By default, each commit has “pick” to its left, which means Git will simply add that commit as-is.
 
 - To change the order of your commits, copy-paste your commits into the order you want.
+```
+// Swap Commit B and Commit C
+pick abc1234 Commit D
+pick ghi1234 Commit B
+pick def5678 Commit C
+pick jkl5678 Commit A
+```
 - To change a commit’s message, replace “pick” with “reword”.
+```
+reword abc1234 Commit D
+pick def5678 Commit C
+pick ghi1234 Commit B
+pick jkl5678 Commit A
+```
 - To squash a commit into the previous commit, replace “pick” with “squash”.
+```
+squash abc1234 Commit D
+pick def5678 Commit C
+pick ghi1234 Commit B
+pick jkl5678 Commit A
+```
+> The "previous" commit is the commit under this commit. So, we are squashing Commit D into Commit C.
 - To squash a commit into the previous commit but use the previous commit’s message, replace “pick” with “fixup”.
+```
+fixup abc1234 Commit D
+pick def5678 Commit C
+pick ghi1234 Commit B
+pick jkl5678 Commit A
+```
+> The "previous" commit is the commit under this commit. So, we are making Commit D a fixup of Commit C.
 - To drop (i.e. delete) a commit, replace “pick” with “drop”.
+```
+drop abc1234 Commit D
+pick def5678 Commit C
+pick ghi1234 Commit B
+pick jkl5678 Commit A
+```
+> If you remove a line, the commit is implicitly dropped.
 - To edit or split up a commit, replace “pick” with “edit”.
+```
+edit abc1234 Commit D
+pick def5678 Commit C
+pick ghi1234 Commit B
+pick jkl5678 Commit A
+```
 
 Once you’ve decided on your actions, save and exit the editor, and the rebase will begin. Remember that Git is applying your commits top-down, and so any conflicts that occur need to be solved on a commit-by-commit basis! If you get regrets on the rebase, you can cancel at any time with `git rebase --abort`, which will undo everything done during the rebase.
 
