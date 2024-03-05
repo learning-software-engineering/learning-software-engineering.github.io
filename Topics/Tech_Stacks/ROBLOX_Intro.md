@@ -15,7 +15,7 @@ Let's be honest, I'm fairly certain most of you reading this know what ROBLOX is
 
 But in case you didn't know, ROBLOX is a multi-billion-dollar platform that lets users create their own games (dubbed "experiences") in their own engine, which can then be uploaded to the ROBLOX website for all to see. Users can also create their own avatars that they can play as in these games.
 
-It's kind of like Scratch (come on, you've gotta know what that is!), but instead of making projects by dragging and dropping code blocks, ROBLOX uses a full-on scripting language they call [Luau](https://luau-lang.org/).
+It's kind of like Scratch (come on, you've gotta know what that is!), but instead of making projects by dragging and dropping code blocks, ROBLOX uses a full-on scripting language they call [Luau](https://luau-lang.org/). It's not as rich in features as something like Unity or Godot, but it's simple and easy to learn.
 
 At first glance a lot of people may dimiss ROBLOX as not being a "real" game engine, mostly due to the blocky style that most games have:
 
@@ -55,11 +55,37 @@ At the bottom of the camera is the console output. If you don't see it, go to th
 ![viewbar](ROBLOX_Intro_images/viewbar.png)
 You can also enable the explorer and properties panel if you don't see them, too.
 
+### The Workspace
+Open up the workspace in the explorer panel, and you should see this:
+![workspace](ROBLOX_Intro_images/workspace.png)
+
+Look familiar? It's just everything currently in the game's playable area! The Camera refers to the main camera used when playing the game, the Baseplate is the giant grey block that forms the ground, and Terrain is the base object for any terrain in your game (we will ignore this for now, head to [Further Reading](#further-reading) if you want to know more).
+
+### The Properties Panel
+Select the Baseplate in the explorer and go to its properties.
+![baseplate properties](ROBLOX_Intro_images/baseplateproperties.png)
+
+Notice that you can't select the Baseplate in the preview window. This is because of the *Locked* property. I recommend keeping this on as you don't want to accidentally select something so big.
+
+In the Appearance section, you can play around with properties such as color, material, and transparency.
+
+If you scroll down, you'll find a lot more properties such as size and position.
+![baseplate properties scrolled down](ROBLOX_Intro_images/baseplateproperties2.png)
+
+There are a lot more properties you can play around with and I encourage you to explore them!
+
+### The Command Bar
+ROBLOX Studio offers a command bar that can execute code while in the editor, instead of during runtime. Since ROBLOX doesn't have prefabs like in Unity, you can use the command line to loop through objects and apply properties en masse.
+
+As an example, type in `print("Hello, World!")` in the command bar, hit enter, and look at what appears in the output window!
+
+Remark: since Luau doesn't care about indentation, you can execute any program in the command bar!
+
 ## Getting Started with Your First ROBLOX Experience
 
 
 ## Further Reading
-
+[Terrain](https://create.roblox.com/docs/parts/terrain)
 
 ## References
 [ROBLOX Create Page](https://create.roblox.com/landing)
