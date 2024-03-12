@@ -190,10 +190,39 @@ When you playtest, you should now spawn on the SpawnLocation. If you're facing t
 
 ![orientation indicator](ROBLOX_Intro_images/orientationindicator.png)
 
+### Win Condition
+It's not an obstacle course if there's no reward at the end! We will make the reward one of ROBLOX's classic gears: a Bloxy Cola.
+
+First, we need to get the Bloxy Cola gear from the toolbox. If it isn't open already, open the toolbox from the button in the Home tab. Then, search for "bloxy cola" and select one of the top results. I will be using this one:
+
+![bloxy cola toolbox](ROBLOX_Intro_images/bloxycolatoolbar.png)
+
+Click on it, and click "No" when it asks if you want to insert it into StarterPack. This will place the Bloxy Cola into the workspace. Move it to the end of your obby. Now when your character model touches the cola, it should be inserted into your inventory!
+
+![bloxy drink](ROBLOX_Intro_images/bloxydrink.png)
+
+You can left-click with the cola equipped to drink it.
+
+### Customization
+The obby doesn't look very impressive right now. Or at least, mine doesn't - yours may vary depending on how much creative liberty you took:
+
+![basic obby](ROBLOX_Intro_images/basicobby.png)
+
+Try inserting new parts and using the Studio building tools (move, scale, rotate) to customize your obby to make it more complex and interesting!
+
+![finished obby](ROBLOX_Intro_images/finishedobby.png)
+
+### Conclusion
+You learned how to insert and manipulate parts, made a basic script, and learned how to use the toolbox. However, there's still a lot left for you to learn!
+
+Check out the [official tutorial series](https://create.roblox.com/docs/en-us/tutorials) if you want to continue learning.
+
 ## Further Reading
 [Client-Server Model](https://create.roblox.com/docs/projects/client-server)
 
 [Collection Service](https://create.roblox.com/docs/reference/engine/classes/CollectionService)
+
+[Official Tutorials](https://create.roblox.com/docs/en-us/tutorials)
 
 [Scripts](https://create.roblox.com/docs/scripting/scripts)
 
