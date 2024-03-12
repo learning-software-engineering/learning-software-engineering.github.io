@@ -29,6 +29,8 @@ To display the contents of a file:
 cat file.txt
 ```
 
+<img width="363" alt="Screenshot 2024-03-11 at 11 28 56 PM" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/98674104/2504e6f6-a0cf-4e13-a1eb-5ae9f0412acd">
+
 ## Concatenating Files
 
 To concatenate multiple files into one:
@@ -36,6 +38,8 @@ To concatenate multiple files into one:
 ```bash
 cat file1.txt file2.txt > combined.txt
 ```
+
+<img width="528" alt="Screenshot 2024-03-11 at 11 49 17 PM" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/98674104/2850772a-6e3d-4dd5-af35-e97b8a985413">
 
 ## Creating Files
 
@@ -52,6 +56,9 @@ To append text to an existing file:
 ```bash
 cat >> existingfile.txt
 ```
+<img width="452" alt="Screenshot 2024-03-12 at 12 00 29 AM" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/98674104/4c3bc972-8242-4de0-8a1d-d869656630ec">
+
+<img width="348" alt="Screenshot 2024-03-12 at 12 01 00 AM" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/98674104/40153a7b-bf24-4d8d-ad0a-35cb4f93c26c">
 
 ## Viewing Non-Printing Characters
 
@@ -79,6 +86,8 @@ cat can also be used to view the contents of multiple files sequentially on the 
 ```bash
 cat file1.txt file2.txt file3.txt
 ```
+
+<img width="502" alt="Screenshot 2024-03-12 at 12 03 41 AM" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/98674104/3be8397f-788d-4394-b2a2-438f83bbc4f9">
 
 ## Conclusion
 
