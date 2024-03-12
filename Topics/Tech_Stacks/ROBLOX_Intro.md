@@ -168,15 +168,32 @@ Select your killbrick and hit CTRL + D to duplicate it. Do this twice, so you sh
 
 ![killbricks](ROBLOX_Intro_images/killbricks.png)
 
-You now have obstacles that you can jump over! How fun! However, notice that the script is also duplicated for each killbrick. It's not hard to see that if you want to change one script, you'll have to manually change the others. And most obbies have hundreds of killbricks! How do we make this scalable?! If only ROBLOX had prefabs like in Unity!
+You now have obstacles that you can jump over! How fun!
 
-### Collection Service & Tagging
-One way to solve this problem is to iterate over every killbrick and connect to each of their `Touched` events that way. This way we only need one script managing every killbrick. 
+### A Note on Scalability
+Notice that the script is also duplicated for each killbrick. It's not hard to see that if you want to change one script, you'll have to manually change the others. And most obbies have hundreds of killbricks! How do we make this scalable?! If only ROBLOX had prefabs like in Unity!
+
+ To solve this problem, we iterate over every killbrick and connect to each of their `Touched` events. This way we only need one script managing every killbrick. 
 
 We could group all the killbricks into a folder and use [GetChildren](https://create.roblox.com/docs/reference/engine/classes/Instance#GetChildren) to iterate over them, but this limits how you can structure the workspace.
 
+Another option is to tag each killbrick then use [Collection Service](https://create.roblox.com/docs/reference/engine/classes/CollectionService) to iterate over them. This is beyond the scope of this tutorial, however, but I'll leave a link in [Further Reading](#further-reading).
+
+### Customizing the Player's Spawn Point
+If you haven't noticed yet, every time you playtest your game your player spawns at the centre of the baseplate. This is because we haven't added our own [SpawnLocation](https://create.roblox.com/docs/reference/engine/classes/SpawnLocation) object yet. A SpawnLocation is essentially a special part that acts as your player's spawn point. It's rather self-explanatory.
+
+In the explorer, right-click on the workspace, then "Insert Object", and search for a SpawnLocation. Then you can drag it to wherever you want - the default size is also rather big, so you can use the scale tool to size it down if you'd like.
+
+![spawn point](ROBLOX_Intro_images/spawnadded.png)
+
+When you playtest, you should now spawn on the SpawnLocation. If you're facing the wrong direction, you can right-click on it and enable "Show Orientation Indicator" - from there you can rotate it so the blue dot, indicating the part's forward axis, is facing where you want it to.
+
+![orientation indicator](ROBLOX_Intro_images/orientationindicator.png)
+
 ## Further Reading
 [Client-Server Model](https://create.roblox.com/docs/projects/client-server)
+
+[Collection Service](https://create.roblox.com/docs/reference/engine/classes/CollectionService)
 
 [Scripts](https://create.roblox.com/docs/scripting/scripts)
 
