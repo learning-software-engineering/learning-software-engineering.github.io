@@ -11,9 +11,7 @@ When creating a new product as a product manager, the common stages involve orga
 
 A product development strategy is created by the product management team to be the step-by-step plans involved in propelling the product forward at each stage of its lifecycle. It also highlights the priorities, goals, and limitations of the project in order to set clear boundaries for the cross functional teams when questions arise. 
 
-The PDS also takes into account factors such as market trends, user feedback, and competitive products to ensure the greatest product-market fit. 
-
-Creating an informed product development strategy is critical to the success of the product because it aligns cross-functional teams around a shared set of priorities and goals. This will help these teams make better informed decisions when unexpected situations arise. For example if there is a predefined PDS in place, then when users are confused with a minor feature during the collecting feedback stage of the product life cycle, the design team will know to put that on hold in order to focus on a bigger feature given the time outlined in the PDS. Additionally, with the priorities that a PDS outlines, this allows for greater internal organization clarity, such as knowing which resources to allocate to what teams, and more accurate timeframe estimates. This in turn allows for more clear communication with external stakeholders such as the company leaders, clients, and partners. 
+Creating an informed product development strategy is critical to the success of the product because it aligns cross-functional teams around a shared set of priorities and goals. This will help these teams make better informed decisions when unexpected situations arise. For example if there is a predefined PDS in place, then when users are confused with a minor feature during the collecting feedback stage of the product life cycle, the design team will know to put that on hold in order to focus on a bigger feature given the time outlined in the PDS. 
 
 # Steps to Build a Product Development Strategy
 
@@ -24,13 +22,13 @@ Product development strategies will vary based on a variety of factors such as t
 3. Build a Prototype And Test the Product 
 4. Launch the Product 
 
-## Conduct Market Research
+## 1. Conduct Market Research
 
-	An idea for a new feature or product may sound great in theory. However, to discover if there would be a real demand in the market, then effective market research must first be conducted to ensure true product-market fit. Conducting market research is the preliminary data gathering step, in which the product research team looks at existing data from sources to gain an understanding of the general user scope to find where the demand or pain points may lie.  
+	An idea for a new feature or product may sound great in theory. However, to discover if there would be a real demand in the market, then effective market research must first be conducted to ensure true product-market fit. Conducting market research is the preliminary data gathering step, in which the product research team looks at existing data from sources to gain an understanding of the general user scape to find where the demand or pain points may lie.  
 
 Common sources PM’s use include industry reports, statistics, and news articles, to find where their proposed new product may fit in the market. They then collect, aggregate, and form ideas from the data and put it in a centralized location so that the entire product team can access it and decide on the direction of the product. 
 
-With many possible directions that a product can take, it is important for a product manager to choose a prioritization framework to streamline the decision making process and pick the most suitable features of a product to work on. A prioritization framework is designed to help teams make informed decisions about choosing which opportunities to pursue based on pre established business goals, product requirements, and constraints. 
+With many possible directions that a product can take, it is important for a product manager to choose a prioritization framework to streamline the decision making process and pick the most suitable features of a product to work on. A prioritization framework is designed to help teams make informed decisions about choosing which opportunities to pursue based on preestablished business goals, product requirements, and constraints. 
 
 A commonly used framework used in industry is the RICE framework. 
 
@@ -53,9 +51,9 @@ The confidence score accounts for this and scales the overall project score by t
 
 RICE score = $ Reach \cdot Impact \cdot Confidence \div Effort $
 
-Once the field is narrowed, the next stage of the Product Development can be conducted to help strengthen the existing ideas. 
+Once the field is narrowed, the next stage of the product development strategy can be conducted to help strengthen the existing ideas. 
 
-## Conduct Primary Research 
+## 2. Conduct Primary Research 
 
 Market research is important in using existing data to gain valuable insights to the general market. However to better validate the viability of your product before any financial and personnel commitment, it is critical to conduct your own first hand research to fill in any gaps that the broader research may have missed. 
 
@@ -69,6 +67,8 @@ Some example questions that product managers have put on their feedback surveys 
 - Using this product helps me accomplish my goal (Agree/Disagree)
 - What is your step by step process for using this product? 
 - What do you dislike about the product? 
+
+For more questions, visit: https://delighted.com/blog/best-product-survey-questions
 
 Once this first hand data is collected from the target user segment, product managers then can use the feedback to create a product specification sheet. ** Product specification ** is the detailed breakdown of responsibilities and features that each team is working on. With the input from the data collections, product managers with their teams can now know what to build and create the logistical plans for its implementation. 
 
@@ -84,23 +84,31 @@ There are three categories of KPIs product managers keep track of: business perf
 
 ** Gross margin: ** Is the amount of money retained after deducting the direct costs for producing the goods or services it sells. This indicator shows how efficient the production costs of a product are managed. 
 
+```
 Gross margin = Revenue - COGS / Revenue x 100
+```
 
 ** Net profit margin: ** The ratio of profit a product earns to the total revenue (net sales) the product generates expressed as a percentage. This is a key indicator of the profitability of a product. 
 
+```
 Net profit margin = Revenue - Cost / Revenue 
+```
 
 ** Customer and user engagement KPIs help monitor user loyalty, satisfaction, and retention. ** Some key KPIs in this category to monitor are:
 
 ** Conversion rate: ** Is the percentage of users who undertake a desired action (such as purchasing the product, signing up for an account, or clicking on a video)
 
+```
 Conversion rate = total conversions / total visitors x 100
+```
 
 ** Customer acquisition cost (CAC): ** The cost acquiring a new customer. 
 
 ** Churn rate: ** The percentage of customers who stop using the product. 
 
+```
 Churn rate = Lost customers / Total customers at start of time period x 100
+```
 
 ** Product development KPIs measure the efficiency and efficacy of the development lifecycle. ** These KPIs will help monitor that the development team is on track in an agile working environment. 
 
@@ -110,9 +118,50 @@ Churn rate = Lost customers / Total customers at start of time period x 100
 
 ** Feature adoption rate: ** How fast users adopt the product’s new features. 
 
+```
 Feature adoption rate = Number of new feature users / Total number of feature users x 100
+```
 
-Choosing which KPIs to track should align with the company’s broader business goals such as increasing profitability in the next quarter by 10%. With the research conducted and strategic KPIs chosen for the product specification sheet, the next step in the product development strategy is to create the prototype. 
+Choosing which KPIs to track should align with the company’s broader business goals such as increasing profitability in the next quarter by 10%. With the research conducted and strategic KPIs chosen for the product specification sheet, the next step in the product development strategy is to create nad test the prototype. 
+
+## 3. Build a Prototype And Test the Product 
+
+Creating a prototype during product development is important in several respects:
+
+- ** Iterate better: **  The conventional method of creating a formal requirements document for the product outlining all its features is a highly time consuming process. In order to give specific and detailed feedback, the person must study the document extensively to know where to request their changes. With prototypes however, they can be faster to create and if a change is required, the requester can directly point to the place in the UI where the change is requested. This allows product teams to make changes faster, and iterate better. 
+- ** Better technical feedback: ** Developers often see the product late in the design process. If they can be shown a prototype of the product early on however, (instead of the usual lengthy documentation) they can easily see the dependencies between elements and suggest new solutions to help build the MVP. 
+
+The ** Minimum Viable Product ** (MVP) is the simplest version of a product, and has the express purpose of having enough features to attract customers and validate a product idea. An MVP is low risk due to the lower cost and allows product teams to then learn, refine, and scale their product before a bigger investment is made. 
+
+Testing the product allows the product team to see how customers may use or respond to the new capability and allows for the capture of errors before its launch. Standard industry approaches to product testing include A/B testing and QA testing. 
+
+** A/B Testing **
+
+This form of testing is when two or more versions of the same product are created. They may vary slightly—the size of text in a website’s UI for example—or considerably such as different shapes for the device. This allows the product team to identify the best performing feature through learning about user preferences and needs.  
+
+This is an effective form of testing because it allows for a direct comparison to be made between the single variation in the product, helping teams obtain accurate results about that specific variant. 
+
+Running a A/B test involves the following steps:
+
+** 1. Determine the data to capture: ** It is important to first determine what you want to measure, and whether it can be quantified such that the results will provide your team with insight into the hypothesis. 
+** 2. Prepare a Hypothesis: ** Create a theory on how users will react to a feature of your product
+** 3. Build and Run the Experiment: ** Create the variants of your product, and determine how long to conduct the test, as well as how much data to receive. It can be beneficial to use the predetermined KPIs as a measure of user performance. 
+** 4. Measure Results: ** The results from the experiments can be used to make a decision about which features of the product to carry through on based on the highest performing variation. 
+
+Learn more about A/B testing here: https://www.productplan.com/glossary/a-b-test/  
+
+** QA Testing **
+Quality assurance testing occurs usually in a simulated environment, where teams can imitate the actions of a user story to determine whether the product has any bugs or unintended effects. For example, a testing team may perform user actions on several different operating systems with variations on each system to ensure that the feature works as intended across all platforms. 
+
+Learn more about QA testing here: https://www.indeed.com/career-advice/career-development/types-of-product-testing 
+
+Once testing is complete on the product, it is ready to be launched.
+
+## 4. Launch the Product 
+
+
+
+
 
 ## Sources:
 
