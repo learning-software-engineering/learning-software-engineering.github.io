@@ -134,9 +134,13 @@ In the scene however, while all of the platforms share the same surface, you can
 
 You can create a prefab variant by changing an instance of a prefab inside of your scene, and dragging the object into your project window, just as you would normally create a prefab asset. Unity will ask if you want to make it an original prefab or a prefab variant.
 
-![](image.png)
+![](Unity_Organization_Images/create-variant.png)
 
-Thus, you can easily drag and drop whichever platform prefab you desire into your scene, adjust the properties of 
+By choosing the Prefab Variant option, you will have successfully created a prefab variant for your project! Thus, you can easily drag and drop whichever platform prefab you desire into your scene, adjust its properties and it will be reflected on all instances of that variant in your game. Any changes made to the hitbox from the original prefab will also be reflected on your variants' instances.
+
+More examples of possible variants could be moving, checkpoint, or crumbling platforms. Organizing your prefabs accordingly using prefab variants are useful for making changes to your game more efficient and providing a consistent gameplay throughout. Just imagine how your player might feel if they're playing on platforms that each have hitboxes that are slighly different sizes from each other, just because you didn't use prefabs or prefab variants! Or you copy-pasted multiple platforms, had to add a new script to them, but missed one of the platforms in your scene! With the power of using your prefabs correctly will help you work smarter, not harder.
+
+## Conclusion
 
 ## Reference
 [What is the Unity Hub?](https://support.unity.com/hc/en-us/articles/360061586571-What-is-the-Unity-Hub-#:~:text=The%20Unity%20Hub%20is%20a,and%20installing%20add%2Don%20components.)  
