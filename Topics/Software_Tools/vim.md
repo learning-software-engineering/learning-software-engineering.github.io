@@ -18,7 +18,10 @@ One of the strongest arguments against using Vim over something like VSCode is
 that Vim has a steep learning curve. While it is true that Vim has a steeper
 learning curve, learning the basics of navigation and editing with Vim is not a
 complicated task. Furthermore, knowing how to use Vim can be a useful skill on
-the job. For instance, 
+the job. For instance, when working with remote machines, you will often need to
+edit things like system configuration files, systemd services etc. Furthermore, you'll
+often have to SSH into them from the terminal, meaning you won't have access to other
+editors, only Vim.
 
 
 ### Installation
