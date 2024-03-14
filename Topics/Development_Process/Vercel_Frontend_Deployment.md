@@ -72,6 +72,7 @@ Deploying your project using the Vercel CLI offers flexibility and control over 
 
 ```bash
 npm install -g vercel
+```
 
 2. **Login to Vercel**: Log in to your Vercel account using the following command:
 
@@ -112,6 +113,7 @@ By following these steps, you can deploy your frontend project using Vercel CLI,
 ### Adding Environment Variables
 
 Environment variables are an important part of the project.Here's how you can add environment variables using Vercel CLI:
+
 The `--build-env` option, shorthand `-b`, allows you to provide environment variables to the build step. Here's an example of how to use it:
 
 ```bash
@@ -125,7 +127,10 @@ The --env option, shorthand -e, allows you to provide environment variables at r
 ```bash
 vercel --env KEY1=value1 --env KEY2=value2
 ```
+
 This command sets environment variables KEY1 and KEY2 with the respective values value1 and value2 during runtime.
+
+For more CLI usages, refer to [Vercel documentation](https://vercel.com/docs/cli/deploy).
 
 ## Advanced Vercel Features
 
