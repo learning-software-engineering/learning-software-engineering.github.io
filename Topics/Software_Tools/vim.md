@@ -94,6 +94,37 @@ Here is a diagram of the modes available on vim and how to access them, they wil
 
 ### Navigation
 
+- To create/open a file in vim, go to your terminal and type `vim myfile`
+
+- When you first launch Vim, you will be in Normal mode, this is the default mode when launching Vim
+
+    - Normal mode is primarily used for navigation of a text file as well as moving text around
+
+- Once the file is open, you use `h,j,k,l` to move your cursor left, down, up and right respectively
+
+- Moving text around
+
+    - Being able to move text around is another important part of Normal mode
+
+    - If you want to cut a line and paste it elsewhere then press `dd`, navigate to the line you want to paste to and then press `p`
+
+    - If you just want to copy a line, then press `yy`
+
+    - If you want to delete a character while in Normal mode, then move your cursor over the character and press `x`
+
+- Other useful Normal mode keybindings
+
+    - To move to the end of the file, press `Shift+G`
+
+    - To move to the beginning of the file, press `gg`
+
+    - To move to the end of a line, press `$`
+
+    - To move to the beginning of a line, press `0`
+
+    - To move `x` lines up or down, press `x j` or `x k`
+
+
 
 ### Making Edits
 You can create a file if you don’t already have one you want to edit by using vim <filename>. Now to edit in vim is slightly different
