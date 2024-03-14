@@ -5,6 +5,7 @@
 ### [What is Vercel?](#what-is-vercel-1)
 ### [Why Deploy with Vercel?](#why-deploy-with-vercel-1)
 ### [How to Deploy on Vercel?](#how-to-deploy-on-vercel-1)
+### [Deploying with Vercel CLI](#deploying-with-vercel-cli-1)
 ### [Advanced Vercel Features](#advanced-vercel-features-1)
 ### [Useful Articles](#useful-articles-1)
 
@@ -68,14 +69,28 @@ Vercel Step-by-Step Tutorial: Vercel's own documentation offers a comprehensive 
 Deploying your project using the Vercel CLI offers flexibility and control over the deployment process. Follow these steps to deploy your frontend project with Vercel CLI:
 
 1. **Install Vercel CLI**: If you haven't already installed the Vercel CLI, you can do so by running the following command in your terminal:
-```npm install -g vercel```
+
+```bash
+npm install -g vercel
+
 2. **Login to Vercel**: Log in to your Vercel account using the following command:
-```vercel login```
+
+```bash 
+vercel login
+```
+
 select your method of authentation (Github, GitLab, Bitbucket, etc) and follow instructions on logging in
 3. **Navigate to Project Directory**: Use the `cd` command to navigate to your project directory in the terminal:
-```cd path/to/your/project```
+
+```bash
+cd path/to/your/project
+```
+
 4. **Initialize Deployment**: Once you're in your project directory, initiate the deployment process by running:
-```vercel```
+
+```bash
+vercel
+```
 
 5. **Follow Deployment Prompts**: Vercel CLI will guide you through the deployment process with a series of prompts:
 
@@ -83,6 +98,7 @@ select your method of authentation (Github, GitLab, Bitbucket, etc) and follow i
 - Choose project name
 - Confirm the project to deploy.
 - Review and confirm deployment settings such as the framework (e.g Next.js, Create React App) and project settings (e.g Build Command, Development Command, Install COmmand, Output Directory)
+- Note, Vercel will automatically detect your framework (e.g React, Vue, Angular) and determine the appropriate build settings based on the detected framework.
 ![](./assets/Vercel_CLI.png)
 
 6. **Monitor Deployment**: After confirming the deployment settings, Vercel CLI will start deploying your project. You can monitor the deployment progress directly in your terminal.
@@ -92,6 +108,24 @@ select your method of authentation (Github, GitLab, Bitbucket, etc) and follow i
 8. **Additional Deployment Options**: Vercel CLI offers additional options for customizing your deployment process, such as setting environment variables, specifying deployment regions, and more. Refer to the Vercel CLI documentation for advanced usage.
 
 By following these steps, you can deploy your frontend project using Vercel CLI, leveraging its simplicity and flexibility for a seamless deployment experience. [For more information, see the Vercel documentation](https://vercel.com/docs/cli/deploy).
+
+### Adding Environment Variables
+
+Environment variables are an important part of the project.Here's how you can add environment variables using Vercel CLI:
+The `--build-env` option, shorthand `-b`, allows you to provide environment variables to the build step. Here's an example of how to use it:
+
+```bash
+vercel --build-env KEY1=value1 --build-env KEY2=value2
+```
+
+This command sets environment variables KEY1 and KEY2 with the respective values value1 and value2 during the build process.
+
+The --env option, shorthand -e, allows you to provide environment variables at runtime. Here's an example:
+
+```bash
+vercel --env KEY1=value1 --env KEY2=value2
+```
+This command sets environment variables KEY1 and KEY2 with the respective values value1 and value2 during runtime.
 
 ## Advanced Vercel Features
 
