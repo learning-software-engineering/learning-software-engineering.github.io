@@ -1,11 +1,28 @@
 # Introduction to Unity Organization
 
 ## Table of contents
-#### [Introduction](#introduction)
-#### [Organizing your Unity directories](#organizing-your-unity-directories)
-#### [Organizing your Unity hierarchies](#organizing-your-unity-hierarchies)
-#### [Organizing your prefabs](#organizing-your-prefabs)
-#### [References](#reference)
+#### [Introduction](#introduction-1)
+#### [Organizing your Unity directories](#organizing-your-unity-directories-1)
+* [Initial Directories](#initial-directories)
+* [File Types](#file-types)
+    * [Animations](#animations)
+    * [Images](#images)
+    * [Materials](#materials)
+    * [Prefabs](#prefabs)
+    * [Scenes](#scenes)
+    * [Scripts](#scripts)
+    * [Sounds](#sounds)
+    * [Miscellaneous](#miscellaneous)
+    * [Resources](#resources)
+* [Breakdowns](#breaking-down-your-directories)
+    * [Character-Environment-UI](#character-environment-ui-breakdown)
+    * [Level-based](#level-based-breakdown)
+#### [Organizing your Unity hierarchies](#organizing-your-unity-hierarchies-1)
+#### [Organizing your prefabs](#organizing-your-prefabs-1)
+* [Brief prefab introduction](#brief-introduction-to-prefabs)
+* [Prefab variants](#prefab-variants)
+#### [Additional Resources](#additional-resources-1)
+#### [References](#references-1)
 
 ## Introduction 
 One of the hardest parts of any project is how to get started when faced with a blank, clean slate. An easy and quick way to get your game rolling is by organizing your workspace. Unity is a powerful and versatile game engine, capable of supporting games ranging from small to large. However, as your game grows, so do your files and objects, so organization is key in keeping track of your assets. Especially when working in a team, it is imperative to keep your Unity project organized, so that everyone knows where to find, place, or change files, objects, or prefabs. Without further ado, let's get started!
@@ -15,10 +32,12 @@ One of the hardest parts of any project is how to get started when faced with a 
 You open a fresh new Unity project, but be wary of creating objects and prefabs willy nilly. Almost every file you create will be put inside the Assets folder of your project, but you should almost never find yourself placing a file directly inside of that folder. Instead, one of the first steps when you make your game should be to create subdirectories inside the Assets directory.
 
 There are three subdirectories that should be in every game you create: Prefabs, Scenes, and Scripts.
-![](Unity_organization_Images/three_subfolders.png)
+
+![](Unity_Organization_Images/three_subfolders.png)
 
 While not always present in every game, the following subdirectories are common and prevalent enough in most games, that you will also most likely need to create the following subdirectories as well: Animations, Images (or Sprites), Materials, Resources, Sounds, and Miscellaneous.
-![](Unity_organization_Images/all_subfolders.png)
+
+![](Unity_Organization_Images/all_subfolders.png)
 
 ### File types
 Each of the subdirectories you make will typically only hold files of a certain type, with few exceptions. You can use the following list as a guide on what filetypes should go in which folders.
@@ -64,11 +83,13 @@ This subdirectory is unique, as it is a special folder in Unity. Files inside th
 An example of using the Resources folder is to change the material of an object after a character collides with it.
 
 ![](Unity_Organization_Images/resources_load.png)
+
 In the above image, you can see that in this script, I load two materials into their own variables. Resources.Load will look inside the Resources folder using the given path and file type to create a reference to it inside of the code. Here is what the paths look like inside the Unity Editor's project window:
 
 ![](Unity_Organization_Images/resource_materials.png)
 
 We can then use these variables to change the material of an object. In the following code draft, you can see an example of changing the previous checkpoint's material back to normal and a new checkpoint's material to active after a character collides with it:
+
 ![](Unity_Organization_Images/checkpoint_code.png)
 
 Through this example, you can see how the Resources folder is unique in that files of any type may need to reside inside. A simple way to organize this folder is to subdivide it in the same manner as the Assets folder (Animations, Images, Materials, etc.). However, keep in mind that the Resources folder should be minimized as much as possible, so if you find you do not need any Animations inside the Resources folder, you should not be creating an unnecessary Animations folder inside.
@@ -132,7 +153,7 @@ In the scene however, while all of the platforms share the same surface, you can
 
 ![](Unity_Organization_Images/platform-prefabs.png)
 
-You can create a prefab variant by changing an instance of a prefab inside of your scene, and dragging the object into your project window, just as you would normally create a prefab asset. Unity will ask if you want to make it an original prefab or a prefab variant.
+You can create a prefab variant by right-clicking on a prefab in your project or by dragging an instance of the prefab into your project window, just as you would normally create a prefab asset. Unity will ask if you want to make it an original prefab or a prefab variant.
 
 ![](Unity_Organization_Images/create-variant.png)
 
@@ -140,11 +161,17 @@ By choosing the Prefab Variant option, you will have successfully created a pref
 
 More examples of possible variants could be moving, checkpoint, or crumbling platforms. Organizing your prefabs accordingly using prefab variants are useful for making changes to your game more efficient and providing a consistent gameplay throughout. Just imagine how your player might feel if they're playing on platforms that each have hitboxes that are slighly different sizes from each other, just because you didn't use prefabs or prefab variants! Or you copy-pasted multiple platforms, had to add a new script to them, but missed one of the platforms in your scene! With the power of using your prefabs correctly will help you work smarter, not harder.
 
-## Conclusion
+## Additional Resources
+* [Read about Unity's special folders](https://docs.unity3d.com/Manual/SpecialFolders.html)
 
-## Reference
-[What is the Unity Hub?](https://support.unity.com/hc/en-us/articles/360061586571-What-is-the-Unity-Hub-#:~:text=The%20Unity%20Hub%20is%20a,and%20installing%20add%2Don%20components.)  
-[Getting started with the Unity Editor](https://subscription.packtpub.com/book/game-development/9781801078078/2/ch02lvl1sec04/getting-started-with-the-unity-editor)  
-[Unity Manual](https://docs.unity3d.com/Manual/VisualStudioIntegration.html#:~:text=Unity%20automatically%20uses%20Visual%20Studio,into%20an%20existing%20Unity%20installation.)  
-[Introduction to Unity Editor and Unity Interface](https://getalow.com/unity-engine/introduction-to-unity-editor-and-unity-interface/16)
+* [Learn more about the Unity Resources folder](https://docs.unity3d.com/ScriptReference/Resources.html)
+
+* [Read Unity's best practices on how to organize your project](https://unity.com/how-to/organizing-your-project)
+
+* [Learn how to use the hierarchy window to it's fullest potential](https://docs.unity3d.com/Manual/Hierarchy.html)
+
+* [Discover more about the power of the prefab](https://docs.unity3d.com/Manual/Prefabs.html)
+
+## References
+All information are pulled from the authour's experience. The game belonging to the images in this document can be found [here](https://tomas-ha.itch.io/ascent).
  
