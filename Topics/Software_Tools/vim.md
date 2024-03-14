@@ -91,14 +91,25 @@ Manual Installation:
 
 
 ### Making Edits
-
+You can create a file if you don’t already have one you want to edit by using vim <filename>. Now to edit in vim is slightly different
+to editors you may have used in the past, you’ll first want to enter ‘insert’ mode which can be done by pressing i on your keyboard, 
+now you can navigate around the document and type as you usually would. When you’re done typing you’ll want to press the ESC button 
+which will take you back to ‘command’ (normal) mode. See saving a file for next instructions.
 
 ### Saving a file
-
+Saving a file you have edited is simple in vim. Following the previous section first make sure you’re in command mode. Once there all 
+you have a few options, press : (colon) followed by the following letters to perform the following actions. w – save the current file, 
+wq OR x – save the current file and exit.
 
 ### Copy and pasting
-
+Though there are a lot of options for copy and pasting we’ll simply cover cursor copy and paste since it will be more familiar. You’ll 
+want to begin by putting yourself in command mode on your desired file (pressing ESC). Now you’ll want to enter visual mode, there are 
+a variety of visual mode options but we will be using lowercase v which will begin selecting wherever the cursor is at that moment. 
+More your cursor until you’ve selected the portion you’d like to copy. Now you have to either copy by pressing ‘y’ or cut by pressing 
+‘d’. Now move your cursor to the desired location and press ‘p’ to paste!
 
 ## Additional resources
 
-Vim is an extremely powerful editor 
+https://help.dreamhost.com/hc/en-us/articles/115006413028-Creating-and-editing-a-file-via-SSH
+
+
