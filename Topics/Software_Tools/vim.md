@@ -87,6 +87,11 @@ Manual Installation:
 
 - Run the installer and follow the installation prompts
 
+
+### Modes
+Here is a diagram of the modes available on vim and how to access them, they will be used in the following sections.
+![alt text](https://cs111.byu.edu/articles/vim/assets/vim-modes.png)
+
 ### Navigation
 
 
@@ -111,5 +116,6 @@ More your cursor until you’ve selected the portion you’d like to copy. Now y
 ## Additional resources
 
 https://help.dreamhost.com/hc/en-us/articles/115006413028-Creating-and-editing-a-file-via-SSH
+https://cs111.byu.edu/articles/vim/assets/vim-modes.png
 
 
