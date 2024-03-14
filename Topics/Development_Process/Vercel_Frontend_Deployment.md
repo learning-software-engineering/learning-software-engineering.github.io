@@ -63,6 +63,36 @@ This section covers the steps to deploy a frontend project on Vercel:
 
 Vercel Step-by-Step Tutorial: Vercel's own documentation offers a comprehensive step-by-step tutorial that guides you through the process of using their platform. It's designed as an end-to-end guide for developers to create and deploy web applications​. (https://vercel.com/docs/getting-started-with-vercel)
 
+## Deploying with Vercel CLI
+
+Deploying your project using the Vercel CLI offers flexibility and control over the deployment process. Follow these steps to deploy your frontend project with Vercel CLI:
+
+1. **Install Vercel CLI**: If you haven't already installed the Vercel CLI, you can do so by running the following command in your terminal:
+```npm install -g vercel```
+2. **Login to Vercel**: Log in to your Vercel account using the following command:
+```vercel login```
+select your method of authentation (Github, GitLab, Bitbucket, etc) and follow instructions on logging in
+3. **Navigate to Project Directory**: Use the `cd` command to navigate to your project directory in the terminal:
+```cd path/to/your/project```
+4. **Initialize Deployment**: Once you're in your project directory, initiate the deployment process by running:
+```vercel```
+
+5. **Follow Deployment Prompts**: Vercel CLI will guide you through the deployment process with a series of prompts:
+
+- Choose the scope (personal account or team) for the deployment.
+- Choose project name
+- Confirm the project to deploy.
+- Review and confirm deployment settings such as the framework (e.g Next.js, Create React App) and project settings (e.g Build Command, Development Command, Install COmmand, Output Directory)
+![](./assets/Vercel_CLI.png)
+
+6. **Monitor Deployment**: After confirming the deployment settings, Vercel CLI will start deploying your project. You can monitor the deployment progress directly in your terminal.
+
+7. **Access Deployment URL**: Once the deployment is complete, Vercel CLI will provide you with a URL where your project is hosted. You can visit this URL to access your deployed frontend application.
+
+8. **Additional Deployment Options**: Vercel CLI offers additional options for customizing your deployment process, such as setting environment variables, specifying deployment regions, and more. Refer to the Vercel CLI documentation for advanced usage.
+
+By following these steps, you can deploy your frontend project using Vercel CLI, leveraging its simplicity and flexibility for a seamless deployment experience. [For more information, see the Vercel documentation](https://vercel.com/docs/cli/deploy).
+
 ## Advanced Vercel Features
 
 - **Custom Domains**: 
