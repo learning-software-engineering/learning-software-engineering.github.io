@@ -78,6 +78,8 @@ Adding images to your PDF is straightforward. PDFKit supports JPEG and PNG forma
 const imagePath = 'path/to/image.png'; // Path to your image
 doc.image(imagePath, 50, 150, { width: 300, height: 150 }); // Position (x: 50, y: 150) and scale to width 300, height 150
 ```
+![Output of code snippet](./PDFKit_Graphics/image2.png)
+
 ### Vector Graphics
 
 PDFKit excels at drawing shapes and paths, enabling you to add lines, circles, and arbitrary paths to your documents.
@@ -98,6 +100,8 @@ doc.moveTo(100, 350) // Start at this point
    .closePath() // Connect end to start
    .stroke(); // Stroke the path
 ```
+![Output of code snippet](./PDFKit_Graphics/image3.png)
+
 ### Annotations
 
 You can include links, notes, and highlights in your PDF files, making it perfect for interactive documents.
@@ -122,6 +126,7 @@ doc.underline(20, 20, width, height, {color: 'blue'})
 doc.fillColor('red').highlight(20, doc.y, doc.widthOfString('Hello World!'), 25).text("Hello World!");
 
 ```
+![Output of code snippet](./PDFKit_Graphics/image4.png)
 
 ## Advanced Usage
 
