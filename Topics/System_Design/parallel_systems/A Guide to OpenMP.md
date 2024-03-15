@@ -15,7 +15,6 @@ The following guide assumes that readers are familiar with concurrency (e.g. thr
 In order to parallelize a program, threads/processes must communicate with each other. On a distributed system, they would achieve this through message passing across a network. We focus on parallelism on a single machine (i.e. one or more processors with one or more cores connected through shared memory). On a high-level, this simply means all processors have access to the same physical memory.
 
 ![Alt text](https://www.tutorialspoint.com/inter_process_communication/images/shared_memory.jpg)
-source: tutorialspoint
 
 
 With shared memory, processes can now communicate with each other. However, it also introduces a lot of problems when a process starts to execute concurrently! For example, what happens when two threads try to read/write to the same location? What if thread A depends on thread B, before thread A can do its work? Some of these problems are already covered by the introductions of pthreads in CSC369, however in real life, there is a cleaner alternative, OpenMP, that hides the low level primitives, to allow parallelization.
