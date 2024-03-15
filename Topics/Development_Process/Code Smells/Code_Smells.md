@@ -14,8 +14,20 @@ So, it is crucial to thoroughly understand the organization’s design and devel
 
 Here are the most common code smells that developers usually encounter with:
 
-
-
 ## Duplicate Code
+
+## Improper Names
+
+## Dead Code 
+
+## Middle Man
+
+## Feature Envy
+
+## Long Functions
+
+## Data Clumps
+
+## Comments
 
 
