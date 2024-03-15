@@ -38,7 +38,7 @@ OpenMP uses a shared memory model, meaning that all threads share the same addre
 To setup OpenMP within your program, please ensure that you have compiler support. Then, just include the OpenMP header file at the top of your program, by adding the line `#include <omp.h>`.
 
 
-To declare a region parallel in OpenMP, you need to provide "hints" or "directives" to the compiler as to what you want to parallelize by adding a line with the general form #pragma omp directive_name [clause_list]. To actually declare a region parallel, use the directive_name parallel.
+To declare a region parallel in OpenMP, you need to provide "hints" or "directives" to the compiler as to what you want to parallelize by adding a line with the general form `#pragma omp directive_name [clause_list]`. To actually declare a region parallel, use the directive_name `parallel`.
 
 
 ## Simple Examples
