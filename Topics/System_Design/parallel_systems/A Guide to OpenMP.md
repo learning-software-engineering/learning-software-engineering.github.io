@@ -49,7 +49,7 @@ Below we will share some simple examples of various directives, showcasing the f
 ```c
 #pragma omp parallel 
 { 
-printf("Hello world, I am thread %d out of %d running threads!\n",
+	printf("Hello world, I am thread %d out of %d running threads!\n",
 		omp_get_thread_num(), omp_get_num_threads()); 
 }
 ```
@@ -67,9 +67,10 @@ for(int i = 0; i < arr_length; i++) {
 // parallelized code
 #pragma omp parallel
 {
-#pragma omp for reduction(+:sum)
-for(int i = 0; i < arr_length; i++) {
+	#pragma omp for reduction(+:sum)
+	for(int i = 0; i < arr_length; i++) {
 		sum += arr[i];
+	}
 }
 ```
 
