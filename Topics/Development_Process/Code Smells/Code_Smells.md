@@ -3,6 +3,7 @@
 ## Table of Contents
 
 ### [What is code smell?](#what-is-code-smell-1)
+### [Duplicate Code]
 
 ### What is code smell?
 
