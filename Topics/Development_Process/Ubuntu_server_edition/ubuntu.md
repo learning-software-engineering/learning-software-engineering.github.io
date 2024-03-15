@@ -61,13 +61,27 @@ $ sudo apt install git
 In order for ssh to work, we need to first enable it. After installing the package which should automatically enable the service as in previous step, `sudo systemctl status ssh` to double check. If it's blocked by UFW, `sudo ufw allow ssh`.  
 
 To ssh from another device, in the other device's terminal
-`ssh <username>@<ip address of the router>` like this:
+`ssh <username>@<ip address of the router>` like this:  
+
 ![Alt text](Assets/ssh.png)
 and work the same way as in tty but copy pasting would be much more convenient since on the host device there is only terminal based browser and no cursor.
 
 ## Web Server Example
 
-As a server, it needs to serve something. The most common thing to serve would be an web app. For example, I have a web app running in a docker and listening on port 4000 on this device, while port forwarding directly from 80 to 4000 on router would technically work, it is recommended to have a web server that does the reverse proxy. 
-## Further reading
+As a server, it needs to serve something. The most common thing to serve would be an web app. For example, I have a web app running in a docker and listening on port 4000 on this device, while port forwarding directly from 80 to 4000 on router would technically work, it is recommended to have a web server that does the reverse proxy. Let's take nginx for example, detailed setup of nginx can be found here: https://learning-software-engineering.github.io/Topics/Development_Process/Nginx.html. After nginx is up with valid ssl certificate, the web app would become avaiable to Internet over ip address/ domain(which requires DNS setup in both the domain provider and nginx).  
 
-## External Resources
+![Alt text](Assets/nginx.png)
+
+![Alt text](Assets/invidious.png)
+## Further reading
+#### nginx
+https://learning-software-engineering.github.io/Topics/Development_Process/Nginx.html
+
+#### obtaining ssl certicificate using certbot
+
+https://certbot.eff.org/pages/about
+
+#### DuckDNS to deal with dynamic DNS
+
+https://learning-software-engineering.github.io/Topics/Development_Process/Duckdns.html
+
