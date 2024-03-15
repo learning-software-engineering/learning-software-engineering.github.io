@@ -27,9 +27,7 @@ def calculate_square_area(side):
     return side * side
 ```
 
-In this example, the calculate_square_area function duplicates the functionality of the calculate_rectangle_area function but only for squares. This coding habit 
-makes it harder to debug a program because any changes or bug fixes need to be applied to multiple places. Also, duplicated code makes the codebase harder to read 
-and understand. Developers might need to analyze multiple sections of code that are essentially doing the same thing.
+In this example, the `calculate_square_area` function duplicates the functionality of the `calculate_rectangle_area` function but only for squares. This coding habit makes it harder to debug a program because any changes or bug fixes need to be applied to multiple places. Also, duplicated code makes the codebase harder to read and understand. Developers might need to analyze multiple sections of code that are essentially doing the same thing.
 
 ## Improper Names
 
@@ -64,6 +62,26 @@ public class Calculator {
 The `subtract` method is never called from any part of the application. It remains in the codebase, occupying space and potentially causing confusion for developers who might assume it serves a purpose.
 
 ## Middle Man
+
+This code smell refers to a situation where an object or method serves mainly as a pass-through or intermediary, delegating most of its functionality to another object or method without adding significant value or functionality of its own. This can introduce unnecessary complexity and reduce the clarity and efficiency of the codebase.
+
+```
+class DataManager:
+    def __init__(self, data):
+        self.data = data
+
+    def process_data(self):
+        data_processor = DataProcessor()
+        return data_processor.process(self.data)
+
+class DataProcessor:
+    def process(self, data):
+        # Some complex data processing logic here
+        processed_data = data * 2
+        return processed_data
+```
+
+In this example, the `DataManager` class serves as a middle man that merely delegates the data processing to the `DataProcessor` class. It doesn't add any additional functionality or logic of its own and exists primarily to pass data to another class.
 
 ## Feature Envy
 
