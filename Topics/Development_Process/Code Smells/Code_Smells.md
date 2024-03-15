@@ -27,7 +27,7 @@ def calculate_square_area(side):
     return side * side
 ```
 
-In this example, the calculate_square_area function duplicates the functionality of the calculate_rectangle_area function but only for squares. This coding habit
+In this example, the calculate_square_area function duplicates the functionality of the calculate_rectangle_area function but only for squares. This coding habit 
 
 makes it harder to debug a program because any changes or bug fixes need to be applied to multiple places. Also, duplicated code makes the codebase harder to read 
 
