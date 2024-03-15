@@ -2,7 +2,7 @@
 
 ## Table of Contents
 
-###[What is code smell?](#what-is-code-smell-1)
+### [What is code smell?](#what-is-code-smell-1)
 
 ### What is code smell?
 
