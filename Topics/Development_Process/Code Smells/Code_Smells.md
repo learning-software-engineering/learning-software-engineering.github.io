@@ -61,7 +61,7 @@ public class Calculator {
 
 ```
 
-The 'subtract' method is never called from any part of the application. It remains in the codebase, occupying space and potentially causing confusion for developers who might assume it serves a purpose.
+The `subtract` method is never called from any part of the application. It remains in the codebase, occupying space and potentially causing confusion for developers who might assume it serves a purpose.
 
 ## Middle Man
 
