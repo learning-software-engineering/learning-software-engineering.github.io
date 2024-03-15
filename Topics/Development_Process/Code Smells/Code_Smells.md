@@ -1,4 +1,8 @@
-## Code Smells
+# Code Smells
+
+## Table of Contents
+
+###[What is code smell?](#what-is-code-smell-1)
 
 ### What is code smell?
 
@@ -85,10 +89,80 @@ In this example, the `DataManager` class serves as a middle man that merely dele
 
 ## Feature Envy
 
+This happens when a method accesses the data of another object more than its own data. Consider this piece of code:
+
+```
+class ShoppingCart:
+    def __init__(self):
+        self.items = []
+
+    def add_item(self, item):
+        self.items.append(item)
+
+    def total_price(self, tax_rate):
+        total = 0
+        for item in self.items:
+            total += item.price
+        total *= (1 + tax_rate)
+        return total
+
+class Item:
+    def __init__(self, name, price):
+        self.name = name
+        self.price = price
+
+class User:
+    def __init__(self):
+        self.shopping_cart = ShoppingCart()
+
+    def calculate_total_price(self, tax_rate):
+        return self.shopping_cart.total_price(tax_rate)
+```
+
+The `User` class has a method calculate_total_price that calculates the total price of items in the user's shopping cart. However, instead of directly accessing the user's shopping cart and performing the calculation there, it invokes the `total_price` method of the `ShoppingCart` class. This leads to poor encapsulation and violate the principle of encapsulation, where each class should encapsulate its own behavior and data.
+
 ## Long Functions
+
+Long functions is a code smell that occurs when a function or method is excessively long, containing a large number of lines of code. Long functions can be difficult to understand, maintain, and test. They often violate the Single Responsibility Principle, which states that a function should only have one reason to change.
+
+```
+def process_order(order):
+    # Step 1: Validate order data
+    if not order:
+        return None
+    # Step 2: Fetch product information
+    product_info = fetch_product_info(order.product_id)
+    # Step 3: Calculate total price
+    total_price = order.quantity * product_info.price
+    # Step 4: Apply discounts
+    if order.discount_code == 'DISCOUNT10':
+        total_price *= 0.9
+    # Step 5: Apply taxes
+    total_price *= 1.15  # Assuming 15% tax rate
+    # Step 6: Generate invoice
+    invoice = generate_invoice(order, product_info, total_price)
+    # Step 7: Send confirmation email
+    send_confirmation_email(order.email, invoice)
+```
+
+In this example, the `process_order` function performs multiple steps, including validation, fetching product information, calculating total price, applying discounts and taxes, generating an invoice, and sending a confirmation email. The function is long and complex, which makes it difficult to understand and maintain.
 
 ## Data Clumps
 
-## Comments
+Data clumps occur when multiple pieces of data go together. One easy way to spot a data clump is when one component doesn’t make sense in isolation but makes sense as a group. Here's an example to illustrate the data clumps:
 
+```
+def create_user(name, email, phone):
+    # Function to create a user using name, email, and phone
+    pass
 
+def update_user_email(user_id, new_email):
+    # Function to update user's email
+    pass
+
+def send_notification(email, message):
+    # Function to send email notification
+    pass
+```
+
+In this example, the `name`, `email`, and `phone` parameters are frequently passed together in various functions. This suggests that these pieces of data are closely related and should be put together in the same class.
