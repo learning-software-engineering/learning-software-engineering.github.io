@@ -45,6 +45,24 @@ This can lead to confusion for others who encounter this code later or who need 
 
 ## Dead Code 
 
+Dead code is code that’s in the application but not in use. Here is an example,
+
+```
+public class Calculator {
+    public int add(int a, int b) {
+        return a + b;
+    }
+
+    // This method is never called, making it dead code
+    public int subtract(int a, int b) {
+        return a - b;
+    }
+}
+
+```
+
+The 'subtract' method is never called from any part of the application. It remains in the codebase, occupying space and potentially causing confusion for developers who might assume it serves a purpose.
+
 ## Middle Man
 
 ## Feature Envy
