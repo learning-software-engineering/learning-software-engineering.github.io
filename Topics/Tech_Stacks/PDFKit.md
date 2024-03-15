@@ -1,7 +1,25 @@
 # Introduction to PDFKit
+## Table of Contents
+- [Introduction](#introduction)
+- [Getting Started](#getting-started)
+  - [Installation](#installation)
+  - [Basic Usage](#basic-usage)
+- [Features](#features)
+  - [Text](#text)
+  - [Images](#images)
+  - [Vector Graphics](#vector-graphics)
+  - [Annotations](#annotations)
+- [Advanced Usage](#advanced-usage)
+  - [Custom Fonts](#custom-fonts)
+  - [Multipage Support](#multipage-support)
+  - [Performance](#performance)
+- [Conclusion](#conclusion)
+- [References](#references)
 
+## Introduction
 
 PDFKit is a powerful PDF document generation library for Node.js and the browser. It enables developers to create complex PDFs from scratch or manipulate existing PDF documents. PDFKit provides an extensive set of features, including text, images, vector graphics, and more, making it suitable for a wide range of applications, from dynamic invoice generation to creating ebooks and reports.
+
 
 ## Getting Started
 
@@ -49,6 +67,8 @@ doc.fontSize(18) // Set font size
    .fillColor('blue') // Set text color
    .text('Hello, World!', 100, 100); // Add text at position (x: 100, y: 100)
 ```
+![Output of code snippet](./PDFKit_Graphics/image1.png)
+
 
 ### Images
 
@@ -82,20 +102,25 @@ doc.moveTo(100, 350) // Start at this point
 
 You can include links, notes, and highlights in your PDF files, making it perfect for interactive documents.
 ```javascript
-// Add a link
-doc.link(100, 100, 200, 20, 'http://example.com'); // Position (x: 100, y: 100), Size (width: 200, height: 20), URL
+// Set the font size and fill color, then add text at position (x: 20, y: 20)
+doc.fontSize(25)
+   .fillColor('blue')
+   .text('This is a link!', 20, 20);
 
-// Add a highlight annotation
-doc.highlight(100, 150, 200, 25, { annotationFlags: 'NoView' }); // Position (x: 100, y: 150), Size (width: 200, height: 25)
+// Measure the width and height of the string 'This is a link!' to use in annotations
+const width = doc.widthOfString('This is a link!');
+const height = doc.currentLineHeight();
 
-// Adding text note annotation
-doc.text('Note: ', 100, 200)
-   .annotate(100, 200, 100, 15, {
-     type: 'Text',
-     title: 'Reminder',
-     contents: 'Remember to check this part of the document.',
-     open: true
-   });
+// Add an underline beneath the text and a hyperlink annotation that links to 'http://google.com/'
+// The underline and link cover the area defined by the text's width and height
+doc.underline(20, 20, width, height, {color: 'blue'})
+   .link(20, 20, width, height, 'http://google.com/');
+
+// Set the fill color to red, then add a highlight annotation behind the text 'Hello World!'
+// Following this, the text 'Hello World!' is added.
+// The highlight covers the width of 'Hello World!' text and a fixed height of 25 units starting from the current document position (doc.y)
+doc.fillColor('red').highlight(20, doc.y, doc.widthOfString('Hello World!'), 25).text("Hello World!");
+
 ```
 
 ## Advanced Usage
