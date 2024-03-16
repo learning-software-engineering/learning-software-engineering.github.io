@@ -177,6 +177,41 @@ Jakob Nielsen's [10 Heuristics for Interaction Design](./User_Experience/Usabili
 
 **Wireframing** comes before the **mock-up** process, though as a software engineer, you probably won't be making any wireframes. A **mock-up** of your application is essentially a static design of your application's pages. A benefit of creating a mock-up is that you can communicate your design ideas to your teammates and get feedback from your customer/partner if you have one. Mock-ups are also known as **low-fidelity prototypes**
 
+### A Brief Summary of Common UX Principles
+
+#### Accessibility
+Accessibility is a concept that encapsulates one central idea: to allow all users to easily enjoy and use applications. In common usage, it can refer to users with temporary or permanent disabilities (visual, motor, auditory, etc.), but is broader than this, referring also to overall robustness and operability (i.e. is the workflow too complicated? Can multiple devices access the application, if it is a web application?). Consideration for varying degrees of ability is fundamental to design—a product should reach as wide of an audience as possible. Oftentimes, accesibility considerations lead to unintended benefits. For example, providing closed captioning on web video content can improve SEO indexing.
+
+[Here](https://uxdesign.cc/accessibility-guidelines-for-a-ux-designer-c3ba775539be) is more comprehensive guide touching on various components of an application, particularly geared for web design.
+
+Some concrete examples of this concept:
+- Screen readers can make heavy use of [HTML](https://www.w3schools.com/html/html_accessibility.asp) tags: for instance, someone operating a device using voice recognition uses a screen reader that can identify what can be clicked based on whether they are labelled as buttons. Alternate text for images is used by these to describe the content of an image to a user who cannot see it.
+- Sufficient colour contrast and distinction between typeface sizes is helpful for users with low vision.
+- Animation: content on an application should avoid animations that is a common trigger for seizures, which is high-contrast flashing for more than 3 times per second.
+
+
+#### Hierarchy
+Hierarchy, is the use of scale, contrast, typography, proximity, HTML structure, and colour to rank and highlight elements in an application in a certain order, such as importance. 
+
+[Here](https://uxengineer.com/principles-of-design/hierarchy/) is a guide that goes into a deeper dive on each use case.
+
+Hierarchy can be visual, for instance, using a larger and bolder font size for titles vs. paragraph text. It can also be structural; something understood by devices like screen readers. In HTML, one can label the former as a title using a header tag, and the latter using a paragraph tag.
+
+
+![An image of some example text; a title, subtitle, and body in descending size. They are all unbolded.](https://miro.medium.com/v2/resize:fit:1100/format:webp/1*scEqtA_zHMdmL370AeI4AQ.png)
+![An image of the same example text; a title, subtitle, and body in descending size. Now, the title the most bolded, followed by the subtitle. The body is unbolded.](https://miro.medium.com/v2/resize:fit:1100/format:webp/1*IrfSs6u55aQwPM3-BTrAhw.png)
+[Photo credit.](https://uxplanet.org/visual-hierarchy-and-ux-design-a-guide-779863263bbc)
+
+
+#### Learnability
+Learnability is all about the ease of use of a product. For someone who has never seen the product before, can they easily navigate the application and correctly figure out what to do with minimal difficulty? Users tend to not want to invest significant time and effort into most applications that they use, leading to abandonment. 
+
+To make this concept more concrete, here are some examples of improvements to the learnability of an application:
+- Onboarding: for complex applications with many features, it is necessary to present a new user with a brief view of features and walkthrough of a workflow.
+- Simple navigation: avoiding complex, nested layouts, and using a full navigation bar when possible.
+- Context: adding tooltips, helpful videos, or tutorials as an option can enhance how a user understands an application.
+
+[Here](https://www.justinmind.com/blog/learnability-ux-design/) is an article that goes into more depth about learnability as a UX heuristic.
 
 ### Accessibility Features of User Experience
 **Wireframes** are the "skeleton" of your mock-up; they communicate the general layout of your application and don't include details like specific text or colour. This is why you create wireframes before your mock-up.
