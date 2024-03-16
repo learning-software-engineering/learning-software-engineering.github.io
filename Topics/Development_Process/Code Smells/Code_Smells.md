@@ -11,7 +11,7 @@
 8. [Data Clumps](#data-clumps)
 9. [Additional Resources](#additional-resources)
 
-### What is code smell?
+### What is a code smell?
 
 Code smells are indicators of potential issues or weaknesses in software code. They are not bugs or errors, but rather patterns or 
 
