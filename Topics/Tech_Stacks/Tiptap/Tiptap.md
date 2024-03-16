@@ -88,8 +88,53 @@ export default App;
 ```
 
 ## Example with Markdown Editor in React
-_Include gifs, code snippets, explainations_
 
+By default, Tiptap doesn't support inputting or outputting Markdown files.[^4] However, there is a community-developed npm package called `tiptap-markdown` that extends Tiptap to enable this. We'll go through the installation of this package and the creation of a simple editor that uses it.
+
+**1. Install `tiptap-markdown`:**
+We'll continue with the React project we created above. Install the `tiptap-markdown` package using npm:
+```
+npm install tiptap-markdown
+```
+
+**2. Import the package:**
+Make a copy of App.js called Markdown.js. Add this import to the top of the file:
+```
+import { Markdown } from 'tiptap-markdown';
+```
+
+**3. Edit the editor:**
+Add `Markdown` to the list of extensions used by the Tiptap editor. Since the file format has changed from HTML to Markdown, we'll change the initial content as well:
+```
+function MyEditor() {
+  const editor = useEditor({
+    extensions: [StarterKit, Markdown],
+    content: '# Hello, TipTap!\nHello world!',
+  });
+}
+```
+
+**4. Render the new editor:**
+Remove the definition of the `function App()` from the bottom of Markdown.js. Also change the line `export default App;` to `export default MyEditor;`.
+
+Now, at the top of App.js, import the new Markdown editor from Markdown.js:
+```
+import MarkdownEditor from './Markdown';
+```
+
+Finally, render the new Markdown editor below the existing editor in App.js:
+```
+function App() {
+  return (
+    <div className="App">
+      <h1>My TipTap Editor</h1>
+      <MyEditor />
+      <h1>My Markdown Editor</h1>
+      <MarkdownEditor />
+    </div>
+  );
+}
+```
 
 ## Example with (something else Maybe)
 _Maybe Ricky will work on this_
@@ -101,3 +146,4 @@ _Include gifs, code snippets, explainations_
 [^1]: https://tiptap.dev/blog/insights/tiptap-seriesseed
 [^2]: https://tiptap.dev/product/editor
 [^3]: https://tiptap.dev/docs/editor/introduction
+[^4]: https://tiptap.dev/docs/editor/guide/output#not-an-option-markdown
