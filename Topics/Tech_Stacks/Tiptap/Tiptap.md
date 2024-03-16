@@ -44,7 +44,7 @@ cd my-tiptap-project
 
 Install TipTap and its dependencies using npm or yarn:
 ```
-npm install tiptap @tiptap/react
+npm install @tiptap/react @tiptap/pm @tiptap/starter-kit
 ```
 
 **3. Import Tiptap components:**
