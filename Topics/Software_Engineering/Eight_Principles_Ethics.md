@@ -2,6 +2,17 @@
 
 Software engineering is a discipline that not only demands technical prowess but also a commitment to ethical principles that ensure the well-being of society, clients, and the profession itself. In recognition of this, the ACM (Association for Computing Machinery) and IEEE-CS (Institute of Electrical and Electronics Engineers Computer Society) Joint Task Force on Software Engineering Ethics has outlined eight fundamental principles to guide ethical behavior in the field. These principles serve as a compass, directing software engineers towards decisions and actions that prioritize the public interest, integrity, and professionalism. In this comprehensive exploration, we delve into each of these principles, elucidating their significance and practical implications.
 
+## All Principles
+
+1. [Public](#public)
+2. [Client and employer](#client-and-employer)
+3. [Product](#product)
+4. [Judgment](#judgment)
+5. [Management](#management)
+6. [Profession](#profession)
+7. [Colleagues](#colleagues)
+8. [Self](#self)
+
 ## 1. Public:
 
 Software engineers shall act consistently with the public interest. This principle underscores the responsibility of software professionals to consider the broader impact of their work on society. It obligates them to prioritize the safety, well-being, and rights of individuals and communities affected by their software systems.
