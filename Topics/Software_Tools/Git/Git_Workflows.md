@@ -1,6 +1,6 @@
 # Git Workflows
 
-## Resources for Git Workflows
+## External Resources for Git Workflows
 * [5 Different Git Workflows](https://medium.com/javarevisited/5-different-git-workflows-50f75d8783a7)
 * [5 Git Workflows to Improve Development](https://rovitpm.com/5-git-workflows-to-improve-development/)
 * [Comparing Workflows](https://www.atlassian.com/git/tutorials/comparing-workflows)
@@ -61,3 +61,15 @@ Used usually for public open-source projects, this workflow doesn’t have a cen
 **Cons**: High fragmentation since there are no collaboration between developers, possible duplicate efforts, likelihood of excessive contributions for the original owner(s) of the official repository to maintain and keep track
 
 **When to Use**: Ideal for open source projects where there are many contributors who may not be part of the same organization or team, and where there is a need for strict access controls or a clear separation between the main repository and individual developers' repositories.
+
+
+### 5. Linear Git Flow
+A linear git flow, as the name suggests, maintains commits and changes to the repository in a linear fashion. It supports easy rollbacks in a chronological manner. This makes it easier to understand the development history of the project and how it has evolved over time. A linear git flow is useful and most applicable for projects with a simple development process which includes solo projects or small-membered projects. It is most beneficial when the primary focus of the project is stability and clarity in changes. It also faciliates development where frequent code reviews are required. A linear git flow is also beneficial to easily identify changes that have caused bugs as it forces users to thoroughy review code and test each commit.
+
+[More on Linear Git FLows and how to get started](https://www.bitsnbites.eu/a-tidy-linear-git-history/)
+
+**Pros** Easy rollbacks and code reviews for small teams, identifying bugs in code becomes easy given the clean chronological organisation, produces high quality maintainability code
+
+**Cons** Not suitable for teams with many members or those with independent developers. Rolling back to a commit can also mean completely erasing later commits, setting up a clean rebase work flow can be difficult
+
+**When to Use**: Most ideal for teams with a highly streamlined development process or for projects prone to bugs over time
