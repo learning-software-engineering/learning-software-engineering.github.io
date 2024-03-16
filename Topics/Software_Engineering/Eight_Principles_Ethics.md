@@ -50,6 +50,7 @@ Software engineers shall act in a manner that is in the best interests of their 
 
 - **Managing conflicts of interests when considering outside work:** Acknowledging and addressing potential conflicts of interest between personal endeavors and professional responsibilities, ensuring that outside commitments do not compromise the interests of clients or employers.
 
+![Ethics 2](ethics2.png)
 
 ## 3. Product:
 
@@ -71,6 +72,7 @@ Software engineers shall ensure that their products and related modifications me
 
 - **Ensuring the security and privacy of data used in the software development:** Implementing appropriate measures to safeguard the security and privacy of data throughout the software development lifecycle, protecting sensitive information from unauthorized access, disclosure, or manipulation.
 
+![Ethics 3](ethics3.png)
 
 ## 4. Judgment:
 
@@ -144,6 +146,9 @@ Software engineers shall be fair to and supportive of their colleagues. Collabor
 - **Listening to complaints and concerns of others:** Being receptive and responsive to the concerns, feedback, and grievances of colleagues, fostering open communication, trust, and mutual respect within the team.
 
 - **Asking for assistance where necessary:** Recognizing one's limitations and seeking help or advice from colleagues when faced with challenges or unfamiliar situations, promoting collaboration, teamwork, and knowledge sharing.
+
+
+![Ethics 1](ethics1.png)
 
 ## 8. Self:
 
