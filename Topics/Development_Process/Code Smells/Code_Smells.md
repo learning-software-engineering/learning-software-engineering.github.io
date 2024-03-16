@@ -172,3 +172,8 @@ def send_notification(email, message):
 ```
 
 In this example, the `name`, `email`, and `phone` parameters are frequently passed together in various functions. This suggests that these pieces of data are closely related and should be put together in the same class.
+
+
+# Additional Resources
+1. [Refactoring Guru](https://refactoring.guru/refactoring/smells)
+2. [What is a code smell?](https://linearb.io/blog/what-is-a-code-smell)
