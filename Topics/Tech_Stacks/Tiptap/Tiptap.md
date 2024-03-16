@@ -7,7 +7,7 @@ Tiptap, one of the leading open-source dev tools for rich content editors is tru
 They have accumulated over 2 million downloads[^1] with their cool products such as Tiptap Content AI and Tiptap Collobatoration. 
 
 
-![image](https://github.com/AshkanAleshams/learning-software-engineering.github.io/assets/90326959/a032584f-7d0b-4232-9d76-ee965e972f2b)[^2]
+![Untitled design (4)](https://github.com/AshkanAleshams/learning-software-engineering.github.io/assets/90326959/f56018c2-e7ef-478f-95d2-de19838cc1c7)
 
 
 However for this guide, we will focus on the Tiptap Editor.
