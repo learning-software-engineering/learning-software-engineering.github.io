@@ -87,6 +87,12 @@ function App() {
 export default App;
 ```
 
+**6. Run Your React Application:**
+Start your React application to see TipTap in action:
+```
+npm start
+```
+
 ## Example with Markdown Editor in React
 _Include gifs, code snippets, explainations_
 
