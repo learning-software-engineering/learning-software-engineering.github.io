@@ -3,7 +3,7 @@
 ## Introduction
 If you ever developed a discord bot, you might wonder how things just work as long as we have either Python or javascript files running on our computer. That is because either Python or JavaScript program is serving as the backend of the discord bot, and this also shows us that any computer can be used as a server.  
 
-Thus instead of paying for cloud services such as AWS, turning a spare computer into a web server might be already enough for development purposes. Not only can you save the cost, but this also gives you some invaluable experience in server administration. In this guide, I will be showing how this can be done with the Ubuntu server edition, a popular and well-supported distro, and a piece of minimum hardware- a Raspberry Pi 4b.
+Thus instead of paying for cloud services such as AWS which costs about 70 USD a month (AWS Marketplace: Ubuntu 20.04 LTS - focal. (n.d.). https://aws.amazon.com/marketplace/pp/prodview-iftkyuwv2sjxi), turning a spare computer into a web server might be already enough for development purposes. Not only can you save the cost, but this also gives you some invaluable experience in server administration. In this guide, I will be showing how this can be done with the Ubuntu server edition, a popular and well-supported distro, and a piece of minimum hardware- a Raspberry Pi 4b.
 
 ## Requirements
 
@@ -39,7 +39,7 @@ network:
             dhcp4: true  
 
 ```
-replace "BELL309" with the actual SSID and password as the corresponding password. press `ctrl+o` and `ctrl+x` to save and exit nano. After that `sudo netplan -debug generate` to check if there is any syntax error in the yaml. After verification is done `sudo reboot` to reboot. After reboot, the system shall automatically connect to the WLAN. use `ip a` or `ping google.com` to verify.  
+replace "BELL309" with the actual SSID and password as the corresponding password. press `ctrl+o` and `ctrl+x` to save and exit nano. After that `sudo netplan -debug generate` to check if there is any syntax error in the yaml file. After verification is done `sudo reboot` to reboot. After reboot, the system shall automatically connect to the WLAN. use `ip a` or `ping google.com` to verify.  
 
 Great, next, as a server, we also need to make sure that the device is accessible from the Internet. This requires port forwarding from the router.
 In the browser of another computer, log into the router through its private IP address in the local area network. 
@@ -68,7 +68,7 @@ and work the same way as in tty but copy-pasting would be much more convenient s
 
 ## Web Server Example
 
-As a server, it needs to serve something. The most common thing to serve would be a web app. For example, I have a web app running in a docker and listening on port 4000 on this device, while port forwarding directly from 80 to 4000 on the router would technically work, it is recommended to have a web server that does the reverse proxy. Let's take nginx for example, detailed setup of nginx can be found here: https://learning-software-engineering.github.io/Topics/Development_Process/Nginx.html. After Nginx is up with a valid SSL certificate, the web app would become available to the Internet over an IP address or a domain(which requires DNS setup in both the domain provider and nginx).  
+As a server, it needs to serve something. The most common thing to serve would be a web app. For example, I have a web app running in a docker and listening on port 4000 on this device, while port forwarding directly from 80 to 4000 on the router would technically work, it is recommended to have a web server that does the reverse proxy. Let's take nginx for example, detailed setup of nginx can be found on this [software engineering learning center post]( https://learning-software-engineering.github.io/Topics/Development_Process/Nginx.html). After Nginx is up with a valid SSL certificate, the web app would become available to the Internet over an IP address or a domain(which requires DNS setup in both the domain provider and nginx).  
 
 ![Alt text](Assets/nginx.png)
 
