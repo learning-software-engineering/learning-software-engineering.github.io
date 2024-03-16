@@ -74,10 +74,10 @@ As a server, it needs to serve something. The most common thing to serve would b
 
 ![Alt text](Assets/invidious.png)
 ## Further reading
-#### nginx
+#### Nginx
 https://learning-software-engineering.github.io/Topics/Development_Process/Nginx.html
 
-#### Obtaining SSL certificates using certbot
+#### Obtaining SSL certificates using Certbot
 
 https://certbot.eff.org/pages/about
 
