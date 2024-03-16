@@ -33,10 +33,59 @@ There are multiple methods to install Tiptap, each tailored to a specific use ca
 _Include gifs, code snippets, explainations_
 
 **1. Create a React Project:**
-``` npx create-react-app my-tiptap-project
+You may use any other method of creating a React app if you wish.
+``` 
+npx create-react-app my-tiptap-project
 cd my-tiptap-project
 ```
-You may use any other method of creating a React app if you wish.
+
+**2. Install TipTap:**
+Install TipTap and its dependencies using npm or yarn:
+```
+npm install tiptap @tiptap/react
+```
+
+**3. Import Tiptap components:**
+If you havent, create a new file called App.js and import the following:
+```
+import { Editor, EditorContent, EditorMenuBar } from '@tiptap/react';
+import { useEditor } from '@tiptap/react/hooks';
+import { EditorState } from '@tiptap/core';
+import StarterKit from '@tiptap/starter-kit';
+```
+
+**4. Create a TipTap Editor Component:**
+Create a new React component that will serve as your TipTap editor:
+```
+function MyEditor() {
+  const editor = useEditor({
+    extensions: [StarterKit],
+    content: '<p>Hello, TipTap!</p>',
+  });
+
+  return (
+    <div>
+      <EditorMenuBar editor={editor} />
+      <EditorContent editor={editor} />
+    </div>
+  );
+}
+```
+
+**5. Render the Editor Component:**
+Render your TipTap editor component within your main application component or any other desired location:
+```
+function App() {
+  return (
+    <div className="App">
+      <h1>My TipTap Editor</h1>
+      <MyEditor />
+    </div>
+  );
+}
+
+export default App;
+```
 
 ## Example with Markdown Editor in React
 _Include gifs, code snippets, explainations_
@@ -48,5 +97,5 @@ _Maybe Ricky will work on this_
 _Include gifs, code snippets, explainations_
 
 ## Citations
-_Include formal citation_
+
 [^1]: https://tiptap.dev/docs/editor/introduction
