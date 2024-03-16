@@ -4,14 +4,14 @@ Software engineering is a discipline that not only demands technical prowess but
 
 ## All Principles
 
-1. [Public](#public)
-2. [Client and employer](#client-and-employer)
-3. [Product](#product)
-4. [Judgment](#judgment)
-5. [Management](#management)
-6. [Profession](#profession)
-7. [Colleagues](#colleagues)
-8. [Self](#self)
+1. [Public](#1-public)
+2. [Client and employer](#2-client-and-employer)
+3. [Product](#3-product)
+4. [Judgment](#4-judgment)
+5. [Management](#5-management)
+6. [Profession](#6-profession)
+7. [Colleagues](#7-colleagues)
+8. [Self](#8-self)
 
 ## 1. Public:
 
