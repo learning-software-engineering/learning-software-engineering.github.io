@@ -150,3 +150,9 @@ Software engineers shall participate in lifelong learning regarding the practice
 # Conclusion:
 
 The eight principles outlined by the ACM/IEEE-CS Joint Task Force on Software Engineering Ethics serve as a guiding light for software professionals, navigating the complex terrain of technology and ethics. By adhering to these principles, software engineers not only uphold the values of integrity, professionalism, and social responsibility but also contribute to the advancement and sustainability of the software engineering profession. As technology continues to evolve and shape the world, these principles remain steadfast, ensuring that software engineering remains a force for good in society.
+
+## Sources
+
+- Software Engineering Code - ACM Ethics. (2022, June 8). [ACM Ethics - the Official Site of the Association for Computing Machinery’s Committee on Professional Ethics](https://ethics.acm.org/code-of-ethics/software-engineering-code/)
+
+- IEEE/ACM Software Engineering Code of Ethics – Guiding Principles - A Level Computer Science. (2023, June 4). [A Level Computer Science](https://learnlearn.uk/alevelcs/acm-software-engineering-guiding-principles/)
