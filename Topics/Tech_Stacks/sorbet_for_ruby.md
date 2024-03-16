@@ -7,7 +7,8 @@ The big advantage of using Sorbet is without a doubt the strict typing provided 
 ## Cons
 Interestingly, the same thing that makes Sorbet attractive to some programmers is one of it's cons. Although a type system is nice, it begs the question, why not just use a strongly typed language like Java instead? Furthermore, dynamic languages with a type system on top can still end up doing wacky things, just in a different way. David Heinemeier Hanssen, famously the creator of Rails, describes these wacky events as "type gymnastics", where an engineer has to write increasingly complex type annotations on an otherwise acceptable line of code in order to eliminate the errors. Here's an example of type gymnastics:
 ````{verbatim, lang = "markdown"}
-type IntTuple<X extends string, Acc extends number[] = []> = `${Acc['length']}` extends `${X}` ? Acc : IntTuple<X, [...Acc, Acc['length']]>
+type IntTuple<X extends string, Acc extends number[] = []> =
+`${Acc['length']}` extends `${X}` ? Acc : IntTuple<X, [...Acc, Acc['length']]>
 ````
 ## Is Sorbet right for me?
 
