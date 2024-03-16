@@ -3,7 +3,12 @@
 ## Table of Contents
 1. [What is code smell?](#what-is-code-smell)
 2. [Duplicate Code](#duplicate-code)
-3. 
+3. [Improper Names](#improper-names)
+4. [Dead Code](#dead-code)
+5. [Middle Man](#middle-man)
+6. [Feature Envy](#feature-envy)
+7. [Long Functions](#long-functions)
+8. [Data Clumps](#data-clumps)
 
 ### What is code smell?
 
