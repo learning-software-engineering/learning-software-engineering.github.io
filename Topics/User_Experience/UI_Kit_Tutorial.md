@@ -7,6 +7,7 @@ Utilizing pre-built UI kits from the Figma community involves several steps to e
    - Once you find a UI kit that fits your needs, click on it to view details such as the components included, previews, and any additional information provided by the creator.
 
    ![alt text](image.png)
+
    ![alt text](image-1.png)
 
 2. **Duplicate the UI Kit:**
