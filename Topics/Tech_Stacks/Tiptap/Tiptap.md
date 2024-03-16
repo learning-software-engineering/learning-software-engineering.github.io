@@ -32,7 +32,8 @@ There are multiple methods to install Tiptap, each tailored to a specific use ca
 
 _Include gifs, code snippets, explainations_
 
-**1. Create a React Project:**
+**1. Create a React Project:** 
+
 You may use any other method of creating a React app if you wish.
 ``` 
 npx create-react-app my-tiptap-project
@@ -40,12 +41,14 @@ cd my-tiptap-project
 ```
 
 **2. Install TipTap:**
+
 Install TipTap and its dependencies using npm or yarn:
 ```
 npm install tiptap @tiptap/react
 ```
 
 **3. Import Tiptap components:**
+
 Go to App.js and import the following:
 ```
 import { Editor, EditorContent, EditorMenuBar } from '@tiptap/react';
@@ -55,6 +58,7 @@ import StarterKit from '@tiptap/starter-kit';
 ```
 
 **4. Create a TipTap Editor Component:**
+
 Create a new React component that will serve as your TipTap editor:
 ```
 function MyEditor() {
@@ -73,6 +77,7 @@ function MyEditor() {
 ```
 
 **5. Render the Editor Component:**
+
 Render your TipTap editor component within your main application component or any other desired location:
 ```
 function App() {
@@ -88,6 +93,7 @@ export default App;
 ```
 
 **6. Run Your React Application:**
+
 Start your React application to see TipTap in action:
 ```
 npm start
