@@ -46,7 +46,7 @@ npm install tiptap @tiptap/react
 ```
 
 **3. Import Tiptap components:**
-If you havent, create a new file called App.js and import the following:
+Go to App.js and import the following:
 ```
 import { Editor, EditorContent, EditorMenuBar } from '@tiptap/react';
 import { useEditor } from '@tiptap/react/hooks';
