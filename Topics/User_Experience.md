@@ -331,7 +331,7 @@ The [Figma Community](https://www.figma.com/community) is a platform where indiv
 
 Published resources are accessible to through either free or paid access.
 
-For a more in depth guide to the Figma Community, [click here](https://help.figma.com/hc/en-us/articles/360038510693-Guide-to-the-Figma-Community)
+For a more in depth guide to the Figma Community, click [here](https://help.figma.com/hc/en-us/articles/360038510693-Guide-to-the-Figma-Community)
 
 #### UI Kits
 
@@ -349,7 +349,7 @@ UI kits from the Figma community are used for a variety of purposes related to u
 
 - Accessibility: Some UI kits are designed with accessibility in mind, including color contrast ratios, accessible typography, and other elements that comply with web accessibility standards. This ensures that the final product is usable by a wide range of users, including those with disabilities.
 
-For a step-by-step tutorial with visuals on how to use community built UI kits in your own projects, [click here](Topics/User_Experience/UI_Kit_Tutorial.md)
+For a step-by-step tutorial with visuals on how to use community built UI kits in your own projects, click [here](Topics/User_Experience/UI_Kit_Tutorial.md)
 
 #### Developer Mode
 
