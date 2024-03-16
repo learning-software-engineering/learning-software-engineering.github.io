@@ -36,7 +36,7 @@ _Include gifs, code snippets, explainations_
 
 You may use any other method of creating a React app if you wish.
 ``` 
-npx create-react-app my-tiptap-project
+npx create-react-app my-tiptap-project --template tiptap
 cd my-tiptap-project
 ```
 
