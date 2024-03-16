@@ -1,5 +1,10 @@
 # Code Smells
 
+## Table of Contents
+1. [What is code smell?](#what-is-code-smell)
+2. [Duplicate Code](#duplicate-code)
+3. 
+
 ### What is code smell?
 
 Code smells are indicators of potential issues or weaknesses in software code. They are not bugs or errors, but rather patterns or 
