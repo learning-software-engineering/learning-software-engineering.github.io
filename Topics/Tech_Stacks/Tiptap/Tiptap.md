@@ -7,7 +7,7 @@ Tiptap, one of the leading open-source dev tools for rich content editors is tru
 They have accumulated over 2 million downloads[^1] with their cool products such as Tiptap Content AI and Tiptap Collobatoration. 
 
 
-![image](https://github.com/AshkanAleshams/learning-software-engineering.github.io/assets/90326959/a032584f-7d0b-4232-9d76-ee965e972f2b)[^1]
+![image](https://github.com/AshkanAleshams/learning-software-engineering.github.io/assets/90326959/a032584f-7d0b-4232-9d76-ee965e972f2b)[^2]
 
 
 However for this guide, we will focus on the Tiptap Editor.
@@ -19,7 +19,7 @@ It offers sensible defaults, an extensive array of extensions, and an intuitive 
 
 ## Why Use Tiptap
 
-If you are looking for a powerful text editor for web applications, Tiptap is a great option to consider. Being open-source and built on the well-regarded ProseMirror library,[^2] Tiptap offers a solid foundation. It features real-time collaboration and boasts a rich library of [community extensions](https://github.com/ueberdosis/awesome-tiptap#community-extensions) that includes an extension that enables Markdown support. Starting with Tiptap is easy thanks to its free tier, but for those needing advanced features like AI integration and document commenting, [paid plans](https://tiptap.dev/pricing) are available, making Tiptap a versatile solution for diverse project needs.
+If you are looking for a powerful text editor for web applications, Tiptap is a great option to consider. Being open-source and built on the well-regarded ProseMirror library,[^3] Tiptap offers a solid foundation. It features real-time collaboration and boasts a rich library of [community extensions](https://github.com/ueberdosis/awesome-tiptap#community-extensions) that includes an extension that enables Markdown support. Starting with Tiptap is easy thanks to its free tier, but for those needing advanced features like AI integration and document commenting, [paid plans](https://tiptap.dev/pricing) are available, making Tiptap a versatile solution for diverse project needs.
 
 ## Relevant Links
 _Relevant links such s Tiptap's documentation page, etc_
@@ -99,4 +99,5 @@ _Include gifs, code snippets, explainations_
 ## Citations
 
 [^1]: https://tiptap.dev/blog/insights/tiptap-seriesseed
-[^2]: https://tiptap.dev/docs/editor/introduction
+[^2]: https://tiptap.dev/product/editor
+[^3]: https://tiptap.dev/docs/editor/introduction
