@@ -18,6 +18,12 @@ We will introduce three popular TTS models for python.
 
 gTTS is a Python library and CLI tool to interface with Google Translate's text-to-speech API. 
 
+Price: Free!
+
+Voice Choices: Only the default voice, but supports most of languages.
+
+Available Functions: Only contain basic text-to-speech conversions.
+
 **Set-up**
 
 - You can very easily install the gTTS library via pip install: 
