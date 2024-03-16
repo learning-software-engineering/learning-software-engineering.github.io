@@ -24,7 +24,7 @@ With shared memory, processes can now communicate with each other. However, it a
 
 ## OpenMP
 ### Overview,
-OpenMP is a high-level API for parallel programming in C and C++. It is made up of preprocessor directives (which requires compiler support), library calls, and environment variables. OpenMP follows the fork-and-join parallel execution model, where a master thread (the initial thre)d we are
+OpenMP is a high-level API for parallel programming in C and C++. It is made up of preprocessor directives (which requires compiler support), library calls, and environment variables. OpenMP follows the fork-and-join parallel execution model, where a master thread (the initial thread) we are
 working on, forks into a group of worker threads that then performed specific tasks concurrently. Upon the threads' completion of their work, the threads will synchronize at the end of the parallel block, and then execution continues with only the initial thread. Threads can do the same work, share the same tasks, or even perform distinct tasks in parallel.
 
 
