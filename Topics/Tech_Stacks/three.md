@@ -1,4 +1,10 @@
-﻿
+ ## Table of Contents
+ - [Setting Up Your Files](setting-up-your-files)
+ - [Creating the Scene]("creating-the-scene)
+ - [Creating and Rendering Your First 3D Object](creating-and-rendering-your-first-3d-object)
+ - [Reasons to Consider Three.js](reasons-to-consider-three.js)
+ - [References](references)
+ 
 # Creating Your First Scene and 3D Object with Three.js
 
 This tutorial will guide you through the process of creating your first scene and 3D object using Three.js, a JavaScript library that simplifies the use of WebGL for 3D graphics in a web browser. In order to do this, you'll need: 
