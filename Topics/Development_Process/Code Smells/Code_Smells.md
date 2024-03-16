@@ -9,6 +9,7 @@
 6. [Feature Envy](#feature-envy)
 7. [Long Functions](#long-functions)
 8. [Data Clumps](#data-clumps)
+9. [Additional Resources](#additional-resources)
 
 ### What is code smell?
 
