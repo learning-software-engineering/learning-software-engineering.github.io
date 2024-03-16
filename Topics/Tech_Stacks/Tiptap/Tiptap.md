@@ -12,7 +12,7 @@ They have accumulated over 2 million downloads with their cool products such as 
 
 However for this guide, we will focus on the Tiptap Editor.
 
-Tiptap Editor is a headless toolkit for building rich text WYSIWYG editors. Giving the user the complete freedom to fashion their own editor interface using customizable building blocks. 
+Tiptap Editor is a headless toolkit for building rich text WYSIWYG editors for Vue.js and React.js applications. Giving the user the complete freedom to fashion their own editor interface using customizable building blocks. 
 It offers sensible defaults, an extensive array of extensions, and an intuitive API for tailoring every facet to the user's preferences.
 
 
@@ -31,6 +31,11 @@ _React, npm, etc installation stuff_
 
 _Include gifs, code snippets, explainations_
 
+**1. Create a React Project:**
+``` npx create-react-app my-tiptap-project
+cd my-tiptap-project
+```
+You may use any other method of creating a React app if you wish.
 
 ## Example with Markdown Editor in React
 _Include gifs, code snippets, explainations_
