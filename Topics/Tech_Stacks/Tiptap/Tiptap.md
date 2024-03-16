@@ -22,7 +22,18 @@ It offers sensible defaults, an extensive array of extensions, and an intuitive 
 If you are looking for a powerful text editor for web applications, Tiptap is a great option to consider. Being open-source and built on the well-regarded ProseMirror library,[^3] Tiptap offers a solid foundation. It features real-time collaboration and boasts a rich library of [community extensions](https://github.com/ueberdosis/awesome-tiptap#community-extensions) that includes an extension that enables Markdown support. Starting with Tiptap is easy thanks to its free tier, but for those needing advanced features like AI integration and document commenting, [paid plans](https://tiptap.dev/pricing) are available, making Tiptap a versatile solution for diverse project needs.
 
 ## Relevant Links
-_Relevant links such s Tiptap's documentation page, etc_
+For comprehensive resources related to Tiptap Editor, consider the following links:
+
+- **Tiptap Official Website**: Detailed information on features and how to get started with Tiptap. [Visit Tiptap](https://tiptap.dev)
+
+- **Documentation and Examples**: Access to extensive documentation and practical examples for using Tiptap. [Explore the docs](https://tiptap.dev/docs) and [View examples](https://tiptap.dev/examples)
+
+- **GitHub Repository**: The source code and contribution guidelines are available on GitHub. [Check out the repository](https://github.com/ueberdosis/tiptap)
+
+- **Guide and Tutorials on GitHub**: A detailed guide offering insights into configuring the editor, working with extensions, and more. [Read the guide](https://github.com/ueberdosis/tiptap/blob/main/docs/guide.md)
+
+- **Community Discussions**: Engage with the Tiptap community on GitHub for help and discussions. [Join the conversation](https://github.com/ueberdosis/tiptap/discussions)
+
 
 ## Requirements
 
