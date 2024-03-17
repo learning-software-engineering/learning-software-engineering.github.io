@@ -1,6 +1,6 @@
 # Introduction to Sublime Text
 
-Sublime Text is a text editor ,which was created by Jon Skinner, that is supported on Windows, macOS, and Linux. This text editor has several benefits such as being free of charge, offering fast typing recognition speed, and providing numerous convenient editing features.
+Sublime Text is a text editor, which was created by Jon Skinner, that is supported on Windows, macOS, and Linux. This text editor has several benefits such as being free of charge, offering fast typing recognition speed, and providing numerous convenient editing features.
 
 ## Installation of Sublime Text
 1. Go to the [Sublime website](https://www.sublimetext.com/3) to install the latest version of the editor. 
