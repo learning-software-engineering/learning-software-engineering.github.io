@@ -9,6 +9,7 @@
     - [IntelliSense](#intellisense)
     - [Debugging with VS Code](#debugging-with-vs-code)
     - [Integrated Terminal](#integrated-terminal)
+  - [Extensions](#extensions)
 ---
 
 ## Introduction
@@ -76,6 +77,37 @@ Whether you choose to use the default terminal or install another one of your pr
 - You also have the ability to split terminals, open multiple terminals simultaneously in an organized manner, and keep track of them without the hassle of switching between countless windows. Depending on your machine, you will see relevant options when you click the + sign in the terminal window to run other terminals like Git Bash (if you have it installed).
 
 To learn more about the integrated terminal and the features it offers, check out the detailed introduction by VSCode [here](https://code.visualstudio.com/docs/terminal/basics).
+
+
+## Extensions
+Extensions are a big part of the Visual Studio Code ecosystem as they make the editor even more powerful. Extensions include everything ranging from languages and debuggers to tools and customizers that allow you to have all that you need in your development workflow.
+
+To get started with extensions, click the four squares (building blocks) icon in the left pane. Be cautious as this may open the doors to countless options that help you tailor VS Code to your workflow!
+
+
+
+No matter the language or framework you are working with, Extensions has you covered. Simply search what you are looking for in the search bar and you will see numerous results to choose from. 
+
+Here are a few popular categories and extensions that you have access to:
+
+- Debuggers extensions like the Python and JavaScript Debugger to help you find the hard-to-find bugs.
+
+
+- Language tools including IntelliSense extensions to tailor the editor specifically to the language you are using.
+
+- Linters and formatters to ensure your code is well-formatted and easy to read.
+
+- Database extensions, ranging from PostgreSQL to MongoDB, that elevate your database interactions by providing custom tools and a better database user interface.
+
+- Container extensions like Docker which allows you to inspect the containers, images, registries and more during execution.
+
+- Git related extensions like GitLens which supercharges your git powers, and allows you to inspect file commit history, display last modifier in-line, and much more within a few clicks.
+
+- Themes that enable you to customize VS Code exactly as you want it.
+
+- And many more extensions. You can find other categories by clicking the filter icon in the extension search bar and selecting Category.
+
+Feeling excited and love to learn more about extensions? Check out [this](https://code.visualstudio.com/docs/editor/extension-marketplace) detailed page by VSCode to get started.
 
 
 
