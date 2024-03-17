@@ -10,7 +10,7 @@ In software engineering, behavioral design patterns  are a set of patterns that 
     2. [Strategy](#str)
     3. [Iterator](#itr)
     4. [Command](#com)
-    5. Examples of other [Behavioral Design Patterns](https://refactoring.guru/design-patterns/behavioral-patterns)
+    5. [Examples of other Behavioral Design Patterns](https://refactoring.guru/design-patterns/behavioral-patterns)
 
 ## Usage <a name="use"></a>
 
