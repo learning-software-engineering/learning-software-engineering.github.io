@@ -5,9 +5,11 @@
 2. [Setup and Installation](#setup-and-installation)
 3. [Scripting](#scripting)
 4. [Headless Mode](#headless-mode)
-5. [Advantages Over Other Solutions](#advantages-over-other-solutions)
-6. [Limitations](#limitations)
-7. [Citation & Useful Links](#useful-links)
+5. [Automatic Waiting](#automatic-waiting)
+6. [Browser Context](#browser-context)
+7. [Advantages Over Other Solutions](#advantages-over-other-solutions)
+8. [Limitations](#limitations)
+9. [Citation & Useful Links](#useful-links)
 
 ## What is Playwright
 Playwright is an open-source end-to-end testing framework developed by Microsoft, designed specifically for testing modern web applications.
@@ -85,6 +87,54 @@ const { chromium } = require('playwright');
 
 ```
 
+## Automatic Waiting
+A feature that distinguishes Playwright from other solutions. It involves eliminating unstable tests by ensuring elements are ready before executing actions. Here's an example:
+```
+const { chromium } = require('playwright');
+
+(async () => {
+  const browser = await chromium.launch();
+  const context = await browser.newContext();
+  const page = await context.newPage();
+
+  await page.goto('https://example.com'); // Navigate to page
+
+  await page.waitForSelector('#nonexistentButton'); // Await each page.waitForSelector sequentially
+  await page.waitForSelector('#nonexistentInput');
+
+  await page.click('#nonexistentButton');  // When both selectors are available, perform actions
+  await page.fill('#nonexistentInput', 'Hello, World!');
+
+  await browser.close();
+})();
+
+```
+
+## Browser Context
+Playwright allows the creation of isolated browser contexts to launch different browsers. Here is an example:
+```
+const { chromium } = require('playwright');
+
+(async () => {
+  const browser = await chromium.launch();
+
+  const context1 = await browser.newContext(); // Create the first browser context
+  const page1 = await context1.newPage();
+
+  await page1.goto('https://example.com'); // Navigate to a website in the first context
+  console.log(await page1.title()); // Output the title of the page in the first context
+
+  const context2 = await browser.newContext(); // Create the second browser context
+  const page2 = await context2.newPage();
+
+  await page2.goto('https://www.google.com'); // Navigate to a different website in the second context
+  console.log(await page2.title()); // Output the title of the page in the second context
+
+  await browser.close();
+})();
+
+```
+
 ## Advantages Over Other Solutions
 Playwright is a modern solution for automated testing over frameworks like Selenium which may be a bit outdated. Here are some key advantages as higlighted in a blog by Olga Sheremeta on Testomat [Link](https://testomat.io/blog/test-automation-with-playwright-definition-and-benefits-of-this-testing-framework/): 
 
@@ -114,15 +164,6 @@ While Playwright is a powerful tool for automating browser tasks and interaction
 * [Playwright vs Selenium: A Detailed Comparison in 2024](https://research.aimultiple.com/playwright-vs-selenium/)
 * [Testomat Blog by Olga Sheremeta](https://testomat.io/blog/test-automation-with-playwright-definition-and-benefits-of-this-testing-framework/)
 * [Common Questions](https://stackoverflow.com/questions/tagged/playwright)
-
-
-
-
-
-
-
-
-
 
 
 
