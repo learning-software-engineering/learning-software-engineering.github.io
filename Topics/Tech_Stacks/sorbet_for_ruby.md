@@ -40,12 +40,42 @@ sayHelo("")  # error: Method `sayHelo` does not exist
   
 ## Cons
 * Adding a type system to a dynamic language avoids the advantages of a dynamically typed language
-* Type gymnastics to make the 'compiler' happy about the type you used.
+* Type gymnastics to make the compiler happy about the type you used or are trying to define.
 
 Here's an example of type gymnastics in TypeScript, that occur when trying to define a type for url parameters of an api call using ````fetch()````:
 ````{verbatim, lang = "markdown"}
-type paramsType = string | URLSearchParams | string[][] | Record<string, string> | undefined | null
+type params = string | URLSearchParams | string[][] | Record<string, string> | undefined | null
 ````
+
+* Code bloat, sometimes adding the Sorbet type system ends up adding a lot of extra boilerplate
+
+The code for a static language like Java is concise and readable
+````{verbatim, lang = "markdown"}
+public class SumFunction {
+
+    public static int sum(int a, int b) {
+        return a + b;
+    }
+
+}
+````
+
+But Sorbet adds a lot of extra lines which aren't necessarily improving readability
+````{verbatim, lang = "markdown"}
+# typed: true
+class SumFunction
+
+  extend T::Sig
+
+  sig {params(x: Integer, y: Integer).returns(Integer)}
+  
+  def sum(x, y)
+    return x + y
+  end
+end
+````
+
+* Using dependencies is difficult, most dependencies don't have types defined which means you have to define your own types for external dependencies
 
 ## Is Sorbet right for me?
 
