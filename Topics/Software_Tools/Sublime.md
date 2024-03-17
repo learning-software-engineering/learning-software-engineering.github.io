@@ -53,14 +53,15 @@ Sublime is a text editor, which was created by Jon Skinner, that is supported on
 
 ## Conclusion
 
-Sublime which is a flexible text editor for Windows, macOS, and Linux increases productivity with features such as the Command Palette and Goto Anything. This editor is intended for anyone wishing to improve their coding experience with efficiency and speed.
+Sublime stands out among text editors due to its user friendly design, significant speed, and efficiency, being a flexible text editor for Windows, macOS, and Linux that increases productivity with features such as the Command Palette, Distraction Free Mode, and Goto Anything. These features make it an ideal tool for developers and writers who value a smooth workflow. Sublime provides a smooth coding environment that prioritizes user satisfaction and efficiency.
+
 
 
 ## Resources
 
-https://docs.sublimetext.io/guide/
-https://www.sublimetext.com/about#:~:text=Sublime%20Text%20was%20created%20by,of%20Sublime%20HQ%20Pty%20Ltd.
-https://www.makeuseof.com/how-to-install-sublime-text-on-linux/
-https://www.tutorialspoint.com/sublime_text/sublime_text_command_palette.htm
-https://docs.sublimetext.io/guide/extensibility/command_palette.html#:~:text=Overview%20%E2%80%8B,sublime%2Dcommands%20files.
-https://www.sublimetext.com/docs/distraction_free.html
+[Sublime Guide](https://docs.sublimetext.io/guide/) <br/>
+[About Sublime](https://www.sublimetext.com/about#:~:text=Sublime%20Text%20was%20created%20by,of%20Sublime%20HQ%20Pty%20Ltd.)<br/>
+[Install Sublime on Linux](https://www.makeuseof.com/how-to-install-sublime-text-on-linux/)<br/>
+[Command Palette 1](https://www.tutorialspoint.com/sublime_text/sublime_text_command_palette.htm)<br/>
+[Command Palette 2](https://docs.sublimetext.io/guide/extensibility/command_palette.html#:~:text=Overview%20%E2%80%8B,sublime%2Dcommands%20files.)<br/>
+[Distraction Free Mode](https://www.sublimetext.com/docs/distraction_free.html)
