@@ -96,7 +96,25 @@ In this example, the Iterator pattern enables you to browse through the books in
 
 The Command design pattern is a behavioral pattern that encapsulates a request as an object, thereby allowing for parameterization of clients with queues, requests, and operations. It separates the sender of a request from the receiver, allowing for decoupling and flexibility in how requests are processed. The pattern typically involves four main components: the Client, which creates and sets up commands; the Invoker, which executes commands; the Command, which defines an interface for executing operations; and the Receiver, which carries out the requested action. By encapsulating requests as objects, the Command pattern enables the implementation of operations such as undo functionality, remote execution, and logging, among others, in a reusable and extensible manner.
 
+<p align="center">
+<img width="680" alt="Screenshot 2024-03-17 at 9 12 35 AM" src="https://github.com/paridhi26/CSC311Project/assets/85652265/9e9c007d-8212-4333-8aa6-36ce000784f2">
+</p>
 
+Image from [Refactoring Guru](https://refactoring.guru/design-patterns/command)
+
+### Analogy
+
+Let's consider a scenario of a restaurant where customers place orders with a waiter. Here's how the Command pattern can be illustrated in this context:
+
+1. **Waiter (Invoker):** The waiter takes orders from customers and serves as the invoker in this scenario. Instead of directly executing the requests (orders), the waiter holds onto them until they are needed.
+
+2. **Order (Command):** Each order placed by a customer represents a command in the Command pattern. It encapsulates all the information needed to fulfill the request, such as the type of dish, quantity, and any special instructions.
+
+3. **Kitchen Staff (Receiver):** The kitchen staff prepares the dishes requested by the customers and acts as the receiver of commands. When the waiter submits an order, it's sent to the kitchen staff for execution.
+
+4. **Customer (Client):** The customer places orders with the waiter but doesn't need to know the details of how the orders are processed. The customer is the client in this scenario, interacting with the waiter to request dishes.
+
+In this example, the Command pattern allows for decoupling the waiter (invoker) from the kitchen staff (receiver). The waiter collects orders from customers (commands) and passes them to the kitchen staff for execution without needing to know the specific details of how each dish is prepared. This separation of concerns promotes flexibility and extensibility in the restaurant's operation, as new dishes can be added without requiring changes to the waiter's behavior. Additionally, the Command pattern facilitates features like order queuing, order modification, and order history, enhancing the overall dining experience for customers.
 
 ## Further Reading <a name="further-reading"></a>
 [Refactoring Guru: Behavioral Patterns](https://refactoring.guru/design-patterns/behavioral-patterns)
