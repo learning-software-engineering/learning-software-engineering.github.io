@@ -51,6 +51,84 @@ function MyComponent() {
 }
 ```
 
+### Styling components
+
+A component's style can be customized by passing certain props to it. The props that are accepted rougly correspond to CSS properties, and accept any value that CSS accepts.
+
+For example, the following creates a button with styling that corresponds to the CSS property `margin-left: 10px;`
+
+```jsx
+<Button marginLeft={"30px"}>hello</Button>
+```
+
+To make development faster and reduce code clutter, many commonly used props also have abbreviated aliases that are shorter and more legible. For example, in the above example, `ml` is the abbreviated alias of `marginLeft`, so it would be equivalent to:
+
+```jsx
+<Button ml={"30px"}>hello</Button>
+```
+
+<img src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/40612523/58ea0265-e23f-4db7-a831-6417b2530b71">
+
+A list of props, their aliases, as well as their corresponding CSS class can be found [here](https://chakra-ui.com/docs/styled-system/style-props).
+
+Pseudo classes also exist in this styled prop system. Pseudo classes are differentiated with an underscore at the beginning of the prop and they accept an object of prop name and value key-value pairs. For example, the following creates a button which changes the background to red when hovered over:
+
+```jsx
+<Button _hover={{ bg: "red" }}>hello</Button>
+```
+
+<img src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/40612523/d0b865df-d256-4404-8e47-c9df86f83503">
+
+Other common pseudo classes would include `_active`, `_focus`, `_before`, etc. A full list of pseudo classes can be found [here](https://chakra-ui.com/docs/styled-system/style-props#pseudo)
+
+### Responsiveness
+
+Chakra UI's responsive design is highly customizable and easy to implement. The `width` style prop, for example, can accept an object of prop name and value key-value pairs, where the key is a breakpoint and the value is the prop value. By default, the breakpoints correspond to pre-defined sizes corresponding to the min-width of the screen (e.g. `base: "0em"`, `sm: "30em"`, `md: "48em"`, etc.). For example, the following creates a box with a width of 100% on screens smaller than 30em (mobile) and 50% on screens larger than 30em (desktop):
+
+```jsx
+<Box width={{ base: "100%", sm: "50%" }}>hello</Box>
+```
+
+Chakra UI also has a shorthand for responsive design, where the prop value is an array of values, where the first value corresponds to the base value and the second value corresponds to the value at the first breakpoint. For example, the following creates a box with a width of 100% on screens smaller than 30em (mobile) and 50% on screens larger than 30em (desktop):
+
+```jsx
+<Box width={["100%", "50%"]}>hello</Box>
+```
+
+Breakpoints can also be customized using the `theme` object, allowing for a higher degree of control over responsive design. A full list of breakpoints and their default values can be found [here](https://chakra-ui.com/docs/styled-system/responsive-styles#customizing-breakpoints).
+
+### Theming
+
+Chakra UI's theming system is highly customizable and allows for a high degree of control over the look and feel of your application. The `ChakraProvider` component accepts a `theme` prop, which is an object that contains the theme configuration. The theme object can be customized to include custom colors, fonts, breakpoints, and more. For example, the following creates a custom theme with custom colors:
+
+```jsx
+// 1. Import `extendTheme`
+import { extendTheme } from "@chakra-ui/react"
+
+// 2. Call `extendTheme` and pass your custom values
+const theme = extendTheme({
+  colors: {
+    brand: {
+      100: "#f7fafc",
+      // ...
+      900: "#1a202c",
+    },
+  },
+})
+
+// 3. Pass the new theme to `ChakraProvider`
+<ChakraProvider theme={theme}>
+  <App />
+</ChakraProvider>
+
+// 4. Now you can use these colors in your components
+function Usage() {
+  return <Box bg="brand.100">Welcome</Box>
+}
+```
+
+This example was taken from the [documentation on custom theming](https://chakra-ui.com/docs/styled-system/customize-theme). This page contains more information on customizing themes and providesa comprehensive list of the theme configuration options.
+
 ## Benefits and Drawbacks
 
 ### Benefits
