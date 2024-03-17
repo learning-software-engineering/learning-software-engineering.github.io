@@ -1,8 +1,8 @@
 # Creational Design Patterns
 
-## What are they?
+## Introduction
 
-As the name suggests, creational design patterns deal with the creation and maintenance of objects in object-oriented programming. They are used to instantiate different classes of objects and their subclasses in the best way to achieve their intended purposes.
+As the name suggests, creational design patterns are standardized ways to deal with the creation and maintenance of objects in object-oriented programming. They are used to instantiate different classes of objects and their subclasses in the best way to achieve their intended purposes. 
 
 There are 5 major types of creational patterns that are commonly used in software development.
 
