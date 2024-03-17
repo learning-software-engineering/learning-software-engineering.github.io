@@ -34,6 +34,8 @@
 
 ### [CSS](./Tech_Stacks/CSS.md)
 
+### [Learning Tailwind](./Tech_Stacks/Tailwind.md)
+
 ### [Learning Bootstrap](./Tech_Stacks/Bootstrap.md)
 
 ### [Learning TypeScript](./Tech_Stacks/TypeScript.md)
