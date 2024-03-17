@@ -36,6 +36,15 @@ A list of components and their custom props can be found [here](https://chakra-u
 
 ## Usage
 
+### Design principles
+
+Chakra UI employs several key design principles:
+
+- **Prop-based styling**: a component's style can be customized by passing in a prop corresponding to a CSS property.
+- **Responsive-forward design**: responsive design is both easy to implement and highly customizable as a result of Chakra UI's seamless integration of media queries and breakpoints to custom styling
+- **Dark mode**: custom styling for both light and dark modes is closely integrated into Chakra UI's styling system
+- **Simple and intuitive API**: Chakra UI's API is designed to be simple and intuitive, making it easy to use and understand. Moreover, it is designed to reduce clutter and make development faster, while maintaining well-structured and readable code.
+
 ### Using UI components
 
 Chakra UI provides a plethora of pre-styled components that cover a wide range of UI needs. These components are highly customizable and can be easily integrated into your React application.
