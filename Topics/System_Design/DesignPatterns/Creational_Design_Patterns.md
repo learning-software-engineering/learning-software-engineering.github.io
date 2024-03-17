@@ -21,7 +21,7 @@ The simple factory works by delegating the instantiation of an object class to a
 A factory class is introduced in addition to the object class. The factory has a create method, whose purpose is to generate and return an instance of the object class.
 
 <p align="center">
-<img width="690" alt="UML of Simple Factory design pattern" src="./assets/Simple Factory.png">
+<img width="690" alt="UML of Simple Factory design pattern" src="./System_Design/assets/Simple Factory.png">
 </p>
 
 #### Benefits
@@ -41,7 +41,7 @@ The factory method design pattern introduces a class containing a singular creat
 A factory class containing one (abstract) create method that produces a product class of the required type. Implementations of the factory override the create method as required to output subclasses of the product.
 
 <p align="center">
-<img width="690" alt="UML of Factory Method design pattern" src="./assets/Factory Method.png">
+<img width="690" alt="UML of Factory Method design pattern" src="./System_Design/assets/Factory Method.png">
 </p>
 
 #### Benefits
@@ -63,7 +63,7 @@ Note that this differs from the factory method in that a singular abstract class
 An abstract factory class contains multiple factory methods, each producing a different, but related, abstract class of objects. Implementations of the abstract factory implement these methods to produce (different) subclasses of the abstract object classes.
 
 <p align="center">
-<img width="690" alt="UML of Abstract Factory design pattern" src="./assets/AbstractFactory.png">
+<img width="690" alt="UML of Abstract Factory design pattern" src="./System_Design/assets/AbstractFactory.png">
 </p>
 
 #### Benefits
@@ -86,7 +86,7 @@ Note that this differs from the factory method in that a singular abstract class
 The simplest implementation of a singleton design pattern consists of the desired class, adjusted to contain an instance of itself, the default constructor hidden and a getInstance method that returns the cached instance if not null, and creates a new instance(storing in the cache) if the cache is null. If the original object should not be modified, the singleton class can store it in its static cache, and should be used to get instances of the object using the getInstance method call, rather than making direct instances of the object.
 
 <p align="center">
-<img width="690" alt="UML of 2 different Singleton design patterns" src="./assets/Singleton.png">
+<img width="690" alt="UML of 2 different Singleton design patterns" src="./System_Design/assets/Singleton.png">
 </p>
 
 #### Benefits
@@ -106,7 +106,7 @@ A builder is a design pattern that is deployed to automate the instantiation of 
 The builder design pattern typically consists of an abstract builder class containing the methods(steps) common to all building processes for the given family of products, concrete implementations of that class that override/implement methods of the abstract builder, and a director class that stores a builder object and controls the calling of methods for the process.
 
 <p align="center">
-<img width="690" alt="UML of Builder design pattern" src="./assets/Builder.png">
+<img width="690" alt="UML of Builder design pattern" src="./System_Design/assets/Builder.png">
 </p>
 
 #### Benefits
