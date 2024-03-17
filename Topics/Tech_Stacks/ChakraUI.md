@@ -34,6 +34,23 @@ function App() {
 
 A list of components and their custom props can be found [here](https://chakra-ui.com/docs/components).
 
+## Usage
+
+### Using UI components
+
+Chakra UI provides a plethora of pre-styled components that cover a wide range of UI needs. These components are highly customizable and can be easily integrated into your React application.
+
+**Basic Usage**:
+To use a Chakra UI component, simply import it from `@chakra-ui/react` and use it as you would any other React component. For example, to use a `Button` component:
+
+```js
+import { Button } from "@chakra-ui/react";
+
+function MyComponent() {
+  return <Button colorScheme="blue">Click me</Button>;
+}
+```
+
 ## Benefits and Drawbacks
 
 ### Benefits
