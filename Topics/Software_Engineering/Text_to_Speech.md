@@ -127,11 +127,45 @@ By using this code, the audio will be able to be played before the full file has
 
 ### Google Cloud TTS:
 
+Google Cloud Text-to-Speech API is a powerful tool offered by Google Cloud Platform for converting text into natural-sounding speech. It utilizes advanced machine learning techniques to generate high-quality audio output, allowing developers to integrate speech synthesis capabilities into their applications with ease.
+
+
+*Price*: Based on the number of characters, $4 / 1M characters for Standard voice, will be more expensive depending on Feature. First 4 million characters is free for Standard voice each month.
+
+*Voice choices*: Support most of languages. Only default voiceline, but can upgrage for other voicelines.
+
+*Supported output formats*: MP3, Linear16, OGG Opus, and a number of other audio formats.
+
+*Key features*: Custom voices, Long audio synthesis, Text and SSML support, Pitch tuning
+
+**Set-up**
+
+- Installing the Cloud Client Libraries for Python:
+To install the package for an individual API like Cloud Storage, use a command similar to the following:
+    ```bash
+    pip install --upgrade google-cloud-storage
+    ```
+
+- Install the gcloud CLI [here](https://cloud.google.com/sdk/docs/install).
+
+**API aquirement**
+Before you can begin using Text-to-Speech, you must enable the API in the Google Cloud Platform Console. 
+
+- Make sure billing is enabled for Text-to-Speech:
+    - A Google Cloud Platform (GCP) account. If you don’t have one, sign up for a free trial here.A Google Cloud Platform (GCP) account. If you don’t have one, sign up for a free trial [here](https://cloud.google.com/free?hl=en).
+
+- Enable Text-to-Speech on a project:
+    - Sign in to [Google Cloud console](https://console.cloud.google.com/?_ga=2.129120079.235760447.1710698738-1413217027.1710698726&_gl=1*kikz2f*_up*MQ..&gclid=Cj0KCQjwhtWvBhD9ARIsAOP0GojMbBDoPoxjjjBzHoMMO_J0Q0Px3S3uaXCqBS0b4HzfBOtlK0klpAQaAkwMEALw_wcB&gclsrc=aw.ds) and Go to the [project selector page](https://console.cloud.google.com/projectselector2/home/dashboard?_ga=2.128728655.235760447.1710698738-1413217027.1710698726&_gl=1*195xabo*_up*MQ..&gclid=Cj0KCQjwhtWvBhD9ARIsAOP0GojMbBDoPoxjjjBzHoMMO_J0Q0Px3S3uaXCqBS0b4HzfBOtlK0klpAQaAkwMEALw_wcB&gclsrc=aw.ds)
+    
+    - Once you have selected a project and linked it to a billing account, you can enable the Text-to-Speech API. Go to the **Search products and resources** bar at the top of the page and type in "speech". ![search products and resources](TTS_CloudAPI.png)
+    Select the **Cloud Text-to-Speech API** from the list of results.![Cloud Text-to-Speech API](TTS_CloudAPI_2.png)
+
+    - To try Text-to-Speech without linking it to your project, choose the **TRY THIS API** option. To enable the Text-to-Speech API for use with your project, click **ENABLE**.![Product details](TTS_CloudAPI_3.png)
 
 
 ## Comparison Between the Three Models
 
-
+In summary, the choice between these TTS APIs depends on factors such as the level of customization needed, pricing considerations, ease of integration, and the specific requirements of your project or application. Google Cloud Text-to-Speech API and gTTS are suitable for general-purpose TTS tasks, while OpenAI's TTS models offer advanced capabilities and natural-sounding speech synthesis as the cost is much higher. Furthermore, while Google Cloud Text-to-Speech API and gTTS offer relatively straightforward pricing models, gTTS may be simpler to use for basic text-to-speech tasks. Ultimately, the choice depends on the specific requirements and preferences of the project.
 
 ## Reference
 
@@ -140,3 +174,5 @@ By using this code, the audio will be able to be played before the full file has
 * [gTTS](https://pypi.org/project/gTTS/)
 
 * [OpenAI-TTS](https://platform.openai.com/docs/guides/text-to-speech/)
+
+* [Text-to-Speech documentation](https://cloud.google.com/text-to-speech/docs)
