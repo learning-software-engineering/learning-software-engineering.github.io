@@ -30,7 +30,7 @@ Software licenses protect developers in various ways:
 
 - They protect intellectual property rights by ensuring that developers have control over the software and the code they created. This prevents unauthorized use and distribution.
 
-- They provide legal protection by clearly delimitating usage guidelines and enforcing legal boundaries. This legal framweork allows developers to take legal action in case of infringement or misuse.
+- They provide legal protection by clearly delimitating usage guidelines and enforcing legal boundaries. This legal framework allows developers to take legal action in case of infringement or misuse.
 
 - They offer revenue generation as they allow developers to monetize their work through the selling of licenses.
 
@@ -47,15 +47,15 @@ Softwar licenses also protect the users.
 
 ## Types of Software Licenses
 
-There exists multiples types of software licenses. These vary generally in terms of restrictions and permissions given to the users. Licenses typically fall into two broader categories; free and open-source licenses and proprietary licenses which are more restrictive.
+There exists multiple types of software licenses. These vary generally in terms of restrictions and permissions given to the users. Licenses typically fall into two broader categories; free and open-source licenses and proprietary licenses which are more restrictive.
 
 ### Public Domain
 
-A public domain license is the most open type of license that exists. As its name suggests, software that belongs to the public domain is available to all. This license places no restrictions on use and distirbuton. Software under this license is most of the time open-source, meaning that users or other developers can freely modify its code.
+A public domain license is the most open type of license that exists. As its name suggests, software that belongs to the public domain is available to all. This license places no restrictions on use and distribution. Software under this license is most of the time open-source, meaning that users or other developers can freely modify its code.
 
 ### Permissive Licenses
 
-Permissve licenses are one of the most commonly-used software licenses. They are open-source but still have minmal restrictions regarding distribution and modification. These licenses allow users substanctial freedom to use, modify, and reditribute the software. These novel changes and updates do not have to be disclosed to others. In other words, developers have the right to take the software under the permissive license, modify it, add their changes, and keep the new version to themselves or share it with others. Permissive licenses allow a collaborative environment while still requring some restrictions to be met. For instance, permissive licenses require users to include the copyright notice as well as the license text. 
+Permissive licenses are one of the most commonly-used software licenses. They are open-source but still have minmal restrictions regarding distribution and modification. These licenses allow users substantial freedom to use, modify, and redistribute the software. These novel changes and updates do not have to be disclosed to others. In other words, developers have the right to take the software under the permissive license, modify it, add their changes, and keep the new version to themselves or share it with others. Permissive licenses allow a collaborative environment while still requiring some restrictions to be met. For instance, permissive licenses require users to include the copyright notice as well as the license text. 
 
 Some of the popular permissve licenses are the MIT License, the Apache License, and the Berkeley Source Distribution (BSD) License.
 
@@ -71,7 +71,7 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 
 ### Copyleft Licenses
 
-Copyleft licenses are also known as reciprocal or restrictive licenses. A copyleft licensed code can be modified, redistributed, or incoporated in an exisiting proprietary project. However, these licenses require 
+Copyleft licenses are also known as reciprocal or restrictive licenses. A copyleft licensed code can be modified, redistributed, or incoporated in an existing proprietary project. However, these licenses require 
 that the source code to all new works or adaptation are distributed under the same license. The most frequently used copyleft license in the industry is the General Public License (GPL) family of licenses. Due to their condition of making the source code of a copyleft-licensed software available to everyone, these type of licenses are not commercial-friendly. Companies do not want to share and expose their source code to other users and specifically competitiors, therefore they refrain from using software with copyleft licenses.
 
 
@@ -92,11 +92,11 @@ Here is a picture summarizing the various available types of software licenses:
 
 ## How to Choose the Right License?
 
-With so many possible options, it can be daunting to choose the license that is approapiate to your software, project, and team. 
+With so many possible options, it can be daunting to choose the license that is appropriate to your software, project, and team. 
 
 Firstly, you should choose between the two big categories; whether you want your license to belong to the free and open source licenses or to the proprietary licenses. If you are not planning on commercializing your application, then it would be a better idea to opt for an open source license.
 
-Among the open source licenses, if you are comfortable with someone else taking you code, changing it and making it propretsry (close), then you should go for the popular option of permissive licenses. On the other hand, if you do not want this, then using a copyleft license might be the better choice. 
+Among the open source licenses, if you are comfortable with someone else taking you code, changing it and making it proprietary (close), then you should go for the popular option of permissive licenses. On the other hand, if you do not want this, then using a copyleft license might be the better choice. 
 
 For more information, check this [website](https://choosealicense.com/) created by GitHub that further explains options available to you.
 
@@ -105,7 +105,7 @@ For more information, check this [website](https://choosealicense.com/) created 
 
 ### [Free Software Foundation, Inc. v. Cisco Systems, Inc. (2008)](https://www.fsf.org/news/2008-12-cisco-suit)
 
-In 2008, the Free Software Foundation has filed a complaint against Cisco Sytems claiming that various Cisco products under the Linksys brand had violated the lincenses of many progrmas on which the FSF held a copyright. Most of the progrmas were licensed under the GNU Genreal Public License (GPL) and so they allowed users like Cisco to use, modify, and distribute the software in condition that the redistirbutors share their source code as well. The FSF accused Cisco of distirbuting licensed software without sharing source code with its cusotmers.
+In 2008, the Free Software Foundation has filed a complaint against Cisco Sytems claiming that various Cisco products under the Linksys brand had violated the licenses of many programs on which the FSF held a copyright. Most of the programs were licensed under the GNU General Public License (GPL) and so they allowed users like Cisco to use, modify, and distribute the software in condition that the redistributors share their source code as well. The FSF accused Cisco of distirbuting licensed software without sharing source code with its customers.
 
 The FSF and Cisco came to a settlement. You can read more about the case [here](https://www.fsf.org/news/2008-12-cisco-suit)
 
@@ -119,7 +119,7 @@ To learn more about the situation, you can read it [here](https://www.theregiste
 
 ## Conclusion
 
-In summary, even though the world of software licenses appears to be complicated, as software developers, it is important that we are aware of these exisiting licenses. By doing so, we ensure not only compliance with legal obligtions but also the safeguarding of our own rights. Understanding the nuances of different licenses allows us to work in a collaborative and responsible coding environment.
+In summary, even though the world of software licenses appears to be complicated, as software developers, it is important that we are aware of these exisiting licenses. By doing so, we ensure not only compliance with legal obligations but also the safeguarding of our own rights. Understanding the nuances of different licenses allows us to work in a collaborative and responsible coding environment.
 
 ## Sources and References
 
