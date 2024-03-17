@@ -35,19 +35,23 @@ So, let the adventure begin.
 ## Top Features
 
 ### [IntelliSense](https://code.visualstudio.com/docs/editor/intellisense)
-An umbrella term for various code editing features, IntelliSense simplifies the coding process by providing code completion, syntax highlighting, Code Actions, and parameter info, among many other useful features.
+An umbrella term for various code editing features, IntelliSense simplifies the coding process by providing code completion, syntax highlighting, Code Actions, and parameter info, among many other useful features. To name a few major ones:
 
 - Python context-aware code completion recommendation
-  <img width="850" src=""> 
+  
+  <img width="350" src="https://github.com/parthvats02/learning-software-engineering.github.io/assets/81998163/9d2d39b9-e31d-407a-b17c-ece3f190714c"> 
 
 - Syntax highlight, enhancing code readability
-  <img width="850" src=""> 
+  
+  <img width="350" src="https://github.com/parthvats02/learning-software-engineering.github.io/assets/81998163/ac670db1-d7eb-4164-9627-cddfc19196be"> 
 
 - Code Actions
-  <img width="850" src=""> 
+  
+  <img width="350" src="https://github.com/parthvats02/learning-software-engineering.github.io/assets/81998163/eadf36f3-6fdf-493d-b087-cd1d380088d4"> 
 
 - Parameter information
-  <img width="850" src=""> 
+  
+  <img width="350" src="https://github.com/parthvats02/learning-software-engineering.github.io/assets/81998163/d56b7e99-52a6-4290-8001-83eff5d0aa76"> 
 
 These editing features work together to simplify your coding experience. You can learn more about IntelliSense [here](https://code.visualstudio.com/docs/editor/intellisense).
 
@@ -91,9 +95,8 @@ Whether you choose to use the default terminal or install another one of your pr
 - On the left side of the command, you can see the exit status of the command. Clicking the status, you get options like rerunning the command, copying the output, and so on.
 
   <img width="650" src="https://github.com/parthvats02/learning-software-engineering.github.io/assets/81998163/a3d5f2eb-c40a-4459-9171-c4c0fd4a3e02">
-  <img width="450" src="https://github.com/parthvats02/learning-software-engineering.github.io/assets/81998163/d20e66a0-882a-456c-85f6-79bea3c1116c"> 
-
-
+  <img width="450" src="https://github.com/parthvats02/learning-software-engineering.github.io/assets/81998163/d20e66a0-882a-456c-85f6-79bea3c1116c">  
+  <br>
   <img width="350" src="https://github.com/parthvats02/learning-software-engineering.github.io/assets/81998163/c80a4b62-52aa-48e3-89d3-4855c795218a"> 
 
 - You also have the ability to split terminals, open multiple terminals simultaneously in an organized manner, and keep track of them without the hassle of switching between countless windows. Depending on your machine, you will see relevant options when you click the + sign in the terminal window to run other terminals like Git Bash (if you have it installed).
