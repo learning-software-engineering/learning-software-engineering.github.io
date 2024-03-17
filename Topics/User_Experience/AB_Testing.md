@@ -46,6 +46,7 @@ A/B Testing is useful in helping identify any potential issues with the webpage 
 - Keep a portfolio of small changes that might bring high Return-On-Investment
 - Effect can be short-lived when users get used to the change. It is recommended to run experiments for over 2 weeks to notice such effects.
 **Font Colors**
+<img src="Images/bing.png" alt="Bing Color Experiment"/>
 - In 2013, Bing ran a set of experiments on font colors. Results showed that users complete tasks more often, which lead to an increase in monetary gains of over $10M.
 **Right Offer at the Right Time**
 - At Amazon, the home page was split into slots. Amazon's credit card offer was tested and won the top slot, which is unexpected as it had a low clickthrough-rate. However, the offer was very profitable; thus, even if not a lot of people clicked on the link, there is a potential for high return value.
