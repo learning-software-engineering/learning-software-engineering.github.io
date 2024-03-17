@@ -27,7 +27,9 @@ Jira is a software development tool developed by Atlassian that allows teams to 
 </p>
 
 <h4>Workflows:</h4>
-<p>Workflows in Jira define the lifecycle of an issue, guiding it from creation to completion. Jira's flexibility allows users to customize workflows based on their project's unique requirements. A typical workflow includes stages like "To Do," "In Progress," "In Review," and "Done." Understanding how to tailor workflows empowers teams to align Jira with their specific development processes.</p>
+Workflows in Jira define the lifecycle of an issue, guiding it from creation to completion. Jira's flexibility allows users to customize workflows based on their project's unique requirements. A typical workflow includes stages like "To Do," "In Progress," "In Review," and "Done." Understanding how to tailor workflows empowers teams to align Jira with their specific development processes. By implementing a workflow, teams are required to follow a structured process, preventing the careless movement of tickets. 
+
+The workflow stages will later create the columns of tickets on your board. Therefore, setting up the correct workflow and maintaining it is crucial to the health of your project.
 
 <p>To create or modify workflows, navigate to the Jira settings and locate the Workflow section. From here, you can design custom workflows or modify existing ones to match your team's collaboration style.</p>
 
@@ -36,6 +38,10 @@ Best Practices:
 * Leverage epics to manage and visualize larger bodies of work.
 * Regularly review and optimize workflows based on team feedback.
 <p>By mastering issue types and workflows, you'll unlock Jira's potential for streamlined project management and efficient collaboration.</p>
+
+You can see a sample workflow for the CIY (Cook It Yourself) project with three teams, each following a different process. Notice how the "In Progress" column takes on three different forms depending on the team.
+ ![Workflow](https://i.im.ge/2024/03/17/RPpLkp.Picture3.png)
+
 
 <h3>b. Agile boards</h3>
 <h4>Setting up Agile boards</h4>
@@ -53,6 +59,27 @@ Best Practices:
 <p>Scrum Board: https://support.atlassian.com/jira-software-cloud/docs/create-a-board/</p>
 <p>Kanban Board: https://support.atlassian.com/jira-software-cloud/docs/create-a-kanban-board-based-on-projects/</p>
 
+<h5>Multiple and cross-project boards</h5>
+Jira boards are very useful for keeping track of work and increasing visibility. However, managing a backlog, especially when each workflow column includes many tickets with different labels, can be challenging. Jira allows company-managed projects to use multiple boards to address this issue effectively.
+
+
+You can utilize this feature to 
+- Enhances visibility, especially when dealing with large volumes of tickets
+- Allows each board to have its specific workflow for different teams
+
+Keep in mind that setting up a workflow (as explained above), restricts moving tickets between columns. This ensures that everyone follows a process to complete their tickets. However, it can pose challenges when different teams have distinct needs in their processes. For example, a design team does not need code reviews and QAs. That is when multiple boards come in handy.
+
+Below you can see two boards within the same project, one from a design team and one from a development team. Each board has its specific workflow tailored to the needs of the respective teams. You can take a look at the workflow section above to see each column and its connection.
+
+- **Design Team Board:**  
+  ![Design Team Board](https://i.im.ge/2024/03/17/RPHvPL.Picture1.png)
+
+- **Development Team Board:**  
+  ![Development Team Board](https://i.im.ge/2024/03/17/RPHG8J.Picture2.png)
+
+Need more information?
+https://www.atlassian.com/software/jira/guides/boards/overview#multiple-and-cross-project-boards
+
 <h4>Managing and prioritizing your backlog effectively</h4>
 <p>A backlog is a list of issues that outline what tasks your team is going to work on in a project. Any project can only have one backlog. Effectively managing and prioritizing your backlog ensures that your team is always working on the most valuable tasks and issues.</p>
 <p>1. Creating your backlog: When you create a new Scrum or Kanban project, the backlog is created automatically. It can be found in the project sidebar.</p>
@@ -62,6 +89,7 @@ To learn more, refer to Atlassian’s documentation:
 <p>Creating backlog tutorial (with example): https://confluence.atlassian.com/jirasoftwareserver/creating-your-backlog-938845071.html</p>
 <p>Using Scrum backlog: https://support.atlassian.com/jira-software-cloud/docs/use-your-scrum-backlog/</p>
 <p>Using Kanban backlog: https://support.atlassian.com/jira-software-cloud/docs/use-your-kanban-backlog/</p>
+
 
 <h2>3. Best Practices for Efficient Task Management</h2>
 <h3>a. Creating clear and concise issues</h3>
