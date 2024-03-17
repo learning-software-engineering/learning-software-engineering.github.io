@@ -2,12 +2,27 @@
 
 PyAutoGui is a Python module that allows you to programmatically control the mouse and keyboard to automate tasks. In this tutorial, we'll cover the basics of PyAutoGui and some advanced features. You can find the official documentation for it [here](https://pyautogui.readthedocs.io/en/latest/index.html).
 
+## Requirements
+- PyAutoGUI works on Windows/Mac/Linux and on Python 2 & 3.
+- So you will need to have installed Python first. You can refer to [this website](https://realpython.com/installing-python/) for installation details.
+- This tutorial shows examples in Python 3.
+
 ## What can you do with PyAutoGUI?
-- You can simulate mouse movement! The mouse can be moved to any desired location on the screen and used to click on things as well.
-- You can simulate keypresses without having to touch the keyboard.
-- Take screenshots.
-- Find a particular image on a screen.
-- Display alerts and message boxes.
+- **Simulate mouse movement:** The mouse can be moved to any desired location on the screen and used to click on things as well.  
+  *You can*: Automate the process of clicking through a series of buttons in a software application.
+
+- **Simulate keypresses:** Simulate keypresses without having to touch the keyboard.  
+  *You can*: Automate the process of filling out a form on a website by simulating keypresses to enter text.
+
+- **Take screenshots.**  
+  *You can*: Capture screenshots of the entire screen or just a portion of it to document the state of a program or website.
+
+- **Find a particular image on a screen.**  
+  *You can*: Locate a specific image within the current screen to automate tasks that require interacting with elements that are not easily accessible through other means.
+
+- **Display alerts and message boxes.**  
+  *You can*: Provide feedback to the user or prompt the user to take a specific action by displaying custom alerts and message boxes on the screen.
+
 
 ## Installation
 
@@ -25,7 +40,12 @@ import pyautogui
 ```
 
 ## Positions on the Screen
-Before we start moving the mouse around, we must first understand how points on your screen are defined and used by PyAutoGUI. Locations on your screen are defined using $x$ and $y$ coordinates. But unlike in your math courses, the origin, or (0, 0), is located at the top left, instead of the top right. If you have a standard 1920 x 1080p display, the bottom right pixel is (1919, 1079) since we start from (0, 0).
+Before we start moving the mouse around, we must first understand how points on your screen are defined and used by PyAutoGUI. Locations on your screen are defined using $x$ and $y$ coordinates. But unlike in your math courses, the origin, or (0, 0), is located at the top left, instead of the bottom left. 
+
+For example, if you have a 500x500p display, here is how pixels/locations are mapped on your screen.
+
+![pixel-coordinates](https://www2.cs.sfu.ca/CourseCentral/166/tjd/_images/screenCoord.png)
+(from Coordinates and Modes - CMPT 166 Fall 2016 1 documentation. (n.d.). https://www2.cs.sfu.ca/CourseCentral/166/tjd/coordinates.html)
 
 You can use PyAutoGUI to get your screen resolution size like this:
 ```python
@@ -71,7 +91,7 @@ import time
 time.sleep(5) # 5 second buffer to let you move your mouse
 print(pyautogui.position()) # prints the current position of the mouse
 ```
-All you have to do is simple run the program above and move your mouse to the location you want the coordinates for (make sure its within 5 seconds). The output will tell you exactly where the mouse is!
+All you have to do is simply run the program above and move your mouse to the location you want the coordinates for (make sure its within 5 seconds). The output will tell you exactly where the mouse is!
 
 ### Clicking
 Now that you can move your mouse around freely to wherever you want, how do you finally perform a mouseclick? PyAutoGUI provides multiple options as follows:
@@ -94,10 +114,7 @@ Here are a few examples:
 >>> pyautogui.scroll(10)   # scroll up 10 "clicks"
 >>> pyautogui.hscroll(-10)  # scroll left 10 "clicks"
 ```
-Go check out the docs for a lot more!
-
-## Keyboard Controls
-Pending
+Go check out the [docs](https://pyautogui.readthedocs.io/en/latest/mouse.html) for a lot more!
 
 ## Locating Images and Screenshots
 Let's say you want to click on something that's going to pop up on the screen but you don't know where it's going to be. PyAutoGUI has just the solution for that. 
@@ -135,6 +152,21 @@ Additionally, PyAutoGUI also provides screenshot functionality, in case you need
 # You can also take screenshots of specific regions by specifying the x,y coordinates of the top left and bottom right of the desired region
 >>> im3 = pyautogui.screenshot(region=(0,0, 300, 400))
 ```
+
+### Putting it together
+Here is an example of how you can locate the UofT folder, drag it 400 pixels to the left, and then open it.
+```python
+import pyautogui
+uoft_folder = pyautogui.locateOnScreen('uoft_folder.png')
+uoft_midx, uoft_midy = pyautogui.center(uoft_folder)
+pyautogui.moveTo(uoft_midx, uoft_midy, 1)
+pyautogui.drag(-400, 0, 1, button='left')
+pyautogui.doubleClick()
+```
+![sample_gif](./assets/move_folder.gif)
+
+## Keyboard Controls
+Pending
 
 ## Message Box Functions
 Pending
