@@ -32,16 +32,24 @@ sayHelo("")  # error: Method `sayHelo` does not exist
 ````
 
 ## Pros
-The big advantage of using Sorbet is without a doubt the strict typing provided for an otherwise dynamically typed language. Furthermore, code written using Sorbet offers enhanced readability for both the outhor, as well as reviewers. Engineers know exactly what type every method inputs and outputs,while errors are thrown if an engineer tries to input the wrong type or use the output incorrectly. As such, errors that would normally be caught at run time in these dynamic languaes are caught before hand, saving companies countless hours of wrok when things go wrong in production. Furthermore, Sorbet is backwards compatible with regular Ruby code, therefore you can add Sorbet to your project gradually or even omit it all together to begin with and add it later on as things grow (although this would result in some serious tech debt!).
+* Strict typing provided for an otherwise dynamically typed languageFurthermore
+* Enhanced readability for both the outhor, as well as reviewers
+* Engineers know exactly what type every method inputs and outputs, where errors are thrown if types used are invalid
+* errors that would normally be caught at run time in these dynamic languaes are caught before hand
+* Sorbet is backwards compatible with regular Ruby code
+  
 ## Cons
-Interestingly, the same thing that makes Sorbet attractive to some programmers is one of it's cons. Although a type system is nice, it begs the question, why not just use a strongly typed language like Java instead? Furthermore, dynamic languages with a type system on top can still end up doing wacky things, just in a different way. David Heinemeier Hanssen, famously the creator of Rails, describes these wacky events as "type gymnastics", where an engineer has to write increasingly complex type annotations on an otherwise acceptable line of code in order to eliminate the errors. Here's an example of type gymnastics in TypeScript, that occur when trying to define a type for url parameters of an api call using ````fetch()````:
+* Adding a type system to a dynamic language avoids the advantages of a dynamically typed language
+* Type gymnastics to make the 'compiler' happy about the type you used.
 
+Here's an example of type gymnastics in TypeScript, that occur when trying to define a type for url parameters of an api call using ````fetch()````:
 ````{verbatim, lang = "markdown"}
 type paramsType = string | URLSearchParams | string[][] | Record<string, string> | undefined | null
 ````
 
 ## Is Sorbet right for me?
-As I'm sure you can imagine, the answer to this question is, it depends. The advantages of Ruby on Rails is the fact it's a batteries included framework; everything is pretty much ready to go once you've initialized your project. This allows an engineer to develop their app very quickly, with scalability already accounted for. However, adding strict typing to Ruby on Rails will ultimately slow down one's development process, foregoing the advantages of a framework like Rails. If your project is intended to remain small, there's not really a reason to add Sorbet on top, there will be a manageable amount of code so the error tracing advantages aren't as drastic and you shorten the amount of time to a minimum viable product. If you plan on creating a monolith, Sorbet is definitely advantageous. The development timeline on a monolith is more stretched out so engineers can afford to spend a bit of time using Sorbet in order to avoid run time errors in the future. 
+
+As I'm sure you can imagine, the answer to this question is, it depends. The advantages of Ruby on Rails is the fact it's a batteries included framework; everything is pretty much ready to go once you've initialized your project. This allows an engineer to develop their app very quickly, with scalability already accounted for. However, adding strict typing to Ruby on Rails will ultimately slow down one's development process, foregoing the advantages of a framework like Rails. If your project is intended to remain small, there's not really a reason to add Sorbet on top, there will be a manageable amount of code so the error tracing advantages aren't as drastic and you shorten the amount of time to a minimum viable product. If you plan on creating a monolith, Sorbet is definitely advantageous. The development timeline on a monolith is more stretched out so engineers can afford to spend a bit of time using Sorbet in order to avoid run time errors in the future (although this might result in some seriopus tech debt!). 
 
 You can try Sorbet at https://sorbet.run/
 
