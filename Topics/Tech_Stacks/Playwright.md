@@ -86,7 +86,7 @@ const { chromium } = require('playwright');
 ```
 
 ## Advantages Over Other Solutions
-Playwright is a modern solution for automated testing over frameworks like Selenium which may be a bit outdated. Here are some key advantages as higlighted in a blog by Olga Sheremeta on Testomat[Link](https://testomat.io/blog/test-automation-with-playwright-definition-and-benefits-of-this-testing-framework/): 
+Playwright is a modern solution for automated testing over frameworks like Selenium which may be a bit outdated. Here are some key advantages as higlighted in a blog by Olga Sheremeta on Testomat [Link](https://testomat.io/blog/test-automation-with-playwright-definition-and-benefits-of-this-testing-framework/): 
 
 * Codegen: Allows test creation through user action recording, with the flexibility to write tests in various programming languages.
 * Playwright Inspector: Enables step-by-step monitoring of test execution and detailed analysis of interactions.
