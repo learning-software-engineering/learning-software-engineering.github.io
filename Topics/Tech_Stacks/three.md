@@ -70,7 +70,7 @@ Now that we have our scene, camera, and renderer, we can get started with creati
 
 We can do this through the following code excerpt.
 
-```javascriptCopy 
+```javascript
 // Creates a cube and adds it to the scene
 var geometry = new THREE.BoxGeometry(1, 1, 1); // Width, Height, Depth
 var material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
@@ -102,11 +102,16 @@ Additionally, changing `cube.rotation.x` and `cube.rotation.y` on every frame re
 
 Now all you have to do is open `index.html` in a WebGL-compatible web browser to see your scene. You should see a rotating green cube against a black background.
 
+You can view an live example of the finished product through this [link](https://jsfiddle.net/0c1oqf38/) provided in the Three.js documentation.
+
 ## Reasons to consider Three.js
 
-Three.js is a simple yet powerful tool that makes creating 3D graphics on the web easy and accessible. It allows people to build and manipulate 3D scenes without extensive knowledge of WebGL, which is complex and can be very daunting for many beginners. This makes it a very valuable tool that opens up many opportunities  for anyone that is considering venturing into the world of 3D design and web development. 
+Three.js is a simple yet powerful tool that makes creating 3D graphics on the web easy and accessible. It allows people to build and manipulate 3D scenes without extensive knowledge of WebGL, which is complex and can be very daunting for many beginners. This makes it a very valuable tool that opens up many opportunities for anyone that is considering venturing into the world of 3D design and web development. 
 
+You can also view what others have done with Three.js on the library's [website](https://threejs.org).
 
 ## References
 - https://threejs.org/docs/#manual/en/introduction/Creating-a-scene
+- https://threejs.org
+
 
