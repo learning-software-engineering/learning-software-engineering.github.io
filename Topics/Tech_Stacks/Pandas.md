@@ -50,7 +50,7 @@ data = pd.Series([0, 2, 4, 6], index=['a', 'b', 'c', 'd'])
 ```
 
 ### DataFrame
-A DataFrame on the other hand is a two-dimensional array where each index represents a row, comparable to an entire spreadsheet. Both the rows (indexes) and columns are customizable as long as the labels are of hashable datatypes.
+A DataFrame on the other hand is a two-dimensional array, comparable to an entire spreadsheet. Both the rows (indexes) and columns are customizable as long as the labels are of hashable datatypes.
 
 Example of creating a DataFrame, by first creating a dictionary and then converting it to a DataFrame (note: the lists must all be of equal length):
 ```python
@@ -72,7 +72,7 @@ df.columns = ['First Name', 'Age', 'Favorite Food']
 ```
 
 ## Reading Data
-Pandas has many functions that allow the user to import data from various different filetypes into the DataFrame structures:
+Pandas has many functions that allow the user to import data from different filetypes into the DataFrame structures:
 
 Reading from CSV files:
 ```python
@@ -84,11 +84,113 @@ Reading from Excel files:
 df = pd.read_excel('path_to_excel_file/file.xlsx')
 ```
 
-Examples of other supported files are JSON, HTML, and SQL files which are read from using the read_json, read_html, and read_sql functions respectively
+Reading from JSON files:
+```python
+df = pd.read_json('path_to_excel_file/file.json')
+```
 
-The data imports can also be customized in many different ways. For example, you can handle empty values with the na_values parameter and declare the column data types using the dtype parameter.
+Examples of other supported files are HTML and SQL files which are read from using the read_html and read_sql functions respectively.
 
-Example of dealing with empty values using na_values
+The data imports can also be customized in many different ways. For example, you can handle empty values with the na_values parameter and declare the column data types using the dtype parameter. This will be covered further in the Data Manipulation section.
+
+## Data Manipulation
+Pandas offers a large variety of functionalities for data manipulation that help users easily clean and transform their data for analysis and visualization.
+
+### Selecting Rows & Columns
+Selecting Rows by their index label (loc):
+```python
+# single row
+row = df.loc['label']
+
+# multiple rows
+rows = df.loc[['label1', 'label2']]
+```
+Selecting Rows by their index position (iloc):
+```python
+# single row
+row = df.iloc[0]
+
+# multiple rows
+rows = df.iloc[0:5]  # first five rows, behaves just like list indexing in python
+```
+
+Selecting Columns:
+Selecting Columns by their index label:
+```python
+# single col
+column = df['col_name']
+
+# multiple cols
+columns = df['col_name1', 'col_name2']
+```
+
+Selecting Columns by their index label:
+```python
+# first col
+column = df.iloc[:, 0]
+
+# multiple cols
+columns = df.iloc[:, 0:3]  # first 4 columns
+```
+
+### Adding/Removing Columns & Rows
+Adding Columns:
+```python
+# adding a single column
+df['Field'] = 'Marketing'
+
+# add a column derived from another
+df['Yearly Salary'] = df['Monthly Salary'] * 12
+```
+
+Removing Columns:
+```python
+# remove one col
+df.drop('Department', axis=1, inplace=True)
+
+# remove multiple
+df.drop(['Annual Salary', 'OtherColumn'], axis=1, inplace=True)
+```
+
+Removing Rows:
+```python
+# remove one row
+df = df.drop('label')
+
+# remove multiple
+df = df.drop(['label1', 'label2'])
+```
+
+### Filtering Data & Conditional Operations
+Filtering selecting rows/columns that abide by one or more conditions:
+```python
+# rows where age is greater than 65
+senior_citizens = df[df['Age'] > 65]
+
+# rows where age is greater than 65 and the birthplace is California
+senior_californians = df[(df['Age'] > 65) & (df['Birthplace'] == 'California')]
+```
+
+We can also conditionally modify DataFrames:
+```python
+# remove rows where a col's val doesn't abide by a condition
+df = df[df['Age'] <= 18]
+
+# remove rows with multiple conditions (~ means negation)
+df = df[~((df['Age'] < 18) | (df['Age'] > 65))]
+```
+
+### Cleaning & Sorting Data
+Sorting values
+```python
+# sort by one column
+df.sort_values(by='Age', inplace=True)
+
+# sort by multiple columns
+df.sort_values(by=['Age', 'Height'], ascending=[True, False], inplace=True)
+```
+
+Dealing with empty values using na_values:
 ```python
 na_values = ['', 'Null']
 
