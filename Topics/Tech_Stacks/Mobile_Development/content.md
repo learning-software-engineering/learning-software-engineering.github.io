@@ -14,7 +14,7 @@
 
 ## Cross-Platform Development Frameworks
 
-Cross-platform development for mobile involves creating applications that can run seamlessly across multiple operating systems, such as iOS and Android, utilizing a single codebase. Through cross-platform frameworks, developers gain the ability to streamline the development process by writing code once and deploying it across various platforms. CSC301 students can benefit greatly from understanding cross-platform development as it is easier to implement for multiple famous platforms such as iOS and Android. Students with existing knowledge in web can easily start-off with React Native providing them with a clear transition.
+Cross-platform development for mobile involves creating applications that can run seamlessly across multiple operating systems, such as iOS and Android, utilizing a single codebase. Through cross-platform frameworks, developers gain the ability to streamline the development process by writing code once and deploying it across various platforms. CSC301 students can benefit greatly from understanding cross-platform development as it is easier to implement for multiple famous platforms such as iOS and Android. According to Stack Overflow's Developer Survey 2021, React Native was ranked among the top frameworks loved by developers. Students with existing knowledge in web can easily start-off with React Native providing them with a clear transition.
 
 ## Advantages and Challenges of Cross-Platform Development
 
@@ -34,20 +34,11 @@ Cross-platform development for mobile involves creating applications that can ru
 
 ## Popular Cross-Platform Development Tools and Frameworks
 
-- **React Native**:
-  - Developed by Facebook, allows building native-like apps using JavaScript and React
-  - Wide community support and extensive ecosystem of libraries and components
-  - Used by companies like Facebook, Instagram, and Airbnb for mobile app development
-- **Flutter**:
-  - Developed by Google, offers a fast and expressive way to build native apps for iOS and Android from a single codebase
-  - Features a layered architecture with customizable widgets for building UIs
-  - Hot reload feature for rapid iteration and debugging
-  - Used by companies like Alibaba, Google Ads, and Reflectly for mobile app development
-- **Xamarin**:
-  - Acquired by Microsoft, allows building native apps for iOS, Android, and Windows using C# and .NET
-  - Integration with Visual Studio and support for native APIs
-  - Code sharing across platforms with shared projects or .NET Standard libraries
-  - Used by companies like UPS, Honeywell, and Olo for mobile app development
+| Framework    | Description                                                                                                                                                  | Features and Benefits                                                                       | Key Differences                                                                                     | Companies Using                                                                            |
+|--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
+| React Native | Developed by Facebook, allows building native-like apps using JavaScript and React                                                                           | Wide community support and extensive ecosystem of libraries and components                  | Utilizes JavaScript and React for cross-platform development. Notable for its large community.     | Facebook, Instagram, Airbnb                                                               |
+| Flutter      | Developed by Google, offers a fast and expressive way to build native apps for iOS and Android from a single codebase                                       | Layered architecture with customizable widgets for building UIs, Hot reload feature         | Utilizes Dart programming language and features a layered architecture with customizable widgets.   | Alibaba, Google Ads, Reflectly                                                            |
+| Xamarin      | Acquired by Microsoft, allows building native apps for iOS, Android, and Windows using C# and .NET                                                           | Integration with Visual Studio and support for native APIs, Code sharing across platforms    | Utilizes C# and .NET for cross-platform development. Offers deep integration with Visual Studio.    | UPS, Honeywell, Olo                                                                       |
 
 ## Native Mobile Development
 
@@ -66,6 +57,9 @@ Native mobile development for iOS and Android involves creating applications spe
 1. **Platform Dependency**: Developing separate codebases for iOS and Android requires additional time and resources compared to cross-platform development, as developers need to maintain platform-specific codebases and implement platform-specific features separately. CSC301 students need people with both domain knowledge otherwise, they won't be able to fulfill partner's requirement.
 2. **Learning Curve**: Learning platform-specific languages and frameworks, such as Swift for iOS and Kotlin for Android, may require additional time and effort, especially for developers new to mobile development.
 3. **Release Cycle**: Releasing updates and new features simultaneously across multiple platforms may pose challenges due to differences in release processes and approval times between app stores. This can be seen as a challenge for CSC301 students who have limited time for releasing a product.
+
+
+Native Mobile development also allows ease to follow platform-specific design guidelines. These guidelines provide developers with insights into the user interface (UI) and user experience (UX) expectations specific to each platform, ensuring that applications look and feel native to the respective operating systems.
 
 ## Comparing Performance and User Experience
 
@@ -96,6 +90,10 @@ Native mobile development for iOS and Android involves creating applications spe
   - Scalability can be optimized for each platform individually, allowing for greater flexibility and performance optimization.
   - Maintenance efforts may increase with separate codebases for iOS and Android, but platform-specific optimizations can lead to better long-term scalability. This point needs to be ensured during handover of the project so that future CSC301 students can take over and build more features upon the existing codebase.
 
+### Hybrid Mobile Application Approach 
+
+Hybrid app development approaches involve leveraging web technologies (HTML, CSS, JavaScript) within native app frameworks. One common approach is using web views within native apps, where web content is displayed within a native app container. Popular frameworks for hybrid app development include Apache Cordova/PhoneGap and Ionic. However, hybrid approaches may sometimes face performance and user experience challenges compared to fully native apps.
+
 ## Examples of Products
 
 - **Cross-platform Development**:
@@ -111,20 +109,21 @@ Native mobile development for iOS and Android involves creating applications spe
 Finally, for CSC301 students to get started with the development process, here are some of the resources they could refer to:
 
 - **Documentation and Tutorials:**
+This is great for students who need quick access to doucmentations
   - [React Native Documentation](https://reactnative.dev/docs/getting-started)
   - [Flutter Documentation](https://flutter.dev/docs)
 
 
-- **Video Tutorials:**
+- **Video Tutorials:** This is recommended for students who want to get started using online Tutorials or Books
   - [The Net Ninja - React Native Tutorial for Beginners](https://www.youtube.com/playlist?list=PL4cUxeGkcC9ixPU-QkScoRBVxtPPzVjrQ)
   - [Academind - Flutter & Dart - The Complete Guide [2021 Edition]](https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/)
 
-- **Development Tools:**
+- **Development Tools:** 
   - [Visual Studio Code](https://code.visualstudio.com/)
   - [Android Studio](https://developer.android.com/studio)
   - [Xcode](https://developer.apple.com/xcode/)
 
-These resources provide a comprehensive starting point for CSC301 students to learn, practice, and excel in the development process. Here are the roadmap that they can follow:
+These resources provide a comprehensive starting point for CSC301 students to learn, practice, and excel in the development process. Here are the roadmap that they can follow. This provides an illustration of the all the branches of knowledge that one need to fully understand the concepts and topics behind each of the development process:
 
 [Android Roadmap](android.pdf)
 
