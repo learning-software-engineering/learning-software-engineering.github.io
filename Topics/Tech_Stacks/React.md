@@ -58,6 +58,9 @@ A fully-featured UI library that offers a huge range of common components that a
 [Bootstrap](https://getbootstrap.com/)
 Another responsive UI library that allows you to focus on development by handling the design logistics for you.  
 
+[Chakra UI](https://chakra-ui.com/)
+A powerful component library for React with a modern and React-centric design system that focuses on theming and responsiveness. See [An introduction to Chakra UI](./ChakraUI.md) for a tutorial on installing and utilizing Chakra UI best.
+
 ### Miscellaneous
 
 [GitHub Pages](https://pages.github.com/)
