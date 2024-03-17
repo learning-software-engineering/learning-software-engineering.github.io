@@ -2,15 +2,15 @@
 
 ## Table of Contents
 1. [Introduction](#introduction)
-2. [Why are software licenses important?](#importance)
-3. [Types of Software Licenses](#license-types)
-    - [Public domain](#public-domain)
+2. [Why Are Software Licenses Important?](#why-are-software-licenses-important)
+3. [Types of Software Licenses](#types-of-software-licenses)
+    - [Public Domain](#public-domain)
     - [Permissive Licenses](#permissive-licenses)
     - [Copyleft Licenses](#copyleft-licenses)
         - [GNU Lesser General Public Licenses](#gnu-lesser-general-public-licenses)
-    - [Proprietary licenses](#proprietary-license)
-4. [How to choose the right license?](#how-to-choose-the-right-license)
-5. [Breach of Licenses](#breach-of-licence)
+    - [Proprietary Licenses](#proprietary-license)
+4. [How to Choose the Right License?](#how-to-choose-the-right-license)
+5. [Breach of Licenses](#breach-of-licences)
 6. [Conclusion](#conclusion)
 7. [Sources and References](#sources-and-references)
 
@@ -20,11 +20,11 @@
 As software developers, it is important to know about the various licensing options that exist. A software license is a legal agreement that defines the terms under which software can be used, modified, and distributed. 
 
 
-## Why are software licenses important?
+## Why Are Software Licenses Important?
 
 Software licenses play a pivotal role in safeguarding the interests of all parties involved, from developers to end-users, ensuring lawful utilization of software. Understanding their importance is crucial for maintaining legal compliance.
 
-### Importance of licenses for developers
+### Importance of Licenses for Developers
 
 Software licenses protect developers in various ways:
 
@@ -34,7 +34,7 @@ Software licenses protect developers in various ways:
 
 - They offer revenue generation as they allow developers to monetize their work through the selling of licenses.
 
-### Importance of licenses for users
+### Importance of Licenses for Users
 
 Softwar licenses also protect the users.
 
@@ -45,7 +45,7 @@ Softwar licenses also protect the users.
 - They limit the users' legal liability.
 
 
-## Types of software licenses
+## Types of Software Licenses
 
 There exists multiples types of software licenses. These vary generally in terms of restrictions and permissions given to the users. Licenses typically fall into two broader categories; free and open-source licenses and proprietary licenses which are more restrictive.
 
@@ -53,7 +53,7 @@ There exists multiples types of software licenses. These vary generally in terms
 
 A public domain license is the most open type of license that exists. As its name suggests, software that belongs to the public domain is available to all. This license places no restrictions on use and distirbuton. Software under this license is most of the time open-source, meaning that users or other developers can freely modify its code.
 
-### Permissive licenses
+### Permissive Licenses
 
 Permissve licenses are one of the most commonly-used software licenses. They are open-source but still have minmal restrictions regarding distribution and modification. These licenses allow users substanctial freedom to use, modify, and reditribute the software. These novel changes and updates do not have to be disclosed to others. In other words, developers have the right to take the software under the permissive license, modify it, add their changes, and keep the new version to themselves or share it with others. Permissive licenses allow a collaborative environment while still requring some restrictions to be met. For instance, permissive licenses require users to include the copyright notice as well as the license text. 
 
@@ -69,7 +69,7 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-### Copyleft licenses
+### Copyleft Licenses
 
 Copyleft licenses are also known as reciprocal or restrictive licenses. A copyleft licensed code can be modified, redistributed, or incoporated in an exisiting proprietary project. However, these licenses require 
 that the source code to all new works or adaptation are distributed under the same license. The most frequently used copyleft license in the industry is the General Public License (GPL) family of licenses. Due to their condition of making the source code of a copyleft-licensed software available to everyone, these type of licenses are not commercial-friendly. Companies do not want to share and expose their source code to other users and specifically competitiors, therefore they refrain from using software with copyleft licenses.
@@ -77,11 +77,11 @@ that the source code to all new works or adaptation are distributed under the sa
 
 ![GPL](https://static-assets.codecademy.com/Courses/open-source/large-software-project.svg)
 
-#### GNU Lesser general public licenses
+#### GNU Lesser General Public Licenses
 
 The GNU Lesser General Public License (LGPL) is a software license that is considered 'weak copyleft', meaning it imposes fewer restrictions on derivative works compared to the standard GNU General Public License (GPL). It allows developers to use LGPL-licensed libraries in their own code without necessarily having to release the source code of their own components. This is the notion of dynamic linking. For example, developers can dynamically link LGPL-licensed libraries with proprietary software without requiring the latter to be open-source. However, if modifications are made to the LGPL-licensed libraries themselves, those modifications must be released under the LGPL. This flexibility enables developers to incorporate LGPL-licensed code into both open-source and proprietary projects. While the LGPL is commonly used for software libraries and frameworks, it can also be applied to other types of software. Overlall, this type of license creates a balance between promoting openness and allowing for integration with proprietary software.
 
-### Propietary licenses
+### Propietary Licenses
 
 We have mentioned multiple times these types of licenses. To give a proper definition, prorpriatry licenses, also known as commercial licenses, are the most restrictive types of licenses. It is the opposite of free and open source licenses. Software that falls under these licenses cannot be modified or distributed to the public community. The source code is considered a trade secret. Prorpietary licenses provide the most legal protection to owners against unauthorised use of software. They fully protects the owners' inteelectual property rights. To use a software that falls under this category of licenses, users have to sign a End-User License Agreement (EULA). For instance, Microsoft Windows is a software with prorpieatry license. The latters restrics users from actions like from reverse engineering, and distributing the software to multiple users. if you do not accept the EULA, then Microsoft prevents you from using its products. 
 
@@ -90,7 +90,7 @@ Here is a picture summarizing the various available types of software licenses:
 
 ![Licenses](https://cdn.ttgtmedia.com/rms/onlineimages/5_types_of_software_licenses-f.png)
 
-## How to choose the right license?
+## How to Choose the Right License?
 
 With so many possible options, it can be daunting to choose the license that is approapiate to your software, project, and team. 
 
