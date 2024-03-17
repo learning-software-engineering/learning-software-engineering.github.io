@@ -92,6 +92,29 @@ C# is a statically-typed language, but it is one with excellent and comprehensiv
 
 Languages like TypeScript offer a similar level of flexibility between dynamic and static types, but C#’s system works better and requires fewer sketchy work-arounds. This is because TypeScript is fundamentally trying to make a dynamically typed language statically typed while C# is expanding the language’s static type system to allow a single dynamic type. This means unless explicitly making use of the dynamic type, the language is statically typed, and works well as a statically typed language (which TypeScript often does not).
 
+C#'s dynamic typing becomes very useful when ingesting data of unknown type. For instance, Json.NET by [NewtonSoft](https://www.newtonsoft.com/json) (probably the most popular JSON library available for C#), allows the use of dynamic typing when deserializing a JSON into an object. This allows users to take in a JSON without knowing the specific fields that will be on that JSON, and to write code assuming that the JSON has certain fields. For instance:
+
+```csharp
+dynamic json = JObject.Parse(
+    "{ 'Field': 'Value', 'Field2': 5 }"
+);
+
+// Prints Value
+Console.WriteLine(json.Field);
+
+// The line commented out below wouldn't work as the compiler cannot infer
+// the type of Field2 at runtime and var is only for
+// type inferrence, not dynamic typing
+// var field2 = json.Field2; 
+
+// instead the type must be supplied to load it into a variable,
+// or the variable can also be dynamic
+int field2 = json.Field2;
+
+// Prints 6
+Console.WriteLine(field2 + 1);
+```
+
 You can read more about C#’s type inference [here](https://www.c-sharpcorner.com/UploadFile/mahesh/type-inference-in-C-Sharp/), or about dynamic typing [here](https://learn.microsoft.com/en-us/dotnet/csharp/advanced-topics/interop/using-type-dynamic).
 
 ### IDisposable Interface
