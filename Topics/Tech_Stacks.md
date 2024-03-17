@@ -176,3 +176,5 @@
 
 ### [Introduction to ROBLOX Studio](./Tech_Stacks/ROBLOX_Intro.md)
 
+### [Understanding Bluetooth in Mobile App Development](./Tech_Stacks/Bluetooth.md)
+
