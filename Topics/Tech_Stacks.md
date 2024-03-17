@@ -1,5 +1,7 @@
 ## Tech Stacks
 
+### [Introduction to C#](./Tech_Stacks/C#.md)
+
 ### [Learning MySQL for databases](./Tech_Stacks/Learning_MySQL.md)
 
 ### [Introduction to Graph Databases with Neo4j](./Tech_Stacks/GraphDB_Neo4j.md)
@@ -135,6 +137,8 @@
 ### [Inter-process Communication(IPC) with fork() and pipe() in C](./Tech_Stacks/Fork_and_Pipe.md)
 
 ### [Introduction to PHP](./Tech_Stacks/PHP.md)
+
+### [Introduction to Pandas](./Tech_Stacks/Pandas.md)
 
 ### [Pythonic Iteration Patterns](./Tech_Stacks/Pythonic-Iteration-Patterns.md)
 

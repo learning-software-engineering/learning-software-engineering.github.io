@@ -166,7 +166,7 @@ To provide introductory-level learners with a clear understanding of microservic
 These real-world examples illustrate the versatility and scalability of microservices architecture in powering large-scale, mission-critical applications. By studying these case studies, introductory-level learners can gain insights into how microservices are applied in practice, understand the benefits they offer, and appreciate their significance in modern software development. Additionally, analyzing the challenges faced and solutions implemented by these companies can help learners prepare for similar scenarios in their own software engineering endeavors.
 
 
-## Further Readings <a name="further"></a>
+## Further Readings and References <a name="further"></a>
 
 1. Martin Fowler's Website - Microservices: A Definition of This New Architectural Term: [Link](https://martinfowler.com/articles/microservices.html)
 2. Sam Newman's Book - Building Microservices: Designing Fine-Grained Systems: [Link](https://samnewman.io/books/building_microservices/)
