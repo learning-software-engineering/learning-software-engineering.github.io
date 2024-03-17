@@ -136,6 +136,8 @@
 
 ### [Introduction to PHP](./Tech_Stacks/PHP.md)
 
+### [Introduction to Pandas](./Tech_Stacks/Pandas.md)
+
 ### [Pythonic Iteration Patterns](./Tech_Stacks/Pythonic-Iteration-Patterns.md)
 
 ### [Introcuction to SCSS](./Tech_Stacks/SCSS.md)
