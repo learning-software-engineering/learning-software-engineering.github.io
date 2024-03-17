@@ -1,9 +1,9 @@
-Introduction to Nano
+# Introduction to Nano
 
-**What is Nano?**
+## **What is Nano?**
 Nano is a text editor for Unix-like computing systems or operating environments using a command line interface. It is simple and user-friendly, making it great for people who are beginners to using command line interfaces.
 
-**Installing Nano**
+## **Installing Nano**
 Nano text editor is pre-installed on macOS and most Linux distros. To check if it is installed on your system, type:
 
 ```nano --version```
