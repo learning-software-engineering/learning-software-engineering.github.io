@@ -1,3 +1,13 @@
+## Table of Contents
+- [What is a Product Development Strategy and Why is it Important?](#PDS)
+- [Steps to Build a Product Development Strategy](#steps)
+  - [Conduct Market Research](#market-research)
+  - [Conduct Primary Research](#primary-research)
+  - [Build a Prototype And Test the Product](#prototype)
+  - [Launch the Product](#launch)
+- [Sources](#sources)
+
+<a name="PDS"></a>
 # What is a Product Development Strategy and Why is it Important?
 
 When creating a new product as a product manager, the common stages involve organizing and overseeing cross functional teams through these stages of the product life cycle:
@@ -13,6 +23,7 @@ A product development strategy is created by the product management team to be t
 
 Creating an informed product development strategy is critical to the success of the product because it aligns cross-functional teams around a shared set of priorities and goals. This will help these teams make better informed decisions when unexpected situations arise. For example if there is a predefined PDS in place, then when users are confused with a minor feature during the collecting feedback stage of the product life cycle, the design team will know to put that on hold in order to focus on a bigger feature given the time outlined in the PDS. 
 
+<a name="steps"></a>
 # Steps to Build a Product Development Strategy
 
 Product development strategies will vary based on a variety of factors such as the company, industry, and purpose of the product being built. However, there are common steps across these divides which contribute to the success of the product in the market. 
@@ -22,6 +33,7 @@ Product development strategies will vary based on a variety of factors such as t
 3. Build a Prototype And Test the Product 
 4. Launch the Product 
 
+<a name="market-research"></a>
 ## 1. Conduct Market Research
 
 	An idea for a new feature or product may sound great in theory. However, to discover if there would be a real demand in the market, then effective market research must first be conducted to ensure true product-market fit. Conducting market research is the preliminary data gathering step, in which the product research team looks at existing data from sources to gain an understanding of the general user scape to find where the demand or pain points may lie.  
@@ -53,6 +65,7 @@ RICE score = $ Reach \cdot Impact \cdot Confidence \div Effort $
 
 Once the field is narrowed, the next stage of the product development strategy can be conducted to help strengthen the existing ideas. 
 
+<a name="primary-research"></a>
 ## 2. Conduct Primary Research 
 
 Market research is important in using existing data to gain valuable insights to the general market. However to better validate the viability of your product before any financial and personnel commitment, it is critical to conduct your own first hand research to fill in any gaps that the broader research may have missed. 
@@ -85,7 +98,8 @@ There are three categories of KPIs product managers keep track of: business perf
 ** Gross margin: ** Is the amount of money retained after deducting the direct costs for producing the goods or services it sells. This indicator shows how efficient the production costs of a product are managed. 
 
 ```
-Gross margin = Revenue - COGS / Revenue x 100
+Gross margin = Revenue - Cost Of Goods Sold / Revenue x 100
+
 ```
 
 ** Net profit margin: ** The ratio of profit a product earns to the total revenue (net sales) the product generates expressed as a percentage. This is a key indicator of the profitability of a product. 
@@ -124,6 +138,7 @@ Feature adoption rate = Number of new feature users / Total number of feature us
 
 Choosing which KPIs to track should align with the company’s broader business goals such as increasing profitability in the next quarter by 10%. With the research conducted and strategic KPIs chosen for the product specification sheet, the next step in the product development strategy is to create nad test the prototype. 
 
+<a name="prototype"></a>
 ## 3. Build a Prototype And Test the Product 
 
 Creating a prototype during product development is important in several respects:
@@ -148,6 +163,8 @@ Running a A/B test involves the following steps:
 ** 3. Build and Run the Experiment: ** Create the variants of your product, and determine how long to conduct the test, as well as how much data to receive. It can be beneficial to use the predetermined KPIs as a measure of user performance. 
 ** 4. Measure Results: ** The results from the experiments can be used to make a decision about which features of the product to carry through on based on the highest performing variation. 
 
+![alt text](https://www.google.com/url?sa=i&url=https%3A%2F%2Ftowardsdatascience.com%2Fhow-to-conduct-a-b-testing-3076074a8458&psig=AOvVaw1RSTuzw-3JlULh0bsEy-Q2&ust=1710732788718000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCIji6bSu-oQDFQAAAAAdAAAAABAE)
+
 Learn more about A/B testing here: https://www.productplan.com/glossary/a-b-test/  
 
 ** QA Testing **
@@ -157,6 +174,7 @@ Learn more about QA testing here: https://www.indeed.com/career-advice/career-de
 
 Once testing is complete on the product, it is ready to be launched.
 
+<a name="launch"></a>
 ## 4. Launch the Product 
 
 Once the product is ready to be released, the final phase of the product development strategy is the launch. This involves the coordinated effort across multiple teams and departments including marketing, sales, and customer support in order to create excitement and make the product widely available. 
@@ -178,6 +196,7 @@ Products launched to the market may grow and decline and it is important to moni
 
 A product development strategy is essential to the toolkit of any product manager to develop new products and through this guide, the importance, steps, and implementation of a PDS can be created for future product managers.  
 
+<a name="sources"></a>
 ## Sources:
 
 The information in this article was found through these sites, to learn more:
