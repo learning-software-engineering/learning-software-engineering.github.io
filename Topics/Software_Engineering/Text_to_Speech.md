@@ -162,6 +162,85 @@ Before you can begin using Text-to-Speech, you must enable the API in the Google
 
     - To try Text-to-Speech without linking it to your project, choose the **TRY THIS API** option. To enable the Text-to-Speech API for use with your project, click **ENABLE**.![Product details](Text_to_Speech_CloudAPI_3.png)
 
+**Quickstart**
+Text-to-Speech supports programmatic access. You can access the API in 2 ways: Clinet libraries and REST
+
+- Clinet libraries:
+Install the client library:
+    ```bash
+    pip install --upgrade google-cloud-texttospeech
+    ```
+    
+- To use the client library, you must first create a `TextToSpeechClient` object.
+    ```python
+    from google.cloud import texttospeech
+
+    # Instantiates a client
+    client = texttospeech.TextToSpeechClient()
+
+    # Set the text input to be synthesized
+    synthesis_input = texttospeech.SynthesisInput(text="Hello, World!")
+
+    # Build the voice request, select the language code ("en-US") and the ssml
+    # voice gender ("neutral")
+    voice = texttospeech.VoiceSelectionParams(
+        language_code="en-US", ssml_gender=texttospeech.SsmlVoiceGender.NEUTRAL
+    )
+
+    # Select the type of audio file you want returned
+    audio_config = texttospeech.AudioConfig(
+        audio_encoding=texttospeech.AudioEncoding.MP3
+    )
+
+    # Perform the text-to-speech request on the text input with the selected
+    # voice parameters and audio file type
+    response = client.synthesize_speech(
+        input=synthesis_input, voice=voice, audio_config=audio_config
+    )
+
+    # The response's audio_content is binary.
+    with open("output.mp3", "wb") as out:
+        # Write the response to the output file.
+        out.write(response.audio_content)
+        print('Audio content written to file "output.mp3"')
+    ```
+    
+-REST:
+It is suggested to call this serevice with Google-providede client libraries. However, if you nned to use your own libraries to call this service, following information will help you make the API requests.
+
+
+
+The service endpoint(base URL) for this API service is https://texttospeech.googleapis.com
+
+
+A Discovery Document serves as a machine-readable blueprint detailing and facilitating the utilization of REST APIs. Its purpose lies in enabling the construction of client libraries, IDE plugins, and various tools that engage with Google APIs. Cloud Text-to-Speech API service provides the following Discovery Documents : [v1](https://texttospeech.googleapis.com/$discovery/rest?version=v1) and [v1beta1](https://texttospeech.googleapis.com/$discovery/rest?version=v1beta1).
+
+Here is one example of text.sythesize:
+```http
+POST https://texttospeech.googleapis.com/v1/text:synthesize
+```
+Request Body:
+```JSON
+{
+  "input": {
+    object (SynthesisInput)
+  },
+  "voice": {
+    object (VoiceSelectionParams)
+  },
+  "audioConfig": {
+    object (AudioConfig)
+  }
+}
+```
+
+Response body:
+
+```JSON
+{
+  "audioContent": string
+}
+```
 
 
 ## Comparison Between the Three Models
@@ -177,3 +256,5 @@ In summary, the choice between these TTS APIs depends on factors such as the lev
 * [OpenAI-TTS](https://platform.openai.com/docs/guides/text-to-speech/)
 
 * [Text-to-Speech documentation](https://cloud.google.com/text-to-speech/docs)
+
+* [Speech-synthesis](https://www.w3.org/TR/speech-synthesis/)
