@@ -270,7 +270,7 @@ npm start
 
 ## Example with Markdown Editor in React
 
-By default, Tiptap doesn't support inputting or outputting Markdown files.[^4] However, there is a community-developed npm package called `tiptap-markdown` that extends Tiptap to enable this. We'll go through the installation of this package and the creation of a simple editor that uses it.
+By default, Tiptap doesn't support input from or output to Markdown files.[^4] However, there is a community-developed npm package called `tiptap-markdown` that extends Tiptap to enable this. We'll go through the installation of this package and the creation of a simple editor that uses it.
 
 **1. Install `tiptap-markdown`:**
 We'll continue with the React project we created above. Install the `tiptap-markdown` package using npm:
@@ -279,42 +279,47 @@ npm install tiptap-markdown
 ```
 
 **2. Import the package:**
-Make a copy of App.js called Markdown.js. Add this import to the top of the file:
+Make a copy of Tiptap.jsx called Markdown.jsx. Add this import to the top of the file:
 ```
 import { Markdown } from 'tiptap-markdown';
 ```
 
 **3. Edit the editor:**
-Add `Markdown` to the list of extensions used by the Tiptap editor. Since the file format has changed from HTML to Markdown, we'll change the initial content as well:
-```
-function MyEditor() {
-  const editor = useEditor({
-    extensions: [StarterKit, Markdown],
-    content: '# Hello, TipTap!\nHello world!',
-  });
+In Markdown.jsx, add `Markdown` to the list of extensions used by the Tiptap editor. Since the input file format has changed from HTML to Markdown, we'll change the initial content as well:
+````
+const extensions = [
+  [...keep the existing extensions...]
+  Markdown,
+]
+
+const content = `
+## Hi there,
+Isn’t that great? And all of that is editable. But wait, there’s more. Let’s try a code block:
+\`\`\`css
+body {
+display: none;
 }
-```
+\`\`\`
+I know, I know, this is impressive. It’s only the tip of the iceberg though. Give it a try and click a little bit around. Don’t forget to check the other examples too.
+`
+````
 
 **4. Render the new editor:**
-Remove the definition of the `function App()` from the bottom of Markdown.js. Also change the line `export default App;` to `export default MyEditor;`.
-
-Now, at the top of App.js, import the new Markdown editor from Markdown.js:
+At the top of App.js, import the new Markdown editor from Markdown.jsx:
 ```
-import MarkdownEditor from './Markdown';
+import Markdown from './Markdown';
 ```
 
 Finally, render the new Markdown editor below the existing editor in App.js:
 ```
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <h1>My TipTap Editor</h1>
-      <MyEditor />
-      <h1>My Markdown Editor</h1>
-      <MarkdownEditor />
+      <Tiptap />
+      <Markdown />
     </div>
   );
-}
+};
 ```
 
 ## Example with (something else Maybe)
