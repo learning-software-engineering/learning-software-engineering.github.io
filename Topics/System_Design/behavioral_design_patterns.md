@@ -23,7 +23,7 @@ Now, we will dicuss some commonly used behavioral patterns with real world analo
 The Observer design pattern is a behavioral pattern where an object, known as the subject, maintains a list of its dependents, called observers, and notifies them of any changes in its state. This pattern establishes a one-to-many relationship between the subject and its observers, allowing multiple objects to react to state changes in the subject independently. Observers register with the subject to receive notifications and update themselves accordingly. The Observer pattern promotes loose coupling between objects, making it easier to maintain and extend systems by separating concerns and allowing objects to interact without having direct knowledge of each other. It's commonly used in event handling, user interface design, and other scenarios where objects need to be notified of changes in another object's state.
 
 <p align="center">
-<img width="676" align="center" alt="Screenshot 2024-03-17 at 8 58 15 AM" src="https://github.com/paridhi26/CSC311Project/assets/85652265/f554584c-b2aa-4838-99b8-6a15c46310c7"> 
+<img width="676" alt="Illustraion for Observer Design Pattern" align="center" alt="Screenshot 2024-03-17 at 8 58 15 AM" src="https://github.com/paridhi26/CSC311Project/assets/85652265/f554584c-b2aa-4838-99b8-6a15c46310c7"> 
 </p>
 
 Image from [Refactoring Guru](https://refactoring.guru/design-patterns/observer)
@@ -51,7 +51,7 @@ The Strategy design pattern is a behavioral pattern that allows a class to defin
 Imagine you're planning a vacation, and you have multiple options for transportation: you could travel by car, train, bus, or airplane. Each mode of transportation has its own advantages and disadvantages depending on factors like distance, cost, time, and personal preferences. Here's how the Strategy pattern can be applied in this scenario:
 
 <p align="center">
-<img width="690" alt="Screenshot 2024-03-17 at 9 08 10 AM" src="https://github.com/paridhi26/CSC311Project/assets/85652265/38c1b09d-292f-45ae-88bd-51dfb884c11f">
+<img width="690" alt="Illustraion for Strategy Design Pattern" src="https://github.com/paridhi26/CSC311Project/assets/85652265/38c1b09d-292f-45ae-88bd-51dfb884c11f">
 </p>
 
 Image from [Refactoring Guru](https://refactoring.guru/design-patterns/strategy)
@@ -73,7 +73,7 @@ Overall, the Strategy pattern promotes flexibility, modularity, and maintainabil
 The Iterator design pattern is a behavioral pattern that provides a way to access elements of an aggregate object sequentially without exposing its underlying representation. It allows clients to traverse the elements of a collection without needing to know its internal structure. The Iterator pattern typically consists of two main components: the Iterator interface or class, which defines methods for accessing elements sequentially, and the Aggregate interface or class, which defines a method for creating an iterator object. By decoupling the traversal algorithm from the collection, the Iterator pattern enhances the flexibility and reusability of both the collection and the traversal algorithm. It's commonly used in scenarios where collections vary in structure or where there's a need to iterate over elements in a uniform manner.
 
 <p align="center">
-<img width="709" alt="Screenshot 2024-03-17 at 9 10 00 AM" src="https://github.com/paridhi26/CSC311Project/assets/85652265/48ac92bc-f2eb-4c04-993a-532ca2cf1b76">
+<img width="709" alt="Illustraion for Iterator Design Pattern" src="https://github.com/paridhi26/CSC311Project/assets/85652265/48ac92bc-f2eb-4c04-993a-532ca2cf1b76">
 </p>
 
 Image from [Refactoring Guru](https://refactoring.guru/design-patterns/iterator)
@@ -97,7 +97,7 @@ In this example, the Iterator pattern enables you to browse through the books in
 The Command design pattern is a behavioral pattern that encapsulates a request as an object, thereby allowing for parameterization of clients with queues, requests, and operations. It separates the sender of a request from the receiver, allowing for decoupling and flexibility in how requests are processed. The pattern typically involves four main components: the Client, which creates and sets up commands; the Invoker, which executes commands; the Command, which defines an interface for executing operations; and the Receiver, which carries out the requested action. By encapsulating requests as objects, the Command pattern enables the implementation of operations such as undo functionality, remote execution, and logging, among others, in a reusable and extensible manner.
 
 <p align="center">
-<img width="680" alt="Screenshot 2024-03-17 at 9 12 35 AM" src="https://github.com/paridhi26/CSC311Project/assets/85652265/9e9c007d-8212-4333-8aa6-36ce000784f2">
+<img width="680" alt="Illustraion for Command Design Pattern" src="https://github.com/paridhi26/CSC311Project/assets/85652265/9e9c007d-8212-4333-8aa6-36ce000784f2">
 </p>
 
 Image from [Refactoring Guru](https://refactoring.guru/design-patterns/command)
