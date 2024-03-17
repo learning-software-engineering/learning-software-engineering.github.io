@@ -36,5 +36,6 @@ An umbrella term for various code editing features, IntelliSense simplifies the 
 
 These editing features work together to simplify your coding experience. You can learn more about IntelliSense [here](https://code.visualstudio.com/docs/editor/intellisense).
 
+<img width="850" alt="VSCode New" src="https://github.com/parthvats02/learning-software-engineering.github.io/assets/81998163/bce65647-4a2c-40ec-8bef-84ef40209cfb">
 
 
