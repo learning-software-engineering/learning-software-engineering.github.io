@@ -16,7 +16,7 @@ In software engineering, behavioral design patterns  are a set of patterns that 
 
 Behavioral design patterns are useful when you need to define how objects interact in a flexible and reusable manner, ensuring that changes in one part of the system do not require modifications to other parts. They are particularly valuable in scenarios where the behavior of objects needs to vary dynamically during runtime. 
 
-Now, we will dicuss some commonly used behavioral patterns with real world analogies to get some intuition about when these patterns can be useful and how they can be implemented. For UML diagrams and implementation details check out [Refactoring Guru: Behavioral Patterns](https://refactoring.guru/design-patterns/behavioral-patterns). 
+Now, we will dicuss some commonly used behavioral patterns with real world analogies to get some intuition about when these patterns can be useful and how they can be implemented. For UML diagrams and implementation details, check out [Refactoring Guru: Behavioral Patterns](https://refactoring.guru/design-patterns/behavioral-patterns). 
 
 ## Observer Design Pattern <a name="obs"></a>
 
