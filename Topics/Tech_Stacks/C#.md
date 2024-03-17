@@ -224,7 +224,7 @@ You can read more about the Entity Framework [here](https://learn.microsoft.com/
 
 LINQ stands for Language Integrated Queries. This is a language feature that allows for natively querying a data source from within the C# language. C# can convert these queries into SQL, REST API requests, or even other C# code depending on the data source being queried. This massively simplifies the process of fetching data from external sources, and provides a unified, source-agnostic interface when bringing any kind of external data into the application.
 
-The LINQ documentation page provides the following example querying an in-memory array, but the process and syntax is identical regardless of the source of the data being queried.
+The LINQ documentation page provides the following examples querying an in-memory array, and then querying a file database, but the process and syntax is identical regardless of the source of the data being queried.
 
 ```csharp
 // Specify the data source
@@ -240,6 +240,18 @@ IEnumerable<int> scoreQuery =
 foreach (var score in scoreQuery) {
     Console.WriteLine(score);
 }
+```
+
+The exact same structure can be used to query the Entity Framework:
+
+```csharp
+Northwnd db = new Northwnd(@"c:\northwnd.mdf");
+
+// Query for customers in London.
+IQueryable<Customer> custQuery =
+    from cust in db.Customers
+    where cust.City == "London"
+    select cust;
 ```
 
 You can read more about LINQ [here](https://learn.microsoft.com/en-us/dotnet/csharp/linq/).
