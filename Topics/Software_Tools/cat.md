@@ -56,6 +56,7 @@ To append text to an existing file:
 ```bash
 cat >> existingfile.txt
 ```
+
 <img width="452" alt="Screenshot 2024-03-12 at 12 00 29 AM" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/98674104/4c3bc972-8242-4de0-8a1d-d869656630ec">
 
 <img width="348" alt="Screenshot 2024-03-12 at 12 01 00 AM" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/98674104/40153a7b-bf24-4d8d-ad0a-35cb4f93c26c">
@@ -88,6 +89,16 @@ cat file1.txt file2.txt file3.txt
 ```
 
 <img width="502" alt="Screenshot 2024-03-12 at 12 03 41 AM" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/98674104/3be8397f-788d-4394-b2a2-438f83bbc4f9">
+
+## Sort and Remove Duplicate Lines
+
+If you have a file with list items or entries that you want to sort and remove duplicates from, you can use cat in combination with other commands like `sort` and `uniq`.
+
+```bash
+cat list.txt | sort | uniq > sorted_list.txt
+```
+
+Using `cat list.txt | sort | uniq > sorted_list.txt` streamlines the process of organizing data by automatically sorting the contents of `list.txt`, removing any duplicate entries, and saving the cleaned, ordered list to `sorted_list.txt`. This command sequence accelerates workflows by performing data cleanup and organization in a single step, eliminating the need for manual sorting and deduplication, thus saving time and reducing potential for error in data handling.
 
 ## Conclusion
 
