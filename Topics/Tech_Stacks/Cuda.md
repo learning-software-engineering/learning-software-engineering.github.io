@@ -8,13 +8,19 @@
 #### [Optimization techniques]()
 
 ## Introduction:
-CUDA, short for Compute Unified Device Architecture, is a proprietary toolkit offered for NVIDIA GPUs that takes advantage of the massive amount of parallelism GPUs offer. In today's landscape, algorithmic complexity and computational theory will only take us so far, and bringing down an algorithm from $O(n^2)$ to $O(n)$ runtime complexity for example will surely help us improve performance, but what if we could assign $n$ units to split up work on our algorithm at a massive scale? Additionally, what if we run into computational problems where there is no good solution? Like the traveling salesman problem? Or gradient descent in machine learning? Or matrix multiplication? Despite our best efforts in reducing these problems computational costs either theoretically or practically through optimization techniques at the CPU level, they are still too costly to perform at a large scale. This is where GPUs come into play. Instead of having one horse pulling a cart, what if you had a thousand chickens? Or ten thousand chickens? Maybe even a million chickens? GPUs are like the million chickens pulling a cart. By having poorer and less versatile performing cores at an individual level than CPUs, we are able to fit thousands, even tens of thousands of cores on a GPU which can compute parallel tasks at a massive scale.
+CUDA, short for Compute Unified Device Architecture, is a proprietary toolkit offered for NVIDIA GPUs that takes advantage of the massive amount of parallelism GPUs offer. In today's landscape, algorithmic complexity and computational theory will only take us so far, and bringing down an algorithm from $O(n^2)$ to $O(n)$ runtime complexity for example will surely help us improve performance, but what if we could assign $n$ units to split up work on our algorithm at a massive scale? Additionally, what if we run into computational problems where there is no good solution? Like the traveling salesman problem? Or gradient descent in machine learning? Or matrix multiplication? Despite our best efforts in reducing these problems computational costs either theoretically or practically through optimization techniques at the CPU level, they are still too costly to perform at a large scale. This is where GPUs come into play. Instead of having one horse pulling a cart, what if you had a thousand chickens? Or ten thousand chickens? Maybe even a million chickens? GPUs are like the million chickens pulling a cart. By having poorer and less versatile performing cores at an individual level than CPUs, we are able to fit thousands, even tens of thousands of cores on a GPU which can compute parallel tasks at a massive scale. The key to doing this is by performing smaller, easy to compute tasks, at a huge parallel scale, compared to tasks that are relatively difficult on their own to compute which would be best fit by a CPU.
 
 ## Installation:
 
 Note that since CUDA is a proprietary technology, you MUST have an NVIDIA GPU with a valid CUDA compute capability (see [here](https://developer.nvidia.com/cuda-gpus)). You can also install this on a machine with an NVIDIA GPU installed, such as a UofT lab machine, or a computer you can SSH into with an NVIDIA GPU.
 
 To install CUDA on your system, simply download the [CUDA Toolkit](https://developer.nvidia.com/cuda-downloads) onto your computer. Linux users can either install the executable directly from the NVIDIA website or they can use their favourite package manager to get it from the AUR, APT, and so on. Windows users can simply download the executable directly from the CUDA Toolkit website linked below:
+
+For example, on Ubuntu:
+```
+sudo apt update
+sudo apt install nvidia-cuda-toolkit
+```
 
 https://developer.nvidia.com/cuda-downloads
 
@@ -29,13 +35,14 @@ Let's assume our GPU is an NVIDIA GTX 1060. A GTX 1060 has 10 streaming multipro
 
 This concept is crucial in GPU optimization and is referred to as occupancy – the maximum number of blocks all the SMs on a GPU can handle simultaneously. Maintaining high occupancy is vital for achieving optimal GPU performance in various computing tasks. The concept of occupancy in GPU architecture resembles multithreading on a single-core CPU. In both cases, the goal is to maximize parallelism and throughput by executing multiple tasks concurrently. Just as a single-core CPU executes multiple threads by rapidly switching between them, GPUs with multiple SMs must efficiently manage blocks, ensuring that each SM is fully utilized without excessive context switching.
 
-Another important topic that will come up is GPU memory. Often referred to as device memory (whereas RAM is considered host memory), GPUs have built-in memory to avoid the slow bandwidth encountered with traditional RAM that the CPU communicates with. This GPU memory also referred to as VRAM is high-speed, high-throughput volatile memory that is meant for high-bandwidth operations. When executing GPU code, note that we must transfer elements such as arrays from traditional RAM onto our GPU memory.
+Another important topic that will come up is GPU memory. Often referred to as device memory (whereas RAM is considered host memory), GPUs have built-in memory to avoid the slow bandwidth encountered with traditional RAM that the CPU communicates with. This GPU memory often referred to as VRAM is high-speed, high-throughput volatile memory that is meant for high-bandwidth operations. When executing GPU code, note that we must transfer elements such as arrays from traditional RAM onto our GPU memory.
 
 The following images below will help clear up any confusion about our GPU architecture.
 
-![image](https://docs.nvidia.com/cuda/cuda-c-programming-guide/_images/gpu-devotes-more-transistors-to-data-processing.png)
+![image](https://docs.nvidia.com/cuda/cuda-c-programming-guide/_images/gpu-devotes-more-transistors-to-data-processing.png)*CPU vs GPU architecture. Notice how more cores are devoted to GPUs than CPUs, at the cost of less computational versatility.*
 
 ![image](https://docs.nvidia.com/cuda/cuda-c-programming-guide/_images/automatic-scalability.png)
+*CUDA programs can be divided into blocks which can then be assigned onto SMs by the compiler at runtime.*
 
 Source: https://docs.nvidia.com/cuda/cuda-c-programming-guide/
 
