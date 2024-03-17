@@ -281,10 +281,11 @@ plt.show()
 ```
 
 Generated Line Plot:
-![image](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/55326695/91035966-862f-40a9-b130-70e09c6eb99a)
+![lineplot](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/55326695/0acb6bc5-599d-44ff-8d6d-36bb6436dd01)
+
 
 Generated Bar Chart
-![image](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/55326695/a53f2590-73cd-448d-a50a-6d989c8a5bed)
+![barchart](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/55326695/4f9a3855-7d3f-4930-a238-a65eb6437ecb)
 
 
 
