@@ -8,8 +8,10 @@
 ### [Basic Concepts](#basic-concepts)
 ### [Reading Data](#reading-data)
 ### [Data Manipulation](#data-manipulation)
-### [Data Analysis and Visualization](#data-analysis-and-visualization)
+### [Data Analysis](#data-analysis)
+### [Data Visualization](#data-visualization)
 ### [Best Practices](#best-practices)
+### [Conclusion](#conclusion)
 ### [References](#references)
 
 ##  Introduction
@@ -137,19 +139,19 @@ columns = df.iloc[:, 0:3]  # first 4 columns
 Adding Columns:
 ```python
 # adding a single column
-df['Field'] = 'Marketing'
+df['field'] = 'marketing'
 
 # add a column derived from another
-df['Yearly Salary'] = df['Monthly Salary'] * 12
+df['yearly salary'] = df['monthly salary'] * 12
 ```
 
 Removing Columns:
 ```python
 # remove one col
-df.drop('Department', axis=1, inplace=True)
+df.drop('employee12', axis=1, inplace=True)
 
 # remove multiple
-df.drop(['Annual Salary', 'OtherColumn'], axis=1, inplace=True)
+df.drop(['yearly salary', 'marketing'], axis=1, inplace=True)
 ```
 
 Removing Rows:
@@ -197,6 +199,94 @@ na_values = ['', 'Null']
 # tells pandas to treat strings with these values as NaN (not a number)
 df = pd.read_csv('path_to_csv_file/file.csv', na_values=na_values)
 ```
+
+## Data Analysis
+
+.describe() outputs a description of the statistics of your DataFrame including median, mean, and standard deviation
+```python
+stats = df.describe()
+```
+
+.corr() outputs the correlations between pairs of columns in your DataFrame
+```python
+correlation_table = df.corr()
+```
+
+.groupby() method allows to aggregate data into groups and thus carry out operations on these groups individually
+```python
+group_means = df.groupby('age').mean()
+```
+
+.value_counts() counts the mode (number of occurrences) of each value in a column
+```python
+data = {'colour': ['Red', 'Red', 'Blue', 'Red']}
+df = pd.DataFrame(data)
+print(df['colour'].value_counts())
+
+'''
+Returns:
+Red 3
+Blue 1
+'''
+```
+
+## Data Visualization
+Libraries like Matplotlib and Seaborn are frequently used in conjunction with Pandas to visualize data. We will not delve deep into these libraries in this guide, but below is a simple example to demonstrate how Pandas can be used with Matplotlib to visualize data. I encourage you to look further into each library's vast capabilities.
+
+```python
+import matplotlib.pyplot as plt
+import pandas as pd
+
+# monthly sales dictionary for two products
+data = {
+    'Month': ['January', 'January', 'February', 'February', 'March', 'March',
+              'April', 'April', 'May', 'May'],
+    'Product': ['Product A', 'Product B', 'Product A', 'Product B', 'Product A', 'Product B',
+                'Product A', 'Product B', 'Product A', 'Product B'],
+    'Sales': [150, 150, 200, 50, 200, 100, 100, 250, 300, 200]
+}
+
+# converting this dictionary to a data frame
+df = pd.DataFrame(data)
+months = ['January', 'February', 'March', 'April', 'May']
+a_sales = df[df['Product'] == 'Product A']['Sales']  # selecting the sales of product A
+b_sales = df[df['Product'] == 'Product B']['Sales'] # selecting the sales of product B
+
+# LINE PLOT
+
+plt.figure(figsize=(10, 5))  # setting the size of the figure
+plt.plot(months, a_sales, label='Product A')
+plt.plot(months, b_sales, label='Product B')
+
+# line plot styling
+plt.title('Monthly Sales Trends')
+plt.xlabel('Month')
+plt.ylabel('Sales')
+plt.legend()
+plt.show()
+
+
+# BAR CHART
+
+# calculate average sales
+avg_sales = df.groupby('Product')['Sales'].mean()
+
+plt.figure(figsize=(10, 5))
+plt.bar(avg_sales.index, avg_sales.values, color=['red', 'blue'])
+
+plt.title('Average Sales by Product')
+plt.xlabel('Product')
+plt.ylabel('Average Sales')
+plt.show()
+```
+
+Generated Line Plot:
+![image](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/55326695/91035966-862f-40a9-b130-70e09c6eb99a)
+
+Generated Bar Chart
+![image](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/55326695/a53f2590-73cd-448d-a50a-6d989c8a5bed)
+
+
 
 
 
