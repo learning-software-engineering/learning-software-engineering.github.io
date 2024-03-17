@@ -163,6 +163,7 @@ Before you can begin using Text-to-Speech, you must enable the API in the Google
     - To try Text-to-Speech without linking it to your project, choose the **TRY THIS API** option. To enable the Text-to-Speech API for use with your project, click **ENABLE**.![Product details](Text_to_Speech_CloudAPI_3.png)
 
 
+
 ## Comparison Between the Three Models
 
 In summary, the choice between these TTS APIs depends on factors such as the level of customization needed, pricing considerations, ease of integration, and the specific requirements of your project or application. Google Cloud Text-to-Speech API and gTTS are suitable for general-purpose TTS tasks, while OpenAI's TTS models offer advanced capabilities and natural-sounding speech synthesis as the cost is much higher. Furthermore, while Google Cloud Text-to-Speech API and gTTS offer relatively straightforward pricing models, gTTS may be simpler to use for basic text-to-speech tasks. Ultimately, the choice depends on the specific requirements and preferences of the project.
