@@ -10,6 +10,7 @@
     - [Debugging with VS Code](#debugging-with-vs-code)
     - [Integrated Terminal](#integrated-terminal)
   - [Extensions](#extensions)
+  - [Tips and Tricks](#tips-and-tricks)
 ---
 
 ## Introduction
@@ -80,13 +81,16 @@ To learn more about the integrated terminal and the features it offers, check ou
 
 
 ## Extensions
-Extensions are a big part of the Visual Studio Code ecosystem as they make the editor even more powerful. Extensions include everything ranging from languages and debuggers to tools and customizers that allow you to have all that you need in your development workflow.
+Extensions are a big part of the Visual Studio Code ecosystem as they make the editor even more powerful. 
+Extensions include everything ranging from languages and debuggers to tools and customizers that allow you to have all that you need in your development workflow.
 
-To get started with extensions, click the four squares (building blocks) icon in the left pane. Be cautious as this may open the doors to countless options that help you tailor VS Code to your workflow!
+To get started with extensions, click the four squares (building blocks) icon in the left pane. 
+Be cautious as this may open the doors to countless options that help you tailor VS Code to your workflow!
 
 
 
-No matter the language or framework you are working with, Extensions has you covered. Simply search what you are looking for in the search bar and you will see numerous results to choose from. 
+No matter the language or framework you are working with, Extensions has you covered. 
+Simply search what you are looking for in the search bar and you will see numerous results to choose from. 
 
 Here are a few popular categories and extensions that you have access to:
 
@@ -101,7 +105,7 @@ Here are a few popular categories and extensions that you have access to:
 
 - Container extensions like Docker which allows you to inspect the containers, images, registries and more during execution.
 
-- Git related extensions like GitLens which supercharges your git powers, and allows you to inspect file commit history, display last modifier in-line, and much more within a few clicks.
+- Git-related extensions like GitLens which supercharges your git powers, and allows you to inspect file commit history, display last modifier in-line, and much more within a few clicks.
 
 - Themes that enable you to customize VS Code exactly as you want it.
 
@@ -110,6 +114,18 @@ Here are a few popular categories and extensions that you have access to:
 Feeling excited and love to learn more about extensions? Check out [this](https://code.visualstudio.com/docs/editor/extension-marketplace) detailed page by VSCode to get started.
 
 
+## Tips and Tricks
+With an editor so powerful comes a myriad of tips and tricks to improve your experience. 
+Here are some quick hand-picked tips and tricks:
+
+- You can split the editor by clicking the icon here which allows you to work with your files at multiple locations simultaneously
+
+- You can enable Zen Mode (by clicking View -> Appearance -> Zen Mode) to reduce distractions and focus only your code, and can disable it by pressing Escape on your keyboard twice
+
+- You can use and modify keyword shortcuts to simplify your workflow. Image below by VSCode from Visual Studio Code Tips and Tricks
+
+
+For an extensive list of tips and tricks, visit the official [Visual Studio Code Tips and Tricks page](https://code.visualstudio.com/docs/getstarted/tips-and-tricks) to supercharge your VS Code experience.
 
 
 
