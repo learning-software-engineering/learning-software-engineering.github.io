@@ -90,16 +90,16 @@ Whether you choose to use the default terminal or install another one of your pr
 
 - On the left side of the command, you can see the exit status of the command. Clicking the status, you get options like rerunning the command, copying the output, and so on.
 
-  <img width="650" src="https://github.com/parthvats02/learning-software-engineering.github.io/assets/81998163/a3d5f2eb-c40a-4459-9171-c4c0fd4a3e02"> 
-  
+  <img width="650" src="https://github.com/parthvats02/learning-software-engineering.github.io/assets/81998163/a3d5f2eb-c40a-4459-9171-c4c0fd4a3e02">
   <img width="450" src="https://github.com/parthvats02/learning-software-engineering.github.io/assets/81998163/d20e66a0-882a-456c-85f6-79bea3c1116c"> 
+
 
   <img width="350" src="https://github.com/parthvats02/learning-software-engineering.github.io/assets/81998163/c80a4b62-52aa-48e3-89d3-4855c795218a"> 
 
 - You also have the ability to split terminals, open multiple terminals simultaneously in an organized manner, and keep track of them without the hassle of switching between countless windows. Depending on your machine, you will see relevant options when you click the + sign in the terminal window to run other terminals like Git Bash (if you have it installed).
 
   <img width="350" src="https://github.com/parthvats02/learning-software-engineering.github.io/assets/81998163/2661f205-055f-40f1-90ed-8b14e9fa969c"> 
-  <img width="350" src="https://github.com/parthvats02/learning-software-engineering.github.io/assets/81998163/63bc9d5c-6409-4667-85c3-bf11388cd022"> 
+  <img width="341" src="https://github.com/parthvats02/learning-software-engineering.github.io/assets/81998163/63bc9d5c-6409-4667-85c3-bf11388cd022"> 
 
 To learn more about the integrated terminal and the features it offers, check out the detailed introduction by VSCode [here](https://code.visualstudio.com/docs/terminal/basics).
 
