@@ -20,7 +20,7 @@ Microservices architecture presents a paradigm shift in how software systems are
 
 For CSC301 students, grasping the significance of microservices architecture entails understanding its foundational principles and how they apply to real-world software engineering practices. Microservices enable teams to work more efficiently by allowing them to focus on developing and maintaining small, autonomous services. This aligns with the agile development methods taught in CSC301, where adaptability, collaboration, and rapid iteration are paramount.
 
-In the context of CSC301, microservices architecture offers several advantages. It promotes scalability, allowing teams to scale individual services based on demand, a concept directly relevant to discussions on estimation and prioritization. Moreover, the autonomy of microservices facilitates teamwork skills, as teams can work independently on different services while ensuring seamless integration through well-defined APIs.
+In the context of CSC301, microservices architecture offers several advantages. It promotes scalability, allowing teams to scale individual services based on demand, a concept directly relevant to discussions on estimation (which involves predicting the effort or resources required for a task) and prioritization. Moreover, the autonomy of microservices facilitates teamwork skills, as teams can work independently on different services while ensuring seamless integration through well-defined APIs.
 
 However, adopting microservices architecture also introduces challenges, such as managing the complexity of a distributed system and ensuring effective communication between services. These challenges underscore the importance of basic modeling, design patterns, and refactoring, topics covered in CSC301.
 
@@ -32,7 +32,7 @@ Microservices architecture presents several advantages and challenges that CSC30
 
 **Advantages:**
 
-1. **Scalability**: Microservices enable horizontal scaling, allowing organizations to handle increased traffic by deploying multiple instances of individual services. This scalability is crucial for projects with varying demand, as discussed in CSC301's emphasis on agile development methods.
+1. **Scalability**: Microservices enable horizontal scaling, allowing organizations to handle increased traffic by deploying multiple instances of individual services. This scalability is crucial for projects with varying demand, as discussed in CSC301's emphasis on agile development methods. In simpler terms, horizontal scaling refers to deploying multiple servers that handle similar tasks, ensuring the system can accommodate growing user loads effectively.
 
 2. **Flexibility and Agility**: Breaking down applications into smaller, independently deployable services enhances agility, enabling teams to work on each service autonomously. This aligns with the agile principle of responding to change over following a plan, as discussed in CSC301.
 
@@ -130,7 +130,7 @@ When it comes to designing, developing, and deploying microservices, adhering to
 
 4. **Decentralized Data Management**: Aim for decentralized data management within microservices, avoiding shared databases and instead favoring independent data stores per service. This minimizes data coupling and enhances service autonomy, promoting scalability and resilience.
 
-5. **Asynchronous Communication**: Embrace asynchronous communication patterns, such as event-driven architecture or message queues, to decouple services and improve responsiveness. This allows services to operate independently and handle workload spikes more effectively.
+5. **Asynchronous Communication**: Embrace asynchronous communication patterns, such as event-driven architecture or message queues, to decouple services and improve responsiveness. This allows services to operate independently and handle workload spikes more effectively. For further exploration of this concept, interested readers can refer to additional resources on event-driven architecture and message queuing systems.
 
 6. **Fault Tolerance and Resilience**: Design microservices with fault tolerance and resilience in mind, incorporating mechanisms like circuit breakers, retries, and fallback strategies to handle failures gracefully. This enhances system reliability and minimizes downtime.
 
