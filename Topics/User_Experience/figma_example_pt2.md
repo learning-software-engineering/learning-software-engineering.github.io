@@ -140,3 +140,7 @@ This the completed figma prototype according to the client's instructions.
 
 ![image](figma_tutorial_image/completed.png)
 
+## **Additional Resources**
+
+Link to our figma page: https://www.figma.com/file/wUPbKaitPezq9d3KKTFwuv/301-A2?type=design&node-id=3%3A6&mode=design&t=Hgssi13xrSmifAEH-1
+
