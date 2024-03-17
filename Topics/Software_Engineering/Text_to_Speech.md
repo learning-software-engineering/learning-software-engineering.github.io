@@ -52,13 +52,13 @@ Available Functions: Only contain basic text-to-speech conversions.
 OpenAI's text-to-speech (TTS) technology refers to a suite of artificial intelligence models and tools developed to convert written text into spoken words. This technology is built on advanced machine learning and deep learning principles, making it possible to generate highly realistic and natural-sounding voice outputs. OpenAI's TTS systems are designed to understand the nuances of language, including intonation, emotion, and context, allowing them to produce speech that closely mimics human-like articulation and expressiveness.
 
 
-**Price**: 	$15.00 / 1M characters
+*Price*: 	$15.00 / 1M characters
 
-**Voice choices**: There are 6 voices to choose from (alloy, echo, fable, onyx, nova, and shimmer)
+*Voice choices*: There are 6 voices to choose from (alloy, echo, fable, onyx, nova, and shimmer)
 
-**Supported output formats**: Opus, AAC, FLAC, WAV, PCM
+*Supported output formats*: Opus, AAC, FLAC, WAV, PCM
 
-**Available Functions**: Have two different models: 1. tts-1(optimized for speed) 2. tts-1-hd(optimized for quality)
+*Available Functions*: Have two different models: 1. tts-1(optimized for speed) 2. tts-1-hd(optimized for quality)
 
 
 **Set-up**
