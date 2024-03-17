@@ -334,6 +334,21 @@ You can find a database of available plugins at [this Figma resource](https://ww
 
 Within Figma, you are able to directly export assets (ie. images) in the exact dimensions that you define them as in your Figma canvas (see [the official Figma article](https://help.figma.com/hc/en-us/articles/360040028114-Export-from-Figma)). This can be especially useful to ensure your assets appear with the proper aspect ratio in your actual app. In particular, Figma allows you to export files in `jpg`, `png`, `svg`, and `pdf` format.
 
+**Example of using Figma to build a high - fidelity prototype for an application**
+
+Assume you are a software developer working for a startup that generates recipes through the use of AI with a given user instruction. You will need to use Figma to model how your application will look like before you begin to build the frontend and backend infrastructure for the app.
+
+The following demo portrays how to use Figma to create one page of the application from scratch. Here, I intend to design the AI recipe generator page and show you all the functionalities needed to design a page with Figma.
+
+Demo 1: [![Video Thumbnail](https://youtu.be/9lKGtSVN7HY)](https://youtu.be/9lKGtSVN7HY)
+
+
+Th next demo portrays how to use Figma to link between pages through the use of buttons. You can navigate to many pages from your current page, thus synthesizing the visual aspect of how the app should work at a high level. 
+
+
+Demo 2:[![Video Thumbnail](https://youtu.be/Ds0aJOuNZag)](https://youtu.be/Ds0aJOuNZag)
+
+
 ### Adobe XD
 
 [Adobe XD](https://www.adobe.com/products/xd/learn/get-started/what-is-adobe-xd-used-for.html) is another popular prototyping tool. Unfortunately, the current author of this wiki doesn't know much about it, other than it requires a monthly subscription :(.
