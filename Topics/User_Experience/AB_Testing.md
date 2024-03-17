@@ -49,6 +49,7 @@ A/B Testing is useful in helping identify any potential issues with the webpage 
 <img src="ab_testing_image/bing.png" alt="Bing Color Experiment"/>
 - In 2013, Bing ran a set of experiments on font colors. Results showed that users complete tasks more often, which lead to an increase in monetary gains of over $10M.
 **Right Offer at the Right Time**
+<img src="ab_testing_image/amazon.png" alt="Amazon Experiment"/>
 - At Amazon, the home page was split into slots. Amazon's credit card offer was tested and won the top slot, which is unexpected as it had a low clickthrough-rate. However, the offer was very profitable; thus, even if not a lot of people clicked on the link, there is a potential for high return value.
 - In an experiment, the offer was moved to the shopping cart slot after ones adding an item with bolded phrases emphasizing how much users save relative to their cart. Since users have a clear purchase intent with items in their cart, the offer felt personal and come at the right time.
 - This change led to tens of millions of dollars in profit annually.
@@ -81,6 +82,7 @@ A/B Testing is useful in helping identify any potential issues with the webpage 
 
 ## **4. Speed Matters a lot**
 - The slowdown quantifies the impact on the metric of interest at the point today, shown by the dotted vertical line in the below figure.
+<img src="ab_testing_image/speed.png" alt="Speed graph"/>
 
 **Performance of the right pane is less critical**
 - At Bing, some elements of the right pane are loaded late. 
