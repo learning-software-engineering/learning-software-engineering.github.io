@@ -80,7 +80,7 @@ ky.post(apiUrl, {
 ```
 
 # Request Cancellation 
-Since KY is a wrapper for flask there is built in support for request cancellations
+Since KY is a wrapper for fetchAPI there is built in support for request cancellations
 This can be done using the AbortController
 ```
 Following code is from KY documentation. Link provided at the end of the document
