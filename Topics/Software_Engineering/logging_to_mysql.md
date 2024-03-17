@@ -31,6 +31,8 @@ CREATE TABLE logs (
 );
 ```
 
+<img width="694" alt="logs_table" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/90298039/76e95152-0812-4b1b-8338-2a9ddbf26e0e">
+
 ## Step 3: Implementing Logging in Python
 
 ### Define the Logger
@@ -100,6 +102,8 @@ CREATE TABLE users (
 );
 ```
 
+<img width="554" alt="users_table" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/90298039/7e46d8ac-a9cb-454e-8543-7ae445e042c6">
+
 ### Inserting Sample Data
 
 Insert some sample data into the `users` table to work with:
@@ -108,6 +112,8 @@ Insert some sample data into the `users` table to work with:
 INSERT INTO users (name, email) VALUES ('Alice Smith', 'alice@example.com');
 INSERT INTO users (name, email) VALUES ('Bob Jones', 'bob@example.com');
 ```
+
+<img width="354" alt="users_sample_data" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/90298039/8fff4603-2cbf-417d-afbe-32f6f2a86dee">
 
 ### The `get_user_info` Function
 
@@ -154,8 +160,12 @@ user_info = get_user_info(user_id)
 This script attempts to retrieve information for a user by their ID. It logs:
 
 - An **info** level message if the information is successfully retrieved,
+
 - A **warning** if no user matches the provided ID, and
+
 - An **error** if there is a problem connecting to the database.
+
+
 
 This approach demonstrates practical logging usage within an application, providing insights into operational status and issues.
 
