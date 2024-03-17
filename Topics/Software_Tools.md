@@ -20,3 +20,4 @@
 
 ## Text Editors
 ### [Introduction to Vim](./Software_Tools/vim.md)
+### [Introduction to Sublime](./Software_Tools/Sublime.md)
