@@ -34,6 +34,10 @@ Usability testing helps us uncover any incomplete or missing components, feature
 ##  How it's Done
 The usability test has three aspects: the facilitator (or research), the participants, and the tasks. The facilitator asks the participants to perform tasks and observe their performance in a realistic setting. 
 
+![Usability Test Flowchart](/Topics/User_Experience/Usability_Testing_Images/usability_test_flowchart.png)
+
+### The Facilitator 
+
 The facilitator is the one who usually knows the product, and is responsible for giving instructions, observing and documenting reactions, providing responses, and asking follow-up questions to the participant. When the task is conducted, the facilitator asks participants to perform tasks as specified. The participants usually practice the method of "think aloud," by verbally communicating their thinking process for better capture of the narrative from the user side, including detailed non-observable reactions/responses from the user. 
 
 ### The Tasks
