@@ -1,4 +1,12 @@
 # Usability Testing
+## Table of Contents
+- [Introduction](#introduction)
+- [Importance of Usability Testing](#importance-of-usability-testing)
+- [How It's Done](#how-its-done)
+- [Methods](#methods)
+- [Data Collection](#data-collection)
+- [Misconception](#misconception)
+- [References](#references)
 ## Introduction 
 Usability is a procedure that takes place during the evaluation phase of the design process for testing the functionality of a system, website, or app – basically any digital product – by observing the interaction performed by a real user from the product’s stakeholder group.
 
