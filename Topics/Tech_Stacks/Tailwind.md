@@ -8,7 +8,7 @@
 
 ### [Usage](#usage)
 
-### [Commmon Pitfalls](#commmon-pitfalls)
+### [Common Pitfalls](#commmon-pitfalls)
 
 ### [Tailwind with JavaScript Frameworks](#tailwind-with-javascript-frameworks)
 
@@ -323,4 +323,3 @@ Angular's binding syntax works seamlessly with Tailwind, allowing you to conditi
 - [Tailwind UI: A Component Library Styled with Tailwind CSS](https://tailwindui.com)
 - [Defining States (Hover, Focus, and more)](https://tailwindcss.com/docs/hover-focus-and-other-states)
 - [Tailwind Plugins](https://tailwindcss.com/docs/plugins)
-```
