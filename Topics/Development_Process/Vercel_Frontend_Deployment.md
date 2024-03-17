@@ -153,6 +153,7 @@ Each feature comes with its own set of practices and considerations. These resou
 
 At the end of this guide, you'll have a comprehensive understanding of Vercel's capabilities and be ready to utilize it for your frontend projects.
 
+## Useful Articles
 Some useful article for using Vercel:
 1. **Using Templates in Vercel**: 
 This guide helps you to leverage popular frontend frameworks and maximize Vercel's features. It also details how Vercel can create a new repository with your chosen Git provider for easy project updates after deployment​. (https://vercel.com/docs/getting-started-with-vercel/template)
