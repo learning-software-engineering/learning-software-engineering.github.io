@@ -20,4 +20,4 @@
 
 ## Text Editors
 ### [Introduction to Vim](./Software_Tools/vim.md)
-### [Introduction to Vim](./Software_Tools/nano.md)
+### [Introduction to Nano](./Software_Tools/nano.md)
