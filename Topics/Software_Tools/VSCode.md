@@ -127,17 +127,17 @@ Here are a few popular categories and extensions that you have access to:
 
 - Container extensions like Docker which allows you to inspect the containers, images, registries and more during execution.
   
-  <img width="450" src="https://github.com/parthvats02/learning-software-engineering.github.io/assets/81998163/994fc120-155c-4a5c-9351-f82e2afb905f"> 
+  <img width="350" src="https://github.com/parthvats02/learning-software-engineering.github.io/assets/81998163/994fc120-155c-4a5c-9351-f82e2afb905f"> 
 
 - Git-related extensions like GitLens which supercharges your git powers, and allows you to inspect file commit history, display the last modifier in-line (useful when investigating where a breaking change got introduced), and much more within a few clicks.
   
-  <img width="450" src="https://github.com/parthvats02/learning-software-engineering.github.io/assets/81998163/5fef0170-6925-4e31-a467-abff4e19a625"> 
+  <img width="350" src="https://github.com/parthvats02/learning-software-engineering.github.io/assets/81998163/5fef0170-6925-4e31-a467-abff4e19a625"> 
 
 - Themes that enable you to customize VS Code exactly as you want it.
 
 - And many more extensions. You can find other categories by clicking the filter icon in the extension search bar and selecting Category.
   
-  <img width="550" src="https://github.com/parthvats02/learning-software-engineering.github.io/assets/81998163/8eb00778-24b3-4b9d-8a79-43ad40050c02"> 
+  <img width="450" src="https://github.com/parthvats02/learning-software-engineering.github.io/assets/81998163/8eb00778-24b3-4b9d-8a79-43ad40050c02"> 
 
 Feeling excited and love to learn more about extensions? Check out [this](https://code.visualstudio.com/docs/editor/extension-marketplace) detailed page by VSCode to get started.
 
