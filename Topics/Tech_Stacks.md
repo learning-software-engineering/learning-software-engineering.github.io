@@ -1,5 +1,7 @@
 ## Tech Stacks
 
+### [Introduction to C#](./Tech_Stacks/C#.md)
+
 ### [Learning MySQL for databases](./Tech_Stacks/Learning_MySQL.md)
 
 ### [Introduction to Graph Databases with Neo4j](./Tech_Stacks/GraphDB_Neo4j.md)
