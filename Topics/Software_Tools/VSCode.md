@@ -1,6 +1,7 @@
 # Software Engineer's Introduction to Visual Studio Code
 
 ## Table of Contents:
+
 - [Software Engineer's Introduction to Visual Studio Code](#software-engineers-introduction-to-visual-studio-code)
   - [Table of Contents:](#table-of-contents)
   - [Introduction](#introduction)
@@ -16,11 +17,13 @@
 ---
 
 ## Introduction
+
 [Microsoft Visual Studio Code](https://code.visualstudio.com/) is a free and lightweight yet powerful code editor popular for its versatility, user-friendly interface, and extensibility. 
 VS Code meets the diverse needs of software engineers across different languages and frameworks and offers a variety of features to boost programmer productivity, whether you’re an experienced software engineer or a student starting the journey. 
 In this article, we will go over the installation and setup, and explore features like debugging, git integration, and extensions, that make VS Code an all-in-one editor.
 
 ## Installation and Setup
+
 Clicking on [this](https://code.visualstudio.com/download) link will take you to the download page where you will be able to select your operating system and download the latest version. 
 After the download is complete, you can open the downloaded file to launch the installer and follow the instructions. 
 Once you have completed the installation and launch VS Code, you will be greeted by the following screen. 
@@ -49,6 +52,7 @@ These editing features work together to simplify your coding experience. You can
 
 
 ### [Debugging](https://code.visualstudio.com/docs/editor/debugging) with VS Code
+
 VS Code’s in-built debugger provides a robust and seamless debugging experience. 
 It allows you to easily set breakpoints and use the debugger interface to step through and examine the execution (including the variables and the stack) thoroughly.
 
@@ -98,6 +102,7 @@ To learn more about the integrated terminal and the features it offers, check ou
 
 
 ## Extensions
+
 Extensions are a big part of the Visual Studio Code ecosystem as they make the editor even more powerful. 
 Extensions include everything ranging from languages and debuggers to tools and customizers that allow you to have all that you need in your development workflow.
 
@@ -138,6 +143,7 @@ Feeling excited and love to learn more about extensions? Check out [this](https:
 
 
 ## Tips and Tricks
+
 With an editor so powerful comes a myriad of tips and tricks to improve your experience. 
 Here are some quick hand-picked tips and tricks:
 
