@@ -8,7 +8,8 @@
 5. [Retries](#retries)
 6. [General Benefits](#general-benefits)
 7. [Benefits over Regular Fetch](#benefits-over-regular-fetch)
-8. [Citation + Useful Links](#some-useful-links)
+8. [Common Network Errors](#common-network-errors)
+9. [Citation + Useful Links](#some-useful-links)
 
 
 
@@ -120,7 +121,7 @@ Implementing HTTP retry mechanisms in scenarios with spotty network conditions c
 ## General Benefits
 Some of the benefits KY provides are 
 
-* Lightweight: KY HTTP client is lightweight, with a small footprint, making it suitable for projects where minimizing bundle size is important. "According to Bundlephobia, ky has a minified size of 9.5 KB and a gzipped size of 3.3 KB, while axios has a minified size of 30.5 KB and a gzipped size of 11.7 KB."
+* Lightweight: KY HTTP client is lightweight, with a small footprint, making it suitable for projects where minimizing bundle size is important. "According to Bundlephobia, ky has a minified size of 9.5 KB and a gzipped size of 3.3 KB, while axios has a minified size of 30.5 KB and a gzipped size of 11.7 KB." [Medium article going over some benefits of KY](https://medium.com/@muzammilsyed270300/why-you-should-use-ky-instead-of-axios-for-http-requests-in-your-frontend-2c7878be3b30#:~:text=One%20of%20the%20main%20advantages,gzipped%20size%20of%2011.7%20KB)
 
 * Promise-based API: It provides a simple and intuitive Promise-based API for making HTTP requests, making it easy to handle asynchronous operations and manage response data.
 
@@ -150,8 +151,47 @@ Some of the benefits KY provides are
 
 The above benefits copied from the KY documentation. Link is present below
 
+## Common Network Errors
+Because of the fact that KY is an HTTP client alot of errors that users usually run in are network errors. I have included a list of common network errors that one may encounter. I have also linked an article that goes in detail about what each error means and how to solve them. Furthermore the KY repo has alot of issues and their solutions are regularly posted. I have linked the repo below
 
-### All code snippets above as well as benefits are from the following websites
+* 400 Bad Request: The server cannot process the request due to invalid syntax.
+* 401 Unauthorized: The request requires user authentication.
+* 403 Forbidden: The server understood the request, but refuses to authorize it.
+* 404 Not Found: The server cannot find the requested resource.
+* 408 Request Timeout: The server timed out waiting for the request.
+* 429 Too Many Requests: The user has sent too many requests in a given amount of time.
+* 500 Internal Server Error: The server encountered an unexpected condition that prevented it from fulfilling the request.
+* 502 Bad Gateway: The server received an invalid response from the upstream server.
+* 503 Service Unavailable: The server is currently unable to handle the request due to temporary overloading or maintenance of the server.
+* 504 Gateway Timeout: The server was acting as a gateway or proxy and did not receive a timely response from the upstream server.
+* DNS Server Not Found: The DNS server used by your computer or network connection cannot be reached.
+* Connection Refused: The connection attempt was refused by the remote server.
+* Connection Reset: The connection was forcibly closed by the peer.
+
+  
+[Common API erros and how handle them](https://technologyadvice.com/blog/information-technology/api-error/)
+[Detecting Network Failures with fetch](https://medium.com/to-err-is-aaron/detect-network-failures-when-using-fetch-40a53d56e36)
+
+## CORS Error and how to handle it with KY
+A CORS error, or Cross-Origin Resource Sharing error, occurs when a web application tries to make a request to a resource (like an API) that resides on a different domain, protocol, or port than the one from which the initial web page was served. [CORS docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS/Errors)
+There are many different CORS error and ways of handling them .This article I have linked goes in detail about how to solve them.
+[CORS trouble shooting](https://www.linkedin.com/pulse/its-always-cors-problem-troubleshooting-solving-errors-carrubba-/)
+
+A very popular method is using a CORS proxy service to bypass CORS restrictions. Ky allows you to easily configure a custom fetch handler, so you can integrate a CORS proxy with Ky.
+
+```
+import ky from 'ky';
+
+const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+const apiUrl = 'https://example.com/api/data';
+// Make a GET request through the CORS proxy
+ky.get(proxyUrl + apiUrl).then(response => {
+}).catch(error => {
+});
+```
+
+
+### All code snippets above as well as benefits are from the following websites aswell as the links provided above
 ## Some Useful Links:
 * [Github Repo for KY](https://github.com/sindresorhus/ky)
 * [Official KY Documentation](https://www.npmjs.com/package/ky#kygetinput-options)
