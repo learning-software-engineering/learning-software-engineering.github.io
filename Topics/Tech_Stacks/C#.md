@@ -202,6 +202,16 @@ You can read more about ASP .NET [here](https://learn.microsoft.com/en-us/aspnet
 
 The MinimalAPI paradigm, on the other hand, is a newer way of writing HTTP APIs with C#. Unlike ASP .NET, it follows a more functional approach, and allows developers to skip a lot of the boilerplate involved in writing for ASP .NET and for object-oriented code in general. As a newer technology, it is easier to use, but less mature and there may be fewer pieces of documentation and tutorials available.
 
+The Microsoft documentation for MinimalAPI provides this example of setting up a simple web application in only three lines.
+
+```csharp
+var app = WebApplication.Create(args);
+
+app.MapGet("/", () => "Hello World!");
+
+app.Run();
+```
+
 You can read more about MinimalAPI [here](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/minimal-apis/overview?view=aspnetcore-8.0).
 
 ## C# For Databases
