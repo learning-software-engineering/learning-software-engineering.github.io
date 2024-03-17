@@ -4,7 +4,9 @@ A parallel system is an architecture where a problem is broken into several smal
 This guide mainly focuses on OpenMP which is a high-level API that makes parallelizing sequential code more simple.
 
 ## Prerequisites
-The following guide assumes that readers are familiar with concurrency (e.g. threads, and synchronization).
+The following guide assumes that readers are familiar with concurrency (e.g. threads, and synchronization). If you are not familiar with these topics, we recommend checking out the following resources
+- [Threads](https://en.wikipedia.org/wiki/Thread_(computing))
+- [OSTEP Chapter 26](https://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf)
 
 ## Shared Memory
 In order to parallelize a program, threads or processes must communicate with each other. In a distributed system, they would achieve this through message passing across a network. However, we focus on parallelism on a single machine (i.e. one or more processors with one or more cores connected through shared memory). At a high-level, this simply means all processors have access to the same physical memory.
