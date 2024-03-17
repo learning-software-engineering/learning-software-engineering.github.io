@@ -6,8 +6,8 @@
 ### [Prerequisites](#prerequisites)
 ### [Installation](#installation)
 ### [Basic Concepts](#basic-concepts)
-### [Reading Data](#basic-concepts)
-### [Data Manipulation](data-manipulation)
+### [Reading Data](#reading-data)
+### [Data Manipulation](#data-manipulation)
 ### [Data Analysis and Visualization](#data-analysis-and-visualization)
 ### [Best Practices](#best-practices)
 ### [References](#references)
@@ -70,6 +70,32 @@ Example of assigning custom row and column labels:
 df.index = ['Student 1', 'Student 2', 'Student 3']
 df.columns = ['First Name', 'Age', 'Favorite Food']
 ```
+
+## Reading Data
+Pandas has many functions that allow the user to import data from various different filetypes into the DataFrame structures:
+
+Reading from CSV files:
+```python
+df = pd.read_csv('path_to_csv_file/file.csv')
+```
+
+Reading from Excel files:
+```python
+df = pd.read_excel('path_to_excel_file/file.xlsx')
+```
+
+Examples of other supported files are JSON, HTML, and SQL files which are read from using the read_json, read_html, and read_sql functions respectively
+
+The data imports can also be customized in many different ways. For example, you can handle empty values with the na_values parameter and declare the column data types using the dtype parameter.
+
+Example of dealing with empty values using na_values
+```python
+na_values = ['', 'Null']
+
+# tells pandas to treat strings with these values as NaN (not a number)
+df = pd.read_csv('path_to_csv_file/file.csv', na_values=na_values)
+```
+
 
 
 
