@@ -22,6 +22,25 @@ Now, we will dicuss some commonly used behavioral patterns with real world analo
 
 The Observer design pattern is a behavioral pattern where an object, known as the subject, maintains a list of its dependents, called observers, and notifies them of any changes in its state. This pattern establishes a one-to-many relationship between the subject and its observers, allowing multiple objects to react to state changes in the subject independently. Observers register with the subject to receive notifications and update themselves accordingly. The Observer pattern promotes loose coupling between objects, making it easier to maintain and extend systems by separating concerns and allowing objects to interact without having direct knowledge of each other. It's commonly used in event handling, user interface design, and other scenarios where objects need to be notified of changes in another object's state.
 
+<p align="center">
+<img width="676" align="center" alt="Screenshot 2024-03-17 at 8 58 15 AM" src="https://github.com/paridhi26/CSC311Project/assets/85652265/f554584c-b2aa-4838-99b8-6a15c46310c7"> 
+</p>
+
+Image from [Refactoring Guru](https://refactoring.guru/design-patterns/observer)
+
+### Analogy
+
+Let's consider a scenario of a news agency broadcasting news to its subscribers. Here's how the Observer pattern can be illustrated in this context:
+
+1. **News Agency (Subject):** The news agency acts as the subject in this scenario. It broadcasts news updates to its subscribers.
+
+2. **Subscribers (Observers):** These are the entities interested in receiving news updates. Each subscriber registers with the news agency to receive notifications whenever new news is available.
+
+3. **News Update (State):** The news updates represent the state changes that trigger notifications. Whenever the news agency releases a new update, it notifies all its subscribers.
+
+4. **Notification Mechanism:** The news agency maintains a list of subscribers and notifies them whenever a new update is available. Subscribers receive the notification and can then react accordingly, such as reading the news update or taking any relevant actions.
+
+In this example, the Observer pattern enables the news agency to inform its subscribers about new news updates without them having to constantly check for updates. Subscribers can register and deregister as they wish, and the news agency can broadcast updates without needing to know the specific subscribers. This decoupling of the news agency and its subscribers promotes flexibility, scalability, and modularity in the system.
 
 ## Strategy Design Pattern <a name="str"></a>
 
