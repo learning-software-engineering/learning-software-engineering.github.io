@@ -50,7 +50,8 @@ Read more about asynchronous programming in C# [here](https://learn.microsoft.co
 
 C# also has properties, a piece of syntactic sugar allowing language users to avoid the endless getter-setter boilerplate that plagues comparable object-oriented languages like Java. This language feature allows for easy read-only and write-only access to fields with simple syntax.
 
-string readonlyString { get; } = “This is a readonly string”;
+```csharp
+string readonlyString { get; } = "This is a readonly string";
 
 private string _S = null;
 
@@ -60,18 +61,22 @@ string writeOnlyString
 		_S = value;
 	}
 }
+```
 
 You can read more about properties [here](https://learn.microsoft.com/en-us/dotnet/csharp/properties).
 
 ### Tuples
 
-C# has an excellent piece of syntactic sugar to replicate tuples, a popular language feature from languages like Python that provides an easy to use, immutable collection of variables of multiple types. In C#, this is possible through the System.ValueTuple class, which provides a type accepting multiple generic type parameters that allow for specifying the contents of the tuple.
+C# has an excellent piece of syntactic sugar to replicate tuples, a popular language feature from languages like Python that provides an easy to use, immutable collection of variables of multiple types. In C#, this is possible through the `System.ValueTuple` class, which provides a type accepting multiple generic type parameters that allow for specifying the contents of the tuple.
 
-C# has many pieces of syntactic sugar to simplify declaring an instance of ValueTuple. Using a bracket-enclosed list of types as a type will be expanded to a corresponding ValueTuple type at compile time, and you can even use the var keyword to have the compiler infer the type of the tuple at compile-time.
+C# has many pieces of syntactic sugar to simplify declaring an instance of `ValueTuple`. Using a bracket-enclosed list of types will expand to a corresponding `ValueTuple` type at compile time, and you can even use the `var` keyword to have the compiler infer the type of the tuple at compile time.
 
-(int, string) tuple = (1, “This is a string”);
+```csharp
+// The following two lines are totally equivalent
+(int, string) tuple = (1, "This is a string");
 
-var tuple = (1, “This is a string”);
+var tuple = (1, "This is a string");
+```
 
 You can read more about tuples [here](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/value-tuples).
 
@@ -83,54 +88,80 @@ You can read more about reference and value types [here](https://learn.microsoft
 
 ### Dynamic Typing and Type Inference
 
-C# is a statically-typed language, but it is one with excellent and comprehensive support for both dynamic typing and type inference. Variables are normally declared with a static type in C#. Through the var keyword, variables can be declared without explicitly declaring a type, allowing the compiler to infer the type of the variable at compilation time. For fully dynamically typed variables, the dynamic keyword allows the type of a variable to be determined at runtime. This allows for redefining the type of a variable at runtime, but doesn’t permit a lot of compile time error checking. 
+C# is a statically-typed language, but it is one with excellent and comprehensive support for both dynamic typing and type inference. Variables are normally declared with a static type in C#. Through the `var` keyword, variables can be declared without explicitly declaring a type, allowing the compiler to infer the type of the variable at compilation time. For fully dynamically typed variables, the `dynamic` keyword allows the type of a variable to be determined at runtime. This allows for redefining the type of a variable at runtime, but doesn’t permit a lot of compile time error checking. 
 
-Languages like TypeScript offer a similar level of flexibility between dynamic and static types, but C#’s system works better and requires fewer sketchy work-arounds as TypeScript is fundamentally trying to make a dynamically typed language statically typed while C# expands the language’s static type system to allow a single dynamic type. This means unless explicitly making use of the dynamic type, the language is statically typed, and works well as a statically typed language (which TypeScript occasionally does not).
+Languages like TypeScript offer a similar level of flexibility between dynamic and static types, but C#’s system works better and requires fewer sketchy work-arounds. This is because TypeScript is fundamentally trying to make a dynamically typed language statically typed while C# is expanding the language’s static type system to allow a single dynamic type. This means unless explicitly making use of the dynamic type, the language is statically typed, and works well as a statically typed language (which TypeScript often does not).
 
 You can read more about C#’s type inference [here](https://www.c-sharpcorner.com/UploadFile/mahesh/type-inference-in-C-Sharp/), or about dynamic typing [here](https://learn.microsoft.com/en-us/dotnet/csharp/advanced-topics/interop/using-type-dynamic).
 
 ### IDisposable Interface
 
-For classes that make use of system resources, and that must then release those resources, C# provides the IDisposable interface. Classes that implement this resource can be used in using blocks which allow developers to automatically dispose and release consumed system resources at the end of the using scope.
+For classes that make use of system resources, and that must then release those resources, C# provides the `IDisposable` interface. Classes that implement this resource can be used in `using` blocks which allow developers to automatically dispose and release consumed system resources at the end of the `using` scope.
 
+```csharp
 using (var sw = File.CreateText(filePath))
 {
-sw.WriteLine("First Line");
-sw.WriteLine("Second Line");
+    sw.WriteLine("First Line");
+    sw.WriteLine("Second Line");
 
-// StreamWriter is disposed of here
+    // StreamWriter is disposed of here
 }
+```
 
-You can read more about the using keyword and the IDisposable interface [here](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/statements/using).
+You can read more about the `using` keyword and the `IDisposable` interface [here](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/statements/using).
 
 ### String Interpolation
 
 Like Python's f-strings, C# has easy syntactic sugar for string interpolation. In C# this is done by
 prepending a \$ in front of the string, and inserting variable names between curly brackets.
 
-For instance the Python f-string f'Hi {name}' would be
+For instance the Python f-string `f'Hi {name}'` would be
 
+```csharp
 \$"Hi {name}"
+```
 
 in C#.
 
 ### Delegates
 
-Like Java and most modern languages, C# has options for developers to make use of first-class functions through their delegate types. A delegate is a type representing a method in C#, similar to a single-method interface in Java. Like both Java’s lambda expressions and JavaScript’s arrow functions, C# has features that permit inline definition of delegate types through the => (lambda) operator. Delegate types can be declared from scratch with the delegate keyword, but are more commonly declared using the Action or Func generic classes. Action represents a delegate returning void while Func represents a delegate that returns a value. Either class can accept a list of arguments.
+Like Java and most modern languages, C# has options for developers to make use of first-class functions through their delegate types. A delegate is a type representing a method in C#, similar to a single-method interface in Java. Like both Java’s lambda expressions and JavaScript’s arrow functions, C# has features that permit inline definition of delegate types through the `=>` (lambda) operator. Delegate types can be declared from scratch with the `delegate` keyword, but are more commonly declared using the `Action` or `Func` generic classes. `Action` represents a delegate returning void while `Func` represents a delegate that returns a value. Either class can accept a list of arguments.
+
+```csharp
+// Delegate that takes in an int
+Action<int> intConsumer = (i) => Console.WriteLine(i);
+
+// Delegate that returns an int
+Func<int> intProducer = () => 7;
+
+// Delegate that maps int, string pairs to strings
+Func<int, string, string> mapper = (i, s) => $"INT: {i} STRING: {s}";
+
+// Prints 8
+intConsumer(8);
+
+// Prints 7
+Console.WriteLine(intProducer());
+
+// Prints INT: 1 STRING: string
+Console.WriteLine(mapper(1, "string"));
+```
 
 You can read more about delegates in C# [here](https://learn.microsoft.com/en-US/dotnet/csharp/programming-guide/delegates/).
 
 ### Null Coalescing
 
-The null coalescing operator in C# allows developers to easily provide a ‘default value’ in cases when a nullable variable is null. This pairs well with the C# nullable type definition operator that allows making any type nullable. Consider the following example that makes use of the Color type, which is a value type and is normally not nullable.
+The null coalescing operator in C# allows developers to easily provide a ‘default value’ in cases when a nullable variable is null. This pairs well with the C# nullable type definition operator that allows making any type nullable. Consider the following example that makes use of the `Color` type, which is a value type and is normally not nullable.
 
+```csharp
 // Declare a variable called c that uses the question mark after the type to indicate
 // that it can be null
 Color? c = null;
 
 // Use the null coalescing operator (??) to print a ‘default value’ for
 // the c variable
-Console.WriteLine($“{c ?? new Color(0, 0, 0)}”);
+Console.WriteLine($"{c ?? new Color(0, 0, 0)}");
+```
 
 You can read more about null coalescing in C# [here](https://www.geeksforgeeks.org/null-coalescing-operator-in-c-sharp/).
 
@@ -156,7 +187,7 @@ C# is a common choice of language when working with a Microsoft SQL Server (MSSQ
 
 ### ADO .NET
 
-ADO .NET provides data access objects for databases. It can be used to connect to a database with the Connection class, and to execute arbitrary queries on that database. In general, this is a great choice for applications that require a slightly higher level of control than what you get going through an ORM or similar technology (I.E. Entity Framework). If you need well-optimized queries and niche T-SQL language features, this is probably the best approach for you.
+ADO .NET provides data access objects for databases. It can be used to connect to a database with the `Connection` class, and to execute arbitrary queries on that database. In general, this is a great choice for applications that require a slightly higher level of control than what you get going through an ORM or similar technology (I.E. Entity Framework). If you need well-optimized queries and niche T-SQL language features, this is probably the best approach for you.
 
 You can read more about ADO .NET [here](https://learn.microsoft.com/en-Us/dotnet/framework/data/adonet/).
 
@@ -172,14 +203,21 @@ LINQ stands for Language Integrated Queries. This is a language feature that all
 
 The LINQ documentation page provides the following example querying an in-memory array, but the process and syntax is identical regardless of the source of the data being queried.
 
-// Specify the data source.
+```csharp
+// Specify the data source
 int[] scores = [97, 92, 81, 60];
 
-// Define the query expression.
+// Define the query expression
 IEnumerable<int> scoreQuery =
     from score in scores
     where score > 80
     select score;
+
+// Execute the query and print 97, 92, 81
+foreach (var score in scoreQuery) {
+    Console.WriteLine(score);
+}
+```
 
 You can read more about LINQ [here](https://learn.microsoft.com/en-us/dotnet/csharp/linq/).
 
