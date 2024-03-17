@@ -86,3 +86,8 @@ As mentioned in the overview, the goal of writing parallel code is to achieve so
 **Cache line**: Imagine you are reading a book. However every time you read a page you only read one word at a time, think about what that word means, then move on to the next word. That’s not very efficient and if there are 100 words on a page, you would read 100 times. What if we read 10 words at a time? We would only read 10 times in total. This is exactly what cache line does - if you are iterating through an array, instead of fetching the elements one at a time, multiple elements would be fetched at once. So when you move onto the next element, it’s already in memory! In programming, reading from memory is very slow compared to computation. If you use cache line to your advantage (improved spatial locality), you can make your program run many, many times faster.
 
 **False Sharing**: False sharing happens when two processes try to use the same cache line. When process A makes a write to the cache line, it forces process B to re-fetch the same cache line, to achieve cache coherence. However, most of the time when two processes are sharing the same cache line, they don’t necessarily need to update on each other! False Sharing is bad for performance, and OpenMP does not take care of that for you.
+
+## References
+- [OpenMP Wikipedia](https://en.wikipedia.org/wiki/OpenMP)
+- [OpenMP Tutorial](https://hpc-tutorials.llnl.gov/openmp/)
+- [OpenMP Tutorial - tutorialspoint](https://www.tutorialspoint.com/inter_process_communication/inter_process_communication_shared_memory.htm)
