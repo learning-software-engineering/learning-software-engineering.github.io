@@ -2,10 +2,6 @@
 
 PyAutoGui is a Python module that allows you to programmatically control the mouse and keyboard to automate tasks. In this tutorial, we'll cover the basics of PyAutoGui and some advanced features. You can find the official documentation for it [here](https://pyautogui.readthedocs.io/en/latest/index.html).
 
-## Requirements
-- PyAutoGUI works on Windows/Mac/Linux and on Python 2 & 3
-- This tutorial is made using Python 3
-
 ## What can you do with PyAutoGUI?
 - You can simulate mouse movement! The mouse can be moved to any desired location on the screen and used to click on things as well.
 - You can simulate keypresses without having to touch the keyboard.
@@ -101,4 +97,44 @@ Here are a few examples:
 Go check out the docs for a lot more!
 
 ## Keyboard Controls
+Pending
+
+## Locating Images and Screenshots
+Let's say you want to click on something that's going to pop up on the screen but you don't know where it's going to be. PyAutoGUI has just the solution for that. 
+
+Suppose you want to open the UofT folder on your desktop below, but you don't want to bother finding its coordinates.
+![desktop](./assets/desktop.png)
+
+First take a screenshot of the folder and save it:
+
+![desktop](./assets/uoft_folder.png)
+
+You have two options:
+- Locate the center of the folder and click on it
+```python
+>>> import pyautogui
+>>> uoft_folder = pyautogui.locateOnScreen('uoft_folder.png')
+>>> uoft_mid = pyautogui.center(uoft_folder)
+>>> uoft_midx, uoft_midy = uoft_mid
+>>> pyautogui.click(uoft_midx, uoft_midy, clicks=2)
+```
+
+- Or you could take advantage of the PyAutoGUI shorthands
+```python
+>>> import pyautogui
+>>> pyautogui.click('uoft_folder.png') # yes it's that easy
+```
+
+Additionally, PyAutoGUI also provides screenshot functionality, in case you need it.
+```python
+>>> import pyautogui
+# Takes a screenshot and returns an PIL Image object
+>>> im1 = pyautogui.screenshot()
+# This one also saves the screenshot with the name being the string passed in
+>>> im2 = pyautogui.screenshot('my_screenshot.png')
+# You can also take screenshots of specific regions by specifying the x,y coordinates of the top left and bottom right of the desired region
+>>> im3 = pyautogui.screenshot(region=(0,0, 300, 400))
+```
+
+## Message Box Functions
 Pending
