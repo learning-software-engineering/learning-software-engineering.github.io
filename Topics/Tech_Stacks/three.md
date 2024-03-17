@@ -15,7 +15,7 @@ This tutorial will guide you through the process of creating your first scene an
 
 ## Setting Up Your Files
 
-To discuss how to creating a functioning scene in Three.js and render your first 3D object, we can examine some code excerpts from the Three.js documentation.
+To discuss how to create a functioning scene in Three.js and render your first 3D object, we can examine some code excerpts from the Three.js documentation.
 
 First, you will need to create a new HTML file named `index.html` 
 
@@ -91,7 +91,7 @@ function animate() {
 animate();` 
 ```
 
-In order to create a 3D object, in this case a cube, we initialize a `BoxGeometry` with vertices (1, 1, 1). The cube's material, or texture in other words, is set to be `MeshBasicMaterial`, one of the standards that Three.js comes with, and it's colour is set to `0x00ff00`. 
+In order to create a 3D object, in this case a cube, we initialize a `BoxGeometry` with vertices (1, 1, 1). The cube's material, or texture in other words, is set to be `MeshBasicMaterial`, one of the standards that Three.js comes with, and its colour is set to `0x00ff00`. 
 
 We then use `Mesh` to combine the `geometry`, the desired geometrical shape of our object with `material`, the desired texture and colour of our 3D object to create a cube. After which `scene.add()`
 adds the initialized cube to the scene we created in the previous section. 
