@@ -47,7 +47,7 @@ Sublime is a text editor, which was created by Jon Skinner, that is supported on
     * This allows you to navigate files and line very quickly.
     * Ctrl+P on Windows or Cmd+P on macOS
     * You can jump to different lines like this <br/>
-    ![feature 3](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/113051612/2d4df739-dad4-4326-9c52-932369d263f4)
+    ![feature33](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/113051612/fdb923a8-274a-4bd6-8d44-5bdc1b563bac)
 
 
 
