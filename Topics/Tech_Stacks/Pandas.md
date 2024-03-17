@@ -2,17 +2,16 @@
 # Introduction to Pandas in Python
 
 ## Table of Contents
-### [Introduction](#introduction)
-### [Prerequisites](#prerequisites)
-### [Installation](#installation)
-### [Basic Concepts](#basic-concepts)
-### [Reading Data](#reading-data)
-### [Data Manipulation](#data-manipulation)
-### [Data Analysis](#data-analysis)
-### [Data Visualization](#data-visualization)
-### [Best Practices](#best-practices)
-### [Conclusion](#conclusion)
-### [References](#references)
+- [Introduction](#introduction)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Basic Concepts](#basic-concepts)
+- [Reading Data](#reading-data)
+- [Data Manipulation](#data-manipulation)
+- [Data Analysis](#data-analysis)
+- [Data Visualization](#data-visualization)
+- [Conclusion](#conclusion)
+- [References](#references)
 
 ##  Introduction
 Pandas is an open-source Python library for data analysis and manipulation. It is one of the most powerful and popular libraries in all of Python; widely used by the Python community for its ability to provide highly efficient, easy-to-use, and extensive data structures and data analysis tools. As well as its seamless integration with other libraries. This wiki page will serve as a brief introduction to the Pandas library.
@@ -254,6 +253,7 @@ b_sales = df[df['Product'] == 'Product B']['Sales'] # selecting the sales of pro
 
 # LINE PLOT
 
+
 plt.figure(figsize=(10, 5))  # setting the size of the figure
 plt.plot(months, a_sales, label='Product A')
 plt.plot(months, b_sales, label='Product B')
@@ -274,6 +274,7 @@ avg_sales = df.groupby('Product')['Sales'].mean()
 plt.figure(figsize=(10, 5))
 plt.bar(avg_sales.index, avg_sales.values, color=['red', 'blue'])
 
+# bar chart styling
 plt.title('Average Sales by Product')
 plt.xlabel('Product')
 plt.ylabel('Average Sales')
@@ -284,8 +285,19 @@ Generated Line Plot:
 ![lineplot](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/55326695/0acb6bc5-599d-44ff-8d6d-36bb6436dd01)
 
 
-Generated Bar Chart
+Generated Bar Chart:
 ![barchart](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/55326695/4f9a3855-7d3f-4930-a238-a65eb6437ecb)
+
+## Conclusion
+There are endless possibilities with this library and this wiki is only a brief introduction to the library. I encourage you to check out the links in the references section to explore this library further and delve into more advanced topics like windowing operations, time series analysis, and enhancing performance for big datasets. Also using Pandas with other libraries like Matplotlib, Seaborn, and even machine learning libararies like Scikit-learn will open up many more data analysis doors. 
+
+Thanks for reading!
+
+## References
+https://pandas.pydata.org/docs/user_guide/index.html
+https://www.w3schools.com/python/pandas/default.asp
+https://www.datacamp.com/tutorial/pandas
+
 
 
 
