@@ -36,16 +36,18 @@ Product development strategies will vary based on a variety of factors such as t
 <a name="market-research"></a>
 ## 1. Conduct Market Research
 
-	An idea for a new feature or product may sound great in theory. However, to discover if there would be a real demand in the market, then effective market research must first be conducted to ensure true product-market fit. Conducting market research is the preliminary data gathering step, in which the product research team looks at existing data from sources to gain an understanding of the general user scape to find where the demand or pain points may lie.  
+	An idea for a new feature or product may sound great in theory. However, to discover if there would be a real demand in the market, then effective market research must first be conducted to ensure true product-market fit. Conducting market research is the preliminary data gathering step, in which the product research team looks at existing data to gain an understanding of the general user scape to find where the demand or pain points may lie.  
 
-Common sources PM’s use include industry reports, statistics, and news articles, to find where their proposed new product may fit in the market. They then collect, aggregate, and form ideas from the data and put it in a centralized location so that the entire product team can access it and decide on the direction of the product. 
+Common sources PM’s use include industry reports, statistics, and news articles, to find where their proposed new product may fit in the market. They then collect, aggregate, and form ideas from the data and put it in a centralized location to  decide on the direction of the product. 
 
-With many possible directions that a product can take, it is important for a product manager to choose a prioritization framework to streamline the decision making process and pick the most suitable features of a product to work on. A prioritization framework is designed to help teams make informed decisions about choosing which opportunities to pursue based on preestablished business goals, product requirements, and constraints. 
+With many possible directions that a product can take, it is important for a product manager to choose a prioritization framework to streamline the decision making process and pick the most suitable features of a product to work on. 
+
+A ** prioritization framework ** is designed to help teams make informed decisions about choosing which opportunities to pursue based on preestablished business goals, product requirements, and constraints. 
 
 A commonly used framework used in industry is the RICE framework. 
 
 ** RICE framework: **
-Developed by Intercom to improve its own internal company decision making efforts, the RICE framework allows PMs to score each initiative, feature, or product they may consider pursuing according to the four factors: reach, impact, confidence, and effort. 
+Developed by Intercom to improve its own internal company decision making efforts, the RICE framework allows PMs to score each initiative they may consider pursuing according to the four factors: 
 
 ** Reach: ** Product managers first consider how many users their product will reach in a given time period. The terms ‘user’ and ‘time period’ can be defined differently based on the circumstances of the project. For example, users can refer to the number of free-trial signups or in app purchases made and the time period can be a month, a year, etc. 
 
@@ -72,7 +74,7 @@ Market research is important in using existing data to gain valuable insights to
 
 There are many tools which can be used including feedback surveys, first-hand customer interviews, user tests, and focus groups. 
 
-Keep in mind when conducting this primary source research that the questions should be simple and easy to answer in order to increase the response rate, and make consolidation and analysis of the data straightforward.
+Keep in mind when conducting primary source research that the questions should be simple and easy to answer in order to increase the response rate, and make consolidation and analysis of the data straightforward.
 
 Some example questions that product managers have put on their feedback surveys and customer interviews are:
 
@@ -99,7 +101,6 @@ There are three categories of KPIs product managers keep track of: business perf
 
 ```
 Gross margin = Revenue - Cost Of Goods Sold / Revenue x 100
-
 ```
 
 ** Net profit margin: ** The ratio of profit a product earns to the total revenue (net sales) the product generates expressed as a percentage. This is a key indicator of the profitability of a product. 
@@ -136,17 +137,17 @@ Churn rate = Lost customers / Total customers at start of time period x 100
 Feature adoption rate = Number of new feature users / Total number of feature users x 100
 ```
 
-Choosing which KPIs to track should align with the company’s broader business goals such as increasing profitability in the next quarter by 10%. With the research conducted and strategic KPIs chosen for the product specification sheet, the next step in the product development strategy is to create nad test the prototype. 
+Choosing which KPIs to track should align with the company’s broader business goals such as increasing profitability in the next quarter by 10%. 
 
 <a name="prototype"></a>
 ## 3. Build a Prototype And Test the Product 
 
 Creating a prototype during product development is important in several respects:
 
-- ** Iterate better: **  The conventional method of creating a formal requirements document for the product outlining all its features is a highly time consuming process. In order to give specific and detailed feedback, the person must study the document extensively to know where to request their changes. With prototypes however, they can be faster to create and if a change is required, the requester can directly point to the place in the UI where the change is requested. This allows product teams to make changes faster, and iterate better. 
+- ** Iterate better: **  The conventional method of creating a formal requirements document is a highly time consuming process. In order to give specific and detailed feedback, the person must study the document extensively to know where to request their changes. With prototypes however, if a change is required, the requester can directly point to the place in the UI where the change is requested. This allows product teams to make changes faster, and iterate better. 
 - ** Better technical feedback: ** Developers often see the product late in the design process. If they can be shown a prototype of the product early on however, (instead of the usual lengthy documentation) they can easily see the dependencies between elements and suggest new solutions to help build the MVP. 
 
-The ** Minimum Viable Product ** (MVP) is the simplest version of a product, and has the express purpose of having enough features to attract customers and validate a product idea. An MVP is low risk due to the lower cost and allows product teams to then learn, refine, and scale their product before a bigger investment is made. 
+The ** Minimum Viable Product ** (MVP) is the simplest version of a product, and has the express purpose of having enough features to attract customers and validate a product idea. 
 
 Testing the product allows the product team to see how customers may use or respond to the new capability and allows for the capture of errors before its launch. Standard industry approaches to product testing include A/B testing and QA testing. 
 
@@ -192,9 +193,9 @@ It it important to monitor KPIs once the product has been released to market in 
 
 - ** Make informed decisions: ** KPIs allow your team to use data to make educated choices towards the product. For example, if your revenue decreased by 20%, you can look at subscription losses, churn rate, and conversion rate to make an informed hypothesis and make a solution based on that.
 
-Products launched to the market may grow and decline and it is important to monitor quantifiable metrics through KPIs and continual user testing, in order to iterate better features, or eventually retire the product once it has declined. 
+Products launched to the market may grow and decline and it is important to monitor quantifiable metrics through KPIs and continual user testing, in order to create better features, or eventually retire the product once it has declined. 
 
-A product development strategy is essential to the toolkit of any product manager to develop new products and through this guide, the importance, steps, and implementation of a PDS can be created for future product managers.  
+A product development strategy is essential to the toolkit of any product manager to develop new products and through this guide, the importance, steps, and implementation of a PDS can be created for future product managers or students seeking to create their own projects.  
 
 <a name="sources"></a>
 ## Sources:
