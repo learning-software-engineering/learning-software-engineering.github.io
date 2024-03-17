@@ -57,6 +57,12 @@ Bezos laid the foundation for Amazon's business and management methodology in hi
 These principles illustrate Amazon's customer-centric culture and highlight the vital role of forward-thinking in product management. By consistently focusing on customer satisfaction and long-term value, Amazon demonstrates the effectiveness of a client-centered approach in product development and corporate strategy. You can read more about this in this [article](https://www.hustlebadger.com/what-do-product-teams-do/jeff-bezos-leadership-principles/#its-all-about-the-long-term).
 
 
-1. Core Concepts in Product Management
+------
+
+------
+
+### Core Concepts in Product Management
     1. [Product Management vs Product Ownership](./Product_Management/Product_Management_vs_Product_Ownership.md)
+    2. [Agile Product Development Methodologies]
+    3. [User-Centered Design (UCD) Vs. Design-Driven Development (DDD)]
 
