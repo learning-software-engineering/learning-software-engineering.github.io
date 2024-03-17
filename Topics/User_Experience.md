@@ -346,7 +346,7 @@ Demo 1: [![Video Thumbnail](https://youtu.be/9lKGtSVN7HY)](https://youtu.be/9lKG
 Th next demo portrays how to use Figma to link between pages through the use of buttons. You can navigate to many pages from your current page, thus synthesizing the visual aspect of how the app should work at a high level. 
 
 
-Demo 2:[![Video Thumbnail](https://youtu.be/Ds0aJOuNZag)](https://youtu.be/Ds0aJOuNZag)
+[![Demo 2 Video Thumbnail](https://img.youtube.com/vi/Ds0aJOuNZag/maxresdefault.jpg)](https://www.youtube.com/watch?v=Ds0aJOuNZag)
 
 
 ### Adobe XD
