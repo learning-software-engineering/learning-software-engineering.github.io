@@ -90,7 +90,20 @@ Reading from JSON files:
 df = pd.read_json('path_to_excel_file/file.json')
 ```
 
-Examples of other supported files are HTML and SQL files which are read from using the read_html and read_sql functions respectively.
+Reading from SQL files:
+We can use a python SQL toolkit like SQLAlchemy in conjunction with Pandas to query results into DataFrames
+```python
+import pandas as pd
+from sqlalchemy import create_engine
+
+# connect to db
+engine = create_engine('postgresql+psycopg2://path_to_db/file.db')
+
+# query results into data frame
+df = pd.read_sql("SELECT * FROM table", con=engine)
+```
+
+There are several other file types that can be read from in Pandas such as plain text, HTML, and PDFs.
 
 The data imports can also be customized in many different ways. For example, you can handle empty values with the na_values parameter and declare the column data types using the dtype parameter. This will be covered further in the Data Manipulation section.
 
@@ -289,13 +302,15 @@ Generated Bar Chart:
 ![barchart](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/55326695/4f9a3855-7d3f-4930-a238-a65eb6437ecb)
 
 ## Conclusion
-There are endless possibilities with this library and this wiki is only a brief introduction to the library. I encourage you to check out the links in the references section to explore this library further and delve into more advanced topics like windowing operations, time series analysis, and enhancing performance for big datasets. Also using Pandas with other libraries like Matplotlib, Seaborn, and even machine learning libararies like Scikit-learn will open up many more data analysis doors. 
+There are endless possibilities with this library and this page is only a brief introduction to the library. I encourage you to check out the links in the references section to explore this library further and delve into more advanced topics like windowing operations, time series analysis, and enhancing performance for big datasets. Also using Pandas with other libraries like Matplotlib, Seaborn, and even machine learning libraries like Scikit-learn will open up many more data analysis doors. 
 
 Thanks for reading!
 
 ## References
 https://pandas.pydata.org/docs/user_guide/index.html
+
 https://www.w3schools.com/python/pandas/default.asp
+
 https://www.datacamp.com/tutorial/pandas
 
 
