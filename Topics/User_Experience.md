@@ -338,14 +338,15 @@ Within Figma, you are able to directly export assets (ie. images) in the exact d
 
 Assume you are a software developer working for a startup that generates recipes through the use of AI with a given user instruction. You will need to use Figma to model how your application will look like before you begin to build the frontend and backend infrastructure for the app.
 
-The following demo portrays how to use Figma to create one page of the application from scratch. Here, I intend to design the AI recipe generator page and show you all the functionalities needed to design a page with Figma.
+The first demo portrays how to use Figma to create one page of the application from scratch. Here, I intend to design the AI recipe generator page and show you all the functionalities needed to design a page with Figma.
 
-Demo 1: [![Video Thumbnail](https://youtu.be/9lKGtSVN7HY)](https://youtu.be/9lKGtSVN7HY)
+Demo 1:
+[![Demo 1 Video Thumbnail](https://img.youtube.com/vi/9lKGtSVN7HY/maxresdefault.jpg)](https://www.youtube.com/watch?v=9lKGtSVN7HY)
 
 
 Th next demo portrays how to use Figma to link between pages through the use of buttons. You can navigate to many pages from your current page, thus synthesizing the visual aspect of how the app should work at a high level. 
 
-
+Demo 2:
 [![Demo 2 Video Thumbnail](https://img.youtube.com/vi/Ds0aJOuNZag/maxresdefault.jpg)](https://www.youtube.com/watch?v=Ds0aJOuNZag)
 
 
