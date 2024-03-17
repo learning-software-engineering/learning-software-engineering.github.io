@@ -90,7 +90,7 @@ Data collection will be done during the test without disruting the participant's
 Another way to break down the data collected is by categorizing the observations to address specific components/reqruiements of the products' usability. 
 
 One good way to do this is to rely on the definition usability. E.g. 
-![Definition of Usability](/Topics/User_Experience/Usability_Testing_Images/usability.png)
+![Definition of Usability](https://www.researchgate.net/publication/264850409/figure/tbl1/AS:1078642784382981@1634179888840/Usability-according-to-ISO-9241-11-Schneiderman-and-Nielsen.png)
 
 You could also complete this using the [Nielsen's 10 Heuristics for Usability](/Topics/User_Experience/Usability_Heuristics.md).
 
@@ -107,6 +107,17 @@ You could also complete this using the [Nielsen's 10 Heuristics for Usability](/
 3. Usability Testing vs. Demo 
 
     Usability testing goes beyond a mere demonstration. Unlike a demo, which showcases features in a controlled environment, usability testing assesses how real users interact with a product to identify potential issues and gather feedback. It provides insights into the productand allows iterative improvements based on real-world usage scenarios. Therefore, usability testing is a vital step in ensuring that products meet user needs and expectations, going beyond the surface-level demonstration to uncover actionable insights for enhancement.
+
+
+## References
+1. https://www.hotjar.com/usability-testing/ 
+
+2. https://www.hotjar.com/usability-testing/methods/ 
+
+3. https://www.nngroup.com/articles/usability-testing-101  
+
+4. https://www.usability.gov/how-to-and-tools/methods/recruiting-usability-test-participants.html
+
 
 
 
