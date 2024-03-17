@@ -9,7 +9,7 @@
 6. [Limitations](#limitations)
 7. [Citation & Useful Links](#useful-links)
 
-## What is PLaywright
+## What is Playwright
 Playwright is an open-source end-to-end testing framework developed by Microsoft, designed specifically for testing modern web applications.
 
 Playwright enables automation of user interactions, including clicking on elements, filling in text fields, and more. It behaves like a user, waiting for elements to become actionable before performing actions and retrying assertions. Moreover, it features default parallel test execution which enhances speed therefore making the testing process exceptionally fast while aslo offering great browser support.
