@@ -8,6 +8,15 @@ as much from the original web schematics. This leads to efficent and light weigh
 HTMX allows developers to create rich and interactive web applications by writing HTML attributes for AJAX requests, CSS transitions, WebSockets,
 and Server Sent Events. This simplicity and power of HTMX opens up a new world for web development.
 
+## Why Use HTMX?
+HTMX shines in scenarios where the goal is to enhance static web pages with dynamic content without the overhead of a full JavaScript framework. It's particularly useful for:
+
+- Rapid prototyping of interactive web applications.
+- Enhancing server-rendered pages with dynamic content updates.
+- Simplifying page interactions without needing to write complex JavaScript.
+
+while JavaScript frameworks like React, Vue, or Angular offer more advanced client-side solutions, they require a heavier development approach and more resources. HTMX lands in the middle, offering dynamic capabilities with less overhead making it an ideal when simplicity and speed are priorities.
+
 ## Getting Started
 To start using HTMX, include its library in your project by adding a script tag to your HTML file. 
 This can be done in a couple different ways:
@@ -49,7 +58,7 @@ You can easily make GET, POST, and other types of HTTP requests by adding specif
 | hx-patch | a `PATCH` request to the URL input |
 | hx-delete | a `DELETE` request to the URL input |
 
-
+### Basic Examples
 Here is a simple example of using HTMX to make a `GET` request using the `hx-get` attribute:
 ```html
 <button hx-get="/api/news" hx-trigger="click" hx-swap="outerHTML" hx-target="#news-article">
@@ -71,6 +80,44 @@ Here is another example of how to send data payloads using `POST` requests using
 <div id="result"></div>
 ```
 When the form is submitted, HTMX sends a POST request to `/api/users/create` with the form data, and the server's response is displayed in `#result`.
+
+### Advanced Example
+Here is an advanced example of how to send data payloads using `PUT` requests using the `hx-put` attribute:
+```html
+<form hx-put="/api/users/update" hx-target="#user-update-result" hx-swap="innerHTML">
+    <input type="hidden" name="id" value="user_id">
+    <input type="text" name="username" placeholder="New Username">
+    <button type="submit">Update Username</button>
+</form>
+<div id="user-update-result"></div>
+
+```
+
+Compare this to the javascript implementation, and you'll notice how much simplier and effective HTMX is:
+
+```Javascript
+document.getElementById('updateForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    var formData = new FormData(this);
+    fetch('/api/users/update', {
+        method: 'PUT',
+        body: formData
+    }).then(response => response.text())
+      .then(html => document.getElementById('user-update-result').innerHTML = html);
+});
+```
+
+The HTMX example is more concise and requires less boilerplate, illustrating how HTMX streamlines dynamic web interactions.
+
+## Limitations of HTMX
+While HTMX has some great use cases, it's important to recognize its limitations:
+
+- Complex State Management: For applications requiring complex state management across many components, traditional JavaScript frameworks may offer more structured solutions.
+- SPA Features: Single Page Applications (SPAs) that rely heavily on client-side routing and view transitions might be more effectively managed with frameworks designed for SPA development.
+- JavaScript Interoperability: In applications where extensive JavaScript libraries or frameworks are already in use, integrating HTMX might require additional considerations to ensure compatibility.
+
+HTMX provides a powerful tool for enhancing web applications with dynamic content, offering a simpler alternative to complex JavaScript frameworks for many use cases. However, evaluating project requirements and limitations is crucial to choose the most appropriate tool for the job.
+
 
 ## References
 
