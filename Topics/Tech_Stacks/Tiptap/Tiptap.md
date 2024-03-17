@@ -114,10 +114,33 @@ npm start
 _Include gifs, code snippets, explainations_
 
 
-## Example with (something else Maybe)
-_Maybe Ricky will work on this_
+## Using Tiptap with Markdown Extension
 
-_Include gifs, code snippets, explainations_
+To use Tiptap editor with the Markdown extension, follow these steps:
+
+1. **Initialize the Tiptap editor with the Markdown extension:**
+
+   ```javascript
+   export default function Tiptap() {
+     return (
+       <EditorProvider
+         slotBefore={<MenuBar />}
+         extensions={extensions}
+         content={content}
+         onUpdate={({ editor }) => {
+           const new_markdown = editor.storage.markdown.getMarkdown();
+           console.log(new_markdown);
+         }}
+       ></EditorProvider>
+     );
+   }
+
+2. **Retrieve Markdown content:**
+
+   Within the `onUpdate` function, use the `getMarkdown()` method on the editor object to retrieve the Markdown representation of the content.
+   
+   ```javascript
+   const new_markdown = editor.storage.markdown.getMarkdown();
 
 ## Citations
 
