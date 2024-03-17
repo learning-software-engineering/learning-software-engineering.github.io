@@ -118,7 +118,7 @@ prepending a \$ in front of the string, and inserting variable names between cur
 For instance the Python f-string `f'Hi {name}'` would be
 
 ```csharp
-\$"Hi {name}"
+$"Hi {name}"
 ```
 
 in C#.
