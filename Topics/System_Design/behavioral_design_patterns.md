@@ -119,7 +119,9 @@ In this example, the Command pattern allows for decoupling the waiter (invoker) 
 
 ## Conclusion <a name="con"></a>
 
-Behavioral design patterns offer powerful solutions to common communication, interaction, and algorithm traversal challenges in software development. The Observer pattern facilitates flexible notification mechanisms, the Strategy pattern enables dynamic algorithm selection, the Iterator pattern simplifies traversal of collections, and the Command pattern encapsulates requests for flexible execution. While each pattern addresses distinct concerns, they collectively promote code reusability, maintainability, and scalability. For scenarios requiring complex workflow management or state transitions, additional behavioral patterns such as State, Memento, and Chain of Responsibility can further enhance the design. By understanding and applying these patterns judiciously, developers can build robust and adaptable software systems that meet evolving requirements with ease.
+Behavioral design patterns offer powerful solutions to common communication, interaction, and algorithm traversal challenges in software development. The Observer pattern facilitates flexible notification mechanisms, the Strategy pattern enables dynamic algorithm selection, the Iterator pattern simplifies traversal of collections, and the Command pattern encapsulates requests for flexible execution. While each pattern addresses distinct concerns, they collectively promote code reusability, maintainability, and scalability. 
+
+For scenarios requiring complex workflow management or state transitions, additional behavioral patterns such as State, Memento, and Chain of Responsibility can further enhance the design. By understanding and applying these patterns judiciously, developers can build robust and adaptable software systems that meet evolving requirements with ease.
 
 ## Further Reading <a name="further-reading"></a>
 [Refactoring Guru: Behavioral Patterns](https://refactoring.guru/design-patterns/behavioral-patterns)
