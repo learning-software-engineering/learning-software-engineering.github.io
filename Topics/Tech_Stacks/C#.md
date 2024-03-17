@@ -113,7 +113,7 @@ You can read more about the `using` keyword and the `IDisposable` interface [her
 ### String Interpolation
 
 Like Python's f-strings, C# has easy syntactic sugar for string interpolation. In C# this is done by
-prepending a \$ in front of the string, and inserting variable names between curly brackets.
+prepending a `$` in front of the string, and inserting variable names between curly brackets.
 
 For instance the Python f-string `f'Hi {name}'` would be
 
