@@ -1,8 +1,8 @@
-# Introduction to Sublime Text
+# Introduction to Sublime
 
-Sublime Text is a text editor, which was created by Jon Skinner, that is supported on Windows, macOS, and Linux. This text editor has several benefits such as being free of charge, offering fast typing recognition speed, and providing numerous convenient editing features.
+Sublime is a text editor, which was created by Jon Skinner, that is supported on Windows, macOS, and Linux. This text editor has several benefits such as being free of charge, offering fast typing recognition speed, and providing numerous convenient editing features.
 
-## Installation of Sublime Text
+## Installation of Sublime 
 1. Go to the [Sublime website](https://www.sublimetext.com/3) to install the latest version of the editor. 
 
 2. install 1 pic <br/>
@@ -21,12 +21,12 @@ Sublime Text is a text editor, which was created by Jon Skinner, that is support
     sudo apt install sublime-text
     ```
 
-3. After downloading Sublime Text, you can lauch it by clicking the icon. Then, you will see this. <br/>
+3. After downloading Sublime, you can lauch it by clicking the icon. Then, you will see this. <br/>
 install 2
 
 
 
-## Sublime Text Features
+## Sublime Features
 
 
 * Command Palette
@@ -48,7 +48,7 @@ install 2
 
 ## Conclusion
 
-Sublime Text which is a flexible text editor for Windows, macOS, and Linux increases productivity with features such as the Command Palette and Goto Anything. This editor is intended for anyone wishing to improve their coding experience with efficiency and speed.
+Sublime which is a flexible text editor for Windows, macOS, and Linux increases productivity with features such as the Command Palette and Goto Anything. This editor is intended for anyone wishing to improve their coding experience with efficiency and speed.
 
 
 ## Resources
