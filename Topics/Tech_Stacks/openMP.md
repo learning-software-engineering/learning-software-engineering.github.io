@@ -16,6 +16,66 @@ In order to parallelize a program, threads or processes must communicate with ea
 With shared memory, processes can now communicate with each other via shared memory (implicitly). While there are libraries like pthreads that enable us to parallelize code using the shared memory paradigm, OpenMP is a higher-level abstraction that makes writing parallel code simpler (as seen in later examples). In particular, minimal changes need to be made to the sequential code to achieve parallelism.
 
 
+## OpenMP
+### Overview,
+OpenMP is a high-level API for parallel programming in C and C++. It is made up of preprocessor directives (which requires compiler support), library calls, and environment variables. OpenMP follows the fork-and-join parallel execution model, where a master thread (the initial thread) we are
+working on, forks into a group of worker threads that then performed specific tasks concurrently. Upon the threads' completion of their work, the threads will synchronize at the end of the parallel block, and then execution continues with only the initial thread. Threads can do the same work, share the same tasks, or even perform distinct tasks in parallel.
+
+
+OpenMP will allow programmers to separate their program into sequential and parallel regions and abstract the underlying stack memory management away, allowing users to focus on attempting to gain performance in their program via parallelization.  
+
+
+OpenMP uses a shared memory model, meaning that all threads share the same address space. However, OpenMP provides the ability to declare variables private or shared within any given parallel block.
+
+
+### Setup & Programming Model
+To setup OpenMP within your program, please ensure that you have compiler support. Then, just include the OpenMP header file at the top of your program, by adding the line `#include <omp.h>`.
+
+
+To declare a region parallel in OpenMP, you need to provide "hints" or "directives" to the compiler as to what you want to parallelize by adding a line with the general form `#pragma omp directive_name [clause_list]`. To actually declare a region parallel, use the directive_name `parallel`.
+
+
+## Simple Examples
+Below we will share some simple examples of various directives, showcasing the functionalities of OpenMP.
+
+
+### Print the current thread running
+```c
+#pragma omp parallel 
+{ 
+	printf("Hello world, I am thread %d out of %d running threads!\n",
+		omp_get_thread_num(), omp_get_num_threads()); 
+}
+```
+`#pragma omp parallel` defines a parallel region where all threads executes the code in the following block.
+
+
+### Calculating the sum of an array in parallel
+```c
+// sequential code
+int sum = 0;
+for(int i = 0; i < arr_length; i++) {
+    sum += arr[i];
+}
+
+
+// parallelized code
+#pragma omp parallel
+{
+	#pragma omp for reduction(+:sum)
+	for(int i = 0; i < arr_length; i++) {
+		sum += arr[i];
+	}
+}
+```
+
+As you can see, minimal code is added to obtain benefits of parallelization. The `reduction(+:sum)` clause informs the compiler that `sum` uses the `+` operation to reduce variables to prevent race conditions (when 2 or more threads update data at the same time, resulting in a potentially inaccurate update).
+
+
+And, the `#pragma omp for` clause will distribute the work of the loop across different threads (e.g. if `arr_length` is 1000 and there are 2 threads, the first thread will work on loop indices `i = 0, …, 499` while the second thread works on loop indices `i = 500, …, 999`).
+
+
+
 ## Limitations
 As mentioned in the overview, the goal of writing parallel code is to achieve some speedup. However, there are several reasons why the speedup we achieve will not be perfect (e.g. parallelizing code on $P$ processors will not necessarily reduce the runtime by a factor of $P$).
 
