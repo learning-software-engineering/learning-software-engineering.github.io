@@ -133,50 +133,51 @@ For dynamically-sized layouts, Tailwind also provides classes for the standard [
 
 Tailwind's extensibility allows you to write custom plugins to add your own utilities, components, or variants. This is particularly useful for standardizing custom designs across your projects. For example, creating a plugin for a custom button:
 
-```
+```jsx
 // tailwind.config.js
-const plugin = require('tailwindcss/plugin')
+const plugin = require("tailwindcss/plugin");
 
 module.exports = {
   // Other configurations...
   plugins: [
-    plugin(function({ addComponents }) {
+    plugin(function ({ addComponents }) {
       const buttons = {
-        '.btn': {
-          padding: '.5rem 1rem',
-          borderRadius: '.25rem',
-          fontWeight: '600',
+        ".btn": {
+          padding: ".5rem 1rem",
+          borderRadius: ".25rem",
+          fontWeight: "600",
         },
-        '.btn-blue': {
-          backgroundColor: '#3490dc',
-          color: '#fff',
-          '&:hover': {
-            backgroundColor: '#2779bd'
+        ".btn-blue": {
+          backgroundColor: "#3490dc",
+          color: "#fff",
+          "&:hover": {
+            backgroundColor: "#2779bd",
           },
         },
         // Add more button styles...
-      }
+      };
 
-      addComponents(buttons)
+      addComponents(buttons);
     }),
   ],
-}
+};
 ```
 
 #### Dark Mode
 
 Tailwind makes implementing dark mode straightforward with the dark: variant. To enable dark mode, update your tailwind.config.js:
 
-```// tailwind.config.js
+```jsx
+// tailwind.config.js
 module.exports = {
-  darkMode: 'class', // or 'media' if you prefer to use the CSS media query
+  darkMode: "class", // or 'media' if you prefer to use the CSS media query
   // Other configurations...
-}
+};
 ```
 
 Then, use the dark: prefix to apply styles for dark mode:
 
-```
+```jsx
 <div class="bg-white dark:bg-gray-800">
   <!-- Content goes here -->
 </div>
@@ -187,8 +188,9 @@ Then, use the dark: prefix to apply styles for dark mode:
 ### Advantages
 
 - When using Tailwind CSS classes, developers are not restricted to a component structure and inherited styles that don't match their project. This can be problematic when using templates from component libraries such as [Bootstrap](https://getbootstrap.com). This flexibility makes Tailwind more customizable for different types of projects.
-- Since each Tailwind class has atomic reponsibilities, developers avoid issues where a component inherits unknown CSS styles.
+- Since each Tailwind class has atomic responsibilities, developers avoid issues where a component inherits unknown CSS styles.
 - Overall, Tailwind minimizes redundant CSS code and shortens CSS files.
+- Developers do not have to spend time thinking of how to apply their CSS with selectors (which can be quite tedious for larger projects).
 
 ### Limitations
 
@@ -198,14 +200,14 @@ Then, use the dark: prefix to apply styles for dark mode:
 
 ## Common Pitfalls
 
-- While Tailwind encourages customization, over-relying on custom classes can lead to bloat and defeat the purpose of using a utility-first framework. Leverage the default utility classes as much as possible before reaching for custom solutions.
+- While Tailwind encourages customization, over-relying on custom classes can lead to bloat and defeat the purpose of using a utility-first framework. Take advantage the default utility classes as much as possible before going for custom solutions.
 - Don't sacrifice semantic HTML for styling convenience. Tailwind classes can and should be applied in a way that preserves the accessibility and semantics of your markup.
-- To keep your production CSS bundle size small, ensure you configure Tailwind to purge unused styles. Tailwind's purge option in tailwind.config.js makes this easy, but forgetting to set it up correctly can lead to unnecessarily large CSS files:
+- To make sure your production CSS bundle is applied to the correct files, modify your content (see below) in the configuration file to ensure it contains the path(s) to all files that have any tailwind code (i.e. the use of utility classes).
 
 ```
 // tailwind.config.js
 module.exports = {
-  purge: ['./src/**/*.{js,jsx,ts,tsx,html}'],
+  content: ['./src/**/*.{js,jsx,ts,tsx,html}'],
   // Other configurations...
 }
 ```
@@ -220,35 +222,34 @@ Integrating Tailwind CSS with React projects streamlines the process of applying
 
 Install Tailwind CSS via npm:
 
-```npm install -D tailwindcss
-
+```
+npm install -D tailwindcss
 ```
 
 Generate `tailwind.config.js`:
 
-```npx tailwindcss init
-
+```
+npx tailwindcss init
 ```
 
 Add path to your template files in `tailwind.config.js`:
 
-```/** @type {import('tailwindcss').Config} */
+```jsx
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {},
   },
   plugins: [],
-}
+};
 ```
 
 #### Using Tailwind with React
 
 To apply Tailwind’s utility classes in a React component, use the className attribute:
 
-```
+```jsx
 function Button() {
   return (
     <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
@@ -258,7 +259,7 @@ function Button() {
 }
 ```
 
-This setup provides a quick, efficient method to style React applications with the flexibility of Tailwind CSS’s utility-first approach.
+This setup provides a quick, efficient method to style React applications with the flexibility of Tailwind CSS’s utility-first approach. As someone who uses React with Tailwind quite frequently, I can confidently say it has boosted my productivity by a noticeable amount.
 
 ### Vue
 
@@ -272,7 +273,7 @@ Follow similar initial steps as for React to install Tailwind and generate confi
 
 Within Vue components, Tailwind classes are added through the class attribute, and dynamic classes can leverage Vue’s :class binding for responsive and state-driven styles:
 
-```
+```jsx
 <template>
   <button :class="{'bg-blue-500': isActive, 'bg-red-500': !isActive}" class="text-white font-bold py-2 px-4 rounded">
     Toggle me
@@ -294,13 +295,13 @@ export default {
 
 #### Setup
 
-Follow similar initial steps as for React to install Tailwind and generate configuration files. Ensure Tailwind processes your Vue files by correctly configuring the content option in tailwind.config.js.
+Follow similar initial steps as for React to install Tailwind and generate configuration files. Ensure Tailwind processes your files by correctly configuring the content option in tailwind.config.js.
 
 #### Using Tailwind with Angular
 
 With Tailwind CSS configured, you can now begin using its utility classes within your Angular components' templates directly. For example, to style a button with Tailwind, you might write:
 
-```
+```jsx
 <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
   Click Me
 </button>
@@ -308,11 +309,13 @@ With Tailwind CSS configured, you can now begin using its utility classes within
 
 Angular's binding syntax works seamlessly with Tailwind, allowing you to conditionally apply styles based on component logic:
 
-```
+```jsx
 <div [class.bg-green-500]="isActive" class="text-white p-4">
   This div changes color based on the 'isActive' property.
 </div>
 ```
+
+For more on Tailwind with these frameworks, on top of some topics discussed earlier in this guide, there are some links below!
 
 ## Resources
 
@@ -323,3 +326,6 @@ Angular's binding syntax works seamlessly with Tailwind, allowing you to conditi
 - [Tailwind UI: A Component Library Styled with Tailwind CSS](https://tailwindui.com)
 - [Defining States (Hover, Focus, and more)](https://tailwindcss.com/docs/hover-focus-and-other-states)
 - [Tailwind Plugins](https://tailwindcss.com/docs/plugins)
+- [Vue with Tailwind](https://www.sanity.io/guides/tailwind-css-with-vue-js)
+- [Angular with Tailwind](https://nx.dev/recipes/angular/using-tailwind-css-with-angular-projects)
+- [React with Tailwind](https://www.smashingmagazine.com/2020/02/tailwindcss-react-project/)

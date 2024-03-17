@@ -163,5 +163,3 @@
 ### [StripeAPI Setup](./Tech_Stacks/StripeAPI.md)
 
 ### [Intro to Flask with Flask-SQLAlchemy](./Tech_Stacks/Flask.md)
-
-### [UI Testing with Jest](./Tech_Stacks.md/Jest.md)
