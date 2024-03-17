@@ -42,6 +42,7 @@ Best Practices:
 You can see a sample workflow for the CIY (Cook It Yourself) project with three teams, each following a different process. Notice how the "In Progress" column takes on three different forms depending on the team.
  ![Workflow](https://i.im.ge/2024/03/17/RPpLkp.Picture3.png)
 
+Adadditionally it's important to note that custom workflows are one of many advantages Jira has over other tools such as Git Hub.
 
 <h3>b. Agile boards</h3>
 <h4>Setting up Agile boards</h4>
