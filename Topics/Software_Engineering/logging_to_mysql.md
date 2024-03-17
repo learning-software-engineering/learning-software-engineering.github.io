@@ -161,14 +161,17 @@ This script attempts to retrieve information for a user by their ID. It logs:
 
 - An **info** level message if the information is successfully retrieved,
 
+https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/90298039/bd2777b4-93d8-490a-88fe-eacf04d570a1
+
 - A **warning** if no user matches the provided ID, and
+
+https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/90298039/fadc999f-04c5-4488-89a4-60fabdcb1f59
 
 - An **error** if there is a problem connecting to the database.
 
-
+https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/90298039/66d5602e-b31b-4558-8098-e2ff8d6cc741
 
 This approach demonstrates practical logging usage within an application, providing insights into operational status and issues.
-
 
 ## Conclusion
 
