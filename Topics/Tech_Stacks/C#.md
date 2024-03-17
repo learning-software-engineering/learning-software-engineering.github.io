@@ -16,7 +16,7 @@ While the .NET runtime is cross-platform and can be run on either Windows or Lin
 
 ### Speed and Memory
 
-C# is fast. As a language, C# is often thought of as Microsoft’s version of Java, but if you really compare the two, you will notice one is considerably faster than the other. Both languages compile into their own platform-independent, intermediate bytecode and then run on their own runtimes (CLR vs JVM), and both make use of JITs to speed up execution considerably, but C# with the .NET runtime manages to be much faster than Java on the JVM (source).
+C# is fast. As a language, C# is often thought of as Microsoft’s version of Java, but if you really compare the two, you will notice one is considerably faster than the other. Both languages compile into their own platform-independent, intermediate bytecode and then run on their own runtimes (CLR vs JVM), and both make use of JITs to speed up execution considerably, but C# with the .NET runtime manages to be much faster than Java on the JVM ([source](https://benchmarksgame-team.pages.debian.net/benchmarksgame/fastest/csharp.html)).
 
 When it comes to memory management, C# again offers a lot more than Java. Like Java, C# is garbage-collected and does not normally allow for the manual allocation of memory, nor for the use of pointers to manually access unmanaged memory. However, unlike Java, C# has a language feature called unsafe contexts. In an unsafe context, the developer can manually allocate unmanaged memory, make use of pointers, and perform a variety of other low-level memory operations that make C# suitable for performance-critical applications that require very low-level memory management, provided these applications run on a platform fully capable of running the CLR.
 
@@ -38,13 +38,13 @@ it is stil a blazingly fast language.
 
 ### Asynchronous Programming and Concurrency
 
-C# was actually the first major language to use the now ubiquitous async and await keywords (which many mistakenly believe originated in JavaScript). The language has excellent support for both asynchronous and synchronous concurrency models. Many APIs are available with varying levels of customization exposed to the developer. These pieces of syntactic sugar provide the developer with many options for asynchronous concurrent programming.
+C# was actually the first major language to use the now ubiquitous `async` and `await` keywords (which many mistakenly believe originated in JavaScript). The language has excellent support for both asynchronous and synchronous concurrency models. Many APIs are available with varying levels of customization exposed to the developer. These pieces of syntactic sugar provide the developer with many options for asynchronous concurrent programming.
 
-For basic control over threads and synchronous threading, the System.Threading namespace is available. This namespace provides options to spawn and synchronize new threads, and also provides a variety of synchronization primitives like locks and monitors.
+For basic control over threads and synchronous threading, the `System.Threading` namespace is available. This namespace provides options to spawn and synchronize new threads, and also provides a variety of synchronization primitives like locks and monitors.
 
-C# also has a variety of APIs for thread-safe collections, and pre-built abstractions implementing common synchronous threading patterns. For instance, the Systems.Threading.Tasks.Parallel class contains static methods for concurrently processing collections, and the System.Collections.Concurrent namespace contains classes such as ConcurrentBag—a thread safe implementation of a set data structure.
+C# also has a variety of APIs for thread-safe collections, and pre-built abstractions implementing common synchronous threading patterns. For instance, the `Systems.Threading.Tasks.Parallel` class contains static methods for concurrently processing collections, and the System.Collections.Concurrent namespace contains classes such as `ConcurrentBag` — a thread safe implementation of a set data structure.
 
-Read more about asynchronous programming in C# here, threading here, and parallel programming in C# here.
+Read more about asynchronous programming in C# [here](https://learn.microsoft.com/en-us/dotnet/standard/asynchronous-programming-patterns/), threading [here](https://learn.microsoft.com/en-us/dotnet/standard/threading/managed-threading-basics), and parallel programming in C# [here](https://learn.microsoft.com/en-us/dotnet/standard/parallel-programming/).
 
 ### Properties
 
@@ -61,7 +61,7 @@ string writeOnlyString
 	}
 }
 
-You can read more about properties here.
+You can read more about properties [here](https://learn.microsoft.com/en-us/dotnet/csharp/properties).
 
 ### Tuples
 
@@ -73,13 +73,13 @@ C# has many pieces of syntactic sugar to simplify declaring an instance of Value
 
 var tuple = (1, “This is a string”);
 
-You can read more about tuples here.
+You can read more about tuples [here](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/value-tuples).
 
 ### Reference and Value Types
 
 Every type in C# falls into one of two categories: reference or value. A reference type is a type that is passed by reference, while a value type is passed by value. Value types include all primitives, any structs, any enums, and tuples. Everything else is a reference type.
 
-You can read more about reference and value types here.
+You can read more about reference and value types [here](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/value-types).
 
 ### Dynamic Typing and Type Inference
 
@@ -87,7 +87,7 @@ C# is a statically-typed language, but it is one with excellent and comprehensiv
 
 Languages like TypeScript offer a similar level of flexibility between dynamic and static types, but C#’s system works better and requires fewer sketchy work-arounds as TypeScript is fundamentally trying to make a dynamically typed language statically typed while C# expands the language’s static type system to allow a single dynamic type. This means unless explicitly making use of the dynamic type, the language is statically typed, and works well as a statically typed language (which TypeScript occasionally does not).
 
-You can read more about C#’s type inference here, or about dynamic typing here.
+You can read more about C#’s type inference [here](https://www.c-sharpcorner.com/UploadFile/mahesh/type-inference-in-C-Sharp/), or about dynamic typing [here](https://learn.microsoft.com/en-us/dotnet/csharp/advanced-topics/interop/using-type-dynamic).
 
 ### IDisposable Interface
 
@@ -101,7 +101,7 @@ sw.WriteLine("Second Line");
 // StreamWriter is disposed of here
 }
 
-You can read more about the using keyword and the IDisposable interface here.
+You can read more about the using keyword and the IDisposable interface [here](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/statements/using).
 
 ### String Interpolation
 
@@ -118,7 +118,7 @@ in C#.
 
 Like Java and most modern languages, C# has options for developers to make use of first-class functions through their delegate types. A delegate is a type representing a method in C#, similar to a single-method interface in Java. Like both Java’s lambda expressions and JavaScript’s arrow functions, C# has features that permit inline definition of delegate types through the => (lambda) operator. Delegate types can be declared from scratch with the delegate keyword, but are more commonly declared using the Action or Func generic classes. Action represents a delegate returning void while Func represents a delegate that returns a value. Either class can accept a list of arguments.
 
-You can read more about delegates in C# here.
+You can read more about delegates in C# [here](https://learn.microsoft.com/en-US/dotnet/csharp/programming-guide/delegates/).
 
 ### Null Coalescing
 
@@ -132,7 +132,7 @@ Color? c = null;
 // the c variable
 Console.WriteLine($“{c ?? new Color(0, 0, 0)}”);
 
-You can read more about null coalescing in C# here.
+You can read more about null coalescing in C# [here](https://www.geeksforgeeks.org/null-coalescing-operator-in-c-sharp/).
 
 ## C# For Web
 
@@ -142,13 +142,13 @@ C# offers two main ways of writing APIs and code for the web: the ASP.NET API an
 
 ASP is the traditional way of writing HTTP APIs with C#. It provides a nice, object-oriented way of writing APIs. This is an older paradigm and is very familiar to many developers. There is also a wide range of documentation and examples available online.
 
-You can read more about ASP .NET here.
+You can read more about ASP .NET [here](https://learn.microsoft.com/en-us/aspnet/overview).
 
 ### MinimalAPI
 
 The MinimalAPI paradigm, on the other hand, is a newer way of writing HTTP APIs with C#. Unlike ASP .NET, it follows a more functional approach, and allows developers to skip a lot of the boilerplate involved in writing for ASP .NET and for object-oriented code in general. As a newer technology, it is easier to use, but less mature and there may be fewer pieces of documentation and tutorials available.
 
-You can read more about MinimalAPI here.
+You can read more about MinimalAPI [here](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/minimal-apis/overview?view=aspnetcore-8.0).
 
 ## C# For Databases
 
@@ -158,13 +158,13 @@ C# is a common choice of language when working with a Microsoft SQL Server (MSSQ
 
 ADO .NET provides data access objects for databases. It can be used to connect to a database with the Connection class, and to execute arbitrary queries on that database. In general, this is a great choice for applications that require a slightly higher level of control than what you get going through an ORM or similar technology (I.E. Entity Framework). If you need well-optimized queries and niche T-SQL language features, this is probably the best approach for you.
 
-You can read more about ADO .NET here.
+You can read more about ADO .NET [here](https://learn.microsoft.com/en-Us/dotnet/framework/data/adonet/).
 
 ### Entity Framework
 
 The Entity Framework is C#’s baked in ORM. It offers the same features as any other ORM: mapping database entities to model classes, simplified data fetching, and easy data modification. All of this is at the expense of less control over the underlying queries, and as a result, a potentially less optimized data access layer.
 
-You can read more about the Entity Framework here. 
+You can read more about the Entity Framework [here](https://learn.microsoft.com/en-us/aspnet/entity-framework). 
 
 ### LINQ
 
@@ -181,8 +181,8 @@ IEnumerable<int> scoreQuery =
     where score > 80
     select score;
 
-You can read more about LINQ here.
+You can read more about LINQ [here](https://learn.microsoft.com/en-us/dotnet/csharp/linq/).
 
 ## Additional Resources
 
-You can download the .NET SDK here to get started using this life-changing language that will make you understand how Microsoft earned its 3 trillion (as of 2024-03-17) market cap.
+You can download the .NET SDK [here](https://dotnet.microsoft.com/en-us/download) to get started using this life-changing language that will make you understand how Microsoft earned its 3 trillion (as of 2024-03-17) market cap.
