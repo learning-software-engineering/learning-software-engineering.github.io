@@ -91,7 +91,9 @@ Whether you choose to use the default terminal or install another one of your pr
 - On the left side of the command, you can see the exit status of the command. Clicking the status, you get options like rerunning the command, copying the output, and so on.
 
   <img width="650" src="https://github.com/parthvats02/learning-software-engineering.github.io/assets/81998163/a3d5f2eb-c40a-4459-9171-c4c0fd4a3e02"> 
+  
   <img width="450" src="https://github.com/parthvats02/learning-software-engineering.github.io/assets/81998163/d20e66a0-882a-456c-85f6-79bea3c1116c"> 
+
   <img width="350" src="https://github.com/parthvats02/learning-software-engineering.github.io/assets/81998163/c80a4b62-52aa-48e3-89d3-4855c795218a"> 
 
 - You also have the ability to split terminals, open multiple terminals simultaneously in an organized manner, and keep track of them without the hassle of switching between countless windows. Depending on your machine, you will see relevant options when you click the + sign in the terminal window to run other terminals like Git Bash (if you have it installed).
@@ -154,6 +156,7 @@ Here are some quick hand-picked tips and tricks:
   <img width="350" src="https://github.com/parthvats02/learning-software-engineering.github.io/assets/81998163/0878cfc5-0b4d-44fa-8d0f-1d0ab85370fe"> 
 
 - You can enable Zen Mode (by clicking View -> Appearance -> Zen Mode) to reduce distractions and focus only your code, and can disable it by pressing Escape on your keyboard twice
+
   <img width="550" src="https://github.com/parthvats02/learning-software-engineering.github.io/assets/81998163/cd2b30a3-ca30-4dc4-b1ed-dfbd5b9ab8f5"> 
 
 - You can use and modify keyword shortcuts to simplify your workflow. Image below by VSCode from Visual Studio Code Tips and Tricks (https://code.visualstudio.com/docs/getstarted/tips-and-tricks)
