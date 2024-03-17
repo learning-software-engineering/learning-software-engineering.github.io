@@ -79,20 +79,93 @@ formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
 mysql_handler.setFormatter(formatter)
 ```
 
-### Usage Example
+## Usage Example with the `users` Table
 
-Here's how to log a message:
+In this example, we have a `users` table in our MySQL database designed to store user information such as IDs, names, and email addresses. 
+The table structure is as follows:
 
-```python
-logger.info('This is a test log message.')
+- **id** (INT): A unique identifier for each user, auto-incremented.
+- **name** (VARCHAR): The name of the user.
+- **email** (VARCHAR): The user's email address, which is unique across all users.
+
+### Creating the `users` Table
+
+First, ensure that your MySQL database contains the `users` table. Use the following SQL query to create it if necessary:
+
+```sql
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE
+);
 ```
 
-### Conclusion
+### Inserting Sample Data
+
+Insert some sample data into the `users` table to work with:
+
+```sql
+INSERT INTO users (name, email) VALUES ('Alice Smith', 'alice@example.com');
+INSERT INTO users (name, email) VALUES ('Bob Jones', 'bob@example.com');
+```
+
+### The `get_user_info` Function
+
+The `get_user_info` function is designed to retrieve a user's information from the database given their user ID. 
+It uses logging to indicate the function's outcome, such as successful information retrieval, attempts to retrieve non-existent users, and database connection errors.
+
+### Python Implementation
+
+Below is the updated Python script that includes the `get_user_info` function:
+
+```python
+import logging
+import mysql.connector
+from mysql.connector import Error
+
+# Configure the logger and MySQLHandler as previously described
+
+def get_user_info(user_id):
+    """Retrieves user information by user_id from the database."""
+    try:
+        conn = mysql.connector.connect(**config)
+        cursor = conn.cursor()
+        cursor.execute("SELECT * FROM users WHERE id = %s", (user_id,))
+        user_info = cursor.fetchone()
+        conn.close()
+
+        if user_info:
+            logger.info(f"Retrieved information for user ID {user_id}: {user_info}")
+            return user_info
+        else:
+            logger.warning(f"User with ID {user_id} not found.")
+            return None
+    except Error as e:
+        logger.error(f"Error connecting to MySQL database: {e}")
+        return None
+
+# Example usage
+user_id = 1  # Example user ID
+user_info = get_user_info(user_id)
+```
+
+### Explanation
+
+This script attempts to retrieve information for a user by their ID. It logs:
+
+- An **info** level message if the information is successfully retrieved,
+- A **warning** if no user matches the provided ID, and
+- An **error** if there is a problem connecting to the database.
+
+This approach demonstrates practical logging usage within an application, providing insights into operational status and issues.
+
+
+## Conclusion
 
 Implementing a logging process into MySQL allows developers to effectively monitor and debug their applications. 
 By following the steps outlined above, you can set up a robust logging system tailored to your project's needs.
 
-### References
+## References
 
 - [MySQL Connector/Python Developer Guide](https://dev.mysql.com/doc/connector-python/en/)
 - [Logging facility for Python — Python 3.12.2 documentation](https://docs.python.org/3/library/logging.html)
