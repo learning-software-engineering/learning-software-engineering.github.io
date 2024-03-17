@@ -10,5 +10,6 @@
 ## Installation and Setup
 Clicking on [this](https://code.visualstudio.com/download) link will take you to the download page where you will be able to select your operating system and download the latest version. After the download is complete, you can open the downloaded file to launch the installer and follow the instructions. Once you have completed the installation and launch VS Code, you will be greeted by the following screen. So, let the adventure begin.
 
+<img width="850" alt="VSCode New" src="https://github.com/parthvats02/learning-software-engineering.github.io/assets/81998163/bce65647-4a2c-40ec-8bef-84ef40209cfb">
 
 
