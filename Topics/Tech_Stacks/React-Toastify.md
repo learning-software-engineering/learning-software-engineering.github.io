@@ -8,13 +8,14 @@ This tool simplifies the process of generating responsive toast notifications, w
 1. [Installation](#installation)
 2. [Creating a Basic Toast Notification](#creating-a-basic-toast-notification)
 3. [Types of Toast Notifications](#types-of-toast-notifications)
-4. [Position of the Toast Notification](#position-of-the-toast-notification)
+4. [Toast Notification Placement](#toast-notification-placement)
 5. [Useful Customization](#useful-customization)
     - [Handling Auto Close](#handling-auto-close)
-    - [Limit the Number of Toasts Displayed](#limit-the-number-of-toasts-displayed)
+    - [Limit the Number of Toasts Displayed](#limit-the-number-of-toast-displayed)
     - [Implementing a Controlled Progress Bar](#implementing-a-controlled-progress-bar)
     - [Updating a Toast When an Event Happens](#updating-a-toast-when-an-event-happens)
-6. [Useful Customization](#reference)
+6. [Useful Customization](#useful-customization)
+7. [References](#references)
 
 
 
@@ -53,9 +54,54 @@ function App(){
 }
 
 ```
+## Creating a Promise Toast Notification
+In React, a toast promise refers to a promise mechanism that facilitates the execution of code asynchronously. This enables the initiation of certain actions or events when a toast notification is shown. For instance, it could lead to the redirection of the user to another webpage or the exhibition of an alert message, with all errors being adequately managed.
+
+```javascript
+import React, { useEffect } from "react";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+function App() {
+  // Define the data fetching operation as a function that returns a promise
+  const fetchData = () => {
+    return new Promise((resolve, reject) => {
+      fetch("https://test123.com/api/")
+        .then(response => response.json())
+        .then(data => setTimeout(() => resolve(data), 5000)) // Simulate a delay
+        .catch(error => reject(error));
+    });
+  };
+
+  useEffect(() => {
+    // Use toast.promise to handle the promise returned by fetchData
+    toast.promise(
+      fetchData(), // Execute the fetchData function
+      {
+        pending: 'logging in ...', 
+        success: "Welcome user",
+        error: "Error logging in"
+      }
+    );
+  }, []);
+
+  return (
+    <>
+      <ToastContainer />
+    </>
+  )
+}
+
+export default App;
+```
+![image06-ezgif com-crop](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/69292669/dbd448ab-48c4-49cb-b0ed-d1e022dbee1d)
+
+
+
 
 
 ## Types of Toast Notifications
+
 React Toastify provides five distinct types of toast notifications, each for different scenarios. Here’s how to initiate each:
 1. Default
   ```javascript
