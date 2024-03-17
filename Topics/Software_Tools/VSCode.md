@@ -8,6 +8,7 @@
   - [Top Features](#top-features)
     - [IntelliSense](#intellisense)
     - [Debugging with VS Code](#debugging-with-vs-code)
+    - [Integrated Terminal](#integrated-terminal)
 ---
 
 ## Introduction
@@ -58,6 +59,24 @@ You can find these breakpoints and other debug-related settings by going under t
 
 
 If you’re interested in learning more about the debugger, you can check out [this](https://code.visualstudio.com/docs/editor/debugging) debugging guide by VS Code.
+
+
+### [Integrated Terminal](https://code.visualstudio.com/docs/terminal/basics)
+
+Another powerful feature that VS Code provides is the integrated terminal. 
+Whether you’re running *make* commands to build your project or using git through the command line, having access to the terminal inside the editor simplifies the experience and eliminates the need to alternate between the terminal and the code editor. 
+To get started with the terminal, simply select the Terminal menu at the top and click New Terminal (on both Windows and Mac).
+
+
+
+Whether you choose to use the default terminal or install another one of your preference, you will have access to all the features that the terminal has to offer.
+
+- On the left side of the command, you can see the exit status of the command. Clicking the status, you get options like rerunning the command, copying the output, and so on.
+
+- You also have the ability to split terminals, open multiple terminals simultaneously in an organized manner, and keep track of them without the hassle of switching between countless windows. Depending on your machine, you will see relevant options when you click the + sign in the terminal window to run other terminals like Git Bash (if you have it installed).
+
+To learn more about the integrated terminal and the features it offers, check out the detailed introduction by VSCode [here](https://code.visualstudio.com/docs/terminal/basics).
+
 
 
 
