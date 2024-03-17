@@ -1,5 +1,13 @@
 # An introduction to Chakra UI
 
+## Introduction
+
+Chakra UI is a UI component library specifically designed for React. It provides a comprehensive set of pre-styled components ranging from basic layout components to advanced form inputs, modals, loading bars, and many more. Chakra UI has a powerful and React-forward prop-based styling system that easily allows for responsive design as well as a high degree of customizability.
+
+Chakra UI also has a strong focus on theming and customizability, allowing for a high degree of control and consistency over an application's look and feel. It also provides many quality of life utilities that make frontend development faster and more efficient, such as a built-in dark mode, and a comprehensive set of responsive design tools.
+
+This guide will cover the basics of Chakra UI, including installation, setup, usage, the benefits and drawbacks of using Chakra UI, and further reading.
+
 ## Installation & Setup
 
 ### Installation
