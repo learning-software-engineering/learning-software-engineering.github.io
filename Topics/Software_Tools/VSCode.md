@@ -11,6 +11,8 @@
     - [Integrated Terminal](#integrated-terminal)
   - [Extensions](#extensions)
   - [Tips and Tricks](#tips-and-tricks)
+  - [Closing Remarks](#closing-remarks)
+  - [Additional Resources](#additional-resources)
 ---
 
 ## Introduction
@@ -122,11 +124,27 @@ Here are some quick hand-picked tips and tricks:
 
 - You can enable Zen Mode (by clicking View -> Appearance -> Zen Mode) to reduce distractions and focus only your code, and can disable it by pressing Escape on your keyboard twice
 
-- You can use and modify keyword shortcuts to simplify your workflow. Image below by VSCode from Visual Studio Code Tips and Tricks
+- You can use and modify keyword shortcuts to simplify your workflow. Image below by VSCode from Visual Studio Code Tips and Tricks (https://code.visualstudio.com/docs/getstarted/tips-and-tricks)
 
 
 For an extensive list of tips and tricks, visit the official [Visual Studio Code Tips and Tricks page](https://code.visualstudio.com/docs/getstarted/tips-and-tricks) to supercharge your VS Code experience.
 
 
+## Closing Remarks
+
+This article only scratches the surface and there is a whole world to explore with Visual Studio Code that could not be fully tapped into in this article. 
+To learn more about VS Code, be sure to check out the Additional Resources section for more information. 
+Superpowers await you on the other side, what are **you** waiting for?
+
+
+## Additional Resources
+
+Official Visual Studio Code documentation and user guide: https://code.visualstudio.com/docs
+
+Official Visual Studio Code YouTube channel with numerous playlists: https://www.youtube.com/@code
+
+Learn to code with Visual Studio Code: https://code.visualstudio.com/learn
+
+Visual Studio Code in 100 Seconds: https://www.youtube.com/watch?v=KMxo3T_MTvY
 
 
