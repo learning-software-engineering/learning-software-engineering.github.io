@@ -68,3 +68,8 @@ for(int i = 0; i < arr_length; i++) {
 	}
 }
 ```
+
+As you can see, minimal code is added to obtain benefits of parallelization. The `reduction(+:sum)` clause informs the compiler that `sum` uses the `+` operation to reduce variables to prevent race conditions (when 2 or more threads update data at the same time, resulting in a potentially inaccurate update).
+
+
+And, the `#pragma omp for` clause will distribute the work of the loop across different threads (e.g. if `arr_length` is 1000 and there are 2 threads, the first thread will work on loop indices `i = 0, …, 499` while the second thread works on loop indices `i = 500, …, 999`).
