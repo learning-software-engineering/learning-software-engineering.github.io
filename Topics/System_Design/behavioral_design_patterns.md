@@ -118,3 +118,5 @@ In this example, the Command pattern allows for decoupling the waiter (invoker) 
 
 ## Further Reading <a name="further-reading"></a>
 [Refactoring Guru: Behavioral Patterns](https://refactoring.guru/design-patterns/behavioral-patterns)
+
+[geeksforgeeks: Behavioral Patterns](https://www.geeksforgeeks.org/behavioral-design-patterns/)
