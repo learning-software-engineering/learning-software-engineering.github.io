@@ -72,6 +72,25 @@ Overall, the Strategy pattern promotes flexibility, modularity, and maintainabil
 
 The Iterator design pattern is a behavioral pattern that provides a way to access elements of an aggregate object sequentially without exposing its underlying representation. It allows clients to traverse the elements of a collection without needing to know its internal structure. The Iterator pattern typically consists of two main components: the Iterator interface or class, which defines methods for accessing elements sequentially, and the Aggregate interface or class, which defines a method for creating an iterator object. By decoupling the traversal algorithm from the collection, the Iterator pattern enhances the flexibility and reusability of both the collection and the traversal algorithm. It's commonly used in scenarios where collections vary in structure or where there's a need to iterate over elements in a uniform manner.
 
+<p align="center">
+<img width="709" alt="Screenshot 2024-03-17 at 9 10 00 AM" src="https://github.com/paridhi26/CSC311Project/assets/85652265/48ac92bc-f2eb-4c04-993a-532ca2cf1b76">
+</p>
+
+Image from [Refactoring Guru](https://refactoring.guru/design-patterns/iterator)
+
+### Analogy
+
+Let's imagine you're exploring a vast library with numerous shelves filled with books. Each shelf represents a collection of books, and you want to browse through all the books in the library without knowing the specific layout of the shelves. Here's how the Iterator pattern can be applied in this scenario:
+
+1. **Library Collection:** The library represents the collection of shelves filled with books. Each shelf can be considered a collection of books.
+
+2. **Iterator Interface:** This is a common interface defining methods like getNextBook() and hasNextBook() that allow traversal through the books. It abstracts the process of moving from one book to the next without needing to know the internal structure of the shelves.
+
+3. **Concrete Iterator:** Each shelf has its own iterator, representing a specific traversal strategy for that collection. The iterator keeps track of the current position and allows navigation through the books on that shelf.
+
+4. **Client:** You, as the visitor to the library, are the client in this scenario. You use the iterator provided by the library to iterate over the books without needing to understand how the shelves are organized.
+
+In this example, the Iterator pattern enables you to browse through the books in the library without having to worry about the internal layout of the shelves. You can simply use the iterator provided by the library to move from one book to the next, regardless of how the books are arranged on the shelves. This separation of concerns between the traversal algorithm (iterator) and the collection (library shelves) enhances flexibility and reusability, making it easier to iterate over collections with varying structures or to switch between different traversal strategies.
 
 ## Command Design Pattern <a name="com"></a>
 
