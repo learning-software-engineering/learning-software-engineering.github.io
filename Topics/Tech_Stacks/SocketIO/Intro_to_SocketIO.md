@@ -122,6 +122,8 @@ Sending a signal is done through `socket.emit("event-a")`, while listening for s
 
 <img src="bidirectional-communication-socket.png">
 
+Image from https://socket.io/docs/v4/client-socket-instance/
+
 The command
 
 ```
