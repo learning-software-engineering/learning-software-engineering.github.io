@@ -9,6 +9,7 @@
 6. [Tools and Technologies](#common-tech)
 7. [Best Practices](#best-practices)
 8. [Real-World Examples](#examples)
+9. [Further Readings](#further)
 
 
 
@@ -22,7 +23,7 @@ For CSC301 students, grasping the significance of microservices architecture ent
 
 In the context of CSC301, microservices architecture offers several advantages. It promotes scalability, allowing teams to scale individual services based on demand, a concept directly relevant to discussions on estimation (which involves predicting the effort or resources required for a task) and prioritization. Moreover, the autonomy of microservices facilitates teamwork skills, as teams can work independently on different services while ensuring seamless integration through well-defined APIs.
 
-However, adopting microservices architecture also introduces challenges, such as managing the complexity of a distributed system and ensuring effective communication between services. These challenges underscore the importance of basic modeling, design patterns, and refactoring, topics covered in CSC301.
+However, adopting microservices architecture also introduces challenges, such as managing the complexity of a distributed system and ensuring effective communication between services. These challenges underscore the importance of basic modeling, design patterns, and refactoring, topics covered in CSC301. Additionally, considering Conway's Law, which suggests that the structure of an organization will be reflected in the design of its systems, becomes insightful in understanding how teams collaborate and communicate within microservices architectures.
 
 Overall, understanding microservices architecture within the context of CSC301 provides students with valuable insights into modern software engineering practices. By delving into the principles, advantages, and challenges of microservices, CSC301 students gain a solid foundation in designing scalable, resilient, and maintainable software systems—a cornerstone of professional software engineering.
 
@@ -163,3 +164,17 @@ To provide introductory-level learners with a clear understanding of microservic
 7. **PayPal**: PayPal's online payment platform utilizes microservices architecture to process transactions, detect fraud, manage user accounts, and provide customer support. Microservices enable PayPal to ensure high availability, security, and compliance while handling billions of transactions annually.
 
 These real-world examples illustrate the versatility and scalability of microservices architecture in powering large-scale, mission-critical applications. By studying these case studies, introductory-level learners can gain insights into how microservices are applied in practice, understand the benefits they offer, and appreciate their significance in modern software development. Additionally, analyzing the challenges faced and solutions implemented by these companies can help learners prepare for similar scenarios in their own software engineering endeavors.
+
+
+## Further Readings <a name="further"></a>
+
+1. Martin Fowler's Website - Microservices: A Definition of This New Architectural Term: [Link](https://martinfowler.com/articles/microservices.html)
+2. Sam Newman's Book - Building Microservices: Designing Fine-Grained Systems: [Link](https://samnewman.io/books/building_microservices/)
+3. Chris Richardson's Website - Microservices.io: [Link](https://microservices.io/)
+4. Kubernetes Documentation: [Link](https://kubernetes.io/docs/)
+5. Docker Documentation: [Link](https://docs.docker.com/)
+6. Event-Driven Architecture: An Introduction: [Link](https://www.ibm.com/cloud/learn/event-driven-architecture)
+7. Message Queuing Systems: Explained: [Link](https://www.cloudflare.com/learning/messaging/what-is-message-queuing/)
+8. Conway's Law: Exploring the Interplay between Organizations and Systems: [Link](https://www.thoughtworks.com/insights/blog/understanding-conways-law)
+
+These resources provide in-depth insights into microservices architecture, related technologies, and broader concepts such as event-driven architecture and Conway's Law. They serve as valuable references for further exploration and understanding of the topics discussed.
