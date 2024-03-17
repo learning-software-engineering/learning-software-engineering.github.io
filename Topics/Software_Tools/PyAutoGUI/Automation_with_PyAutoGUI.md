@@ -44,7 +44,7 @@ Before we start moving the mouse around, we must first understand how points on 
 
 For example, if you have a 500x500p display, here is how pixels/locations are mapped on your screen.
 
-![pixel-coordinates](https://www2.cs.sfu.ca/CourseCentral/166/tjd/_images/screenCoord.png)
+![pixel-coordinates](./assets/screenCoord.png)
 (from Coordinates and Modes - CMPT 166 Fall 2016 1 documentation. (n.d.). https://www2.cs.sfu.ca/CourseCentral/166/tjd/coordinates.html)
 
 You can use PyAutoGUI to get your screen resolution size like this:
