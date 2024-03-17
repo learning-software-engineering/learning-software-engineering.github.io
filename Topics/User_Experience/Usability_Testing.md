@@ -33,12 +33,16 @@ The tasks asked to perform during the test must be realistic, meaning that they 
 
 The tasks given should be consistent across the participant group; however, they can be designed to target specific user groups the stakeholder comes from if different stakeholder groups might use the product differently (for instance, the student and teacher end of Quercus). The instructions given for each task should be clear and decisive. It should be carefully phrased to communicate the correct intention, as misunderstanding the task may heavily influence the outcome. Also, be aware that the instructions should not be step-by-step, as that defeats the purpose of observing the user's perception of the product. The instruction is not about "how to do", but rather about "what to do". 
 
-[TODO: add examples of tasks]
+> Poor task (not clear enough): Set an alarm. 
+
+> Good task: Make a non-repeated alarm for 9AM tomorrow morning with label "Alarm"
+
+> Poor task (too detailed): Click on the alarm button, then click on the create alarm button. On the next page, change the time to ...
 
 ### The Participants
 Participants are also a vital component of the test. We need to ensure that the participants recruited are representative of the target user groups and cover various types of users (of different backgrounds, experiences, stakeholder groups, etc.)  
 
-[TODO: add link]
+To learn more about particpants recruitment for userbility test, check out the following [article](https://www.usability.gov/how-to-and-tools/methods/recruiting-usability-test-participants.html).
 
 
 ## Methods 
