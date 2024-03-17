@@ -172,6 +172,18 @@ it is common that developers use React Native to develop these apps due to the
 cross-platform nature of React Native. Here, we provide a brief overview of the
 steps to integrate BLE into a React Native app.
 
+To begin working with a react native app that uses BLE, the first step is to
+have `npm` and `react-native` installed.
+
+First, install `Node.js` from the [official website](https://nodejs.org/en).
+`npm` should be installed along with `Node.js`.
+
+Then, install `react-native` using the following command:
+
+```bash
+npm install -g react-native
+```
+
 ### BLE Libraries for React Native
 
 There are two common libraries associated with BLE in React Native: 
