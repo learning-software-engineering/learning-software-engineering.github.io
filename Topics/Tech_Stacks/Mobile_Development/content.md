@@ -1,8 +1,9 @@
+**Introduction to Cross Platform vs Native Mobile Development**
+
+
 **Introduction to Cross-Platform Development Frameworks:**
-- Definition and concept of cross-platform development
-- Explanation of how cross-platform frameworks enable developers to build apps that run on multiple platforms (e.g., iOS, Android) using a single codebase
-- Overview of the architecture and functioning of cross-platform development frameworks
-- Examples of popular cross-platform frameworks, such as React Native, Flutter, Xamarin, and Ionic
+
+Cross-platform development for mobile involves creating applications that can run seamlessly across multiple operating systems, such as iOS and Android, utilizing a single codebase. Through cross-platform frameworks, developers gain the ability to streamline the development process by writing code once and deploying it across various platforms. CSC301 students, can benefit greatly from understanding cross-platform development as it is easier to implement for multiple famous platforms such as iOS and Android. Students with already exisiting knoweldge in web can easily start-off with React Native providing them with a clear tranisition.
 
 **Advantages and Challenges of Cross-Platform Development:**
 - Advantages:
@@ -31,14 +32,7 @@
   - Integration with Visual Studio and support for native APIs
   - Code sharing across platforms with shared projects or .NET Standard libraries
   - Used by companies like UPS, Honeywell, and Olo for mobile app development
-- Ionic:
-  - Built on top of Angular, allows building cross-platform mobile apps with web technologies (HTML, CSS, JavaScript)
-  - UI components optimized for mobile development and performance
-  - Integration with Cordova for accessing native device features
-  - Used by companies like MarketWatch, Nationwide, and Amtrak for mobile app development
 
 **Exploring Native Mobile Development:**
-- Overview of native mobile development for iOS and Android
-- Explanation of how native development involves using platform-specific languages and frameworks (Swift or Objective-C for iOS, Kotlin or Java for Android)
-- Benefits of native development, including superior performance, access to platform-specific features, and seamless integration with the device ecosystem
-- Examples of popular native development tools and IDEs, such as Xcode for iOS and Android Studio for Android
+
+Native mobile development for iOS and Android involves creating applications specifically tailored for each platform using their respective programming languages and frameworks. For iOS, developers typically use Swift while for Android, Kotlin or Java are commonly employed. Notable IDEs for native development include Xcode for iOS and Android Studio for Android, providing robust toolsets for designing, debugging, and deploying applications. Understanding native development will help CSC301 students with the ability to harness platform specific capabilities fully, delivering high-performance, feature-rich mobile applications tailored to partners' needs.
