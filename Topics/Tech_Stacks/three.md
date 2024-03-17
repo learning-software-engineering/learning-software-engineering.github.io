@@ -14,13 +14,14 @@ You will need:
    `npx vite`
 
 Result: You should see a URL such as http://localhost:5173 appear in the terminal, which you can click on to open up the webpage. The page will start off as blank until you create a scene.
-When you are ready to deploy your web app, use Vite to run a production build using `npx vite build` in the terminal. Everything used by the app will be copied into the dist/ folder, which will conatin everything that can be hosted on your website. 
+When you are ready to deploy your web app, use Vite to run a production build using `npx vite build` in the terminal. Everything used by the app will be copied into the dist/ folder, which will contain everything that can be hosted on your website. 
 
 ## Option 2 for installation: Import from a CDN
 Installing without build tools will change your project structure.
 
-1. We previously imported code from the npm package 'three' in the javascript file. Web browsers dont understand what that means, so in the html file we will need to add an import
-   map defining where to get the package. Put the following code inside the <head></head> tag, after the styles. Replace <version> with an actual version of three.js, a list of which    can be found here: https://www.npmjs.com/package/three?activeTab=versions
+1. We previously imported code from the npm package 'three' in the javascript file. Web browsers don't understand what that means, so in the html file we will need to add an import
+   map defining where to get the package. Put the following code inside the <head></head> tag, after the styles. Replace <version> with an actual version of three.js, a list of which can be found here:
+   https://www.npmjs.com/packagethree?activeTab=versions
 ```html
 <script type="importmap">
   {
