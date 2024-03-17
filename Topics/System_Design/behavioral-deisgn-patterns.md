@@ -46,6 +46,27 @@ In this example, the Observer pattern enables the news agency to inform its subs
 
 The Strategy design pattern is a behavioral pattern that allows a class to define a family of algorithms, encapsulate each one as a separate object, and make them interchangeable. This pattern enables clients to choose a specific algorithm from the family of algorithms dynamically without modifying the client code. By encapsulating algorithms in separate classes and providing a common interface, the Strategy pattern promotes flexibility, modularity, and extensibility in software design. It's particularly useful when multiple algorithms exist for a task or when algorithms need to vary independently from the client that uses them.
 
+### Analogy
+
+Imagine you're planning a vacation, and you have multiple options for transportation: you could travel by car, train, bus, or airplane. Each mode of transportation has its own advantages and disadvantages depending on factors like distance, cost, time, and personal preferences. Here's how the Strategy pattern can be applied in this scenario:
+
+<p align="center">
+<img width="690" alt="Screenshot 2024-03-17 at 9 08 10 AM" src="https://github.com/paridhi26/CSC311Project/assets/85652265/38c1b09d-292f-45ae-88bd-51dfb884c11f">
+</p>
+
+Image from [Refactoring Guru](https://refactoring.guru/design-patterns/strategy)
+
+1. **Context:** You, as the traveler, represent the context in this scenario. You have a goal (getting to your destination) but are open to different strategies for achieving it.
+
+2. **Strategy Interface:** This is an abstract representation of the transportation strategy. It defines a common interface for all transportation methods, such as a TravelStrategy interface with a method travel(). This interface ensures that all strategies can be used interchangeably.
+
+3. **Concrete Strategies:** These are the different transportation methods - car, train, bus, and airplane. Each concrete strategy implements the TravelStrategy interface and provides its own implementation of the travel() method. For example, the CarTravelStrategy might involve driving your own car or renting one, the TrainTravelStrategy might involve booking a train ticket, and so on.
+
+4. **Context with Strategy:** You, as the traveler, hold a reference to a specific transportation strategy. Depending on your requirements, preferences, and circumstances, you can dynamically switch between different strategies without affecting the rest of your vacation plans.
+
+In this example, the Strategy pattern allows you to decouple the selection of transportation method from the vacation planning process. You can easily switch between different strategies based on factors like distance, cost, and time constraints without having to modify the rest of your vacation itinerary. For instance, if you initially planned to travel by train but find that flights are more affordable, you can switch to the airplane strategy without rewriting your entire travel plan.
+
+Overall, the Strategy pattern promotes flexibility, modularity, and maintainability by encapsulating algorithms or strategies in separate classes and allowing them to be selected or swapped at runtime based on specific requirements or conditions.
 
 ## Iterator Design Pattern <a name="itr"></a>
 
