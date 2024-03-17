@@ -10,12 +10,12 @@
     - [User Experience Principles](https://learning-software-engineering.github.io/Topics/User_Experience.html#user-experience-principles)
     - [Site mapping, Wireframing, and Prototyping](https://learning-software-engineering.github.io/Topics/User_Experience.html#site-mapping-wireframing-and-prototyping)
     - [Accessibility](https://learning-software-engineering.github.io/Topics/User_Experience.html#accessibility)
-    - [Usability Testing](#usability-testing)
-4. [Helpful Courses](https://learning-software-engineering.github.io/Topics/User_Experience.html#helpful-courses)
-5. [Tools Used in User Experience Design](https://learning-software-engineering.github.io/Topics/User_Experience.html#tools-used-in-user-experience-design)
+    - [Usability Testing](https://learning-software-engineering.github.io/Topics/User_Experience.html#usability-testing)
+3. [Helpful Courses](https://learning-software-engineering.github.io/Topics/User_Experience.html#helpful-courses)
+4. [Tools Used in User Experience Design](https://learning-software-engineering.github.io/Topics/User_Experience.html#tools-used-in-user-experience-design)
     - [Design Tools](https://learning-software-engineering.github.io/Topics/User_Experience.html#design-tools)
     - [UI Component Libraries](https://learning-software-engineering.github.io/Topics/User_Experience.html#ui-component-libraries)
-6. [User Experience-Oriented Games](https://learning-software-engineering.github.io/Topics/User_Experience.html#user-experience-oriented-games)
+5. [User Experience-Oriented Games](https://learning-software-engineering.github.io/Topics/User_Experience.html#user-experience-oriented-games)
 
 
 # Overview
