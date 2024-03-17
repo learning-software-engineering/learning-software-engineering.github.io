@@ -1,15 +1,15 @@
 # Introduction to ROBLOX Studio
 
 ## Table of contents
-#### [Introduction](#introduction)
-#### [Download](#download)
-#### [Creating a New Project](#creating-a-new-project)
-#### [ROBLOX Studio HUD Overview](#roblox-studio-hud-overview)
-#### [Getting Started with Your First ROBLOX Experience](#getting-started)
-#### [Further Reading](#further-reading)
-#### [References](#references)
+#### [Introduction](#introduction-section)
+#### [Download](#download-section)
+#### [Creating a New Project](#creating-a-new-project-section)
+#### [ROBLOX Studio HUD Overview](#roblox-studio-hud-overview-section)
+#### [Getting Started with Your First ROBLOX Experience](#getting-started-section)
+#### [Further Reading](#further-reading-section)
+#### [References](#references-section)
 
-## Introduction <a name="introduction"></a>
+## Introduction <a id="introduction-section"></a>
 Let's be honest, I'm fairly certain most of you reading this know what ROBLOX is. In certain corners of the internet it's renowned as "the funny lego game" and is the source of many memes and cursed images.
 
 But in case you didn't know, ROBLOX is a multi-billion-dollar platform that lets users create their own games (dubbed "experiences") in their own engine, which can then be uploaded to the ROBLOX website for all to see. Users can also create their own avatars that they can play as in these games.
@@ -34,17 +34,17 @@ But the truth is, ROBLOX really is capable of some awesome things:
 
 There are a lot more but then the introduction would be too long, so let's just get started.
 
-## Download <a name="download"></a>
+## Download <a id="download-section"></a>
 The first thing you'll need to do is create a ROBLOX account. Once you do that, you just need to head over to [the create page](https://create.roblox.com/landing) and download ROBLOX Studio. Easy!
 
-## Creating a New Project <a name="creating-a-new-project"></a>
+## Creating a New Project <a id="creating-a-new-project-section"></a>
 Upon opening ROBLOX Studio, you'll be greeted with this page:
 
 ![studio_home](ROBLOX_Intro_images/studiohome.png)
 
 You can see there are many starter templates for you to choose from. Let's start simple and fresh with the second option, "Classic Baseplate."
 
-## ROBLOX Studio HUD Overview <a name="roblox-studio-hud-overview"></a>
+## ROBLOX Studio HUD Overview <a id="roblox-studio-hud-overview-section"></a>
 ![studiohud](ROBLOX_Intro_images/studiohud.png)
 
 On the left side is the toolbox, this is where you can find lots of free models you can use. If you don't see it, you can enable it by pressing the "Toolbox" button in the top bar.
@@ -88,7 +88,7 @@ As an example, type in `print("Hello, World!")` in the command bar, hit enter, a
 
 Remark: since Luau doesn't care about indentation, you can execute any program in the command bar!
 
-## Getting Started with Your First ROBLOX Experience <a name="getting-started"></a>
+## Getting Started with Your First ROBLOX Experience <a id="getting-started-section"></a>
 ### Scripting
 The command bar is cool and all, but that only works in the editor. How would you go about scripting stuff during actual gameplay? The answer is with script objects!
 
@@ -216,7 +216,7 @@ You learned how to insert and manipulate parts, made a basic script, and learned
 
 Check out the [official tutorial series](https://create.roblox.com/docs/en-us/tutorials) if you want to continue learning.
 
-## Further Reading <a name="further-reading"></a>
+## Further Reading <a id="further-reading-section"></a>
 [Client-Server Model](https://create.roblox.com/docs/projects/client-server)
 
 [Collection Service](https://create.roblox.com/docs/reference/engine/classes/CollectionService)
@@ -227,7 +227,7 @@ Check out the [official tutorial series](https://create.roblox.com/docs/en-us/tu
 
 [Terrain](https://create.roblox.com/docs/parts/terrain)
 
-## References <a name="references"></a>
+## References <a id="references-section"></a>
 All screenshots were taken by me.
 
 [Class Documentation](https://create.roblox.com/docs/en-us/reference/engine/classes)
