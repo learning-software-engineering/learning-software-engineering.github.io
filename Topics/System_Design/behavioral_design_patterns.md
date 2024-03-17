@@ -1,6 +1,6 @@
 # Behavioral Design Patterns
 
-Behavioral design patterns in software engineering are a set of patterns that focus on the interaction between objects and how they communicate and collaborate with each other. These patterns address the assignment of responsibilities between objects, encapsulation of behavior, and the flow of control among them. They aim to improve the flexibility, extensibility, and maintainability of software systems by providing solutions to common communication and collaboration problems.
+In software engineering, behavioral design patterns  are a set of patterns that focus on the interaction between objects and how they communicate and collaborate with each other. These patterns address the assignment of responsibilities between objects, encapsulation of behavior, and the flow of control among them. They aim to improve the flexibility, extensibility, and maintainability of software systems by providing solutions to common communication and collaboration problems.
 
 ## Table of Contents
 
