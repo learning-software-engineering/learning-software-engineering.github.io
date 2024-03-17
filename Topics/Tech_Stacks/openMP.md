@@ -52,6 +52,14 @@ Below we will share some simple examples of various directives, showcasing the f
 
 ### Calculating the sum of an array in parallel
 ```c
+// sequential code
+int sum = 0;
+for(int i = 0; i < arr_length; i++) {
+    sum += arr[i];
+}
+
+
+// parallelized code
 #pragma omp parallel
 {
 	#pragma omp for reduction(+:sum)
