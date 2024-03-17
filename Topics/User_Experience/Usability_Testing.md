@@ -5,7 +5,24 @@ Usability is a procedure that takes place during the evaluation phase of the des
 The goal of the usability test is to assess the completion of the current product and find potential room for correction and improvement. These involve any ambiguities in instructions, oversights in addressing user’s needs, inefficiencies, and more. 
 
 ## Importance of Usability Testing 
-[TODO]  
+
+Usability testing matters in the software development process as a foundational tool for ensuring digital product quality and effectiveness. Evaluating user interactions with interfaces enables developers to refine design, functionality, and user experience, resulting in intuitive, user-friendly products aligned with user needs. Additionally, by addressing usability issues early, usability testing mitigates risks, cuts development costs, and boosts overall user satisfaction, playing a crucial role in product success amidst market competition.
+
+**It validate**
+
+The usability test helps us validate the prototype, experience map, or any mock-up previously created to envision the experience. It confirms whether the product aligns with the expectation and ensures the workflow is clear and straightforward. It brings user-centric insight: 
+
+**It brings user-centric insights**
+
+Since usability testing involves the participation of real stakeholders, it is very likely to uncover issues unseen by the team that built the system. This is especially true when the team isn’t necessarily the stakeholders of the product. Having the real user interact with the product is an opportunity to observe how well our product satisfies the user’s need, fits into the user’s working habits, and is to the user’s preferences. From a third-person view, we can hear from the users, learn more about our users, and observe how our product resonates with users to create greater human empathy. It makes sure that the product we built is an actual working product liked by the users.
+
+
+**It catches neglection**
+
+Usability testing helps us uncover any incomplete or missing components, features, and transitions in the flow of the entire product, which might otherwise go unnoticed when we operate directly on the product. This oversight can occur because our prolonged exposure to the system can numb us to the subtle nuances that significantly impact user experience, making it challenging to recognize deficiencies or areas for improvement without the fresh perspective that usability testing provides.
+
+
+
 ##  How it's Done
 The usability test has three aspects: the facilitator (or research), the participants, and the tasks. The facilitator asks the participants to perform tasks and observe their performance in a realistic setting. 
 
