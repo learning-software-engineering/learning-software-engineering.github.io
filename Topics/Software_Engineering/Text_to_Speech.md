@@ -69,6 +69,16 @@ OpenAI's text-to-speech (TTS) technology refers to a suite of artificial intelli
     pip install --upgrade openai
     ```
 
+**API aquirement**
+Getting an OpenAI api key is a mandatory requirement to use the OpenAI TTS module.
+- Create an OpenAI account:
+    - Go to [OpenAI Api](https://platform.openai.com/api-keys/) and register a new account(log in if you already have one)
+- Getting personal api-key
+    - After logging in, click the **Create new secret key** button, set any properties you want and you will get    yourpersonal api key.
+    ![Api creation](Text_to_Speech_openAI_api.png)
+- Checking Usage
+    - In the website mentioned before, by clicking the **Usage** section, you can check your usage and recharge your limit.
+    ![Api creation](Text_to_Speech_openAI_usage.png)
 **Quickstart**
 
 - Set environment:
@@ -128,3 +138,5 @@ By using this code, the audio will be able to be played before the full file has
 * [Text to Speech Explained](https://speechify.com/blog/text-to-speech-explained-a-comprehensive-guide/)
 
 * [gTTS](https://pypi.org/project/gTTS/)
+
+* [OpenAI-TTS](https://platform.openai.com/docs/guides/text-to-speech/)
