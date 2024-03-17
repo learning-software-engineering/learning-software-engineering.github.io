@@ -70,8 +70,7 @@ In software engineering, design patterns provide reusable solutions to common pr
 
 ## Conclusion
 
-![Patterns](Design_Patterns/DPs.png "Pattern Comparisons")
-
+![Patterns](learning-software-engineering.github.io\Topics\System_Design\Design_Patterns\DPs.png "Pattern Comparisons")
 Understanding MVC, MVP, and MVVM design patterns is essential for creating robust, maintainable, and scalable software applications. Each pattern offers distinct advantages and trade-offs, making them suitable for different contexts and development scenarios. By leveraging these patterns effectively, developers can improve code quality, enhance testability, and streamline the development process.
 
 ## Sources
