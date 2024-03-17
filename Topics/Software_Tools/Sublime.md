@@ -5,7 +5,8 @@ Sublime is a text editor, which was created by Jon Skinner, that is supported on
 ## Installation of Sublime 
 1. Go to the [Sublime website](https://www.sublimetext.com/3) to install the latest version of the editor. 
 
-2. install 1 pic <br/>
+
+2. <br/>![install 1](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/113051612/e7c84d4c-7d33-4afd-97d7-aead390a2994)<br/>
 2.1 Windows : Make sure to know if your computer is 64-bit or 32-bit. Click Windows or Windows 64 bit<br/>
 2.2 macOS : Make sure your computer is version is 10.7 or higher. Click OS X <br/>
 2.3 Linux : You can download it by clicking Linux repos or following these steps below if you are using Ubuntu. <br/>
@@ -22,7 +23,8 @@ Sublime is a text editor, which was created by Jon Skinner, that is supported on
     ```
 
 3. After downloading Sublime, you can lauch it by clicking the icon. Then, you will see this. <br/>
-install 2
+![install 2](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/113051612/30c78bfc-73f4-474a-a310-d0971ff7fefb)
+
 
 
 
@@ -32,17 +34,20 @@ install 2
 * Command Palette
     * This is an interactive list designed to execute different kinds of commands.
     * Ctrl+Shift+P on Windows or Cmd+Shift+P on macOS
-    * For example, you can install packages like this feature 1
+    * For example, you can install packages like this <br/>
+    ![feature 1](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/113051612/8021cad1-b930-4459-b768-164cd3da0eb3)
 
 * Distraction Free Mode
     * This displays your files in full screen view, centering the text on your monitor while eliminating all other visual elements.
     * Click View then Enter Distraction Free Mode
-    * feature 2
+    * It looks like this <br/>![feature 2](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/113051612/54006218-7ae8-4686-9386-debc16b7e784)
+
 
 * Goto Anything
     * This allows you to navigate files and line very quickly.
     * Ctrl+P on Windows or Cmd+P on macOS
-    * You can jump to different lines like this feature 3
+    * You can jump to different lines like this <br/>
+    ![feature 3](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/113051612/2d4df739-dad4-4326-9c52-932369d263f4)
 
 
 
