@@ -140,6 +140,20 @@ This the completed figma prototype according to the client's instructions.
 
 ![image](figma_tutorial_image/completed.png)
 
+## **Demo to illustrate the functionalities in real time**
+
+The first demo portrays how to use Figma to create the AI Recipe Generator page of the application from scratch.
+
+Demo 1:
+[![Demo 1 Video Thumbnail](https://img.youtube.com/vi/9lKGtSVN7HY/maxresdefault.jpg)](https://www.youtube.com/watch?v=9lKGtSVN7HY)
+
+
+Th next demo portrays how to use Figma to link between pages through the use of buttons. You can navigate to many pages from your current page, thus synthesizing the visual aspect of how the app should work at a high level. 
+
+Demo 2:
+[![Demo 2 Video Thumbnail](https://img.youtube.com/vi/Ds0aJOuNZag/maxresdefault.jpg)](https://www.youtube.com/watch?v=Ds0aJOuNZag)
+
+
 ## **Additional Resources**
 
 Link to our figma page: https://www.figma.com/file/wUPbKaitPezq9d3KKTFwuv/301-A2?type=design&node-id=3%3A6&mode=design&t=Hgssi13xrSmifAEH-1
