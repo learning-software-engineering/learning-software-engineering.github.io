@@ -36,6 +36,8 @@
 
 ### [CSS](./Tech_Stacks/CSS.md)
 
+### [Learning Tailwind](./Tech_Stacks/Tailwind.md)
+
 ### [Learning Bootstrap](./Tech_Stacks/Bootstrap.md)
 
 ### [Learning TypeScript](./Tech_Stacks/TypeScript.md)
@@ -173,3 +175,4 @@
 ### [Intro to Flask with Flask-SQLAlchemy](./Tech_Stacks/Flask.md)
 
 ### [Introduction to ROBLOX Studio](./Tech_Stacks/ROBLOX_Intro.md)
+
