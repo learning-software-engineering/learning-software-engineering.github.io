@@ -64,7 +64,7 @@ Open up the workspace in the explorer panel, and you should see this:
 
 ![workspace](ROBLOX_Intro_images/workspace.png)
 
-Look familiar? It's just everything currently in the game's playable area! The Camera refers to the main camera used when playing the game, the Baseplate is the giant grey block that forms the ground, and Terrain is the base object for any terrain in your game (we will ignore this for now, head to [Further Reading](#further-reading) if you want to know more).
+Look familiar? It's just everything currently in the game's playable area! The Camera refers to the main camera used when playing the game, the Baseplate is the giant grey block that forms the ground, and Terrain is the base object for any terrain in your game (we will ignore this for now, head to [Further Reading](#further-reading-section) if you want to know more).
 
 ### The Properties Panel
 Select the Baseplate in the explorer and go to its properties.
@@ -90,7 +90,7 @@ Remark: since Luau doesn't care about indentation, you can execute any program i
 
 ## Getting Started with Your First ROBLOX Experience <a id="getting-started-section"></a>
 ### Scripting
-The command bar is cool and all, but that only works in the editor. How would you go about scripting stuff during actual gameplay? The answer is with script objects!
+The command bar is cool and all, but that only works in the editor. How would you go about scripting stuff that runs during actual gameplay? The answer is with script objects!
 
 We will create a simple script that prints `Hello, World!` when you playtest your game. In the explorer panel, right-click on ServerScriptService, click "Insert Object", and insert a new Script.
 
@@ -176,7 +176,7 @@ Notice that the script is also duplicated for each killbrick. It's not hard to s
 
 We could group all the killbricks into a folder and use [GetChildren](https://create.roblox.com/docs/reference/engine/classes/Instance#GetChildren) to iterate over them, but this limits how you can structure the workspace.
 
-Another option is to tag each killbrick then use [Collection Service](https://create.roblox.com/docs/reference/engine/classes/CollectionService) to iterate over them. This is beyond the scope of this tutorial, however, but I'll leave a link in [Further Reading](#further-reading).
+Another option is to tag each killbrick then use [Collection Service](https://create.roblox.com/docs/reference/engine/classes/CollectionService) to iterate over them. This is beyond the scope of this tutorial, however, but I'll leave a link in [Further Reading](#further-reading-section).
 
 ### Customizing the Player's Spawn Point
 If you haven't noticed yet, every time you playtest your game your player spawns at the centre of the baseplate. This is because we haven't added our own [SpawnLocation](https://create.roblox.com/docs/reference/engine/classes/SpawnLocation) object yet. A SpawnLocation is essentially a special part that acts as your player's spawn point. It's rather self-explanatory.
