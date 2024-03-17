@@ -254,6 +254,79 @@ const disconnectFromDevice = (device) => {
 };
 ```
 
+### Common Issues with BLE in React Native
+
+#### Permissions
+
+To utilize BLE services in a React Native app, the app must request the
+necessary permissions from the user. Especially on Android, necessary permissions
+must be granted by the user before the app can scan for devices.
+
+Under `app.json`, ensure that android-specific settings are given:
+
+```json
+{
+  "android": {
+      "permissions": [
+        "BLUETOOTH",
+        "BLUETOOTH_ADMIN",
+        "BLUETOOTH_SCAN",
+        "BLUETOOTH_CONNECT"
+      ]
+    },
+}
+```
+
+At runtime, the app must request the necessary permissions after initializing
+the BLE manager:
+
+```javascript
+import { PermissionsAndroid } from 'react-native';
+
+const requestPermissions = async () => {
+  try {
+    const granted = await PermissionsAndroid.requestMultiple([
+      PermissionsAndroid.PERMISSIONS.ACCESS_COARSE_LOCATION,
+      PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION,
+      const apiLevel = parseInt(Platform.Version.toString(), 10);
+      if (apiLevel >= 31) {
+        PermissionsAndroid.PERMISSIONS.BLUETOOTH_CONNECT,
+        PermissionsAndroid.PERMISSIONS.BLUETOOTH_SCAN
+      }
+    ]);
+    if (granted['android.permission.ACCESS_COARSE_LOCATION'] === 'granted' &&
+        granted['android.permission.ACCESS_FINE_LOCATION'] === 'granted') {
+      console.log('permissions granted');
+    } else {
+      console.log('permissions denied');
+    }
+  } catch (error) {
+    console.log(error);
+  }
+};
+```
+
+#### Error Scanning for Devices
+
+If the app is unable to scan for devices, it is likely that location services
+are not enabled on the device. It is necessary for BLE to have access to
+location services to scan for nearby BLE devices.
+
+Make sure that the users have enabled location services on their devices. This
+can be done by prompting the user to enable location services if it is not
+enabled.
+
+```javascript
+import { Linking } from 'react-native';
+
+const promptLocationServices = () => {
+  Linking.openSettings();
+};
+```
+
+Alternatively, users should turn on location services manually in the settings.
+
+
 ## References:
 
 - [Data Communication Terminologies](https://www.geeksforgeeks.org/data-communication-terminologies/?ref=ml_lbp)
