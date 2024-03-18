@@ -1,10 +1,10 @@
 # Table of Contents
 - [Technical Techniques](#techinical-techniques)
-  - [Zero-shot Learning](zero-shot-learning)
-  - [Few-shot Learning](few-shot-learning)
-  - [Chain-of-thought Prompting](chain-prompting)
+  - [Zero-shot Learning](#zero-shot-learning)
+  - [Few-shot Learning](#few-shot-learning)
+  - [Chain-of-thought Prompting](#chain-prompting)
 - [Application](#application)
-  - [Function Calling](function-calling)
+  - [Function Calling](#function-calling)
 
 <a id="techinical-techniques"></a>
 # Technical Techniques
