@@ -158,6 +158,13 @@ When deploying applications on Vercel, ensuring the security of your frontend an
 
 ### Regularly Update Dependencies
 - Keep all your project dependencies up to date. This includes the libraries and frameworks your application uses. Outdated dependencies may contain security vulnerabilities that attackers can exploit.
+- Example (update all dependencies in package.json):
+```bash
+npm update
+```
+
+### Learn more
+- https://vercel.com/security
 
 ## Search Engine Optimization (SEO) for Sites Deployed on Vercel
 
