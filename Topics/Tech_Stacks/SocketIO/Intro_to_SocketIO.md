@@ -20,6 +20,8 @@
 
 -   [Broadcasting](#broadcasting)
 
+### [Diagram of Messaging app](#diagram-of-the-messaging-app)
+
 ### [Resources](#resources)
 
 ## Introduction
@@ -120,7 +122,7 @@ Typically, socketIO has 2 states. It is either listening for signals or it is se
 
 Sending a signal is done through `socket.emit("event-a")`, while listening for signals is done through `socket.on("event-b")`.
 
-<img src="bidirectional-communication-socket.png">
+<img src="bidirectional-communication-socket.jpg">
 
 Image from https://socket.io/docs/v4/client-socket-instance/
 
@@ -271,8 +273,20 @@ There are of course many more applications of SocketIO in Flask. More details ca
 
 https://flask-socketio.readthedocs.io/en/latest/intro.html
 
-### Resources
+## Diagram of the Messaging App
+
+Here is a visual representation of the messaging app we have built using SocketIO:
+
+<img src="Graphic_of_chat_app.jpg">
+
+As you can see, when the message is sent through a button click, it passes through the listening server and then is emitted back to all the clients in the same chat room by broadcast, where it updates as a new message.
+
+## Resources
 
 #### https://socket.io
 
+This is the official website of socketIO, it has all the documentation and installation guide for socketIO and all its variants.
+
 #### https://flask-socketio.readthedocs.io/en/latest/intro.html
+
+This is the website for flask-socketio, a variation of the server side of socketIO that is well integrated with python and Flask. It has the documentation and installation guides.
