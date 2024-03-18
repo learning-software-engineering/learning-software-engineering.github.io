@@ -12,6 +12,14 @@
     - [Integrated Terminal](#integrated-terminal)
   - [Extensions](#extensions)
   - [Tips and Tricks](#tips-and-tricks)
+  - [Working with GitHub through VS Code](#working-with-github-through-vs-code)
+    - [Prerequisites](#prerequisites)
+    - [Initializing and publishing your local repository to GitHub](#initializing-and-publishing-your-local-repository-to-github)
+    - [Cloning a GitHub Repository](#cloning-a-github-repository)
+    - [Tracking Changes](#tracking-changes)
+    - [Adding files to be committed](#adding-files-to-be-committed)
+    - [Committing files](#committing-files)
+    - [Pushing and pulling files to and from GitHub](#pushing-and-pulling-files-to-and-from-github)
   - [Closing Remarks](#closing-remarks)
   - [Additional Resources](#additional-resources)
   - [References and Citations](#references-and-citations)
@@ -46,15 +54,14 @@ An umbrella term for various code editing features, IntelliSense simplifies the 
   <img width="350" src="https://github.com/parthvats02/learning-software-engineering.github.io/assets/81998163/ac670db1-d7eb-4164-9627-cddfc19196be"> 
 
 - Code Actions
-  
-  <img width="350" src="https://github.com/parthvats02/learning-software-engineering.github.io/assets/81998163/eadf36f3-6fdf-493d-b087-cd1d380088d4"> 
+
+<img width="350" src="https://github.com/parthvats02/learning-software-engineering.github.io/assets/81998163/eadf36f3-6fdf-493d-b087-cd1d380088d4"> 
 
 - Parameter information
   
   <img width="350" src="https://github.com/parthvats02/learning-software-engineering.github.io/assets/81998163/d56b7e99-52a6-4290-8001-83eff5d0aa76"> 
 
 These editing features work together to simplify your coding experience. You can learn more about IntelliSense [here](https://code.visualstudio.com/docs/editor/intellisense).
-
 
 ### [Debugging](https://code.visualstudio.com/docs/editor/debugging) with VS Code
 
@@ -99,7 +106,7 @@ Whether you choose to use the default terminal or install another one of your pr
   <br>
   <img width="350" src="https://github.com/parthvats02/learning-software-engineering.github.io/assets/81998163/c80a4b62-52aa-48e3-89d3-4855c795218a"> 
 
-- You also have the ability to split terminals, open multiple terminals simultaneously in an organized manner, and keep track of them without the hassle of switching between countless windows. Depending on your machine, you will see relevant options when you click the + sign in the terminal window to run other terminals like Git Bash (if you have it installed).
+  - You also have the ability to split terminals, open multiple terminals simultaneously in an organized manner, and keep track of them without the hassle of switching between countless windows. Depending on your machine, you will see relevant options when you click the + sign in the terminal window to run other terminals like Git Bash (if you have it installed).
 
   <img width="350" src="https://github.com/parthvats02/learning-software-engineering.github.io/assets/81998163/2661f205-055f-40f1-90ed-8b14e9fa969c"> 
   <img width="341" src="https://github.com/parthvats02/learning-software-engineering.github.io/assets/81998163/63bc9d5c-6409-4667-85c3-bf11388cd022"> 
@@ -155,8 +162,8 @@ With an editor so powerful comes a myriad of tips and tricks to improve your exp
 Here are some quick hand-picked tips and tricks:
 
 - You can split the editor by clicking the icon here which allows you to work with your files at multiple locations simultaneously
-  
-  <img width="350" src="https://github.com/parthvats02/learning-software-engineering.github.io/assets/81998163/0878cfc5-0b4d-44fa-8d0f-1d0ab85370fe"> 
+
+<img width="350" src="https://github.com/parthvats02/learning-software-engineering.github.io/assets/81998163/0878cfc5-0b4d-44fa-8d0f-1d0ab85370fe"> 
 
 - You can enable Zen Mode (by clicking View -> Appearance -> Zen Mode) to reduce distractions and focus only your code, and can disable it by pressing Escape on your keyboard twice
 
@@ -167,6 +174,113 @@ Here are some quick hand-picked tips and tricks:
 
 For an extensive list of tips and tricks, visit the official [Visual Studio Code Tips and Tricks page](https://code.visualstudio.com/docs/getstarted/tips-and-tricks) to supercharge your VS Code experience.
 
+## Working with GitHub through VS Code
+
+Version control is a system that keeps track of changes to your files so that you can later recall a previous version (https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control). GitHub is one of the most powerful such systems and is a go-to for many team projects like CSC301 because you can collaborate together, see the changes that have been made and you can rollback to a previous working version if something goes wrong. For additional info take a look at this [Git](../Development_Process/Git/Git.md) page in the Software Engineering Learning Center.
+
+One of the most powerful use cases of VS Code is that it has integrated source control management and includes Git support. This means that whenever you are working on a remote repository on GitHub, you can clone, commit and push your code through VSCode conveniently and you can even track the changes you've made which can be very helpful. You can work with GitHub through the integrated terminal as well, and you can also directly work on it with the VS Code UI. This section will show how you can work on GitHub repositories with VS Code. This section is based on the VS Code Docs ["Using Git source control in VS Code"](https://code.visualstudio.com/docs/sourcecontrol/overview), ["Introduction to Git in VS Code"](https://code.visualstudio.com/docs/sourcecontrol/intro-to-git), [Source Control FAQ](https://code.visualstudio.com/docs/sourcecontrol/faq)
+
+### Prerequisites
+
+Git has to be installed on your machine. Check if it has been installed and install it if required.
+
+Sign into GitHub through VS Code. You can do this by going to the Accounts Tab on the left pane and following the process.
+
+### Initializing and publishing your local repository to GitHub
+
+If you are working in your local folder, you might consider making a Git repo in that folder. This could be useful because if you make a change to some code that works and it breaks after the changes, you could easily revert back to the previous working version. You can do this by opening the folder in VS Code and then navigating to the Source Control tab then selecting the "Initialize Repository" button, creates a Git Repository, thereby making it easy to track changes. 
+
+<img width="400" alt="Initialize and publish git repo" src="https://github.com/vazevaru/learning-software-engineering.github.io/assets/90367491/e8c6a30a-c333-4116-bdff-d59112c00765">
+
+If you are working on a local repository and want to publish it to GitHub, you can do this by opening the folder in VS Code and then navigating to the Source Control tab. To then publish this repository to GitHub press the "Publish to GitHub" button, and after selecting a few options to make the repository, you have successfully published your local repo to GitHub!
+
+### Cloning a GitHub Repository
+
+If you want to work on an existing repo on GitHub, then you can clone it to work on it locally in VS Code. To do this, first open a new window in VS Code, you will be greeted with the screen below. Click on “Clone Git repository.” You can also go to the "Explorer" tab or the "Version Control" tab on the left pane and do the same.
+
+<img width="800" alt="Clone Git repo new window" src="https://github.com/vazevaru/learning-software-engineering.github.io/assets/90367491/416d94f7-23f8-467f-af80-d6a622985a78">
+
+This will make a text box appear. 
+
+<img width="800" alt="Clone textbox" src="https://github.com/vazevaru/learning-software-engineering.github.io/assets/90367491/b24e534f-8ff9-4b34-960f-458ce2326869">
+
+You can search for the relevant repository and select it. After selecting it, you need to specify a location for the repo. You can either create a new folder or clone it in an existing folder. After selecting the location, you can open the folder and work on the repo!
+
+<img width="800" alt="Git clone select repo location" src="https://github.com/vazevaru/learning-software-engineering.github.io/assets/90367491/6e6b16e1-05ec-4cf4-987e-3c0e0645bd0b">
+
+
+### Tracking changes
+
+VS Code provides an easy way to track your changes. In the image below I have added changes to the current file. VS Code indicates this with a green bar on all the lines that have been added. If existing lines have been modified, this is indicated with a striped blue bar.
+
+<img width="800" alt="Track changes blue striped bar" src="https://github.com/vazevaru/learning-software-engineering.github.io/assets/90367491/421a7b5b-bf66-452f-8cac-04f22664aac0">
+
+Click on the blue bar beside the code to look at the modifications that have been made. If you want to revert back to the changes, press the revert button.
+
+<img width="800" alt="Track changes by section" src="https://github.com/vazevaru/learning-software-engineering.github.io/assets/90367491/711d0053-a7d3-4862-8418-d650dc7b59e9">
+
+You can also look at the changes you've made to the entire file by navigating to the "Source Control" tab on the left pane and clicking on the file.
+
+<img width="800" alt="Track changes whole file" src="https://github.com/vazevaru/learning-software-engineering.github.io/assets/90367491/0fd5d3f9-f99e-41cf-b0c1-fed50ef362d1">
+
+To look at the previous versions of your file, navigate to the "Explorer" tab on the left pane (if that's not the current tab you are on) and then look at "Timeline" at the bottom of the tab.
+
+<img width="369" alt="Timeline" src="https://github.com/vazevaru/learning-software-engineering.github.io/assets/90367491/cf2154ac-05fe-4a9c-8c4c-ee527b250d04">
+
+To revert to a previous version, right click on the file and select "Restore Contents"
+
+<img width="466" alt="Reverting to previous version" src="https://github.com/vazevaru/learning-software-engineering.github.io/assets/90367491/1cca0b99-1e15-49e5-9be5-003c30233066">
+
+
+### Adding files to be committed
+
+When you're working on a file, VS Code shows you the status of your files. For example, if you create a new file in your repo, the character 'U' appears beside your file as shown indicating that the file is untracked. 
+
+<img width="363" alt="Before staging untracked" src="https://github.com/vazevaru/learning-software-engineering.github.io/assets/90367491/c8483106-9e08-4c2b-a9c5-a16b276d508e">
+
+If you modify a file existing in the git repo, the character 'M' appears beside your file indicating that it has been modified.
+
+<img width="365" alt="After modification before staging" src="https://github.com/vazevaru/learning-software-engineering.github.io/assets/90367491/f1e81f23-e2f5-41aa-990a-c386c93b7e35">
+
+This helps in identifying which files need to be added. To add a file you can navigate to the "Version Control" tab on the left. There you can view the changes you've made and the staged changes. To stage the changes, you can press the "+" button beside the file. Your changes have been successfully staged and ready to be committed!
+
+<img width="367" alt="After modification after staging" src="https://github.com/vazevaru/learning-software-engineering.github.io/assets/90367491/f35c0380-dd4a-417c-8933-0dc126f3d9ec">
+
+If you want to unstage your changes, locate the file under "Staged Changes" and press the "-" button. This will unstage your changes!
+
+<img width="432" alt="Unstage change" src="https://github.com/vazevaru/learning-software-engineering.github.io/assets/90367491/8e7b9147-1fe7-4ee8-9709-a57bf35ab281">
+
+
+### Committing files
+
+To commit files navigate to the "Version Control" tab. You will see a text box on the top where you can put your commit message.Then press Command + Enter if you're on a Mac or Ctrl + Enter if you're on a Windows machine.
+
+<img width="363" alt="Commit" src="https://github.com/vazevaru/learning-software-engineering.github.io/assets/90367491/d24ac24a-6e0c-4de3-9669-ef0d9a5eda8e">
+
+Your files have now been committed!
+
+To uncommit changes, navigate to the "Version Control" tab and press the "Views and More Actions" button, which is the button with the 3 dots. Hover on the "Commit" option and press "Undo Last Commit". This will uncommit your changes!
+
+<img width="682" alt="Undo last commit" src="https://github.com/vazevaru/learning-software-engineering.github.io/assets/90367491/22adbc5c-1b90-422d-8101-d297a0817337">
+
+
+### Pushing to GitHub
+
+Once your files are committed and there are no pending files, you can push to GitHub by navigating to the "Version Control" tab and then press "Sync Changes". If you have pending changes, then you may need to commit them before pushing.
+
+<img width="360" alt="Sync Changes" src="https://github.com/vazevaru/learning-software-engineering.github.io/assets/90367491/6ce33bee-46a1-4fc9-88ca-d227d29ed767">
+
+This will push your changes!
+
+### Pulling from GitHub
+
+You can also pull from GitHub using the "Sync Changes" button in the "Version Control" tab as shown above.
+
+You may encounter Merge Conflicts. To resolve merge conflicts in a file, click on the file. You will see all the instances where there are merge conflicts. In the image below, for this conflict, the current change is highlighted in green, whereas the incoming changes are highlighted in blue.
+
+<img width="876" alt="Merge Conflict" src="https://github.com/vazevaru/learning-software-engineering.github.io/assets/90367491/83464456-8ada-4482-8560-4700e1741f51">
+
+Above the Current change section, there are various options available to solve the merge conflict. For example, if you want to accept the current change, click on "Accept Current Change". You can also the "Compare changes" button to compare the changes and edit the current file accordingly to resolve the conflict.
 
 ## Closing Remarks
 
@@ -187,11 +301,15 @@ Visual Studio Code in 100 Seconds: https://www.youtube.com/watch?v=KMxo3T_MTvY
 
 ## References and Citations
 
-- All images and videos in this article are generated by the author unless otherwise stated.
-- All information in this article is based on the author's personal experience and the official Visual Studio Code documentation (links provided as further reading in each section).
-  - [IntelliSense](https://code.visualstudio.com/docs/editor/intellisense)
-  - [Debugging](https://code.visualstudio.com/docs/editor/debugging)
-  - [Integrated Terminal](https://code.visualstudio.com/docs/terminal/basics)
-  - [Visual Studio Code Tips and Tricks](https://code.visualstudio.com/docs/getstarted/tips-and-tricks)
-  - [Visual Studio Code Extensions](https://code.visualstudio.com/docs/editor/extension-marketplace)
+- All images and videos in this article are generated by the authors unless otherwise stated.
+- All information in this article is based on the authors' personal experience and the official Visual Studio Code documentation (links provided as further reading in each section).
+  - IntelliSense: (https://code.visualstudio.com/docs/editor/intellisense)
+  - Debugging: (https://code.visualstudio.com/docs/editor/debugging)
+  - Integrated Terminal: (https://code.visualstudio.com/docs/terminal/basics)
+  - Visual Studio Code Tips and Tricks: (https://code.visualstudio.com/docs/getstarted/tips-and-tricks)
+  - Visual Studio Code Extensions: (https://code.visualstudio.com/docs/editor/extension-marketplace)
+  - Using Git source control in VS Code: (https://code.visualstudio.com/docs/sourcecontrol/overview)
+  - Introduction to Git in VS Code: (https://code.visualstudio.com/docs/sourcecontrol/intro-to-git)
+  - Getting Started About Version Control: (https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control)
+  - Source Control FAQ: (https://code.visualstudio.com/docs/sourcecontrol/faq)
 
