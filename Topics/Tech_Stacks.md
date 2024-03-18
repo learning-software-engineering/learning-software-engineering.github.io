@@ -178,5 +178,6 @@
 
 ### [Understanding Bluetooth in Mobile App Development](./Tech_Stacks/Bluetooth.md)
 
-
 ### [Cross platform vs Native Mobile Development](./Tech_Stacks/Mobile_Development/content.md)
+
+### [Using Tiptap in a React CRUD App](./Tech_Stacks/Tiptap/Tiptap.md)
