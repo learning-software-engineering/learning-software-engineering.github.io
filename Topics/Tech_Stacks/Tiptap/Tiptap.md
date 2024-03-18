@@ -336,4 +336,4 @@ At the bottom of Markdown.jsx, add an `onUpdate` prop to the EditorProvider, usi
 [^4]: [Tiptap Editor - Installation Guide for React](https://tiptap.dev/docs/editor/installation/react)
 [^5]: [Create React App Template with Tiptap](https://github.com/alb/cra-template-tiptap)
 [^6]: [Tiptap Editor - Product](https://tiptap.dev/product/editor)
-[^7}: https://tiptap.dev/docs/editor/guide/output
+[^7]: https://tiptap.dev/docs/editor/guide/output
