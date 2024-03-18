@@ -163,9 +163,12 @@ To use Tiptap editor with the Markdown extension, follow these steps:
 
 ## Citations
 
-[^1]: https://tiptap.dev/blog/insights/tiptap-seriesseed
-[^2]: https://tiptap.dev/product/editor
-[^3]: https://tiptap.dev/docs/editor/introduction
-[^4]: https://tiptap.dev/docs/editor/installation/react
-[^5]: https://github.com/alb/cra-template-tiptap
-[^6]: https://tiptap.dev/product/editor
+## Citations
+
+[^1]: [Tiptap Seriesseed - Insights](https://tiptap.dev/blog/insights/tiptap-seriesseed)
+[^2]: [Tiptap Editor - Product](https://tiptap.dev/product/editor)
+[^3]: [Tiptap Editor - Introduction](https://tiptap.dev/docs/editor/introduction)
+[^4]: [Tiptap Editor - Installation Guide for React](https://tiptap.dev/docs/editor/installation/react)
+[^5]: [Create React App Template with Tiptap](https://github.com/alb/cra-template-tiptap)
+[^6]: [Tiptap Editor - Product](https://tiptap.dev/product/editor)
+
