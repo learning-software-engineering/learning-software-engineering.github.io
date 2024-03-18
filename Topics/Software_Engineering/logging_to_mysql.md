@@ -180,6 +180,13 @@ https://github.com/learning-software-engineering/learning-software-engineering.g
 
 This approach demonstrates practical logging usage within an application, providing insights into operational status and issues.
 
+## Example Use Case for Both Tables
+
+Consider an application where user actions are logged for security and auditing purposes. In this scenario, 
+the `logs` table captures the events, and the `users` table provides context about who triggered those events. 
+For example, if an unauthorized access attempt is made, the `logs` table would record the event's specifics, 
+while the `users` table could help identify or rule out which user(s) were involved.
+
 ## Conclusion
 
 Implementing a logging process into MySQL allows developers to effectively monitor and debug their applications. 
