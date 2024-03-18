@@ -313,12 +313,12 @@ const App = () => {
 };
 ```
 
-**6. See both editors in action**
+**5. See both editors in action**
 ```
 npm start
 ```
 
-**7. Use the output from the Markdown editor**
+**6. Use the output from the Markdown editor**
 At the bottom of Markdown.jsx, add an `onUpdate` prop to the EditorProvider, using the `getMarkdown()` method on the editor object to retrieve the Markdown representation of the content in the editor when the user changes it and print it to the browser's console.
   ```javascript
   export default function Tiptap () {
