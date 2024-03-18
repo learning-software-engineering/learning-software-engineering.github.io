@@ -3,12 +3,13 @@
 **Structural Design Patterns** are an important category of design patterns that help software engineers to create well-designed, flexible, and structured bif software projects. To be more precise, structural design patterns are about assembling, combining, and composing objects and classes into larger structures, while still making sure these structures are flexible and efficient. They simplify the design of big software projects by allowing us to identify relationships between entities (classes or interfaces). 
 
 In this tutorial, we will go through two important design patterns that belong to the category of Structural Design Patterns.
-# Table of Contents
+
+## Table of Contents
 
 1. [Adapter Design Pattern](#adapter)
    1. [Goal and What It Does](#goal)
    2. [Example Scenario](#example)
-   3. [Small implementation](#small)
+   3. [Example implementation](#small)
    4. [Pros and Cons](#PC)
 2. [Bridge Design Pattern](#bridge)
 	1. [Goal and What It Does](#goalb)
@@ -23,7 +24,7 @@ In this tutorial, we will go through two important design patterns that belong t
 Let's suppose that there is a client code that has a target class regarding its domain. Consider that there is another class that has an interface that is not appropriate to be combined and matched with the interface of the client class. The **Adapter  Design Pattern** adjusts the interface of the class (which has an inappropriate and incompatible interface) into another interface that is compatible with the client code and domain.  It wraps an existing class that is incompatible with a new interface that allows it to be compatible with the client code.  In other words,  Adapter allows classes that are not compatible currently, to work together and be assembled together. 
 
 ### Example Scenario: <a name="example"></a>
-Let's give a small real-world example (scenario) where the Adapter Design Pattern is useful. Suppose that in a company working with optical instruments, all the functionalities regarding the manipulations of the resulting data received from an instrument as well as those for the data that users send to the instrument are done in MATLAB programming language. However, consider there is a functionality that is written in C# programming language related to communicating with the instrument.  We can change the code written in C#  to be written in MATLAB but this might cause issues because communication with the instrument works well in C#. 
+Let's consider a small real-world example (scenario) where the Adapter Design Pattern is useful. Suppose that in a company working with optical instruments, all the functionalities regarding the manipulations of the resulting data received from an instrument as well as those for the data that users send to the instrument are done in MATLAB programming language. However, consider there is a functionality that is written in C# programming language related to communicating with the instrument.  We can change the code written in C#  to be written in MATLAB but this might cause issues because communication with the instrument works well in C#. 
 
 Let's visualize the scenario described:
 ```mermaid
@@ -59,7 +60,7 @@ style B fill:#9f9, width:3x, height:3x;
 linkStyle default stroke-width:3x,fill:none,stroke:purple;
 ```
 
-### Small implementation: <a name="small"></a>
+### Example implementation: <a name="small"></a>
 In order to better understand the Adapter Design Pattern,  we will show a small simple implementation of an adapter below.  For simplicity, we will use Python for our implementation.
 ```python 
 
@@ -177,10 +178,9 @@ linkStyle default stroke-width:3x,fill:none,stroke:purple;
  
 ## *Conclusion* <a name="conclu"></a>
 
-In summary, in this tutorial, we covered what **Structural Design Patterns** are, what are their characteristics and how and when they are useful. We also went through the **Adapter Design Pattern** and the **Bridge Design Pattern** respectively, which are two of the important design patterns in the category of Structural Design Patterns. To learn more about this categoty of design patterns visit [Structural Design Patterns]([Structural Design Patterns (refactoring.guru)](https://refactoring.guru/design-patterns/structural-patterns). 
+In summary, in this tutorial, we covered what **Structural Design Patterns** are, what are their characteristics and how and when they are useful. We also went through the **Adapter Design Pattern** and the **Bridge Design Pattern** respectively, which are two of the important design patterns in the category of Structural Design Patterns. To learn more about this categoty of design patterns visit [Structural Design Patterns (refactoring.guru)](https://refactoring.guru/design-patterns/structural-patterns). 
 
 ## *References* <a name="ref"></a>
-
- 1. [Structural Design Patterns (refactoring.guru)](https://refactoring.guru/design-patterns/structural-patterns)
- 2. [Structural patterns (sourcemaking.com)](https://sourcemaking.com/design_patterns/structural_patterns)
- 3.  [Structural Design Patterns - Scaler Topics](https://www.scaler.com/topics/design-patterns/structural-design-pattern/)
+1. [Structural Design Patterns (refactoring.guru)](https://refactoring.guru/design-patterns/structural-patterns)
+2. [Structural patterns (sourcemaking.com)](https://sourcemaking.com/design_patterns/structural_patterns)
+3. [Structural Design Patterns - Scaler Topics](https://www.scaler.com/topics/design-patterns/structural-design-pattern/)
