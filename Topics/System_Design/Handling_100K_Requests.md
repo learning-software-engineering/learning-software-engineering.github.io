@@ -3,7 +3,7 @@
 ## Motivation
 When we build a project, we are often concerned with the product; what features does the user want? After we've identified the features to build, we come up with a specification and implement our solution accordingly. We test our code to ensure correctness before then finally shipping. 
 
-But what happens after this? If we have have tens or hundreds of thousands of users each making lots of requests, how do we know that our system can handle the load? This page aims to provide a high level framework for designing such a system and provides additional resources for interested readers. 
+But what happens after this? If we have tens or hundreds of thousands of users each making lots of requests, how do we know that our system can handle the load? This page aims to provide a high-level framework for designing such a system and provides additional resources for interested readers. 
 
 We consider an app with three components: a client, an API, and a database. The database stores persistent information, our APIs serve requests for data from the database, and the client renders data for the user to interact with in some capacity. 
 
@@ -23,14 +23,14 @@ So we also consider **horizontal scaling** which refers to increasing the number
 ![Load Balancing](./assets/load-balancer.png)
 *Image from NetScaler*
 
-A **load balancer** is responsible for routing requests from our clients to an instance of our APIs. This will enable the horizontal scaling we discussed previously. Some load balancing strategies include distributing requests across instances sequentially or routing requests to the instances with the least amount of traffic. A load balancer also improves reliability of our system, if one of our servers go down, we can reroute traffic to another server instead of having the entire system fail. Additionally, we can set up a load balancer to increase the number of instances when the number of requests exceeds the capacity of the current instances or to reduce the number of instances when we might expect less traffic. 
+A **load balancer** is responsible for routing requests from our clients to an instance of our APIs. This will enable the horizontal scaling we discussed previously. Some load-balancing strategies include distributing requests across instances sequentially or routing requests to the instances with the least amount of traffic. A load balancer also improves the reliability of our system, if one of our servers goes down, we can reroute traffic to another server instead of having the entire system fail. Additionally, we can set up a load balancer to increase the number of instances when the number of requests exceeds the capacity of the current instances or to reduce the number of instances when we might expect less traffic. 
 
 
 ## Database Scaling
 ![Primary-Replica Database](./assets/primary-replica.png)
 *Image from Apurva Agrawal's Medium*
 
-We will focus on scaling relational databases in this section. There exist many techniques such as **replication**, **federation**, **sharding** and so on. We will briefly touch on **replication** and defer to the sources below for more detailed information on the other techniques. **Replication** refers to the concept of replicating data from a primary database to replica databases such that any updates to the database requested by the client are first written to the primary before then being propgated to each replica. Then, the other clients and servers can read from any of the replicas to distribute the workload from all our requests.  
+We will focus on scaling relational databases in this section. There exist many techniques such as **replication**, **federation**, **sharding**, and so on. We will briefly touch on **replication** and defer to the sources below for more detailed information on the other techniques. **Replication** refers to the concept of replicating data from a primary database to replica databases such that any updates to the database requested by the client are first written to the primary before then being propagated to each replica. Then, the other clients and servers can read from any of the replicas to distribute the workload from all our requests.  
 
 
 ## Caching
