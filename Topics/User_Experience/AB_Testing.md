@@ -117,6 +117,8 @@ A/B Testing is useful in helping identify any potential issues with the webpage 
 
 Source: Ron Kohavi, Alex Deng, Roger Longbotham, and Ya Xu.  2014. Seven Rules of Thumb for Web Site Experimenters. In Proceedings of the 20th ACM SIGKDD international conference on Knowledge discovery and data mining (KDD '14), pp. 1857-1866.  DOI: 10.1145/2623330.2623341. http://bit.ly/expRulesOfThumb
 
+- Beyond key metrics, define what success looks like for each experiment and actively seek out user feedback to understand the impact of changes.
+
 ## **Alternatives to A/B Testing:**
 There are some situations in which A/B testing is not very useful. For example, when you don’t have enough users on your website, the sample size of the experiment may be too small to see significant or reliable results. Or another case is if the changes to the UI are minor, it may not be worth the resources to run the whole experiment. Instead A/B testing should be used on changing features that are a vital part of your web page or features that are a main part of the flow of your website.
 
