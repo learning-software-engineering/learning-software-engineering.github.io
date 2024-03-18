@@ -20,7 +20,9 @@ If you don’t have nano installed on your system, you can install it using your
 To open an existing file or to create a new file, type nano followed by the file name:
 ```nano filename```
 
-This will open a new editor window, and you can start editing the file.
+This will open a new editor window, and you can start editing the file. It should look something like this.
+<img width="837" alt="Screenshot 2024-03-17 at 8 02 28 PM" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/74018027/8e6a6e5c-c0dd-4e98-9485-208c66b00704">
+
 
 At the bottom of the window, there is a list of the most basic command shortcuts to use with the nano editor. All commands are prefixed with either ^ or M. ^ represents the Ctrl key. For example, the ^J commands mean to press the Ctrl and J keys at the same time. M represents the Alt key. To get a list of all commands, type Ctrl+g.
 
@@ -31,3 +33,6 @@ If you want to open a file with the cursor on a specific line and character, use
 ```nano +line_number,character_number filename```
 
 If you do not include the character_number the cursor will be positioned on the first character.
+
+Additional Resources
+https://www.nano-editor.org/dist/v2.2/nano.html
