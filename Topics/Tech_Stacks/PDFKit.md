@@ -138,7 +138,7 @@ PDFKit's support for custom fonts including TrueType (.ttf), OpenType (.otf), WO
 2. **Include the Font in Your Project**: Place the font file in a directory accessible to your PDFKit script.
 3. **Load the Font into PDFKit**: Use the `font()` method to load your custom font. For example, `doc.font('path/to/your/font.ttf')` sets the current font to your custom font.
 
-For more detailed instructions and examples, the PDFKit documentation is a valuable resource. While I can't link to external websites directly, the official [PDFKit website](http://pdfkit.org/) and its GitHub repository contain extensive guides and examples on how to integrate custom fonts.
+For more detailed instructions and examples, the PDFKit documentation is a valuable resource. The official [PDFKit website](https://pdfkit.org/) and its GitHub repository contain extensive guides and examples on how to integrate custom fonts.
 
 ### Multipage Support
 
@@ -148,7 +148,7 @@ PDFKit automatically handles page creation and management, allowing for dynamic 
 
 When generating large or complex PDF documents with PDFKit, the library's performance optimizations become crucial. PDFKit is designed to handle vector graphics efficiently and manage memory usage to keep the generation process swift. For complex documents that include high volumes of data, intricate vector graphics, or numerous pages, PDFKit employs techniques like streamlining the rendering processes and optimizing data storage during generation.
 
-To showcase complex document generation and the impact of PDFKit's optimizations, a practical approach would be to review case studies or tutorials that highlight these aspects. While direct examples or video tutorials can't be provided here, searching for "PDFKit complex document example" or "PDFKit performance optimization tutorial" in your favorite search engine should yield comprehensive guides and video demonstrations created by the community. These resources can illustrate how PDFKit handles complex document scenarios, from dynamic data visualization to generating extensive reports.
+To showcase complex document generation and the impact of PDFKit's optimizations, a practical approach would be to review case studies or tutorials that highlight these aspects. Searching for "PDFKit complex document example" or "PDFKit performance optimization tutorial" in your search engine should yield comprehensive guides and video demonstrations created by the community. These resources can illustrate how PDFKit handles complex document scenarios, from dynamic data visualization to generating extensive reports.
 
 By delving into these resources, you'll gain a clearer understanding of how to leverage PDFKit's custom font capabilities and performance optimizations in your projects. Whether you're aiming to enhance the visual appeal of your documents with unique typography or ensure smooth and efficient generation of complex PDFs, PDFKit offers the flexibility and power to meet these needs.
 
