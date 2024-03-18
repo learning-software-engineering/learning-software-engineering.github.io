@@ -36,3 +36,71 @@ This method helps the AI understand and tackle each part of the problem, leading
 
 In each of these techniques, the key is to communicate effectively with the AI, guiding it to understand and perform tasks it wasn't directly trained to do. Whether you're giving it a brand new challenge, showing it a few examples, or walking it through a problem step by step, these methods enhance how well the AI can assist you.
 
+# Applications
+## Function Calling with LLMs
+
+Function calling in Large Language Models (LLMs) is a groundbreaking feature that fundamentally transforms how AI interacts with the digital world. It empowers LLMs to go beyond mere text generation, enabling them to perform specific actions, interact with external APIs, and utilize tools to fetch real-time data or execute tasks. This capability is crucial for developing intelligent applications that require up-to-date information or complex computations, marking a significant leap towards more versatile and practical AI systems.
+
+At its core, function calling acts as a bridge between the AI's understanding of natural language and the execution of digital functions. This means that LLMs can now understand a user's request in natural language, determine the necessary actions to fulfill that request, and execute those actions through predefined functions. It's a vital advancement that enhances the AI's utility, allowing it to provide more accurate, contextually relevant, and timely responses.
+
+## Code Demo for Function Calling
+
+Let's make this concept clearer with a code example. Imagine you want to develop a feature that allows users to ask for the current time in any timezone, so the user can ask a message like 
+“What is the current time in New York?” in your own application. You have a function that has all the time zones. To achieve this you will need a LLM that can extract the key messages out and plug into a parameter.
+
+To achieve this, you'd set up a function that the LLM can call to perform the translation. 
+
+```
+tools = [
+    {
+        "type": "function",
+        "function": {
+            "name": "get_current_time",
+            "description": "Get the current time in a specified timezone",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "timezone": {
+                        "type": "string",
+                        "description": "The timezone to get the current time for",
+                    }
+                },
+                "required": ["timezone"]
+            },
+        }
+    }
+]
+```
+
+tools provide a  get_current_time function outline, which tells the LLM what information it needs to collect. LLM will then help to extract needed parameters from the message, for example the timezone,  and fill it into the function call based on natural language input..
+
+When the user ask for the current time in a specific timezone, you will have a json like this:
+```
+messages = [
+    {
+        "role": "user",
+        "content": "What is the current time in New York?"
+    }
+]
+```
+
+The get_competion function below specifies the necessary parameter we want to define the model we will use. And we will call it by providing the message and the tools.
+```
+def get_completion(messages, model="gpt-3.5-turbo-1106", temperature=0, max_tokens=300, tools=None):
+    response = openai.chat.completions.create(
+        model=model,
+        messages=messages,
+        temperature=temperature,
+        max_tokens=max_tokens,
+        tools=tools
+    )
+    return response.choices[0].message
+
+response = get_completion(messages, tools=tools)
+```
+
+After processing the user's inquiry, the LLM prepares a structured response that outlines the parameters required for the get_current_time function. This includes identifying and organizing the relevant timezone from the user's message.
+
+Function calling is very important as it opens up new possibilities for AI applications providing dynamic content generation, personalized assistance, sophisticated data analysis and real-time decision-making. By integrating LLMs with external tools and APIs, developers can create more responsive, intelligent, and capable systems that cater to a wide range of needs and industries.
+
+
