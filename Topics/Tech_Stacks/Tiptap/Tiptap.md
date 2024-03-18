@@ -77,6 +77,7 @@ Each button in the menu bar example code below takes three arguments. Taking the
 Here is the code sourced from [here](https://tiptap.dev/docs/editor/installation/react):
 <details>
   <summary>Tiptap.jsx</summary>
+  
   ```
   import { Color } from '@tiptap/extension-color'
   import ListItem from '@tiptap/extension-list-item'
@@ -227,8 +228,8 @@ Here is the code sourced from [here](https://tiptap.dev/docs/editor/installation
       <EditorProvider slotBefore={<MenuBar />} extensions={extensions} content={content}></EditorProvider>
     )
   }
-  
   ```
+
 </details>
 
 
