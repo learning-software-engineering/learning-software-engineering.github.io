@@ -178,3 +178,5 @@
 
 ### [Understanding Bluetooth in Mobile App Development](./Tech_Stacks/Bluetooth.md)
 
+
+### [Cross platform vs Native Mobile Development](./Tech_Stacks/Mobile_Development/content.md)
