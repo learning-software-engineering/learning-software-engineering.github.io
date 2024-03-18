@@ -88,3 +88,4 @@ https://sorbet.org/
 https://world.hey.com/dhh/turbo-8-is-dropping-typescript-70165c01
 https://youtube.com/watch?v=5ChkQKUzDCs
 https://www.youtube.com/watch?v=zQnBQ4tB3ZA
+https://betterprogramming.pub/why-i-stopped-using-sorbet-in-all-my-ruby-projects-9366bf6dd116
