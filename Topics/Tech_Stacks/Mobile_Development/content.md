@@ -33,7 +33,7 @@ Cross-platform development for mobile involves creating applications that can ru
 4. Limited access to platform-specific features and APIs may restrict functionality
 
 ## Popular Cross-Platform Development Tools and Frameworks
-
+According to different skill-set of CSC301 Students they can choose either framework for developing their application. A thorough breakdown is as follows: 
 | Framework    | Description                                                                                                                                                  | Features and Benefits                                                                       | Key Differences                                                                                     | Companies Using                                                                            |
 |--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
 | React Native | Developed by Facebook, allows building native-like apps using JavaScript and React                                                                           | Wide community support and extensive ecosystem of libraries and components                  | Utilizes JavaScript and React for cross-platform development. Notable for its large community.     | Facebook, Instagram, Airbnb                                                               |
