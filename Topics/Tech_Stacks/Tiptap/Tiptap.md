@@ -69,12 +69,15 @@ npm start
 
 Improve your editor by adding a menu bar to Tiptap.jsx.
 
+Each button in the menu bar example code below takes three arguments. Taking the bold button as an example:
+- The [`onClick`](https://react.dev/learn/responding-to-events#adding-event-handlers) function makes the editor toggle any selected text between bolded and non-bolded modes.
+- The [`disabled`](https://www.w3schools.com/tags/att_button_disabled.asp) argument determines whether the bold button should be faded out because the selected text cannot be bolded.
+- The [`className`](https://legacy.reactjs.org/docs/faq-styling.html) is `is-active` or blank depending on whether the selected text is bolded. If the `is-active` `className` is present, the bold button in the menu bar will be emphasized.
+
 Here is the code sourced from [here](https://tiptap.dev/docs/editor/installation/react):
 <details>
   <summary>Tiptap.jsx</summary>
-  
   ```
-  
   import { Color } from '@tiptap/extension-color'
   import ListItem from '@tiptap/extension-list-item'
   import TextStyle from '@tiptap/extension-text-style'
