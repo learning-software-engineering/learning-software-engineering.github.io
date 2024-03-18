@@ -273,7 +273,7 @@ npm start
 By default, Tiptap doesn't support input from or output to Markdown files.[^4] However, there is a community-developed npm package called `tiptap-markdown` that extends Tiptap to enable this. We'll go through the installation of this package and the creation of a simple editor that uses it.
 
 **1. Install `tiptap-markdown`:**
-We'll continue with the React project we created above. Install the `tiptap-markdown` package using npm:
+We'll continue with the React project we created above. Install the [`tiptap-markdown`](https://www.npmjs.com/package/tiptap-markdown) package using npm:
 ```
 npm install tiptap-markdown
 ```
