@@ -57,7 +57,9 @@ Error messages should be displayed succinctly and constructively offered solutio
 # 10: Help and Documentation
 its best that the system would not need any additional explanation of its utilities. But to aim for the best user experience, help and documentation would need to be provided while the documentation of the problems the user need to solve would be categorized. 
 
- > Commonly categorized problems to be solved in payment apps for example would be relatable to fields such as payments, account, personal info, system issues, and a FAQ. These categories are usually found in almost all help sections of different apps.
-> ![image](https://github.com/Arick-mux/learning-software-engineering.github.io/assets/137026734/965baa66-271f-4ead-bdf9-7c7c316c0321)
+Commonly categorized problems to be solved in payment apps for example would be relatable to fields such as payments, account, personal info, system issues, and a FAQ. These categories are usually found in almost all help sections of different apps.
+
+![image](https://github.com/Arick-mux/learning-software-engineering.github.io/assets/137026734/60c4afdc-b410-4082-b67b-d7992145cf6f)
+
 
 "
