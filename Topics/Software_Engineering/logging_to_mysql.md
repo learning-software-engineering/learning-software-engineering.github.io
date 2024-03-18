@@ -20,6 +20,8 @@ pip install mysql-connector-python
 
 ## Step 2: Create a Logging Table in MySQL
 
+The `logs` table is essential for storing application log messages, which are crucial for debugging, monitoring application health, and understanding user actions.
+
 Execute the following SQL query in your MySQL database to create a table for logging:
 
 ```sql
