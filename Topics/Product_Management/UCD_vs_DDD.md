@@ -98,9 +98,14 @@ Product managers must consider various factors when choosing between UCD and DDD
 ## What should you use?
 Understanding when to lean on each approach is key for Product Managers. When diving into uncharted territory or addressing new user needs, UCD shines brightest. Its focus on empathy and iteration ensures that we're in tune with users every step of the way. On the other hand, when we're looking to break new ground or create something truly innovative, DDD steps up to the plate. Its emphasis on creativity and strategic design helps us stand out in a crowded market.
 
-However, it's not always a black-and-white decision. Sometimes, a mix of both is the winning formula. For instance, when revamping an existing product, starting with UCD to understand user pain points can pave the way for innovative features guided by DDD. Similarly, in fast-paced environments where quick iterations are essential, starting with DDD's creative spark can fuel rapid innovation, followed by fine-tuning based on UCD principles.
+However, it's not always a black-and-white decision. Sometimes, a mix of both is the winning formula, or even neither (using completely different methodologies). For instance, when revamping an existing product, starting with UCD to understand user pain points can pave the way for innovative features guided by DDD. Similarly, in fast-paced environments where quick iterations are essential, starting with DDD's creative spark can fuel rapid innovation, followed by fine-tuning based on UCD principles.
 
-Ultimately, the choice between UCD and DDD—or a blend of both—depends on the specific context, including the project goals, user needs, and market dynamics. By carefully considering these factors, Product Managers can determine the best approach to drive success for their products.
+Ultimately, the choice between UCD and DDD, or a blend of both—depends on the specific context, including the project goals, user needs, and market dynamics. By carefully considering these factors, Product Managers can determine the best approach to drive success for their products.
 
+
+## Resources
+- More on UCD Basics - [Website Link](https://www.usability.gov/what-and-why/user-centered-design.html)
+- More on DDD Basics - [Website Link](https://www.uxpin.com/studio/blog/design-driven-development/)
+- DDD for Product Managers - [Website Link](https://www.linkedin.com/pulse/design-driven-leadership-product-management-ronke-majekodunmi-mba/)
 
 
