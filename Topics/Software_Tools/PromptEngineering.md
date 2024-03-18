@@ -1,4 +1,15 @@
+# Introduction to Prompt Engineering
 
+# Table of Contents
+- [Introduction to Prompt Engineering](#introduction-and-understanding)
+- [Introduction and Understanding](#introduction-and-understanding)
+  - [Understanding Large Language Models (LLMs)](#understanding-large-language-models-llms)
+- [Application](#application)
+  - [Code Generation with Large Language Models](#code-generation-with-large-language-models)
+- [Citations](#citations)
+
+
+<a id="introduction-and-understanding"></a>
 # Introduction and Understanding
 
 ## Understanding Large Language Models (LLMs)
@@ -48,7 +59,7 @@ Explaining code involves the model interpreting the logic and function of a give
 ### Debugging and Editing:
 The potential for LLMs to assist in debugging and editing code lies in their ability to analyze code for syntactical and logical errors, drawing on examples and patterns from their training data. The model can suggest corrections or improvements by identifying inconsistencies or errors in the code and comparing them with known correct implementations. This capability is particularly valuable for identifying common mistakes and proposing optimized solutions.
 
-
+<a id="citation"></a>
 ## Citations
 - [Prompting Guide](https://www.promptingguide.ai/)
 - [McKinsey Explainers: What is Prompt Engineering?](https://www.mckinsey.com/featured-insights/mckinsey-explainers/what-is-prompt-engineering)
