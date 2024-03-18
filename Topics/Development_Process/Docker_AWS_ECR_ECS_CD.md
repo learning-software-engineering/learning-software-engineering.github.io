@@ -75,6 +75,7 @@ jobs:
 - Just like how we build the docker image in order to run a container locally, we should build, tag and push our image to our ECR repository so that ECS can pull from it in a future step
 - The `DOCKERFILE_FOLDER_PATH` is the path to the folder containing the dockerfile to build your application
 - The `ECR_REGISTRY` and `ECR_REPOSITORY` can be retrieved from the repository URI
+<img width="791" alt="Screenshot 2024-03-17 at 9 41 59 PM" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/58835213/5dd3ce35-6094-48db-980e-a0456becc663">
 
 ## Step 6 (Deploying the application)
 ```
@@ -88,7 +89,9 @@ jobs:
 ```
 - Once again, using an existing action, we will deploy the app by specifying some additional information
 - The task definition, ECS service and ECS cluster are defined as per [Deploy Node.js Docker AWS](./Deploy_Node.js_Docker_AWS.md)
-- For `<PATH_TO_TASK_DEFINITION>` you should link to that path of your aws task definition JSON file in your repository. If you don't have one in your repository you can generate one by visiting the task definitions page in Amazon ECS **IMAGE HERE**
+- For `<PATH_TO_TASK_DEFINITION>` you should link to that path of your aws task definition JSON file in your repository. If you don't have one in your repository you can generate one by visiting the task definitions page in Amazon ECS <img width="1022" alt="Screenshot 2024-03-17 at 9 30 22 PM" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/58835213/8144e7cf-21b7-4c8c-89ad-130e04b5f5a6">
+
+
 - `wait-for-service-stability` keeps the workflow from passing until the ECS service has become stable given the most recent deployment
 
 ## Conclusion
