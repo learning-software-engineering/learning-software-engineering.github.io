@@ -12,6 +12,8 @@
 
 ### [FastAPI](./Tech_Stacks/FastAPI.md)
 
+### [Embedded Javascript(EJS) (./Tech_Stacks/EJS.md)
+
 ### [Nuxt3](./Tech_Stacks/Nuxt3.md)
 
 ### [Building Apple Native Software Using Swift and SwiftUI](./Tech_Stacks/swift.md)
