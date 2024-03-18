@@ -4,13 +4,13 @@
 
 Tiptap, one of the leading open-source dev tools for rich content editors is trusted by many companies like Substack, AxiosHQ, and GitLab.[^1]
 
-They have accumulated over 2 million downloads[^1] with their cool products such as Tiptap Content AI and Tiptap Collobatoration. 
+They have accumulated over 2 million downloads[^1] with their cool products such as Tiptap Content AI and Tiptap Collaboration. 
 
 
 ![Untitled design (4)](https://github.com/AshkanAleshams/learning-software-engineering.github.io/assets/90326959/f56018c2-e7ef-478f-95d2-de19838cc1c7)
 
 
-However for this guide, we will focus on the Tiptap Editor.
+However, for this guide, we will focus on the Tiptap Editor.
 
 Tiptap Editor is a headless toolkit for building rich text WYSIWYG editors for Vue.js and React.js applications. Giving the user the complete freedom to fashion their own editor interface using customizable building blocks. 
 It offers sensible defaults, an extensive array of extensions, and an intuitive API for tailoring every facet to the user's preferences.
