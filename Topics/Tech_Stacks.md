@@ -1,5 +1,7 @@
 ## Tech Stacks
 
+### [Introduction to C#](./Tech_Stacks/C#.md)
+
 ### [Learning MySQL for databases](./Tech_Stacks/Learning_MySQL.md)
 
 ### [Introduction to Graph Databases with Neo4j](./Tech_Stacks/GraphDB_Neo4j.md)
@@ -9,6 +11,8 @@
 ### [Postman API Testing](./Tech_Stacks/Postman_Backend_Testing.md)
 
 ### [FastAPI](./Tech_Stacks/FastAPI.md)
+
+### [Embedded Javascript](./Tech_Stacks/EJS.md)
 
 ### [Nuxt3](./Tech_Stacks/Nuxt3.md)
 
@@ -33,6 +37,8 @@
 ### [HTML](./Tech_Stacks/HTML_Guide.md)
 
 ### [CSS](./Tech_Stacks/CSS.md)
+
+### [Learning Tailwind](./Tech_Stacks/Tailwind.md)
 
 ### [Learning Bootstrap](./Tech_Stacks/Bootstrap.md)
 
@@ -136,6 +142,8 @@
 
 ### [Introduction to PHP](./Tech_Stacks/PHP.md)
 
+### [Introduction to Pandas](./Tech_Stacks/Pandas.md)
+
 ### [Pythonic Iteration Patterns](./Tech_Stacks/Pythonic-Iteration-Patterns.md)
 
 ### [Introcuction to SCSS](./Tech_Stacks/SCSS.md)
@@ -169,5 +177,13 @@
 ### [Intro to Flask with Flask-SQLAlchemy](./Tech_Stacks/Flask.md)
 
 ### [Introduction to ROBLOX Studio](./Tech_Stacks/ROBLOX_Intro.md)
+
+### [Understanding Bluetooth in Mobile App Development](./Tech_Stacks/Bluetooth.md)
+
+### [Cross platform vs Native Mobile Development](./Tech_Stacks/Mobile_Development/content.md)
+
+### [Using Tiptap in a React CRUD App](./Tech_Stacks/Tiptap/Tiptap.md)
+
+### [Using KY - A versatile HttpClient](./Tech_Stacks/KY.md)
 
 ### [Building Interactive Web Applications with WebSockets](./Tech_Stacks/WebSockets/Web-Sockets.md)
