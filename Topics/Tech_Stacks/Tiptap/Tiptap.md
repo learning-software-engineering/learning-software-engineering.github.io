@@ -112,6 +112,23 @@ npm start
 
 ## Example with Markdown Editor in React
 _Include gifs, code snippets, explainations_
+3. **Initialize the Tiptap editor without the Markdown extension**
+
+   ```javascript
+   export default function Tiptap() {
+   return (
+    <EditorProvider
+      slotBefore={<MenuBar />}
+      extensions={extensions}
+      content={content}
+      onUpdate={({ editor }) => {
+        const json = editor.getJSON();
+        const html = editor.getHTML();
+        console.log(json);
+        console.log(html);
+      }}
+    ></EditorProvider>
+   );}
 
 
 ## Using Tiptap with Markdown Extension
@@ -142,23 +159,7 @@ To use Tiptap editor with the Markdown extension, follow these steps:
    
    ```javascript
    const new_markdown = editor.storage.markdown.getMarkdown();
-3. **Initialize the Tiptap editor without the Markdown extension**
 
-   ```javascript
-   export default function Tiptap() {
-   return (
-    <EditorProvider
-      slotBefore={<MenuBar />}
-      extensions={extensions}
-      content={content}
-      onUpdate={({ editor }) => {
-        const json = editor.getJSON();
-        const html = editor.getHTML();
-        console.log(json);
-        console.log(html);
-      }}
-    ></EditorProvider>
-   );}
 
 
 ## Citations
