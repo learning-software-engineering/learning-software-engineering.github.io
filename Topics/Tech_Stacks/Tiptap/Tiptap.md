@@ -22,7 +22,18 @@ It offers sensible defaults, an extensive array of extensions, and an intuitive 
 If you are looking for a powerful text editor for web applications, Tiptap is a great option to consider. Being open-source and built on the well-regarded ProseMirror library,[^3] Tiptap offers a solid foundation. It features real-time collaboration and boasts a rich library of [community extensions](https://github.com/ueberdosis/awesome-tiptap#community-extensions) that includes an extension that enables Markdown support. Starting with Tiptap is easy thanks to its free tier, but for those needing advanced features like AI integration and document commenting, [paid plans](https://tiptap.dev/pricing) are available, making Tiptap a versatile solution for diverse project needs.
 
 ## Relevant Links
-_Relevant links such s Tiptap's documentation page, etc_
+For comprehensive resources related to Tiptap Editor, consider the following links:
+
+- **Tiptap Official Website**: Detailed information on features and how to get started with Tiptap. [Visit Tiptap](https://tiptap.dev)
+
+- **Documentation and Examples**: Access to extensive documentation and practical examples for using Tiptap. [Explore the docs](https://tiptap.dev/docs) and [View examples](https://tiptap.dev/examples)
+
+- **GitHub Repository**: The source code and contribution guidelines are available on GitHub. [Check out the repository](https://github.com/ueberdosis/tiptap)
+
+- **Guide and Tutorials on GitHub**: A detailed guide offering insights into configuring the editor, working with extensions, and more. [Read the guide](https://github.com/ueberdosis/tiptap/blob/main/docs/guide.md)
+
+- **Community Discussions**: Engage with the Tiptap community on GitHub for help and discussions. [Join the conversation](https://github.com/ueberdosis/tiptap/discussions)
+
 
 ## Requirements
 
@@ -234,18 +245,98 @@ npm install @tiptap/extension-color @tiptap/extension-text-style
 npm start
 ```
 
+**6. Use the output from the editor**
+At the bottom of Tiptap.jsx, add an `onUpdate` prop to the EditorProvider, using the `getHTML()` and `getJSON()` method on the editor object to retrieve the HTML and JSON representations, respectively, of the content in the editor when the user changes it and print it to the browser's console.
+  ```javascript
+  export default function Tiptap () {
+    return (
+      <EditorProvider slotBefore={<MenuBar />} extensions={extensions} content={content} onUpdate={({ editor }) => {
+        const json = editor.getJSON();
+        const html = editor.getHTML();
+        console.log(json);
+        console.log(html);
+      }}></EditorProvider>
+    )
+  }
+  ```
 
 ## Example with Markdown Editor in React
-_Include gifs, code snippets, explainations_
 
+By default, Tiptap doesn't support input from or output to Markdown files.[^7] However, there is a community-developed npm package called `tiptap-markdown` that extends Tiptap to enable this. We'll go through the installation of this package and the creation of a simple editor that uses it.
 
-## Example with (something else Maybe)
-_Maybe Ricky will work on this_
+**1. Install `tiptap-markdown`:**
+We'll continue with the React project we created above. Install the [`tiptap-markdown`](https://www.npmjs.com/package/tiptap-markdown) package using npm:
+```
+npm install tiptap-markdown
+```
 
-_Include gifs, code snippets, explainations_
+**2. Import the package:**
+Make a copy of Tiptap.jsx called Markdown.jsx. Add this import to the top of the file:
+```
+import { Markdown } from 'tiptap-markdown';
+```
+
+**3. Edit the editor:**
+In Markdown.jsx, add `Markdown` to the list of extensions used by the Tiptap editor. Since the input file format has changed from HTML to Markdown, we'll change the initial content as well:
+````
+const extensions = [
+  [...keep the existing extensions...]
+  Markdown,
+]
+
+const content = `
+## Hi again,
+Here is a Markdown version!
+\`\`\`css
+body {
+display: none;
+}
+\`\`\`
+`
+````
+
+**4. Render the new editor:**
+At the top of App.js, import the new Markdown editor from Markdown.jsx:
+```
+import Markdown from './Markdown';
+```
+
+Finally, render the new Markdown editor below the existing editor in App.js:
+```
+const App = () => {
+  return (
+    <div className="App">
+      <Tiptap />
+      <Markdown />
+    </div>
+  );
+};
+```
+
+**6. See both editors in action**
+```
+npm start
+```
+
+**7. Use the output from the Markdown editor**
+At the bottom of Markdown.jsx, add an `onUpdate` prop to the EditorProvider, using the `getMarkdown()` method on the editor object to retrieve the Markdown representation of the content in the editor when the user changes it and print it to the browser's console.
+  ```javascript
+  export default function Tiptap () {
+    return (
+      <EditorProvider slotBefore={<MenuBar />} extensions={extensions} content={content} onUpdate={({ editor }) => {
+         const new_markdown = editor.storage.markdown.getMarkdown();
+         console.log(new_markdown);
+      }}></EditorProvider>
+    )
+  }
+  ```
 
 ## Citations
 
-[^1]: https://tiptap.dev/blog/insights/tiptap-seriesseed
-[^2]: https://tiptap.dev/product/editor
-[^3]: https://tiptap.dev/docs/editor/introduction
+[^1]: [Tiptap Seriesseed - Insights](https://tiptap.dev/blog/insights/tiptap-seriesseed)
+[^2]: [Tiptap Editor - Product](https://tiptap.dev/product/editor)
+[^3]: [Tiptap Editor - Introduction](https://tiptap.dev/docs/editor/introduction)
+[^4]: [Tiptap Editor - Installation Guide for React](https://tiptap.dev/docs/editor/installation/react)
+[^5]: [Create React App Template with Tiptap](https://github.com/alb/cra-template-tiptap)
+[^6]: [Tiptap Editor - Product](https://tiptap.dev/product/editor)
+[^7]: https://tiptap.dev/docs/editor/guide/output
