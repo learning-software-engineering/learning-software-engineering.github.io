@@ -1,6 +1,16 @@
+# Table of Contents
+- [Technical Techniques](#techinical-techniques)
+  - [Zero-shot Learning](zero-shot-learning)
+  - [Few-shot Learning](few-shot-learning)
+  - [Chain-of-thought Prompting](chain-prompting)
+- [Application](#application)
+  - [Function Calling](function-calling)
+
+<a id="techinical-techniques"></a>
 # Technical Techniques
 ## Techniques in Prompt Engineering
 
+<a id="zero-shot-learning"></a>
 ### 1. Zero-shot Learning: Learn Without Examples
 
 Imagine asking your friend to do something they've never done before, but they use their smarts to figure it out anyway. That's zero-shot learning for AI - you ask the AI to do a task it wasn't specifically trained for, and it tries to make sense of it using what it knows.
@@ -13,7 +23,7 @@ Example: Let's say you want the AI to write a poem about the ocean, but it was n
 - Be clear and precise in your prompt. Since the model has no examples to learn from in this context, clarity in task description is crucial.
 - Incorporate relevant keywords or concepts related to the task to help the model understand the context.
 
-
+<a id="few-shot-learning"></a>
 ### 2. Few-shot Learning: Learning with a Few Examples
 
 This is like showing your friend a few pictures of cakes you like before asking them to bake one for you. By giving the AI a few examples of what you want, you help it understand exactly what you're looking for.
@@ -29,6 +39,7 @@ You then ask the AI to respond to a new complaint, "I received the wrong item," 
 - Select your examples carefully. They should be representative of the task and closely match the desired output format or context.
 - Limit the number of examples to avoid overwhelming the model or biasing the response too heavily towards the examples given.
 
+<a id="chain-prompting"></a>
 ### 3. Chain-of-thought Prompting: Solving Step by Step
 
 Think of a time when you solved a problem by talking through it step by step. Chain-of-thought prompting is when you guide the AI through a task by breaking it down into smaller, manageable steps. It helps the AI think through complex issues more clearly.
@@ -49,8 +60,9 @@ In each of these techniques, the key is to communicate effectively with the AI, 
 - Encourage the model to explicitly state its reasoning at each step, which not only clarifies the thought process but also helps in identifying any logical errors.
 - Adjust the complexity of the steps based on the task's difficulty and the model's capabilities.
 
-
+<a id="application"></a>
 # Applications
+<a id="function-calling"></a>
 ## Function Calling
 ### Function Calling with LLMs
 
