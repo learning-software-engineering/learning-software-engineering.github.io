@@ -234,31 +234,50 @@ PyAutoGui leverages PyMsgBox's message box functions, offering a cross-platform,
 
 ### The alert Function
 
-```python
-pyautogui.alert(text='', title='', button='OK')
-```
 Displays a simple message box with customizable text and a single OK button. It returns the text of the button clicked on by the user.
 
+```python
+pyautogui.alert(text='Text', title='Title', button='Button')
+```
+Output:
+
+<img width="391" alt="Screenshot 2024-03-17 at 10 15 58 PM" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/97929147/75f86180-6a88-46ef-8fa3-2ad092f941e6">
+
+The meaning of the arguments can be clearly understood when looking at the output.
 
 ### The confirm Function
 
-```python
-pyautogui.confirm(text='', title='', buttons=['OK', 'Cancel'])
-```
 Displays a message box with configurable text and buttons, typically OK and Cancel. Users can choose between the provided options, and it returns the text of the button clicked.
+
+```python
+pyautogui.confirm(text='Text', title='Title', buttons=['OK', 'Cancel'])
+```
+Output:
+
+<img width="390" alt="Screenshot 2024-03-17 at 10 17 55 PM" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/97929147/cdece517-c1dc-4725-aed0-545bc489b3b5">
+
 
 ### The prompt Function
 
-```python
-pyautogui.prompt(text='', title='', default='')
-```
 Shows a message box with text input field, along with OK and Cancel buttons. Users can input text, and it returns the entered text or None if Cancel was clicked.
 
+```python
+pyautogui.prompt(text='Text', title='Title', default='Default')
+```
+Output:
+
+<img width="345" alt="Screenshot 2024-03-17 at 10 18 46 PM" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/97929147/14a6869b-1abb-4b43-a530-ffe1d4b0e479">
+
 ### The password Function
+
+Similar to the `prompt()` function, it displays a message box with a text input field. However, the typed characters are masked, typically with asterisks (*). It returns the entered text or None if Cancel was clicked.
 
 ```python
 pyautogui.password(text='', title='', default='', mask='*')
 ```
-Similar to the `prompt()` function, it displays a message box with a text input field. However, the typed characters are masked, typically with asterisks (*). It returns the entered text or None if Cancel was clicked.
+Output:
+
+<img width="342" alt="Screenshot 2024-03-17 at 10 19 35 PM" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/97929147/ac238e45-de2e-4dd9-b64b-99c90e77eccd">
+
 
 These functions empower users to handle various types of user interactions effectively within their Python scripts, enhancing the user experience and interactivity of their applications.
