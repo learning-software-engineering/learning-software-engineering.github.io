@@ -293,14 +293,13 @@ const extensions = [
 ]
 
 const content = `
-## Hi there,
-Isn’t that great? And all of that is editable. But wait, there’s more. Let’s try a code block:
+## Hi again,
+Here is a Markdown version!
 \`\`\`css
 body {
 display: none;
 }
 \`\`\`
-I know, I know, this is impressive. It’s only the tip of the iceberg though. Give it a try and click a little bit around. Don’t forget to check the other examples too.
 `
 ````
 
