@@ -200,3 +200,7 @@ This is only a simplification of what "Clean Architecture" is; the topic is so v
 
 
 ### [API documentation with SwaggerHub](./Development_Process/Documentation/Swagger_API_Documentation.md)
+
+## Ubuntu Server Edition 20.04
+
+### [Guide for setting up a home server with Ubuntu Server Edition](./Development_Process/Ubuntu_server_edition/ubuntu.md)

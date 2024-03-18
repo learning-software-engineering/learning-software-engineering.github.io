@@ -29,7 +29,10 @@ Potential Topics--
         1. Set up
     9. Unity
         1. Introduction to Unity Basics
-        2. A Beginner's Guide for Unity UI Design 
+        2. How to Organize Unity Projects
+        3. A Beginner's Guide for Unity UI Design 
+        4. Unity ML Agents Tutorial
+        5. Unity 2D Top-down Character Controller Tutorial
     10. Python
         1. Pythonic iteration patterns
     11. Debugging in Python
@@ -37,6 +40,7 @@ Potential Topics--
         1. Learning Spring Data JPA
     13. TinyMCE API with ReactJS
     14. SQL
+    15. Tiptap
         
 - Software Tools
     1. Git
