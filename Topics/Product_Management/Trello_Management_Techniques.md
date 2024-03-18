@@ -8,34 +8,32 @@
 ### [Best Practices for Managing Tasks](#Best-Practices-for-Managing-Tasks)
 ### [Enhancing Collaboration with Trello](#Enhancing-Collaboration-with-Trello)
 ### [Integrating Trello with Other Tools](#Integrating-Trello-with-Other-Tools)
-### [Real-World Examples](#Real-World-Examples)
-### [Conclusion](#Conclusion)
-### [References](#References)
+### [References](#references)
 
 
 ## Introduction
 
-In the dynamic world of software development, effective project management stands as a cornerstone of success. 
-Among the plethora of tools available, Trello emerges as a remarkably intuitive and flexible platform designed 
+In the dynamic world of software development, effective project management stands as a cornerstone of success.
+Among the plethora of tools available, Trello emerges as a remarkably intuitive and flexible platform designed
 to streamline task organization and enhance team collaboration. With its visual boards, lists, and cards, Trello
 offers a user-friendly interface that caters to the planning and execution needs of software projects of all sizes.
 
 This guide is tailored specifically for CSC301 students and anyone interested in harnessing the power of Trello to
-optimize their project management practices. Our objective is to provide a comprehensive overview of Trello's 
+optimize their project management practices. Our objective is to provide a comprehensive overview of Trello's
 capabilities, from setting up your first board to employing advanced features that facilitate seamless collaboration
-among team members. Whether you're undertaking a group project, managing assignments, or coordinating with a 
-development team, this guide aims to equip you with the knowledge and skills to leverage Trello effectively, 
+among team members. Whether you're undertaking a group project, managing assignments, or coordinating with a
+development team, this guide aims to equip you with the knowledge and skills to leverage Trello effectively,
 ensuring your projects are not only well-organized but also completed efficiently and successfully.
 
-By the end of this guide, you'll have a solid foundation in utilizing Trello for software project management, 
+By the end of this guide, you'll have a solid foundation in utilizing Trello for software project management,
 enabling you to navigate your projects with greater ease and confidence.
 
 ![trello logo](https://res.cloudinary.com/dlyqagele/image/upload/v1710100888/CSC301/thnkp9etom0ogplpegxx.png)
 
 ## Getting Started with Trello
 
-To effectively utilize Trello for your software project management needs, familiarizing yourself with the platform's 
-basics is essential. This section will guide you through the initial steps of getting started with Trello, from 
+To effectively utilize [Trello](https://www.trello.com) for your software project management needs, familiarizing yourself with the platform's
+basics is essential. This section will guide you through the initial steps of getting started with Trello, from
 signing up to navigating its interface efficiently.
 
 ### Signing Up for Trello:
@@ -48,10 +46,10 @@ signing up to navigating its interface efficiently.
 </ul>
 
 ### Understanding the Trello Interface
-
+![trello_board](https://res.cloudinary.com/dlyqagele/image/upload/v1710279742/CSC301/hgtczrtw4uiqrgd5fbhx.png)
 <ul>
   <li><strong>Boards</strong>: The heart of Trello, boards are where your project’s tasks (or cards) are visually 
-      organized. Each board represents a project or a significant component of your work.</li>
+      organized. Each board represents a project or a significant component of your work. </li>
   <li><strong>Lists</strong>: Within each board, you can create lists to categorize tasks based on their status, such 
       as "To Do," "In Progress," and "Completed." Lists help in tracking the progress of your project.</li>
   <li><strong>Cards</strong>: The basic unit of tasks within Trello. You can add cards to your lists, representing 
@@ -67,32 +65,33 @@ signing up to navigating its interface efficiently.
   <li>Utilize the menu options on the right side of the board to access board settings, add team members, 
       and integrate with other apps.</li>
   <li>Explore keyboard shortcuts in Trello to speed up your workflow. Trello offers a variety of shortcuts 
-      for common actions, which can significantly enhance your efficiency.</li>
+      for common actions, which can <significantly></significantly> enhance your efficiency.</li>
 </ul>
 
 ## Setting up Your Trello Board
 
-A well-organized Trello board is pivotal for effective project management. This section outlines step-by-step 
-instructions to create a Trello board specifically designed for your software project, and how to utilize lists and 
+A well-organized Trello board is pivotal for effective project management. This section outlines step-by-step
+instructions to create a Trello board specifically designed for your software project, and how to utilize lists and
 cards to maintain an organized workflow.
 
 ### Creating a Trello Board
-
-<p> 1. <strong>Navigate to Your Dashboard: </strong> Log into your Trello account, and on the dashboard, click the "+ New"
-    button on the top right corner of the screen, then select "Create Board".</p> 
+![trello_board_create](https://res.cloudinary.com/dlyqagele/image/upload/v1710281807/CSC301/sv0j29smgio624khfcui.png)
+<p> 1. <strong>Navigate to Your Dashboard: </strong> Log into your Trello account, and on the dashboard, click the "Create"
+    button on the top left corner of the screen, then select "Create Board".</p> 
 
 <p> 2. <strong>Board Configuration: </strong>Assign a name to your board that reflects the project or task theme it will
     manage. Choose a background color or image for visual distinction.</p> 
 
 <p> 3. <strong>Privacy Settings: </strong>Decide on the board's visibility. You can set it as private (visible to you and
-    anyone you invite), team-visible (if you're part of a Trello team), or public (visible to anyone with the link).</p>
+    anyone you invite), workspace (if you're part of a Trello team), or public (visible to anyone with the link).</p>
 
-<p> 4. <strong>Create the Board: </strong>Click “Create Board” after configuring the settings. Your new board is now ready 
+<p> 4. <strong>Create the Board: </strong>Click “Create” after configuring the settings. Your new board is now ready 
     for customization and task management.</p> 
 
+![trello_board_create](https://res.cloudinary.com/dlyqagele/image/upload/v1710281966/CSC301/khn0cfhwwf528rgnnktc.png)
 ### Setting Up Lists
 
-Lists represent different stages or types of tasks in your project. Typical lists for a software project might include 
+Lists represent different stages or types of tasks in your project. Typical lists for a software project might include
 "To Do", "In Progress", "Testing", and "Done".
 
 <p> 1. <strong>Creating Lists: </strong> Click on the "Add a list" option on your board. Name the list according to the
@@ -102,7 +101,7 @@ Lists represent different stages or types of tasks in your project. Typical list
     a logical order that reflects your workflow.</p> 
 
 ### Utilizing Cards
-Cards are the individual tasks or items that need to be completed. They can be added to lists and moved between them as 
+Cards are the individual tasks or items that need to be completed. They can be added to lists and moved between them as
 they progress through different stages of your project.
 
 <p> 1. <strong>Adding Cards: </strong>To add a new card, click on "Add a card" at the bottom of any list. Enter a 
@@ -129,11 +128,12 @@ they progress through different stages of your project.
 
 ## Best Practices for Managing Tasks
 
-Effective task management is crucial for the smooth operation and success of any project. In this section, 
-we explore best practices for managing tasks within Trello, focusing on categorization, assignment, prioritization, and 
+Effective task management is crucial for the smooth operation and success of any project. In this section,
+we explore best practices for managing tasks within Trello, focusing on categorization, assignment, prioritization, and
 deadline setting to optimize project workflow and team productivity.
 
 ### Categorizing Tasks Using Lists
+![trello_tasks](https://res.cloudinary.com/dlyqagele/image/upload/v1710283639/CSC301/l3tsj0ku7of1n2bvyphj.png)
 Lists are a versatile feature in Trello that can be used to categorize tasks into different stages or types, providing
 a clear overview of project progress. Common categorizations include:
 
@@ -153,6 +153,7 @@ a clear overview of project progress. Common categorizations include:
 </ul>
 
 ### Assigning Tasks to Team Members
+![trello_assign_members](https://res.cloudinary.com/dlyqagele/image/upload/v1710283769/CSC301/js6jbzljpova5cw0cuyf.png)
 
 Proper task assignment ensures that every team member knows their responsibilities, leading to efficient task
 completion.
@@ -166,6 +167,7 @@ completion.
 </ul>
 
 ### Using Labels for Task Prioritization and Categorization
+![trello_labels](https://res.cloudinary.com/dlyqagele/image/upload/v1710283878/CSC301/mit8qybmgdkqzl1w7ipf.png)
 
 Labels provide a visual cue for task prioritization and categorization, making it easier to sort and
 identify tasks at a glance.
@@ -181,8 +183,9 @@ identify tasks at a glance.
 </ul>
 
 ### Setting Deadlines and Using the Calendar Feature
+![trello_ddl](https://res.cloudinary.com/dlyqagele/image/upload/v1710284054/CSC301/yhfpbb0nwiplk3pnk4i9.png)
 
-Deadlines are critical for maintaining project momentum. Trello's calendar feature helps 
+Deadlines are critical for maintaining project momentum. Trello's calendar feature helps
 in tracking these deadlines effectively.
 
 <strong>Tips:</strong>
@@ -198,12 +201,13 @@ in tracking these deadlines effectively.
 ## Enhancing Collaboration with Trello
 
 Collaboration is the cornerstone of any successful project, and Trello provides a suite of tools designed to foster
-effective team integration and communication. This section delves into how you can use Trello to enhance collaboration 
+effective team integration and communication. This section delves into how you can use Trello to enhance collaboration
 among team members, ensuring everyone is aligned and can contribute efficiently to the project's success.
 
 ### Team Integration
+![trello_team](https://res.cloudinary.com/dlyqagele/image/upload/v1710284257/CSC301/cu6jwrgk9ekythzhc3yv.png)
 
-Adding team members to your Trello board is the first step in fostering a collaborative environment. Here's how you 
+Adding team members to your Trello board is the first step in fostering a collaborative environment. Here's how you
 can do it:
 
 <p> 1. <strong>Adding Members to a Board: </strong> On your board, click the "Invite" button or look for the "Add 
@@ -241,28 +245,55 @@ significantly enhance the way your team communicates.
 
 ## Integrating Trello with Other Tools
 
-Trello's flexibility extends to its ability to integrate with a wide range of software development tools, enhancing 
-your project management capabilities. This integration streamlines workflows and brings essential functionalities 
+Trello's flexibility extends to its ability to integrate with a wide range of software development tools, enhancing
+your project management capabilities. This integration streamlines workflows and brings essential functionalities
 directly into your Trello environment.
 
 ### Popular Integrations:
-
-<ul>
-  <li><strong>Development Tools: </strong>Integrate with GitHub to link commits, branches, or issues directly to
-  Trello cards. This keeps the team updated on development progress without leaving Trello.</li>
-  <li><strong>Communication Platforms: </strong>Tools like Slack can be integrated to receive Trello updates directly 
-  in your Slack channels, enabling quick discussions and decisions.</li>
-  <li><strong>Productivity Apps: </strong>Google Drive, Dropbox, and OneDrive can be linked to Trello cards for easy 
-  access to project documents and files.</li>
-</ul>
-
-### How to Integrate Tools with Trello:
-
-<p> 1. <strong>Power-Ups: </strong>Trello's Power-Ups feature allows you to connect to a variety of third-party apps
-    and services. To enable a Power-Up, go to the menu on your board, select "Power-Ups," and then browse or search for
-    the tool you want to integrate.</p> 
-
-<p> 2. <strong>Configuration: </strong>After adding a Power-Up, configure it by connecting your accounts and setting
-    up any necessary settings. This step varies depending on the specific Power-Up.</p> 
+#### Integrating with Development Tools: GitHub
 
 
+  <p>1. <strong>Enable the GitHub Power-Up:</strong>Navigate to your board's menu, select "Power-Ups," 
+      find the GitHub Power-Up, and click "Add".</p>
+  <p>2. <strong>Connect Your GitHub Account: </strong>Once added, you'll need to connect your GitHub account by 
+      following the prompts.</p>
+  <p>3. <strong>Usage: </strong>To attach GitHub links to a card, click on the card, select the "GitHub" option from 
+      the Power-Up section, and then choose the commits, branches, or issues you wish to link.</p>
+
+
+### Integrating with Communication Platforms: Slack
+
+  <p>1. <strong>Enable the Slack Power-Up: </strong>In your board's menu, find and add the Slack Power-Up.</p>
+  <p>2. <strong>Connect Your Slack Workspace: </strong>Follow the setup instructions to connect Trello
+     to your Slack workspace.</p>
+  <p>3. <strong>Usage: </strong>Configure notifications and select the Slack channel where you want Trello updates to 
+     appear. You can also link cards and boards directly in Slack conversations.</p>
+
+
+### Integrating with Productivity Apps: Google Drive, Dropbox, and OneDrive
+
+  <p>1. <strong>Enable the Power-Ups: </strong> For each service (Google Drive, Dropbox, OneDrive), add the respective
+     Power-Up through your board's menu.</p>
+  <p>2. <strong>Connect Your Accounts: </strong>After adding a Power-Up, connect your account for the service by 
+     following the prompts.</p>
+  <p>3. <strong>Usage: </strong>To attach a file to a card, open the card, select the appropriate option from the 
+     Power-Up section, and choose the file you want to attach.</p>
+
+### Detailed Guides and Tutorials
+
+For those new to these integrations, here are links to detailed guides and tutorials that provide step-by-step
+instructions:
+
+* GitHub Integration: [Trello GitHub Power-Up](https://trello.com/power-ups/55a5d916446f517774210004/github)
+* Slack Integration: [Trello Slack Power-Up](https://trello.com/power-ups/55a5d917446f51777421000a/slack)
+* Google Drive Integration: [Trello Google Drive Power-Up](https://trello.com/power-ups/55a5d916446f517774210006/google-drive)
+
+
+
+## Reference
+
+* https://trello.com/teams?utm_source=trello&utm_medium=inapp&utm_content=header-tips&utm_campaign=playbooks
+* https://trello.com/guide
+* https://trello.com/power-ups/55a5d916446f517774210004/github
+* https://trello.com/power-ups/55a5d917446f51777421000a/slack
+* https://trello.com/power-ups/55a5d916446f517774210006/google-drive
