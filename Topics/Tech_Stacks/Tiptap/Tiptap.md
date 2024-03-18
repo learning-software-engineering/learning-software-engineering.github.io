@@ -310,12 +310,12 @@ const App = () => {
 };
 ```
 
-**6. See both editors in action**
+**5. See both editors in action**
 ```
 npm start
 ```
 
-**7. Use the output from the Markdown editor**
+**6. Use the output from the Markdown editor**
 At the bottom of Markdown.jsx, add an `onUpdate` prop to the EditorProvider, using the `getMarkdown()` method on the editor object to retrieve the Markdown representation of the content in the editor when the user changes it and print it to the browser's console.
   ```javascript
   export default function Tiptap () {
@@ -328,12 +328,25 @@ At the bottom of Markdown.jsx, add an `onUpdate` prop to the EditorProvider, usi
   }
   ```
 
+![Untitled design (5)](https://github.com/AshkanAleshams/learning-software-engineering.github.io/assets/90326959/51e0072e-776b-41bb-9360-4307c56e45c5)
+
+
 ## Citations
+
+https://tiptap.dev/blog/insights/tiptap-seriesseed
+
+https://tiptap.dev/product/editor
+
+https://tiptap.dev/docs/editor/introduction
+
+https://tiptap.dev/docs/editor/installation/react
+
+https://github.com/alb/cra-template-tiptap
+
+https://tiptap.dev/product/editor
+
+https://tiptap.dev/docs/editor/guide/output
 
 [^1]: [Tiptap Seriesseed - Insights](https://tiptap.dev/blog/insights/tiptap-seriesseed)
 [^2]: [Tiptap Editor - Product](https://tiptap.dev/product/editor)
 [^3]: [Tiptap Editor - Introduction](https://tiptap.dev/docs/editor/introduction)
-[^4]: [Tiptap Editor - Installation Guide for React](https://tiptap.dev/docs/editor/installation/react)
-[^5]: [Create React App Template with Tiptap](https://github.com/alb/cra-template-tiptap)
-[^6]: [Tiptap Editor - Product](https://tiptap.dev/product/editor)
-[^7]: https://tiptap.dev/docs/editor/guide/output
