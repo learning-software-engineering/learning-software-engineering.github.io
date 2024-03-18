@@ -33,13 +33,14 @@ WebSockets are particularly adept at handling use cases where the server needs t
 In the context of CSC301, understanding WebSockets is essential for building modern applications where real-time user interaction is a core requirement. With WebSockets, software engineers can create responsive and interactive user experiences that were once difficult to achieve with traditional web technologies.
 
 ## WebSockets vs HTTP
-While HTTP is a foundational web technology, its request-response model can introduce latency and inefficiency, particularly in scenarios requiring real-time updates. WebSockets address these limitations by establishing a persistent, full-duplex communication channel, offering several advantages:
+HTTP, a foundational technology of the web, is designed around a stateless request-response model. This means that for each piece of data exchanged between the client and server, a new connection is initiated, followed by a request from the client and a response from the server. While effective for many web applications, this approach can introduce latency and inefficiency, especially in scenarios that demand real-time updates.
 
-- **Reduced Latency:** WebSockets eliminate the need for repeated HTTP handshakes, significantly decreasing latency.
-- **Real-time Data Flow:** The persistent connection allows for real-time data exchange, critical for applications such as online gaming, live sports updates, and financial trading platforms.
-- **Efficient Resource Utilization:** With a single connection per client, WebSockets use server and network resources more efficiently than HTTP polling.
+In contrast, WebSockets offer a more dynamic communication protocol. After completing an initial handshake, WebSockets establish a stateful, two-way communication channel. This persistent connection remains open, allowing for continuous data exchange without the need to establish new connections for each interaction. This fundamental difference in operation between WebSockets and HTTP brings several notable advantages in specific contexts:
 
-## Advantages and Disadvantages
+- **Reduced Latency:** By eliminating the need for repeated HTTP handshakes, WebSockets significantly decrease latency, making them ideal for time-sensitive applications.
+- **Real-time Data Flow:** The open communication channel enables real-time data exchange. This is particularly beneficial for applications requiring immediate updates, such as online gaming, live sports updates, and financial trading platforms.
+- **Efficient Resource Utilization:** Operating over a single, persistent connection, WebSockets make more efficient use of server and network resources compared to the HTTP model, which opens and closes connections for each request/response pair.
+
 ## Advantages and Disadvantages
 
 ### Advantages
