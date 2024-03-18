@@ -42,6 +42,9 @@ Another way we can reduce the load on our databases is by introducing a cache la
 
 
 ## Content Delivery Networks (CDNs) 
+![CDN](image.png)
+*Image from DigitalOcean*
+
 CDN servers keep a cache of our files (images, HTML/CSS, JS, ...) at data centers close in geographical proximity to users across the world. When user's make a request for data, it is retrieved from the server closest to the user. This again offloads some of the requests from the main server and helps with reducing errors by increasing redundancy. 
 
 
@@ -49,4 +52,4 @@ CDN servers keep a cache of our files (images, HTML/CSS, JS, ...) at data center
 
 This page was inspired by Alex Pareto's blog post [Scaling to 100k Users](https://alexpareto.com/scalability/systems/2020/02/03/scaling-100k.html), and drew information from High Scalability's [Guide to Scaling to 11 Million+ Users on AWS](https://highscalability.com/a-beginners-guide-to-scaling-to-11-million-users-on-amazons/), Linh Truong's page on [Building & Scaling to 100 Million Users](https://scholar.harvard.edu/linh/system-design), Anh T. Dang's Medium post on [Designing a System to Scale to 100 Million Users](https://levelup.gitconnected.com/how-to-design-a-system-to-scale-to-your-first-100-million-users-4450a2f9703d), and the Redis [Glossary](https://redis.com/glossary/)
 
-Images from [CloudZero Vertical Scaling](https://www.cloudzero.com/wp-content/uploads/2023/10/how-vertical-scaling-works-1.webp), [CloudZero Horizontal Scaling](https://www.cloudzero.com/wp-content/uploads/2023/10/how-horizontal-scaling-works-1.webp), [NetScaler](https://www.netscaler.com/articles/what-is-load-balancing),[Apurval Agrawal's Medium Article](https://miro.medium.com/v2/resize:fit:1400/0*MfnjmNOUZ7Wd7BNS),[Backendless](https://backendless.com/wp-content/uploads/2022/12/How-Redis-typically-works.png)
+Images from [CloudZero Vertical Scaling](https://www.cloudzero.com/wp-content/uploads/2023/10/how-vertical-scaling-works-1.webp), [CloudZero Horizontal Scaling](https://www.cloudzero.com/wp-content/uploads/2023/10/how-horizontal-scaling-works-1.webp), [NetScaler](https://www.netscaler.com/articles/what-is-load-balancing),[Apurval Agrawal's Medium Article](https://miro.medium.com/v2/resize:fit:1400/0*MfnjmNOUZ7Wd7BNS),[Backendless](https://backendless.com/wp-content/uploads/2022/12/How-Redis-typically-works.png), [DigitalOcean](https://doimages.nyc3.cdn.digitaloceanspaces.com/CDN.png)
