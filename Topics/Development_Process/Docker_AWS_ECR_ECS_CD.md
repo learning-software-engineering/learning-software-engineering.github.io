@@ -42,8 +42,8 @@ jobs:
 
 ## Step 3 (Checking out the repo)
 ```
-- name: Checkout
-        uses: actions/checkout@v4
+    - name: Checkout
+            uses: actions/checkout@v4
 ```
 - Create a new step for checking out the current repo. This ensures that in subsequent steps you have access to all code within your current repo
 
