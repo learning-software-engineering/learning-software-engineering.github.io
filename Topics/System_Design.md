@@ -12,8 +12,9 @@
 
 ### [Architecting a System to Handle 100k+ Requests](./System_Design/Handling_100K_Requests.md)
 
-
 ### Design Patterns
 
 ####  1. [Behavioural Design Patterns](./System_Design/behavioral_design_patterns.md)
+
+####  2. [Creational Design Patterns](./System_Design/DesignPatterns/Creational_Design_Patterns.md)
 
