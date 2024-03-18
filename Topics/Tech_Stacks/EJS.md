@@ -94,4 +94,31 @@ Below we see an example of iterative rendering:
 <% }) %>
 ```
 
+It may also be a useful addition to see how the server is interacting with these pages, so some code examples are given below, note how the variables are passed in and used.
 
+```html
+app.get("/", function (req, res) {
+  res.render("home", {homeStartingContent: homeStartingContent, posts: posts})
+})
+```
+
+One of the key advantages of EJS can also be seen through the following code sample:
+```html
+app.get("/posts/:postName", function (req, res) {
+
+  posts.forEach(function(post) {
+    if (_.lowerCase(post.title) === _.lowerCase(req.params.postName)) {
+      res.render("post", {postHeader: post.title, postContent: post.content})
+    }
+  })
+
+})
+```
+
+In this example we can see that for each post in the database, we dynamically create a new page posts/postName, wherein each page has the same exact format, just the content is differed depending on the post itself. 
+
+
+## Learn More
+
+- **https://ejs.co/#install
+- **https://www.digitalocean.com/community/tutorials/how-to-use-ejs-to-template-your-node-application
