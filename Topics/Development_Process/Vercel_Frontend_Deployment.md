@@ -56,15 +56,16 @@ AWS Amplify is deeply integrated with the AWS ecosystem, making it a good choice
 - **Ease of Use**:
 Vercel is often highlighted for its user-friendly interface and ease of setup, whereas AWS Amplify has a steeper learning curve but offers more customization and control.
 
-## How to Deploy on Vercel?
+## How to Deploy a Frontend Project on Vercel
 
-This section covers the steps to deploy a frontend project on Vercel:
-1. **Creating a Vercel Account**.
-2. **Connecting to Your Repository**: Using platforms like GitHub or GitLab.
-3. **Configuring Deployment Settings**: Setting environment variables and build configurations.
-4. **Deployment and Monitoring**: Understanding how to deploy and monitor your applications.
+This guide covers the steps to deploy a frontend project on Vercel. The process involves:
 
-Vercel Step-by-Step Tutorial: Vercel's own documentation offers a comprehensive step-by-step tutorial that guides you through the process of using their platform. It's designed as an end-to-end guide for developers to create and deploy web applications​. (https://vercel.com/docs/getting-started-with-vercel)
+1. **Creating a Vercel Account**: Sign up on [Vercel](https://vercel.com/signup).
+2. **Connecting to Your Repository**: Connect your Vercel account to your code repository on platforms like GitHub, GitLab, or Bitbucket.
+3. **Configuring Deployment Settings**: Set up environment variables and build configurations in your Vercel project settings.
+4. **Deployment and Monitoring**: Deploy your application and monitor its status.
+
+For a comprehensive guide, refer to [Vercel's own step-by-step tutorial](https://vercel.com/docs/getting-started-with-vercel).
 
 ## Deploying with Vercel CLI
 
@@ -98,9 +99,9 @@ vercel
 5. **Follow Deployment Prompts**: Vercel CLI will guide you through the deployment process with a series of prompts:
 
 - Choose the scope (personal account or team) for the deployment.
-- Choose project name
+- Choose the project name.
 - Confirm the project to deploy.
-- Review and confirm deployment settings such as the framework (e.g Next.js, Create React App) and project settings (e.g Build Command, Development Command, Install COmmand, Output Directory)
+- Review and confirm deployment settings such as the framework (e.g., Next.js, Create React App) and project settings (e.g., Build Command, Development Command, Install Command, Output Directory).
 - Note, Vercel will automatically detect your framework (e.g React, Vue, Angular) and determine the appropriate build settings based on the detected framework.
 ![](./assets/Vercel_CLI.png)
 
