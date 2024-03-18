@@ -71,15 +71,9 @@ Amazon should have hand-picked the data they trained the algorithm with. Althoug
 ## Software Engineering Code of Ethics
 Now that you have some insights into what you shouldn't do, the Software Enginnering Code of Ethics details how you should act when making decisions regarding the ethical designs of your work.
 
-The 8 principles of this code of ethics are as follows:
-* **Public**: Software engineers shall act consistently with the public interest.
-* **Client and employer**: Software engineers shall act in a manner that is in the best interests of their client and employer consistent with the public interest.
-* **Product**: Software engineers shall ensure that their products and related modifications meet the highest professional standards possible.
-* **Judgment**: Software engineers shall maintain integrity and independence in their professional judgment.
-* **Management**: Software engineering managers and leaders shall subscribe to and promote an ethical approach to the management of software development and maintenance. 
-* **Profession**: Software engineers shall advance the integrity and reputation of the profession consistent with the public interest.
-* **Colleagues**: Software engineers shall be fair to and supportive of their colleagues.
-* **Self**: Software engineers shall participate in lifelong learning regarding the practice of their profession and shall promote an ethical approach to the practice of the profession.
+The 8 principles of this code of ethics can be found here:
+
+[The 8 Principles of Software Engineering Ethics](Eight_Principles_Ethics.md)
 
 These principles can be applied in many ways. Below are some examples of questions you should ask yourself when designing software.
 
