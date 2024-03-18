@@ -40,7 +40,8 @@ Potential Topics--
         1. Learning Spring Data JPA
     13. TinyMCE API with ReactJS
     14. SQL
-    15. Tailwind
+    15. TipTap
+    16. Tailwind
         
 - Software Tools
     1. Git
