@@ -169,3 +169,5 @@
 ### [Intro to Flask with Flask-SQLAlchemy](./Tech_Stacks/Flask.md)
 
 ### [Introduction to ROBLOX Studio](./Tech_Stacks/ROBLOX_Intro.md)
+
+### [Building Interactive Web Applications with WebSockets](./Tech_Stacks/WebSockets/Web-Sockets.md)
