@@ -55,3 +55,43 @@ Beyond the basics, EJS offers advanced features to further enhance your web deve
 
 - **Custom Functions: Extend EJS functionality by defining custom JavaScript functions and incorporating them into your templates.
 
+## Example Usage
+In this section we see how some of these functionalities are used
+
+This is an example of a partial:
+```html
+</div>
+<div class="footer-padding"></div>
+  <div class="footer">
+    <p>Copyright</p>
+  </div>
+</div>
+</body>
+</html>
+```
+
+This footer can be reused in any other pages by including this line whereever the footer is needed. 
+
+```html
+<%- include("partials/header") %>
+
+<h1><%= postHeader %></h1>
+<p> <%= postContent %> </p>
+
+<%- include("partials/footer") %>
+```
+
+In this example, we include the header, have some custom content, and then have the footer. This also shows how interpolation is used to display the variables postHeader and postContent which are passed in as JSON objects by the server. 
+
+Below we see an example of iterative rendering:
+```html
+<% posts.forEach(function(post) { %>
+  <h1> <%= post.title %></h1>
+  <p>
+    <%= post.content.substring(0, 100) + " ..."%>
+    <a href="/posts/ <%=post.title %>">Read More</a>
+  </p>
+<% }) %>
+```
+
+
