@@ -29,7 +29,10 @@ Potential Topics--
         1. Set up
     9. Unity
         1. Introduction to Unity Basics
-        2. A Beginner's Guide for Unity UI Design 
+        2. How to Organize Unity Projects
+        3. A Beginner's Guide for Unity UI Design 
+        4. Unity ML Agents Tutorial
+        5. Unity 2D Top-down Character Controller Tutorial
     10. Python
         1. Pythonic iteration patterns
     11. Debugging in Python
@@ -108,6 +111,7 @@ Potential Topics--
     4. User Experience Orientated Games
 - Product Management
     1. Beginner's guide to product management and becoming a successful product manager with case studies.
+    2. Creating A Product Development Strategy 
 - Other useful resources
 - Teamwork
     1. Effective Leadership
