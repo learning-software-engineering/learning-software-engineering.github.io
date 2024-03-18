@@ -6,7 +6,6 @@
   - [How does it work](#how)
 - [Application](#application)
   - [Code Generation with LLM](#codegeneration)
-
   - [Code Generation with Large Language Models](#code-generation-with-large-language-models)
 - [Citations](#citations)
 
