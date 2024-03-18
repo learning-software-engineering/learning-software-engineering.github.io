@@ -1,5 +1,5 @@
 # PyTorch
-
+![alt text](pytorch.png)
 ## Introduction to PyTorch
 PyTorch is an open-source machine learning library widely acclaimed for its flexibility, dynamic computational graph, and user-friendly interface. Beyond academic and research applications, PyTorch's capabilities extend into full stack development, enabling the integration of sophisticated machine learning models into web and mobile applications. This facilitates the creation of dynamic, intelligent applications capable of tasks like real-time image recognition, personalized content recommendation, and interactive chatbots.
 ## Getting Started with PyTorch
