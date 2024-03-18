@@ -34,7 +34,7 @@ on:
     branches: [ "main" ]
 ```
 
-Furthermore, notive how I included the filter `paths: [ "Frontend/**" ]`, this
+Furthermore, notice how I included the filter `paths: [ "Frontend/**" ]`, this
 is important because it avoid running our build unescesarily. For example, for
 my case, I have both frontend and backend code in the same repo. Thus, having
 this filter avoid building the frontend for backend pull requests.
