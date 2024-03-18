@@ -176,9 +176,9 @@ For an extensive list of tips and tricks, visit the official [Visual Studio Code
 
 ## Working with GitHub through VS Code
 
-Version control is a system that keeps track of changes to your files so that you can later recall a previous version (https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control). GitHub is one of the most powerful such systems and is a go-to for many team projects like CSC301 because you can collaborate together, see the changes that have been made and you can rollback to a previous working version if something goes wrong.
+Version control is a system that keeps track of changes to your files so that you can later recall a previous version (https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control). GitHub is one of the most powerful such systems and is a go-to for many team projects like CSC301 because you can collaborate together, see the changes that have been made and you can rollback to a previous working version if something goes wrong. For additional info take a look at this [Git](../../Development_Process/Git/Git.md) page in the Software Engineering Learning Center.
 
-One of the most powerful use cases of VS Code is that it has integrated source control management and includes Git support. This means that whenever you are working on a remote repository on GitHub, you can clone, commit and push your code through VSCode conveniently and you can even track the changes you've made which can be very helpful. You can work with GitHub through the integrated terminal as well, and you can also directly work on it with the VS Code UI. This section will show how you can work on GitHub repositories with VS Code. This section is based on the VS Code Docs ["Using Git source control in VS Code"] (https://code.visualstudio.com/docs/sourcecontrol/overview) and ["Introduction to Git in VS Code"] (https://code.visualstudio.com/docs/sourcecontrol/intro-to-git)
+One of the most powerful use cases of VS Code is that it has integrated source control management and includes Git support. This means that whenever you are working on a remote repository on GitHub, you can clone, commit and push your code through VSCode conveniently and you can even track the changes you've made which can be very helpful. You can work with GitHub through the integrated terminal as well, and you can also directly work on it with the VS Code UI. This section will show how you can work on GitHub repositories with VS Code. This section is based on the VS Code Docs ["Using Git source control in VS Code"] (https://code.visualstudio.com/docs/sourcecontrol/overview), ["Introduction to Git in VS Code"] (https://code.visualstudio.com/docs/sourcecontrol/intro-to-git), [Source Control FAQ](https://code.visualstudio.com/docs/sourcecontrol/faq)
 
 ### Prerequisites
 
@@ -227,6 +227,11 @@ To look at the previous versions of your file, navigate to the "Explorer" tab on
 
 <img width="369" alt="Timeline" src="https://github.com/vazevaru/learning-software-engineering.github.io/assets/90367491/cf2154ac-05fe-4a9c-8c4c-ee527b250d04">
 
+To revert to a previous version, right click on the file and select "Restore Contents"
+
+<img width="466" alt="Reverting to previous version" src="https://github.com/vazevaru/learning-software-engineering.github.io/assets/90367491/1cca0b99-1e15-49e5-9be5-003c30233066">
+
+
 ### Adding files to be committed
 
 When you're working on a file, VS Code shows you the status of your files. For example, if you create a new file in your repo, the character 'U' appears beside your file as shown indicating that the file is untracked. 
@@ -241,6 +246,11 @@ This helps in identifying which files need to be added. To add a file you can na
 
 <img width="367" alt="After modification after staging" src="https://github.com/vazevaru/learning-software-engineering.github.io/assets/90367491/f35c0380-dd4a-417c-8933-0dc126f3d9ec">
 
+If you want to unstage your changes, locate the file under "Staged Changes" and press the "-" button. This will unstage your changes!
+
+<img width="432" alt="Unstage change" src="https://github.com/vazevaru/learning-software-engineering.github.io/assets/90367491/8e7b9147-1fe7-4ee8-9709-a57bf35ab281">
+
+
 ### Committing files
 
 To commit files navigate to the "Version Control" tab. You will see a text box on the top where you can put your commit message.Then press Command + Enter if you're on a Mac or Ctrl + Enter if you're on a Windows machine.
@@ -249,13 +259,28 @@ To commit files navigate to the "Version Control" tab. You will see a text box o
 
 Your files have now been committed!
 
-### Pushing and pulling files to and from GitHub
+To uncommit changes, navigate to the "Version Control" tab and press the "Views and More Actions" button, which is the button with the 3 dots. Hover on the "Commit" option and press "Undo Last Commit". This will uncommit your changes!
 
-Once your files are committed, you can push to GitHub by navigating to the "Version Control" tab and then press "Sync Changes".
+<img width="682" alt="Undo last commit" src="https://github.com/vazevaru/learning-software-engineering.github.io/assets/90367491/22adbc5c-1b90-422d-8101-d297a0817337">
+
+
+### Pushing to GitHub
+
+Once your files are committed and there are no pending files, you can push to GitHub by navigating to the "Version Control" tab and then press "Sync Changes". If you have pending changes, then you may need to commit them before pushing.
 
 <img width="360" alt="Sync Changes" src="https://github.com/vazevaru/learning-software-engineering.github.io/assets/90367491/6ce33bee-46a1-4fc9-88ca-d227d29ed767">
 
-This will push your changes! You can also pull from the remote GitHub repo by pressing the "Sync Changes" button.
+This will push your changes!
+
+### Pulling from GitHub
+
+You can also pull from GitHub using the "Sync Changes" button in the "Version Control" tab as shown above.
+
+You may encounter Merge Conflicts. To resolve merge conflicts in a file, click on the file. You will see all the instances where there are merge conflicts. In the image below, for this conflict, the current change is highlighted in green, whereas the incoming changes are highlighted in blue.
+
+<img width="876" alt="Merge Conflict" src="https://github.com/vazevaru/learning-software-engineering.github.io/assets/90367491/83464456-8ada-4482-8560-4700e1741f51">
+
+Above the Current change section, there are various options available to solve the merge conflict. For example, if you want to accept the current change, click on "Accept Current Change". You can also the "Compare changes" button to compare the changes and edit the current file accordingly to resolve the conflict.
 
 ## Closing Remarks
 
@@ -286,4 +311,5 @@ Visual Studio Code in 100 Seconds: https://www.youtube.com/watch?v=KMxo3T_MTvY
   - Using Git source control in VS Code: (https://code.visualstudio.com/docs/sourcecontrol/overview)
   - Introduction to Git in VS Code: (https://code.visualstudio.com/docs/sourcecontrol/intro-to-git)
   - Getting Started About Version Control: (https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control)
+  - Source Control FAQ: (https://code.visualstudio.com/docs/sourcecontrol/faq)
 
