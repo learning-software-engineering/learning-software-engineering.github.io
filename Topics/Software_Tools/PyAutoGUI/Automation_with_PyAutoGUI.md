@@ -215,4 +215,35 @@ These functionalities empower users with versatile keyboard interactions, facili
 
 
 ## Message Box Functions
-Pending
+PyAutoGui leverages PyMsgBox's message box functions, offering a cross-platform, pure Python solution for displaying JavaScript-style message boxes. These functions serve various purposes and provide flexibility in handling user interactions seamlessly. Here's an overview of the four message box functions provided:
+
+### The alert Function
+
+```python
+pyautogui.alert(text='', title='', button='OK')
+```
+Displays a simple message box with customizable text and a single OK button. It returns the text of the button clicked on by the user.
+
+
+### The confirm Function
+
+```python
+pyautogui.confirm(text='', title='', buttons=['OK', 'Cancel'])
+```
+Displays a message box with configurable text and buttons, typically OK and Cancel. Users can choose between the provided options, and it returns the text of the button clicked.
+
+### The prompt Function
+
+```python
+pyautogui.prompt(text='', title='', default='')
+```
+Shows a message box with text input field, along with OK and Cancel buttons. Users can input text, and it returns the entered text or None if Cancel was clicked.
+
+### The password Function
+
+```python
+pyautogui.password(text='', title='', default='', mask='*')
+```
+Similar to the `prompt()` function, it displays a message box with a text input field. However, the typed characters are masked, typically with asterisks (*). It returns the entered text or None if Cancel was clicked.
+
+These functions empower users to handle various types of user interactions effectively within their Python scripts, enhancing the user experience and interactivity of their applications.
