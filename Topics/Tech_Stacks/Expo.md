@@ -127,4 +127,3 @@ This guide has introduced you to React Native and Expo, two powerful tools for d
 - React Native: [React Native Official Documentation](https://reactnative.dev/docs/getting-started)
 - Expo: [Expo Official Documentation](https://docs.expo.dev/)
 - Node.js: [Node.js Official Website](https://nodejs.org/)
-- Visual Studio Code: [Visual Studio Code Official Website](https://code.visualstudio.com/)
