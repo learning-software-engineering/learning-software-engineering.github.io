@@ -32,6 +32,8 @@ WebSockets are particularly adept at handling use cases where the server needs t
 
 In the context of CSC301, understanding WebSockets is essential for building modern applications where real-time user interaction is a core requirement. With WebSockets, software engineers can create responsive and interactive user experiences that were once difficult to achieve with traditional web technologies.
 
+![cpVnative](http_vs_websocket.png)
+
 ## WebSockets vs HTTP
 HTTP, a foundational technology of the web, is designed around a stateless request-response model. This means that for each piece of data exchanged between the client and server, a new connection is initiated, followed by a request from the client and a response from the server. While effective for many web applications, this approach can introduce latency and inefficiency, especially in scenarios that demand real-time updates.
 
@@ -55,7 +57,7 @@ In contrast, WebSockets offer a more dynamic communication protocol. After compl
 
 - **Compatibility and Support Issues:** Despite the widespread adoption of WebSockets, there are still compatibility concerns, especially with older web browsers. As of now, all modern browsers support WebSockets, but if your user base includes individuals using older versions of Internet Explorer or other legacy browsers, you might face compatibility challenges. 
 
-- **Security Considerations:** Keeping a connection open raises the stakes in terms of security. WebSockets are susceptible to similar threats that plague other web technologies.
+- **Security Considerations:** Keeping a connection open raises the stakes in terms of security. WebSockets are susceptible to similar threats that plague other web technologies, such as cross-site scripting (XSS) and cross-site request forgery (CSRF). Securing these connections with TLS (Transport Layer Security), the same technology that underpins HTTPS, is essential to prevent eavesdropping and ensure that the data integrity is maintained. Implementing WSS (WebSocket Secure) ensures that the communication is encrypted, safeguarding against interception and tampering.
 
 ## Setting Up
 
@@ -161,3 +163,7 @@ To dive deeper into WebSockets and how they can be used in your projects, consid
 - [The WebSocket API](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API) - A comprehensive guide by MDN Web Docs that covers the basics of using WebSockets in web applications.
 - [WebSocket-Node](https://github.com/theturtle32/WebSocket-Node) - A WebSocket server and client library for Node.js, allowing for the development of WebSocket-enabled server-side applications.
 - [HTML5 WebSockets Tutorial](https://www.html5rocks.com/en/tutorials/websockets/basics/) - An introductory tutorial on HTML5 Rocks that provides a solid foundation for understanding and using WebSockets.
+- [Video](https://www.youtube.com/watch?v=favi7avxIag) - An introductory video, highlighting key differences and why is it used. 
+
+## References
+- "A Simple Explanation of What a WebSocket Is." Wallarm, https://www.wallarm.com/what/a-simple-explanation-of-what-a-websocket-is Accessed 17 Mar. 2024.
