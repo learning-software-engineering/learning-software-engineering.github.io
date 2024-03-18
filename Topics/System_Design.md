@@ -8,6 +8,8 @@
 
 ### [Introduction to Secure Boot and RSA](./System_Design/Security/Secure_Boot_RSA.md)
 
+### [Architecting a System to Handle 100k+ Requests](./System_Design/Handling_100K_Requests.md)
+
 ### Design Patterns
 
 ####  1. [Behavioural Design Patterns](./System_Design/behavioral_design_patterns.md)
