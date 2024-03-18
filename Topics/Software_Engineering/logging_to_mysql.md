@@ -33,6 +33,11 @@ CREATE TABLE logs (
 
 <img width="694" alt="logs_table" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/90298039/76e95152-0812-4b1b-8338-2a9ddbf26e0e">
 
+- **id** (INT): An auto-incremented integer serving as the primary key for each log entry.
+- **timestamp** (TIMESTAMP): The date and time when the log entry was created, automatically set to the current timestamp.
+- **level** (VARCHAR): A string indicating the severity of the log, such as INFO, WARNING, or ERROR.
+- **message** (TEXT): The actual log message text, detailing the event or error reported.
+
 ## Step 3: Implementing Logging in Python
 
 ### Define the Logger
