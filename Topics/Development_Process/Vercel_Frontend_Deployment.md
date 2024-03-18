@@ -6,6 +6,8 @@
 ### [Why Deploy with Vercel?](#why-deploy-with-vercel-1)
 ### [How to Deploy on Vercel?](#how-to-deploy-on-vercel-1)
 ### [Deploying with Vercel CLI](#deploying-with-vercel-cli-1)
+### [Security Best Practices for Deploying on Vercel](#vercel-security)
+### [Search Engine Optimization (SEO) for Sites Deployed on Vercel](#vercel-seo)
 ### [Advanced Vercel Features](#advanced-vercel-features-1)
 ### [Useful Articles](#useful-articles-1)
 
@@ -132,6 +134,79 @@ This command sets environment variables KEY1 and KEY2 with the respective values
 
 For more CLI usages, refer to [Vercel documentation](https://vercel.com/docs/cli/deploy).
 
+## Security Best Practices for Deploying on Vercel
+
+When deploying applications on Vercel, ensuring the security of your frontend and its data is paramount. Here are key practices to help you safeguard your deployments:
+
+### Environment Variables
+- Store sensitive information such as API keys, database URIs, and secret tokens in environment variables instead of hardcoding them into your application code. Vercel supports environment variables, making it easy to manage sensitive data securely.
+- Always encrypt sensitive information before storing it. Vercel encrypts environment variables at rest, but it's crucial to encrypt them before transmission or use additional layers of encryption for highly sensitive data.
+- Limit access to environment variables to those who absolutely need it. Use Vercel's team management features to control who can view or modify environment variables.
+
+### HTTPS Enforcement
+- Vercel automatically provides HTTPS for all deployments, ensuring data transmitted between your application and its users is encrypted. Always use HTTPS to protect your application from man-in-the-middle attacks.
+- Consider implementing HTTP Strict Transport Security (HSTS) headers to prevent downgrade attacks and ensure secure connections.
+
+### Access Control
+- Ensure that only authorized users can access your Vercel account and projects. Use strong, unique passwords and enable two-factor authentication (2FA) for an added layer of security.
+- Use Vercel’s edge functions to implement rate limiting, protecting your application from brute force and denial-of-service attacks.
+
+### Security Headers
+- Utilize HTTP security headers to add another layer of protection for your web applications against common vulnerabilities and attacks. This includes headers like Content Security Policy (CSP), X-Content-Type-Options, Strict-Transport-Security, and others.
+- A CSP helps mitigate cross-site scripting (XSS) and data injection attacks. Define a CSP that specifies which domains are allowed to execute scripts, load resources, and so forth.
+- Start with CSP in report-only mode to understand its impact on your application without blocking legitimate resources.
+
+### Regularly Update Dependencies
+- Keep all your project dependencies up to date. This includes the libraries and frameworks your application uses. Outdated dependencies may contain security vulnerabilities that attackers can exploit.
+- Example (update all dependencies in package.json):
+```bash
+npm update
+```
+
+### Learn more
+- https://vercel.com/security
+
+## Search Engine Optimization (SEO) for Sites Deployed on Vercel
+
+Maximizing the visibility of your Vercel-deployed sites in search engine results is crucial for attracting traffic. Implement these SEO strategies to improve your site’s ranking:
+
+### Optimize Site Performance
+- Vercel's Global CDN automatically ensures that your site is delivered quickly to users worldwide. Fast loading times improve user experience and SEO.
+- Optimize images using next-gen image formats and ensuring images are optimally sized for the web to decrease load times. You can use tools like Next.js' Image component to automatically optimize images for speed.
+- Use compression algorithms like Brotli to reduce the size of your HTML, CSS, and JavaScript files.
+
+### Improve User Experience (UX)
+- Make sure your site is fully responsive and looks good on all devices, as mobile-friendliness is a ranking factor.
+- Ensure your site is accessible to all users, including those with disabilities. This includes proper use of HTML semantics, alt tags for images, and ARIA labels where necessary.
+
+### Content and Metadata Optimization
+- Proper use of meta tags (unique title and description) on each page can help search engines understand your content better.
+- Implement structured data (using schema.org) to help search engines understand the context of your content, enabling rich snippets in search results.
+- Use clear, descriptive URLs that include keywords relevant to your content.
+
+### Fast and Secure Connections
+- Vercel provides SSL certificates for all deployments, ensuring secure and encrypted connections. A secure site is a ranking factor for Google.
+- Minimize the use of redirects and ensure they are implemented correctly. Excessive redirects can slow down your site and negatively impact SEO.
+
+### High Quality Content
+- Create high-quality, relevant content that answers the needs of your audience. Use appropriate keywords naturally within your content.
+- Update Content Regularly. Keep your site fresh and updated with new content to signal to search engines that your site is active.
+- Backlinks from reputable sites can significantly boost your site's authority and search ranking. Focus on creating valuable content that others want to link to.
+
+### Utilize Server-Side Rendering (SSR) or Static Site Generation (SSG)
+- Use Next.js for your projects on Vercel to take advantage of SSR or SSG. These approaches can help ensure that your content is fully rendered and indexable by search engines when they crawl your site.
+
+### Sitemaps and Robots.txt
+- Create and submit a sitemap to search engines to help them discover and index your pages.
+-	Use a robots.txt file to control which parts of your site should be crawled and indexed by search engines.
+
+### Monitor and Analyze Your SEO Performance
+- Regularly monitor your site’s performance in search results with tools like Google Search Console. This can help you identify and fix any issues that might be affecting your ranking.
+- Stay up-to-date with the latest best practices and search engine guidelines.
+
+### Social Media Integration
+- Use social media to promote your content and create backlinks to your site, increasing traffic and engagement.
+
 ## Advanced Vercel Features
 
 - **Custom Domains**: 
@@ -153,6 +228,7 @@ Each feature comes with its own set of practices and considerations. These resou
 
 At the end of this guide, you'll have a comprehensive understanding of Vercel's capabilities and be ready to utilize it for your frontend projects.
 
+## Useful Articles
 Some useful article for using Vercel:
 1. **Using Templates in Vercel**: 
 This guide helps you to leverage popular frontend frameworks and maximize Vercel's features. It also details how Vercel can create a new repository with your chosen Git provider for easy project updates after deployment​. (https://vercel.com/docs/getting-started-with-vercel/template)
