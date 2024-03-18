@@ -233,8 +233,62 @@ npm start
 
 
 ## Example with Markdown Editor in React
-_Include gifs, code snippets, explainations_
 
+By default, Tiptap doesn't support input from or output to Markdown files.[^4] However, there is a community-developed npm package called `tiptap-markdown` that extends Tiptap to enable this. We'll go through the installation of this package and the creation of a simple editor that uses it.
+
+**1. Install `tiptap-markdown`:**
+We'll continue with the React project we created above. Install the [`tiptap-markdown`](https://www.npmjs.com/package/tiptap-markdown) package using npm:
+```
+npm install tiptap-markdown
+```
+
+**2. Import the package:**
+Make a copy of Tiptap.jsx called Markdown.jsx. Add this import to the top of the file:
+```
+import { Markdown } from 'tiptap-markdown';
+```
+
+**3. Edit the editor:**
+In Markdown.jsx, add `Markdown` to the list of extensions used by the Tiptap editor. Since the input file format has changed from HTML to Markdown, we'll change the initial content as well:
+````
+const extensions = [
+  [...keep the existing extensions...]
+  Markdown,
+]
+
+const content = `
+## Hi again,
+Here is a Markdown version!
+\`\`\`css
+body {
+display: none;
+}
+\`\`\`
+`
+````
+
+**4. Render the new editor:**
+At the top of App.js, import the new Markdown editor from Markdown.jsx:
+```
+import Markdown from './Markdown';
+```
+
+Finally, render the new Markdown editor below the existing editor in App.js:
+```
+const App = () => {
+  return (
+    <div className="App">
+      <Tiptap />
+      <Markdown />
+    </div>
+  );
+};
+```
+
+**6. See both editors in action**
+```
+npm start
+```
 
 ## Example with (something else Maybe)
 _Maybe Ricky will work on this_
@@ -246,3 +300,4 @@ _Include gifs, code snippets, explainations_
 [^1]: https://tiptap.dev/blog/insights/tiptap-seriesseed
 [^2]: https://tiptap.dev/product/editor
 [^3]: https://tiptap.dev/docs/editor/introduction
+[^4]: https://tiptap.dev/docs/editor/guide/output#not-an-option-markdown
