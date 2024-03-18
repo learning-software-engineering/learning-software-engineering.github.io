@@ -165,19 +165,34 @@ pyautogui.doubleClick()
 ```
 ![sample_gif](./assets/move_folder.gif)
 
-## Keyboard Controls
+
 ## Keyboard Controls
 Once familiar with mouse functions, exploring keyboard interactions becomes the next vital step. PyAutoGui offers various methods for keyboard input, enhancing automation capabilities.
+
+Some use cases where keyboard functionality in software engineering can be highly beneficial are:
+- **Simulating user input:** Using keyboard functions like `write()` and `press()` allows developers to simulate user input, filling out forms with predefined data efficiently.
+- **Keyboard Shortcuts for Navigation:** Many software applications rely on keyboard shortcuts for quick navigation and task execution. Implementing keyboard shortcuts using PyAutoGui's `hotkey()` function can enhance user productivity and streamline workflow in software development environments.
+- **Integration Testing:**  During integration testing, developers often need to simulate complex user interactions, including keyboard inputs. PyAutoGui's keyboard functions enable developers to programmatically trigger key presses, facilitating thorough testing of software systems under various scenarios.
+- **Command-Line Interfaces (CLI):** Many software tools and utilities feature command-line interfaces (CLI) for interaction. PyAutoGui's keyboard functions can be utilized to automate CLI interactions, allowing developers to script and execute repetitive tasks with ease.
 
 We can write something using the `write()` keyword. This will simply type the argument that is passed into it, which is a string.
 
 ```python
->>> pyautogui.write('Hi!')                  # Prints 'Hi'
->>> pyautogui.write('Hi!', interval=0.25)   # Similar to the move function, the second argument is
-                                            # the interval between pressing each button
+>>> pyautogui.write('Engineering!\n')                  # Prints 'Engineering'
+>>> pyautogui.write('Engineering!', interval=0.25)   # Similar to the move function, the second argument is
+                                                     # the interval between pressing each button
 ```
+As an example, the above function gives the following output:
 
-We may sometimes want to just click on a button on the keyboard, which is not a string. Like the enter or the shift button. For this, we can use the `press()` function.
+<img width="297" alt="Screenshot 2024-03-17 at 10 03 12 PM" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/97929147/e106b3d7-33e7-40ff-81c7-5e248941c63f">
+
+However, one may wonder what may happen if we inturrupt the program mid execution. For instance the following happens when we click the caps lock button while executing the above program with interval after printing the first 6 characters.
+
+<img width="430" alt="Screenshot 2024-03-17 at 10 06 03 PM" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/97929147/b3c44659-fb55-4afa-bec8-c7adaba542b0">
+
+The keyboard just switched to caps lock after the point it was pressed.
+
+We may sometimes want to just click on a button on the keyboard, which is not a string, like the enter or the shift button. For this, we can use the `press()` function.
 
 ```python
 >>> pyautogui('shift')    # Presses the shift button
@@ -191,24 +206,24 @@ Sometimes we may want to press more than one button at a time. For this we can u
 >>> pyautogui.keyUp('ctrl')      # Lift the press from the ctrl button
 ```
 
-To press multiple keys sequentially, pass a list of strings to press():
+To press multiple keys sequentially, pass a list of strings to `press()`:
 
 ```python
 >>> pyautogui.press(['tab', 'tab', 'tab'])   # Presses 'tab' key thrice
 >>> pyautogui.press('tab', presses=3)        # Sets the number of presses
 ```
 
-The hold() Context Manager: For holding a key conveniently within a context block, hold() function serves as a useful tool:
+The `hold()` Context Manager: For holding a key conveniently within a context block, `hold()` function serves as a useful tool:
 
 ```python
 >>> with pyautogui.hold('ctrl'):
         pyautogui.press(['tab', 'tab', 'tab'])
 ```
 
-The hotkey() Function: To execute hotkeys or keyboard shortcuts efficiently, utilize the hotkey() function:
+The `hotkey()` Function: To execute hotkeys or keyboard shortcuts efficiently, utilize the `hotkey()` function:
 
 ```python
->>> pyautogui.hotkey('ctrl', 'shift', 'p')   # Executes Ctrl + Shift + tab
+>>> pyautogui.hotkey('ctrl', 'shift', 'p')   # Executes Ctrl + Shift + p
 ```
 These functionalities empower users with versatile keyboard interactions, facilitating seamless automation tasks.
 
