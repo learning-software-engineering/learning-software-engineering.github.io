@@ -74,7 +74,10 @@ jobs:
       uses: gradle/gradle-build-action@v2
 ```
 
-The schema here is fairly self explanatory. But for completeness, here we only define one job (named `cd`). It runs on an Ubuntu machine, and the job times out after 20 minutes (useful to avoid unexpected long builds). Notice how each step has a name, this is the name that will be visible when the action is run:
+The schema here is fairly self explanatory. But for completeness, here we only
+define one job (named `cd`). It runs on an Ubuntu machine, and the job times out
+after 20 minutes (useful to avoid unexpected long builds). Notice how each step
+has a name, this is the name that will be visible when the action is run:
 
 ![](./assets/action-steps.png)
 
@@ -96,11 +99,15 @@ The schema here is fairly self explanatory. But for completeness, here we only d
         cd android && ./gradlew clean && ./gradlew app:assembleRelease
 ```
 
-Since I use expo, I have a prebuild step before building which generates the android folder for me. If you are not using expo, then simply ommit this line `npx expo prebuild -p android --no-install`, and just cd into the android folder which you should have pushed to your repo.
+Since I use [expo](https://expo.dev/), I have a prebuild step before building
+which generates the android folder for me. If you are not using expo, then
+simply ommit this line `npx expo prebuild -p android --no-install`, and just cd
+into the android folder which you should have pushed to your repo.
 
 ### Signing steps
 
-All Android apps need to be signed for them to be trusted by your Android device (and Google Play).
+All Android apps need to be signed for them to be trusted by your Android device
+(and Google Play).
 
 ```yml
     # Sets the environment variable BUILD_TOOL_VERSION based on the installed
@@ -130,7 +137,15 @@ To sign the APK you will need to add four secrets to your GitHub repo:
 `ANDROID_SIGNING_KEY`, `ANDROID_SIGNING_ALIAS`,
 `ANDROID_SIGNING_STORE_PASSWORD`, and `ANDROID_SIGNING_KEY_PASSWORD`.
 
-[Keytool](https://docs.oracle.com/javase/7/docs/technotes/tools/solaris/keytool.html) comes installed with the JDK. You can create a key using Keytool from the command line: `keytool -genkey -v -keystore my-release-key.keystore -alias alias_name -keyalg RSA -keysize 2048 -validity 10000`. You can replace alias_name with anything you'd like, but make sure to remember it, since it will be the `ANDROID_SIGNING_ALIAS` secret. The command line tool will aslo ask for a store password and a key password (make sure to remember it or note it down somewhere). Finally, the `ANDROID_SIGNING_KEY` is simply the contents of the generated file: `my-release-key.keystore`.
+[Keytool](https://docs.oracle.com/javase/7/docs/technotes/tools/solaris/keytool.html)
+comes installed with the JDK. You can create a key using Keytool from the
+command line: `keytool -genkey -v -keystore my-release-key.keystore -alias
+alias_name -keyalg RSA -keysize 2048 -validity 10000`. You can replace
+alias_name with anything you'd like, but make sure to remember it, since it will
+be the `ANDROID_SIGNING_ALIAS` secret. The command line tool will aslo ask for a
+store password and a key password (make sure to remember it or note it down
+somewhere). Finally, the `ANDROID_SIGNING_KEY` is simply the contents of the
+generated file: `my-release-key.keystore`.
 
 ![](./assets/actions-secrets.png)
 You can add the secrets through the repo settings. 
@@ -138,7 +153,8 @@ You can add the secrets through the repo settings.
 ### Upload step
 
 The app has been build but it's still "stuck" on the machine, we need to upload
-it back to GitHub as an Artifact.
+it back to GitHub as an
+[Artifact](https://docs.github.com/en/actions/using-workflows/storing-workflow-data-as-artifacts).
 
 ```yml
     - name: Upload APK Artifact
@@ -153,6 +169,7 @@ it back to GitHub as an Artifact.
 
 Congrats! If all goes well, you should have automatic builds setup and ready!
 
-You should be able to download the signed APK file for every push to main from the Artifacts sections of a run.
+You should be able to download the signed APK file for every push to main from
+the Artifacts sections of a run.
 
 ![](./assets/action-artifacts.png)
