@@ -2,9 +2,11 @@
 
 # Table of Contents
 - [Introduction to Prompt Engineering](#introduction-and-understanding)
-- [Introduction and Understanding](#introduction-and-understanding)
   - [Understanding Large Language Models (LLMs)](#understanding-large-language-models-llms)
+  - [How does it work](#how)
 - [Application](#application)
+  - [Code Generation with LLM](#codegeneration)
+
   - [Code Generation with Large Language Models](#code-generation-with-large-language-models)
 - [Citations](#citations)
 
@@ -14,11 +16,12 @@
 
 ## Understanding Large Language Models (LLMs)
 
+<a id="understanding-large-language-models-llms"></a>
 ### Introduction to LLMs:
 
 Large Language Models (LLMs) are at the forefront of artificial intelligence, driving innovations in natural language processing and beyond. These powerful models are trained on extensive datasets composed of diverse text from the internet, enabling them to grasp the complexities, subtleties, and varied patterns of human language. As a result, LLMs can generate text that's not only coherent and contextually relevant but also remarkably human-like in its composition. Most Common examples include Chatgpt, Copilot, etc.
 
-
+<a id="how"></a>
 ### How does it work?
 
 #### Pre-training:
@@ -36,9 +39,10 @@ Imagine prompting an LLM with the sentence "The sunset over the ocean was a brea
 
 <img width="375" alt="Screenshot 2024-03-17 at 8 49 34 PM" src="https://github.com/Adrianhui123/learning-software-engineering.github.io/assets/97869438/955c38ed-bbc6-43a2-848e-f23d7c27f019">
 
-
+<a id="application"></a>
 # Application
 
+<a id="codegeneration"></a>
 ## Code Generation with Large Language Models
 
 ### Setting the Stage:
