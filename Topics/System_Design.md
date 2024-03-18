@@ -8,3 +8,5 @@
 
 ### [Introduction to Secure Boot and RSA](./System_Design/Security/Secure_Boot_RSA.md)
 
+### Design Patterns
+####  3. [Structural Design Patterns](./System_Design/DesignPatterns/Structural_Design_Patterns.md)
