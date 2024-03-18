@@ -190,37 +190,62 @@ Sign into GitHub through VS Code. You can do this by going to the Accounts Tab o
 
 If you are working in your local folder, you might consider making a Git repo in that folder. This could be useful because if you make a change to some code that works and it breaks after the changes, you could easily revert back to the previous working version. You can do this by opening the folder in VS Code and then navigating to the Source Control tab then selecting the "Initialize Repository" button, creates a Git Repository, thereby making it easy to track changes. 
 
+<img width="300" alt="Initialize and publish git repo" src="https://github.com/vazevaru/learning-software-engineering.github.io/assets/90367491/e8c6a30a-c333-4116-bdff-d59112c00765">
+
 If you are working on a local repository and want to publish it to GitHub, you can do this by opening the folder in VS Code and then navigating to the Source Control tab. To then publish this repository to GitHub press the "Publish to GitHub" button, and after selecting a few options to make the repository, you have successfully published your local repo to GitHub!
 
 ### Cloning a GitHub Repository
 
 If you want to work on an existing repo on GitHub, then you can clone it to work on it locally in VS Code. To do this, first open a new window in VS Code, you will be greeted with the screen below. Click on “Clone Git repository.” You can also go to the "Explorer" tab or the "Version Control" tab on the left pane and do the same.
 
-This will make a text box appear. You can search for the relevant repository and select it. After selecting it, you need to specify a location for the repo. You can either create a new folder or clone it in an existing folder. After selecting the location, you can open the folder and work on the repo!
+<img width="400" alt="Clone Git repo new window" src="https://github.com/vazevaru/learning-software-engineering.github.io/assets/90367491/416d94f7-23f8-467f-af80-d6a622985a78">
+
+This will make a text box appear. 
+
+<img width="400" alt="Clone textbox" src="https://github.com/vazevaru/learning-software-engineering.github.io/assets/90367491/b24e534f-8ff9-4b34-960f-458ce2326869">
+
+You can search for the relevant repository and select it. After selecting it, you need to specify a location for the repo. You can either create a new folder or clone it in an existing folder. After selecting the location, you can open the folder and work on the repo!
+
+<img width="400" alt="Git clone select repo location" src="https://github.com/vazevaru/learning-software-engineering.github.io/assets/90367491/6e6b16e1-05ec-4cf4-987e-3c0e0645bd0b">
+
 
 ### Tracking changes
 
-VS Code provides an easy way to track your changes. In the image below I have added changes to the current file. VS Code indicates this with a green bar on all the lines that have been added.
+VS Code provides an easy way to track your changes. In the image below I have added changes to the current file. VS Code indicates this with a green bar on all the lines that have been added. If existing lines have been modified, this is indicated with a striped blue bar.
 
-If existing lines have been modified, this is indicated with a striped blue bar.
+<img width="400" alt="Track changes blue striped bar" src="https://github.com/vazevaru/learning-software-engineering.github.io/assets/90367491/421a7b5b-bf66-452f-8cac-04f22664aac0">
 
 Click on the blue bar beside the code to look at the modifications that have been made. If you want to revert back to the changes, press the revert button.
 
+<img width="400" alt="Track changes by section" src="https://github.com/vazevaru/learning-software-engineering.github.io/assets/90367491/711d0053-a7d3-4862-8418-d650dc7b59e9">
+
 You can also look at the changes you've made to the entire file by navigating to the "Source Control" tab on the left pane and clicking on the file.
 
+<img width="400" alt="Track changes whole file" src="https://github.com/vazevaru/learning-software-engineering.github.io/assets/90367491/0fd5d3f9-f99e-41cf-b0c1-fed50ef362d1">
+
 To look at the previous versions of your file, navigate to the "Explorer" tab on the left pane (if that's not the current tab you are on) and then look at "Timeline" at the bottom of the tab.
+
+<img width="369" alt="Timeline" src="https://github.com/vazevaru/learning-software-engineering.github.io/assets/90367491/cf2154ac-05fe-4a9c-8c4c-ee527b250d04">
 
 ### Adding files to be committed
 
 When you're working on a file, VS Code shows you the status of your files. For example, if you create a new file in your repo, the character 'U' appears beside your file as shown indicating that the file is untracked. 
 
+<img width="363" alt="Before staging untracked" src="https://github.com/vazevaru/learning-software-engineering.github.io/assets/90367491/c8483106-9e08-4c2b-a9c5-a16b276d508e">
+
 If you modify a file existing in the git repo, the character 'M' appears beside your file indicating that it has been modified.
 
+<img width="365" alt="After modification before staging" src="https://github.com/vazevaru/learning-software-engineering.github.io/assets/90367491/f1e81f23-e2f5-41aa-990a-c386c93b7e35">
+
 This helps in identifying which files need to be added. To add a file you can navigate to the "Version Control" tab on the left. There you can view the changes you've made and the staged changes. To stage the changes, you can press the "+" button beside the file. Your changes have been successfully staged and ready to be committed!
+
+<img width="367" alt="After modification after staging" src="https://github.com/vazevaru/learning-software-engineering.github.io/assets/90367491/f35c0380-dd4a-417c-8933-0dc126f3d9ec">
 
 ### Committing files
 
 To commit files navigate to the "Version Control" tab. You will see a text box on the top where you can put your commit message.Then press Command + Enter if you're on a Mac or Ctrl + Enter if you're on a Windows machine.
+
+<img width="363" alt="Commit" src="https://github.com/vazevaru/learning-software-engineering.github.io/assets/90367491/d24ac24a-6e0c-4de3-9669-ef0d9a5eda8e">
 
 Your files have now been committed!
 
@@ -228,9 +253,9 @@ Your files have now been committed!
 
 Once your files are committed, you can push to GitHub by navigating to the "Version Control" tab and then press "Sync Changes".
 
-This will push your changes!
+<img width="360" alt="Sync Changes" src="https://github.com/vazevaru/learning-software-engineering.github.io/assets/90367491/6ce33bee-46a1-4fc9-88ca-d227d29ed767">
 
-You can also pull from the remote GitHub repo by pressing the "Sync Changes" button.
+This will push your changes! You can also pull from the remote GitHub repo by pressing the "Sync Changes" button.
 
 ## Closing Remarks
 
