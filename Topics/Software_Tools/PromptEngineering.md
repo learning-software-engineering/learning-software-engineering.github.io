@@ -20,6 +20,9 @@ After pre-training, LLMs can undergo fine-tuning on smaller, task-specific datas
 LLMs are not just passive observers of language; they are active creators. Given a prompt or a start of a sentence, these models can generate text that follows logically and engagingly. This generative capability makes them invaluable for applications like content creation, where they can produce original articles, stories, and even poetry that mimics human writing styles.
 
 
+### Examples and Demonstrations:
+Imagine prompting an LLM with the sentence "The sunset over the ocean was a breathtaking sight," and the model continues with "as the hues of pink and orange painted a masterpiece in the sky, reflecting the day's end with a promise of renewal." This example showcases the model's ability to continue the narrative in a way that's contextually appropriate and stylistically coherent.
+
 <img width="375" alt="Screenshot 2024-03-17 at 8 49 34 PM" src="https://github.com/Adrianhui123/learning-software-engineering.github.io/assets/97869438/955c38ed-bbc6-43a2-848e-f23d7c27f019">
 
 
