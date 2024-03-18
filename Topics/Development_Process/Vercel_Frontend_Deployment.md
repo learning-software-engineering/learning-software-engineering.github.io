@@ -6,8 +6,8 @@
 ### [Why Deploy with Vercel?](#why-deploy-with-vercel-1)
 ### [How to Deploy on Vercel?](#how-to-deploy-on-vercel-1)
 ### [Deploying with Vercel CLI](#deploying-with-vercel-cli-1)
-### [Security Best Practices for Deploying on Vercel] (#vercel-security)
-### [Search Engine Optimization (SEO) for Sites Deployed on Vercel] (#vercel-seo)
+### [Security Best Practices for Deploying on Vercel](#vercel-security)
+### [Search Engine Optimization (SEO) for Sites Deployed on Vercel](#vercel-seo)
 ### [Advanced Vercel Features](#advanced-vercel-features-1)
 ### [Useful Articles](#useful-articles-1)
 
