@@ -41,7 +41,7 @@ There are multiple methods to install Tiptap, each tailored to a specific use ca
 
 ## Intro to Tiptap in React
 
-_Include gifs, code snippets, explainations_
+
 
 **1. Create a project** 
 
@@ -75,10 +75,9 @@ Each button in the menu bar example code below takes three arguments. Taking the
 - The [`className`](https://legacy.reactjs.org/docs/faq-styling.html) is `is-active` or blank depending on whether the selected text is bolded. If the `is-active` `className` is present, the bold button in the menu bar will be emphasized.
 
 Here is the code sourced from [here](https://tiptap.dev/docs/editor/installation/react):
-<details>
-  <summary>Tiptap.jsx</summary>
+
   
-  ```
+  ````
   import { Color } from '@tiptap/extension-color'
   import ListItem from '@tiptap/extension-list-item'
   import TextStyle from '@tiptap/extension-text-style'
@@ -198,11 +197,11 @@ Here is the code sourced from [here](https://tiptap.dev/docs/editor/installation
     StarterKit.configure({
       bulletList: {
         keepMarks: true,
-        keepAttributes: false, // TODO : Making this as `false` becase marks are not preserved when I try to preserve attrs, awaiting a bit of help
+        keepAttributes: false, 
       },
       orderedList: {
         keepMarks: true,
-        keepAttributes: false, // TODO : Making this as `false` becase marks are not preserved when I try to preserve attrs, awaiting a bit of help
+        keepAttributes: false, 
       },
     }),
   ]
@@ -228,9 +227,7 @@ Here is the code sourced from [here](https://tiptap.dev/docs/editor/installation
       <EditorProvider slotBefore={<MenuBar />} extensions={extensions} content={content}></EditorProvider>
     )
   }
-  ```
-
-</details>
+ ````
 
 
 
