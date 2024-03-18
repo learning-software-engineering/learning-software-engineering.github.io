@@ -322,6 +322,11 @@ const App = () => {
 };
 ```
 
+**6. See both editors in action**
+```
+npm start
+```
+
 ## Example with (something else Maybe)
 _Maybe Ricky will work on this_
 
