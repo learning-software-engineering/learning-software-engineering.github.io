@@ -71,7 +71,7 @@ There is a sidebar containing code that can be useful for learning how others ha
 ## Setting up Training
 
 Before training, it is important to note that if a GPU is available, using it would speed up training time significantly.
-![GPU testing](./Screenshot%202024-03-17%20225750.png)
+![GPU testing](./DetectingGPU.png)
 To send a PyTorch tensor or PyTorch Module to the GPU, use the method ".to(device)". 
 
 ![Freezing and Overwriting](./OverWritingLastWeights.png)
