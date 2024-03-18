@@ -241,58 +241,92 @@ npm install @tiptap/extension-color @tiptap/extension-text-style
 ```
 npm start
 ```
-**7. Initialize the Tiptap editor without the Markdown extension**
 
-
-```
-
-
-   export default function Tiptap() {
-   return (
-    <EditorProvider
-      slotBefore={<MenuBar />}
-      extensions={extensions}
-      content={content}
-      onUpdate={({ editor }) => {
+**6. Use the output from the editor**
+At the bottom of Tiptap.jsx, add an `onUpdate` prop to the EditorProvider, using the `getHTML()` and `getJSON()` method on the editor object to retrieve the HTML and JSON representations, respectively, of the content in the editor when the user changes it and print it to the browser's console.
+  ```javascript
+  export default function Tiptap () {
+    return (
+      <EditorProvider slotBefore={<MenuBar />} extensions={extensions} content={content} onUpdate={({ editor }) => {
         const json = editor.getJSON();
         const html = editor.getHTML();
         console.log(json);
         console.log(html);
-      }}
-    ></EditorProvider>
-   );}
+      }}></EditorProvider>
+    )
+  }
+  ```
+
+## Example with Markdown Editor in React
+
+By default, Tiptap doesn't support input from or output to Markdown files.[^7] However, there is a community-developed npm package called `tiptap-markdown` that extends Tiptap to enable this. We'll go through the installation of this package and the creation of a simple editor that uses it.
+
+**1. Install `tiptap-markdown`:**
+We'll continue with the React project we created above. Install the [`tiptap-markdown`](https://www.npmjs.com/package/tiptap-markdown) package using npm:
+```
+npm install tiptap-markdown
 ```
 
+**2. Import the package:**
+Make a copy of Tiptap.jsx called Markdown.jsx. Add this import to the top of the file:
+```
+import { Markdown } from 'tiptap-markdown';
+```
 
-## Using Tiptap with Markdown Extension
+**3. Edit the editor:**
+In Markdown.jsx, add `Markdown` to the list of extensions used by the Tiptap editor. Since the input file format has changed from HTML to Markdown, we'll change the initial content as well:
+````
+const extensions = [
+  [...keep the existing extensions...]
+  Markdown,
+]
 
-To use Tiptap editor with the Markdown extension, follow these steps:
+const content = `
+## Hi again,
+Here is a Markdown version!
+\`\`\`css
+body {
+display: none;
+}
+\`\`\`
+`
+````
 
-1. **Initialize the Tiptap editor with the Markdown extension:**
+**4. Render the new editor:**
+At the top of App.js, import the new Markdown editor from Markdown.jsx:
+```
+import Markdown from './Markdown';
+```
 
-   ```javascript
-   export default function Tiptap() {
-     return (
-       <EditorProvider
-         slotBefore={<MenuBar />}
-         extensions={extensions}
-         content={content}
-         onUpdate={({ editor }) => {
-           const new_markdown = editor.storage.markdown.getMarkdown();
-           console.log(new_markdown);
-         }}
-       ></EditorProvider>
-     );
-   }
+Finally, render the new Markdown editor below the existing editor in App.js:
+```
+const App = () => {
+  return (
+    <div className="App">
+      <Tiptap />
+      <Markdown />
+    </div>
+  );
+};
+```
 
+**6. See both editors in action**
+```
+npm start
+```
 
-2. **Retrieve Markdown content:**
-
-   Within the `onUpdate` function, use the `getMarkdown()` method on the editor object to retrieve the Markdown representation of the content.
-   
-   ```javascript
-   const new_markdown = editor.storage.markdown.getMarkdown();
-
+**7. Use the output from the Markdown editor**
+At the bottom of Markdown.jsx, add an `onUpdate` prop to the EditorProvider, using the `getMarkdown()` method on the editor object to retrieve the Markdown representation of the content in the editor when the user changes it and print it to the browser's console.
+  ```javascript
+  export default function Tiptap () {
+    return (
+      <EditorProvider slotBefore={<MenuBar />} extensions={extensions} content={content} onUpdate={({ editor }) => {
+         const new_markdown = editor.storage.markdown.getMarkdown();
+         console.log(new_markdown);
+      }}></EditorProvider>
+    )
+  }
+  ```
 
 ## Citations
 
@@ -303,4 +337,3 @@ To use Tiptap editor with the Markdown extension, follow these steps:
 [^5]: [Create React App Template with Tiptap](https://github.com/alb/cra-template-tiptap)
 [^6]: [Tiptap Editor - Product](https://tiptap.dev/product/editor)
 [^7}: https://tiptap.dev/docs/editor/guide/output
-
