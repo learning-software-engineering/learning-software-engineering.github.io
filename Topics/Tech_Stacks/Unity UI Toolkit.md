@@ -21,19 +21,19 @@ Here we have a project completely fresh, the editor version is 2022.3.18f1 for y
 
 Now we create a UIDocument object in the scene. Like a Canvas object in Unity UI, a UIDocument is what the scene refers to as a placeholder for UI that is going to be displayed on the screen.
 
-![Created UIDocument in Scene](/Unity%20UI%20Toolkit/Created%20UIDocument%20in%20Scene.png)
+![Created UIDocument in Scene](Unity%20UI%20Toolkit/Created%20UIDocument%20in%20Scene.png)
 
 Then create a UIDocument in the assets folder. Despite the same name, this is the source asset, which is the actual contents of the UI.
 
-![Created UIDocument in Assets](/Unity%20UI%20Toolkit/Created%20UIDocument%20in%20Assets.png)
+![Created UIDocument in Assets](Unity%20UI%20Toolkit/Created%20UIDocument%20in%20Assets.png)
 
 Remember to drag your UI contents into its placeholder in the inspectore. This will link them together so that the editor knows which UI to display in this scene.
 
-![Select Source Asset](/Unity%20UI%20Toolkit/Select%20Source%20Asset.png)
+![Select Source Asset](Unity%20UI%20Toolkit/Select%20Source%20Asset.png)
 
 Double-click the UI contents in the assets folder. This is the UI Builder interface, where the entire interface is dedicated to adjust the details of the UI.
 
-![UI Builder](/Unity%20UI%20Toolkit/UI%20Builder.png)
+![UI Builder](Unity%20UI%20Toolkit/UI%20Builder.png)
 
 If you want to know more about using UI Toolkit, see [Unity UI Toolkit Beginner's Guide](https://www.youtube.com/watch?v=0mYtI21Fmg4&list=PLgCVPIIZ3xL_FVLhDrC3atsy8CiZzAMh6) if you want to learn it thoroughly, or [Unity UI Toolkit in 5 Minutes](https://www.youtube.com/watch?v=yUXFHAOXhcA) if you already had much experience with Unity.
 
