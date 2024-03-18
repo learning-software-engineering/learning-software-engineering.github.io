@@ -5,7 +5,7 @@
 
 ### Introduction to LLMs:
 
-Large Language Models (LLMs) are at the forefront of artificial intelligence, driving innovations in natural language processing and beyond. These powerful models are trained on extensive datasets composed of diverse text from the internet, enabling them to grasp the complexities, subtleties, and varied patterns of human language. As a result, LLMs can generate text that's not only coherent and contextually relevant but also remarkably human-like in its composition.
+Large Language Models (LLMs) are at the forefront of artificial intelligence, driving innovations in natural language processing and beyond. These powerful models are trained on extensive datasets composed of diverse text from the internet, enabling them to grasp the complexities, subtleties, and varied patterns of human language. As a result, LLMs can generate text that's not only coherent and contextually relevant but also remarkably human-like in its composition. Most Common examples include Chatgpt, Copilot, etc.
 
 
 ### How does it work?
