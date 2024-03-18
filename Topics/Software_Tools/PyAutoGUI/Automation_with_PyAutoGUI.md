@@ -166,7 +166,53 @@ pyautogui.doubleClick()
 ![sample_gif](./assets/move_folder.gif)
 
 ## Keyboard Controls
-Pending
+## Keyboard Controls
+Once familiar with mouse functions, exploring keyboard interactions becomes the next vital step. PyAutoGui offers various methods for keyboard input, enhancing automation capabilities.
+
+We can write something using the `write()` keyword. This will simply type the argument that is passed into it, which is a string.
+
+```python
+>>> pyautogui.write('Hi!')                  # Prints 'Hi'
+>>> pyautogui.write('Hi!', interval=0.25)   # Similar to the move function, the second argument is
+                                            # the interval between pressing each button
+```
+
+We may sometimes want to just click on a button on the keyboard, which is not a string. Like the enter or the shift button. For this, we can use the `press()` function.
+
+```python
+>>> pyautogui('shift')    # Presses the shift button
+```
+We can similarly use a range of buttons. For the full list, please see the documentation.
+
+Sometimes we may want to press more than one button at a time. For this we can use the `keyUp()` and the `keyDown()` function as done in the following:
+```python
+>>> pyautogui.keyDown('ctrl')    # Press the ctrl button down
+>>> pyautogui.press('p')         # Press the 'p' button and release it
+>>> pyautogui.keyUp('ctrl')      # Lift the press from the ctrl button
+```
+
+To press multiple keys sequentially, pass a list of strings to press():
+
+```python
+>>> pyautogui.press(['tab', 'tab', 'tab'])   # Presses 'tab' key thrice
+>>> pyautogui.press('tab', presses=3)        # Sets the number of presses
+```
+
+The hold() Context Manager: For holding a key conveniently within a context block, hold() function serves as a useful tool:
+
+```python
+>>> with pyautogui.hold('ctrl'):
+        pyautogui.press(['tab', 'tab', 'tab'])
+```
+
+The hotkey() Function: To execute hotkeys or keyboard shortcuts efficiently, utilize the hotkey() function:
+
+```python
+>>> pyautogui.hotkey('ctrl', 'shift', 'p')   # Executes Ctrl + Shift + tab
+```
+These functionalities empower users with versatile keyboard interactions, facilitating seamless automation tasks.
+
+
 
 ## Message Box Functions
 Pending
