@@ -49,8 +49,9 @@ Explaining code involves the model interpreting the logic and function of a give
 The potential for LLMs to assist in debugging and editing code lies in their ability to analyze code for syntactical and logical errors, drawing on examples and patterns from their training data. The model can suggest corrections or improvements by identifying inconsistencies or errors in the code and comparing them with known correct implementations. This capability is particularly valuable for identifying common mistakes and proposing optimized solutions.
 
 
-# Citations
-### https://www.promptingguide.ai/
-### https://www.mckinsey.com/featured-insights/mckinsey-explainers/what-is-prompt-engineering
+## Citations
+- [Prompting Guide](https://www.promptingguide.ai/)
+- [McKinsey Explainers: What is Prompt Engineering?](https://www.mckinsey.com/featured-insights/mckinsey-explainers/what-is-prompt-engineering)
+
 
 
