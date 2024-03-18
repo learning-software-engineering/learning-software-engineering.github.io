@@ -9,11 +9,13 @@
     - [Public Domain Licenses](#public-domain-licenses)
     - [Permissive Licenses](#permissive-licenses)
     - [Copyleft Licenses](#copyleft-licenses)
-        - [General Public License (GPL)](#general-public-license-gpl)
-        - [GNU Lesser General Public Licenses](#gnu-lesser-general-public-licenses)
+        - [GNU General Public License (GPL)](#gnu-general-public-license-gpl)
+        - [GNU Lesser General Public License (LGPL)](#gnu-lesser-general-public-license-lgpl)
     - [Proprietary Licenses](#proprietary-licenses)
 4. [How to Choose the Right License?](#how-to-choose-the-right-license)
 5. [Cases of License Breach](#cases-of-license-breach)
+    - [Free Software Foundation, Inc. v. Cisco Systems, Inc. (2008)](#free-software-foundation-inc-v-cisco-systems-inc-2008)
+    - [Software Freedom Conservancy and Tesla (2018)](#software-freedom-conservancy-and-tesla-2018)
 6. [Conclusion](#conclusion)
 7. [Sources and References](#sources-and-references)
 
@@ -80,17 +82,17 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 
 ### Copyleft Licenses
 
-Copyleft licenses are also known as reciprocal or restrictive licenses. A copyleft licensed code can be modified, redistributed, or incorporated in an existing proprietary project. However, these licenses require that the source code to all new works or adaptations are also distributed under the same license as the original project. Due to this requirement, these types of licenses are not commercial-friendly. Companies do not want to share and expose their source code to other users and specifically competitors, therefore they refrain from using software with copyleft licenses. 
+Copyleft licenses are also known as reciprocal or restrictive licenses. A copyleft licensed code can be modified, redistributed, or incorporated in an existing proprietary project. However, these licenses require that all of the resulting source code, including new works and adaptations are also distributed under the same license as the original project. Due to this requirement, these types of licenses are not commercial-friendly. Companies do not want to share and expose their source code to other users and specifically competitors, therefore they refrain from using software with copyleft licenses. 
 
-#### General Public License (GPL)
+#### GNU General Public License (GPL)
 
-The most frequently used copyleft license in the industry is the General Public License (GPL) family of licenses. The GPL states that any software that uses code licensed under the GPL must also be licensed under the GPL. For this reason, the GPL is considered as a ‘strong copyleft’ license. 
+The most frequently used copyleft license in the industry is the General Public License (GPL). The GPL states that any software that uses code licensed under the GPL must also be licensed under the GPL. For this reason, the GPL is considered as a ‘strong copyleft’ license. 
 
 Here is an image that demonstrates the specific condition of GPL:
 
 ![GPL](https://static-assets.codecademy.com/Courses/open-source/large-software-project.svg)
 
-#### GNU Lesser General Public Licenses
+#### GNU Lesser General Public License (LGPL)
 
 The GNU Lesser General Public License (LGPL) is a software license that is considered 'weak copyleft', meaning it imposes fewer restrictions on derivative works compared to the standard General Public License (GPL). It allows developers to use LGPL-licensed libraries in their own code without necessarily having to release the source code of their own components. This is the notion of dynamic linking. For example, developers can dynamically link LGPL-licensed libraries with proprietary software without requiring the latter to be open-source. However, if modifications are made to the LGPL-licensed libraries themselves, those modifications must be released under the LGPL. This flexibility enables developers to incorporate LGPL-licensed code into both open-source and proprietary projects. While the LGPL is commonly used for software libraries and frameworks, it can also be applied to other types of software. Overall, this type of license creates a balance between promoting openness and allowing for integration with proprietary software.
 
@@ -127,7 +129,7 @@ In 2008, the Free Software Foundation filed a complaint against Cisco Systems cl
 The FSF and Cisco came to a settlement. You can read more about the case [here.](https://www.fsf.org/news/2008-12-cisco-suit)
 
 
-### [Software Freedom Conservancy and Tesla](https://www.theregister.com/2018/05/21/tesla_inches_toward_gpl_compliance/)
+### [Software Freedom Conservancy and Tesla (2018)](https://www.theregister.com/2018/05/21/tesla_inches_toward_gpl_compliance/)
 
 In 2018, after multiple years of pressure from the Software Freedom Conservancy, Tesla released part of its open-source code as required under GNU General Public License (GPL). The company used some GPL-licensed software in the Tesla Model S but had failed to comply with the requirements of the copyleft license.
 
