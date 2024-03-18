@@ -16,7 +16,7 @@
 ## Introduction & Prerequisites
 Framer Motion is a production-ready animation library designed for React. Framer Motion simplifies the process of adding animations by using unique components and props which act as an interface for adding animated properties to elements. 
 
-This page will serve as quick, easy, and informative guide to getting started with the Framer Motion animation library. It will cover the first time installation and set-up of Framer Motion, foundational knowledge of animation components & props, an overview of a few key modifiable values, and a couple of quick tricks. A list of resources will also be included at the end. 
+This page will serve as a quick, easy, and informative guide to getting started with the Framer Motion animation library. It will cover the first time installation and set-up of Framer Motion, foundational knowledge of animation components & props, an overview of a few key modifiable values, and a couple of quick tricks. A list of resources will also be included at the end. 
 
 Before starting with the Framer Motion library, you should have some familliarity with React (specifically the use of [props & components](https://legacy.reactjs.org/docs/components-and-props.html)) as well as basic knowledge of CSS.
 
@@ -62,7 +62,7 @@ We will assume that there is some associated CSS code such that defining `classN
 There are many other properties you can animate, such as opacity and scale.
 
 ### Transitions
-You may notice that the animation above seems a little bland. To fix this, we can add a `transition` prop, which defines how Framer Motion should progress between states. Framer Motion has a few pre-defined transitions which you are able to easily implement in your animations. For example, `easeIn` will cause the animation to start more gradually. You can also specify a duration for how long you want the animation to take. See a possible implementation below:
+You may notice that the animation above seems a little bland. To fix this, we can add a `transition` prop, which defines how Framer Motion should progress between states. Framer Motion has a few pre-defined transitions which you are able to easily implement in your animations. For example, `easeIn` will cause the animation to start more gradually. You can also specify a duration for how long you want the animation to take. You may find more about transitions and any pre-defined values [here.](https://www.framer.com/motion/transition/)  See a possible implementation below:
 
 ```jsx
     <motion.div
@@ -118,5 +118,6 @@ With this, you should have a good grasp on the basics of Framer Motion! Much lik
 ## Resources
 - [Framer Motion Documentation](https://www.framer.com/motion/)
 - [Framer Motion Crash Course Video](https://www.youtube.com/watch?v=znbCa4Rr054)
+- [Transitions in Framer](https://www.framer.com/motion/transition/)
 
 
