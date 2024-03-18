@@ -17,12 +17,6 @@ To download Python, go to the official Python website, where the latest version 
 
 We will now go through the application of OpenAI in python.
 
-## Prerequisites
-
-Before you start, ensure you have the following:
-- Python 3.6 or later installed on your system.
-- An active account with OpenAI and access to your API key.
-
 ## Installation
 
 Firstly, you need to start by installing the OpenAI Python client library. To do so open your terminal and run the following command:
