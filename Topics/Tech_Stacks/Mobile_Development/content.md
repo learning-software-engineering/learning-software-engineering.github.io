@@ -34,11 +34,33 @@ Cross-platform development for mobile involves creating applications that can ru
 
 ## Popular Cross-Platform Development Tools and Frameworks
 According to different skill-set of CSC301 Students they can choose either framework for developing their application. A thorough breakdown is as follows: 
-| Framework    | Description                                                                                                                                                  | Features and Benefits                                                                       | Key Differences                                                                                     | Companies Using                                                                            |
-|--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
-| React Native | Developed by Facebook, allows building native-like apps using JavaScript and React                                                                           | Wide community support and extensive ecosystem of libraries and components                  | Utilizes JavaScript and React for cross-platform development. Notable for its large community.     | Facebook, Instagram, Airbnb                                                               |
-| Flutter      | Developed by Google, offers a fast and expressive way to build native apps for iOS and Android from a single codebase                                       | Layered architecture with customizable widgets for building UIs, Hot reload feature         | Utilizes Dart programming language and features a layered architecture with customizable widgets.   | Alibaba, Google Ads, Reflectly                                                            |
-| Xamarin      | Acquired by Microsoft, allows building native apps for iOS, Android, and Windows using C# and .NET                                                           | Integration with Visual Studio and support for native APIs, Code sharing across platforms    | Utilizes C# and .NET for cross-platform development. Offers deep integration with Visual Studio.    | UPS, Honeywell, Olo                                                                       |
+### React Native
+- **Description:** Developed by Facebook, allows building native-like apps using JavaScript and React.
+- **Features and Benefits:**
+  - Wide community support and extensive ecosystem of libraries and components.
+- **Key Differences:**
+  - Utilizes JavaScript and React for cross-platform development. Notable for its large community.
+- **Companies Using:**
+  - Facebook, Instagram, Airbnb
+
+### Flutter
+- **Description:** Developed by Google, offers a fast and expressive way to build native apps for iOS and Android from a single codebase.
+- **Features and Benefits:**
+  - Layered architecture with customizable widgets for building UIs, Hot reload feature.
+- **Key Differences:**
+  - Utilizes Dart programming language and features a layered architecture with customizable widgets.
+- **Companies Using:**
+  - Alibaba, Google Ads, Reflectly
+
+### Xamarin
+- **Description:** Acquired by Microsoft, allows building native apps for iOS, Android, and Windows using C# and .NET.
+- **Features and Benefits:**
+  - Integration with Visual Studio and support for native APIs, Code sharing across platforms.
+- **Key Differences:**
+  - Utilizes C# and .NET for cross-platform development. Offers deep integration with Visual Studio.
+- **Companies Using:**
+  - UPS, Honeywell, Olo
+
 
 ## Native Mobile Development
 
