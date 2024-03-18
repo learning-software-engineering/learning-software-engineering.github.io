@@ -20,4 +20,9 @@
 
 ## Text Editors
 ### [Introduction to Vim](./Software_Tools/vim.md)
+### [Introduction to Nano](./Software_Tools/nano/nano.md)
 ### [Introduction to Visual Studio Code](./Software_Tools/VSCode.md)
+### [Introduction to Sublime](./Software_Tools/Sublime.md)
+
+## Python Libraries
+### [Automate Tasks using PyAutoGui](./Software_Tools/PyAutoGUI/Automation_with_PyAutoGUI.md)
