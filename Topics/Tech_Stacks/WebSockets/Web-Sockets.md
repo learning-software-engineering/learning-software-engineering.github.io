@@ -11,7 +11,7 @@
 8. [Further Reading](#further-reading)
 
 ## Introduction
-In the evolving landscape of web development, the need for real-time, interactive web applications is more prominent than ever. Users expect dynamic experiences with instant updates—be it in chat applications, live sports scores, or stock market feeds. WebSockets represent a significant advancement in web communication, allowing for real-time, full-duplex communication between the client and server. This technology is especially relevant to the CSC301 curriculum as it introduces students to modern web development practices, preparing them for the challenges of developing interactive, user-centric software solutions.
+In the evolving landscape of web development, the need for real-time, interactive web applications is more prominent than ever. Users expect dynamic experiences with instant updates—be it in chat applications, live sports scores, or stock market feeds. WebSockets represent a significant advancement in web communication, allowing for real-time, full-duplex (like a two-way street with traffic flowing in both directions at the same time) communication between the client and server. This technology is especially relevant to the CSC301 curriculum as it introduces students to modern web development practices, preparing them for the challenges of developing interactive, user-centric software solutions.
 
 ## Understanding WebSockets
 WebSockets are a powerful protocol embedded within the familiar web technology stack, enabling a significant leap in communication capabilities over the Internet. They provide a way to overcome the limitations of the traditional HTTP request-response model, especially when it comes to real-time, low-latency communication.
@@ -43,6 +43,8 @@ In contrast, WebSockets offer a more dynamic communication protocol. After compl
 - **Real-time Data Flow:** The open communication channel enables real-time data exchange. This is particularly beneficial for applications requiring immediate updates, such as online gaming, live sports updates, and financial trading platforms.
 - **Efficient Resource Utilization:** Operating over a single, persistent connection, WebSockets make more efficient use of server and network resources compared to the HTTP model, which opens and closes connections for each request/response pair.
 
+Reduced latency and real-time data flow are critical in several scenarios like online gaming, live auction bidding, financial trading platforms.
+
 ## Advantages and Disadvantages
 
 ### Advantages
@@ -61,7 +63,7 @@ In contrast, WebSockets offer a more dynamic communication protocol. After compl
 
 ## Setting Up
 
-Creating a WebSocket connection involves two main components: a server that accepts connections and a client that initiates the connection. Below are step-by-step instructions and explanations for setting up a basic WebSocket server using Node.js and a client using JavaScript.
+Creating a WebSocket connection involves two main components: a server that accepts connections and a client that initiates the connection. A WebSocket server facilitates real-time, two-way communication between clients and servers, differing from traditional web servers by maintaining persistent connections rather than processing discrete requests. Below are step-by-step instructions and explanations for setting up a basic WebSocket server using Node.js and a client using JavaScript.
 
 ### Server Setup
 
