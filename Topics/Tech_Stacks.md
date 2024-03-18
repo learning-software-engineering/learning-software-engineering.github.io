@@ -185,3 +185,5 @@
 ### [Using Tiptap in a React CRUD App](./Tech_Stacks/Tiptap/Tiptap.md)
 
 ### [Using KY - A versatile HttpClient](./Tech_Stacks/KY.md)
+
+### [Building Interactive Web Applications with WebSockets](./Tech_Stacks/WebSockets/Web-Sockets.md)
