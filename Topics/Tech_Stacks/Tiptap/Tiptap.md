@@ -47,7 +47,7 @@ This will also install the dependencies for you!
 
 **2. Run the Project**
 
-Start your React application to see TipTap in action.
+Start your React application to see Tiptap in action.
 ```
 cd my-tiptap-project
 
@@ -58,7 +58,7 @@ npm start
 
 Improve your editor by adding a menu bar to Tiptap.jsx.
 
-Here is the code sourced from [here](https://tiptap.dev/docs/editor/introduction):
+Here is the code sourced from [here](https://tiptap.dev/docs/editor/installation/react):
 <details>
   <summary>Tiptap.jsx</summary>
   
