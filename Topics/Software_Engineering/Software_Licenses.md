@@ -124,14 +124,14 @@ As mentioned above, there exist many types of software licenses, especially open
 
 In 2008, the Free Software Foundation filed a complaint against Cisco Systems claiming that various Cisco products under the Linksys brand had violated the licenses of many programs on which the FSF held a copyright. Most of the programs were licensed under the GNU General Public License (GPL) and so they allowed users like Cisco to use, modify, and distribute the software in condition that the redistributors shared their source code as well. The FSF accused Cisco of distributing licensed software without sharing source code with its customers.
 
-The FSF and Cisco came to a settlement. You can read more about the case [here].(https://www.fsf.org/news/2008-12-cisco-suit)
+The FSF and Cisco came to a settlement. You can read more about the case [here.](https://www.fsf.org/news/2008-12-cisco-suit)
 
 
 ### [Software Freedom Conservancy and Tesla](https://www.theregister.com/2018/05/21/tesla_inches_toward_gpl_compliance/)
 
 In 2018, after multiple years of pressure from the Software Freedom Conservancy, Tesla released part of its open-source code as required under GNU General Public License (GPL). The company used some GPL-licensed software in the Tesla Model S but had failed to comply with the requirements of the copyleft license.
 
-To learn more about the situation, you can read it [here].(https://www.theregister.com/2018/05/21/tesla_inches_toward_gpl_compliance/)
+To learn more about the situation, you can read it [here.](https://www.theregister.com/2018/05/21/tesla_inches_toward_gpl_compliance/)
 
 
 ## Conclusion
