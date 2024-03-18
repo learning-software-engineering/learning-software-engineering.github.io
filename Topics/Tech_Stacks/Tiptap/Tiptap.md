@@ -135,6 +135,7 @@ To use Tiptap editor with the Markdown extension, follow these steps:
      );
    }
 
+
 2. **Retrieve Markdown content:**
 
    Within the `onUpdate` function, use the `getMarkdown()` method on the editor object to retrieve the Markdown representation of the content.
