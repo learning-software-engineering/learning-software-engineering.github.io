@@ -165,8 +165,119 @@ pyautogui.doubleClick()
 ```
 ![sample_gif](./assets/move_folder.gif)
 
+
 ## Keyboard Controls
-Pending
+Once familiar with mouse functions, exploring keyboard interactions becomes the next vital step. PyAutoGui offers various methods for keyboard input, enhancing automation capabilities.
+
+Some use cases where keyboard functionality in software engineering can be highly beneficial are:
+- **Simulating user input:** Using keyboard functions like `write()` and `press()` allows developers to simulate user input, filling out forms with predefined data efficiently.
+- **Keyboard Shortcuts for Navigation:** Many software applications rely on keyboard shortcuts for quick navigation and task execution. Implementing keyboard shortcuts using PyAutoGui's `hotkey()` function can enhance user productivity and streamline workflow in software development environments.
+- **Integration Testing:**  During integration testing, developers often need to simulate complex user interactions, including keyboard inputs. PyAutoGui's keyboard functions enable developers to programmatically trigger key presses, facilitating thorough testing of software systems under various scenarios.
+- **Command-Line Interfaces (CLI):** Many software tools and utilities feature command-line interfaces (CLI) for interaction. PyAutoGui's keyboard functions can be utilized to automate CLI interactions, allowing developers to script and execute repetitive tasks with ease.
+
+We can write something using the `write()` keyword. This will simply type the argument that is passed into it, which is a string.
+
+```python
+>>> pyautogui.write('Engineering!\n')                  # Prints 'Engineering'
+>>> pyautogui.write('Engineering!', interval=0.25)   # Similar to the move function, the second argument is
+                                                     # the interval between pressing each button
+```
+As an example, the above function gives the following output:
+
+<img width="297" alt="Screenshot 2024-03-17 at 10 03 12 PM" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/97929147/e106b3d7-33e7-40ff-81c7-5e248941c63f">
+
+However, one may wonder what may happen if we inturrupt the program mid execution. For instance the following happens when we click the caps lock button while executing the above program with interval after printing the first 6 characters.
+
+<img width="430" alt="Screenshot 2024-03-17 at 10 06 03 PM" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/97929147/b3c44659-fb55-4afa-bec8-c7adaba542b0">
+
+The keyboard just switched to caps lock after the point it was pressed.
+
+We may sometimes want to just click on a button on the keyboard, which is not a string, like the enter or the shift button. For this, we can use the `press()` function.
+
+```python
+>>> pyautogui('shift')    # Presses the shift button
+```
+We can similarly use a range of buttons. For the full list, please see the documentation.
+
+Sometimes we may want to press more than one button at a time. For this we can use the `keyUp()` and the `keyDown()` function as done in the following:
+```python
+>>> pyautogui.keyDown('ctrl')    # Press the ctrl button down
+>>> pyautogui.press('p')         # Press the 'p' button and release it
+>>> pyautogui.keyUp('ctrl')      # Lift the press from the ctrl button
+```
+
+To press multiple keys sequentially, pass a list of strings to `press()`:
+
+```python
+>>> pyautogui.press(['tab', 'tab', 'tab'])   # Presses 'tab' key thrice
+>>> pyautogui.press('tab', presses=3)        # Sets the number of presses
+```
+
+The `hold()` Context Manager: For holding a key conveniently within a context block, `hold()` function serves as a useful tool:
+
+```python
+>>> with pyautogui.hold('ctrl'):
+        pyautogui.press(['tab', 'tab', 'tab'])
+```
+
+The `hotkey()` Function: To execute hotkeys or keyboard shortcuts efficiently, utilize the `hotkey()` function:
+
+```python
+>>> pyautogui.hotkey('ctrl', 'shift', 'p')   # Executes Ctrl + Shift + p
+```
+These functionalities empower users with versatile keyboard interactions, facilitating seamless automation tasks.
+
+
 
 ## Message Box Functions
-Pending
+PyAutoGui leverages PyMsgBox's message box functions, offering a cross-platform, pure Python solution for displaying JavaScript-style message boxes. These functions serve various purposes and provide flexibility in handling user interactions seamlessly. Here's an overview of the four message box functions provided:
+
+### The alert Function
+
+Displays a simple message box with customizable text and a single OK button. It returns the text of the button clicked on by the user.
+
+```python
+pyautogui.alert(text='Text', title='Title', button='Button')
+```
+Output:
+
+<img width="391" alt="Screenshot 2024-03-17 at 10 15 58 PM" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/97929147/75f86180-6a88-46ef-8fa3-2ad092f941e6">
+
+The meaning of the arguments can be clearly understood when looking at the output.
+
+### The confirm Function
+
+Displays a message box with configurable text and buttons, typically OK and Cancel. Users can choose between the provided options, and it returns the text of the button clicked.
+
+```python
+pyautogui.confirm(text='Text', title='Title', buttons=['OK', 'Cancel'])
+```
+Output:
+
+<img width="390" alt="Screenshot 2024-03-17 at 10 17 55 PM" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/97929147/cdece517-c1dc-4725-aed0-545bc489b3b5">
+
+
+### The prompt Function
+
+Shows a message box with text input field, along with OK and Cancel buttons. Users can input text, and it returns the entered text or None if Cancel was clicked.
+
+```python
+pyautogui.prompt(text='Text', title='Title', default='Default')
+```
+Output:
+
+<img width="345" alt="Screenshot 2024-03-17 at 10 18 46 PM" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/97929147/14a6869b-1abb-4b43-a530-ffe1d4b0e479">
+
+### The password Function
+
+Similar to the `prompt()` function, it displays a message box with a text input field. However, the typed characters are masked, typically with asterisks (*). It returns the entered text or None if Cancel was clicked.
+
+```python
+pyautogui.password(text='', title='', default='', mask='*')
+```
+Output:
+
+<img width="342" alt="Screenshot 2024-03-17 at 10 19 35 PM" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/97929147/ac238e45-de2e-4dd9-b64b-99c90e77eccd">
+
+
+These functions empower users to handle various types of user interactions effectively within their Python scripts, enhancing the user experience and interactivity of their applications.
