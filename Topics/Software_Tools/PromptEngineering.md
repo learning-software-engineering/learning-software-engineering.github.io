@@ -9,7 +9,7 @@ Example: Let's say you want the AI to write a poem about the ocean, but it was n
 
 <img width="200" alt="Screenshot 2024-03-17 205057" src="https://github.com/csc301-2024-s/learning-software-engineering.github.io/assets/75962325/8176099c-30f2-4347-aa2d-9cde47285402">
 
-Application Tips:
+#### Application Tips:
 - Be clear and precise in your prompt. Since the model has no examples to learn from in this context, clarity in task description is crucial.
 - Incorporate relevant keywords or concepts related to the task to help the model understand the context.
 
@@ -25,7 +25,7 @@ Service Response: "We're so sorry for the delay. We'll look into it and ensure i
 
 You then ask the AI to respond to a new complaint, "I received the wrong item," guiding it to generate a similar style of response.
 
-Application Tips:
+#### Application Tips:
 - Select your examples carefully. They should be representative of the task and closely match the desired output format or context.
 - Limit the number of examples to avoid overwhelming the model or biasing the response too heavily towards the examples given.
 
@@ -44,7 +44,7 @@ This method helps the AI understand and tackle each part of the problem, leading
 
 In each of these techniques, the key is to communicate effectively with the AI, guiding it to understand and perform tasks it wasn't directly trained to do. Whether you're giving it a brand new challenge, showing it a few examples, or walking it through a problem step by step, these methods enhance how well the AI can assist you.
 
-Application Tips:
+#### Application Tips:
 - Break down the task into smaller, manageable steps that the model can logically follow.
 - Encourage the model to explicitly state its reasoning at each step, which not only clarifies the thought process but also helps in identifying any logical errors.
 - Adjust the complexity of the steps based on the task's difficulty and the model's capabilities.
