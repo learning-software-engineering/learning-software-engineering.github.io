@@ -12,7 +12,7 @@
 
 ### [FastAPI](./Tech_Stacks/FastAPI.md)
 
-### [Embedded Javascript (./Tech_Stacks/EJS.md)
+### [Embedded Javascript](./Tech_Stacks/EJS.md)
 
 ### [Nuxt3](./Tech_Stacks/Nuxt3.md)
 
