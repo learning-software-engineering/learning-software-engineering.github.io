@@ -63,6 +63,6 @@ These principles illustrate Amazon's customer-centric culture and highlight the 
 
 ### Core Concepts in Product Management:
 1. [Product Management vs Product Ownership](./Product_Management/Product_Management_vs_Product_Ownership.md)
-2. [Agile Product Development Methodologies]
-3. [User-Centered Design (UCD) Vs. Design-Driven Development (DDD)]
+2. [Agile Product Development Methodologies](./Product_Management/Agile_Methodologies_Product_Management.md)
+3. [User-Centered Design (UCD) Vs. Design-Driven Development (DDD)](./Product_Management/UCD_vs_DDD.md)
 
