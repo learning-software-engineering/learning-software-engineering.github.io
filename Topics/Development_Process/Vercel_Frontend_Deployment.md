@@ -135,6 +135,7 @@ This command sets environment variables KEY1 and KEY2 with the respective values
 For more CLI usages, refer to [Vercel documentation](https://vercel.com/docs/cli/deploy).
 
 ## Security Best Practices for Deploying on Vercel
+
 When deploying applications on Vercel, ensuring the security of your frontend and its data is paramount. Here are key practices to help you safeguard your deployments:
 
 ### Environment Variables
@@ -159,6 +160,7 @@ When deploying applications on Vercel, ensuring the security of your frontend an
 - Keep all your project dependencies up to date. This includes the libraries and frameworks your application uses. Outdated dependencies may contain security vulnerabilities that attackers can exploit.
 
 ## Search Engine Optimization (SEO) for Sites Deployed on Vercel
+
 Maximizing the visibility of your Vercel-deployed sites in search engine results is crucial for attracting traffic. Implement these SEO strategies to improve your site’s ranking:
 
 ### Optimize Site Performance
