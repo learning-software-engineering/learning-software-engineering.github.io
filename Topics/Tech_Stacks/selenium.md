@@ -191,10 +191,13 @@ In this tutorial we will first **(1) set up our project**, then use Selenium to 
     # Text Field
     textField = WebDriverWait(driver, 5).until(
         EC.visibility_of_element_located((By.CLASS_NAME, "whsOnd.zHQkBf"))
-    )
-    textField.click()
-    textField.send_keys("Hello")
+    ) # Function waits until element is present on the screen before executing actions
+    textField.click() # Simulate mouse button press
+    textField.send_keys("Hello") # Simulate keyboard typing
     ```
+    
+    Waiting is vital in Selenium UI testing to ensure that web elements are fully loaded and ready for interaction. Without proper waiting mechanisms, tests may fail due to elements not being accessible or interactive. By incorporating waiting strategies, such as explicit waits, testers can allow sufficient time for elements to appear, become clickable, or undergo necessary changes. This improves test reliability and reduces the likelihood of false negatives, resulting in more accurate and stable test results.
+
 3.  **Selenium: Selecting Multiple Choice**
     
     Let's say we wanted to select 'Option 2'. Following similar steps as above we will first locate the css selectors. Inspecting the multiple choice option for 'Option 2' we see the following:
@@ -210,6 +213,10 @@ In this tutorial we will first **(1) set up our project**, then use Selenium to 
     )
     option2.click()
     ```
+
+    To identify and choose fields for CSS selectors effectively, testers can inspect the HTML structure of the webpage using browser developer tools. Pay attention to unique attributes or classes associated with the elements of interest. For dynamically generated content, focus on attributes or classes that remain consistent across different instances of the element.
+
+    For example, if you're targeting the third option under a ```<div>``` element with the class name "something," your CSS selector could be structured as ```.something > option:nth-child(3)```. This selector targets the third ```<option>``` element within any ```<div>``` element with the class "something."   
 
 4.  **Selenium: Selecting Dropdown**
 
@@ -265,7 +272,87 @@ In this tutorial we will first **(1) set up our project**, then use Selenium to 
     submit = driver.find_elements(By.CSS_SELECTOR, "[role='button']")
     submit[2].click()
     ```
-    
+
+6. **Debugging Selenium**
+    Selenium UI testing, while powerful, is prone to encountering various errors during test execution. These errors can stem from issues such as unselectable CSS selectors, element visibility problems, or timing issues where elements haven't loaded properly. Below are some common errors and strategies for handling them effectively:
+
+    -   **CSS Selector Issues:** Sometimes, CSS selectors may not accurately identify the intended elements due to complex page structures or dynamic content. To address this, consider using alternative locator strategies such as XPath or employing more robust CSS selectors.
+
+    -   **Element Visibility and Interactivity:** Selenium may attempt to interact with elements that are not yet visible or interactive on the page. Utilize explicit waits to ensure elements are fully loaded and ready for interaction before performing actions on them. This can help mitigate errors related to element not clickable, element not visible, or stale element references.
+
+    -   **Page Loading Delays:** Timing issues can arise when Selenium attempts to interact with elements before the page has finished loading. Implement implicit or explicit waits to handle dynamic loading elements or asynchronous JavaScript operations, ensuring that the page is fully loaded before proceeding with test execution.
+
+**Conclusion**
+
+Now that we have gone through all the steps we are now able to automate the Google Form created. Below is the completed code showing now with the ```fill_form``` function finished:
+
+``` python
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+import time
+
+# The Google Form we are working with
+browserURL = "https://forms.gle/rbxs4fNCbBSzfPW1A"
+
+# Make sure the driver version matches your Chrome browser
+# Can be found at https://googlechromelabs.github.io/chrome-for-testing/
+pathToChromeDriver = "C:\\Users\\edwar\\Downloads\\chromedriver.exe"
+
+
+def fill_form(driver):
+
+    time.sleep(5)
+
+    # Text Field
+    textField = WebDriverWait(driver, 5).until(
+        EC.visibility_of_element_located((By.CLASS_NAME, "whsOnd.zHQkBf"))
+    )
+    textField.click()
+    textField.send_keys("Hello")
+
+    # Multiple Choice
+    option2 = WebDriverWait(driver, 5).until(
+        EC.element_to_be_clickable((By.ID, "i12"))
+    )
+    option2.click()
+   
+    # Dropdown
+    dropdown = WebDriverWait(driver, 5).until(
+        EC.element_to_be_clickable((By.CLASS_NAME, "MocG8c.HZ3kWc.mhLiyf.LMgvRb.DEh1R.KKjvXb"))
+    )
+    dropdown.click()
+
+    # Dropdown Options
+    dropdownOption2 = WebDriverWait(driver, 5).until(
+        EC.element_to_be_clickable((By.CSS_SELECTOR, '[class="OA0qNb ncFHed QXL7Te"] [data-value="Option 2"]'))
+    )
+    dropdownOption2.click()
+
+    # Submit 
+    submit = driver.find_elements(By.CSS_SELECTOR, "[role='button']")
+    submit[2].click()
+
+    time.sleep(2)
+
+if __name__ == '__main__':
+    # Set up ChromeDriver service
+    options = Service(executable_path=pathToChromeDriver)
+
+    # Initialize WebDriver with ChromeDriver service
+    driver = webdriver.Chrome(service=options)
+    driver.get(browserURL)
+
+    # Call function to populate the form
+    fill_form(driver)
+
+    # Stop the webdriver after form has been submitted
+    driver.quit()
+```
+   
+Last thing to note is that I've added a couple of waits in the final code just to first allow the page to fully load first then at the end so that when you execute it you can see the finished result before the browser closes.
 
 ## <a name="ack"></a> Acknowledgements:
 - **Selenium**: Selenium is an open-source framework for automating browser interactions. To learn more about Selenium and its capabilities, please visit the official Selenium website: [Selenium Documentation](https://www.selenium.dev/documentation/en/)
