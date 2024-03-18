@@ -13,7 +13,7 @@ Containerized applications are becoming more popular due to the consistency they
     - Create an amazon ECR repository
     - Create an ECS cluster, service as well as task definition
 
-**NOTE**: It's important that your ECR repository and ECS cluster are defined on the same AWS region otherwise you may have to sign into aws twice below
+**NOTE**: It's important that your ECR repository and ECS cluster are defined on the same AWS region otherwise you may have to sign into aws twice throughout the workflow
 
 
 ## Step 2 (Setting up the workflow -- triggers):
@@ -42,8 +42,8 @@ jobs:
 
 ## Step 3 (Checking out the repo)
 ```
-- name: Checkout
-        uses: actions/checkout@v4
+    - name: Checkout
+            uses: actions/checkout@v4
 ```
 - Create a new step for checking out the current repo. This ensures that in subsequent steps you have access to all code within your current repo
 
