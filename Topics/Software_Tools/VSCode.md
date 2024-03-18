@@ -190,7 +190,7 @@ Sign into GitHub through VS Code. You can do this by going to the Accounts Tab o
 
 If you are working in your local folder, you might consider making a Git repo in that folder. This could be useful because if you make a change to some code that works and it breaks after the changes, you could easily revert back to the previous working version. You can do this by opening the folder in VS Code and then navigating to the Source Control tab then selecting the "Initialize Repository" button, creates a Git Repository, thereby making it easy to track changes. 
 
-<img width="300" alt="Initialize and publish git repo" src="https://github.com/vazevaru/learning-software-engineering.github.io/assets/90367491/e8c6a30a-c333-4116-bdff-d59112c00765">
+<img width="600" alt="Initialize and publish git repo" src="https://github.com/vazevaru/learning-software-engineering.github.io/assets/90367491/e8c6a30a-c333-4116-bdff-d59112c00765">
 
 If you are working on a local repository and want to publish it to GitHub, you can do this by opening the folder in VS Code and then navigating to the Source Control tab. To then publish this repository to GitHub press the "Publish to GitHub" button, and after selecting a few options to make the repository, you have successfully published your local repo to GitHub!
 
@@ -198,30 +198,30 @@ If you are working on a local repository and want to publish it to GitHub, you c
 
 If you want to work on an existing repo on GitHub, then you can clone it to work on it locally in VS Code. To do this, first open a new window in VS Code, you will be greeted with the screen below. Click on “Clone Git repository.” You can also go to the "Explorer" tab or the "Version Control" tab on the left pane and do the same.
 
-<img width="400" alt="Clone Git repo new window" src="https://github.com/vazevaru/learning-software-engineering.github.io/assets/90367491/416d94f7-23f8-467f-af80-d6a622985a78">
+<img width="600" alt="Clone Git repo new window" src="https://github.com/vazevaru/learning-software-engineering.github.io/assets/90367491/416d94f7-23f8-467f-af80-d6a622985a78">
 
 This will make a text box appear. 
 
-<img width="400" alt="Clone textbox" src="https://github.com/vazevaru/learning-software-engineering.github.io/assets/90367491/b24e534f-8ff9-4b34-960f-458ce2326869">
+<img width="600" alt="Clone textbox" src="https://github.com/vazevaru/learning-software-engineering.github.io/assets/90367491/b24e534f-8ff9-4b34-960f-458ce2326869">
 
 You can search for the relevant repository and select it. After selecting it, you need to specify a location for the repo. You can either create a new folder or clone it in an existing folder. After selecting the location, you can open the folder and work on the repo!
 
-<img width="400" alt="Git clone select repo location" src="https://github.com/vazevaru/learning-software-engineering.github.io/assets/90367491/6e6b16e1-05ec-4cf4-987e-3c0e0645bd0b">
+<img width="600" alt="Git clone select repo location" src="https://github.com/vazevaru/learning-software-engineering.github.io/assets/90367491/6e6b16e1-05ec-4cf4-987e-3c0e0645bd0b">
 
 
 ### Tracking changes
 
 VS Code provides an easy way to track your changes. In the image below I have added changes to the current file. VS Code indicates this with a green bar on all the lines that have been added. If existing lines have been modified, this is indicated with a striped blue bar.
 
-<img width="400" alt="Track changes blue striped bar" src="https://github.com/vazevaru/learning-software-engineering.github.io/assets/90367491/421a7b5b-bf66-452f-8cac-04f22664aac0">
+<img width="600" alt="Track changes blue striped bar" src="https://github.com/vazevaru/learning-software-engineering.github.io/assets/90367491/421a7b5b-bf66-452f-8cac-04f22664aac0">
 
 Click on the blue bar beside the code to look at the modifications that have been made. If you want to revert back to the changes, press the revert button.
 
-<img width="400" alt="Track changes by section" src="https://github.com/vazevaru/learning-software-engineering.github.io/assets/90367491/711d0053-a7d3-4862-8418-d650dc7b59e9">
+<img width="600" alt="Track changes by section" src="https://github.com/vazevaru/learning-software-engineering.github.io/assets/90367491/711d0053-a7d3-4862-8418-d650dc7b59e9">
 
 You can also look at the changes you've made to the entire file by navigating to the "Source Control" tab on the left pane and clicking on the file.
 
-<img width="400" alt="Track changes whole file" src="https://github.com/vazevaru/learning-software-engineering.github.io/assets/90367491/0fd5d3f9-f99e-41cf-b0c1-fed50ef362d1">
+<img width="600" alt="Track changes whole file" src="https://github.com/vazevaru/learning-software-engineering.github.io/assets/90367491/0fd5d3f9-f99e-41cf-b0c1-fed50ef362d1">
 
 To look at the previous versions of your file, navigate to the "Explorer" tab on the left pane (if that's not the current tab you are on) and then look at "Timeline" at the bottom of the tab.
 
