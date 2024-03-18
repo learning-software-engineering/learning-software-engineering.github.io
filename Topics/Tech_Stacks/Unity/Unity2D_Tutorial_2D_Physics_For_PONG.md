@@ -8,7 +8,10 @@
 5. [Collision Detection](#collision-detection)
 6. [Conclusion](#conclusion)
 
+
 ## Introduction
+Understanding physics is crucial for creating realistic interactions between game objects. This tutorial will focus on the built-in physics manager in Unity2D, and how we can use that to our advantage when we are making a simple game of PONG! You are more than welcome to program your own physics using scripts, but the built-in physics manager in Unity2D is a good place to start, especially for standard Newtonian physics.
+
 This tutorial will guide you through implementing physics in Unity2D for a PONG! game. You can easily apply concepts learnt here to many other top-down games like Rimworld or even platformer/sandworld games such as Terraria. 
 
 This tutorial assumes you have a basic understanding of how Unity works, and are familiar with Unity's editor UI. Regardless, the tutorial will break the steps down into detail.
@@ -17,13 +20,10 @@ This tutorial is focused on game mechanics rather than art, so we will be using 
 We will use Editor Version 2021.3.4f1 for this, under a Student License.
 Unity's primary scripting language is C#, so we will assume a basic understanding of it. Regardless, we will provide all the code for it but not offer explanations.
 
-## Overview
-Understanding physics is crucial for creating realistic interactions between game objects. This tutorial will focus on the built-in physics manager in Unity2D, and how we can use that to our advantage when we are making a simple game of PONG! You are more than welcome to program your own physics using scripts, but the built-in physics manager in Unity2D is a good place to start, especially for standard Newtonian physics.
-
 ## Setting Up the Scene
-Start by creating a new 2D project in Unity. We will use the 2D Core preset, labelling it Pong-Trial.
+Start by creating a new 2D project in Unity. We will use the 2D Core preset, labeling it Pong-Trial. This is to ensure that Unity recognizes our project is taking place in the 2D Domain.
 
-![](Unity2D_Physics_Images/create-project.png)
+![]([Unity2D_Physics_Images/create-project.png](https://github.com/learning-software-engineering/learning-software-engineering.github.io/blob/Unity2D-Implementing-2D-PONG-Physics/Topics/Tech_Stacks/Unity/Unity2D_PONG!_Physics_Images/create-project.png))
 
 Once you open the project, you should be greeted with an empty scene. The only thing in your scene should be a gameobject called Main Camera.
 The first we will do is set the background color to whatever color you want. For this tutorial, we will use white.
@@ -32,11 +32,11 @@ To do so, click on the Main Camera object in your heirarchy. Doing so will bring
 ![](Unity2D_Physics_Images/white-camera.png)
 
 ## Creating Physics Objects
-1. **Create a Player Objects:** Next, we will create a player object. Our player will be a rectangle. To make the player, right click on empty space in the heirarchy and nagivate to 2D Object -> Sprites -> Square. This will create a new gameobject with a sprite renderer component attached to it. Name it player (or anything you want).
+1. **Create a Player Object:** Next, we will create a player object. Our player will be a rectangle. To make the player, right click on empty space in the heirarchy and nagivate to 2D Object -> Sprites -> Square. This will create a new gameobject with a sprite renderer component attached to it. Name it player (or anything you want).
 
 ![](Unity2D_Physics_Images/select-square.png)
 
-For the sake of simplicity, I will name this square as Player1. Edit the "Scale" of the square to resemble a rectangle in the right hand pane. Additionally, change the color of the square to be black, in order to contrast the white camera background.
+For the sake of simplicity, I will name this square as Player1. The right hand pane represents properties of the GameObject you just created. We want our paddle to look like a rectangle. You can either use your cursor or you can utilize the "Scale" property of the Player1 square. Additionally, in order to contrast the white camera background, change the color of the square to be black.
 
 ![](Unity2D_Physics_Images/now-rectangle.png)
 
@@ -67,7 +67,7 @@ It is very easy to fix the two overlapped paddles. Remember to always select obj
 ![](Unity2D_Physics_Images/welcome-colliders.png)
 
 
-Then, navigate to the right hand side of the screen and select "Add Component". Search for "collider" and then, select "Box Collider 2D".
+Then, navigate to the right hand side of the screen and select "Add Component". Search for "collider" and then, select "BoxCollider2D". BoxCollider2D is a component in Unity that defines a box-shaped collider for 2D physics interactions. It is used to define the shape of an object's collider in a 2D game. Colliders are used to detect collisions with other objects and respond accordingly based on the physics properties assigned to them. We typically use BoxCollider2D whenever we use rectangles and squares.
 
 From here, you should see your objects highlighted in a different color. This represents the hitbox of your sprites. This means that other sprites with a hitbox will recognize this hitbox, and react accordingly. 
 
@@ -87,7 +87,7 @@ The Rigidbody2D component in Unity is a physics component that allows GameObject
 
 ![](Unity2D_Physics_Images/project-settings.png)
 
-From here, drop down "Vertical" and "VerticalDupe". Change it so that they have no alternate settings, one of them follows "WASD" convention and the other follows the Arrow key convention. 
+From here, drop down "Vertical" and "VerticalDupe". For both of them, you only want to have primary inputs. You can choose to have alternate inputs, although that would be redundant. Let one of the inputs follow the "WASD" convention and the other follow the Arrow key convention. 
 
 ![](Unity2D_Physics_Images/input.png)
 
@@ -119,8 +119,7 @@ And there you go! Click play on the top and the ball should bounce around, and h
 ![](Unity2D_Physics_Images/error.png)
 
 
-
-4. **Cleanup:** This is where we make tweak our physics to obey game logic. Right click and "Create->2D->Physics Material 2D to create" a new 2D material, set bounciness to 1 and the other property to 0.
+4. **Cleanup:** This is where we make tweak our physics to obey game logic. Right click and "Create->2D->Physics Material 2D to create" a new 2D material, set bounciness to 1 and the other property to 0. We do this to ensure that during each bounce, the ball retains its momentum and does not lose it over time. Tweak the "bounciness" to experiment how the ball's momentum can vary on collision.
 
 ![](Unity2D_Physics_Images/material.png)
 
