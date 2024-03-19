@@ -6,7 +6,17 @@ You may know of the LSP from the SOLID principles, which roughly says that insta
 
 _Subtype Requirement_: Let ![{\displaystyle \phi (x)}](https://wikimedia.org/api/rest_v1/media/math/render/svg/546b660b2f3cfb5f34be7b3ed8371d54f5c74227) be a property provable about objects ![{\displaystyle x}](https://wikimedia.org/api/rest_v1/media/math/render/svg/87f9e315fd7e2ba406057a97300593c4802b53e4) of type T. Then ![{\displaystyle \phi (y)}](https://wikimedia.org/api/rest_v1/media/math/render/svg/db7ffe2f7daf9bae8d3f2711b2fd67348aceb3dc) should be true for objects ![{\displaystyle y}](https://wikimedia.org/api/rest_v1/media/math/render/svg/b8a6208ec717213d4317e666f1ae872e00620a0d) of type S where S is a subtype of T.
 
-If the subtype requirement is satisfied, then not only is the correctness of our program preserved when substituting objects for sub-objects, but also any *provable* property! What is means for a property to be provable is perhaps unclear, so let's just assume for simplicity our own intuitive notions of provability.
+If the subtype requirement is satisfied, then not only is the correctness of our program preserved when substituting objects for sub-objects, but also any *provable* property! What it means for a property to be provable is perhaps unclear, so let's just assume for simplicity our own intuitive notions of provability.
+
+## 2. An Example of Violating The Subtype Requirment
+In the code below we have the classic Square vs Rectangle classes. One may think that this is a perfectly good use of subtyping/inheritance, however, this violates the subtype requirement. One easy way to show that the subtype requirement is violated is to look at what instance variables are mutated after a call *setWidth(10)*. Clearly, for a Rectangle object, only *width* is mutated. However, for a Square object, both *width* and *height* would be mutated. If we look at the definition of the subtype requirement, it's clear that it does not hold for this example. So what should we do then? 
+
+We could try extracting out the logic of setting the width and height simultaneously for the Square class to a new method, say *setLength*, and that would fix the violation. However, would the Square still really be a Square if we can set its width and height independently? That's probably not what we want. A better solution here would be to lift the role of the Rectangle class as the supertype into an abstract class or interface – a Shape type – that declares only the *width* and *height* variables as well as the *getArea* method. This way, both the Square and Rectangle classes can implement their width and height mutating methods independently, and since their supertype Shape makes no assumptions about how *width* and *height* are ought to be mutated, perfectly satisfies the subtype requirement.
+
+\
+<img width="600" alt="image" src="https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/72905894/f7053ce9-dce1-49ff-881b-71d0ca4d9f8b">
+
+
 
 ## 2. The Principles in The LSP
 The subtype requirement is an incredibly powerful tool for reasoning about our programs, but how does the LSP help us guide our programming to satsify it? The LSP imposes requirements[^1] on method signatures common across many typed languages:
@@ -33,7 +43,7 @@ If you've learnt about OOP, you may have been told that the use of mutable publi
 A side note: the satisfaction of the subtype requirement is undecidable, meaning no computer program, hence no compiler or linter or any static analysis tool, can figure out whether or not its violated in general.
 
 ## 3. Conclusion
-We discussed the notion of subtyping proposed by the LSP and its utility for reasoning about our programs. We discussed the actual principles/requirements imposed by the LSP to guide our programming to satisfy the subtyping requirement. And finally, we looked at an example of how the novel History Constraint introduced by the LSP impacts how we do object-oriented programming. Hopefully this writeup gave a little bit more insight into the implications of the LSP and motivated its ideas for some readers. Of course, there's much more to learn about the LSP than what we've discussed here. The Wikipedia article and the original paper[^2] by Liskov and Wing are good places to go next.
+We discussed the notion of subtyping proposed by the LSP and its utility for reasoning about our programs. We looked at an example of how the subtype requirment can be violated in a simple use of class inheritance. We discussed the actual principles/requirements imposed by the LSP to guide our programming to satisfy the subtyping requirement. And finally, we looked at an example of how the novel History Constraint introduced by the LSP impacts how we do object-oriented programming. Hopefully this writeup gave a little bit more insight into the implications of the LSP and motivated its ideas for some readers. Of course, there's much more to learn about the LSP than what we've discussed here. The Wikipedia article and the original paper[^2] by Liskov and Wing are good places to go next.
 
 
 
