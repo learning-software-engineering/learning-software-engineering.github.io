@@ -12,6 +12,7 @@
 ### [A fin-troduction to `fish`](./Software_Tools/fish.md)
 
 ## AI
+### [Introduction to Prompt Engineering](./Software_Tools/PromptEngineering.md)
 ### [Introduction to AI Frameworks in Software Engineering](./Software_Tools/TensorFlow-Keras.md)
 ### [Using the OpenAI API in Python](./Software_Tools/OpenAI-API.md)
 
@@ -20,3 +21,12 @@
 
 ## Text Editors
 ### [Introduction to Vim](./Software_Tools/vim.md)
+### [Introduction to Nano](./Software_Tools/nano/nano.md)
+### [Introduction to Visual Studio Code](./Software_Tools/VSCode.md)
+### [Introduction to Sublime](./Software_Tools/Sublime.md)
+
+## Python Libraries
+### [Automate Tasks using PyAutoGui](./Software_Tools/PyAutoGUI/Automation_with_PyAutoGUI.md)
+
+## Virtual Machines
+### [Introduction to Virtual Machines](./Software_Tools/virtual_machine.md)
