@@ -72,8 +72,6 @@ spec:
           name: example-configmap
 
 ```
-Certainly! Here's the reworded version:
-
 k8s allows for dynamic patching of environment variables into containers using `Secrets` and `ConfigMaps`. `Secrets `typically safeguard vital credentials from unauthorized access, while `ConfigMaps` serve as repositories for local configurations that dictate application behavior. `Secrets` encode sensitive data like passwords and API tokens in a base64 format to maintain confidentiality, while `ConfigMaps` store non-sensitive settings such as environment variables and application configurations.  
 ```yaml
 apiVersion: v1
