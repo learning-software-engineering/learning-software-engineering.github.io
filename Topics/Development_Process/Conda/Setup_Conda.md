@@ -60,7 +60,7 @@ Then just download and click through the install process until you have complete
 
 The setup guide for **MacOS** is [here](#setup-macos), for **Windows** is [here](#setup-windows)
 
-### Setup [MacOS]
+### Setup [MacOS] for Miniconda
 
 Regarding the setup process for Miniconda, multiple different situations can arise. 
 
@@ -80,7 +80,7 @@ One of the common fixes for this is to call `conda init [shell_type]`. For examp
 
 With all that being said, we can finally start to unleash the power of Conda. [Hyperlink here](#creating-environments-python)
 
-### Setup [Windows]
+### Setup [Windows] for Miniconda
 
 > Guide Reference: https://gist.github.com/martinsotir/2bd2e16332dff71e0fa5be3ed3468a6c
 
@@ -135,17 +135,20 @@ Here is an example of how the MacOS anaconda installer looks like:
 
 Setup guides for different operating systems can be found through the following links: for **MacOS** [here](#setup-macos), and for **Windows** [here](#setup-windows).
 
-### Setup [MacOS]
+### Setup [MacOS] for Anaconda
 
 The setup process for Anaconda can vary based on your operating system and shell configuration.
 
 To verify if Anaconda has been installed successfully, open your system's shell. For macOS users, the default shell is typically `zsh`. You can open `zsh` by pressing "Command + Space", typing `terminal`, and selecting the first result.
 
-In the terminal window, type `conda` and press enter.
+In the terminal window, run the following to display the version of Anaconda installed on your system. 
+```
+conda list anaconda
+```
 
 ![verifying anaconda installation](anaconda_verify.png)
 
-If a list of command options appears, it indicates that Anaconda is installed correctly, and you can proceed to [Creating Environments (Python)](#creating-environments-python).
+If a list of anaconda version appears, it indicates that Anaconda is installed correctly, and you can proceed to [Creating Environments (Python)](#creating-environments-python).
 
 Should you encounter any issues where Anaconda commands are not recognized, one common fix is to initialize Anaconda for your shell. This process can be completed by running `conda init [shell_type]`. If you're using macOS, guidance for this step is provided [here](https://docs.conda.io/projects/conda/en/latest/user-guide/install/macos.html).
 
