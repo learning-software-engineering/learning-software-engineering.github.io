@@ -133,7 +133,7 @@ Download the installer and follow the prompts to complete the installation proce
 Here is an example of how the MacOS anaconda installer looks like:
 ![anaconda installer example] (anaconda_installer.png)
 
-Setup guides for different operating systems can be found through the following links: for **MacOS** [here](#setup-macos), and for **Windows** [here](#setup-windows).
+Setup guides for different operating systems can be found through the following links: for **MacOS** [here](#setup-macos-for-Anaconda), and for **Windows** [here](#setup-windows-for-Anaconda).
 
 ### Setup [MacOS] for Anaconda
 
