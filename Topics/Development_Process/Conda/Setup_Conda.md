@@ -123,7 +123,7 @@ Should you encounter any issues where Anaconda commands are not recognized, one 
 
 With Anaconda successfully installed and initialized, you're ready to explore its robust features. You can use the GUI of anaconda or command line.
 ![anaconda gui](anaconda_gui.png)
-[In this doc, we will only talk about creating Python environments using command line](#creating-environments-python). If you need help with GUI, you can check out the official documentation [here](https://docs.anaconda.com/free/navigator/?utm_source=anaconda_navigator&utm_medium=nav-docs).
+In this doc, we will only talk about creating Python environments using command line](#creating-environments-python). If you need help with GUI, you can check out the official documentation [here](https://docs.anaconda.com/free/navigator/?utm_source=anaconda_navigator&utm_medium=nav-docs).
 
 ## Setup [Windows] for Anaconda
 
