@@ -1,7 +1,22 @@
+# Utilizing Standards to Adopt Best-Practices in Software Engineering
+
+## Table of Contents
+
+### [What Is a Standard?](#what-is-a-standard-1)
+
+### [Why Are Standards Important?](#why-are-standards-important-1)
+
 ### [How Are Standards Created?](#how-are-standards-created-1)
+
+### [Why is This Relevant to CSC301 Students?](#why-is-this-relevant-to-csc301-students-1)
+
+### [Examples of Standards of Relevance](#examples-of-standards-of-relevance-1)
+
+### [Other Useful Standards](#other-useful-standards-1)
 
 ### [Sources](#sources-1)
 
+---
 ### What Is a Standard?
 
 According to the Standards Council of Canada (SCC), a standard is defined as "a document, established by consensus and approved by a recognized body, that provides for common and repeated use, rules, guidelines or characteristics for activities or their results, aimed at the achievement of the optimum degree or order in a given context."
@@ -12,7 +27,7 @@ Broadly, standards play an important role for ensuring consistency, safety, and 
 
 In addition, adopting standards promotes compatibility between different software components and systems, facilitating seamless integration and communication. This reduces development time, costs, and enhances the overall reliability and scalability of software solutions. This ensures that software systems meet industry-specific requirements and standards for safety, security, and data protection.
 
-### [How Are Standards Created?](#how-are-standards-created-1)
+### How Are Standards Created?
 
 Aligned with the guidelines set forth by the Digital Governance Standards Institute (DGSI), a technical committee comprising of subject matter experts is established prior to the creation of a standard, particularly if there is not already a committee addressing the specific topic. These committees operate by consensus to ensure inclusivity and equal participation, access, and opportunity among interested parties.
 
@@ -26,7 +41,7 @@ Following thorough consideration of public comments and necessary revisions, the
 
 Overall, the standardization process ensures consistency, quality, and interoperability, benefiting stakeholders and facilitating innovation and growth in the respective field.
 
-### [Why is This Relevant to CSC301 Students?](#why-is-this-relevant-to-csc301-students-1)
+### Why is This Relevant to CSC301 Students?
 
 Understanding and learning about standards is crucial for CSC301 students for several reasons:
 
@@ -38,7 +53,7 @@ Understanding and learning about standards is crucial for CSC301 students for se
 
 In addition to understanding software engineering standards, being aware of best practices and considering future AI rules and guidelines is also crucial for CSC301 students. As artificial intelligence (AI) continues to advance rapidly, integrating AI technologies into software engineering projects is becoming increasingly common. By staying informed about AI rules and guidelines, students can ensure that their software solutions align with ethical principles and emerging industry standards.
 
-### [Examples of Standards of Relevance](#examples-of-standards-of-relevance-1)
+### Examples of Standards of Relevance
 
 #### Example of a AI Standard
 
@@ -58,7 +73,7 @@ This standard is relevant for remote workers, such as CSC301 students, as remote
 
 DGSI offers all their standards for free download on their website, making them easily accessible to all. Similarly, CAN/CIOSC 100-4 is freely available and can be adopted and applied by aspiring software engineers.
 
-### [Other Useful Standards](#other-useful-standards-1)
+### Other Useful Standards
 
 - **Data Centric Security:** "This standard sets out the fundamental characteristics and attributes required of data protection systems. It includes measures to protect data while it is being held on a server and while it is being transferred between IT systems and/or organizations."
   - https://dgc-cgn.org/standards/find-a-standard/standards-in-data-governance/data-centric-security/
@@ -73,7 +88,7 @@ DGSI offers all their standards for free download on their website, making them 
 - **Cyber Resiliency in Healthcare:** "HealthCareCAN and the CIO Strategy Council are collaborating on a project to develop a new set of standards that support cyber resiliency in Canada’s healthcare system and address growing cybersecurity threats."
   - https://dgc-cgn.org/standards/find-a-standard/standards-in-cybersecurity/cyber-resiliency-healthcare/
 
-### [Sources](#sources-1)
+### Sources
 
 - https://dgc-cgn.org/standards/#:~:text=The%20Digital%20Governance%20Standards%20Institute,across%20a%20range%20of%20stakeholders.
 - https://dgc-cgn.org/standards/find-a-standard/standards-in-automated-decision-systems-ai/cisoc101/
