@@ -2,14 +2,14 @@
 1. [Miniconda](#Installation-Miniconda)
     - [Miniconda Installation](#Installation-Miniconda)
     - [Setup MacOS for Miniconda](#Setup-MacOS-for-Miniconda)
-    - [Setup Windows for Miniconda](#Setup-Windows-for-Miniconda])
+    - [Setup Windows for Miniconda](#Setup-Windows-for-Miniconda)
 2. [Anaconda](#Installation-anaconda)
     - [Anaconda Installation](#Installation_anaconda)
     - [Setup MacOS for Anaconda](#Setup-MacOS-for-Anaconda)
     - [Setup Windows for Miniconda](#Setup-Windows-for-anaconda)
-3. [Creating Environments](Creating_Environments_Python)
-4. [Switching Environments](Switching_Environments_Python)
-5. [Removing Environments](Removing_Environments_Python)
+3. [Creating Environments](#Creating_Environments_Python)
+4. [Switching Environments](#Switching_Environments_Python)
+5. [Removing Environments](#Removing_Environments_Python)
 
 ## Installation (Miniconda)
 
