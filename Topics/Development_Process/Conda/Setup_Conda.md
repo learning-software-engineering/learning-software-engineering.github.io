@@ -26,7 +26,7 @@ In the picture shown above, download the one that fits your system, in my case, 
 
 Then just download and click through the install process until you have completed. 
 
-The setup guide for **MacOS** is [here](#setup-macos), for **Windows** is [here](#setup-windows)
+The setup guide for **MacOS** is [here](#setup-macos-for-miniconda), for **Windows** is [here](#setup-windows-for-miniconda)
 
 ## Setup [MacOS] for Miniconda
 
