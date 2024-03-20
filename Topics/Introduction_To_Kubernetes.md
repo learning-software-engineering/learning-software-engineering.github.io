@@ -32,6 +32,14 @@ k8s with CI/CD practices revolutionizes the software development lifecycle, offe
 k8s are usually config in yaml format
 
  Deployment: manage and scale applications. It defines the desired state for a set of pods (replica set) and ensures that the specified number of replicas are running at `all times`
+
+`metadata` : is a unique name to identify the k8s resource
+
+`spec`: define the state of this deployment 
+
+`replicas`: is the number of instances that will be running
+
+with in `sepc` we can define which docker image we used, what port is the container exposed as well as the env var.
 ```yaml
 apiVersion: apps/v1
 kind: Deployment
