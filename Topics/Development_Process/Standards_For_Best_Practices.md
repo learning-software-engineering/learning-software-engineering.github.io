@@ -18,13 +18,15 @@
 
 ### What Is a Standard?
 
-According to the Standards Council of Canada (SCC), a standard is defined "as a document, established by consensus and approved by a recognized body, that provides for common and repeated use, rules, guidelines or characteristics for activities or their results, aimed at the achievement of the optimum degree or order in a given context."
+According to the Standards Council of Canada (SCC), a standard is defined as "a document, established by consensus and approved by a recognized body, that provides for common and repeated use, rules, guidelines or characteristics for activities or their results, aimed at the achievement of the optimum degree or order in a given context."
+
+In simpler terms, a standard is a set of agreed-upon rules or guidelines approved by a recognized authority, with the goal of achieving the best outcomes in a particular situation.
 
 ### [Why Are Standards Important?](#why-are-standards-important-1)
 
 Broadly, standards play an important role for ensuring consistency, safety, and quality. They serve as guiding principles for excellence. In the world of technology, such as software engineering, they act as a benchmark for developers to create high-quality, maintainable code that meets industry standards and best practices.
 
-In addition, following standards promotes compatibility between different software components and systems, facilitating seamless integration and communication. This reduces development time, costs, and enhances the overall reliability and scalability of software solutions. This ensures that software systems meet industry-specific requirements and standards for safety, security, and data protection.
+In addition, adopting standards promotes compatibility between different software components and systems, facilitating seamless integration and communication. This reduces development time, costs, and enhances the overall reliability and scalability of software solutions. This ensures that software systems meet industry-specific requirements and standards for safety, security, and data protection.
 
 ### [How Are Standards Created?](#how-are-standards-created-1)
 
@@ -44,12 +46,18 @@ DGSI offers all their standards for free download on their website, making them 
 
 ### [Other Useful Standards](#other-useful-standards-1)
 
-- Data Centric Security: https://dgc-cgn.org/standards/find-a-standard/standards-in-data-governance/data-centric-security/
-- Third Party Access to Data: https://dgc-cgn.org/standards/find-a-standard/standards-in-data-governance/third-party-access-to-data/
-- Operating Model for Responsible Data Stewardship: https://dgc-cgn.org/standards/find-a-standard/standards-in-data-governance/responsible-data-stewardship/
-- Baseline Cyber Security Controls for Small and Medium Organizations: https://dgc-cgn.org/standards/find-a-standard/standards-in-cybersecurity/cybersecurity-smes/
-- Cybersecurity of Industrial Internet of Things (IIoT) Devices: https://dgc-cgn.org/standards/find-a-standard/standards-in-cybersecurity/cybersecurity-iiot/
-- Cyber Resiliency in Healthcare: https://dgc-cgn.org/standards/find-a-standard/standards-in-cybersecurity/cyber-resiliency-healthcare/
+- **Data Centric Security:** "This standard sets out the fundamental characteristics and attributes required of data protection systems. It includes measures to protect data while it is being held on a server and while it is being transferred between IT systems and/or organizations."
+  - https://dgc-cgn.org/standards/find-a-standard/standards-in-data-governance/data-centric-security/
+- **Third Party Access to Data:** "This Standard specifies minimum requirements for granting and controlling third-party access to data.This Standard applies to all organizations, including public and private companies, government entities, and not-for-profit organizations."
+  - https://dgc-cgn.org/standards/find-a-standard/standards-in-data-governance/third-party-access-to-data/
+- **Operating Model for Responsible Data Stewardship:** "This standard applies to the stewardship, accountability and management of data whenever a legal entity collects, uses or shares it with another entity or individual."
+  - https://dgc-cgn.org/standards/find-a-standard/standards-in-data-governance/responsible-data-stewardship/
+- **Baseline Cyber Security Controls for Small and Medium Organizations:** "This Standard specifies a minimum set of cyber security controls intended for small and medium organizations, which typically have less than 500 employees."
+  - https://dgc-cgn.org/standards/find-a-standard/standards-in-cybersecurity/cybersecurity-smes/
+- **Cybersecurity of Industrial Internet of Things (IIoT) Devices:** "The standard specifies cybersecurity controls for the design and operation of IIoT devices to meet requirements for security, safety, confidentiality, integrity, and availability. The standard is intended for organizations planning to acquire new IIoT devices or equipment embedding IIoT devices. It provides a consolidated overview of key security features and practices to meet industry-recommended standards and best practices."
+  - https://dgc-cgn.org/standards/find-a-standard/standards-in-cybersecurity/cybersecurity-iiot/
+- **Cyber Resiliency in Healthcare:** "HealthCareCAN and the CIO Strategy Council are collaborating on a project to develop a new set of standards that support cyber resiliency in Canada’s healthcare system and address growing cybersecurity threats."
+  - https://dgc-cgn.org/standards/find-a-standard/standards-in-cybersecurity/cyber-resiliency-healthcare/
 
 ### [Sources](#sources-1)
 
