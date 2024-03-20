@@ -133,19 +133,30 @@ A closer look at the LSP: [LSP](./Development_Process/LSP.md)
 ## Restaurant example of each principle
 
 #### SRP
-Consider a **Chef** in a restaurant. Initially, the chef might handle multiple responsibilities: preparing dishes, managing inventory, and overseeing kitchen hygiene. Adhering to SRP, distinct roles are established. The chef focuses solely on cooking, while inventory management becomes the responsibility of a dedicated inventory manager. 
+Consider a **Chef** in a restaurant. Initially, the chef might handle multiple responsibilities: preparing dishes, managing inventory, and overseeing kitchen hygiene. Adhering to SRP, distinct roles are established. The chef focuses solely on cooking and kitchen hygiene, while inventory management becomes the responsibility of a dedicated inventory manager. 
+
+![SRP](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/90370938/92398ca4-dc69-40d5-bd42-34488c2aab05)
 
 #### OCP
 Suppose a restaurant offers a fixed menu, and every addition or modification requires altering the entire menu preparation process. Adhering to OCP, the menu system can be designed with a base menu class that remains closed for modification. New dishes or changes are introduced via an extension, such as a SpecialsMenu class, allowing additions without altering the existing menu. This principle enables the restaurant to introduce seasonal or daily specials without affecting the core menu.
 
+![OCP](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/90370938/1d292bf8-d992-427d-894d-b39c87cd1a45)
+
 #### LSP
 Imagine a scenario where the restaurant's system expects all orders to be instances of a generic Order class. Adhering to LSP, any specialized order, like a delivery order, dine-in order, or takeaway order, should be substitutable for a standard order without breaking the system's functionality. Each specific order type should adhere to the expected behavior of the generic Order class, ensuring seamless substitution.
+
+![LSP](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/90370938/21fe22c7-46ee-4def-88c5-431dbaa4fca2)
 
 #### ISP
 Consider a system where all employees (servers, chefs, and cleaners) are expected to use the same comprehensive Employee interface, including methods for serving tables, cooking dishes, and cleaning. Adhering to ISP, distinct interfaces are established for each role: ServerInterface, ChefInterface, and CleanerInterface. This segregation ensures that each role implements only the methods relevant to their responsibilities, preventing unnecessary method implementations.
 
+
+![ISP](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/90370938/0e37a7b3-c6fc-4ca8-9235-e851dafe49ec)
+
 #### DIP
 Suppose the restaurant's ordering system directly depends on specific external services for payment processing and inventory updates. Adhering to DIP, the system can depend on abstract interfaces like PaymentProcessor and InventoryService, allowing flexibility to switch between different payment processors or inventory management systems without directly impacting the core ordering system. This abstraction and dependency on interfaces rather than concrete implementations facilitate adaptability and system maintenance.
+
+![DIP](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/90370938/6a138359-c954-467e-aea8-b82deded8fdf)
 
 
 ## Resource that gives example of actual code of SOLID principles
