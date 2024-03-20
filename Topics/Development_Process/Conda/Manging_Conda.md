@@ -25,3 +25,6 @@ Everything necessary to know about managing your installation of conda
 
 For more comprehensive guidance, refer to the official documentation on [Managing Conda](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-conda.html).
 
+## Reference
+
+1. Conda Official Documentation. Available at: [Conda Documentation](https://docs.conda.io/projects/conda/en/latest/index.html)

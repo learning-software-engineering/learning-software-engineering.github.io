@@ -111,3 +111,7 @@ Various operations involved with creating, updating, exporting, and removing env
 - The removal can be verified using `conda info --envs`.
 
 For more comprehensive guidance, refer to the official documentation on [Managing Environments](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html).
+
+## Reference
+
+1. Conda Official Documentation. Available at: [Conda Documentation](https://docs.conda.io/projects/conda/en/latest/index.html)

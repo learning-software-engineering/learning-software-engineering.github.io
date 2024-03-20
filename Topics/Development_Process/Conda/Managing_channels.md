@@ -29,3 +29,7 @@ Information about channels and how they are searched through when installing pac
 - **Using Strict Priority**: This is recommended for faster operations and fewer incompatibility problems, but it might limit the availability of certain packages if they're only found in lower-priority channels.
 
 For more comprehensive guidance, refer to the official documentation on [Managing Channels](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-channels.html).
+
+## Reference
+
+1. Conda Official Documentation. Available at: [Conda Documentation](https://docs.conda.io/projects/conda/en/latest/index.html)

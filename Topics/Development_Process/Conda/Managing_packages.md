@@ -46,3 +46,7 @@ Details related to how to find, install, remove, and update packages in a given 
 - To find what packages depend on a specific package, use a combination of `conda search` and file searching in the Conda package cache.
 
 For more comprehensive guidance, refer to the official documentation on [Managing Packages](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-pkgs.html).
+
+## Reference
+
+1. Conda Official Documentation. Available at: [Conda Documentation](https://docs.conda.io/projects/conda/en/latest/index.html)
