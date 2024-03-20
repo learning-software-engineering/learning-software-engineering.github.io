@@ -41,4 +41,4 @@ Each of these solutions all have their own unique strengths and weaknesses, the 
 
 # How do you use Conda?
 
-To actually use Conda, we need to follow the following [general steps](.Setup_Conda.md) to set up
+To actually use Conda, we need to follow the following [general steps](./Setup_Conda.md) to set up
