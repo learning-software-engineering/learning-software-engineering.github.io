@@ -55,5 +55,5 @@ DGSI offers all their standards for free download on their website, making them 
 
 - https://dgc-cgn.org/standards/#:~:text=The%20Digital%20Governance%20Standards%20Institute,across%20a%20range%20of%20stakeholders.
 - https://dgc-cgn.org/standards/find-a-standard/standards-in-automated-decision-systems-ai/cisoc101/
-- https://www.tpsgc-pwgsc.gc.ca/ongc-cgsb/programme-program/normes-standards/procedure-process-eng.html
 - https://dgc-cgn.org/standards/find-a-standard/standards-in-data-governance/remote-access-infrastructure/
+- https://www.tpsgc-pwgsc.gc.ca/ongc-cgsb/programme-program/normes-standards/procedure-process-eng.html
