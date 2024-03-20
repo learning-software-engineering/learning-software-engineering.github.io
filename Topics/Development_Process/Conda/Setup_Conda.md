@@ -154,7 +154,7 @@ Should you encounter any issues where Anaconda commands are not recognized, one 
 
 ![anaconda init pic](anaconda_init.png)
 
-With Anaconda successfully installed and initialized, you're ready to explore its robust features. [Start creating Python environments with Anaconda](#creating-environments-python).
+With Anaconda successfully installed and initialized, you're ready to explore its robust features. You can use the GUI of anaconda or command line. [In this doc, we will only talk about creating Python environments using command line](#creating-environments-python). If you need help with GUI, you can check out the official documentation [here](https://docs.anaconda.com/free/navigator/?utm_source=anaconda_navigator&utm_medium=nav-docs).
 
 
 ### Creating Environments (Python)
@@ -165,7 +165,7 @@ To do this, open up your shell and type in `conda create -n <name> python=<versi
 
 In my case, I will create a Python environment with Python 3.11, called "TEST", as shown in the picture below. 
 
-![create environment](conda_create_env.png)
+![create environment](anaconda_create_env.png)
 
 What I called here is `conda create -n TEST python=3.11`, and pressed enter. Then, it will ask if you will confirm or not, just type "Y" to confirm and enter. 
 
