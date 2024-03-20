@@ -42,4 +42,4 @@ Each of these solutions all have their own unique strengths and weaknesses, the 
 
 ## How do you use Conda?
 
-To actually use Conda, we need to follow the following general steps
+To actually use Conda, we need to follow the following [general steps](./path/to/your/file.md) to set up
