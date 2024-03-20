@@ -42,12 +42,42 @@ export default function ButtonUsage() {
 }
 ```
 
+## Styling Components
+
+The styling of a component can be changed in serveral ways:
+
+### One-off customization
+
+To style one instance of a component, you can use the sx prop:
+
+```js
+<Button variant="contained" sx={{ color: '#76ABAE'}}>Hello world</Button>
+```
+
+### Reusable component
+
+Using the `styled()` utility, you can create a reusable component which appears consistently across the application:
+
+```js
+import * as React from 'react';
+import Slider from '@mui/material/Slider';
+import { styled } from '@mui/material/styles';
+
+const HelloWorldButton = styled(Button)({
+  color: '#76ABAE'
+});
+
+export default function StyledCustomization() {
+  return <HelloWorldButton>Hello world</HelloWorldButton>;
+}
+```
+
 ## Mobile Rendering
 
 Material UI components are primarily developed for mobile devices, which are then scaled up for larger viewports. It is highly recommended to add the viewport meta tag, which ensures proper rendering and touch zooming for all devices.
 
 `<meta name="viewport" content="initial-scale=1, width=device-width" />`
 
-## Manual
+## References
 
 For a detailed introductory guide to Material UI with usage examples, visit https://mui.com/material-ui/getting-started/

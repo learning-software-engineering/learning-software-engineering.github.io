@@ -12,6 +12,8 @@
 
 ### [FastAPI](./Tech_Stacks/FastAPI.md)
 
+### [Embedded Javascript](./Tech_Stacks/EJS.md)
+
 ### [Nuxt3](./Tech_Stacks/Nuxt3.md)
 
 ### [Building Apple Native Software Using Swift and SwiftUI](./Tech_Stacks/swift.md)
@@ -178,5 +180,10 @@
 
 ### [Understanding Bluetooth in Mobile App Development](./Tech_Stacks/Bluetooth.md)
 
-
 ### [Cross platform vs Native Mobile Development](./Tech_Stacks/Mobile_Development/content.md)
+
+### [Using Tiptap in a React CRUD App](./Tech_Stacks/Tiptap/Tiptap.md)
+
+### [Using KY - A versatile HttpClient](./Tech_Stacks/KY.md)
+
+### [Building Interactive Web Applications with WebSockets](./Tech_Stacks/WebSockets/Web-Sockets.md)
