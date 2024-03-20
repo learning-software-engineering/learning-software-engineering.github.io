@@ -128,12 +128,12 @@ The initial step involves downloading the appropriate installer for your operati
 
 In the screenshot above, select the installer that matches your system. For instance, if you are using a macOS with an M1 chip, you might choose the `Anaconda macOS Apple M1 64-bit pkg`.
 
-Download the installer and follow the prompts to complete the installation process.
+Download the installer and follow the prompts to complete the installation process. Make sure you add conda to the environment path during installation 
 
 Here is an example of how the MacOS anaconda installer looks like:
 ![anaconda installer example] (anaconda_installer.png)
 
-Setup guides for different operating systems can be found through the following links: for **MacOS** [here](#setup-macos-for-Anaconda), and for **Windows** [here](#setup-windows-for-Anaconda).
+Setup guides for different operating systems can be found through the following links: for **MacOS** [here](#setup-macos-for-Anaconda), and for **Windows**, please follow the same procedure as MacOS, but choose the `64-Bit Graphical Installer (904.4M)` package.
 
 ### Setup [MacOS] for Anaconda
 
