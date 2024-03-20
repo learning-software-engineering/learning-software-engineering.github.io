@@ -1,8 +1,8 @@
-## Viewing command-line help
+# Viewing command-line help
 
 Conda provides comprehensive command-line help to guide users through various tasks and operations. Here's how you can access and utilize command-line help in Conda:
 
-### Viewing General Help
+## Viewing General Help
 
 To access general help and get an overview of available commands and options, the user can use the conda --help command. This command displays a summary of Conda's main commands and provides guidance on usage.
 
@@ -16,4 +16,6 @@ To get help of a specific command, try running conda xxx(the command the user wi
 
 ![conda_create_h](conda_create_h.png)
 
+## Reference
 
+1. Conda Official Documentation. Available at: [Conda Documentation](https://docs.conda.io/projects/conda/en/latest/index.html)

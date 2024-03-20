@@ -1,4 +1,4 @@
-## Managing Python using Conda 
+# Managing Python using Conda 
 Conda is a versatile package and environment management system designed to simplify the process of managing Python environments and dependencies. With Conda, you can create isolated environments with specific Python versions and packages, facilitating project reproducibility and compatibility. 
 
 ### Viewing a list of available Python Versions
@@ -59,7 +59,7 @@ Create pypy Environment and activate pypy:
 
 It creates a new Conda environment named `pypy` and installs PyPy into it. The pypy package provided by the conda-forge channel will be installed into this environment. Then it activates the newly created pypy environment, allowing you to use PyPy for Python development within this environment.
 
-### Using a different version of python 
+## Using a different version of python 
 To use a different version of Python in the current environment, you'll typically create a new environment with the desired Python version and activate it. Here's how you can do it using Conda:
 
 Create a New Environment: Use the conda create command to create a new environment with the desired Python version. For example, to create an environment named myenv with Python version 3.9, you can run:
@@ -74,7 +74,7 @@ Activate the New Environment and Verify the Python version.: Once the environmen
 
 ![new_ver](conda_ver3.png)
 
-### Updating Python:
+## Updating Python:
 
 This command will updating the latest version of python. 
 
@@ -83,3 +83,7 @@ This command will updating the latest version of python.
 If you want to install a minor change, not the newest one, or there is a specific version of python you want use:
 
 ![conda_update](conda_update2.png)
+
+## Reference
+
+1. Conda Official Documentation. Available at: [Conda Documentation](https://docs.conda.io/projects/conda/en/latest/index.html)

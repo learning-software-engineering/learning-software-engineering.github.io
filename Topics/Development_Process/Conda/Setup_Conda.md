@@ -200,3 +200,9 @@ The following are a list of references that you can check out if you are plannin
 “Managing Virtual Packages — Conda 24.1.3.Dev63 Documentation.” Conda.io, conda.io/projects/conda/en/latest/user-guide/tasks/manage-virtual.html. Accessed 18 Mar. 2024.
 
 “RPM and Debian Repositories for Miniconda — Conda 24.1.3.Dev68 Documentation.” Conda.io, conda.io/projects/conda/en/latest/user-guide/install/rpm-debian.html. Accessed 20 Mar. 2024.Conda.
+
+1. Conda Official Documentation. Available at: [Conda Documentation](https://docs.conda.io/projects/conda/en/latest/index.html)
+
+## Reference
+
+1. Conda Official Documentation. Available at: [Conda Documentation](https://docs.conda.io/projects/conda/en/latest/index.html)

@@ -1,7 +1,7 @@
-## Creating Pojects 
+# Creating Pojects 
 Conda provides a convenient way to manage dependencies and environments for your projects. A project in Conda is a directory that contains your project code along with a configuration file (environment.yml) specifying the dependencies required to run the project.
 
-### Creating the Project's file 
+## Creating the Project's file 
 
 Start by creating a directory for the project. It can named it whatever you like, for example:
 
@@ -13,7 +13,7 @@ Create an environment.yml File: Inside the project directory, create an environm
 
  #Add more dependencies as needed
 
-### Creating our enviroment 
+## Creating our enviroment 
 
 Create Conda Environment: Once you've defined their dependencies, you can create a Conda environment using the conda env create command:
 
@@ -23,7 +23,7 @@ After creating the environment, activate it using the conda activate command:
 
 ![conda_create](act_example.png)
 
-### Creating our Python application
+## Creating our Python application
 
 Once the project environment is activated, the user can work on the project as usual, using the installed dependencies. The user can install additional packages, update existing ones, or remove packages as needed. Conda will manage the environment to ensure consistency and reproducibility across different systems.
 
@@ -49,20 +49,6 @@ Creating projects with Conda is a straightforward process that enables the user 
 Edit environment.yml: Open the environment.yml file in project directory and add the new dependencies under the dependencies section. For example:
 
 
-## Viewing command-line help
+## Reference
 
-Conda provides comprehensive command-line help to guide users through various tasks and operations. Here's how you can access and utilize command-line help in Conda:
-
-### Viewing General Help
-
-To access general help and get an overview of available commands and options, the user can use the conda --help command. This command displays a summary of Conda's main commands and provides guidance on usage.
-
-![conda help](conda_help.png)
-
-conda --h will do the same effect as conda --help which will return a list of conda help list.
-
-![conda h](conda_h.png)
-
-To get help of a specific command, try running conda xxx(the command the user wish to work on) -h. For example: conda create -h, which will output the help menu of the specific command of conda create:
-
-![conda_create_h](conda_create_h.png)
+1. Conda Official Documentation. Available at: [Conda Documentation](https://docs.conda.io/projects/conda/en/latest/index.html)
