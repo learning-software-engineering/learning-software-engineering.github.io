@@ -137,7 +137,7 @@ Setup guides for different operating systems can be found through the following 
 
 ### Setup [MacOS] for Anaconda
 
-The setup process for Anaconda can vary based on your operating system and shell configuration.
+The setup process for Anaconda can vary based on your operating system and shell configuration. You mightt need to make sure to add conda to the environment path during installation. 
 
 To verify if Anaconda has been installed successfully, open your system's shell. For macOS users, the default shell is typically `zsh`. You can open `zsh` by pressing "Command + Space", typing `terminal`, and selecting the first result.
 
@@ -145,7 +145,6 @@ In the terminal window, run the following to display the version of Anaconda ins
 ```
 conda list anaconda
 ```
-
 ![verifying anaconda installation](anaconda_verify.png)
 
 If a list of anaconda version appears, it indicates that Anaconda is installed correctly, and you can proceed to [Creating Environments (Python)](#creating-environments-python).
