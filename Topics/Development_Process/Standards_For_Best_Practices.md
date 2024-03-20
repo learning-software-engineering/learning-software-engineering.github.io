@@ -9,7 +9,6 @@
 ### [How Are Standards Created?](#how-are-standards-created-1)
 Aligned with the guidelines set forth by the Digital Governance Standards Institute (DGSI), a technical committee comprising of subject matter experts is established prior to the creation of a standard, particularly if there is not already a committee addressing the specific topic. These committees operate by consensus to ensure inclusivity and equal participation, access, and opportunity among interested parties.
 
-
 The technical committees have the responsibility of developing, approving, interpreting, and periodically reviewing standards within their respective subjects, ensuring currency and relevance.
 
 Any individual or organization, known as stakeholders, can suggest the creation, modification, or removal of a standard. Upon approval of a new standard, the technical committee initiates the standard development process, beginning with drafting the initial version. 
@@ -22,9 +21,8 @@ Overall, the standardization process ensures consistency, quality, and interoper
 
 ### [Why is This Relevant to CSC301 Students?](#why-is-this-relevant-to-csc301-students-1)
 Understanding and learning about standards is crucial for CSC301 students for several reasons:
-* Ensuring quality: Standards provide frameworks and guidelines that are easy to follow and ensure quality, reliability, and interoperability. 
-* Agile development: In CSC301, students are introduced to agile development methods, focusing on adaptability and collaboration and standards play a vital role in agile practices.
-* Collaboration: Standards facilitate teamwork by establishing clear processes and guidelines for communication and collaboration.
+* Ensuring quality: Standards provide frameworks and guidelines that are easy to follow and ensure quality, reliability, and interoperability. For instance, a CSC301 student might find that adhering to CAN/CIOSC 101 would help ensure that their software project follows established protocols for data governance, enhancing its security and compliance measures.
+* Agile development: In CSC301, students learn about agile development, which prioritize adaptability and collaboration in software development. Standards are essential in agile practices, ensuring consistency, quality, and ethical considerations throughout the iterative development process.
 * Ethics integration: CSC301 includes ethical discussions and standards guide ethical conduct in software engineering. 
 * Industry preparation: Knowledge of standards is valued in the industry, preparing students for workforce expectations. 
 * Software quality enhancement: Adhering to standards promotes consistency and best practices, leading to higher quality solutions. 
