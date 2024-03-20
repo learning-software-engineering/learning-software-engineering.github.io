@@ -207,26 +207,6 @@ After everything is done, you should not be able to find the environment named "
 
 2. [**Conda Cheat Sheet**](https://docs.conda.io/projects/conda/en/latest/user-guide/cheatsheet.html): A quick reference guide provided by the official Conda documentation, summarizing the most common Conda commands and their usage. 
 
-## Citation
-“Creating Custom Channels — Conda 24.1.3.Dev63 Documentation.” Conda.io, conda.io/projects/conda/en/latest/user-guide/tasks/create-custom-channels.html. Accessed 18 Mar. 2024.
-
-“Creating Projects — Conda 24.1.3.Dev63 Documentation.” Conda.io, conda.io/projects/conda/en/latest/user-guide/tasks/creating-projects.html. Accessed 18 Mar. 2024.
-
-“Getting Started with Conda — Conda 22.9.0.Post94+887d03470 Documentation.” Conda.io, conda.io/projects/conda/en/latest/user-guide/getting-started.html.
-
-“Installing on Linux — Conda 23.11.1.Dev2 Documentation.” Conda.io, conda.io/projects/conda/en/latest/user-guide/install/linux.html.
-
-“Installing on MacOS — Conda 24.1.3.Dev68 Documentation.” Conda.io, conda.io/projects/conda/en/latest/user-guide/install/macos.html. Accessed 20 Mar. 2024.
-
-“Installing on Windows — Conda 24.1.3.Dev68 Documentation.” Conda.io, conda.io/projects/conda/en/latest/user-guide/install/windows.html. Accessed 20 Mar. 2024.
-
-“Managing Python — Conda 24.1.3.Dev63 Documentation.” Conda.io, conda.io/projects/conda/en/latest/user-guide/tasks/manage-python.html. Accessed 18 Mar. 2024.
-
-“Managing Virtual Packages — Conda 24.1.3.Dev63 Documentation.” Conda.io, conda.io/projects/conda/en/latest/user-guide/tasks/manage-virtual.html. Accessed 18 Mar. 2024.
-
-“RPM and Debian Repositories for Miniconda — Conda 24.1.3.Dev68 Documentation.” Conda.io, conda.io/projects/conda/en/latest/user-guide/install/rpm-debian.html. Accessed 20 Mar. 2024.Conda.
-
-1. Conda Official Documentation. Available at: [Conda Documentation](https://docs.conda.io/projects/conda/en/latest/index.html)
 
 ## Reference
 
