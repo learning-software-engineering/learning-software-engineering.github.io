@@ -1,4 +1,4 @@
-## What is Conda and why do you need it? 
+# What is Conda and why do you need it? 
 
 Have you ever experienced the frustration when you have multiple Python package conflicts and needs to resolve multiple package dependency issues before you can actually work on a new project? If that's the case, **Conda** is here to save your day!  
 
@@ -6,7 +6,7 @@ Conda is an open-source package management and environment management system tha
 
 This tutorial will focus on using Conda to setup multiple Python environments that can be used for different projects. So that you'll never have to worry about setting up an environment and running into issues again!
 
-## Difference between Anaconda and Miniconda?
+# Difference between Anaconda and Miniconda?
 
 As of the time writing, Conda's official website is this: [https://docs.conda.io/en/latest/#](https://docs.conda.io/en/latest/#)
 
@@ -21,7 +21,7 @@ The major difference between **Miniconda** and **Anaconda** is that:
 
 With all that being said, this tutorial focuses on using Miniconda to setup Conda and multiple Python environments, so you might need to look for another tutorial if you plan to use Anaconda.
 
-## Why do you want to use Conda instead of other environment management solutions? 
+# Why do you want to use Conda instead of other environment management solutions? 
 
 Other environment management solutions for Python specifically, includes `pipenv` and `virtualenv`, also support similar functionalities to Conda. 
 
@@ -39,7 +39,6 @@ Each of these solutions all have their own unique strengths and weaknesses, the 
 | **Scope** | Suitable for complex, multi-language projects | Ideal for Python-specific development | Focused on Python-only projects |
 | **Ease of Setup** | Requires more setup compared to pip | Simplifies setup with automation | Quick and easy setup |
 
-
-## How do you use Conda?
+# How do you use Conda?
 
 To actually use Conda, we need to follow the following [general steps](./path/to/your/file.md) to set up
