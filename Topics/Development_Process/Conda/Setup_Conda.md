@@ -99,7 +99,7 @@ In the screenshot above, select the installer that matches your system. For inst
 Download the installer and follow the prompts to complete the installation process. Make sure you add conda to the environment path during installation 
 
 Here is an example of how the MacOS anaconda installer looks like:
-![anaconda installer example] (anaconda_installer.png)
+![anaconda installer example](anaconda_installer.png)
 
 Setup guides for different operating systems can be found through the following links: for **MacOS** [here](#setup-macos-for-Anaconda), and for **Windows**, please follow the same procedure as MacOS, but choose the `64-Bit Graphical Installer (904.4M)` package.
 
