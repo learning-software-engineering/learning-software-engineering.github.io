@@ -118,6 +118,8 @@ The SOLID principles are:
 
 - **Advantage**: This principle fosters code reusability and allows for easier substitution of objects within the same inheritance tree. It simplifies maintenance, reducing the need for extensive modifications when introducing new objects or making alterations within the hierarchy. It ensures that system evolution remains agile and manageable without causing extensive disruptions to the existing codebase.
 
+A closer look at the LSP: [LSP](./Development_Process/LSP.md)
+
 #### Interface Segregation Principle (ISP)
 - This principle suggests that clients should not be forced to depend on interfaces they do not use. Instead of one large interface, it's better to have multiple smaller, specific interfaces that cater to the exact needs of the clients.
 
