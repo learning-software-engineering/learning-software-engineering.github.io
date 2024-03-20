@@ -70,5 +70,15 @@ Global variables are a type of variable, accessible across all environments with
     pm.environment.get("variable_name");
     ```
 
+## Useful tips:
+1. You can duplicate an existing Environment by
+
+    ![](./assets/environment-duplicate.png)
+
+2. Just like a GitHub repository, you can fork, pull, create pull request, merge Postman Environments.
+
+    ![](./assets/environment-features.png)
+
+
 ## References
 [1]. https://learning.postman.com/docs/sending-requests/variables/managing-environments/
