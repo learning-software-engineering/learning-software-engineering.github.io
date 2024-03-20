@@ -7,9 +7,9 @@
     - [Anaconda Installation](#Installation_anaconda)
     - [Setup MacOS for Anaconda](#Setup-MacOS-for-Anaconda)
     - [Setup Windows for Miniconda](#Setup-Windows-for-anaconda)
-3. [Creating Environments](#Creating_Environments_Python)
-4. [Switching Environments](#Switching_Environments_Python)
-5. [Removing Environments](#Removing_Environments_Python)
+3. [Creating Environments](#Creating-Environments-Python)
+4. [Switching Environments](#Switching-Environments-Python)
+5. [Removing Environments](#Removing-Environments-Python)
 
 ## Installation (Miniconda)
 
