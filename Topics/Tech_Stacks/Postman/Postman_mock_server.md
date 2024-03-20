@@ -34,13 +34,15 @@ You can build a mock server based on requests from your Postman history. Select 
 
 
 ## Configuring mock server details
-![](./assets/mock-server-create-from-history.jpg)
 1. Give your mock sever a name
 2. You can select an optional environment to have your mock sever use environment variables. See Postman_environment_variables.md for details.
 3. You can also configure a delay before the mock server sends responses to simulate network delays.
 4. If you choose to make your mock server private, you need to add a [Postman API key](https://learning.postman.com/docs/developer/postman-api/intro-api/) in the request header when sending requests to the mock server: x-api-key:<Your-Postman-API-key>. If you share the collection, others can use their Postman API keys to make calls to the mock server.
 
+![](./assets/mock-server-create-from-history.jpg)
+
 After you finish selecting configuration options, select Create Mock Server. Postman displays the details you need to use the mock server. (You can get these details at any time by selecting Mock Servers in the sidebar and selecting the mock server.)
+
 ![](./assets/mock-server-get-url.jpg)
 
 You can change the configuration for a mock server at any time. Select Mock Servers in the sidebar, select a mock server, and select Settings icon Edit Configuration.
@@ -79,6 +81,7 @@ When saving a response in Postman, you have the option to save it as an example.
 2. Open a request and select Send.
 
 3. In the response pane, select Save icon Save as Example.
+   
 ![](./assets/examples-save-response.jpg)
 
 #### Adding a custom example
@@ -95,4 +98,19 @@ With a custom example, you can define how both the request and the response look
 - Enter the response body and select a content type.
 - Add any headers as needed.
 6. Select Save to save the example.
+  
 ![](./assets/examples-add-custom.jpg)
+
+## Conclusion
+If the APIs to be used in Production are still in development or we want to avoid sending requests on real time data, a mock server can be very useful.
+A Postman mock server can simulate real API features with examples, verify APIs with mocking data, and help developer to identify errors and dependencies in API before it is released for actual usage. After reading the instruction, you should be able to set up and use your own Postman mock server.
+
+## Additional resources
+See [Postman Learning Center](https://learning.postman.com/) for more Postman resources.
+
+## Citations
+1. https://learning.postman.com/docs/designing-and-developing-your-api/mocking-data/mock-an-api/
+2. https://learning.postman.com/docs/designing-and-developing-your-api/mocking-data/setting-up-mock/
+3. https://learning.postman.com/docs/sending-requests/response-data/examples/#adding-an-example
+4. https://www.tutorialspoint.com/postman/postman_mock_server.htm
+
