@@ -8,7 +8,7 @@ In the realm of design, User Interface stands as a pivotal concern. Achieving pr
 Designers frequently adapt their UI strategies to suit the specific needs and complexities of a project, aiming to uncover the most effective solutions. Among the array of methodologies available, conducting heuristic evaluations is a particularly valuable technique for identifying and addressing usability challenges. This approach relies on "usability heuristics" as a set of guiding principles throughout the UI design process.
 
 
-# Here I will be explaining the 10 Heuristics each and give different examples on them:
+# Here this article will be explaining the 10 Heuristics each and give different examples on them:
 
 # 1: Visibility of System Status: 
 The interface is expected to consistently update users on system processes, delivering timely and relevant feedback.
@@ -77,7 +77,19 @@ its best that the system would not need any additional explanation of its utilit
 
 Commonly categorized problems to be solved in payment apps for example would be relatable to fields such as payments, account, personal info, system issues, and a FAQ. These categories are usually found in almost all help sections of different apps.
 
-![image](https://github.com/Arick-mux/learning-software-engineering.github.io/assets/137026734/60c4afdc-b410-4082-b67b-d7992145cf6f)
+<img width="274" alt="image" src="https://github.com/Arick-mux/learning-software-engineering.github.io/assets/137026734/c5560574-2d09-4cf0-b430-cec12662a1eb">
 
 
-"
+# Conclusion:
+
+Since their introduction by Jakob Nielsen, the 10 Usability Heuristics have been a constant companion and guideline to product designers in different fields, steering a wide array of products and their competitors towards the goal of enhancing user satisfaction. Despite their undeniable positive influence, challenges such as the rarity and high cost of experts skilled in these Heuristics pose obstacles. Additionally, even when expert analysis is possible, there's the risk of the experts focusing on trivial issues while skipping the important ones or the presence of evaluative bias. Given these complexities, the discussion around the 10 Heuristics continues to be a debatable and contentious one.
+
+# Works Cited:
+
+Pictures used from screenshots of Youtube, Google, and Gmail: 
+https://www.youtube.com/
+https://www.google.com/
+https://mail.google.com/mail/u/0/#inbox
+
+Original Article: 10 Usability Heuristics for User Interface Design by Jakob Nielsen, written in April 24 1994
+1 J. Nielsen, Nielsen Norman Group (2024). 
