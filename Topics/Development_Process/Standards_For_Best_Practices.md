@@ -8,12 +8,6 @@
 
 ### [How Are Standards Created?](#how-are-standards-created-1)
 
-### [Why is This Relevant to CSC301 Students?](#why-is-this-relevant-to-csc301-students-1)
-
-### [Examples of Standards of Relevance](#examples-of-standards-of-relevance-1)
-
-### [Other Useful Standards](#other-useful-standards-1)
-
 ### [Sources](#sources-1)
 
 ### What Is a Standard?
@@ -21,8 +15,6 @@
 According to the Standards Council of Canada (SCC), a standard is defined as "a document, established by consensus and approved by a recognized body, that provides for common and repeated use, rules, guidelines or characteristics for activities or their results, aimed at the achievement of the optimum degree or order in a given context."
 
 In simpler terms, a standard is a set of agreed-upon rules or guidelines approved by a recognized authority, with the goal of achieving the best outcomes in a particular situation.
-
-### [Why Are Standards Important?](#why-are-standards-important-1)
 
 Broadly, standards play an important role for ensuring consistency, safety, and quality. They serve as guiding principles for excellence. In the world of technology, such as software engineering, they act as a benchmark for developers to create high-quality, maintainable code that meets industry standards and best practices.
 
