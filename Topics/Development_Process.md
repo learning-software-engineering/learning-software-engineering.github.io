@@ -143,7 +143,7 @@ Suppose a restaurant offers a fixed menu, and every addition or modification req
 #### LSP
 Imagine a scenario where the restaurant's system expects all orders to be instances of a generic Order class. Adhering to LSP, any specialized order, like a delivery order, dine-in order, or takeaway order, should be substitutable for a standard order without breaking the system's functionality. Each specific order type should adhere to the expected behavior of the generic Order class, ensuring seamless substitution.
 
-![LSP](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/90370938/a599bfc9-22de-4c79-b0eb-ac6320874cc5)
+![LSP](https://github.com/learning-software-engineering/learning-software-engineering.github.io/assets/90370938/21fe22c7-46ee-4def-88c5-431dbaa4fca2)
 
 #### ISP
 Consider a system where all employees (servers, chefs, and cleaners) are expected to use the same comprehensive Employee interface, including methods for serving tables, cooking dishes, and cleaning. Adhering to ISP, distinct interfaces are established for each role: ServerInterface, ChefInterface, and CleanerInterface. This segregation ensures that each role implements only the methods relevant to their responsibilities, preventing unnecessary method implementations.
