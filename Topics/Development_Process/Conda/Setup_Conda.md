@@ -1,4 +1,4 @@
-## Table of Contents
+# Table of Contents
 1. [Miniconda](#Installation-Miniconda)
     - [Miniconda Installation](#Installation-Miniconda)
     - [Setup MacOS for Miniconda](#Setup-MacOS-for-Miniconda)
@@ -12,7 +12,7 @@
 5. [Removing Environments](#Removing-Environments-Python)
 6. [External Resources](#External-Learning-Resources-for-Conda)
 
-## Installation (Miniconda)
+# Installation (Miniconda)
 
 With a little bit of navigation, we see that there are download links here: [https://docs.conda.io/projects/miniconda/en/latest/](https://docs.conda.io/projects/miniconda/en/latest/)
 
@@ -28,7 +28,7 @@ Then just download and click through the install process until you have complete
 
 The setup guide for **MacOS** is [here](#setup-macos), for **Windows** is [here](#setup-windows)
 
-### Setup [MacOS] for Miniconda
+## Setup [MacOS] for Miniconda
 
 Regarding the setup process for Miniconda, multiple different situations can arise. 
 
@@ -48,7 +48,7 @@ One of the common fixes for this is to call `conda init [shell_type]`. For examp
 
 With all that being said, we can finally start to unleash the power of Conda. [Hyperlink here](#creating-environments-python)
 
-### Setup [Windows] for Miniconda
+## Setup [Windows] for Miniconda
 
 > Guide Reference: https://gist.github.com/martinsotir/2bd2e16332dff71e0fa5be3ed3468a6c
 
@@ -86,7 +86,7 @@ In this prompt, type in `conda init powershell`, and press enter. It should show
 
 After all of these, you should be able to just start up a new `powershell` session, and it should have miniconda installed! With this, you can start to unleash the power of Conda and proceed to the next section!  
 
-### Installation (Anaconda)
+## Installation (Anaconda)
 
 You can find the Anaconda installer and detailed installation instructions on their official download page: [https://www.anaconda.com/products/individual](https://www.anaconda.com/download#downloads)
 
@@ -103,7 +103,7 @@ Here is an example of how the MacOS anaconda installer looks like:
 
 Setup guides for different operating systems can be found through the following links: for **MacOS** [here](#setup-macos-for-Anaconda), and for **Windows**, please follow the same procedure as MacOS, but choose the `64-Bit Graphical Installer (904.4M)` package.
 
-### Setup [MacOS] for Anaconda
+## Setup [MacOS] for Anaconda
 
 The setup process for Anaconda can vary based on your operating system and shell configuration.
 
@@ -125,7 +125,7 @@ With Anaconda successfully installed and initialized, you're ready to explore it
 ![anaconda gui](anaconda_gui.png)
 [In this doc, we will only talk about creating Python environments using command line](#creating-environments-python). If you need help with GUI, you can check out the official documentation [here](https://docs.anaconda.com/free/navigator/?utm_source=anaconda_navigator&utm_medium=nav-docs).
 
-### Setup [Windows] for Anaconda
+## Setup [Windows] for Anaconda
 
 The installation and setup process for Anaconda on Windows varies slightly from macOS, but it's designed to be straightforward. Ensuring that Anaconda is added to the PATH during installation is crucial for seamless use of the command line interface.
 
@@ -147,7 +147,7 @@ For those who prefer graphical interfaces, Anaconda also provides a GUI called A
 
 With Anaconda properly installed and initialized, you're all set to take advantage of its powerful package and environment management capabilities to streamline your Python projects.
 
-## Creating Environments (Python)
+# Creating Environments (Python)
 
 Environments in Conda are like separated files in different directories. For example, if you have a Conda environment specifically for Machine Learning projects, when you switch to another software engineering project, you probably want to not use the Machine Learning packages so that they don't interfere with what you're trying to do. 
 
@@ -161,7 +161,7 @@ What I called here is `conda create -n TEST python=3.11`, and pressed enter. The
 
 Then, you should be able to switch to your new environment that you just created! 
 
-## Switching Environments (Python)
+# Switching Environments (Python)
 
 After you have followed the steps above to create multiple environments, you can switch between them easily. 
 
@@ -187,7 +187,7 @@ If you want to be more in-depth (working with IDEs), you should be able to find 
 
 ![conda directories](interpreter.png)
 
-## Removing Environments (Python)
+# Removing Environments (Python)
 
 After you're done with a specific environment and the project, you can release the environment by calling `conda remove --name <NAME> --all`. 
 
