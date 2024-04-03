@@ -193,3 +193,5 @@
 ### [Three.js](./Tech_Stacks/three.md)
 
 ### [HTMX](./Tech_Stacks/htmx.md)
+
+### [OpenMP](./Tech_Stacks/openMP.md)
