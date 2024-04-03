@@ -201,3 +201,7 @@
 ### [Introduction to Cuda](./Tech_Stacks/Cuda.md)
 
 ### [Intro to Framer Motion, an Animation Library for React](./Tech_Stacks/Framer_Motion.md)
+
+### [Mobile App Development with React Native and Expo](./Tech_Stacks/React_Native_and_Expo.md)
+
+### [Introduction to Unity UI Toolkit](./Tech_Stacks/Unity_UI_Toolkit.md)

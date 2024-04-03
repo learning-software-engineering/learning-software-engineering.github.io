@@ -10,6 +10,7 @@
 
 ## Shell
 ### [A fin-troduction to `fish`](./Software_Tools/fish.md)
+### [The 'cat' Command Guide](./Software_Tools/cat.md)
 
 ## AI
 ### [Introduction to Prompt Engineering](./Software_Tools/PromptEngineering.md)
