@@ -91,6 +91,7 @@ Manual Installation:
 ### Modes
 Here is a diagram of the modes available on vim and how to access them, they will be used in the following sections.
 ![Image](./vim_modes.png)
+(Image by BYU CS111 https://cs111.byu.edu/articles/vim/)
 
 ### Navigation
 
