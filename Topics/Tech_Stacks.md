@@ -1,6 +1,6 @@
 ## Tech Stacks
 
-### [Introduction to C#](./Tech_Stacks/C#.md)
+### [Introduction to C#](./Tech_Stacks/Csharp.md)
 
 ### [Learning MySQL for databases](./Tech_Stacks/Learning_MySQL.md)
 
@@ -191,3 +191,5 @@
 ### [Memory safety in Rust](./Tech_Stacks/Rust.md)
 
 ### [Three.js](./Tech_Stacks/three.md)
+
+### [HTMX](./Tech_Stacks/htmx.md)
