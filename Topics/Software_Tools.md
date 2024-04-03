@@ -20,7 +20,7 @@
 ## [Introduction to AWS Glue and and a simple guide about how to use it](./Software_Tools/AWS_Glue.md)
 
 ## Text Editors
-### [Introduction to Vim](./Software_Tools/vim.md)
+### [Introduction to Vim](./Software_Tools/vim/vim.md)
 ### [Introduction to Nano](./Software_Tools/nano/nano.md)
 ### [Introduction to Visual Studio Code](./Software_Tools/VSCode.md)
 ### [Introduction to Sublime](./Software_Tools/Sublime.md)
