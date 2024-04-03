@@ -91,7 +91,7 @@ As seen in the Amazon case study, it is a common misconception that an algorithm
 
 As some very common examples, the colour of the text you use on a web page should contrast greatly with the background colour, in order to ensure that those with colour-blindness or who are otherwise visually impaired can still easily read it. Additionally, when working on an enterprise project, ensuring that your product is being accurately translated into other languages when being used by users around the world is also crucial.
 
-## Works Cited
+## References
 “Chatgpt Confirms Data Breach, Raising Security Concerns.” Security Intelligence, 21 Nov. 2023, securityintelligence.com/articles/chatgpt-confirms-data-breach/. 
 
 Cook, Brier. “Everything to Know about Software Engineering Ethics.” Fellow.App, 3 Feb. 2023, fellow.app/blog/engineering/engineering-everything-you-need-to-know-about-software-engineering-ethics/#1. 
@@ -100,7 +100,6 @@ Daniels, Jodi. “CCPA Enforcement Action: A Case Study at the Intersection of P
 
 Dastin, Jeffrey. “Insight - Amazon Scraps Secret AI Recruiting Tool That Showed Bias against Women.” Reuters, Thomson Reuters, 11 Oct. 2018, www.reuters.com/article/us-amazon-com-jobs-automation-insight/amazon-scraps-secret-ai-recruiting-tool-that-showed-bias-against-women-idUSKCN1MK08G/. 
 
-“Ethics in Software Engineering: A Key Component of Professional Practice.” Continuing Education for Professional Engineers PDHPRO, pdh-
-pro.com/pe-resources/ethics-in-software-engineering/#:~:text=Ethics%20in%20software%20engineering%20is,the%20impact%20of%20unethical%20practices. 
+[“Ethics in Software Engineering: A Key Component of Professional Practice.” Continuing Education for Professional Engineers PDHPRO](https://pdh-pro.com/pe-resources/ethics-in-software-engineering/) 
 
-“What If My Company/Organisation Fails to Comply with the Data Protection Rules?” European Commission, commission.europa.eu/law/law-topic/data-protection/reform/rules-business-and-organisations/enforcement-and-sanctions/sanctions/what-if-my-companyorganisation-fails-comply-data-protection-rules_en#:~:text=likely%20infringement%20%E2%80%93%20a%20warning%20may,business’s%20total%20annual%20worldwide%20turnover.
+[“What If My Company/Organisation Fails to Comply with the Data Protection Rules?” European Commission](commission.europa.eu/law/law-topic/data-protection/reform/rules-business-and-organisations/enforcement-and-sanctions/sanctions/what-if-my-companyorganisation-fails-comply-data-protection-rules_en#:~:text=likely%20infringement%20%E2%80%93%20a%20warning%20may,business’s%20total%20annual%20worldwide%20turnover)
