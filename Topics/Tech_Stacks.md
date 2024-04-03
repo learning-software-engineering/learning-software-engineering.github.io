@@ -187,3 +187,5 @@
 ### [Using KY - A versatile HttpClient](./Tech_Stacks/KY.md)
 
 ### [Building Interactive Web Applications with WebSockets](./Tech_Stacks/WebSockets/Web-Sockets.md)
+
+### [Memory safety in Rust](./Tech_Stacks/Rust.md)
