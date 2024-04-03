@@ -37,6 +37,9 @@ JavaScript frameworks tutorial provided by Microsoft. Useful readings, but not n
 
 ### Useful React Tools and Libraries
 
+[React Toastify](./React-Toastify.md) 
+Crafting toast notifications within React applications
+
 [Create React App](https://create-react-app.dev/)
 Allows you to set up your React applications using a single command without having to configure many build tools. Provides a lot of useful functionality like instant reloads and optimizations for deployment; is the "official" React solution.
 

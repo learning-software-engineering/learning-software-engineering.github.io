@@ -6,23 +6,23 @@ Utilizing pre-built UI kits from the Figma community involves several steps to e
    - Browse through the available UI kits based on your project requirements. You can use filters to narrow down your search by categories such as platform (web, mobile), design style (material design, iOS, etc.), and features.
    - Once you find a UI kit that fits your needs, click on it to view details such as the components included, previews, and any additional information provided by the creator.
 
-   ![alt text](image.png)
+   ![alt text](./figma_ui_kit_images/image.png)
 
-   ![alt text](image-1.png)
+   ![alt text](./figma_ui_kit_images/image-1.png)
 
 2. **Duplicate the UI Kit:**
 
    - Before making any changes, duplicate the UI kit file in Figma. This ensures that you have a backup of the original kit and can make modifications without affecting the original design.
    - To duplicate a file, open the UI kit in Figma by pressing the blue "Open in Figma" button
 
-   ![alt text](image-2.png)
+   ![alt text](./figma_ui_kit_images/image-2.png)
 
 3. **Explore Components and Styles:**
 
    - Once you have opened the UI Kit in Figma, explore the various components, styles, and templates provided by the UI kit by looking through the available pages. The list of pages can be found on the sidebar on the left side of your screen. In these page you may find various components such as buttons, navigation bars, form elements, icons, typography styles, and more.
    - Familiarize yourself with the organization of components, such as how they are grouped in frames or components, and how styles are applied.
 
-   ![alt text](image-3.png)
+   ![alt text](./figma_ui_kit_images/image-3.png)
 
 4. **Customize and Modify:**
 
@@ -30,7 +30,7 @@ Utilizing pre-built UI kits from the Figma community involves several steps to e
    - Replace placeholder content with your own text, images, or icons. Make sure to maintain consistency and follow design best practices as you customize the UI kit.
    - In order to modify an element, click on the element of interest and modify the values in the property sidebar displayed.
 
-   ![alt text](image-4.png)
+   ![alt text](./figma_ui_kit_images/image-4.png)
 
 5. **Create New Designs:**
 
