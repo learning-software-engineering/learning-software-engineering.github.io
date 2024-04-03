@@ -195,3 +195,7 @@
 ### [HTMX](./Tech_Stacks/htmx.md)
 
 ### [OpenMP](./Tech_Stacks/openMP.md)
+
+### [Understanding Bluetooth in Mobile App Development](./Tech_Stacks/Bluetooth.md)
+
+### [Introduction to Cuda](./Tech_Stacks/Cuda.md)
