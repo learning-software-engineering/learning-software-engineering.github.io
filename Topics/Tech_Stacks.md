@@ -199,3 +199,5 @@
 ### [Understanding Bluetooth in Mobile App Development](./Tech_Stacks/Bluetooth.md)
 
 ### [Introduction to Cuda](./Tech_Stacks/Cuda.md)
+
+### [Intro to Framer Motion, an Animation Library for React](./Tech_Stacks/Framer_Motion.md)
