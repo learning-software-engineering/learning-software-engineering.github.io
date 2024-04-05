@@ -211,3 +211,5 @@
 ### [Introduction to P5.js](./Tech_Stacks/p5.md)
 
 ### [Introduction to SocketIO](./Tech_Stacks/SocketIO/Intro_to_SocketIO.md)
+
+### [Fine-tuning an ML model in Pytorch tutorial](./Tech_Stacks/fine-tuning-ml/Fine-tuning.md)
