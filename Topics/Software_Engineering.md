@@ -25,3 +25,5 @@ Guidelines for effectively handling bugs through a systematic life cycle and tec
 #### [Ethics In Software Engineering](./Software_Engineering/Ethics_In_Software_Engineering.md)
 
 #### [Software Licenses](./Software_Engineering/Software_Licenses.md)
+
+#### [Implement Logging Process to MySQL for Functions](./Software_Engineering/Logging_to_mysql.md)
