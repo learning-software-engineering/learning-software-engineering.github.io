@@ -120,5 +120,5 @@ In this example we can see that for each post in the database, we dynamically cr
 
 ## Learn More
 
-- **https://ejs.co/#install
-- **https://www.digitalocean.com/community/tutorials/how-to-use-ejs-to-template-your-node-application
+- [Install EJS](https://ejs.co/#install)
+- [Digital Ocean: how to use EJS on your node](https://www.digitalocean.com/community/tutorials/how-to-use-ejs-to-template-your-node-application)
