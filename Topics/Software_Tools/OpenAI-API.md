@@ -63,7 +63,7 @@ _Note that the API's credits are not free! You get 3 months of free credit upon 
     completion = client.chat.completions.create(
     model="gpt-3.5-turbo", # OpenAI's current standard model. Fast and cheap!
     messages=[
-        {"role": "user", "content": "Come up with a name formy new strawberry ice cream flavor!"}
+        {"role": "user", "content": "Come up with a name for my new strawberry ice cream flavor!"}
     ]
     )
 
@@ -96,15 +96,15 @@ _Note that the API's credits are not free! You get 3 months of free credit upon 
 
 
 
-    ## Conclusion
+## Conclusion
 
 
-    These are just some of the things you can do with the OpenAI API. They have other models that are more sophisticated, and even ones that can process images. Just be sure to check out the pricing page to ensure you don't over spend. Luckily, the prices are fairly low, at fractions of a cent per prompt, and the lowest credit buy in is just $5 USD. 
+These are just some of the things you can do with the OpenAI API. They have other models that are more sophisticated, and even ones that can process images. Just be sure to check out the pricing page to ensure you don't over spend. Luckily, the prices are fairly low, at fractions of a cent per prompt, and the lowest credit buy in is just $5 USD. 
 
 
 
-    ## Resources
+## Resources
 
-    https://platform.openai.com/docs/guides/text-generation/chat-completions-api
-    https://openai.com/pricing
-    https://www.youtube.com/watch?v=uRQH2CFvedY
+https://platform.openai.com/docs/guides/text-generation/chat-completions-api
+https://openai.com/pricing
+https://www.youtube.com/watch?v=uRQH2CFvedY
