@@ -87,6 +87,7 @@ Potential Topics--
             1. Heroku
             2. AWS
                 1. Django Project Deployment: AWS, Vercel and Railway
+                2. JSON RPC Server Deployment on AWS
             3. Firebase
             4. Digital Ocean
             5. Software development best practices:

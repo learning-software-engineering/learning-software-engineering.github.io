@@ -7,6 +7,7 @@
 ### [Trunk-Based Development](./Development_Process/Trunk_Development.md)
 
 ### [Django Project Deployment: AWS, Vercel, and Railway](./Development_Process/Django_Deployment_AWS_Railway_Vercel.md)
+### [JSON RPC Server Deployment on Amazon Web Services](./Development_Process/JSON_RPC_Server_Deployment_AWS.md)
 
 ### [Node.js Project Deployment: Azure](./Development_Process/Azure_webapp_deployment_with_nodejs.md)
 
